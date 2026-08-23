@@ -19,9 +19,13 @@ let revealed = false;
 let direction = "hebrew";
 let formMode = "root";
 let maculaIndex = null;
+let autoAdvanceTimer = null;
 const chapterStorageKey = "hebrew-study-helper:last-chapter";
 const masteredWordsStorageKey = "hebrew-study-helper:mastered-words";
 const legacyHiddenWordsStorageKey = "hebrew-study-helper:hidden-words";
+const autoAdvanceStorageKey = "hebrew-study-helper:auto-advance";
+const orderStorageKey = "hebrew-study-helper:word-order";
+const preferencesStorageKey = "hebrew-study-helper:preferences";
 const masteredWords = loadMasteredWordKeys();
 
 const els = {
@@ -37,6 +41,10 @@ const els = {
   posSelect: document.querySelector("#pos-select"),
   searchInput: document.querySelector("#search-input"),
   showMasteredToggle: document.querySelector("#show-mastered-toggle"),
+  orderSelect: document.querySelector("#order-select"),
+  autoAdvanceToggle: document.querySelector("#auto-advance-toggle"),
+  autoAdvanceSpeed: document.querySelector("#auto-advance-speed"),
+  autoAdvanceLabel: document.querySelector("#auto-advance-label"),
   manageMasteredButton: document.querySelector("#manage-mastered-button"),
   removeAllMasteredButton: document.querySelector("#remove-all-mastered-button"),
   masteredDialog: document.querySelector("#mastered-dialog"),
@@ -127,6 +135,77 @@ function loadMasteredWordKeys() {
 
 function saveMasteredWordKeys() {
   localStorage.setItem(masteredWordsStorageKey, JSON.stringify([...masteredWords.values()]));
+}
+
+function getSavedPreferences() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(preferencesStorageKey) || "{}");
+    const legacyAuto = JSON.parse(localStorage.getItem(autoAdvanceStorageKey) || "{}");
+    return {
+      direction: saved.direction === "english" ? "english" : "hebrew",
+      formMode: saved.formMode === "text" ? "text" : "root",
+      partOfSpeech: ["noun", "verb", "other"].includes(saved.partOfSpeech) ? saved.partOfSpeech : "all",
+      showMastered: Boolean(saved.showMastered),
+      order: saved.order === "ordered" || localStorage.getItem(orderStorageKey) === "ordered" ? "ordered" : "random",
+      autoAdvance: {
+        enabled: Boolean(saved.autoAdvance?.enabled ?? legacyAuto.enabled),
+        seconds: clampAutoAdvanceSeconds(saved.autoAdvance?.seconds ?? legacyAuto.seconds)
+      }
+    };
+  } catch {
+    return {
+      direction: "hebrew",
+      formMode: "root",
+      partOfSpeech: "all",
+      showMastered: false,
+      order: "random",
+      autoAdvance: { enabled: false, seconds: 3 }
+    };
+  }
+}
+
+function savePreferences() {
+  localStorage.setItem(preferencesStorageKey, JSON.stringify({
+    direction: els.directionSelect.value,
+    formMode: els.formSelect.value,
+    partOfSpeech: els.posSelect.value,
+    showMastered: els.showMasteredToggle.checked,
+    order: els.orderSelect.value,
+    autoAdvance: {
+      enabled: els.autoAdvanceToggle.checked,
+      seconds: getAutoAdvanceSeconds()
+    }
+  }));
+}
+
+function applySavedPreferences() {
+  const preferences = getSavedPreferences();
+  direction = preferences.direction;
+  formMode = preferences.formMode;
+  els.directionSelect.value = preferences.direction;
+  els.formSelect.value = preferences.formMode;
+  els.posSelect.value = preferences.partOfSpeech;
+  els.showMasteredToggle.checked = preferences.showMastered;
+  els.orderSelect.value = preferences.order;
+  els.autoAdvanceToggle.checked = preferences.autoAdvance.enabled;
+  els.autoAdvanceSpeed.value = String(preferences.autoAdvance.seconds);
+  updateAutoAdvance();
+}
+
+function saveAutoAdvanceSettings() {
+  savePreferences();
+}
+
+function clampAutoAdvanceSeconds(value) {
+  return Math.min(Math.max(Number(value) || 3, 0.1), 5);
+}
+
+function getAutoAdvanceSeconds() {
+  return clampAutoAdvanceSeconds(els.autoAdvanceSpeed.value);
+}
+
+function formatAutoAdvanceSeconds(seconds) {
+  return seconds >= 1 ? `${seconds.toFixed(seconds % 1 ? 1 : 0)}s` : `${Math.round(seconds * 1000)}ms`;
 }
 
 function wordToMasteredRecord(word) {
@@ -261,6 +340,35 @@ function moveBy(delta) {
   showCard(currentIndex + delta);
 }
 
+function autoAdvanceStep() {
+  if (!visibleWords.length) return;
+  moveBy(1);
+}
+
+function stopAutoAdvance() {
+  if (!autoAdvanceTimer) return;
+  clearInterval(autoAdvanceTimer);
+  autoAdvanceTimer = null;
+}
+
+function updateAutoAdvance() {
+  stopAutoAdvance();
+  const seconds = getAutoAdvanceSeconds();
+  els.autoAdvanceSpeed.value = String(seconds);
+  els.autoAdvanceLabel.textContent = formatAutoAdvanceSeconds(seconds);
+
+  if (!els.autoAdvanceToggle.checked) {
+    return;
+  }
+
+  autoAdvanceTimer = setInterval(autoAdvanceStep, seconds * 1000);
+}
+
+function handleAutoAdvanceChange() {
+  saveAutoAdvanceSettings();
+  updateAutoAdvance();
+}
+
 function spaceAction() {
   if (revealed) {
     moveBy(1);
@@ -286,12 +394,16 @@ function shuffledWords(words) {
     .map(({ word }) => word);
 }
 
+function orderWords(words) {
+  return els.orderSelect.value === "random" ? shuffledWords(words) : [...words];
+}
+
 function applyFilter() {
   const query = els.searchInput.value.trim().toLowerCase();
   const selectedPos = els.posSelect.value;
   const showMastered = els.showMasteredToggle.checked;
   studyWords = getStudyWords();
-  visibleWords = studyWords.filter((word) => {
+  const filteredWords = studyWords.filter((word) => {
     const [hebrew, english, pos, root] = word;
     const matchesText =
       hebrew.includes(query) ||
@@ -301,6 +413,7 @@ function applyFilter() {
     const matchesMastered = showMastered || !isWordMastered(word);
     return matchesText && matchesPartOfSpeech && matchesMastered;
   });
+  visibleWords = orderWords(filteredWords);
   showCard(0);
   renderList();
 }
@@ -447,8 +560,7 @@ async function initMaculaPicker() {
   const savedChapter = getSavedChapter();
   const savedBook = maculaIndex.books.find((book) => book.code === savedChapter.book);
   els.bookSelect.value = savedBook ? savedChapter.book : "Gen";
-  els.formSelect.value = "root";
-  formMode = "root";
+  applySavedPreferences();
   renderChapterOptions();
   const currentBook = maculaIndex.books.find((book) => book.code === els.bookSelect.value);
   els.chapterSelect.value = currentBook?.chapters.includes(savedChapter.chapter)
@@ -497,7 +609,7 @@ async function loadSelectedChapter() {
 
   allWords = uniqueWordsFromMacula(records);
   studyWords = getStudyWords();
-  visibleWords = shuffledWords(studyWords.filter((word) => els.showMasteredToggle.checked || !isWordMastered(word)));
+  visibleWords = orderWords(studyWords.filter((word) => els.showMasteredToggle.checked || !isWordMastered(word)));
   currentIndex = 0;
   els.searchInput.value = "";
   saveSelectedChapter(book, chapter);
@@ -516,17 +628,32 @@ els.chapterSelect.addEventListener("change", () => {
 });
 els.cardButton.addEventListener("click", spaceAction);
 els.searchInput.addEventListener("input", applyFilter);
-els.posSelect.addEventListener("change", applyFilter);
-els.showMasteredToggle.addEventListener("change", applyFilter);
+els.posSelect.addEventListener("change", () => {
+  savePreferences();
+  applyFilter();
+});
+els.showMasteredToggle.addEventListener("change", () => {
+  savePreferences();
+  applyFilter();
+});
+els.orderSelect.addEventListener("change", () => {
+  savePreferences();
+  applyFilter();
+});
+els.autoAdvanceToggle.addEventListener("change", handleAutoAdvanceChange);
+els.autoAdvanceSpeed.addEventListener("change", handleAutoAdvanceChange);
+els.autoAdvanceSpeed.addEventListener("input", handleAutoAdvanceChange);
 els.manageMasteredButton.addEventListener("click", openMasteredModal);
 els.removeAllMasteredButton.addEventListener("click", removeAllMasteredWords);
 els.masterWordButton.addEventListener("click", toggleCurrentMasteredWord);
 els.formSelect.addEventListener("change", (event) => {
   formMode = event.target.value;
+  savePreferences();
   applyFilter();
 });
 els.directionSelect.addEventListener("change", (event) => {
   direction = event.target.value;
+  savePreferences();
   showCard(currentIndex);
 });
 

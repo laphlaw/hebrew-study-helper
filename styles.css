@@ -342,6 +342,38 @@ button {
   accent-color: var(--accent);
 }
 
+.settings .auto-advance-control {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--ink);
+  background: #fff;
+}
+
+.settings .auto-advance-control input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  accent-color: var(--accent);
+}
+
+.settings .auto-advance-control input[type="range"] {
+  width: clamp(92px, 16vw, 150px);
+  accent-color: var(--accent);
+}
+
+#auto-advance-label {
+  min-width: 42px;
+  color: var(--muted);
+  font-weight: 800;
+  text-align: right;
+}
+
 .mastered-dialog {
   width: min(720px, calc(100% - 28px));
   max-height: min(760px, calc(100dvh - 32px));
