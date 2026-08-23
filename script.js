@@ -14,6 +14,10 @@ const sampleWords = [
 let allWords = [...sampleWords];
 let studyWords = [...allWords];
 let visibleWords = [...studyWords];
+let verbGroups = [];
+let currentVerbIndex = 0;
+let selectedVerbPerson = "he";
+let selectedVerbAspect = "complete";
 let currentIndex = 0;
 let revealed = false;
 let deckFinished = false;
@@ -21,6 +25,8 @@ let direction = "hebrew";
 let formMode = "root";
 let currentMode = "study";
 let maculaIndex = null;
+let verbFormIndex = {};
+let verbMeaningIndex = {};
 let autoAdvanceTimer = null;
 let fallbackReadingFullscreen = false;
 const chapterStorageKey = "hebrew-study-helper:last-chapter";
@@ -37,6 +43,8 @@ const els = {
   modeSelect: document.querySelector("#mode-select"),
   flashcardSection: document.querySelector("#flashcard-section"),
   readingSection: document.querySelector("#reading-section"),
+  verbPracticeSection: document.querySelector("#verb-practice-section"),
+  verbSelect: document.querySelector("#verb-select"),
   readingStatus: document.querySelector("#reading-status"),
   readingText: document.querySelector("#reading-text"),
   readingFontSize: document.querySelector("#reading-font-size"),
@@ -46,6 +54,15 @@ const els = {
   readingNav: document.querySelector("#reading-nav"),
   readingPrevButton: document.querySelector("#reading-prev-button"),
   readingNextButton: document.querySelector("#reading-next-button"),
+  verbCardButton: document.querySelector("#verb-card-button"),
+  verbRoot: document.querySelector("#verb-root"),
+  verbGloss: document.querySelector("#verb-gloss"),
+  verbSelectionLabel: document.querySelector("#verb-selection-label"),
+  verbAspectHelp: document.querySelector("#verb-aspect-help"),
+  verbAnswerGloss: document.querySelector("#verb-answer-gloss"),
+  verbPersonOptions: document.querySelector("#verb-person-options"),
+  verbAspectOptions: document.querySelector("#verb-aspect-options"),
+  verbCount: document.querySelector("#verb-count"),
   settingsButton: document.querySelector("#settings-button"),
   settingsCloseButton: document.querySelector("#settings-close-button"),
   settingsDialog: document.querySelector("#settings-dialog"),
@@ -74,8 +91,8 @@ const els = {
   wordTable: document.querySelector("#word-table")
 };
 
-function wordFromParts(hebrew, english, pos, root, morph = "", refs = []) {
-  return [hebrew, english, pos, root || hebrew, morph, refs];
+function wordFromParts(hebrew, english, pos, root, morph = "", refs = [], strong = "") {
+  return [hebrew, english, pos, root || hebrew, morph, refs, strong];
 }
 
 function parseWords(text) {
@@ -163,7 +180,7 @@ function getSavedPreferences() {
     const saved = JSON.parse(localStorage.getItem(preferencesStorageKey) || "{}");
     const legacyAuto = JSON.parse(localStorage.getItem(autoAdvanceStorageKey) || "{}");
     return {
-      mode: saved.mode === "reading" ? "reading" : "study",
+      mode: ["reading", "verbs"].includes(saved.mode) ? saved.mode : "study",
       direction: saved.direction === "english" ? "english" : "hebrew",
       formMode: saved.formMode === "text" ? "text" : "root",
       partOfSpeech: ["noun", "verb", "other"].includes(saved.partOfSpeech) ? saved.partOfSpeech : "all",
@@ -335,7 +352,8 @@ function uniqueWordsFromMacula(records) {
         pos,
         glosses: new Set(),
         morphs: new Set(),
-        refs: new Set()
+        refs: new Set(),
+        strongs: new Set()
       });
     }
 
@@ -343,11 +361,12 @@ function uniqueWordsFromMacula(records) {
     if (record.g) group.glosses.add(record.g);
     if (record.m) group.morphs.add(record.m);
     if (record.r) group.refs.add(record.r);
+    if (record.s) group.strongs.add(record.s);
   });
 
   return [...grouped.values()].map((group) => {
     const english = [...group.glosses].join("; ") || group.root;
-    return wordFromParts(group.hebrew, english, group.pos, group.root, [...group.morphs].join(", "), [...group.refs]);
+    return wordFromParts(group.hebrew, english, group.pos, group.root, [...group.morphs].join(", "), [...group.refs], [...group.strongs][0] || "");
   });
 }
 
@@ -355,7 +374,7 @@ function getStudyWords() {
   if (formMode === "text") return [...allWords];
 
   const grouped = new Map();
-  allWords.forEach(([hebrew, english, pos, root, morph, refs = []]) => {
+  allWords.forEach(([hebrew, english, pos, root, morph, refs = [], strong = ""]) => {
     const key = `${stripNiqqud(root)}|${pos}`;
     if (!grouped.has(key)) {
       grouped.set(key, {
@@ -365,7 +384,8 @@ function getStudyWords() {
         root,
         forms: new Set(),
         morphs: new Set(),
-        refs: new Set()
+        refs: new Set(),
+        strongs: new Set()
       });
     }
 
@@ -374,6 +394,7 @@ function getStudyWords() {
     group.forms.add(hebrew);
     if (morph) group.morphs.add(morph);
     refs.forEach((ref) => group.refs.add(ref));
+    if (strong) group.strongs.add(strong);
   });
 
   return [...grouped.values()].map((group) => {
@@ -381,8 +402,492 @@ function getStudyWords() {
     const glosses = [...group.english];
     const english = glosses.length === 1 ? glosses[0] : glosses.join("; ");
     const formNote = forms.length > 1 ? ` (Forms: ${forms.join(" / ")})` : "";
-    return wordFromParts(group.hebrew, `${english}${formNote}`, group.pos, group.root, [...group.morphs].join(", "), [...group.refs]);
+    return wordFromParts(group.hebrew, `${english}${formNote}`, group.pos, group.root, [...group.morphs].join(", "), [...group.refs], [...group.strongs][0] || "");
   });
+}
+
+const verbPeople = [
+  { value: "i", label: "I" },
+  { value: "he", label: "he" },
+  { value: "she", label: "she" },
+  { value: "we", label: "we" },
+  { value: "you", label: "you" },
+  { value: "they", label: "they" }
+];
+
+const verbAspects = [
+  { value: "complete", label: "Complete" },
+  { value: "incomplete", label: "Incomplete" },
+  { value: "wayyiqtol", label: "Wayyiqtol" },
+  { value: "participle", label: "Participle" }
+];
+
+const verbAspectHelpText = {
+  complete: "finished action, often translated as past",
+  incomplete: "unfinished or expected action",
+  wayyiqtol: "story sequence, often translated \"and then...\"",
+  participle: "ongoing or describing action"
+};
+
+function decodeVerbMorph(morph = "") {
+  const match = morph.match(/^V.([A-Za-z])((?:[123][a-z]{1,2})|[a-z]{2,3})?/);
+  const aspectCode = match?.[1] || "";
+  const personCode = match?.[2] || "";
+  const aspectMap = {
+    p: "complete",
+    i: "incomplete",
+    w: "wayyiqtol",
+    r: "participle"
+  };
+  const personMap = {
+    "1cs": "i",
+    "1cp": "we",
+    "2ms": "you",
+    "2fs": "you",
+    "2mp": "you",
+    "2fp": "you",
+    "3ms": "he",
+    "3fs": "she",
+    "3mp": "they",
+    "3fp": "they",
+    ms: "he",
+    msa: "he",
+    mp: "they",
+    mpa: "they",
+    fs: "she",
+    fsa: "she",
+    fp: "they",
+    fpa: "they"
+  };
+
+  return {
+    aspect: aspectMap[aspectCode] || "",
+    person: personMap[personCode] || ""
+  };
+}
+
+function getVerbStem(morph = "") {
+  return morph.startsWith("V") ? morph[1] || "" : "";
+}
+
+function singularizeSimpleVerb(value = "") {
+  if (value.endsWith("ies")) return `${value.slice(0, -3)}y`;
+  if (value.endsWith("ss")) return value;
+  if (value.endsWith("es")) return value.slice(0, -2);
+  if (value.endsWith("s") && value.length > 3) return value.slice(0, -1);
+  return value;
+}
+
+function cleanBaseMeaning(gloss = "") {
+  const irregular = new Map([
+    ["arisen", "rise"],
+    ["arose", "rise"],
+    ["ate", "eat"],
+    ["became", "become"],
+    ["been", "be"],
+    ["began", "begin"],
+    ["bless", "bless"],
+    ["blessed", "bless"],
+    ["brought", "bring"],
+    ["came", "come"],
+    ["commanded", "command"],
+    ["created", "create"],
+    ["did", "do"],
+    ["died", "die"],
+    ["gave", "give"],
+    ["gone", "go"],
+    ["made", "make"],
+    ["said", "say"],
+    ["saw", "see"],
+    ["shone", "shine"],
+    ["spoken", "speak"],
+    ["took", "take"],
+    ["went", "go"],
+    ["was", "be"]
+  ]);
+  let value = gloss
+    .toLowerCase()
+    .replace(/\[[^\]]*\]/g, "")
+    .replace(/[;,.?]/g, "")
+    .replace(/^(and|then)\s+/, "")
+    .replace(/^(i|you|he|she|it|we|they)\s+/, "")
+    .replace(/^(did|do|does|has|have|had|will|shall|may|might|can|could|should|would|is|are|was|were|be|been)\s+/, "")
+    .replace(/^(to|as)\s+/, "")
+    .trim();
+
+  const words = value.split(/\s+/).filter(Boolean);
+  if (!words.length) return "";
+  if (["give", "make"].includes(words[0]) && words[1]) return `${words[0]} ${words[1]}`;
+  if (["come", "go", "bring", "draw", "set"].includes(words[0]) && ["up", "down", "out", "in", "back", "near"].includes(words[1])) {
+    return `${words[0]} ${words[1]}`;
+  }
+
+  value = words[0];
+  if (irregular.has(value)) return irregular.get(value);
+  if (value.endsWith("ing") && value.length > 5) {
+    const stem = value.slice(0, -3);
+    return stem.endsWith("y") ? `${stem.slice(0, -1)}ie` : stem;
+  }
+  if (value.endsWith("ed") && value.length > 4) {
+    const stem = value.slice(0, -2);
+    if (stem.endsWith("at") || stem.endsWith("it") || stem.endsWith("id")) return `${stem}e`;
+    return stem;
+  }
+  return singularizeSimpleVerb(value);
+}
+
+function deriveRootMeaning(forms = [], fallbackGlosses = []) {
+  const candidates = [
+    ...forms.map((form) => form.g),
+    ...fallbackGlosses
+  ]
+    .map(cleanBaseMeaning)
+    .filter(Boolean)
+    .filter((meaning) => meaning.length > 1);
+
+  if (!candidates.length) return "do";
+
+  const counts = new Map();
+  candidates.forEach((candidate) => counts.set(candidate, (counts.get(candidate) || 0) + 1));
+  return [...counts.entries()]
+    .sort((a, b) => b[1] - a[1] || a[0].length - b[0].length || a[0].localeCompare(b[0]))[0][0];
+}
+
+function getVerbMeaning(rootKey, forms = [], fallbackGlosses = []) {
+  const lexiconMeaning = verbMeaningIndex[rootKey]?.meaning;
+  return lexiconMeaning || deriveRootMeaning(forms, fallbackGlosses);
+}
+
+function pastEnglishVerb(base = "") {
+  const words = base.split(/\s+/).filter(Boolean);
+  if (words.length > 1) return [pastEnglishVerb(words[0]), ...words.slice(1)].join(" ");
+
+  const irregular = new Map([
+    ["be", "was"],
+    ["begin", "began"],
+    ["bring", "brought"],
+    ["come", "came"],
+    ["do", "did"],
+    ["eat", "ate"],
+    ["give", "gave"],
+    ["go", "went"],
+    ["make", "made"],
+    ["rise", "rose"],
+    ["say", "said"],
+    ["see", "saw"],
+    ["shine", "shone"],
+    ["speak", "spoke"],
+    ["take", "took"],
+    ["tread", "trod"]
+  ]);
+  if (irregular.has(base)) return irregular.get(base);
+  if (base.endsWith("e")) return `${base}d`;
+  return `${base}ed`;
+}
+
+function progressiveEnglishVerb(base = "") {
+  const words = base.split(/\s+/).filter(Boolean);
+  if (words.length > 1) return [progressiveEnglishVerb(words[0]), ...words.slice(1)].join(" ");
+
+  if (base.endsWith("ie")) return `${base.slice(0, -2)}ying`;
+  if (base.endsWith("e") && base !== "be") return `${base.slice(0, -1)}ing`;
+  return `${base}ing`;
+}
+
+function beginnerVerbGloss(baseMeaning = "") {
+  const person = verbPeople.find((item) => item.value === selectedVerbPerson)?.label || selectedVerbPerson;
+  if (selectedVerbAspect === "complete") return `${person} ${pastEnglishVerb(baseMeaning)}`;
+  if (selectedVerbAspect === "incomplete") return `${person} will ${baseMeaning}`;
+  if (selectedVerbAspect === "wayyiqtol") return `and ${person} ${pastEnglishVerb(baseMeaning)}`;
+  if (selectedVerbAspect === "participle") {
+    const be = selectedVerbPerson === "i" ? "am" : ["we", "you", "they"].includes(selectedVerbPerson) ? "are" : "is";
+    return `${person} ${be} ${progressiveEnglishVerb(baseMeaning)}`;
+  }
+  return `${person} ${baseMeaning}`;
+}
+
+function displayHebrewVerbForm(hebrew = "", aspect = "") {
+  if (aspect === "wayyiqtol" && hebrew && !/^ו/.test(stripNiqqud(hebrew))) {
+    return `וַ${hebrew}`;
+  }
+  return hebrew;
+}
+
+function formDisplayScore(hebrew = "", person = "", aspect = "", refs = []) {
+  const plainHebrew = stripNiqqud(hebrew);
+  let score = 0;
+  const hasLeadingVav = /^ו/.test(plainHebrew);
+  if (aspect === "wayyiqtol" && !hasLeadingVav) score += 20;
+  if (aspect !== "wayyiqtol" && hasLeadingVav) score += 8;
+  if (person === "i" && aspect === "complete" && !plainHebrew.endsWith("תי")) score += 20;
+  if (refs.length && refs.every((ref) => /^(DAN|EZR)\b/.test(ref))) score += 10;
+  score += Math.max(plainHebrew.length - 5, 0);
+  return score;
+}
+
+function addVerbForm(formMap, label, hebrew, morph = "", refs = []) {
+  const { person, aspect } = decodeVerbMorph(morph);
+  if (!person || !aspect) return;
+
+  const key = `${person}|${aspect}`;
+  if (!formMap.has(key)) {
+    formMap.set(key, {
+      person,
+      aspect,
+      forms: new Set(),
+      glosses: new Set(),
+      morphs: new Set(),
+      refs: new Set()
+    });
+  }
+
+  const form = formMap.get(key);
+  const currentScore = form.bestForm ? formDisplayScore(form.bestForm, person, aspect, [...form.refs]) : Infinity;
+  const nextScore = formDisplayScore(hebrew, person, aspect, refs);
+  if (!form.bestForm || nextScore < currentScore) {
+    form.bestForm = hebrew;
+  }
+  form.forms.add(hebrew);
+  form.glosses.add(formatAnswer(label).trim() || "verb form");
+  if (morph) form.morphs.add(morph);
+  refs.forEach((ref) => form.refs.add(ref));
+}
+
+function getVerbSelectorRoot(group, rootAlsoAppearsAsNoun) {
+  if (!rootAlsoAppearsAsNoun) return group.root;
+
+  const rootKey = stripNiqqud(group.root);
+  return [...group.chapterForms].find((form) => stripNiqqud(form) !== rootKey) || group.root;
+}
+
+function buildVerbPracticeGroups() {
+  const groupedRoots = new Map();
+  const nounKeys = new Set(allWords
+    .filter(([, , pos]) => pos === "noun")
+    .map(([hebrew, , , root]) => stripNiqqud(root || hebrew)));
+
+  allWords
+    .filter(([, , pos]) => pos === "verb")
+    .forEach(([hebrew, english, , root, morph, refs = []]) => {
+      const rootKey = stripNiqqud(root || hebrew);
+      if (!groupedRoots.has(rootKey)) {
+        groupedRoots.set(rootKey, {
+          root: root || hebrew,
+          chapterForms: new Set(),
+          glosses: new Set(),
+          stems: new Set()
+        });
+      }
+
+      const group = groupedRoots.get(rootKey);
+      group.chapterForms.add(hebrew);
+      group.glosses.add(formatAnswer(english) || "verb form");
+      morph.split(/,\s*/).map(getVerbStem).filter(Boolean).forEach((stem) => group.stems.add(stem));
+    });
+
+  return [...groupedRoots.values()]
+    .map((group) => {
+      const rootKey = stripNiqqud(group.root);
+      const indexGroup = verbFormIndex[rootKey];
+      const formMap = new Map();
+      const indexedForms = Array.isArray(indexGroup?.forms) ? indexGroup.forms : [];
+      const chapterStems = group.stems.size ? group.stems : new Set(indexedForms.map((form) => getVerbStem(form.m)).filter(Boolean));
+      const matchingStemForms = indexedForms.filter((form) => chapterStems.has(getVerbStem(form.m)));
+
+      matchingStemForms.forEach((form) => addVerbForm(formMap, form.g, form.h, form.m, form.refs || []));
+
+      if (!formMap.size) {
+        allWords
+          .filter(([, , pos, root]) => pos === "verb" && stripNiqqud(root) === rootKey)
+          .forEach(([hebrew, english, , , morph, refs = []]) => addVerbForm(formMap, english, hebrew, morph, refs));
+      }
+
+      return {
+        root: indexGroup?.root || group.root,
+        selectorRoot: getVerbSelectorRoot(group, nounKeys.has(rootKey)),
+        meaning: getVerbMeaning(rootKey, matchingStemForms, [...group.glosses]),
+        forms: formMap
+      };
+    })
+    .filter((group) => group.forms.size)
+    .sort((a, b) => (
+      a.meaning.localeCompare(b.meaning) ||
+      stripNiqqud(a.root).localeCompare(stripNiqqud(b.root))
+    ));
+}
+
+function renderVerbSelect() {
+  els.verbSelect.innerHTML = "";
+  els.verbSelect.disabled = !verbGroups.length;
+
+  verbGroups.forEach((group, index) => {
+    const option = document.createElement("option");
+    option.value = String(index);
+    option.textContent = `${group.meaning} - ${group.selectorRoot || group.root}`;
+    els.verbSelect.append(option);
+  });
+
+  if (verbGroups.length) {
+    els.verbSelect.value = String(currentVerbIndex);
+  }
+}
+
+function renderVerbPractice() {
+  if (!verbGroups.length) {
+    renderVerbSelect();
+    els.verbRoot.textContent = "אין פעלים";
+    els.verbGloss.textContent = "";
+    els.verbSelectionLabel.textContent = "";
+    els.verbAspectHelp.textContent = "";
+    els.verbAnswerGloss.textContent = "";
+    els.verbGloss.classList.add("hidden");
+    els.verbSelectionLabel.classList.add("hidden");
+    els.verbAspectHelp.classList.add("hidden");
+    els.verbAnswerGloss.classList.add("hidden");
+    els.verbPersonOptions.innerHTML = "";
+    els.verbAspectOptions.innerHTML = "";
+    els.verbCount.textContent = "0 / 0";
+    return;
+  }
+
+  currentVerbIndex = (currentVerbIndex + verbGroups.length) % verbGroups.length;
+  const group = verbGroups[currentVerbIndex];
+  if (els.verbSelect.value !== String(currentVerbIndex)) {
+    els.verbSelect.value = String(currentVerbIndex);
+  }
+  els.verbGloss.textContent = "";
+  els.verbSelectionLabel.textContent = "";
+  els.verbAspectHelp.textContent = "";
+  els.verbGloss.classList.add("hidden");
+  els.verbSelectionLabel.classList.add("hidden");
+  els.verbAspectHelp.classList.add("hidden");
+  els.verbCount.textContent = `${currentVerbIndex + 1} / ${verbGroups.length}`;
+  renderVerbOptionButtons(group);
+
+  renderVerbAnswer();
+}
+
+function getVerbFormForSelection(group = verbGroups[currentVerbIndex]) {
+  return group?.forms.get(`${selectedVerbPerson}|${selectedVerbAspect}`);
+}
+
+function firstAvailableAspectForPerson(group, person) {
+  return verbAspects.find((aspect) => group.forms.has(`${person}|${aspect.value}`))?.value || "";
+}
+
+function renderVerbOptionButtons(group) {
+  els.verbPersonOptions.innerHTML = "";
+  els.verbAspectOptions.innerHTML = "";
+
+  verbPeople.forEach((person) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "verb-option-button";
+    button.textContent = person.label;
+    button.classList.toggle("is-selected", person.value === selectedVerbPerson);
+    button.classList.toggle("has-form", hasVerbFormForPerson(group, person.value));
+    button.addEventListener("click", () => {
+      selectedVerbPerson = person.value;
+      if (!group.forms.has(`${selectedVerbPerson}|${selectedVerbAspect}`)) {
+        selectedVerbAspect = firstAvailableAspectForPerson(group, selectedVerbPerson) || selectedVerbAspect;
+      }
+      renderVerbPractice();
+    });
+    els.verbPersonOptions.append(button);
+  });
+
+  verbAspects.forEach((aspect) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "verb-option-button";
+    button.textContent = aspect.label;
+    const hasSelectedPersonForm = group.forms.has(`${selectedVerbPerson}|${aspect.value}`);
+    button.classList.toggle("is-selected", aspect.value === selectedVerbAspect);
+    button.classList.toggle("has-form", hasVerbFormForAspect(group, aspect.value));
+    button.disabled = !hasSelectedPersonForm;
+    button.addEventListener("click", () => {
+      if (!hasSelectedPersonForm) return;
+      selectedVerbAspect = aspect.value;
+      renderVerbPractice();
+    });
+    els.verbAspectOptions.append(button);
+  });
+}
+
+function hasVerbFormForPerson(group, person) {
+  return verbAspects.some((aspect) => group.forms.has(`${person}|${aspect.value}`));
+}
+
+function hasVerbFormForAspect(group, aspect) {
+  return verbPeople.some((person) => group.forms.has(`${person.value}|${aspect}`));
+}
+
+function selectedVerbLabel() {
+  const person = verbPeople.find((item) => item.value === selectedVerbPerson)?.label || selectedVerbPerson;
+  const aspect = verbAspects.find((item) => item.value === selectedVerbAspect)?.label || selectedVerbAspect;
+  return `${person} - ${aspect}`;
+}
+
+function renderVerbAnswer() {
+  const group = verbGroups[currentVerbIndex];
+  const form = getVerbFormForSelection();
+  els.verbSelectionLabel.textContent = "";
+  els.verbAspectHelp.textContent = "";
+  els.verbSelectionLabel.classList.add("hidden");
+  els.verbAspectHelp.classList.add("hidden");
+
+  if (!form) {
+    els.verbRoot.textContent = "Not found";
+    els.verbRoot.dir = "ltr";
+    els.verbRoot.classList.add("is-missing-form");
+    els.verbAnswerGloss.textContent = "";
+    els.verbAnswerGloss.classList.add("hidden");
+    return;
+  }
+
+  els.verbRoot.dir = "rtl";
+  els.verbRoot.classList.remove("is-missing-form");
+  els.verbRoot.textContent = displayHebrewVerbForm(form.bestForm || [...form.forms][0] || "", selectedVerbAspect);
+  els.verbAnswerGloss.textContent = beginnerVerbGloss(group.meaning);
+  els.verbAnswerGloss.classList.remove("hidden");
+}
+
+function selectDefaultVerbCombo(group) {
+  const preferred = [
+    ["he", "complete"],
+    ["he", "wayyiqtol"],
+    ["he", "incomplete"],
+    ["she", "complete"],
+    ["they", "complete"],
+    ["i", "complete"]
+  ];
+  const match = preferred.find(([person, aspect]) => group.forms.has(`${person}|${aspect}`));
+  if (match) {
+    [selectedVerbPerson, selectedVerbAspect] = match;
+    return;
+  }
+
+  for (const person of verbPeople) {
+    for (const aspect of verbAspects) {
+      if (group.forms.has(`${person.value}|${aspect.value}`)) {
+        selectedVerbPerson = person.value;
+        selectedVerbAspect = aspect.value;
+        return;
+      }
+    }
+  }
+}
+
+function showVerb(index = currentVerbIndex) {
+  currentVerbIndex = index;
+  const group = verbGroups[(currentVerbIndex + verbGroups.length) % verbGroups.length];
+  if (group) selectDefaultVerbCombo(group);
+  renderVerbPractice();
+}
+
+function moveVerbBy(delta) {
+  if (!verbGroups.length) return;
+  showVerb(currentVerbIndex + delta);
 }
 
 function formatAnswer(english) {
@@ -504,13 +1009,15 @@ function handleAutoAdvanceChange() {
 
 function renderMode() {
   const readingMode = currentMode === "reading";
-  els.flashcardSection.classList.toggle("hidden", readingMode);
-  els.settingsButton.classList.toggle("hidden", readingMode);
-  els.wordListSection.classList.toggle("hidden", readingMode);
+  const verbMode = currentMode === "verbs";
+  els.flashcardSection.classList.toggle("hidden", readingMode || verbMode);
+  els.verbPracticeSection.classList.toggle("hidden", !verbMode);
+  els.settingsButton.classList.toggle("hidden", readingMode || verbMode);
+  els.wordListSection.classList.toggle("hidden", readingMode || verbMode);
   els.readingSection.classList.toggle("hidden", !readingMode);
-  els.manageMasteredButton.classList.toggle("hidden", readingMode);
+  els.manageMasteredButton.classList.toggle("hidden", readingMode || verbMode);
 
-  if (readingMode) {
+  if (readingMode || verbMode) {
     if (els.settingsDialog.open) {
       els.settingsDialog.close();
     }
@@ -520,6 +1027,10 @@ function renderMode() {
       exitReadingFullscreen().catch(console.error);
     }
     updateAutoAdvance();
+  }
+
+  if (verbMode) {
+    renderVerbPractice();
   }
 }
 
@@ -707,6 +1218,8 @@ async function initMaculaPicker() {
   const response = await fetch("public/macula/index.json", { cache: "no-store" });
   if (!response.ok) throw new Error("Could not load MACULA index");
   maculaIndex = await response.json();
+  await loadVerbFormIndex();
+  await loadVerbMeaningIndex();
 
   els.bookSelect.innerHTML = "";
   maculaIndex.books.forEach((book) => {
@@ -726,6 +1239,18 @@ async function initMaculaPicker() {
     ? String(savedChapter.chapter)
     : "1";
   await loadCurrentChapter();
+}
+
+async function loadVerbFormIndex() {
+  const response = await fetch("public/macula/verb-forms.json", { cache: "no-store" });
+  if (!response.ok) throw new Error("Could not load verb forms");
+  verbFormIndex = await response.json();
+}
+
+async function loadVerbMeaningIndex() {
+  const response = await fetch("public/macula/verb-meanings.json", { cache: "no-store" });
+  if (!response.ok) throw new Error("Could not load verb meanings");
+  verbMeaningIndex = await response.json();
 }
 
 function getSavedChapter() {
@@ -851,9 +1376,14 @@ async function loadSelectedChapter() {
 
   allWords = uniqueWordsFromMacula(records);
   currentIndex = 0;
+  currentVerbIndex = 0;
+  verbGroups = buildVerbPracticeGroups();
+  if (verbGroups[0]) selectDefaultVerbCombo(verbGroups[0]);
+  renderVerbSelect();
   els.searchInput.value = "";
   saveSelectedChapter(book, chapter);
   applyFilter();
+  renderVerbPractice();
 }
 
 async function loadCurrentChapter() {
@@ -881,6 +1411,10 @@ els.chapterSelect.addEventListener("change", () => {
 });
 els.cardButton.addEventListener("click", cardTapAction);
 els.revealButton.addEventListener("click", revealAnswer);
+els.verbCardButton.addEventListener("click", () => moveVerbBy(1));
+els.verbSelect.addEventListener("change", () => {
+  showVerb(Number(els.verbSelect.value) || 0);
+});
 els.settingsButton.addEventListener("click", () => {
   els.settingsDialog.showModal();
 });
@@ -952,6 +1486,14 @@ document.addEventListener("keydown", (event) => {
     return;
   }
   if (currentMode === "reading") return;
+  if (currentMode === "verbs") {
+    if (event.key === " " || event.key === "ArrowRight") {
+      event.preventDefault();
+      moveVerbBy(1);
+    }
+    if (event.key === "ArrowLeft") moveVerbBy(-1);
+    return;
+  }
   if (event.key === " ") {
     event.preventDefault();
     spaceAction();

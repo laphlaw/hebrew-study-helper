@@ -1,5 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
+import "./generate-verb-index.mjs";
+import "./generate-verb-meanings.mjs";
 
 const root = process.cwd();
 const dist = path.join(root, "dist");

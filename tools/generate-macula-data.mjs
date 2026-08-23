@@ -68,6 +68,11 @@ function cleanHebrew(value = "") {
     .trim();
 }
 
+function normalizeStrongNumber(value = "") {
+  const match = value.match(/\d+/);
+  return match ? String(Number(match[0])) : "";
+}
+
 function simplifyPos(pos, morph) {
   if (pos === "verb" || morph.startsWith("V")) return "verb";
   if (pos === "noun" || pos === "proper-noun" || morph.startsWith("N")) return "noun";
@@ -88,6 +93,7 @@ function parseWords(xml) {
     const pos = simplifyPos(attr(tag, "pos"), morph);
     const gloss = attr(tag, "gloss") || attr(tag, "english") || lemma;
     const ref = attr(tag, "ref").replace("!", ":");
+    const strong = normalizeStrongNumber(attr(tag, "strongnumberx") || attr(tag, "strong"));
 
     if (!surface || !/[\u0590-\u05FF]/.test(surface)) continue;
 
@@ -97,7 +103,8 @@ function parseWords(xml) {
       p: pos,
       g: gloss.replaceAll(".", " "),
       m: morph,
-      r: ref
+      r: ref,
+      s: strong
     });
   }
 

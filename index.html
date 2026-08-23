@@ -19,6 +19,7 @@
             <select id="mode-select" aria-label="Mode">
               <option value="study">Study</option>
               <option value="reading">Reading</option>
+              <option value="verbs">Verb Practice</option>
             </select>
             <button id="settings-button" class="text-link" type="button">Settings</button>
             <button id="manage-mastered-button" class="text-link" type="button">Manage mastered</button>
@@ -53,6 +54,26 @@
               <button id="reading-prev-button" class="secondary-button" type="button">Previous</button>
               <button id="reading-next-button" class="secondary-button" type="button">Next</button>
             </div>
+          </div>
+        </section>
+
+        <section id="verb-practice-section" class="verb-practice hidden" aria-live="polite">
+          <select id="verb-select" class="verb-select" aria-label="Jump to verb"></select>
+          <button id="verb-card-button" class="verb-card-button" type="button" aria-label="Next verb">
+            <span id="verb-root" class="verb-root" dir="rtl"></span>
+            <span id="verb-gloss" class="verb-gloss hidden"></span>
+            <span id="verb-selection-label" class="verb-selection-label hidden"></span>
+            <span id="verb-aspect-help" class="verb-aspect-help hidden"></span>
+            <span id="verb-answer-gloss" class="verb-answer-gloss hidden"></span>
+          </button>
+          <div class="verb-control-group" aria-label="Person">
+            <div id="verb-person-options" class="verb-options"></div>
+          </div>
+          <div class="verb-control-group" aria-label="Aspect">
+            <div id="verb-aspect-options" class="verb-options"></div>
+          </div>
+          <div class="card-meta">
+            <span id="verb-count">0 / 0</span>
           </div>
         </section>
 
