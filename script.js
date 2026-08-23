@@ -52,6 +52,7 @@ const els = {
   settingsSection: document.querySelector("#settings-section"),
   wordListSection: document.querySelector("#word-list-section"),
   cardButton: document.querySelector("#card-button"),
+  revealButton: document.querySelector("#reveal-button"),
   hebrewWord: document.querySelector("#hebrew-word"),
   englishWord: document.querySelector("#english-word"),
   cardCount: document.querySelector("#card-count"),
@@ -437,17 +438,20 @@ function renderRevealState() {
     els.hebrewWord.classList.remove("hidden");
     els.englishWord.classList.remove("hidden");
     els.cardButton.setAttribute("aria-label", "Finished. Start over");
+    els.revealButton.disabled = true;
     return;
   }
 
   const showingHebrewFirst = direction === "hebrew";
   els.hebrewWord.classList.toggle("hidden", !showingHebrewFirst && !revealed);
   els.englishWord.classList.toggle("hidden", showingHebrewFirst && !revealed);
-  els.cardButton.setAttribute("aria-label", revealed ? "Hide answer" : "Reveal answer");
+  els.cardButton.setAttribute("aria-label", "Next word");
+  els.revealButton.disabled = revealed || !visibleWords.length;
 }
 
-function revealToggle() {
-  revealed = !revealed;
+function revealAnswer() {
+  if (deckFinished || !visibleWords.length || revealed) return;
+  revealed = true;
   renderRevealState();
 }
 
@@ -462,6 +466,15 @@ function moveBy(delta) {
 
 function autoAdvanceStep() {
   if (!visibleWords.length) return;
+  moveBy(1);
+}
+
+function cardTapAction() {
+  if (deckFinished) {
+    showCard(0);
+    return;
+  }
+
   moveBy(1);
 }
 
@@ -521,7 +534,7 @@ function spaceAction() {
     return;
   }
 
-  revealToggle();
+  revealAnswer();
 }
 
 function shuffleWords() {
@@ -869,7 +882,8 @@ els.chapterSelect.addEventListener("change", () => {
     console.error(error);
   });
 });
-els.cardButton.addEventListener("click", spaceAction);
+els.cardButton.addEventListener("click", cardTapAction);
+els.revealButton.addEventListener("click", revealAnswer);
 els.settingsButton.addEventListener("click", () => {
   els.settingsDialog.showModal();
 });

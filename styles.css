@@ -143,6 +143,11 @@ button {
   gap: 6px;
 }
 
+.reveal-answer-button {
+  justify-self: center;
+  width: min(360px, 100%);
+}
+
 .card-meta {
   display: flex;
   align-items: center;
@@ -845,6 +850,10 @@ input[type="search"] {
   .flashcard {
     align-self: center;
     gap: 4px;
+  }
+
+  .reveal-answer-button {
+    width: 100%;
   }
 
   .hebrew {
