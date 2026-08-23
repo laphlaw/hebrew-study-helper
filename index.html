@@ -16,11 +16,15 @@
           <div class="chapter-picker" aria-label="Chapter picker">
             <select id="book-select" aria-label="Book"></select>
             <select id="chapter-select" aria-label="Chapter"></select>
+            <select id="mode-select" aria-label="Mode">
+              <option value="study">Study</option>
+              <option value="reading">Reading</option>
+            </select>
             <button id="manage-mastered-button" class="text-link" type="button">Manage mastered</button>
           </div>
         </div>
 
-        <section class="flashcard" aria-live="polite">
+        <section id="flashcard-section" class="flashcard" aria-live="polite">
           <button id="card-button" class="card-button" type="button" aria-label="Reveal answer">
             <span id="hebrew-word" class="hebrew" dir="rtl">טוֹב</span>
             <span id="english-word" class="english hidden">good</span>
@@ -31,7 +35,26 @@
           </div>
         </section>
 
-        <div class="settings">
+        <section id="reading-section" class="reading-section hidden" aria-live="polite">
+          <div class="reading-toolbar">
+            <div id="reading-status" class="reading-status">Loading...</div>
+            <label class="reading-font-control">
+              <span>Font</span>
+              <input id="reading-font-size" type="range" min="1.6" max="5.5" step="0.1" value="3.2" aria-label="Reading font size">
+              <span id="reading-font-label">3.2rem</span>
+            </label>
+            <button id="reading-fullscreen-button" class="text-link" type="button">Fullscreen</button>
+          </div>
+          <button id="reading-exit-fullscreen-button" class="reading-exit-fullscreen text-link" type="button">Exit fullscreen</button>
+          <div id="reading-text" class="reading-text" dir="rtl">
+            <div id="reading-nav" class="reading-nav" dir="ltr">
+              <button id="reading-prev-button" class="secondary-button" type="button">Previous</button>
+              <button id="reading-next-button" class="secondary-button" type="button">Next</button>
+            </div>
+          </div>
+        </section>
+
+        <div id="settings-section" class="settings">
           <label>
             <span class="sr-only">Direction</span>
             <select id="direction-select">
@@ -78,7 +101,7 @@
           </label>
         </div>
 
-        <details class="word-list">
+        <details id="word-list-section" class="word-list">
           <summary class="list-heading">
             <h2 id="list-title">Words</h2>
           </summary>

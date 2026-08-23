@@ -18,8 +18,10 @@ let currentIndex = 0;
 let revealed = false;
 let direction = "hebrew";
 let formMode = "root";
+let currentMode = "study";
 let maculaIndex = null;
 let autoAdvanceTimer = null;
+let fallbackReadingFullscreen = false;
 const chapterStorageKey = "hebrew-study-helper:last-chapter";
 const masteredWordsStorageKey = "hebrew-study-helper:mastered-words";
 const legacyHiddenWordsStorageKey = "hebrew-study-helper:hidden-words";
@@ -31,6 +33,20 @@ const masteredWords = loadMasteredWordKeys();
 const els = {
   bookSelect: document.querySelector("#book-select"),
   chapterSelect: document.querySelector("#chapter-select"),
+  modeSelect: document.querySelector("#mode-select"),
+  flashcardSection: document.querySelector("#flashcard-section"),
+  readingSection: document.querySelector("#reading-section"),
+  readingStatus: document.querySelector("#reading-status"),
+  readingText: document.querySelector("#reading-text"),
+  readingFontSize: document.querySelector("#reading-font-size"),
+  readingFontLabel: document.querySelector("#reading-font-label"),
+  readingFullscreenButton: document.querySelector("#reading-fullscreen-button"),
+  readingExitFullscreenButton: document.querySelector("#reading-exit-fullscreen-button"),
+  readingNav: document.querySelector("#reading-nav"),
+  readingPrevButton: document.querySelector("#reading-prev-button"),
+  readingNextButton: document.querySelector("#reading-next-button"),
+  settingsSection: document.querySelector("#settings-section"),
+  wordListSection: document.querySelector("#word-list-section"),
   cardButton: document.querySelector("#card-button"),
   hebrewWord: document.querySelector("#hebrew-word"),
   englishWord: document.querySelector("#english-word"),
@@ -142,11 +158,13 @@ function getSavedPreferences() {
     const saved = JSON.parse(localStorage.getItem(preferencesStorageKey) || "{}");
     const legacyAuto = JSON.parse(localStorage.getItem(autoAdvanceStorageKey) || "{}");
     return {
+      mode: saved.mode === "reading" ? "reading" : "study",
       direction: saved.direction === "english" ? "english" : "hebrew",
       formMode: saved.formMode === "text" ? "text" : "root",
       partOfSpeech: ["noun", "verb", "other"].includes(saved.partOfSpeech) ? saved.partOfSpeech : "all",
       showMastered: Boolean(saved.showMastered),
       order: saved.order === "ordered" || localStorage.getItem(orderStorageKey) === "ordered" ? "ordered" : "random",
+      readingFontSize: clampReadingFontSize(saved.readingFontSize),
       autoAdvance: {
         enabled: Boolean(saved.autoAdvance?.enabled ?? legacyAuto.enabled),
         seconds: clampAutoAdvanceSeconds(saved.autoAdvance?.seconds ?? legacyAuto.seconds)
@@ -155,10 +173,12 @@ function getSavedPreferences() {
   } catch {
     return {
       direction: "hebrew",
+      mode: "study",
       formMode: "root",
       partOfSpeech: "all",
       showMastered: false,
       order: "random",
+      readingFontSize: 3.2,
       autoAdvance: { enabled: false, seconds: 3 }
     };
   }
@@ -166,11 +186,13 @@ function getSavedPreferences() {
 
 function savePreferences() {
   localStorage.setItem(preferencesStorageKey, JSON.stringify({
+    mode: els.modeSelect.value,
     direction: els.directionSelect.value,
     formMode: els.formSelect.value,
     partOfSpeech: els.posSelect.value,
     showMastered: els.showMasteredToggle.checked,
     order: els.orderSelect.value,
+    readingFontSize: getReadingFontSize(),
     autoAdvance: {
       enabled: els.autoAdvanceToggle.checked,
       seconds: getAutoAdvanceSeconds()
@@ -180,16 +202,21 @@ function savePreferences() {
 
 function applySavedPreferences() {
   const preferences = getSavedPreferences();
+  currentMode = preferences.mode;
   direction = preferences.direction;
   formMode = preferences.formMode;
+  els.modeSelect.value = preferences.mode;
   els.directionSelect.value = preferences.direction;
   els.formSelect.value = preferences.formMode;
   els.posSelect.value = preferences.partOfSpeech;
   els.showMasteredToggle.checked = preferences.showMastered;
   els.orderSelect.value = preferences.order;
+  els.readingFontSize.value = String(preferences.readingFontSize);
   els.autoAdvanceToggle.checked = preferences.autoAdvance.enabled;
   els.autoAdvanceSpeed.value = String(preferences.autoAdvance.seconds);
+  updateReadingFontSize();
   updateAutoAdvance();
+  renderMode();
 }
 
 function saveAutoAdvanceSettings() {
@@ -206,6 +233,64 @@ function getAutoAdvanceSeconds() {
 
 function formatAutoAdvanceSeconds(seconds) {
   return seconds >= 1 ? `${seconds.toFixed(seconds % 1 ? 1 : 0)}s` : `${Math.round(seconds * 1000)}ms`;
+}
+
+function clampReadingFontSize(value) {
+  return Math.min(Math.max(Number(value) || 3.2, 1.6), 5.5);
+}
+
+function getReadingFontSize() {
+  return clampReadingFontSize(els.readingFontSize.value);
+}
+
+function updateReadingFontSize() {
+  const size = getReadingFontSize();
+  els.readingFontSize.value = String(size);
+  els.readingFontLabel.textContent = `${size.toFixed(1)}rem`;
+  els.readingText.style.setProperty("--reading-font-size", `${size}rem`);
+}
+
+function isReadingFullscreen() {
+  return document.fullscreenElement === els.readingSection || fallbackReadingFullscreen;
+}
+
+function renderReadingFullscreenState() {
+  els.readingSection.classList.toggle("is-fullscreen", fallbackReadingFullscreen);
+  els.readingFullscreenButton.textContent = isReadingFullscreen() ? "Exit fullscreen" : "Fullscreen";
+}
+
+async function enterReadingFullscreen() {
+  if (document.fullscreenElement === els.readingSection) return;
+
+  try {
+    if (els.readingSection.requestFullscreen) {
+      await els.readingSection.requestFullscreen();
+    } else {
+      fallbackReadingFullscreen = true;
+    }
+  } catch {
+    fallbackReadingFullscreen = true;
+  }
+
+  renderReadingFullscreenState();
+}
+
+async function exitReadingFullscreen() {
+  if (document.fullscreenElement && document.exitFullscreen) {
+    await document.exitFullscreen();
+  }
+
+  fallbackReadingFullscreen = false;
+  renderReadingFullscreenState();
+}
+
+function toggleReadingFullscreen() {
+  if (isReadingFullscreen()) {
+    exitReadingFullscreen().catch(console.error);
+    return;
+  }
+
+  enterReadingFullscreen().catch(console.error);
 }
 
 function wordToMasteredRecord(word) {
@@ -367,6 +452,24 @@ function updateAutoAdvance() {
 function handleAutoAdvanceChange() {
   saveAutoAdvanceSettings();
   updateAutoAdvance();
+}
+
+function renderMode() {
+  const readingMode = currentMode === "reading";
+  els.flashcardSection.classList.toggle("hidden", readingMode);
+  els.settingsSection.classList.toggle("hidden", readingMode);
+  els.wordListSection.classList.toggle("hidden", readingMode);
+  els.readingSection.classList.toggle("hidden", !readingMode);
+  els.manageMasteredButton.classList.toggle("hidden", readingMode);
+
+  if (readingMode) {
+    stopAutoAdvance();
+  } else {
+    if (isReadingFullscreen()) {
+      exitReadingFullscreen().catch(console.error);
+    }
+    updateAutoAdvance();
+  }
 }
 
 function spaceAction() {
@@ -566,7 +669,7 @@ async function initMaculaPicker() {
   els.chapterSelect.value = currentBook?.chapters.includes(savedChapter.chapter)
     ? String(savedChapter.chapter)
     : "1";
-  await loadSelectedChapter();
+  await loadCurrentChapter();
 }
 
 function getSavedChapter() {
@@ -598,6 +701,89 @@ function renderChapterOptions() {
   });
 }
 
+function getAdjacentChapter(delta) {
+  const books = maculaIndex?.books || [];
+  const bookIndex = books.findIndex((item) => item.code === els.bookSelect.value);
+  const book = books[bookIndex];
+  const chapter = Number(els.chapterSelect.value);
+  if (!book || !chapter) return null;
+
+  const chapterIndex = book.chapters.indexOf(chapter);
+  const nextChapter = book.chapters[chapterIndex + delta];
+  if (nextChapter) return { book, chapter: nextChapter };
+
+  const adjacentBook = books[bookIndex + delta];
+  if (!adjacentBook) return null;
+
+  return {
+    book: adjacentBook,
+    chapter: delta > 0 ? adjacentBook.chapters[0] : adjacentBook.chapters.at(-1)
+  };
+}
+
+function updateReadingNavButtons() {
+  els.readingPrevButton.disabled = !getAdjacentChapter(-1);
+  els.readingNextButton.disabled = !getAdjacentChapter(1);
+}
+
+async function moveReadingChapter(delta) {
+  const target = getAdjacentChapter(delta);
+  if (!target) return;
+
+  els.bookSelect.value = target.book.code;
+  renderChapterOptions();
+  els.chapterSelect.value = String(target.chapter);
+  await loadCurrentChapter();
+  els.readingText.scrollTop = 0;
+}
+
+function stripMarkup(value = "") {
+  const template = document.createElement("template");
+  template.innerHTML = value;
+  return template.content.textContent.trim();
+}
+
+function stripCantillation(value = "") {
+  return value.replace(/[\u0591-\u05AF]/g, "");
+}
+
+function sefariaRef(book, chapter) {
+  return `${book.name}.${chapter}`;
+}
+
+async function loadReadingChapter(book, chapter) {
+  els.readingStatus.textContent = "Loading...";
+  els.readingText.innerHTML = "";
+
+  const url = `https://www.sefaria.org/api/texts/${encodeURIComponent(sefariaRef(book, chapter))}?context=0&commentary=0`;
+  const response = await fetch(url);
+  if (!response.ok) throw new Error(`Could not load ${book.name} ${chapter} from Sefaria`);
+  const data = await response.json();
+  const verses = Array.isArray(data.he) ? data.he : [];
+
+  els.readingStatus.textContent = data.heRef || `${book.name} ${chapter}`;
+  els.readingText.innerHTML = "";
+
+  verses.forEach((verse, index) => {
+    const row = document.createElement("p");
+    row.className = "reading-verse";
+
+    const number = document.createElement("span");
+    number.className = "verse-number";
+    number.textContent = String(index + 1);
+
+    const text = document.createElement("span");
+    text.className = "verse-text";
+    text.textContent = stripCantillation(stripMarkup(verse));
+
+    row.append(number, text);
+    els.readingText.append(row);
+  });
+
+  updateReadingNavButtons();
+  els.readingText.append(els.readingNav);
+}
+
 async function loadSelectedChapter() {
   const book = maculaIndex?.books.find((item) => item.code === els.bookSelect.value);
   const chapter = Number(els.chapterSelect.value);
@@ -617,17 +803,41 @@ async function loadSelectedChapter() {
   renderList();
 }
 
+async function loadCurrentChapter() {
+  const book = maculaIndex?.books.find((item) => item.code === els.bookSelect.value);
+  const chapter = Number(els.chapterSelect.value);
+  if (!book || !chapter) return;
+
+  if (currentMode === "reading") {
+    saveSelectedChapter(book, chapter);
+    await loadReadingChapter(book, chapter);
+    return;
+  }
+
+  await loadSelectedChapter();
+}
+
 els.bookSelect.addEventListener("change", () => {
   renderChapterOptions();
-  loadSelectedChapter().catch(console.error);
+  loadCurrentChapter().catch(console.error);
 });
 els.chapterSelect.addEventListener("change", () => {
-  loadSelectedChapter().catch((error) => {
+  loadCurrentChapter().catch((error) => {
     console.error(error);
   });
 });
 els.cardButton.addEventListener("click", spaceAction);
 els.searchInput.addEventListener("input", applyFilter);
+els.modeSelect.addEventListener("change", () => {
+  currentMode = els.modeSelect.value;
+  savePreferences();
+  renderMode();
+  loadCurrentChapter().catch((error) => {
+    console.error(error);
+    els.readingStatus.textContent = "Could not load reading text.";
+    els.readingText.append(els.readingNav);
+  });
+});
 els.posSelect.addEventListener("change", () => {
   savePreferences();
   applyFilter();
@@ -643,6 +853,24 @@ els.orderSelect.addEventListener("change", () => {
 els.autoAdvanceToggle.addEventListener("change", handleAutoAdvanceChange);
 els.autoAdvanceSpeed.addEventListener("change", handleAutoAdvanceChange);
 els.autoAdvanceSpeed.addEventListener("input", handleAutoAdvanceChange);
+els.readingFontSize.addEventListener("input", () => {
+  updateReadingFontSize();
+  savePreferences();
+});
+els.readingFontSize.addEventListener("change", () => {
+  updateReadingFontSize();
+  savePreferences();
+});
+els.readingFullscreenButton.addEventListener("click", toggleReadingFullscreen);
+els.readingExitFullscreenButton.addEventListener("click", () => {
+  exitReadingFullscreen().catch(console.error);
+});
+els.readingPrevButton.addEventListener("click", () => {
+  moveReadingChapter(-1).catch(console.error);
+});
+els.readingNextButton.addEventListener("click", () => {
+  moveReadingChapter(1).catch(console.error);
+});
 els.manageMasteredButton.addEventListener("click", openMasteredModal);
 els.removeAllMasteredButton.addEventListener("click", removeAllMasteredWords);
 els.masterWordButton.addEventListener("click", toggleCurrentMasteredWord);
@@ -659,6 +887,11 @@ els.directionSelect.addEventListener("change", (event) => {
 
 document.addEventListener("keydown", (event) => {
   if (event.target.matches("input, select")) return;
+  if (event.key === "Escape" && els.readingSection.classList.contains("is-fullscreen")) {
+    exitReadingFullscreen().catch(console.error);
+    return;
+  }
+  if (currentMode === "reading") return;
   if (event.key === " ") {
     event.preventDefault();
     spaceAction();
@@ -667,6 +900,8 @@ document.addEventListener("keydown", (event) => {
   if (event.key === "ArrowLeft") moveBy(-1);
   if (event.key.toLowerCase() === "h") toggleCurrentMasteredWord();
 });
+
+document.addEventListener("fullscreenchange", renderReadingFullscreenState);
 
 showCard(0);
 renderList();
