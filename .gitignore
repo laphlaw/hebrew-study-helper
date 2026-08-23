@@ -1,0 +1,5 @@
+.DS_Store
+.vercel/
+data-sources/
+dist/
+words.csv

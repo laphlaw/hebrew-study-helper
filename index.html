@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Hebrew Word Study Helper</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="study-panel" aria-labelledby="app-title">
+        <div class="topbar">
+          <div class="brand-line">
+            <h1 id="app-title">Word Helper</h1>
+          </div>
+          <div class="chapter-picker" aria-label="Chapter picker">
+            <select id="book-select" aria-label="Book"></select>
+            <select id="chapter-select" aria-label="Chapter"></select>
+          </div>
+        </div>
+
+        <section class="flashcard" aria-live="polite">
+          <button id="card-button" class="card-button" type="button" aria-label="Reveal answer">
+            <span id="hebrew-word" class="hebrew" dir="rtl">טוֹב</span>
+            <span id="english-word" class="english hidden">good</span>
+          </button>
+          <div class="card-meta">
+            <span id="card-count">0 / 0</span>
+          </div>
+        </section>
+
+        <div class="settings">
+          <label>
+            <span class="sr-only">Direction</span>
+            <select id="direction-select">
+              <option value="hebrew">Hebrew to English</option>
+              <option value="english">English to Hebrew</option>
+            </select>
+          </label>
+          <label>
+            <span class="sr-only">Form</span>
+            <select id="form-select">
+              <option value="root">Root/headword</option>
+              <option value="text">As it appears</option>
+            </select>
+          </label>
+          <label>
+            <span class="sr-only">Part of speech</span>
+            <select id="pos-select">
+              <option value="all">All words</option>
+              <option value="noun">Nouns</option>
+              <option value="verb">Verbs</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+          <label>
+            <span class="sr-only">Filter</span>
+            <input id="search-input" type="search" placeholder="Search Hebrew, root, or English">
+          </label>
+        </div>
+
+        <details class="word-list">
+          <summary class="list-heading">
+            <h2 id="list-title">Words</h2>
+          </summary>
+          <div id="word-table" class="word-table"></div>
+        </details>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

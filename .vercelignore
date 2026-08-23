@@ -1,0 +1,4 @@
+data-sources/
+.git/
+.DS_Store
+words.csv
