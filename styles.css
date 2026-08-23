@@ -213,6 +213,22 @@ button {
   visibility: hidden;
 }
 
+@media (orientation: landscape) and (min-width: 641px) and (max-height: 900px) {
+  .card-button {
+    height: clamp(300px, 54dvh, 520px);
+  }
+
+  .hebrew {
+    font-size: clamp(5rem, 10vw, 8.8rem);
+    line-height: 1.22;
+  }
+
+  .english {
+    top: calc(50% + clamp(100px, 16vh, 150px));
+    font-size: clamp(1.35rem, 2.6vw, 2.1rem);
+  }
+}
+
 .settings {
   align-items: stretch;
   flex-wrap: wrap;
