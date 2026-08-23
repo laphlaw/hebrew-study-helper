@@ -20,6 +20,9 @@ let direction = "hebrew";
 let formMode = "root";
 let maculaIndex = null;
 const chapterStorageKey = "hebrew-study-helper:last-chapter";
+const masteredWordsStorageKey = "hebrew-study-helper:mastered-words";
+const legacyHiddenWordsStorageKey = "hebrew-study-helper:hidden-words";
+const masteredWords = loadMasteredWordKeys();
 
 const els = {
   bookSelect: document.querySelector("#book-select"),
@@ -28,10 +31,17 @@ const els = {
   hebrewWord: document.querySelector("#hebrew-word"),
   englishWord: document.querySelector("#english-word"),
   cardCount: document.querySelector("#card-count"),
+  masterWordButton: document.querySelector("#master-word-button"),
   directionSelect: document.querySelector("#direction-select"),
   formSelect: document.querySelector("#form-select"),
   posSelect: document.querySelector("#pos-select"),
   searchInput: document.querySelector("#search-input"),
+  showMasteredToggle: document.querySelector("#show-mastered-toggle"),
+  manageMasteredButton: document.querySelector("#manage-mastered-button"),
+  removeAllMasteredButton: document.querySelector("#remove-all-mastered-button"),
+  masteredDialog: document.querySelector("#mastered-dialog"),
+  masteredSummary: document.querySelector("#mastered-summary"),
+  masteredList: document.querySelector("#mastered-list"),
   wordTable: document.querySelector("#word-table")
 };
 
@@ -80,6 +90,54 @@ function containsHebrew(value = "") {
 
 function stripNiqqud(value = "") {
   return value.replace(/[\u0591-\u05C7]/g, "");
+}
+
+function normalizeMasteredKeyPart(value = "") {
+  return stripNiqqud(value).replace(/[־\s]/g, "").toLowerCase();
+}
+
+function getWordKey([hebrew, , pos, root]) {
+  return `${pos}|${normalizeMasteredKeyPart(root || hebrew)}`;
+}
+
+function isWordMastered(word) {
+  return masteredWords.has(getWordKey(word));
+}
+
+function loadMasteredWordKeys() {
+  try {
+    const savedText =
+      localStorage.getItem(masteredWordsStorageKey) ||
+      localStorage.getItem(legacyHiddenWordsStorageKey) ||
+      "[]";
+    const saved = JSON.parse(savedText);
+    const entries = Array.isArray(saved) ? saved : [];
+    return new Map(entries.map((entry) => {
+      if (typeof entry === "string") {
+        const [, root = entry] = entry.split("|");
+        return [entry, { key: entry, hebrew: root, root, english: "", pos: entry.split("|")[0] || "other" }];
+      }
+
+      return [entry.key, entry];
+    }).filter(([key]) => key));
+  } catch {
+    return new Map();
+  }
+}
+
+function saveMasteredWordKeys() {
+  localStorage.setItem(masteredWordsStorageKey, JSON.stringify([...masteredWords.values()]));
+}
+
+function wordToMasteredRecord(word) {
+  const [hebrew, english, pos, root] = word;
+  return {
+    key: getWordKey(word),
+    hebrew,
+    root: root || hebrew,
+    english: formatAnswer(english),
+    pos
+  };
 }
 
 function deriveHeadword(hebrew, pos) {
@@ -168,6 +226,8 @@ function showCard(index = currentIndex) {
     els.hebrewWord.textContent = "אין מילים";
     els.englishWord.textContent = "No matching words";
     els.cardCount.textContent = "0 / 0";
+    els.masterWordButton.disabled = true;
+    els.masterWordButton.textContent = "Mark as mastered";
     revealed = true;
     renderRevealState();
     return;
@@ -175,10 +235,13 @@ function showCard(index = currentIndex) {
 
   currentIndex = (index + visibleWords.length) % visibleWords.length;
   revealed = false;
-  const [hebrew, english] = visibleWords[currentIndex];
+  const word = visibleWords[currentIndex];
+  const [hebrew, english] = word;
   els.hebrewWord.textContent = hebrew;
   els.englishWord.textContent = formatAnswer(english);
   els.cardCount.textContent = `${currentIndex + 1} / ${visibleWords.length}`;
+  els.masterWordButton.disabled = false;
+  els.masterWordButton.textContent = isWordMastered(word) ? "Unmaster" : "Mark as mastered";
   renderRevealState();
 }
 
@@ -226,25 +289,120 @@ function shuffledWords(words) {
 function applyFilter() {
   const query = els.searchInput.value.trim().toLowerCase();
   const selectedPos = els.posSelect.value;
+  const showMastered = els.showMasteredToggle.checked;
   studyWords = getStudyWords();
-  visibleWords = studyWords.filter(([hebrew, english, pos, root]) => {
+  visibleWords = studyWords.filter((word) => {
+    const [hebrew, english, pos, root] = word;
     const matchesText =
       hebrew.includes(query) ||
       root.includes(query) ||
       english.toLowerCase().includes(query);
     const matchesPartOfSpeech = selectedPos === "all" || pos === selectedPos;
-    return matchesText && matchesPartOfSpeech;
+    const matchesMastered = showMastered || !isWordMastered(word);
+    return matchesText && matchesPartOfSpeech && matchesMastered;
   });
   showCard(0);
   renderList();
 }
 
+function toggleMasteredWord(word) {
+  const key = getWordKey(word);
+  const willMaster = !masteredWords.has(key);
+  if (masteredWords.has(key)) {
+    masteredWords.delete(key);
+  } else {
+    masteredWords.set(key, wordToMasteredRecord(word));
+  }
+
+  saveMasteredWordKeys();
+  renderMasteredModal();
+  if (willMaster && !els.showMasteredToggle.checked) {
+    visibleWords = visibleWords.filter((visibleWord) => getWordKey(visibleWord) !== key);
+    showCard(Math.min(currentIndex, visibleWords.length - 1));
+    renderList();
+    return;
+  }
+
+  showCard(currentIndex);
+  renderList();
+}
+
+function unmasterWordByKey(key) {
+  masteredWords.delete(key);
+  saveMasteredWordKeys();
+  applyFilter();
+  renderMasteredModal();
+}
+
+function getMasteredRecords() {
+  return [...masteredWords.values()]
+    .sort((a, b) => stripNiqqud(a.root || a.hebrew).localeCompare(stripNiqqud(b.root || b.hebrew)));
+}
+
+function renderMasteredModal() {
+  els.masteredSummary.textContent = `${masteredWords.size} mastered ${masteredWords.size === 1 ? "word" : "words"}`;
+  els.removeAllMasteredButton.disabled = masteredWords.size === 0;
+  els.masteredList.innerHTML = "";
+
+  const records = getMasteredRecords();
+  if (!records.length) {
+    const empty = document.createElement("p");
+    empty.className = "empty-mastered";
+    empty.textContent = "No mastered words yet.";
+    els.masteredList.append(empty);
+    return;
+  }
+
+  records.forEach((record) => {
+    const row = document.createElement("div");
+    row.className = "mastered-row";
+
+    const hebrew = document.createElement("span");
+    hebrew.className = "mastered-hebrew";
+    hebrew.dir = "rtl";
+    hebrew.textContent = record.hebrew || record.root || record.key;
+
+    const details = document.createElement("span");
+    details.className = "mastered-details";
+    details.textContent = [record.english, record.root && `Root: ${record.root}`, record.pos].filter(Boolean).join(" | ");
+
+    const action = document.createElement("button");
+    action.type = "button";
+    action.className = "secondary-button";
+    action.textContent = "Remove";
+    action.addEventListener("click", () => unmasterWordByKey(record.key));
+
+    row.append(hebrew, details, action);
+    els.masteredList.append(row);
+  });
+}
+
+function removeAllMasteredWords() {
+  masteredWords.clear();
+  saveMasteredWordKeys();
+  applyFilter();
+  renderMasteredModal();
+}
+
+function openMasteredModal() {
+  renderMasteredModal();
+  els.masteredDialog.showModal();
+}
+
+function toggleCurrentMasteredWord() {
+  if (!visibleWords.length) return;
+  toggleMasteredWord(visibleWords[currentIndex]);
+}
+
 function renderList() {
   els.wordTable.innerHTML = "";
 
-  visibleWords.forEach(([hebrew, english, pos, root], index) => {
+  visibleWords.forEach((word, index) => {
+    const [hebrew, english, pos, root] = word;
+    const mastered = isWordMastered(word);
     const row = document.createElement("div");
     row.className = "word-row";
+    row.classList.toggle("is-mastered-word", mastered);
 
     const hebrewButton = document.createElement("button");
     hebrewButton.type = "button";
@@ -262,7 +420,13 @@ function renderList() {
     posBadge.className = `pos-badge ${pos}`;
     posBadge.textContent = pos;
 
-    row.append(hebrewButton, englishButton, posBadge);
+    const masterButton = document.createElement("button");
+    masterButton.type = "button";
+    masterButton.className = "master-row-button";
+    masterButton.textContent = mastered ? "Unmaster" : "Master";
+    masterButton.addEventListener("click", () => toggleMasteredWord(word));
+
+    row.append(hebrewButton, englishButton, posBadge, masterButton);
     els.wordTable.append(row);
   });
 }
@@ -333,7 +497,7 @@ async function loadSelectedChapter() {
 
   allWords = uniqueWordsFromMacula(records);
   studyWords = getStudyWords();
-  visibleWords = shuffledWords(studyWords);
+  visibleWords = shuffledWords(studyWords.filter((word) => els.showMasteredToggle.checked || !isWordMastered(word)));
   currentIndex = 0;
   els.searchInput.value = "";
   saveSelectedChapter(book, chapter);
@@ -353,6 +517,10 @@ els.chapterSelect.addEventListener("change", () => {
 els.cardButton.addEventListener("click", spaceAction);
 els.searchInput.addEventListener("input", applyFilter);
 els.posSelect.addEventListener("change", applyFilter);
+els.showMasteredToggle.addEventListener("change", applyFilter);
+els.manageMasteredButton.addEventListener("click", openMasteredModal);
+els.removeAllMasteredButton.addEventListener("click", removeAllMasteredWords);
+els.masterWordButton.addEventListener("click", toggleCurrentMasteredWord);
 els.formSelect.addEventListener("change", (event) => {
   formMode = event.target.value;
   applyFilter();
@@ -370,6 +538,7 @@ document.addEventListener("keydown", (event) => {
   }
   if (event.key === "ArrowRight") moveBy(1);
   if (event.key === "ArrowLeft") moveBy(-1);
+  if (event.key.toLowerCase() === "h") toggleCurrentMasteredWord();
 });
 
 showCard(0);

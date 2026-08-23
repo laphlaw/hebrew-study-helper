@@ -16,6 +16,7 @@
           <div class="chapter-picker" aria-label="Chapter picker">
             <select id="book-select" aria-label="Book"></select>
             <select id="chapter-select" aria-label="Chapter"></select>
+            <button id="manage-mastered-button" class="text-link" type="button">Manage mastered</button>
           </div>
         </div>
 
@@ -26,6 +27,7 @@
           </button>
           <div class="card-meta">
             <span id="card-count">0 / 0</span>
+            <button id="master-word-button" class="subtle-button" type="button">Mark as mastered</button>
           </div>
         </section>
 
@@ -57,6 +59,10 @@
             <span class="sr-only">Filter</span>
             <input id="search-input" type="search" placeholder="Search Hebrew, root, or English">
           </label>
+          <label class="inline-check">
+            <input id="show-mastered-toggle" type="checkbox">
+            <span>Show mastered</span>
+          </label>
         </div>
 
         <details class="word-list">
@@ -67,6 +73,23 @@
         </details>
       </section>
     </main>
+
+    <dialog id="mastered-dialog" class="mastered-dialog" aria-labelledby="mastered-title">
+      <form method="dialog" class="mastered-modal">
+        <div class="modal-topbar">
+          <div>
+            <h2 id="mastered-title">Mastered Words</h2>
+            <p id="mastered-summary">0 words</p>
+          </div>
+          <div class="modal-actions">
+            <button id="remove-all-mastered-button" class="secondary-button" type="button">Remove all</button>
+            <button class="icon-button" type="submit" aria-label="Close">×</button>
+          </div>
+        </div>
+
+        <div id="mastered-list" class="mastered-list"></div>
+      </form>
+    </dialog>
 
     <script src="script.js"></script>
   </body>
