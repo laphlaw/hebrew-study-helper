@@ -16,6 +16,7 @@ let studyWords = [...allWords];
 let visibleWords = [...studyWords];
 let currentIndex = 0;
 let revealed = false;
+let deckFinished = false;
 let direction = "hebrew";
 let formMode = "root";
 let currentMode = "study";
@@ -45,6 +46,9 @@ const els = {
   readingNav: document.querySelector("#reading-nav"),
   readingPrevButton: document.querySelector("#reading-prev-button"),
   readingNextButton: document.querySelector("#reading-next-button"),
+  settingsButton: document.querySelector("#settings-button"),
+  settingsCloseButton: document.querySelector("#settings-close-button"),
+  settingsDialog: document.querySelector("#settings-dialog"),
   settingsSection: document.querySelector("#settings-section"),
   wordListSection: document.querySelector("#word-list-section"),
   cardButton: document.querySelector("#card-button"),
@@ -387,6 +391,7 @@ function formatAnswer(english) {
 
 function showCard(index = currentIndex) {
   if (!visibleWords.length) {
+    deckFinished = false;
     els.hebrewWord.textContent = "אין מילים";
     els.englishWord.textContent = "No matching words";
     els.cardCount.textContent = "0 / 0";
@@ -397,6 +402,12 @@ function showCard(index = currentIndex) {
     return;
   }
 
+  if (index >= visibleWords.length) {
+    showFinishedCard();
+    return;
+  }
+
+  deckFinished = false;
   currentIndex = (index + visibleWords.length) % visibleWords.length;
   revealed = false;
   const word = visibleWords[currentIndex];
@@ -409,7 +420,26 @@ function showCard(index = currentIndex) {
   renderRevealState();
 }
 
+function showFinishedCard() {
+  deckFinished = true;
+  revealed = true;
+  els.hebrewWord.textContent = "Finished";
+  els.englishWord.textContent = "Next starts over";
+  els.cardCount.textContent = `${visibleWords.length} / ${visibleWords.length}`;
+  els.masterWordButton.disabled = true;
+  els.masterWordButton.textContent = "Mark as mastered";
+  renderRevealState();
+}
+
 function renderRevealState() {
+  els.cardButton.classList.toggle("is-finished", deckFinished);
+  if (deckFinished) {
+    els.hebrewWord.classList.remove("hidden");
+    els.englishWord.classList.remove("hidden");
+    els.cardButton.setAttribute("aria-label", "Finished. Start over");
+    return;
+  }
+
   const showingHebrewFirst = direction === "hebrew";
   els.hebrewWord.classList.toggle("hidden", !showingHebrewFirst && !revealed);
   els.englishWord.classList.toggle("hidden", showingHebrewFirst && !revealed);
@@ -422,6 +452,11 @@ function revealToggle() {
 }
 
 function moveBy(delta) {
+  if (deckFinished) {
+    showCard(delta < 0 ? visibleWords.length - 1 : 0);
+    return;
+  }
+
   showCard(currentIndex + delta);
 }
 
@@ -457,12 +492,15 @@ function handleAutoAdvanceChange() {
 function renderMode() {
   const readingMode = currentMode === "reading";
   els.flashcardSection.classList.toggle("hidden", readingMode);
-  els.settingsSection.classList.toggle("hidden", readingMode);
+  els.settingsButton.classList.toggle("hidden", readingMode);
   els.wordListSection.classList.toggle("hidden", readingMode);
   els.readingSection.classList.toggle("hidden", !readingMode);
   els.manageMasteredButton.classList.toggle("hidden", readingMode);
 
   if (readingMode) {
+    if (els.settingsDialog.open) {
+      els.settingsDialog.close();
+    }
     stopAutoAdvance();
   } else {
     if (isReadingFullscreen()) {
@@ -473,6 +511,11 @@ function renderMode() {
 }
 
 function spaceAction() {
+  if (deckFinished) {
+    showCard(0);
+    return;
+  }
+
   if (revealed) {
     moveBy(1);
     return;
@@ -606,7 +649,7 @@ function openMasteredModal() {
 }
 
 function toggleCurrentMasteredWord() {
-  if (!visibleWords.length) return;
+  if (!visibleWords.length || deckFinished) return;
   toggleMasteredWord(visibleWords[currentIndex]);
 }
 
@@ -827,6 +870,12 @@ els.chapterSelect.addEventListener("change", () => {
   });
 });
 els.cardButton.addEventListener("click", spaceAction);
+els.settingsButton.addEventListener("click", () => {
+  els.settingsDialog.showModal();
+});
+els.settingsCloseButton.addEventListener("click", () => {
+  els.settingsDialog.close();
+});
 els.searchInput.addEventListener("input", applyFilter);
 els.modeSelect.addEventListener("change", () => {
   currentMode = els.modeSelect.value;
