@@ -850,13 +850,10 @@ async function loadSelectedChapter() {
   const records = await response.json();
 
   allWords = uniqueWordsFromMacula(records);
-  studyWords = getStudyWords();
-  visibleWords = orderWords(studyWords.filter((word) => els.showMasteredToggle.checked || !isWordMastered(word)));
   currentIndex = 0;
   els.searchInput.value = "";
   saveSelectedChapter(book, chapter);
-  showCard(0);
-  renderList();
+  applyFilter();
 }
 
 async function loadCurrentChapter() {
