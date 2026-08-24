@@ -1554,7 +1554,7 @@ function stripMarkup(value = "") {
 }
 
 function stripCantillation(value = "") {
-  return value.replace(/[\u0591-\u05AF]/g, "");
+  return value.replace(/[\u0591-\u05AF\u05BD]/g, "");
 }
 
 function audioFlashcardRefOrder(ref = "") {
