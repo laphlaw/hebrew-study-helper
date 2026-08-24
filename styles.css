@@ -148,6 +148,156 @@ button {
   gap: 10px;
 }
 
+.writing-practice {
+  display: grid;
+  gap: 10px;
+}
+
+.writing-card-button {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: clamp(16px, 3vw, 28px);
+  width: 100%;
+  min-height: clamp(250px, 36vh, 360px);
+  padding: clamp(22px, 5vw, 46px);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(250, 247, 241, 0.92)),
+    repeating-linear-gradient(0deg, transparent, transparent 31px, rgba(216, 208, 197, 0.32) 32px);
+  text-align: center;
+}
+
+@media (hover: hover) {
+  .writing-card-button:hover {
+    color: var(--ink);
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(250, 247, 241, 0.96)),
+      repeating-linear-gradient(0deg, transparent, transparent 31px, rgba(216, 208, 197, 0.38) 32px);
+  }
+}
+
+.writing-prompt {
+  max-width: min(720px, 100%);
+  color: var(--muted);
+  font-size: clamp(1.35rem, 3vw, 2.2rem);
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.writing-slots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  max-width: 100%;
+  direction: rtl;
+}
+
+.writing-slot {
+  display: inline-grid;
+  place-items: center;
+  width: clamp(44px, 7vw, 64px);
+  height: clamp(56px, 8vw, 76px);
+  border: 2px solid rgba(102, 93, 85, 0.34);
+  border-radius: 6px;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.72);
+  font-family: "SBL Hebrew", "SBL_Hbrw", "Ezra SIL", "Cardo", "SF Hebrew", "Times New Roman", serif;
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  line-height: 1;
+}
+
+.writing-slot.is-filled {
+  border-color: rgba(31, 111, 120, 0.55);
+  background: #fff;
+}
+
+.writing-slot.is-current {
+  border-color: var(--accent);
+}
+
+.writing-slot.is-wrong {
+  border-color: #b65a2b;
+}
+
+.writing-status {
+  min-height: 1.2em;
+  color: var(--accent);
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 900;
+}
+
+.hebrew-keyboard {
+  display: grid;
+  gap: 8px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 253, 248, 0.78);
+}
+
+.keyboard-row {
+  display: grid;
+  grid-template-columns: repeat(9, minmax(34px, 1fr));
+  gap: 6px;
+}
+
+.mark-row {
+  grid-template-columns: repeat(auto-fit, minmax(42px, 1fr));
+}
+
+.action-row {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.hebrew-key,
+.keyboard-action {
+  min-width: 0;
+  min-height: 42px;
+  padding: 0 10px;
+  border-color: var(--line);
+  color: var(--ink);
+  background: #fff;
+  font-weight: 800;
+}
+
+.hebrew-key {
+  font-family: "SBL Hebrew", "SBL_Hbrw", "Ezra SIL", "Cardo", "SF Hebrew", "Times New Roman", serif;
+  font-size: 1.75rem;
+  line-height: 1;
+}
+
+.mark-key {
+  min-width: 38px;
+  color: var(--muted);
+  font-size: 1.28rem;
+}
+
+.keyboard-action {
+  min-width: 76px;
+  color: #fff;
+  background: var(--accent);
+  border-color: var(--accent);
+  font-size: 0.9rem;
+}
+
+@media (hover: hover) {
+  .hebrew-key:hover {
+    color: var(--accent);
+    background: #fff;
+    border-color: var(--accent);
+    transform: none;
+  }
+
+  .keyboard-action:hover {
+    color: #fff;
+    background: var(--accent-dark);
+    border-color: var(--accent-dark);
+  }
+}
+
 .verb-select {
   justify-self: center;
   width: min(420px, 100%);
@@ -486,6 +636,95 @@ button {
     repeating-linear-gradient(0deg, transparent, transparent 31px, rgba(216, 208, 197, 0.22) 32px);
 }
 
+.audio-flashcard-section {
+  display: grid;
+  gap: 12px;
+  min-height: min(680px, calc(100dvh - 150px));
+  padding: clamp(14px, 2vw, 24px);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(250, 247, 241, 0.96)),
+    repeating-linear-gradient(0deg, transparent, transparent 31px, rgba(216, 208, 197, 0.18) 32px);
+}
+
+.audio-flashcard-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.audio-flashcard-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.audio-flashcard-controls {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.audio-flashcard-controls label {
+  display: grid;
+  gap: 5px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.audio-flashcard-controls input,
+.audio-flashcard-controls select {
+  width: 100%;
+  min-height: 42px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--ink);
+  background: #fff;
+}
+
+.audio-flashcard-controls .audio-flashcard-check {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--ink);
+  background: #fff;
+}
+
+.audio-flashcard-check input {
+  width: 18px;
+  min-height: 0;
+  height: 18px;
+  padding: 0;
+  accent-color: var(--accent);
+}
+
+.audio-flashcard-status {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.audio-flashcard-text {
+  width: 100%;
+  min-height: min(560px, calc(100dvh - 230px));
+  resize: vertical;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--ink);
+  background: #fff;
+  font-family: "SBL Hebrew", "SBL_Hbrw", "Ezra SIL", "Cardo", "SF Hebrew", "Times New Roman", serif;
+  font-size: clamp(1.35rem, 2.8vw, 2rem);
+  line-height: 1.8;
+}
+
 .reading-section:fullscreen,
 .reading-section.is-fullscreen {
   position: fixed;
@@ -504,7 +743,9 @@ button {
 }
 
 .flashcard.hidden,
+.audio-flashcard-section.hidden,
 .verb-practice.hidden,
+.writing-practice.hidden,
 .reading-section.hidden,
 .settings.hidden,
 .word-list.hidden,
@@ -1007,6 +1248,54 @@ input[type="search"] {
     gap: 8px;
   }
 
+  .writing-practice {
+    align-self: start;
+    gap: 8px;
+  }
+
+  .writing-card-button {
+    min-height: clamp(220px, 32dvh, 300px);
+    padding: 18px 12px;
+    gap: 14px;
+  }
+
+  .writing-prompt {
+    font-size: clamp(1.25rem, 6vw, 1.85rem);
+  }
+
+  .writing-slot {
+    width: clamp(40px, 12vw, 54px);
+    height: clamp(52px, 15vw, 68px);
+    font-size: clamp(2rem, 10vw, 3rem);
+  }
+
+  .hebrew-keyboard {
+    padding: 8px;
+    gap: 6px;
+  }
+
+  .keyboard-row {
+    gap: 5px;
+  }
+
+  .hebrew-key {
+    min-width: 34px;
+    min-height: 40px;
+    padding: 0 6px;
+    font-size: 1.45rem;
+  }
+
+  .mark-key {
+    min-width: 34px;
+    font-size: 1.1rem;
+  }
+
+  .keyboard-action {
+    min-width: 0;
+    min-height: 40px;
+    padding: 0 8px;
+  }
+
   .verb-card-button {
     min-height: clamp(240px, 36dvh, 320px);
     padding: 18px;
@@ -1084,6 +1373,29 @@ input[type="search"] {
   .reading-toolbar {
     align-items: stretch;
     flex-direction: column;
+  }
+
+  .audio-flashcard-toolbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .audio-flashcard-actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .audio-flashcard-controls {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .audio-flashcard-controls label:nth-child(3) {
+    grid-column: 1 / -1;
+  }
+
+  .audio-flashcard-text {
+    min-height: min(560px, calc(100dvh - 210px));
+    font-size: clamp(1.25rem, 5.2vw, 1.8rem);
   }
 
   .reading-font-control {

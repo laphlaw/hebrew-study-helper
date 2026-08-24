@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Hebrew Word Study Helper</title>
+    <link rel="icon" href="data:,">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -19,6 +20,8 @@
             <select id="mode-select" aria-label="Mode">
               <option value="study">Study</option>
               <option value="reading">Reading</option>
+              <option value="audio">Audio Flashcards</option>
+              <option value="writing">Writing</option>
               <option value="verbs">Verb Practice</option>
             </select>
             <button id="settings-button" class="text-link" type="button">Settings</button>
@@ -57,6 +60,35 @@
           </div>
         </section>
 
+        <section id="audio-flashcard-section" class="audio-flashcard-section hidden" aria-live="polite">
+          <div class="audio-flashcard-toolbar">
+            <div id="audio-flashcard-status" class="audio-flashcard-status">Loading...</div>
+            <div class="audio-flashcard-actions">
+              <button id="audio-flashcard-select-button" class="secondary-button" type="button">Select text</button>
+              <button id="audio-flashcard-copy-button" class="secondary-button" type="button">Copy</button>
+            </div>
+          </div>
+          <div class="audio-flashcard-controls" aria-label="Audio flashcard settings">
+            <label>
+              <span>Hebrew</span>
+              <input id="audio-hebrew-repeat" type="number" min="0" max="10" step="1" value="2">
+            </label>
+            <label>
+              <span>English</span>
+              <input id="audio-english-repeat" type="number" min="0" max="10" step="1" value="1">
+            </label>
+            <label>
+              <span>Separator</span>
+              <input id="audio-line-separator" type="text" value="." autocapitalize="off" autocomplete="off" spellcheck="false">
+            </label>
+            <label class="audio-flashcard-check">
+              <input id="audio-plain-hebrew-toggle" type="checkbox" checked>
+              <span>Plain Hebrew</span>
+            </label>
+          </div>
+          <textarea id="audio-flashcard-text" class="audio-flashcard-text" spellcheck="false" aria-label="Audio flashcard text"></textarea>
+        </section>
+
         <section id="verb-practice-section" class="verb-practice hidden" aria-live="polite">
           <select id="verb-select" class="verb-select" aria-label="Jump to verb"></select>
           <button id="verb-card-button" class="verb-card-button" type="button" aria-label="Next verb">
@@ -75,6 +107,18 @@
           <div class="card-meta">
             <span id="verb-count">0 / 0</span>
           </div>
+        </section>
+
+        <section id="writing-section" class="writing-practice hidden" aria-live="polite">
+          <button id="writing-card-button" class="writing-card-button" type="button" aria-label="Next writing word">
+            <span id="writing-prompt" class="writing-prompt"></span>
+            <span id="writing-slots" class="writing-slots" dir="rtl"></span>
+            <span id="writing-status" class="writing-status"></span>
+          </button>
+          <div class="card-meta">
+            <span id="writing-count">0 / 0</span>
+          </div>
+          <div id="hebrew-keyboard" class="hebrew-keyboard" aria-label="Hebrew keyboard"></div>
         </section>
 
         <details id="word-list-section" class="word-list">

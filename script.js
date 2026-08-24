@@ -19,12 +19,14 @@ let currentVerbIndex = 0;
 let selectedVerbPerson = "he";
 let selectedVerbAspect = "complete";
 let currentIndex = 0;
+let writingInput = [];
 let revealed = false;
 let deckFinished = false;
 let direction = "hebrew";
 let formMode = "root";
 let currentMode = "study";
 let maculaIndex = null;
+let currentChapterRecords = [];
 let verbFormIndex = {};
 let verbMeaningIndex = {};
 let autoAdvanceTimer = null;
@@ -35,6 +37,7 @@ const legacyHiddenWordsStorageKey = "hebrew-study-helper:hidden-words";
 const autoAdvanceStorageKey = "hebrew-study-helper:auto-advance";
 const orderStorageKey = "hebrew-study-helper:word-order";
 const preferencesStorageKey = "hebrew-study-helper:preferences";
+const audioFlashcardSettingsStorageKey = "hebrew-study-helper:audio-flashcards";
 const masteredWords = loadMasteredWordKeys();
 
 const els = {
@@ -43,7 +46,23 @@ const els = {
   modeSelect: document.querySelector("#mode-select"),
   flashcardSection: document.querySelector("#flashcard-section"),
   readingSection: document.querySelector("#reading-section"),
+  audioFlashcardSection: document.querySelector("#audio-flashcard-section"),
+  audioFlashcardStatus: document.querySelector("#audio-flashcard-status"),
+  audioFlashcardText: document.querySelector("#audio-flashcard-text"),
+  audioFlashcardSelectButton: document.querySelector("#audio-flashcard-select-button"),
+  audioFlashcardCopyButton: document.querySelector("#audio-flashcard-copy-button"),
+  audioHebrewRepeat: document.querySelector("#audio-hebrew-repeat"),
+  audioEnglishRepeat: document.querySelector("#audio-english-repeat"),
+  audioLineSeparator: document.querySelector("#audio-line-separator"),
+  audioPlainHebrewToggle: document.querySelector("#audio-plain-hebrew-toggle"),
   verbPracticeSection: document.querySelector("#verb-practice-section"),
+  writingSection: document.querySelector("#writing-section"),
+  writingCardButton: document.querySelector("#writing-card-button"),
+  writingPrompt: document.querySelector("#writing-prompt"),
+  writingSlots: document.querySelector("#writing-slots"),
+  writingStatus: document.querySelector("#writing-status"),
+  writingCount: document.querySelector("#writing-count"),
+  hebrewKeyboard: document.querySelector("#hebrew-keyboard"),
   verbSelect: document.querySelector("#verb-select"),
   readingStatus: document.querySelector("#reading-status"),
   readingText: document.querySelector("#reading-text"),
@@ -180,7 +199,7 @@ function getSavedPreferences() {
     const saved = JSON.parse(localStorage.getItem(preferencesStorageKey) || "{}");
     const legacyAuto = JSON.parse(localStorage.getItem(autoAdvanceStorageKey) || "{}");
     return {
-      mode: ["reading", "verbs"].includes(saved.mode) ? saved.mode : "study",
+      mode: ["reading", "audio", "writing", "verbs"].includes(saved.mode) ? saved.mode : "study",
       direction: saved.direction === "english" ? "english" : "hebrew",
       formMode: saved.formMode === "text" ? "text" : "root",
       partOfSpeech: ["noun", "verb", "other"].includes(saved.partOfSpeech) ? saved.partOfSpeech : "all",
@@ -1009,15 +1028,19 @@ function handleAutoAdvanceChange() {
 
 function renderMode() {
   const readingMode = currentMode === "reading";
+  const audioMode = currentMode === "audio";
   const verbMode = currentMode === "verbs";
-  els.flashcardSection.classList.toggle("hidden", readingMode || verbMode);
+  const writingMode = currentMode === "writing";
+  els.flashcardSection.classList.toggle("hidden", readingMode || audioMode || verbMode || writingMode);
+  els.audioFlashcardSection.classList.toggle("hidden", !audioMode);
   els.verbPracticeSection.classList.toggle("hidden", !verbMode);
-  els.settingsButton.classList.toggle("hidden", readingMode || verbMode);
-  els.wordListSection.classList.toggle("hidden", readingMode || verbMode);
+  els.writingSection.classList.toggle("hidden", !writingMode);
+  els.settingsButton.classList.toggle("hidden", readingMode || audioMode || verbMode);
+  els.wordListSection.classList.toggle("hidden", readingMode || audioMode || verbMode || writingMode);
   els.readingSection.classList.toggle("hidden", !readingMode);
-  els.manageMasteredButton.classList.toggle("hidden", readingMode || verbMode);
+  els.manageMasteredButton.classList.toggle("hidden", readingMode || audioMode || verbMode);
 
-  if (readingMode || verbMode) {
+  if (readingMode || audioMode || verbMode || writingMode) {
     if (els.settingsDialog.open) {
       els.settingsDialog.close();
     }
@@ -1031,6 +1054,14 @@ function renderMode() {
 
   if (verbMode) {
     renderVerbPractice();
+  }
+
+  if (writingMode) {
+    renderWritingCard();
+  }
+
+  if (audioMode) {
+    renderAudioFlashcards();
   }
 }
 
@@ -1068,6 +1099,179 @@ function orderWords(words) {
   return els.orderSelect.value === "random" ? shuffledWords(words) : [...words];
 }
 
+const hebrewKeyboardRows = [
+  ["א", "ב", "ג", "ד", "ה", "ו", "ז", "ח", "ט"],
+  ["י", "כ", "ך", "ל", "מ", "ם", "נ", "ן", "ס"],
+  ["ע", "פ", "ף", "צ", "ץ", "ק", "ר", "ש", "ת"]
+];
+
+const hebrewMarkKeys = [
+  { label: "◌ּ", value: "\u05BC", title: "Dagesh" },
+  { label: "◌ׁ", value: "\u05C1", title: "Shin dot" },
+  { label: "◌ׂ", value: "\u05C2", title: "Sin dot" },
+  { label: "◌ְ", value: "\u05B0", title: "Sheva" },
+  { label: "◌ִ", value: "\u05B4", title: "Hiriq" },
+  { label: "◌ֵ", value: "\u05B5", title: "Tsere" },
+  { label: "◌ֶ", value: "\u05B6", title: "Segol" },
+  { label: "◌ַ", value: "\u05B7", title: "Patah" },
+  { label: "◌ָ", value: "\u05B8", title: "Qamats" },
+  { label: "◌ֹ", value: "\u05B9", title: "Holam" },
+  { label: "◌ֻ", value: "\u05BB", title: "Qubuts" }
+];
+
+function hebrewLetterClusters(value = "") {
+  return [...value.normalize("NFC").matchAll(/[א-ת][\u0591-\u05C7]*/g)].map((match) => match[0]);
+}
+
+function writingTargetClusters(word = visibleWords[currentIndex]) {
+  return hebrewLetterClusters(word?.[0] || "");
+}
+
+function writingConsonants(value = "") {
+  return stripNiqqud(value).replace(/[^א-ת]/g, "");
+}
+
+function currentWritingWord() {
+  return visibleWords[currentIndex];
+}
+
+function writingIsCorrect() {
+  const target = writingConsonants(currentWritingWord()?.[0] || "");
+  return Boolean(target) && writingConsonants(writingInput.join("")) === target;
+}
+
+function addWritingLetter(letter) {
+  if (!visibleWords.length) return;
+  const targetLength = writingTargetClusters().length;
+  if (writingInput.length >= targetLength) return;
+
+  writingInput.push(letter);
+  renderWritingCard();
+}
+
+function addWritingMark(mark) {
+  if (!writingInput.length) return;
+  const lastIndex = writingInput.length - 1;
+  if (writingInput[lastIndex].includes(mark)) return;
+  writingInput[lastIndex] = `${writingInput[lastIndex]}${mark}`;
+  renderWritingCard();
+}
+
+function removeWritingInput() {
+  writingInput.pop();
+  renderWritingCard();
+}
+
+function clearWritingInput() {
+  writingInput = [];
+  renderWritingCard();
+}
+
+function fillWritingHint() {
+  const target = writingTargetClusters();
+  if (!target.length || writingInput.length >= target.length) return;
+  writingInput.push(target[writingInput.length]);
+  renderWritingCard();
+}
+
+function showWritingCard(index = currentIndex) {
+  if (!visibleWords.length) {
+    writingInput = [];
+    els.writingPrompt.textContent = "No matching words";
+    els.writingSlots.innerHTML = "";
+    els.writingStatus.textContent = "";
+    els.writingCount.textContent = "0 / 0";
+    return;
+  }
+
+  currentIndex = (index + visibleWords.length) % visibleWords.length;
+  writingInput = [];
+  renderWritingCard();
+}
+
+function moveWritingBy(delta) {
+  if (!visibleWords.length) return;
+  showWritingCard(currentIndex + delta);
+}
+
+function renderWritingCard() {
+  const word = currentWritingWord();
+  if (!word) {
+    showWritingCard(0);
+    return;
+  }
+
+  const [, english] = word;
+  const target = writingTargetClusters(word);
+  const correct = writingIsCorrect();
+  els.writingPrompt.textContent = formatAnswer(english);
+  els.writingSlots.innerHTML = "";
+  els.writingStatus.textContent = correct ? "Correct" : "";
+  els.writingCount.textContent = `${currentIndex + 1} / ${visibleWords.length}`;
+  els.writingCardButton.classList.toggle("is-correct", correct);
+
+  target.forEach((targetCluster, index) => {
+    const slot = document.createElement("span");
+    const typed = writingInput[index] || "";
+    slot.className = "writing-slot";
+    slot.classList.toggle("is-filled", Boolean(typed));
+    slot.classList.toggle("is-current", index === writingInput.length && !correct);
+    slot.classList.toggle("is-wrong", Boolean(typed) && writingConsonants(typed) !== writingConsonants(targetCluster));
+    slot.textContent = typed || "";
+    els.writingSlots.append(slot);
+  });
+}
+
+function renderHebrewKeyboard() {
+  els.hebrewKeyboard.innerHTML = "";
+
+  hebrewKeyboardRows.forEach((row) => {
+    const rowElement = document.createElement("div");
+    rowElement.className = "keyboard-row";
+    row.forEach((letter) => {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "hebrew-key";
+      button.dir = "rtl";
+      button.textContent = letter;
+      button.addEventListener("click", () => addWritingLetter(letter));
+      rowElement.append(button);
+    });
+    els.hebrewKeyboard.append(rowElement);
+  });
+
+  const marksRow = document.createElement("div");
+  marksRow.className = "keyboard-row mark-row";
+  hebrewMarkKeys.forEach((mark) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "hebrew-key mark-key";
+    button.textContent = mark.label;
+    button.title = mark.title;
+    button.setAttribute("aria-label", mark.title);
+    button.addEventListener("click", () => addWritingMark(mark.value));
+    marksRow.append(button);
+  });
+  els.hebrewKeyboard.append(marksRow);
+
+  const actionRow = document.createElement("div");
+  actionRow.className = "keyboard-row action-row";
+  [
+    ["Back", removeWritingInput],
+    ["Clear", clearWritingInput],
+    ["Hint", fillWritingHint],
+    ["Next", () => moveWritingBy(1)]
+  ].forEach(([label, action]) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "keyboard-action";
+    button.textContent = label;
+    button.addEventListener("click", action);
+    actionRow.append(button);
+  });
+  els.hebrewKeyboard.append(actionRow);
+}
+
 function applyFilter() {
   const query = els.searchInput.value.trim().toLowerCase();
   const selectedPos = els.posSelect.value;
@@ -1085,6 +1289,9 @@ function applyFilter() {
   });
   visibleWords = orderWords(filteredWords);
   showCard(0);
+  if (currentMode === "writing") {
+    showWritingCard(0);
+  }
   renderList();
 }
 
@@ -1328,6 +1535,164 @@ function stripCantillation(value = "") {
   return value.replace(/[\u0591-\u05AF]/g, "");
 }
 
+function audioFlashcardRefOrder(ref = "") {
+  const match = ref.match(/^\S+\s+(\d+):(\d+):(\d+)$/);
+  return match ? [Number(match[1]), Number(match[2]), Number(match[3])] : [0, 0, 0];
+}
+
+function compareAudioFlashcardRefs(a, b) {
+  const left = audioFlashcardRefOrder(a);
+  const right = audioFlashcardRefOrder(b);
+  return left[0] - right[0] || left[1] - right[1] || left[2] - right[2];
+}
+
+function cleanAudioFlashcardGloss(value = "") {
+  return value
+    .replace(/\((?:et|ET)\)/g, "")
+    .replace(/\s+/g, " ")
+    .replace(/\s+([,.;:!?])/g, "$1")
+    .trim();
+}
+
+function audioFlashcardHasObjectMarker(records = []) {
+  return records.some((record) => stripNiqqud(record.h || "") === "את");
+}
+
+function audioFlashcardHasNounOrVerb(records = []) {
+  return records.some((record) => record.p === "noun" || record.p === "verb");
+}
+
+function clampAudioRepeatCount(value, fallback) {
+  const parsed = Number.parseInt(value, 10);
+  const count = Number.isFinite(parsed) ? parsed : fallback;
+  return Math.min(Math.max(count, 0), 10);
+}
+
+function loadAudioFlashcardSettings() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(audioFlashcardSettingsStorageKey) || "{}");
+    return {
+      hebrewRepeats: clampAudioRepeatCount(saved.hebrewRepeats, 2),
+      englishRepeats: clampAudioRepeatCount(saved.englishRepeats, 1),
+      separator: typeof saved.separator === "string" ? saved.separator : ".",
+      plainHebrew: saved.plainHebrew !== false
+    };
+  } catch {
+    return {
+      hebrewRepeats: 2,
+      englishRepeats: 1,
+      separator: ".",
+      plainHebrew: true
+    };
+  }
+}
+
+function getAudioFlashcardSettings() {
+  return {
+    hebrewRepeats: clampAudioRepeatCount(els.audioHebrewRepeat.value, 2),
+    englishRepeats: clampAudioRepeatCount(els.audioEnglishRepeat.value, 1),
+    separator: els.audioLineSeparator.value,
+    plainHebrew: els.audioPlainHebrewToggle.checked
+  };
+}
+
+function saveAudioFlashcardSettings() {
+  localStorage.setItem(audioFlashcardSettingsStorageKey, JSON.stringify(getAudioFlashcardSettings()));
+}
+
+function applyAudioFlashcardSettings() {
+  const settings = loadAudioFlashcardSettings();
+  els.audioHebrewRepeat.value = String(settings.hebrewRepeats);
+  els.audioEnglishRepeat.value = String(settings.englishRepeats);
+  els.audioLineSeparator.value = settings.separator;
+  els.audioPlainHebrewToggle.checked = settings.plainHebrew;
+}
+
+function audioHebrewText(value, settings) {
+  return settings.plainHebrew ? stripNiqqud(value) : value;
+}
+
+function renderAudioFlashcardPair(pair, settings) {
+  const lines = [];
+  const hebrew = audioHebrewText(pair.hebrew, settings);
+
+  for (let index = 0; index < settings.hebrewRepeats; index += 1) {
+    lines.push(`${hebrew}${settings.separator}`);
+  }
+
+  for (let index = 0; index < settings.englishRepeats; index += 1) {
+    lines.push(`${pair.english}${settings.separator}`);
+  }
+
+  return lines.join("\n");
+}
+
+function handleAudioFlashcardSettingsChange() {
+  saveAudioFlashcardSettings();
+  renderAudioFlashcards();
+}
+
+function getAudioFlashcardPairs(records = currentChapterRecords) {
+  const grouped = new Map();
+
+  records.forEach((record) => {
+    if (!record.r || !record.h) return;
+
+    if (!grouped.has(record.r)) {
+      grouped.set(record.r, {
+        ref: record.r,
+        records: [],
+        hebrewParts: [],
+        glossParts: []
+      });
+    }
+
+    const group = grouped.get(record.r);
+    group.records.push(record);
+    group.hebrewParts.push(record.h);
+    if (record.g) group.glossParts.push(record.g);
+  });
+
+  return [...grouped.values()]
+    .filter((group) => audioFlashcardHasNounOrVerb(group.records))
+    .filter((group) => !audioFlashcardHasObjectMarker(group.records))
+    .sort((a, b) => compareAudioFlashcardRefs(a.ref, b.ref))
+    .map((group) => ({
+      hebrew: group.hebrewParts.join(""),
+      english: cleanAudioFlashcardGloss(group.glossParts.join(" "))
+    }))
+    .filter((pair) => pair.hebrew && pair.english);
+}
+
+function renderAudioFlashcards() {
+  const pairs = getAudioFlashcardPairs();
+  const settings = getAudioFlashcardSettings();
+  els.audioFlashcardText.value = pairs.map((pair) => renderAudioFlashcardPair(pair, settings)).filter(Boolean).join("\n\n");
+  const book = maculaIndex?.books.find((item) => item.code === els.bookSelect.value);
+  const chapter = Number(els.chapterSelect.value);
+  const label = book && chapter ? `${book.name} ${chapter}` : "Current chapter";
+  els.audioFlashcardStatus.textContent = `${label}: ${pairs.length} word audio prompts`;
+}
+
+function selectAudioFlashcardText() {
+  els.audioFlashcardText.focus();
+  els.audioFlashcardText.select();
+}
+
+async function copyAudioFlashcardText() {
+  selectAudioFlashcardText();
+
+  try {
+    await navigator.clipboard.writeText(els.audioFlashcardText.value);
+    els.audioFlashcardCopyButton.textContent = "Copied";
+    window.setTimeout(() => {
+      els.audioFlashcardCopyButton.textContent = "Copy";
+    }, 1400);
+  } catch {
+    document.execCommand("copy");
+  }
+}
+
 function sefariaRef(book, chapter) {
   return `${book.name}.${chapter}`;
 }
@@ -1374,6 +1739,7 @@ async function loadSelectedChapter() {
   if (!response.ok) throw new Error(`Could not load ${book.name} ${chapter}`);
   const records = await response.json();
 
+  currentChapterRecords = records;
   allWords = uniqueWordsFromMacula(records);
   currentIndex = 0;
   currentVerbIndex = 0;
@@ -1384,6 +1750,7 @@ async function loadSelectedChapter() {
   saveSelectedChapter(book, chapter);
   applyFilter();
   renderVerbPractice();
+  renderAudioFlashcards();
 }
 
 async function loadCurrentChapter() {
@@ -1411,6 +1778,7 @@ els.chapterSelect.addEventListener("change", () => {
 });
 els.cardButton.addEventListener("click", cardTapAction);
 els.revealButton.addEventListener("click", revealAnswer);
+els.writingCardButton.addEventListener("click", () => moveWritingBy(1));
 els.verbCardButton.addEventListener("click", () => moveVerbBy(1));
 els.verbSelect.addEventListener("change", () => {
   showVerb(Number(els.verbSelect.value) || 0);
@@ -1465,6 +1833,19 @@ els.readingPrevButton.addEventListener("click", () => {
 els.readingNextButton.addEventListener("click", () => {
   moveReadingChapter(1).catch(console.error);
 });
+els.audioFlashcardSelectButton.addEventListener("click", selectAudioFlashcardText);
+els.audioFlashcardCopyButton.addEventListener("click", () => {
+  copyAudioFlashcardText().catch(console.error);
+});
+[
+  els.audioHebrewRepeat,
+  els.audioEnglishRepeat,
+  els.audioLineSeparator,
+  els.audioPlainHebrewToggle
+].forEach((control) => {
+  control.addEventListener("input", handleAudioFlashcardSettingsChange);
+  control.addEventListener("change", handleAudioFlashcardSettingsChange);
+});
 els.manageMasteredButton.addEventListener("click", openMasteredModal);
 els.removeAllMasteredButton.addEventListener("click", removeAllMasteredWords);
 els.masterWordButton.addEventListener("click", toggleCurrentMasteredWord);
@@ -1485,7 +1866,26 @@ document.addEventListener("keydown", (event) => {
     exitReadingFullscreen().catch(console.error);
     return;
   }
-  if (currentMode === "reading") return;
+  if (currentMode === "reading" || currentMode === "audio") return;
+  if (currentMode === "writing") {
+    if (/^[א-ת]$/.test(event.key)) {
+      event.preventDefault();
+      addWritingLetter(event.key);
+      return;
+    }
+    if (event.key === "Backspace") {
+      event.preventDefault();
+      removeWritingInput();
+      return;
+    }
+    if (event.key === " " || event.key === "ArrowRight") {
+      event.preventDefault();
+      moveWritingBy(1);
+      return;
+    }
+    if (event.key === "ArrowLeft") moveWritingBy(-1);
+    return;
+  }
   if (currentMode === "verbs") {
     if (event.key === " " || event.key === "ArrowRight") {
       event.preventDefault();
@@ -1505,7 +1905,10 @@ document.addEventListener("keydown", (event) => {
 
 document.addEventListener("fullscreenchange", renderReadingFullscreenState);
 
+applyAudioFlashcardSettings();
+renderHebrewKeyboard();
 showCard(0);
+showWritingCard(0);
 renderList();
 initMaculaPicker().catch(() => {
   console.error("Could not load chapter data");
