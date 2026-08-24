@@ -82,6 +82,7 @@ const els = {
   verbPersonOptions: document.querySelector("#verb-person-options"),
   verbAspectOptions: document.querySelector("#verb-aspect-options"),
   verbCount: document.querySelector("#verb-count"),
+  themeToggleButton: document.querySelector("#theme-toggle-button"),
   settingsButton: document.querySelector("#settings-button"),
   settingsCloseButton: document.querySelector("#settings-close-button"),
   settingsDialog: document.querySelector("#settings-dialog"),
@@ -205,6 +206,7 @@ function getSavedPreferences() {
       partOfSpeech: ["noun", "verb", "other"].includes(saved.partOfSpeech) ? saved.partOfSpeech : "all",
       showMastered: Boolean(saved.showMastered),
       order: saved.order === "ordered" || localStorage.getItem(orderStorageKey) === "ordered" ? "ordered" : "random",
+      theme: saved.theme === "dark" ? "dark" : "light",
       readingFontSize: clampReadingFontSize(saved.readingFontSize),
       autoAdvance: {
         enabled: Boolean(saved.autoAdvance?.enabled ?? legacyAuto.enabled),
@@ -219,6 +221,7 @@ function getSavedPreferences() {
       partOfSpeech: "all",
       showMastered: false,
       order: "random",
+      theme: "light",
       readingFontSize: 3.2,
       autoAdvance: { enabled: false, seconds: 3 }
     };
@@ -233,6 +236,7 @@ function savePreferences() {
     partOfSpeech: els.posSelect.value,
     showMastered: els.showMasteredToggle.checked,
     order: els.orderSelect.value,
+    theme: getCurrentTheme(),
     readingFontSize: getReadingFontSize(),
     autoAdvance: {
       enabled: els.autoAdvanceToggle.checked,
@@ -255,9 +259,27 @@ function applySavedPreferences() {
   els.readingFontSize.value = String(preferences.readingFontSize);
   els.autoAdvanceToggle.checked = preferences.autoAdvance.enabled;
   els.autoAdvanceSpeed.value = String(preferences.autoAdvance.seconds);
+  applyTheme(preferences.theme);
   updateReadingFontSize();
   updateAutoAdvance();
   renderMode();
+}
+
+function getCurrentTheme() {
+  return document.documentElement.dataset.theme === "dark" ? "dark" : "light";
+}
+
+function applyTheme(theme) {
+  const isDark = theme === "dark";
+  document.documentElement.dataset.theme = isDark ? "dark" : "light";
+  els.themeToggleButton.textContent = isDark ? "Light" : "Dark";
+  els.themeToggleButton.setAttribute("aria-pressed", String(isDark));
+  els.themeToggleButton.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
+}
+
+function toggleTheme() {
+  applyTheme(getCurrentTheme() === "dark" ? "light" : "dark");
+  savePreferences();
 }
 
 function saveAutoAdvanceSettings() {
@@ -1783,6 +1805,7 @@ els.verbCardButton.addEventListener("click", () => moveVerbBy(1));
 els.verbSelect.addEventListener("change", () => {
   showVerb(Number(els.verbSelect.value) || 0);
 });
+els.themeToggleButton.addEventListener("click", toggleTheme);
 els.settingsButton.addEventListener("click", () => {
   els.settingsDialog.showModal();
 });
@@ -1905,6 +1928,7 @@ document.addEventListener("keydown", (event) => {
 
 document.addEventListener("fullscreenchange", renderReadingFullscreenState);
 
+applyTheme(getCurrentTheme());
 applyAudioFlashcardSettings();
 renderHebrewKeyboard();
 showCard(0);
