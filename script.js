@@ -985,6 +985,7 @@ function renderRevealState() {
     els.englishWord.classList.remove("hidden");
     els.cardButton.setAttribute("aria-label", "Finished. Start over");
     els.revealButton.disabled = true;
+    els.revealButton.textContent = "Show Answer";
     return;
   }
 
@@ -992,11 +993,17 @@ function renderRevealState() {
   els.hebrewWord.classList.toggle("hidden", !showingHebrewFirst && !revealed);
   els.englishWord.classList.toggle("hidden", showingHebrewFirst && !revealed);
   els.cardButton.setAttribute("aria-label", "Next word");
-  els.revealButton.disabled = revealed || !visibleWords.length;
+  els.revealButton.disabled = !visibleWords.length;
+  els.revealButton.textContent = revealed ? "Next Word" : "Show Answer";
 }
 
 function revealAnswer() {
-  if (deckFinished || !visibleWords.length || revealed) return;
+  if (deckFinished || !visibleWords.length) return;
+  if (revealed) {
+    moveBy(1);
+    return;
+  }
+
   revealed = true;
   renderRevealState();
 }
