@@ -71,32 +71,28 @@
         </section>
 
         <section id="audio-flashcard-section" class="audio-flashcard-section hidden" aria-live="polite">
-          <div class="audio-flashcard-toolbar">
-            <div id="audio-flashcard-status" class="audio-flashcard-status">Loading...</div>
-            <div class="audio-flashcard-actions">
-              <button id="audio-flashcard-select-button" class="secondary-button" type="button">Select text</button>
-              <button id="audio-flashcard-copy-button" class="secondary-button" type="button">Copy</button>
+          <div class="elevenlabs-audio-player" aria-label="Generated audio player">
+            <div id="elevenlabs-audio-status" class="elevenlabs-audio-status">No generated audio loaded.</div>
+            <div class="elevenlabs-audio-actions">
+              <button id="elevenlabs-play-button" class="secondary-button" type="button">Play audio</button>
+              <button id="elevenlabs-stop-button" class="secondary-button" type="button">Stop</button>
+              <button id="elevenlabs-next-button" class="secondary-button" type="button">Next</button>
             </div>
           </div>
-          <div class="audio-flashcard-controls" aria-label="Audio flashcard settings">
-            <label>
-              <span>Hebrew</span>
-              <input id="audio-hebrew-repeat" type="number" min="0" max="10" step="1" value="2">
-            </label>
-            <label>
-              <span>English</span>
-              <input id="audio-english-repeat" type="number" min="0" max="10" step="1" value="1">
-            </label>
-            <label>
-              <span>Separator</span>
-              <input id="audio-line-separator" type="text" value="." autocapitalize="off" autocomplete="off" spellcheck="false">
-            </label>
-            <label class="audio-flashcard-check">
-              <input id="audio-plain-hebrew-toggle" type="checkbox" checked>
-              <span>Plain Hebrew</span>
-            </label>
+          <div id="elevenlabs-cache-panel" class="elevenlabs-cache-panel hidden" aria-label="Generated audio words">
+            <div class="elevenlabs-cache-toolbar">
+              <div id="elevenlabs-cache-status" class="elevenlabs-cache-status">0 selected</div>
+              <div class="elevenlabs-cache-actions">
+                <label class="elevenlabs-shuffle-toggle">
+                  <input id="elevenlabs-shuffle-toggle" type="checkbox">
+                  <span>Shuffle</span>
+                </label>
+                <button id="elevenlabs-cache-all-button" class="secondary-button" type="button">All</button>
+                <button id="elevenlabs-cache-none-button" class="secondary-button" type="button">None</button>
+              </div>
+            </div>
+            <div id="elevenlabs-cache-list" class="elevenlabs-cache-list"></div>
           </div>
-          <textarea id="audio-flashcard-text" class="audio-flashcard-text" spellcheck="false" aria-label="Audio flashcard text"></textarea>
         </section>
 
         <section id="verb-practice-section" class="verb-practice hidden" aria-live="polite">

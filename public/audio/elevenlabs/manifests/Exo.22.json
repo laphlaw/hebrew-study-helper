@@ -1,0 +1,1650 @@
+{
+  "provider": "elevenlabs",
+  "generatedAt": "2026-09-04T07:30:35.326Z",
+  "book": "Exo",
+  "chapter": 22,
+  "modelId": "eleven_v3",
+  "outputFormat": "mp3_44100_128",
+  "plainHebrew": false,
+  "cardSettings": {
+    "hebrewRepeats": 2,
+    "englishRepeats": 1,
+    "separator": "."
+  },
+  "voices": {
+    "card": "onwK4e9ZLuTAKqWW03F9",
+    "hebrew": "onwK4e9ZLuTAKqWW03F9",
+    "english": "onwK4e9ZLuTAKqWW03F9"
+  },
+  "cards": [
+    {
+      "ref": "EXO 22:1:3",
+      "hebrew": "יִמָּצֵא",
+      "english": "he will be found",
+      "text": "יִמָּצֵא.\nיִמָּצֵא.\nhe will be found.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d42df14b1d97252994cb1162.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:1:4",
+      "hebrew": "הַגַּנָּב",
+      "english": "the thief",
+      "text": "הַגַּנָּב.\nהַגַּנָּב.\nthe thief.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/6c2193e5bdba6b1f678f6e5c.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:1:5",
+      "hebrew": "וְהֻכָּה",
+      "english": "and he will be struck",
+      "text": "וְהֻכָּה.\nוְהֻכָּה.\nand he will be struck.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/984ba4d0b5b7947a929a79e9.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:1:6",
+      "hebrew": "וָמֵת",
+      "english": "and he will die",
+      "text": "וָמֵת.\nוָמֵת.\nand he will die.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/5239a595712bc909f7a02ad6.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:1:9",
+      "hebrew": "דָּמִים",
+      "english": "blood(s)",
+      "text": "דָּמִים.\nדָּמִים.\nblood(s).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/50e2630df888cf9c7a7fcd6a.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:2:2",
+      "hebrew": "זָרְחָה",
+      "english": "it has risen",
+      "text": "זָרְחָה.\nזָרְחָה.\nit has risen.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/4f516b92d5cc309a3d799ad1.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:2:3",
+      "hebrew": "הַשֶּׁמֶשׁ",
+      "english": "the sun",
+      "text": "הַשֶּׁמֶשׁ.\nהַשֶּׁמֶשׁ.\nthe sun.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/1d1ad09d72d08c17d70235a1.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:2:7",
+      "hebrew": "שַׁלֵּם",
+      "english": "certainly (make restitution)",
+      "text": "שַׁלֵּם.\nשַׁלֵּם.\ncertainly (make restitution).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a13da429451147a38bd95d21.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:2:8",
+      "hebrew": "יְשַׁלֵּם",
+      "english": "he will make restitution",
+      "text": "יְשַׁלֵּם.\nיְשַׁלֵּם.\nhe will make restitution.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/291752ef37210e67f96952ec.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:2:12",
+      "hebrew": "וְנִמְכַּר",
+      "english": "and he will be sold",
+      "text": "וְנִמְכַּר.\nוְנִמְכַּר.\nand he will be sold.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e4c98d0d3c27356b8dec0662.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:2:13",
+      "hebrew": "בִּגְנֵבָתוֹ",
+      "english": "for his thing stolen",
+      "text": "בִּגְנֵבָתוֹ.\nבִּגְנֵבָתוֹ.\nfor his thing stolen.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/09691efd5710f40f59b240b5.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:3:2",
+      "hebrew": "הִמָּצֵא",
+      "english": "actually (be found)",
+      "text": "הִמָּצֵא.\nהִמָּצֵא.\nactually (be found).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/244178fff170ad1d43e88e57.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:3:3",
+      "hebrew": "תִמָּצֵא",
+      "english": "it will be found",
+      "text": "תִמָּצֵא.\nתִמָּצֵא.\nit will be found.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ca77860d27180f189a29be68.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:3:4",
+      "hebrew": "בְיָדוֹ",
+      "english": "in hand his",
+      "text": "בְיָדוֹ.\nבְיָדוֹ.\nin hand his.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/deb0fbcad97ed8dbe5ab90b2.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:3:5",
+      "hebrew": "הַגְּנֵבָה",
+      "english": "the thing stolen",
+      "text": "הַגְּנֵבָה.\nהַגְּנֵבָה.\nthe thing stolen.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/03469991582c4a4c073786d7.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:3:6",
+      "hebrew": "מִשּׁוֹר",
+      "english": "from an ox",
+      "text": "מִשּׁוֹר.\nמִשּׁוֹר.\nfrom an ox.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c61e36243c2716547cd8068f.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:3:8",
+      "hebrew": "חֲמוֹר",
+      "english": "a donkey",
+      "text": "חֲמוֹר.\nחֲמוֹר.\na donkey.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/1bdfafa865a3e39443b64ee5.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:3:10",
+      "hebrew": "שֶׂה",
+      "english": "a sheep",
+      "text": "שֶׂה.\nשֶׂה.\na sheep.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/30962cb6a7dd1d93567c33de.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:4:2",
+      "hebrew": "יַבְעֶר",
+      "english": "he will cause to be grazed over",
+      "text": "יַבְעֶר.\nיַבְעֶר.\nhe will cause to be grazed over.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/aa07717bba856c5158854687.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:4:3",
+      "hebrew": "אִישׁ",
+      "english": "anyone",
+      "text": "אִישׁ.\nאִישׁ.\nanyone.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/146021b2e3f0b29cfeccdb44.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:4:4",
+      "hebrew": "שָׂדֶה",
+      "english": "a field",
+      "text": "שָׂדֶה.\nשָׂדֶה.\na field.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/64eb09d95f9e7f0074e0f9fb.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:4:6",
+      "hebrew": "כֶרֶם",
+      "english": "a vineyard",
+      "text": "כֶרֶם.\nכֶרֶם.\na vineyard.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ca70609ce158325fcb98bf00.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:4:7",
+      "hebrew": "וְשִׁלַּח",
+      "english": "and he will let go",
+      "text": "וְשִׁלַּח.\nוְשִׁלַּח.\nand he will let go.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/63ef832b432248ccd94f6cb9.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:4:10",
+      "hebrew": "בְּעִירוֹ",
+      "english": "cattle his",
+      "text": "בְּעִירוֹ.\nבְּעִירוֹ.\ncattle his.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c4f47931f4e860501a5786aa.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:4:11",
+      "hebrew": "וּבִעֵר",
+      "english": "and it will graze",
+      "text": "וּבִעֵר.\nוּבִעֵר.\nand it will graze.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/98acb681c5866cc973f66926.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:4:12",
+      "hebrew": "בִּשְׂדֵה",
+      "english": "in [the] field",
+      "text": "בִּשְׂדֵה.\nבִּשְׂדֵה.\nin [the] field.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/2e25cd934cfdf866af47393b.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:4:14",
+      "hebrew": "מֵיטַב",
+      "english": "the best",
+      "text": "מֵיטַב.\nמֵיטַב.\nthe best.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/4e5aed74446b257a283e3593.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:4:15",
+      "hebrew": "שָׂדֵהוּ",
+      "english": "his field his",
+      "text": "שָׂדֵהוּ.\nשָׂדֵהוּ.\nhis field his.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ba7be250ac375829b7c1d62f.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:4:16",
+      "hebrew": "וּמֵיטַב",
+      "english": "and the best",
+      "text": "וּמֵיטַב.\nוּמֵיטַב.\nand the best.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/562980283404162980126e71.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:4:17",
+      "hebrew": "כַּרְמוֹ",
+      "english": "his vineyard his",
+      "text": "כַּרְמוֹ.\nכַּרְמוֹ.\nhis vineyard his.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b3bc8b8e25d5c7e14bc23cf5.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:5:2",
+      "hebrew": "תֵצֵא",
+      "english": "it will go forth",
+      "text": "תֵצֵא.\nתֵצֵא.\nit will go forth.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/3a45e7108b98f50409f74a84.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:5:3",
+      "hebrew": "אֵשׁ",
+      "english": "a fire",
+      "text": "אֵשׁ.\nאֵשׁ.\na fire.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/5a2266a33082a1d725e980be.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:5:4",
+      "hebrew": "וּמָצְאָה",
+      "english": "and it will find",
+      "text": "וּמָצְאָה.\nוּמָצְאָה.\nand it will find.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/47b994b7b9d9ba0a11f163a0.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:5:5",
+      "hebrew": "קֹצִים",
+      "english": "thorns",
+      "text": "קֹצִים.\nקֹצִים.\nthorns.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/cef027fdfb4a328f0380b602.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:5:6",
+      "hebrew": "וְנֶאֱכַל",
+      "english": "and it will be consumed",
+      "text": "וְנֶאֱכַל.\nוְנֶאֱכַל.\nand it will be consumed.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/506962cfe7237a5cb450e43c.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:5:7",
+      "hebrew": "גָּדִישׁ",
+      "english": "a stack of sheaves",
+      "text": "גָּדִישׁ.\nגָּדִישׁ.\na stack of sheaves.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/43653f8c7fc8457808d6bd2b.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:5:9",
+      "hebrew": "הַקָּמָה",
+      "english": "the standing grain",
+      "text": "הַקָּמָה.\nהַקָּמָה.\nthe standing grain.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d3ffa44af6dfea8b9466518f.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:5:11",
+      "hebrew": "הַשָּׂדֶה",
+      "english": "the field",
+      "text": "הַשָּׂדֶה.\nהַשָּׂדֶה.\nthe field.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/68d04e4f9b90455799bef671.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:5:14",
+      "hebrew": "הַמַּבְעִר",
+      "english": "the [one who] kindled",
+      "text": "הַמַּבְעִר.\nהַמַּבְעִר.\nthe [one who] kindled.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b150c8c1b2fc82975002f1b1.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:5:16",
+      "hebrew": "הַבְּעֵרָה",
+      "english": "the fire",
+      "text": "הַבְּעֵרָה.\nהַבְּעֵרָה.\nthe fire.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/4ac8e786e9dc3fa27ae7918d.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:6:2",
+      "hebrew": "יִתֵּן",
+      "english": "he will give",
+      "text": "יִתֵּן.\nיִתֵּן.\nhe will give.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/4c3789342ef47030b3d87a13.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:6:5",
+      "hebrew": "רֵעֵהוּ",
+      "english": "neighbor his",
+      "text": "רֵעֵהוּ.\nרֵעֵהוּ.\nneighbor his.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/327d019ccbf57be35537d97e.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:6:6",
+      "hebrew": "כֶּסֶף",
+      "english": "money",
+      "text": "כֶּסֶף.\nכֶּסֶף.\nmoney.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/aff531bf5472e47f8e9da7fd.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:6:8",
+      "hebrew": "כֵלִים",
+      "english": "articles",
+      "text": "כֵלִים.\nכֵלִים.\narticles.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f03002ad310c375d5d736950.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:6:9",
+      "hebrew": "לִשְׁמֹר",
+      "english": "to keep [them]",
+      "text": "לִשְׁמֹר.\nלִשְׁמֹר.\nto keep [them].",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/76a79e580fea9813e15ccd7d.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:6:10",
+      "hebrew": "וְגֻנַּב",
+      "english": "and it will be stolen",
+      "text": "וְגֻנַּב.\nוְגֻנַּב.\nand it will be stolen.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ff4949d169447026dfc49699.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:6:11",
+      "hebrew": "מִבֵּית",
+      "english": "from the house",
+      "text": "מִבֵּית.\nמִבֵּית.\nfrom the house.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/739823e431fc8957ead1adde.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:6:12",
+      "hebrew": "הָאִישׁ",
+      "english": "of the person",
+      "text": "הָאִישׁ.\nהָאִישׁ.\nof the person.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/885d6ba4d21e9ebf5c1812f5.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:7:5",
+      "hebrew": "וְנִקְרַב",
+      "english": "and he will be brought near",
+      "text": "וְנִקְרַב.\nוְנִקְרַב.\nand he will be brought near.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/6c6e7335b869e0be6e31c3b0.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:7:6",
+      "hebrew": "בַּעַל",
+      "english": "the master",
+      "text": "בַּעַל.\nבַּעַל.\nthe master.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/8642bb739e5468fdcb1bc1ab.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:7:7",
+      "hebrew": "הַבַּיִת",
+      "english": "of the house",
+      "text": "הַבַּיִת.\nהַבַּיִת.\nof the house.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/610d611f171fde427b5893bb.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:7:9",
+      "hebrew": "הָאֱלֹהִים",
+      "english": "the judges",
+      "text": "הָאֱלֹהִים.\nהָאֱלֹהִים.\nthe judges.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/6152faaafbd55714d73f1be3.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:7:12",
+      "hebrew": "שָׁלַח",
+      "english": "he had stretched out",
+      "text": "שָׁלַח.\nשָׁלַח.\nhe had stretched out.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/df62bdbf07dafd5c790fac86.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:7:13",
+      "hebrew": "יָדוֹ",
+      "english": "hand his",
+      "text": "יָדוֹ.\nיָדוֹ.\nhand his.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/244c8c88570def7e3fbda19c.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:7:14",
+      "hebrew": "בִּמְלֶאכֶת",
+      "english": "on the property",
+      "text": "בִּמְלֶאכֶת.\nבִּמְלֶאכֶת.\non the property.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d765db944aa6518a35d4e2ba.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:8:2",
+      "hebrew": "כָּל",
+      "english": "every",
+      "text": "כָּל.\nכָּל.\nevery.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e654f4ce51f6f727daf09484.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:8:3",
+      "hebrew": "דְּבַר",
+      "english": "matter",
+      "text": "דְּבַר.\nדְּבַר.\nmatter.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f8799cb0a685353e62c719ae.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:8:4",
+      "hebrew": "פֶּשַׁע",
+      "english": "of transgression",
+      "text": "פֶּשַׁע.\nפֶּשַׁע.\nof transgression.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/cf76c766bf155aa60581bf82.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:8:6",
+      "hebrew": "שׁוֹר",
+      "english": "an ox",
+      "text": "שׁוֹר.\nשׁוֹר.\nan ox.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/088bd8c261ee5a7b506070e4.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:8:12",
+      "hebrew": "שַׂלְמָה",
+      "english": "a garment",
+      "text": "שַׂלְמָה.\nשַׂלְמָה.\na garment.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a7c71eb9d594e355bb0c45c4.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:8:15",
+      "hebrew": "אֲבֵדָה",
+      "english": "thing lost",
+      "text": "אֲבֵדָה.\nאֲבֵדָה.\nthing lost.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/09075c1ee76c8c082cf79622.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:8:17",
+      "hebrew": "יֹאמַר",
+      "english": "anyone will say",
+      "text": "יֹאמַר.\nיֹאמַר.\nanyone will say.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/49ffec28220515c223970675.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:8:23",
+      "hebrew": "יָבֹא",
+      "english": "it will come",
+      "text": "יָבֹא.\nיָבֹא.\nit will come.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/8fa58c23fd42289b69d27537.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:8:27",
+      "hebrew": "יַרְשִׁיעֻן",
+      "english": "they will condemn as guilty",
+      "text": "יַרְשִׁיעֻן.\nיַרְשִׁיעֻן.\nthey will condemn as guilty.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b484d62ae92fc32bac3c1bc6.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:8:28",
+      "hebrew": "אֱלֹהִים",
+      "english": "[the] judges",
+      "text": "אֱלֹהִים.\nאֱלֹהִים.\n[the] judges.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e0191f93d66fc6083881dd8b.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:8:31",
+      "hebrew": "לְרֵעֵהוּ",
+      "english": "to neighbor his",
+      "text": "לְרֵעֵהוּ.\nלְרֵעֵהוּ.\nto neighbor his.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/10e2c2b36fdc39207af9efa1.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:9:11",
+      "hebrew": "וְכָל",
+      "english": "and every",
+      "text": "וְכָל.\nוְכָל.\nand every.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/fae7e9f3e1200daf2befef51.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:9:12",
+      "hebrew": "בְּהֵמָה",
+      "english": "animal",
+      "text": "בְּהֵמָה.\nבְּהֵמָה.\nanimal.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b88cc8572ac723c19d5853c7.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:9:14",
+      "hebrew": "וּמֵת",
+      "english": "and it will die",
+      "text": "וּמֵת.\nוּמֵת.\nand it will die.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f1a39982eb28a1bc85508b2d.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:9:16",
+      "hebrew": "נִשְׁבַּר",
+      "english": "it was maimed",
+      "text": "נִשְׁבַּר.\nנִשְׁבַּר.\nit was maimed.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/26127dcb97a92b3a9fef3474.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:9:18",
+      "hebrew": "נִשְׁבָּה",
+      "english": "it was captured",
+      "text": "נִשְׁבָּה.\nנִשְׁבָּה.\nit was captured.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/23775f47188e6d9609ba99c6.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:9:20",
+      "hebrew": "רֹאֶה",
+      "english": "[one who] saw",
+      "text": "רֹאֶה.\nרֹאֶה.\n[one who] saw.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/dc864a96f742a8c20ba2ed32.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:10:1",
+      "hebrew": "שְׁבֻעַת",
+      "english": "the oath",
+      "text": "שְׁבֻעַת.\nשְׁבֻעַת.\nthe oath.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c31e625fa3eb801ed1c21476.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:10:2",
+      "hebrew": "יְהוָה",
+      "english": "of Yahweh",
+      "text": "יְהוָה.\nיְהוָה.\nof Yahweh.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ebe9bdda2926afdd7a835722.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:10:3",
+      "hebrew": "תִּהְיֶה",
+      "english": "it will be",
+      "text": "תִּהְיֶה.\nתִּהְיֶה.\nit will be.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/3befbbc24ab6e39284f05cf8.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:10:12",
+      "hebrew": "וְלָקַח",
+      "english": "and he will accept [it]",
+      "text": "וְלָקַח.\nוְלָקַח.\nand he will accept [it].",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ce9e4f03ff6bc070d55e6f3d.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:10:13",
+      "hebrew": "בְּעָלָיו",
+      "english": "owner(s) its",
+      "text": "בְּעָלָיו.\nבְּעָלָיו.\nowner(s) its.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a911787abcd18dc0d6858b09.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:11:2",
+      "hebrew": "גָּנֹב",
+      "english": "actually (steal)",
+      "text": "גָּנֹב.\nגָּנֹב.\nactually (steal).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f7dcd1f8f213cf8f0530b12b.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:11:3",
+      "hebrew": "יִגָּנֵב",
+      "english": "it will be stolen",
+      "text": "יִגָּנֵב.\nיִגָּנֵב.\nit will be stolen.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/348b0eaba13428647c06d027.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:11:6",
+      "hebrew": "לִבְעָלָיו",
+      "english": "to owner(s) its",
+      "text": "לִבְעָלָיו.\nלִבְעָלָיו.\nto owner(s) its.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e1f60e2b8acc44ab961eaab2.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:12:2",
+      "hebrew": "טָרֹף",
+      "english": "actually (tear)",
+      "text": "טָרֹף.\nטָרֹף.\nactually (tear).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c28da95aa08133079aae187e.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:12:3",
+      "hebrew": "יִטָּרֵף",
+      "english": "it will be torn in pieces",
+      "text": "יִטָּרֵף.\nיִטָּרֵף.\nit will be torn in pieces.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/1977f910dc011cef134597c0.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:12:4",
+      "hebrew": "יְבִאֵהוּ",
+      "english": "he will bring it",
+      "text": "יְבִאֵהוּ.\nיְבִאֵהוּ.\nhe will bring it.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/6d07c9d299c70bef16afd482.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:12:5",
+      "hebrew": "עֵד",
+      "english": "evidence",
+      "text": "עֵד.\nעֵד.\nevidence.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e69ea92a11b13e9bfd56f82e.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:12:6",
+      "hebrew": "הַטְּרֵפָה",
+      "english": "the torn animal",
+      "text": "הַטְּרֵפָה.\nהַטְּרֵפָה.\nthe torn animal.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/78dd3cd7c947bed3269026b1.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:13:2",
+      "hebrew": "יִשְׁאַל",
+      "english": "he will ask",
+      "text": "יִשְׁאַל.\nיִשְׁאַל.\nhe will ask.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/bb2e6000e5dd6f895c8340f3.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:13:6",
+      "hebrew": "וְנִשְׁבַּר",
+      "english": "and it will be maimed",
+      "text": "וְנִשְׁבַּר.\nוְנִשְׁבַּר.\nand it will be maimed.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/992d63c1e551aa5c0050d0ca.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:13:8",
+      "hebrew": "מֵת",
+      "english": "it died",
+      "text": "מֵת.\nמֵת.\nit died.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/7d49c0fbdf4279b120d6d297.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:14:9",
+      "hebrew": "בָּא",
+      "english": "it came",
+      "text": "בָּא.\nבָּא.\nit came.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/dfb3c911d8d43c60ae8b6114.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:14:10",
+      "hebrew": "בִּשְׂכָרוֹ",
+      "english": "for hire its",
+      "text": "בִּשְׂכָרוֹ.\nבִּשְׂכָרוֹ.\nfor hire its.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/1ee556bc6fe36521903692e5.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:15:2",
+      "hebrew": "יְפַתֶּה",
+      "english": "he will seduce",
+      "text": "יְפַתֶּה.\nיְפַתֶּה.\nhe will seduce.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/9c8e8b4dfb449181807d7620.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:15:4",
+      "hebrew": "בְּתוּלָה",
+      "english": "a virgin",
+      "text": "בְּתוּלָה.\nבְּתוּלָה.\na virgin.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/8d8ae087f6c1ba94bffd4c7f.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:15:7",
+      "hebrew": "אֹרָשָׂה",
+      "english": "she was betrothed",
+      "text": "אֹרָשָׂה.\nאֹרָשָׂה.\nshe was betrothed.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/df6b917ac163c14c02b2986e.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:15:8",
+      "hebrew": "וְשָׁכַב",
+      "english": "and he will lie",
+      "text": "וְשָׁכַב.\nוְשָׁכַב.\nand he will lie.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/6c710dede563061dbd1ddadb.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:15:10",
+      "hebrew": "מָהֹר",
+      "english": "certainly (pay the bride-price)",
+      "text": "מָהֹר.\nמָהֹר.\ncertainly (pay the bride-price).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/5fbe217a66eda6b7948397d8.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:15:11",
+      "hebrew": "יִמְהָרֶנָּה",
+      "english": "he will pay the bride-price for her",
+      "text": "יִמְהָרֶנָּה.\nיִמְהָרֶנָּה.\nhe will pay the bride-price for her.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/8e9d1cf3224f0a867e0d80bd.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:15:13",
+      "hebrew": "לְאִשָּׁה",
+      "english": "to a wife",
+      "text": "לְאִשָּׁה.\nלְאִשָּׁה.\nto a wife.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/11bbab9df608413a94ea4f94.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:16:2",
+      "hebrew": "מָאֵן",
+      "english": "absolutely (refuse)",
+      "text": "מָאֵן.\nמָאֵן.\nabsolutely (refuse).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/27918352ea315b9b56e91ac2.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:16:3",
+      "hebrew": "יְמָאֵן",
+      "english": "he will refuse",
+      "text": "יְמָאֵן.\nיְמָאֵן.\nhe will refuse.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/94b116af78930751dc52efde.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:16:4",
+      "hebrew": "אָבִיהָ",
+      "english": "father her",
+      "text": "אָבִיהָ.\nאָבִיהָ.\nfather her.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f202de204e302413f18b9d9d.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:16:5",
+      "hebrew": "לְתִתָּהּ",
+      "english": "to give her",
+      "text": "לְתִתָּהּ.\nלְתִתָּהּ.\nto give her.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/86798be8e2c5f43fed661a89.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:16:8",
+      "hebrew": "יִשְׁקֹל",
+      "english": "he will weigh out",
+      "text": "יִשְׁקֹל.\nיִשְׁקֹל.\nhe will weigh out.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ccc1ba0c250ac019feb121c9.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:16:9",
+      "hebrew": "כְּמֹהַר",
+      "english": "according to the bride-price",
+      "text": "כְּמֹהַר.\nכְּמֹהַר.\naccording to the bride-price.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/9889c32120abfa31e5f1ad83.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:16:10",
+      "hebrew": "הַבְּתוּלֹת",
+      "english": "of (the) virgins",
+      "text": "הַבְּתוּלֹת.\nהַבְּתוּלֹת.\nof (the) virgins.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/aa1a41b8ea6b045318ec7287.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:17:1",
+      "hebrew": "מְכַשֵּׁפָה",
+      "english": "a sorceress",
+      "text": "מְכַשֵּׁפָה.\nמְכַשֵּׁפָה.\na sorceress.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/5255be52b79ef3f6db9ba07b.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:17:3",
+      "hebrew": "תְחַיֶּה",
+      "english": "you will let live",
+      "text": "תְחַיֶּה.\nתְחַיֶּה.\nyou will let live.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f578808855379bcf22846811.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:18:2",
+      "hebrew": "שֹׁכֵב",
+      "english": "[one who] lies",
+      "text": "שֹׁכֵב.\nשֹׁכֵב.\n[one who] lies.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/754511babcbf2517d9863ef8.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:18:5",
+      "hebrew": "מוֹת",
+      "english": "surely (die)",
+      "text": "מוֹת.\nמוֹת.\nsurely (die).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/49aff7201d5ca36606ffdbf1.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:18:6",
+      "hebrew": "יוּמָת",
+      "english": "he will be put to death",
+      "text": "יוּמָת.\nיוּמָת.\nhe will be put to death.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e0f65421d1f62ecab302d750.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:19:1",
+      "hebrew": "זֹבֵחַ",
+      "english": "[one who] sacrifices",
+      "text": "זֹבֵחַ.\nזֹבֵחַ.\n[one who] sacrifices.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b041cda543e504d07240b663.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:19:3",
+      "hebrew": "יָחֳרָם",
+      "english": "he will be dedicated to destruction",
+      "text": "יָחֳרָם.\nיָחֳרָם.\nhe will be dedicated to destruction.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/21f1e15a3fbdfd8182c4709d.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:19:5",
+      "hebrew": "לַיהוָה",
+      "english": "to Yahweh",
+      "text": "לַיהוָה.\nלַיהוָה.\nto Yahweh.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/21ba00a84a276aeaab146684.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:19:6",
+      "hebrew": "לְבַדּוֹ",
+      "english": "him himself alone",
+      "text": "לְבַדּוֹ.\nלְבַדּוֹ.\nhim himself alone.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d85fa7043d67c09b1497e0cc.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:20:1",
+      "hebrew": "וְגֵר",
+      "english": "and a sojourner",
+      "text": "וְגֵר.\nוְגֵר.\nand a sojourner.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/0bcd4a575073ffc1e5ea924b.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:20:3",
+      "hebrew": "תוֹנֶה",
+      "english": "you must maltreat",
+      "text": "תוֹנֶה.\nתוֹנֶה.\nyou must maltreat.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d2b6a683fc53c40841d9f444.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:20:5",
+      "hebrew": "תִלְחָצֶנּוּ",
+      "english": "you must oppress him",
+      "text": "תִלְחָצֶנּוּ.\nתִלְחָצֶנּוּ.\nyou must oppress him.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/849ae5796647fa095b950d95.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:20:7",
+      "hebrew": "גֵרִים",
+      "english": "sojourners",
+      "text": "גֵרִים.\nגֵרִים.\nsojourners.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/004efd4cc2377749ee23a91f.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:20:8",
+      "hebrew": "הֱיִיתֶם",
+      "english": "you were",
+      "text": "הֱיִיתֶם.\nהֱיִיתֶם.\nyou were.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/5cbbb4f1a714b1b9868ecdca.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:20:9",
+      "hebrew": "בְּאֶרֶץ",
+      "english": "in the land",
+      "text": "בְּאֶרֶץ.\nבְּאֶרֶץ.\nin the land.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/eeeaf3ab3f1c3b17a13efe55.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:20:10",
+      "hebrew": "מִצְרָיִם",
+      "english": "of Egypt",
+      "text": "מִצְרָיִם.\nמִצְרָיִם.\nof Egypt.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/abac084b402722b6af5878e9.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:21:2",
+      "hebrew": "אַלְמָנָה",
+      "english": "widow",
+      "text": "אַלְמָנָה.\nאַלְמָנָה.\nwidow.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/3efebdc91f005ad734f26dcb.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:21:3",
+      "hebrew": "וְיָתוֹם",
+      "english": "and a fatherless one",
+      "text": "וְיָתוֹם.\nוְיָתוֹם.\nand a fatherless one.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/1239f54261c4e76f6792dfb2.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:21:5",
+      "hebrew": "תְעַנּוּן",
+      "english": "you must afflict",
+      "text": "תְעַנּוּן.\nתְעַנּוּן.\nyou must afflict.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b5a89a318d3b4cff6abc2b7e.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:22:2",
+      "hebrew": "עַנֵּה",
+      "english": "indeed (afflict)",
+      "text": "עַנֵּה.\nעַנֵּה.\nindeed (afflict).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/5b7eddf1e3f41d04bb32e87a.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:22:3",
+      "hebrew": "תְעַנֶּה",
+      "english": "you will afflict",
+      "text": "תְעַנֶּה.\nתְעַנֶּה.\nyou will afflict.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/bb31d5f630aa755e1309f478.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:22:7",
+      "hebrew": "צָעֹק",
+      "english": "indeed (cry out)",
+      "text": "צָעֹק.\nצָעֹק.\nindeed (cry out).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/2f5df2778b12e9e07f5a3140.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:22:8",
+      "hebrew": "יִצְעַק",
+      "english": "he will cry out",
+      "text": "יִצְעַק.\nיִצְעַק.\nhe will cry out.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/36d22470c92742791a21d21d.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:22:10",
+      "hebrew": "שָׁמֹעַ",
+      "english": "certainly (hear)",
+      "text": "שָׁמֹעַ.\nשָׁמֹעַ.\ncertainly (hear).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/aafb4ac997f104222493a963.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:22:11",
+      "hebrew": "אֶשְׁמַע",
+      "english": "I will hear",
+      "text": "אֶשְׁמַע.\nאֶשְׁמַע.\nI will hear.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e5eaf37c684955f0335b1ec0.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:22:12",
+      "hebrew": "צַעֲקָתוֹ",
+      "english": "of distress his cry",
+      "text": "צַעֲקָתוֹ.\nצַעֲקָתוֹ.\nof distress his cry.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/12a5eddfc6c7662bf0ad2f92.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:23:1",
+      "hebrew": "וְחָרָה",
+      "english": "and it will burn",
+      "text": "וְחָרָה.\nוְחָרָה.\nand it will burn.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/eb02adaaf2073f3cda7debfa.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:23:2",
+      "hebrew": "אַפִּי",
+      "english": "anger my",
+      "text": "אַפִּי.\nאַפִּי.\nanger my.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ab084f746a686b31b0d18671.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:23:3",
+      "hebrew": "וְהָרַגְתִּי",
+      "english": "and I will kill",
+      "text": "וְהָרַגְתִּי.\nוְהָרַגְתִּי.\nand I will kill.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/77de9bf27cc54ee4f5a0a589.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:23:6",
+      "hebrew": "וְהָיוּ",
+      "english": "and they will be",
+      "text": "וְהָיוּ.\nוְהָיוּ.\nand they will be.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d8e2955221eb7cbdceabd387.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:23:7",
+      "hebrew": "נְשֵׁיכֶם",
+      "english": "wives your",
+      "text": "נְשֵׁיכֶם.\nנְשֵׁיכֶם.\nwives your.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f574053c3a75b21363d06075.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:23:8",
+      "hebrew": "אַלְמָנוֹת",
+      "english": "widows",
+      "text": "אַלְמָנוֹת.\nאַלְמָנוֹת.\nwidows.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/10cf9188d74bc87e2a3743d0.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:23:9",
+      "hebrew": "וּבְנֵיכֶם",
+      "english": "and children your",
+      "text": "וּבְנֵיכֶם.\nוּבְנֵיכֶם.\nand children your.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/1db313ceddf05f3e8e120638.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:23:10",
+      "hebrew": "יְתֹמִים",
+      "english": "fatherless ones",
+      "text": "יְתֹמִים.\nיְתֹמִים.\nfatherless ones.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/fd510733e0b8d52471aa138e.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:24:3",
+      "hebrew": "תַּלְוֶה",
+      "english": "you will lend to",
+      "text": "תַּלְוֶה.\nתַּלְוֶה.\nyou will lend to.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/81f4b11d0a7a5b9abe4b4c0a.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:24:5",
+      "hebrew": "עַמִּי",
+      "english": "people my",
+      "text": "עַמִּי.\nעַמִּי.\npeople my.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/8466fd28894e205be1a911d1.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:24:10",
+      "hebrew": "תִהְיֶה",
+      "english": "you must be",
+      "text": "תִהְיֶה.\nתִהְיֶה.\nyou must be.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c292e8204c5722d1422f534d.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:24:12",
+      "hebrew": "כְּנֹשֶׁה",
+      "english": "like a creditor",
+      "text": "כְּנֹשֶׁה.\nכְּנֹשֶׁה.\nlike a creditor.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/1f0051d2eb86fdc0dec54504.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:24:14",
+      "hebrew": "תְשִׂימוּן",
+      "english": "you must put",
+      "text": "תְשִׂימוּן.\nתְשִׂימוּן.\nyou must put.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/277bbb85a9019830747965b2.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:24:16",
+      "hebrew": "נֶשֶׁךְ",
+      "english": "interest",
+      "text": "נֶשֶׁךְ.\nנֶשֶׁךְ.\ninterest.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b500ed15df7eecdddd6cbc50.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:25:2",
+      "hebrew": "חָבֹל",
+      "english": "actually (take as pledge)",
+      "text": "חָבֹל.\nחָבֹל.\nactually (take as pledge).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/037949c14cd288d6f5ccf300.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:25:3",
+      "hebrew": "תַּחְבֹּל",
+      "english": "you will take as pledge",
+      "text": "תַּחְבֹּל.\nתַּחְבֹּל.\nyou will take as pledge.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ef18aa6d288eeb7f0e6f4d80.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:25:4",
+      "hebrew": "שַׂלְמַת",
+      "english": "the cloak",
+      "text": "שַׂלְמַת.\nשַׂלְמַת.\nthe cloak.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f3d4c7cdf8086d05bcdddf49.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:25:5",
+      "hebrew": "רֵעֶךָ",
+      "english": "your neighbor your",
+      "text": "רֵעֶךָ.\nרֵעֶךָ.\nyour neighbor your.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/60e419a1c31bc1ece9ef3895.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:25:7",
+      "hebrew": "בֹּא",
+      "english": "goes",
+      "text": "בֹּא.\nבֹּא.\ngoes.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f54a02b5ee838b7948766392.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:25:9",
+      "hebrew": "תְּשִׁיבֶנּוּ",
+      "english": "you will return it",
+      "text": "תְּשִׁיבֶנּוּ.\nתְּשִׁיבֶנּוּ.\nyou will return it.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/19e62181ac28a81719e1ced9.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:26:4",
+      "hebrew": "כְסוּתוֹ",
+      "english": "covering [is] his",
+      "text": "כְסוּתוֹ.\nכְסוּתוֹ.\ncovering [is] his.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/909c394386797eedbc045456.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:26:5",
+      "hebrew": "לְבַדָּהּ",
+      "english": "it only alone",
+      "text": "לְבַדָּהּ.\nלְבַדָּהּ.\nit only alone.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/bad466027d97858c1c515143.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:26:7",
+      "hebrew": "שִׂמְלָתוֹ",
+      "english": "cloak [is] his",
+      "text": "שִׂמְלָתוֹ.\nשִׂמְלָתוֹ.\ncloak [is] his.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/9bb5d6ae7ec46850eea04f26.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:26:8",
+      "hebrew": "לְעֹרוֹ",
+      "english": "for skin his",
+      "text": "לְעֹרוֹ.\nלְעֹרוֹ.\nfor skin his.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/3a7110efebbbdb3872b81364.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:26:10",
+      "hebrew": "יִשְׁכָּב",
+      "english": "will he lie down",
+      "text": "יִשְׁכָּב.\nיִשְׁכָּב.\nwill he lie down.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/aa1653eb2d426e25c2ebead8.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:26:11",
+      "hebrew": "וְהָיָה",
+      "english": "and it will be",
+      "text": "וְהָיָה.\nוְהָיָה.\nand it will be.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/4ca309460a4ca1e0e1c38b67.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:26:15",
+      "hebrew": "וְשָׁמַעְתִּי",
+      "english": "and I will hear",
+      "text": "וְשָׁמַעְתִּי.\nוְשָׁמַעְתִּי.\nand I will hear.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/3dd5c62bc2661650c3583d26.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:27:3",
+      "hebrew": "תְקַלֵּל",
+      "english": "you must curse",
+      "text": "תְקַלֵּל.\nתְקַלֵּל.\nyou must curse.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/2e09bb29440ab49e9c629371.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:27:4",
+      "hebrew": "וְנָשִׂיא",
+      "english": "and a leader",
+      "text": "וְנָשִׂיא.\nוְנָשִׂיא.\nand a leader.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/0f94a5736e4f2c047d6afd73.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:27:5",
+      "hebrew": "בְעַמְּךָ",
+      "english": "among people your",
+      "text": "בְעַמְּךָ.\nבְעַמְּךָ.\namong people your.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/1acde6842a3485986dc09b49.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:27:7",
+      "hebrew": "תָאֹר",
+      "english": "you must curse",
+      "text": "תָאֹר.\nתָאֹר.\nyou must curse.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/0ba6d4905ea9a3c1cbfb6241.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:28:1",
+      "hebrew": "מְלֵאָתְךָ",
+      "english": "produce your full",
+      "text": "מְלֵאָתְךָ.\nמְלֵאָתְךָ.\nproduce your full.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a3927517a0fcc9dae5427334.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:28:2",
+      "hebrew": "וְדִמְעֲךָ",
+      "english": "and juice your",
+      "text": "וְדִמְעֲךָ.\nוְדִמְעֲךָ.\nand juice your.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f0c41f2b4c64792e041cec8b.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:28:4",
+      "hebrew": "תְאַחֵר",
+      "english": "you must delay",
+      "text": "תְאַחֵר.\nתְאַחֵר.\nyou must delay.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b6fa77d329d83b308affdec4.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:28:5",
+      "hebrew": "בְּכוֹר",
+      "english": "the firstborn",
+      "text": "בְּכוֹר.\nבְּכוֹר.\nthe firstborn.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/742f51145d6c9d90a41b0a77.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:28:6",
+      "hebrew": "בָּנֶיךָ",
+      "english": "your sons your",
+      "text": "בָּנֶיךָ.\nבָּנֶיךָ.\nyour sons your.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/fa60ce8d17d4777318cd55f8.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:28:7",
+      "hebrew": "תִּתֶּן",
+      "english": "you will give",
+      "text": "תִּתֶּן.\nתִּתֶּן.\nyou will give.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/44c1e1be93d36e31a2b53e24.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:29:2",
+      "hebrew": "תַּעֲשֶׂה",
+      "english": "you will do",
+      "text": "תַּעֲשֶׂה.\nתַּעֲשֶׂה.\nyou will do.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/802faca8480203452283dda6.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:29:3",
+      "hebrew": "לְשֹׁרְךָ",
+      "english": "to ox your",
+      "text": "לְשֹׁרְךָ.\nלְשֹׁרְךָ.\nto ox your.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ec06197e30f5712940f345cd.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:29:4",
+      "hebrew": "לְצֹאנֶךָ",
+      "english": "to sheep your",
+      "text": "לְצֹאנֶךָ.\nלְצֹאנֶךָ.\nto sheep your.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c770125ee0f5981815e7748f.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:29:6",
+      "hebrew": "יָמִים",
+      "english": "days",
+      "text": "יָמִים.\nיָמִים.\ndays.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/8915ec7693a395f702f98822.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:29:7",
+      "hebrew": "יִהְיֶה",
+      "english": "it will be",
+      "text": "יִהְיֶה.\nיִהְיֶה.\nit will be.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/30689b1a077cf18258012b81.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:29:9",
+      "hebrew": "אִמּוֹ",
+      "english": "mother its",
+      "text": "אִמּוֹ.\nאִמּוֹ.\nmother its.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/363f0e71d75d9bdce499a6e3.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:29:12",
+      "hebrew": "תִּתְּנוֹ",
+      "english": "you will give it",
+      "text": "תִּתְּנוֹ.\nתִּתְּנוֹ.\nyou will give it.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/2bb37b96f0daaf8525f5b060.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:30:1",
+      "hebrew": "וְאַנְשֵׁי",
+      "english": "and people",
+      "text": "וְאַנְשֵׁי.\nוְאַנְשֵׁי.\nand people.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/de8dd7585c047a759ac4fddd.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:30:2",
+      "hebrew": "קֹדֶשׁ",
+      "english": "of holiness",
+      "text": "קֹדֶשׁ.\nקֹדֶשׁ.\nof holiness.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/aa70c34291ad2abdf9bb1f74.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:30:3",
+      "hebrew": "תִּהְיוּן",
+      "english": "you will be",
+      "text": "תִּהְיוּן.\nתִּהְיוּן.\nyou will be.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/848aecb636193596ae3ac718.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:30:5",
+      "hebrew": "וּבָשָׂר",
+      "english": "and flesh",
+      "text": "וּבָשָׂר.\nוּבָשָׂר.\nand flesh.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/12c80e27f76a4fecd7509b4d.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:30:7",
+      "hebrew": "טְרֵפָה",
+      "english": "a torn animal",
+      "text": "טְרֵפָה.\nטְרֵפָה.\na torn animal.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/825d1b20181bc6e586354f83.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:30:9",
+      "hebrew": "תֹאכֵלוּ",
+      "english": "you must eat",
+      "text": "תֹאכֵלוּ.\nתֹאכֵלוּ.\nyou must eat.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/6b1b6ae2ae3ac746f66192ba.mp3"
+      }
+    },
+    {
+      "ref": "EXO 22:30:11",
+      "hebrew": "תַּשְׁלִכוּן",
+      "english": "you will throw",
+      "text": "תַּשְׁלִכוּן.\nתַּשְׁלִכוּן.\nyou will throw.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d574efcaf5981eb647b53bb2.mp3"
+      }
+    }
+  ]
+}

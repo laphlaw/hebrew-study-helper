@@ -1,5 +1,6 @@
 {
   "scripts": {
-    "build": "node tools/build-static.mjs"
+    "build": "node tools/build-static.mjs",
+    "generate:audio": "node tools/generate-elevenlabs-audio.mjs"
   }
 }

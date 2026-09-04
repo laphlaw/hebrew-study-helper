@@ -717,81 +717,124 @@ button {
     repeating-linear-gradient(0deg, transparent, transparent 31px, var(--rule-soft) 32px);
 }
 
-.audio-flashcard-toolbar {
+.elevenlabs-audio-player {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 14px;
+  gap: 12px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
 }
 
-.audio-flashcard-actions {
+.elevenlabs-audio-status {
+  min-width: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.elevenlabs-audio-actions {
+  display: flex;
+  flex: 0 0 auto;
+  gap: 8px;
+}
+
+.elevenlabs-cache-panel {
+  display: grid;
+  gap: 8px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.elevenlabs-cache-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.elevenlabs-cache-status {
+  color: var(--muted);
+  font-size: 0.84rem;
+  font-weight: 800;
+}
+
+.elevenlabs-cache-actions {
+  align-items: center;
   display: flex;
   gap: 8px;
 }
 
-.audio-flashcard-controls {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 8px;
-}
-
-.audio-flashcard-controls label {
-  display: grid;
-  gap: 5px;
-  color: var(--muted);
-  font-size: 0.82rem;
+.elevenlabs-shuffle-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 38px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--ink);
+  background: var(--panel);
+  font-size: 0.84rem;
   font-weight: 800;
 }
 
-.audio-flashcard-controls input,
-.audio-flashcard-controls select {
-  width: 100%;
-  min-height: 42px;
-  padding: 0 10px;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  color: var(--ink);
-  background: var(--surface);
-}
-
-.audio-flashcard-controls .audio-flashcard-check {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  min-height: 42px;
-  padding: 0 10px;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  color: var(--ink);
-  background: var(--surface);
-}
-
-.audio-flashcard-check input {
-  width: 18px;
-  min-height: 0;
-  height: 18px;
-  padding: 0;
+.elevenlabs-shuffle-toggle input {
+  width: 17px;
+  height: 17px;
   accent-color: var(--accent);
 }
 
-.audio-flashcard-status {
-  color: var(--muted);
-  font-size: 0.9rem;
-  font-weight: 800;
+.elevenlabs-cache-list {
+  display: grid;
+  max-height: 260px;
+  overflow: auto;
+  border: 1px solid var(--line);
+  border-radius: 6px;
 }
 
-.audio-flashcard-text {
-  width: 100%;
-  min-height: min(560px, calc(100dvh - 230px));
-  resize: vertical;
-  padding: 14px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
+.elevenlabs-cache-row {
+  display: grid;
+  grid-template-columns: 28px minmax(7rem, 1fr) minmax(8rem, 1.25fr);
+  align-items: center;
+  gap: 10px;
+  min-height: 46px;
+  padding: 7px 10px;
+  border-bottom: 1px solid var(--line);
+}
+
+.elevenlabs-cache-row:last-child {
+  border-bottom: 0;
+}
+
+.elevenlabs-cache-row input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent);
+}
+
+.elevenlabs-cache-hebrew {
+  overflow: hidden;
   color: var(--ink);
-  background: var(--surface);
   font-family: "SBL Hebrew", "SBL_Hbrw", "Ezra SIL", "Cardo", "SF Hebrew", "Times New Roman", serif;
-  font-size: clamp(1.35rem, 2.8vw, 2rem);
-  line-height: 1.8;
+  font-size: 1.35rem;
+  font-weight: 800;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.elevenlabs-cache-english {
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 800;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .reading-section:fullscreen,
@@ -1444,27 +1487,33 @@ input[type="search"] {
     flex-direction: column;
   }
 
-  .audio-flashcard-toolbar {
+  .elevenlabs-audio-player {
     align-items: stretch;
     flex-direction: column;
   }
 
-  .audio-flashcard-actions {
+  .elevenlabs-audio-actions {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .audio-flashcard-controls {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .elevenlabs-cache-toolbar {
+    align-items: stretch;
+    flex-direction: column;
   }
 
-  .audio-flashcard-controls label:nth-child(3) {
-    grid-column: 1 / -1;
+  .elevenlabs-cache-actions {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .audio-flashcard-text {
-    min-height: min(560px, calc(100dvh - 210px));
-    font-size: clamp(1.25rem, 5.2vw, 1.8rem);
+  .elevenlabs-cache-row {
+    grid-template-columns: 28px minmax(0, 1fr);
+    gap: 6px 10px;
+  }
+
+  .elevenlabs-cache-english {
+    grid-column: 2;
   }
 
   .reading-font-control {

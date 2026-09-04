@@ -1,0 +1,15 @@
+{
+  "provider": "elevenlabs",
+  "generatedAt": "2026-09-04T07:32:40.359Z",
+  "chapters": [
+    {
+      "book": "Exo",
+      "chapter": 22,
+      "manifest": "public/audio/elevenlabs/manifests/Exo.22.json",
+      "cards": 181,
+      "modelId": "eleven_v3",
+      "outputFormat": "mp3_44100_128",
+      "generatedAt": "2026-09-04T07:30:35.326Z"
+    }
+  ]
+}

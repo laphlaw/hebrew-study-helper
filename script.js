@@ -26,10 +26,16 @@ let direction = "hebrew";
 let formMode = "root";
 let currentMode = "study";
 let maculaIndex = null;
+let elevenLabsCatalog = null;
 let currentChapterRecords = [];
 let verbFormIndex = {};
 let verbMeaningIndex = {};
 let autoAdvanceTimer = null;
+let elevenLabsManifest = null;
+let elevenLabsQueue = [];
+let elevenLabsQueueIndex = 0;
+let elevenLabsIsPlaying = false;
+const elevenLabsAudio = new Audio();
 let fallbackReadingFullscreen = false;
 const chapterStorageKey = "hebrew-study-helper:last-chapter";
 const masteredWordsStorageKey = "hebrew-study-helper:mastered-words";
@@ -37,8 +43,12 @@ const legacyHiddenWordsStorageKey = "hebrew-study-helper:hidden-words";
 const autoAdvanceStorageKey = "hebrew-study-helper:auto-advance";
 const orderStorageKey = "hebrew-study-helper:word-order";
 const preferencesStorageKey = "hebrew-study-helper:preferences";
-const audioFlashcardSettingsStorageKey = "hebrew-study-helper:audio-flashcards";
+const elevenLabsSkippedWordsStorageKey = "hebrew-study-helper:elevenlabs-skipped-words";
+const elevenLabsPlaybackStorageKey = "hebrew-study-helper:elevenlabs-playback";
 const masteredWords = loadMasteredWordKeys();
+let elevenLabsSkippedWords = loadElevenLabsSkippedWords();
+let elevenLabsShuffleEnabled = loadElevenLabsPlaybackPreferences().shuffle;
+let elevenLabsShuffleOrder = [];
 
 const els = {
   bookSelect: document.querySelector("#book-select"),
@@ -47,14 +57,16 @@ const els = {
   flashcardSection: document.querySelector("#flashcard-section"),
   readingSection: document.querySelector("#reading-section"),
   audioFlashcardSection: document.querySelector("#audio-flashcard-section"),
-  audioFlashcardStatus: document.querySelector("#audio-flashcard-status"),
-  audioFlashcardText: document.querySelector("#audio-flashcard-text"),
-  audioFlashcardSelectButton: document.querySelector("#audio-flashcard-select-button"),
-  audioFlashcardCopyButton: document.querySelector("#audio-flashcard-copy-button"),
-  audioHebrewRepeat: document.querySelector("#audio-hebrew-repeat"),
-  audioEnglishRepeat: document.querySelector("#audio-english-repeat"),
-  audioLineSeparator: document.querySelector("#audio-line-separator"),
-  audioPlainHebrewToggle: document.querySelector("#audio-plain-hebrew-toggle"),
+  elevenLabsAudioStatus: document.querySelector("#elevenlabs-audio-status"),
+  elevenLabsPlayButton: document.querySelector("#elevenlabs-play-button"),
+  elevenLabsStopButton: document.querySelector("#elevenlabs-stop-button"),
+  elevenLabsNextButton: document.querySelector("#elevenlabs-next-button"),
+  elevenLabsCachePanel: document.querySelector("#elevenlabs-cache-panel"),
+  elevenLabsCacheStatus: document.querySelector("#elevenlabs-cache-status"),
+  elevenLabsCacheList: document.querySelector("#elevenlabs-cache-list"),
+  elevenLabsShuffleToggle: document.querySelector("#elevenlabs-shuffle-toggle"),
+  elevenLabsCacheAllButton: document.querySelector("#elevenlabs-cache-all-button"),
+  elevenLabsCacheNoneButton: document.querySelector("#elevenlabs-cache-none-button"),
   verbPracticeSection: document.querySelector("#verb-practice-section"),
   writingSection: document.querySelector("#writing-section"),
   writingCardButton: document.querySelector("#writing-card-button"),
@@ -1074,11 +1086,13 @@ function renderMode() {
       els.settingsDialog.close();
     }
     stopAutoAdvance();
+    if (!audioMode) stopElevenLabsAudio();
   } else {
     if (isReadingFullscreen()) {
       exitReadingFullscreen().catch(console.error);
     }
     updateAutoAdvance();
+    stopElevenLabsAudio();
   }
 
   if (verbMode) {
@@ -1089,9 +1103,6 @@ function renderMode() {
     renderWritingCard();
   }
 
-  if (audioMode) {
-    renderAudioFlashcards();
-  }
 }
 
 function spaceAction() {
@@ -1456,24 +1467,12 @@ async function initMaculaPicker() {
   maculaIndex = await response.json();
   await loadVerbFormIndex();
   await loadVerbMeaningIndex();
-
-  els.bookSelect.innerHTML = "";
-  maculaIndex.books.forEach((book) => {
-    const option = document.createElement("option");
-    option.value = book.code;
-    option.textContent = book.name;
-    els.bookSelect.append(option);
-  });
+  await loadElevenLabsCatalog();
 
   const savedChapter = getSavedChapter();
-  const savedBook = maculaIndex.books.find((book) => book.code === savedChapter.book);
-  els.bookSelect.value = savedBook ? savedChapter.book : "Gen";
   applySavedPreferences();
-  renderChapterOptions();
-  const currentBook = maculaIndex.books.find((book) => book.code === els.bookSelect.value);
-  els.chapterSelect.value = currentBook?.chapters.includes(savedChapter.chapter)
-    ? String(savedChapter.chapter)
-    : "1";
+  renderBookOptions(savedChapter.book);
+  renderChapterOptions(savedChapter.chapter);
   await loadCurrentChapter();
 }
 
@@ -1487,6 +1486,20 @@ async function loadVerbMeaningIndex() {
   const response = await fetch("public/macula/verb-meanings.json", { cache: "no-store" });
   if (!response.ok) throw new Error("Could not load verb meanings");
   verbMeaningIndex = await response.json();
+}
+
+async function loadElevenLabsCatalog() {
+  try {
+    const response = await fetch("public/audio/elevenlabs/catalog.json", { cache: "no-store" });
+    if (!response.ok) {
+      elevenLabsCatalog = { chapters: [] };
+      return;
+    }
+
+    elevenLabsCatalog = await response.json();
+  } catch {
+    elevenLabsCatalog = { chapters: [] };
+  }
 }
 
 function getSavedChapter() {
@@ -1505,17 +1518,74 @@ function saveSelectedChapter(book, chapter) {
   localStorage.setItem(chapterStorageKey, JSON.stringify({ book: book.code, chapter }));
 }
 
-function renderChapterOptions() {
+function audioCatalogEntries() {
+  return Array.isArray(elevenLabsCatalog?.chapters) ? elevenLabsCatalog.chapters : [];
+}
+
+function audioCatalogModeActive() {
+  return currentMode === "audio";
+}
+
+function getSelectableBooks() {
+  const books = maculaIndex?.books || [];
+  if (!audioCatalogModeActive()) return books;
+
+  const catalogBooks = new Set(audioCatalogEntries().map((entry) => entry.book));
+  return books.filter((book) => catalogBooks.has(book.code));
+}
+
+function getSelectableChapters(book) {
+  if (!book) return [];
+  if (!audioCatalogModeActive()) return book.chapters;
+
+  return audioCatalogEntries()
+    .filter((entry) => entry.book === book.code)
+    .map((entry) => Number(entry.chapter))
+    .filter(Boolean)
+    .sort((a, b) => a - b);
+}
+
+function renderBookOptions(preferredBook = els.bookSelect.value) {
+  const books = getSelectableBooks();
+  els.bookSelect.innerHTML = "";
+
+  books.forEach((book) => {
+    const option = document.createElement("option");
+    option.value = book.code;
+    option.textContent = book.name;
+    els.bookSelect.append(option);
+  });
+
+  if (books.some((book) => book.code === preferredBook)) {
+    els.bookSelect.value = preferredBook;
+  } else if (books[0]) {
+    els.bookSelect.value = books[0].code;
+  }
+}
+
+function renderChapterOptions(preferredChapter = Number(els.chapterSelect.value)) {
   const book = maculaIndex?.books.find((item) => item.code === els.bookSelect.value);
   els.chapterSelect.innerHTML = "";
   if (!book) return;
 
-  book.chapters.forEach((chapter) => {
+  const chapters = getSelectableChapters(book);
+  chapters.forEach((chapter) => {
     const option = document.createElement("option");
     option.value = String(chapter);
     option.textContent = String(chapter);
     els.chapterSelect.append(option);
   });
+
+  if (chapters.includes(Number(preferredChapter))) {
+    els.chapterSelect.value = String(preferredChapter);
+  } else if (chapters[0]) {
+    els.chapterSelect.value = String(chapters[0]);
+  }
+}
+
+function refreshChapterPicker(preferredBook = els.bookSelect.value, preferredChapter = Number(els.chapterSelect.value)) {
+  renderBookOptions(preferredBook);
+  renderChapterOptions(preferredChapter);
 }
 
 function getAdjacentChapter(delta) {
@@ -1564,161 +1634,271 @@ function stripCantillation(value = "") {
   return value.replace(/[\u0591-\u05AF\u05BD]/g, "");
 }
 
-function audioFlashcardRefOrder(ref = "") {
-  const match = ref.match(/^\S+\s+(\d+):(\d+):(\d+)$/);
-  return match ? [Number(match[1]), Number(match[2]), Number(match[3])] : [0, 0, 0];
+function elevenLabsManifestUrl() {
+  return `public/audio/elevenlabs/manifests/${els.bookSelect.value}.${els.chapterSelect.value}.json`;
 }
 
-function compareAudioFlashcardRefs(a, b) {
-  const left = audioFlashcardRefOrder(a);
-  const right = audioFlashcardRefOrder(b);
-  return left[0] - right[0] || left[1] - right[1] || left[2] - right[2];
+function audioAssetUrl(path = "") {
+  return path.replace(/^\/+/, "");
 }
 
-function cleanAudioFlashcardGloss(value = "") {
-  return value
-    .replace(/\((?:et|ET)\)/g, "")
-    .replace(/\s+/g, " ")
-    .replace(/\s+([,.;:!?])/g, "$1")
-    .trim();
-}
-
-function audioFlashcardHasObjectMarker(records = []) {
-  return records.some((record) => stripNiqqud(record.h || "") === "את");
-}
-
-function audioFlashcardHasNounOrVerb(records = []) {
-  return records.some((record) => record.p === "noun" || record.p === "verb");
-}
-
-function clampAudioRepeatCount(value, fallback) {
-  const parsed = Number.parseInt(value, 10);
-  const count = Number.isFinite(parsed) ? parsed : fallback;
-  return Math.min(Math.max(count, 0), 10);
-}
-
-function loadAudioFlashcardSettings() {
+function loadElevenLabsSkippedWords() {
   try {
-    const saved = JSON.parse(localStorage.getItem(audioFlashcardSettingsStorageKey) || "{}");
+    const saved = JSON.parse(localStorage.getItem(elevenLabsSkippedWordsStorageKey) || "[]");
+    return new Set(Array.isArray(saved) ? saved.filter(Boolean) : []);
+  } catch {
+    return new Set();
+  }
+}
+
+function saveElevenLabsSkippedWords() {
+  localStorage.setItem(elevenLabsSkippedWordsStorageKey, JSON.stringify([...elevenLabsSkippedWords]));
+}
+
+function loadElevenLabsPlaybackPreferences() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(elevenLabsPlaybackStorageKey) || "{}");
     return {
-      hebrewRepeats: clampAudioRepeatCount(saved.hebrewRepeats, 2),
-      englishRepeats: clampAudioRepeatCount(saved.englishRepeats, 1),
-      separator: typeof saved.separator === "string" ? saved.separator : ".",
-      plainHebrew: saved.plainHebrew !== false
+      shuffle: saved.shuffle === true
     };
   } catch {
-    return {
-      hebrewRepeats: 2,
-      englishRepeats: 1,
-      separator: ".",
-      plainHebrew: true
-    };
+    return { shuffle: false };
   }
 }
 
-function getAudioFlashcardSettings() {
-  return {
-    hebrewRepeats: clampAudioRepeatCount(els.audioHebrewRepeat.value, 2),
-    englishRepeats: clampAudioRepeatCount(els.audioEnglishRepeat.value, 1),
-    separator: els.audioLineSeparator.value,
-    plainHebrew: els.audioPlainHebrewToggle.checked
-  };
+function saveElevenLabsPlaybackPreferences() {
+  localStorage.setItem(elevenLabsPlaybackStorageKey, JSON.stringify({
+    shuffle: elevenLabsShuffleEnabled
+  }));
 }
 
-function saveAudioFlashcardSettings() {
-  localStorage.setItem(audioFlashcardSettingsStorageKey, JSON.stringify(getAudioFlashcardSettings()));
+function elevenLabsCardKey(card) {
+  return stripNiqqud(card?.hebrew || "").trim();
 }
 
-function applyAudioFlashcardSettings() {
-  const settings = loadAudioFlashcardSettings();
-  els.audioHebrewRepeat.value = String(settings.hebrewRepeats);
-  els.audioEnglishRepeat.value = String(settings.englishRepeats);
-  els.audioLineSeparator.value = settings.separator;
-  els.audioPlainHebrewToggle.checked = settings.plainHebrew;
+function isElevenLabsCardEnabled(card) {
+  const key = elevenLabsCardKey(card);
+  return Boolean(key) && !elevenLabsSkippedWords.has(key);
 }
 
-function audioHebrewText(value, settings) {
-  return settings.plainHebrew ? stripNiqqud(value) : value;
-}
-
-function renderAudioFlashcardPair(pair, settings) {
-  const lines = [];
-  const hebrew = audioHebrewText(pair.hebrew, settings);
-
-  for (let index = 0; index < settings.hebrewRepeats; index += 1) {
-    lines.push(`${hebrew}${settings.separator}`);
+function shuffleArray(items) {
+  const shuffled = [...items];
+  for (let index = shuffled.length - 1; index > 0; index -= 1) {
+    const swapIndex = Math.floor(Math.random() * (index + 1));
+    [shuffled[index], shuffled[swapIndex]] = [shuffled[swapIndex], shuffled[index]];
   }
-
-  for (let index = 0; index < settings.englishRepeats; index += 1) {
-    lines.push(`${pair.english}${settings.separator}`);
-  }
-
-  return lines.join("\n");
+  return shuffled;
 }
 
-function handleAudioFlashcardSettingsChange() {
-  saveAudioFlashcardSettings();
-  renderAudioFlashcards();
+function resetElevenLabsShuffleOrder() {
+  elevenLabsShuffleOrder = shuffleArray((elevenLabsManifest?.cards || []).map((_, index) => index));
 }
 
-function getAudioFlashcardPairs(records = currentChapterRecords) {
-  const grouped = new Map();
+function orderedElevenLabsCards() {
+  const cards = elevenLabsManifest?.cards || [];
+  if (!elevenLabsShuffleEnabled) return cards;
 
-  records.forEach((record) => {
-    if (!record.r || !record.h) return;
+  const ordered = elevenLabsShuffleOrder.map((index) => cards[index]).filter(Boolean);
+  const orderedIndexes = new Set(elevenLabsShuffleOrder);
+  const missing = cards.filter((_, index) => !orderedIndexes.has(index));
+  return [...ordered, ...missing];
+}
 
-    if (!grouped.has(record.r)) {
-      grouped.set(record.r, {
-        ref: record.r,
-        records: [],
-        hebrewParts: [],
-        glossParts: []
+function renderElevenLabsPlayerState() {
+  const hasAudio = Boolean(elevenLabsQueue.length);
+  els.elevenLabsPlayButton.disabled = !hasAudio || elevenLabsIsPlaying;
+  els.elevenLabsStopButton.disabled = !elevenLabsIsPlaying;
+  els.elevenLabsNextButton.disabled = !hasAudio;
+}
+
+function buildElevenLabsQueue() {
+  const settings = elevenLabsManifest?.cardSettings || { hebrewRepeats: 2, englishRepeats: 1 };
+  elevenLabsQueue = [];
+
+  orderedElevenLabsCards().filter(isElevenLabsCardEnabled).forEach((card) => {
+    if (card.audio?.card) {
+      elevenLabsQueue.push({
+        label: `${card.hebrew} / ${card.english}`,
+        src: audioAssetUrl(card.audio.card)
+      });
+      return;
+    }
+
+    for (let index = 0; index < settings.hebrewRepeats; index += 1) {
+      elevenLabsQueue.push({
+        label: card.hebrew,
+        src: audioAssetUrl(card.audio.hebrew)
       });
     }
 
-    const group = grouped.get(record.r);
-    group.records.push(record);
-    group.hebrewParts.push(record.h);
-    if (record.g) group.glossParts.push(record.g);
+    for (let index = 0; index < settings.englishRepeats; index += 1) {
+      elevenLabsQueue.push({
+        label: card.english,
+        src: audioAssetUrl(card.audio.english)
+      });
+    }
   });
 
-  return [...grouped.values()]
-    .filter((group) => audioFlashcardHasNounOrVerb(group.records))
-    .filter((group) => !audioFlashcardHasObjectMarker(group.records))
-    .sort((a, b) => compareAudioFlashcardRefs(a.ref, b.ref))
-    .map((group) => ({
-      hebrew: group.hebrewParts.join(""),
-      english: cleanAudioFlashcardGloss(group.glossParts.join(" "))
-    }))
-    .filter((pair) => pair.hebrew && pair.english);
+  elevenLabsQueueIndex = Math.min(elevenLabsQueueIndex, Math.max(elevenLabsQueue.length - 1, 0));
 }
 
-function renderAudioFlashcards() {
-  const pairs = getAudioFlashcardPairs();
-  const settings = getAudioFlashcardSettings();
-  els.audioFlashcardText.value = pairs.map((pair) => renderAudioFlashcardPair(pair, settings)).filter(Boolean).join("\n\n");
-  const book = maculaIndex?.books.find((item) => item.code === els.bookSelect.value);
-  const chapter = Number(els.chapterSelect.value);
-  const label = book && chapter ? `${book.name} ${chapter}` : "Current chapter";
-  els.audioFlashcardStatus.textContent = `${label}: ${pairs.length} word audio prompts`;
+function renderElevenLabsCacheList() {
+  const cards = orderedElevenLabsCards();
+  els.elevenLabsCacheList.textContent = "";
+  els.elevenLabsCachePanel.classList.toggle("hidden", !cards.length);
+
+  if (!cards.length) {
+    els.elevenLabsCacheStatus.textContent = "0 selected";
+    return;
+  }
+
+  const enabledCount = cards.filter(isElevenLabsCardEnabled).length;
+  els.elevenLabsCacheStatus.textContent = `${enabledCount} / ${cards.length} selected`;
+
+  const fragment = document.createDocumentFragment();
+  cards.forEach((card) => {
+    const key = elevenLabsCardKey(card);
+    const row = document.createElement("label");
+    row.className = "elevenlabs-cache-row";
+
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.checked = !elevenLabsSkippedWords.has(key);
+    checkbox.dataset.cacheKey = key;
+    checkbox.setAttribute("aria-label", `${card.hebrew} ${card.english}`);
+
+    const hebrew = document.createElement("span");
+    hebrew.className = "elevenlabs-cache-hebrew";
+    hebrew.dir = "rtl";
+    hebrew.textContent = card.hebrew;
+
+    const english = document.createElement("span");
+    english.className = "elevenlabs-cache-english";
+    english.textContent = card.english;
+
+    row.append(checkbox, hebrew, english);
+    fragment.append(row);
+  });
+
+  els.elevenLabsCacheList.append(fragment);
 }
 
-function selectAudioFlashcardText() {
-  els.audioFlashcardText.focus();
-  els.audioFlashcardText.select();
+function refreshElevenLabsPlaybackFromSelection() {
+  buildElevenLabsQueue();
+  renderElevenLabsCacheList();
+  updateElevenLabsStatus();
+  renderElevenLabsPlayerState();
+  if (elevenLabsIsPlaying && !elevenLabsQueue.length) {
+    stopElevenLabsAudio();
+  }
 }
 
-async function copyAudioFlashcardText() {
-  selectAudioFlashcardText();
+function setAllElevenLabsCardsEnabled(enabled) {
+  (elevenLabsManifest?.cards || []).forEach((card) => {
+    const key = elevenLabsCardKey(card);
+    if (!key) return;
+    if (enabled) {
+      elevenLabsSkippedWords.delete(key);
+    } else {
+      elevenLabsSkippedWords.add(key);
+    }
+  });
+  saveElevenLabsSkippedWords();
+  refreshElevenLabsPlaybackFromSelection();
+}
+
+function updateElevenLabsStatus(message = "") {
+  if (message) {
+    els.elevenLabsAudioStatus.textContent = message;
+    return;
+  }
+
+  if (!elevenLabsManifest) {
+    els.elevenLabsAudioStatus.textContent = "No generated audio for this chapter yet.";
+    return;
+  }
+
+  const cardSettings = elevenLabsManifest.cardSettings;
+  const enabledCount = elevenLabsQueue.length;
+  const totalCount = elevenLabsManifest.cards.length;
+  if (cardSettings) {
+    els.elevenLabsAudioStatus.textContent =
+      `${enabledCount} / ${totalCount} generated audio cards selected: Hebrew x${cardSettings.hebrewRepeats}, English x${cardSettings.englishRepeats}.`;
+    return;
+  }
+
+  els.elevenLabsAudioStatus.textContent = `${enabledCount} / ${totalCount} generated audio cards selected.`;
+}
+
+async function loadElevenLabsManifest() {
+  stopElevenLabsAudio();
+  elevenLabsManifest = null;
+  elevenLabsQueue = [];
+  elevenLabsShuffleOrder = [];
+  renderElevenLabsCacheList();
+  updateElevenLabsStatus("Checking for generated audio...");
+  renderElevenLabsPlayerState();
 
   try {
-    await navigator.clipboard.writeText(els.audioFlashcardText.value);
-    els.audioFlashcardCopyButton.textContent = "Copied";
-    window.setTimeout(() => {
-      els.audioFlashcardCopyButton.textContent = "Copy";
-    }, 1400);
+    const response = await fetch(elevenLabsManifestUrl(), { cache: "no-store" });
+    if (!response.ok) {
+      updateElevenLabsStatus("No generated audio for this chapter yet.");
+      renderElevenLabsCacheList();
+      renderElevenLabsPlayerState();
+      return;
+    }
+
+    elevenLabsManifest = await response.json();
+    if (elevenLabsShuffleEnabled) resetElevenLabsShuffleOrder();
+    buildElevenLabsQueue();
+    renderElevenLabsCacheList();
+    updateElevenLabsStatus();
+    renderElevenLabsPlayerState();
   } catch {
-    document.execCommand("copy");
+    updateElevenLabsStatus("Could not load generated audio.");
+    renderElevenLabsCacheList();
+    renderElevenLabsPlayerState();
+  }
+}
+
+function playCurrentElevenLabsItem() {
+  const item = elevenLabsQueue[elevenLabsQueueIndex];
+  if (!item) {
+    stopElevenLabsAudio();
+    return;
+  }
+
+  elevenLabsAudio.src = item.src;
+  elevenLabsAudio.play().catch(() => {
+    updateElevenLabsStatus("Could not play generated audio.");
+    stopElevenLabsAudio();
+  });
+  els.elevenLabsAudioStatus.textContent = `${elevenLabsQueueIndex + 1} / ${elevenLabsQueue.length}: ${item.label}`;
+}
+
+function playElevenLabsAudio() {
+  if (!elevenLabsQueue.length) return;
+  elevenLabsIsPlaying = true;
+  renderElevenLabsPlayerState();
+  playCurrentElevenLabsItem();
+}
+
+function stopElevenLabsAudio() {
+  elevenLabsIsPlaying = false;
+  elevenLabsAudio.pause();
+  elevenLabsAudio.removeAttribute("src");
+  elevenLabsAudio.load();
+  renderElevenLabsPlayerState();
+}
+
+function nextElevenLabsAudio() {
+  if (!elevenLabsQueue.length) return;
+  elevenLabsQueueIndex = (elevenLabsQueueIndex + 1) % elevenLabsQueue.length;
+  if (elevenLabsIsPlaying) {
+    playCurrentElevenLabsItem();
+  } else {
+    const item = elevenLabsQueue[elevenLabsQueueIndex];
+    els.elevenLabsAudioStatus.textContent = `${elevenLabsQueueIndex + 1} / ${elevenLabsQueue.length}: ${item.label}`;
   }
 }
 
@@ -1779,13 +1959,23 @@ async function loadSelectedChapter() {
   saveSelectedChapter(book, chapter);
   applyFilter();
   renderVerbPractice();
-  renderAudioFlashcards();
+  await loadElevenLabsManifest();
 }
 
 async function loadCurrentChapter() {
   const book = maculaIndex?.books.find((item) => item.code === els.bookSelect.value);
   const chapter = Number(els.chapterSelect.value);
-  if (!book || !chapter) return;
+  if (!book || !chapter) {
+    if (currentMode === "audio") {
+      currentChapterRecords = [];
+      elevenLabsManifest = null;
+      elevenLabsQueue = [];
+      renderElevenLabsCacheList();
+      updateElevenLabsStatus("No generated audio chapters in catalog.");
+      renderElevenLabsPlayerState();
+    }
+    return;
+  }
 
   if (currentMode === "reading") {
     saveSelectedChapter(book, chapter);
@@ -1797,7 +1987,7 @@ async function loadCurrentChapter() {
 }
 
 els.bookSelect.addEventListener("change", () => {
-  renderChapterOptions();
+  renderChapterOptions(1);
   loadCurrentChapter().catch(console.error);
 });
 els.chapterSelect.addEventListener("change", () => {
@@ -1821,7 +2011,10 @@ els.settingsCloseButton.addEventListener("click", () => {
 });
 els.searchInput.addEventListener("input", applyFilter);
 els.modeSelect.addEventListener("change", () => {
+  const preferredBook = els.bookSelect.value;
+  const preferredChapter = Number(els.chapterSelect.value);
   currentMode = els.modeSelect.value;
+  refreshChapterPicker(preferredBook, preferredChapter);
   savePreferences();
   renderMode();
   loadCurrentChapter().catch((error) => {
@@ -1863,18 +2056,30 @@ els.readingPrevButton.addEventListener("click", () => {
 els.readingNextButton.addEventListener("click", () => {
   moveReadingChapter(1).catch(console.error);
 });
-els.audioFlashcardSelectButton.addEventListener("click", selectAudioFlashcardText);
-els.audioFlashcardCopyButton.addEventListener("click", () => {
-  copyAudioFlashcardText().catch(console.error);
+els.elevenLabsPlayButton.addEventListener("click", playElevenLabsAudio);
+els.elevenLabsStopButton.addEventListener("click", stopElevenLabsAudio);
+els.elevenLabsNextButton.addEventListener("click", nextElevenLabsAudio);
+els.elevenLabsCacheList.addEventListener("change", (event) => {
+  const checkbox = event.target.closest("input[type='checkbox'][data-cache-key]");
+  if (!checkbox) return;
+
+  if (checkbox.checked) {
+    elevenLabsSkippedWords.delete(checkbox.dataset.cacheKey);
+  } else {
+    elevenLabsSkippedWords.add(checkbox.dataset.cacheKey);
+  }
+
+  saveElevenLabsSkippedWords();
+  refreshElevenLabsPlaybackFromSelection();
 });
-[
-  els.audioHebrewRepeat,
-  els.audioEnglishRepeat,
-  els.audioLineSeparator,
-  els.audioPlainHebrewToggle
-].forEach((control) => {
-  control.addEventListener("input", handleAudioFlashcardSettingsChange);
-  control.addEventListener("change", handleAudioFlashcardSettingsChange);
+els.elevenLabsCacheAllButton.addEventListener("click", () => setAllElevenLabsCardsEnabled(true));
+els.elevenLabsCacheNoneButton.addEventListener("click", () => setAllElevenLabsCardsEnabled(false));
+els.elevenLabsShuffleToggle.addEventListener("change", () => {
+  elevenLabsShuffleEnabled = els.elevenLabsShuffleToggle.checked;
+  if (elevenLabsShuffleEnabled) resetElevenLabsShuffleOrder();
+  elevenLabsQueueIndex = 0;
+  saveElevenLabsPlaybackPreferences();
+  refreshElevenLabsPlaybackFromSelection();
 });
 els.manageMasteredButton.addEventListener("click", openMasteredModal);
 els.removeAllMasteredButton.addEventListener("click", removeAllMasteredWords);
@@ -1934,9 +2139,17 @@ document.addEventListener("keydown", (event) => {
 });
 
 document.addEventListener("fullscreenchange", renderReadingFullscreenState);
+elevenLabsAudio.addEventListener("ended", () => {
+  if (elevenLabsIsPlaying) nextElevenLabsAudio();
+});
+elevenLabsAudio.addEventListener("error", () => {
+  updateElevenLabsStatus("Could not play generated audio.");
+  stopElevenLabsAudio();
+});
 
 applyTheme(getCurrentTheme());
-applyAudioFlashcardSettings();
+els.elevenLabsShuffleToggle.checked = elevenLabsShuffleEnabled;
+renderElevenLabsPlayerState();
 renderHebrewKeyboard();
 showCard(0);
 showWritingCard(0);
