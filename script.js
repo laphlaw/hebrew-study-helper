@@ -103,6 +103,7 @@ const els = {
   revealButton: document.querySelector("#reveal-button"),
   hebrewWord: document.querySelector("#hebrew-word"),
   englishWord: document.querySelector("#english-word"),
+  rootWord: document.querySelector("#root-word"),
   cardCount: document.querySelector("#card-count"),
   masterWordButton: document.querySelector("#master-word-button"),
   directionSelect: document.querySelector("#direction-select"),
@@ -978,6 +979,7 @@ function showCard(index = currentIndex) {
     deckFinished = false;
     els.hebrewWord.textContent = "אין מילים";
     els.englishWord.textContent = "No matching words";
+    els.rootWord.textContent = "";
     els.cardCount.textContent = "0 / 0";
     els.masterWordButton.disabled = true;
     els.masterWordButton.textContent = "Mark as mastered";
@@ -995,9 +997,10 @@ function showCard(index = currentIndex) {
   currentIndex = (index + visibleWords.length) % visibleWords.length;
   revealed = false;
   const word = visibleWords[currentIndex];
-  const [hebrew, english] = word;
+  const [hebrew, english, , root] = word;
   els.hebrewWord.textContent = hebrew;
   els.englishWord.textContent = formatAnswer(english);
+  els.rootWord.textContent = root && root !== hebrew ? root : "";
   els.cardCount.textContent = `${currentIndex + 1} / ${visibleWords.length}`;
   els.masterWordButton.disabled = false;
   els.masterWordButton.textContent = isWordMastered(word) ? "Unmaster" : "Mark as mastered";
@@ -1009,6 +1012,7 @@ function showFinishedCard() {
   revealed = true;
   els.hebrewWord.textContent = "Finished";
   els.englishWord.textContent = "Next starts over";
+  els.rootWord.textContent = "";
   els.cardCount.textContent = `${visibleWords.length} / ${visibleWords.length}`;
   els.masterWordButton.disabled = true;
   els.masterWordButton.textContent = "Mark as mastered";
@@ -1020,6 +1024,7 @@ function renderRevealState() {
   if (deckFinished) {
     els.hebrewWord.classList.remove("hidden");
     els.englishWord.classList.remove("hidden");
+    els.rootWord.classList.add("hidden");
     els.cardButton.setAttribute("aria-label", "Finished. Start over");
     els.revealButton.disabled = true;
     els.revealButton.textContent = "Show Answer";
@@ -1029,6 +1034,7 @@ function renderRevealState() {
   const showingHebrewFirst = direction === "hebrew";
   els.hebrewWord.classList.toggle("hidden", !showingHebrewFirst && !revealed);
   els.englishWord.classList.toggle("hidden", showingHebrewFirst && !revealed);
+  els.rootWord.classList.toggle("hidden", !revealed || !els.rootWord.textContent);
   els.cardButton.setAttribute("aria-label", "Next word");
   els.revealButton.disabled = !visibleWords.length;
   els.revealButton.textContent = revealed ? "Next Word" : "Show Answer";

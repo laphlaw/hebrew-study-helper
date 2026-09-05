@@ -648,6 +648,19 @@ button {
   text-align: center;
 }
 
+.root-word {
+  position: absolute;
+  right: clamp(14px, 3vw, 28px);
+  bottom: clamp(12px, 2.4vw, 24px);
+  max-width: min(36%, 340px);
+  color: var(--muted);
+  font-family: "SBL Hebrew", "SBL_Hbrw", "Ezra SIL", "Cardo", "SF Hebrew", "Times New Roman", serif;
+  font-size: clamp(2rem, 4.2vw, 3.35rem);
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: right;
+}
+
 .hidden {
   display: none;
 }
@@ -683,6 +696,10 @@ button {
   .english {
     top: calc(50% + clamp(125px, 22vh, 210px));
     font-size: clamp(1.35rem, 2.6vw, 2.1rem);
+  }
+
+  .root-word {
+    font-size: clamp(2.45rem, 5vw, 4.2rem);
   }
 }
 
@@ -1455,6 +1472,16 @@ input[type="search"] {
     max-height: 100%;
     padding: 8px 8px 0;
     font-size: clamp(1.25rem, 5.4vw, 1.8rem);
+  }
+
+  .root-word {
+    position: absolute;
+    right: 12px;
+    bottom: 10px;
+    transform: none;
+    max-width: 38%;
+    padding-top: 0;
+    font-size: clamp(1.85rem, 8vw, 2.75rem);
   }
 
   .topbar {
