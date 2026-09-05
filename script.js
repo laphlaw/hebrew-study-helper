@@ -23,7 +23,6 @@ let writingInput = [];
 let revealed = false;
 let deckFinished = false;
 let direction = "hebrew";
-let formMode = "root";
 let currentMode = "study";
 let maculaIndex = null;
 let elevenLabsCatalog = null;
@@ -107,7 +106,6 @@ const els = {
   cardCount: document.querySelector("#card-count"),
   masterWordButton: document.querySelector("#master-word-button"),
   directionSelect: document.querySelector("#direction-select"),
-  formSelect: document.querySelector("#form-select"),
   posSelect: document.querySelector("#pos-select"),
   searchInput: document.querySelector("#search-input"),
   showMasteredToggle: document.querySelector("#show-mastered-toggle"),
@@ -170,6 +168,14 @@ function stripNiqqud(value = "") {
   return value.replace(/[\u0591-\u05C7]/g, "");
 }
 
+function cleanGloss(value = "") {
+  return value
+    .replace(/\((?:et|ET)\)/g, "")
+    .replace(/\s+/g, " ")
+    .replace(/\s+([,.;:!?])/g, "$1")
+    .trim();
+}
+
 function normalizeMasteredKeyPart(value = "") {
   return stripNiqqud(value).replace(/[־\s]/g, "").toLowerCase();
 }
@@ -214,7 +220,6 @@ function getSavedPreferences() {
     return {
       mode: ["reading", "audio", "writing", "verbs"].includes(saved.mode) ? saved.mode : "study",
       direction: saved.direction === "english" ? "english" : "hebrew",
-      formMode: saved.formMode === "text" ? "text" : "root",
       partOfSpeech: ["noun", "verb", "other"].includes(saved.partOfSpeech) ? saved.partOfSpeech : "all",
       showMastered: Boolean(saved.showMastered),
       order: saved.order === "ordered" || localStorage.getItem(orderStorageKey) === "ordered" ? "ordered" : "random",
@@ -229,7 +234,6 @@ function getSavedPreferences() {
     return {
       direction: "hebrew",
       mode: "study",
-      formMode: "root",
       partOfSpeech: "all",
       showMastered: false,
       order: "random",
@@ -244,7 +248,6 @@ function savePreferences() {
   localStorage.setItem(preferencesStorageKey, JSON.stringify({
     mode: els.modeSelect.value,
     direction: els.directionSelect.value,
-    formMode: els.formSelect.value,
     partOfSpeech: els.posSelect.value,
     showMastered: els.showMasteredToggle.checked,
     order: els.orderSelect.value,
@@ -261,10 +264,8 @@ function applySavedPreferences() {
   const preferences = getSavedPreferences();
   currentMode = preferences.mode;
   direction = preferences.direction;
-  formMode = preferences.formMode;
   els.modeSelect.value = preferences.mode;
   els.directionSelect.value = preferences.direction;
-  els.formSelect.value = preferences.formMode;
   els.posSelect.value = preferences.partOfSpeech;
   els.showMasteredToggle.checked = preferences.showMastered;
   els.orderSelect.value = preferences.order;
@@ -389,6 +390,62 @@ function deriveHeadword(hebrew, pos) {
   return root || hebrew;
 }
 
+function isLexicalRecord(record) {
+  return record?.p === "noun" || record?.p === "verb";
+}
+
+function primaryMaculaRecord(records) {
+  return records.find(isLexicalRecord) || records.find((record) => record.p !== "other") || records[0] || {};
+}
+
+function combinedMaculaGloss(records) {
+  const pronounGlosses = new Set(["his", "her", "him", "me", "my", "our", "their", "them", "us", "you", "your"]);
+  const parts = [];
+
+  records.forEach((record) => {
+    const part = cleanGloss(record.g || "");
+    if (!part) return;
+
+    const lowerPart = part.toLowerCase();
+    const existing = parts.join(" ").toLowerCase();
+    if (pronounGlosses.has(lowerPart) && existing.includes(lowerPart)) return;
+
+    parts.push(part);
+  });
+
+  return cleanGloss(parts.join(" "));
+}
+
+function coalesceMaculaRecords(records = []) {
+  const groups = [];
+  let currentGroup = null;
+
+  records.forEach((record) => {
+    if (!record?.r || !record.h) return;
+
+    if (!currentGroup || currentGroup.ref !== record.r) {
+      currentGroup = { ref: record.r, records: [] };
+      groups.push(currentGroup);
+    }
+
+    currentGroup.records.push(record);
+  });
+
+  return groups.map((group) => {
+    const primary = primaryMaculaRecord(group.records);
+    const strongRecord = group.records.find((record) => record.s);
+    return {
+      h: group.records.map((record) => record.h || "").join("").normalize("NFC"),
+      l: primary.l || primary.h || "",
+      p: primary.p || "other",
+      g: combinedMaculaGloss(group.records) || primary.g || primary.l || primary.h || "",
+      m: group.records.map((record) => record.m).filter(Boolean).join(", "),
+      r: group.ref,
+      s: primary.s || strongRecord?.s || ""
+    };
+  }).filter((record) => record.h && /[\u0590-\u05FF]/.test(record.h));
+}
+
 function uniqueWordsFromMacula(records) {
   const grouped = new Map();
 
@@ -424,39 +481,7 @@ function uniqueWordsFromMacula(records) {
 }
 
 function getStudyWords() {
-  if (formMode === "text") return [...allWords];
-
-  const grouped = new Map();
-  allWords.forEach(([hebrew, english, pos, root, morph, refs = [], strong = ""]) => {
-    const key = `${stripNiqqud(root)}|${pos}`;
-    if (!grouped.has(key)) {
-      grouped.set(key, {
-        hebrew: root,
-        english: new Set(),
-        pos,
-        root,
-        forms: new Set(),
-        morphs: new Set(),
-        refs: new Set(),
-        strongs: new Set()
-      });
-    }
-
-    const group = grouped.get(key);
-    group.english.add(english);
-    group.forms.add(hebrew);
-    if (morph) group.morphs.add(morph);
-    refs.forEach((ref) => group.refs.add(ref));
-    if (strong) group.strongs.add(strong);
-  });
-
-  return [...grouped.values()].map((group) => {
-    const forms = [...group.forms];
-    const glosses = [...group.english];
-    const english = glosses.length === 1 ? glosses[0] : glosses.join("; ");
-    const formNote = forms.length > 1 ? ` (Forms: ${forms.join(" / ")})` : "";
-    return wordFromParts(group.hebrew, `${english}${formNote}`, group.pos, group.root, [...group.morphs].join(", "), [...group.refs], [...group.strongs][0] || "");
-  });
+  return [...allWords];
 }
 
 const verbPeople = [
@@ -1443,7 +1468,7 @@ function renderList() {
 
     const englishButton = document.createElement("button");
     englishButton.type = "button";
-    englishButton.textContent = formMode === "text" && root && root !== hebrew ? `${english} | ${root}` : english;
+    englishButton.textContent = root && root !== hebrew ? `${english} | ${root}` : english;
     englishButton.addEventListener("click", () => showCard(index));
 
     const posBadge = document.createElement("span");
@@ -1949,7 +1974,7 @@ async function loadSelectedChapter() {
   const records = await response.json();
 
   currentChapterRecords = records;
-  allWords = uniqueWordsFromMacula(records);
+  allWords = uniqueWordsFromMacula(coalesceMaculaRecords(records));
   currentIndex = 0;
   currentVerbIndex = 0;
   verbGroups = buildVerbPracticeGroups();
@@ -2084,11 +2109,6 @@ els.elevenLabsShuffleToggle.addEventListener("change", () => {
 els.manageMasteredButton.addEventListener("click", openMasteredModal);
 els.removeAllMasteredButton.addEventListener("click", removeAllMasteredWords);
 els.masterWordButton.addEventListener("click", toggleCurrentMasteredWord);
-els.formSelect.addEventListener("change", (event) => {
-  formMode = event.target.value;
-  savePreferences();
-  applyFilter();
-});
 els.directionSelect.addEventListener("change", (event) => {
   direction = event.target.value;
   savePreferences();
