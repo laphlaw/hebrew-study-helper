@@ -45,7 +45,11 @@
             <span id="english-word" class="english hidden">good</span>
             <span id="root-word" class="root-word hidden" dir="rtl"></span>
           </button>
-          <button id="reveal-button" class="reveal-answer-button" type="button">Show Answer</button>
+          <div class="answer-controls" aria-label="Word navigation">
+            <button id="previous-word-button" class="answer-nav-button" type="button" aria-label="Previous word">&lt;</button>
+            <button id="reveal-button" class="reveal-answer-button" type="button">Show Answer</button>
+            <button id="next-word-button" class="answer-nav-button" type="button" aria-label="Next word">&gt;</button>
+          </div>
           <div class="card-meta">
             <span id="card-count">0 / 0</span>
             <button id="master-word-button" class="subtle-button" type="button">Mark as mastered</button>

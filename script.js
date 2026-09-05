@@ -101,6 +101,8 @@ const els = {
   wordListSection: document.querySelector("#word-list-section"),
   cardButton: document.querySelector("#card-button"),
   revealButton: document.querySelector("#reveal-button"),
+  previousWordButton: document.querySelector("#previous-word-button"),
+  nextWordButton: document.querySelector("#next-word-button"),
   hebrewWord: document.querySelector("#hebrew-word"),
   englishWord: document.querySelector("#english-word"),
   rootWord: document.querySelector("#root-word"),
@@ -1037,6 +1039,8 @@ function renderRevealState() {
   els.rootWord.classList.toggle("hidden", !revealed || !els.rootWord.textContent);
   els.cardButton.setAttribute("aria-label", "Next word");
   els.revealButton.disabled = !visibleWords.length;
+  els.previousWordButton.disabled = !visibleWords.length;
+  els.nextWordButton.disabled = !visibleWords.length;
   els.revealButton.textContent = revealed ? "Next Word" : "Show Answer";
 }
 
@@ -2028,6 +2032,8 @@ els.chapterSelect.addEventListener("change", () => {
 });
 els.cardButton.addEventListener("click", cardTapAction);
 els.revealButton.addEventListener("click", revealAnswer);
+els.previousWordButton.addEventListener("click", () => moveBy(-1));
+els.nextWordButton.addEventListener("click", () => moveBy(1));
 els.writingCardButton.addEventListener("click", () => moveWritingBy(1));
 els.verbCardButton.addEventListener("click", () => moveVerbBy(1));
 els.verbSelect.addEventListener("change", () => {

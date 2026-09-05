@@ -511,9 +511,23 @@ button {
   }
 }
 
+.answer-controls {
+  display: grid;
+  grid-template-columns: 48px minmax(0, min(360px, 100%)) 48px;
+  justify-content: center;
+  gap: 8px;
+}
+
 .reveal-answer-button {
   justify-self: center;
-  width: min(360px, 100%);
+  width: 100%;
+}
+
+.answer-nav-button {
+  min-width: 48px;
+  padding: 0;
+  font-size: 1.35rem;
+  font-weight: 900;
 }
 
 .card-meta {
@@ -1452,6 +1466,11 @@ input[type="search"] {
   }
 
   .reveal-answer-button {
+    width: 100%;
+  }
+
+  .answer-controls {
+    grid-template-columns: 46px minmax(0, 1fr) 46px;
     width: 100%;
   }
 
