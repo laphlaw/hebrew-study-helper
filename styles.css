@@ -664,6 +664,22 @@ button {
   line-height: 1.15;
 }
 
+.card-button.is-alphabet-card {
+  grid-template-rows: minmax(0, 1fr) minmax(58px, 0.22fr) minmax(38px, 0.14fr);
+}
+
+.hebrew.is-korean-letter {
+  align-items: center;
+  font-size: clamp(7rem, 21vw, 15rem);
+  font-weight: 900;
+  line-height: 1;
+}
+
+.card-button.is-alphabet-card .english {
+  font-size: clamp(1.8rem, 4.4vw, 3.2rem);
+  font-weight: 900;
+}
+
 .root-word.is-korean-word {
   font-size: clamp(1.3rem, 2.4vw, 2rem);
   font-weight: 800;
@@ -1353,6 +1369,11 @@ button {
   min-width: 78px;
 }
 
+:root[data-study-mode="alphabet"] #book-select,
+:root[data-study-mode="alphabet"] #chapter-select {
+  display: none;
+}
+
 .chapter-picker .text-link {
   margin-left: 2px;
 }
@@ -1498,6 +1519,18 @@ input[type="search"] {
   border-color: var(--verb-line);
 }
 
+.pos-badge.vowel {
+  color: var(--noun-ink);
+  background: var(--noun-bg);
+  border-color: var(--noun-line);
+}
+
+.pos-badge.consonant {
+  color: var(--verb-ink);
+  background: var(--verb-bg);
+  border-color: var(--verb-line);
+}
+
 @media (max-width: 640px) {
   .app-shell {
     width: min(100% - 12px, 1120px);
@@ -1519,6 +1552,14 @@ input[type="search"] {
     justify-items: center;
     gap: 0;
     height: clamp(220px, 32dvh, 290px);
+  }
+
+  .hebrew.is-korean-letter {
+    font-size: clamp(6.4rem, 36vw, 10rem);
+  }
+
+  .card-button.is-alphabet-card .english {
+    font-size: clamp(1.55rem, 8vw, 2.6rem);
   }
 
   .flashcard {
