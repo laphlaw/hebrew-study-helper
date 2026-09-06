@@ -146,50 +146,163 @@ const languageModes = {
   korean: ["study", "reading", "alphabet"]
 };
 
-const koreanAlphabetCards = [
-  ["ㄱ", "g/k", "consonant", "basic consonant"],
-  ["ㄴ", "n", "consonant", "basic consonant"],
-  ["ㄷ", "d/t", "consonant", "basic consonant"],
-  ["ㄹ", "r/l", "consonant", "basic consonant"],
-  ["ㅁ", "m", "consonant", "basic consonant"],
-  ["ㅂ", "b/p", "consonant", "basic consonant"],
-  ["ㅅ", "s", "consonant", "basic consonant"],
-  ["ㅇ", "silent/ng", "consonant", "basic consonant"],
-  ["ㅈ", "j", "consonant", "basic consonant"],
-  ["ㅊ", "ch", "consonant", "basic consonant"],
-  ["ㅋ", "k", "consonant", "basic consonant"],
-  ["ㅌ", "t", "consonant", "basic consonant"],
-  ["ㅍ", "p", "consonant", "basic consonant"],
-  ["ㅎ", "h", "consonant", "basic consonant"],
-  ["ㅏ", "a", "vowel", "basic vowel"],
-  ["ㅑ", "ya", "vowel", "basic vowel"],
-  ["ㅓ", "eo", "vowel", "basic vowel"],
-  ["ㅕ", "yeo", "vowel", "basic vowel"],
-  ["ㅗ", "o", "vowel", "basic vowel"],
-  ["ㅛ", "yo", "vowel", "basic vowel"],
-  ["ㅜ", "u", "vowel", "basic vowel"],
-  ["ㅠ", "yu", "vowel", "basic vowel"],
-  ["ㅡ", "eu", "vowel", "basic vowel"],
-  ["ㅣ", "i", "vowel", "basic vowel"],
-  ["ㄲ", "kk", "consonant", "double consonant"],
-  ["ㄸ", "tt", "consonant", "double consonant"],
-  ["ㅃ", "pp", "consonant", "double consonant"],
-  ["ㅆ", "ss", "consonant", "double consonant"],
-  ["ㅉ", "jj", "consonant", "double consonant"],
-  ["ㅐ", "ae", "vowel", "compound vowel"],
-  ["ㅒ", "yae", "vowel", "compound vowel"],
-  ["ㅔ", "e", "vowel", "compound vowel"],
-  ["ㅖ", "ye", "vowel", "compound vowel"],
-  ["ㅘ", "wa", "vowel", "compound vowel"],
-  ["ㅙ", "wae", "vowel", "compound vowel"],
-  ["ㅚ", "oe", "vowel", "compound vowel"],
-  ["ㅝ", "wo", "vowel", "compound vowel"],
-  ["ㅞ", "we", "vowel", "compound vowel"],
-  ["ㅟ", "wi", "vowel", "compound vowel"],
-  ["ㅢ", "ui", "vowel", "compound vowel"]
-].map(([letter, romanization, pos, group]) => wordFromParts(letter, romanization, pos, letter, "", [], "", {
-  breakdown: [group]
-}));
+const koreanConsonants = [
+  { letter: "ㄱ", romanization: "g", group: "basic consonant" },
+  { letter: "ㄴ", romanization: "n", group: "basic consonant" },
+  { letter: "ㄷ", romanization: "d", group: "basic consonant" },
+  { letter: "ㄹ", romanization: "r", group: "basic consonant" },
+  { letter: "ㅁ", romanization: "m", group: "basic consonant" },
+  { letter: "ㅂ", romanization: "b", group: "basic consonant" },
+  { letter: "ㅅ", romanization: "s", group: "basic consonant" },
+  { letter: "ㅇ", romanization: "", group: "basic consonant" },
+  { letter: "ㅈ", romanization: "j", group: "basic consonant" },
+  { letter: "ㅊ", romanization: "ch", group: "basic consonant" },
+  { letter: "ㅋ", romanization: "k", group: "basic consonant" },
+  { letter: "ㅌ", romanization: "t", group: "basic consonant" },
+  { letter: "ㅍ", romanization: "p", group: "basic consonant" },
+  { letter: "ㅎ", romanization: "h", group: "basic consonant" },
+  { letter: "ㄲ", romanization: "kk", group: "double consonant" },
+  { letter: "ㄸ", romanization: "tt", group: "double consonant" },
+  { letter: "ㅃ", romanization: "pp", group: "double consonant" },
+  { letter: "ㅆ", romanization: "ss", group: "double consonant" },
+  { letter: "ㅉ", romanization: "jj", group: "double consonant" }
+];
+
+const koreanVowels = [
+  { letter: "ㅏ", romanization: "a", group: "basic vowel" },
+  { letter: "ㅑ", romanization: "ya", group: "basic vowel" },
+  { letter: "ㅓ", romanization: "eo", group: "basic vowel" },
+  { letter: "ㅕ", romanization: "yeo", group: "basic vowel" },
+  { letter: "ㅗ", romanization: "o", group: "basic vowel" },
+  { letter: "ㅛ", romanization: "yo", group: "basic vowel" },
+  { letter: "ㅜ", romanization: "u", group: "basic vowel" },
+  { letter: "ㅠ", romanization: "yu", group: "basic vowel" },
+  { letter: "ㅡ", romanization: "eu", group: "basic vowel" },
+  { letter: "ㅣ", romanization: "i", group: "basic vowel" },
+  { letter: "ㅐ", romanization: "ae", group: "compound vowel" },
+  { letter: "ㅒ", romanization: "yae", group: "compound vowel" },
+  { letter: "ㅔ", romanization: "e", group: "compound vowel" },
+  { letter: "ㅖ", romanization: "ye", group: "compound vowel" },
+  { letter: "ㅘ", romanization: "wa", group: "compound vowel" },
+  { letter: "ㅙ", romanization: "wae", group: "compound vowel" },
+  { letter: "ㅚ", romanization: "oe", group: "compound vowel" },
+  { letter: "ㅝ", romanization: "wo", group: "compound vowel" },
+  { letter: "ㅞ", romanization: "we", group: "compound vowel" },
+  { letter: "ㅟ", romanization: "wi", group: "compound vowel" },
+  { letter: "ㅢ", romanization: "ui", group: "compound vowel" }
+];
+
+const koreanInitialIndexes = {
+  "ㄱ": 0,
+  "ㄲ": 1,
+  "ㄴ": 2,
+  "ㄷ": 3,
+  "ㄸ": 4,
+  "ㄹ": 5,
+  "ㅁ": 6,
+  "ㅂ": 7,
+  "ㅃ": 8,
+  "ㅅ": 9,
+  "ㅆ": 10,
+  "ㅇ": 11,
+  "ㅈ": 12,
+  "ㅉ": 13,
+  "ㅊ": 14,
+  "ㅋ": 15,
+  "ㅌ": 16,
+  "ㅍ": 17,
+  "ㅎ": 18
+};
+
+const koreanVowelIndexes = {
+  "ㅏ": 0,
+  "ㅐ": 1,
+  "ㅑ": 2,
+  "ㅒ": 3,
+  "ㅓ": 4,
+  "ㅔ": 5,
+  "ㅕ": 6,
+  "ㅖ": 7,
+  "ㅗ": 8,
+  "ㅘ": 9,
+  "ㅙ": 10,
+  "ㅚ": 11,
+  "ㅛ": 12,
+  "ㅜ": 13,
+  "ㅝ": 14,
+  "ㅞ": 15,
+  "ㅟ": 16,
+  "ㅠ": 17,
+  "ㅡ": 18,
+  "ㅢ": 19,
+  "ㅣ": 20
+};
+
+const koreanFinalIndexes = {
+  "ㅇ": 21
+};
+
+function randomItem(items) {
+  return items[Math.floor(Math.random() * items.length)];
+}
+
+function composeKoreanSyllable(consonant, vowel, finalConsonant = "") {
+  const initialIndex = koreanInitialIndexes[consonant.letter];
+  const vowelIndex = koreanVowelIndexes[vowel.letter];
+  const finalIndex = finalConsonant ? koreanFinalIndexes[finalConsonant] : 0;
+  if (initialIndex === undefined || vowelIndex === undefined) return `${consonant.letter}${vowel.letter}`;
+  return String.fromCodePoint(0xAC00 + ((initialIndex * 21) + vowelIndex) * 28 + finalIndex);
+}
+
+function koreanPronunciationRomanization(consonant, vowel) {
+  if (consonant.letter === "ㅅ" && vowel.letter === "ㅣ") return "shi";
+  if (consonant.letter === "ㅆ" && vowel.letter === "ㅣ") return "sshi";
+  return `${consonant.romanization}${vowel.romanization}`;
+}
+
+function koreanAlphabetWordFromParts(syllable, romanization, pos, root, group, components) {
+  return wordFromParts(syllable, romanization, pos, root, "", [], "", {
+    breakdown: [
+      {
+        part: components,
+        meaning: group
+      }
+    ]
+  });
+}
+
+function buildKoreanAlphabetCards() {
+  const basicVowels = koreanVowels.filter((vowel) => vowel.group === "basic vowel");
+  const consonantCards = koreanConsonants.map((consonant) => {
+    const vowel = randomItem(basicVowels);
+    const isIeung = consonant.letter === "ㅇ";
+    const syllable = composeKoreanSyllable(consonant, vowel, isIeung ? "ㅇ" : "");
+    const romanization = isIeung ? `${vowel.romanization}ng` : koreanPronunciationRomanization(consonant, vowel);
+    return koreanAlphabetWordFromParts(
+      syllable,
+      romanization,
+      "consonant",
+      consonant.letter,
+      `${consonant.group} + ${vowel.group}`,
+      isIeung ? `ㅇ + ${vowel.letter} + ㅇ` : `${consonant.letter} + ${vowel.letter}`
+    );
+  });
+
+  const vowelCards = koreanVowels.map((vowel) => {
+    const silentCarrier = { letter: "ㅇ", romanization: "", group: "silent carrier" };
+    const syllable = composeKoreanSyllable(silentCarrier, vowel);
+    return koreanAlphabetWordFromParts(
+      syllable,
+      vowel.romanization,
+      "vowel",
+      vowel.letter,
+      vowel.group,
+      `ㅇ + ${vowel.letter}`
+    );
+  });
+
+  return [...consonantCards, ...vowelCards];
+}
 
 const koreanBookNames = {
   Gen: "창세기",
@@ -2391,7 +2504,7 @@ async function loadKoreanStudyChapter(book, chapter, requestId = chapterLoadRequ
 }
 
 function loadKoreanAlphabetPractice() {
-  allWords = [...koreanAlphabetCards];
+  allWords = buildKoreanAlphabetCards();
   currentChapterRecords = [];
   currentIndex = 0;
   currentVerbIndex = 0;
