@@ -1,0 +1,2145 @@
+{
+  "provider": "elevenlabs",
+  "generatedAt": "2026-09-06T09:37:40.517Z",
+  "book": "Exo",
+  "chapter": 32,
+  "modelId": "eleven_v3",
+  "outputFormat": "mp3_44100_128",
+  "plainHebrew": false,
+  "cardSettings": {
+    "hebrewRepeats": 2,
+    "englishRepeats": 1,
+    "separator": "."
+  },
+  "voices": {
+    "card": "onwK4e9ZLuTAKqWW03F9",
+    "hebrew": "onwK4e9ZLuTAKqWW03F9",
+    "english": "onwK4e9ZLuTAKqWW03F9"
+  },
+  "cards": [
+    {
+      "ref": "EXO 32:1:1",
+      "hebrew": "וַיַּרְא",
+      "english": "and it saw",
+      "text": "וַיַּרְא.\nוַיַּרְא.\nand it saw.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f71a5d66bd6f22c2ddd2899a.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:1:2",
+      "hebrew": "הָעָם",
+      "english": "the people",
+      "text": "הָעָם.\nהָעָם.\nthe people.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/6a8ce09fc603433efdfdcd14.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:1:4",
+      "hebrew": "בֹשֵׁשׁ",
+      "english": "he delayed",
+      "text": "בֹשֵׁשׁ.\nבֹשֵׁשׁ.\nhe delayed.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f8fe5ccb789c465c73c497ec.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:1:5",
+      "hebrew": "מֹשֶׁה",
+      "english": "Moses",
+      "text": "מֹשֶׁה.\nמֹשֶׁה.\nMoses.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/062bf65922fff2dd2a8e6301.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:1:6",
+      "hebrew": "לָרֶדֶת",
+      "english": "to come down",
+      "text": "לָרֶדֶת.\nלָרֶדֶת.\nto come down.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/1b67ed6143f3fcfd5ddd9e6e.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:1:8",
+      "hebrew": "הָהָר",
+      "english": "the mountain",
+      "text": "הָהָר.\nהָהָר.\nthe mountain.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/079fac0020d7bd34083cc563.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:1:9",
+      "hebrew": "וַיִּקָּהֵל",
+      "english": "and it assembled",
+      "text": "וַיִּקָּהֵל.\nוַיִּקָּהֵל.\nand it assembled.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/eeb4994cd7b2186d787becfc.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:1:12",
+      "hebrew": "אַהֲרֹן",
+      "english": "Aaron",
+      "text": "אַהֲרֹן.\nאַהֲרֹן.\nAaron.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/440452639bc830d713fe3c21.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:1:13",
+      "hebrew": "וַיֹּאמְרוּ",
+      "english": "and they said",
+      "text": "וַיֹּאמְרוּ.\nוַיֹּאמְרוּ.\nand they said.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/5819132e519e5d48f85b5a37.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:1:15",
+      "hebrew": "קוּם",
+      "english": "arise",
+      "text": "קוּם.\nקוּם.\narise.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e0334f36d573332c9db23beb.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:1:16",
+      "hebrew": "עֲשֵׂה",
+      "english": "make",
+      "text": "עֲשֵׂה.\nעֲשֵׂה.\nmake.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a1b3e4114737f04e5b1587af.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:1:18",
+      "hebrew": "אֱלֹהִים",
+      "english": "gods",
+      "text": "אֱלֹהִים.\nאֱלֹהִים.\ngods.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c133974990725a8b7af76797.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:1:20",
+      "hebrew": "יֵלְכוּ",
+      "english": "they will go",
+      "text": "יֵלְכוּ.\nיֵלְכוּ.\nthey will go.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d27abdd87e27f36a488ea1cc.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:1:21",
+      "hebrew": "לְפָנֵינוּ",
+      "english": "before פָּנֶה us",
+      "text": "לְפָנֵינוּ.\nלְפָנֵינוּ.\nbefore פָּנֶה us.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/32d5b01e7ceb9f933090a278.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:1:25",
+      "hebrew": "הָאִישׁ",
+      "english": "the man",
+      "text": "הָאִישׁ.\nהָאִישׁ.\nthe man.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/9e26a0e3ec2fdc34d15a38c3.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:1:27",
+      "hebrew": "הֶעֱלָנוּ",
+      "english": "he brought us up",
+      "text": "הֶעֱלָנוּ.\nהֶעֱלָנוּ.\nhe brought us up.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/254960d592885b1e83202a95.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:1:28",
+      "hebrew": "מֵאֶרֶץ",
+      "english": "from the land",
+      "text": "מֵאֶרֶץ.\nמֵאֶרֶץ.\nfrom the land.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/33ca8cea21308e2818e9ef9e.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:1:29",
+      "hebrew": "מִצְרַיִם",
+      "english": "of Egypt",
+      "text": "מִצְרַיִם.\nמִצְרַיִם.\nof Egypt.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f02aba4c95f24a2263b7290d.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:1:31",
+      "hebrew": "יָדַעְנוּ",
+      "english": "we know",
+      "text": "יָדַעְנוּ.\nיָדַעְנוּ.\nwe know.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/6933ea29d0832a6b1c8a4323.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:1:33",
+      "hebrew": "הָיָה",
+      "english": "has it happened",
+      "text": "הָיָה.\nהָיָה.\nhas it happened.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/03c1d535a454650405c73733.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:2:1",
+      "hebrew": "וַיֹּאמֶר",
+      "english": "and he said",
+      "text": "וַיֹּאמֶר.\nוַיֹּאמֶר.\nand he said.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/eeba144e3cfa98b335455943.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:2:4",
+      "hebrew": "פָּרְקוּ",
+      "english": "tear off",
+      "text": "פָּרְקוּ.\nפָּרְקוּ.\ntear off.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/fb889dfc0c0d7c0320351860.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:2:5",
+      "hebrew": "נִזְמֵי",
+      "english": "the rings",
+      "text": "נִזְמֵי.\nנִזְמֵי.\nthe rings.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/30c309e0626ee9d024ff0184.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:2:6",
+      "hebrew": "הַזָּהָב",
+      "english": "of (the) gold",
+      "text": "הַזָּהָב.\nהַזָּהָב.\nof (the) gold.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/57022f2feb2e837fa5c4f598.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:2:8",
+      "hebrew": "בְּאָזְנֵי",
+      "english": "[are] on the ears",
+      "text": "בְּאָזְנֵי.\nבְּאָזְנֵי.\n[are] on the ears.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/979d85383d770af11cac4b85.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:2:9",
+      "hebrew": "נְשֵׁיכֶם",
+      "english": "your wives your",
+      "text": "נְשֵׁיכֶם.\nנְשֵׁיכֶם.\nyour wives your.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ca73d06a9509a82e5fa2fb3a.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:2:10",
+      "hebrew": "בְּנֵיכֶם",
+      "english": "sons your",
+      "text": "בְּנֵיכֶם.\nבְּנֵיכֶם.\nsons your.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/aefda5fc81f3d5b74965dfda.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:2:11",
+      "hebrew": "וּבְנֹתֵיכֶם",
+      "english": "and daughters your",
+      "text": "וּבְנֹתֵיכֶם.\nוּבְנֹתֵיכֶם.\nand daughters your.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/6ec99745e074882f1fd41b76.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:2:12",
+      "hebrew": "וְהָבִיאוּ",
+      "english": "and bring [them]",
+      "text": "וְהָבִיאוּ.\nוְהָבִיאוּ.\nand bring [them].",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f33c7a2348032d5d18ccbace.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:3:1",
+      "hebrew": "וַיִּתְפָּרְקוּ",
+      "english": "and they tore off from themselves",
+      "text": "וַיִּתְפָּרְקוּ.\nוַיִּתְפָּרְקוּ.\nand they tore off from themselves.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/1521fbed31d0be44ef1083f5.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:3:2",
+      "hebrew": "כָּל",
+      "english": "all",
+      "text": "כָּל.\nכָּל.\nall.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/cb87bd231250c334ad28b33a.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:3:8",
+      "hebrew": "בְּאָזְנֵיהֶם",
+      "english": "[were] on ears their",
+      "text": "בְּאָזְנֵיהֶם.\nבְּאָזְנֵיהֶם.\n[were] on ears their.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/fec8506468b2992126587246.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:3:9",
+      "hebrew": "וַיָּבִיאוּ",
+      "english": "and they brought [them]",
+      "text": "וַיָּבִיאוּ.\nוַיָּבִיאוּ.\nand they brought [them].",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/2009af265ef52078772d77d2.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:4:1",
+      "hebrew": "וַיִּקַּח",
+      "english": "and he took [them]",
+      "text": "וַיִּקַּח.\nוַיִּקַּח.\nand he took [them].",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/64505c54cf73ff917a5745a7.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:4:2",
+      "hebrew": "מִיָּדָם",
+      "english": "from hand their",
+      "text": "מִיָּדָם.\nמִיָּדָם.\nfrom hand their.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/21ce6aa226c4ea7191717f3f.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:4:3",
+      "hebrew": "וַיָּצַר",
+      "english": "and he fashioned",
+      "text": "וַיָּצַר.\nוַיָּצַר.\nand he fashioned.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/aa6cd881be5b43ac1ec0f900.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:4:6",
+      "hebrew": "וַיַּעֲשֵׂהוּ",
+      "english": "and he made it",
+      "text": "וַיַּעֲשֵׂהוּ.\nוַיַּעֲשֵׂהוּ.\nand he made it.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/802eb61909e72e7e5eacd386.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:4:7",
+      "hebrew": "עֵגֶל",
+      "english": "a calf",
+      "text": "עֵגֶל.\nעֵגֶל.\na calf.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/09d5b71ad4c8b381a76280e4.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:4:8",
+      "hebrew": "מַסֵּכָה",
+      "english": "of molten metal",
+      "text": "מַסֵּכָה.\nמַסֵּכָה.\nof molten metal.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/734dad32622c6737a50d170d.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:4:11",
+      "hebrew": "אֱלֹהֶיךָ",
+      "english": "gods [are] your",
+      "text": "אֱלֹהֶיךָ.\nאֱלֹהֶיךָ.\ngods [are] your.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/31b727df0fec6977c001e91e.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:4:12",
+      "hebrew": "יִשְׂרָאֵל",
+      "english": "O Israel",
+      "text": "יִשְׂרָאֵל.\nיִשְׂרָאֵל.\nO Israel.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/2a77fc31b011410cc6fa3c1c.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:4:14",
+      "hebrew": "הֶעֱלוּךָ",
+      "english": "they brought you up",
+      "text": "הֶעֱלוּךָ.\nהֶעֱלוּךָ.\nthey brought you up.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/7042326729ad95324dde43ce.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:4:16",
+      "hebrew": "מִצְרָיִם",
+      "english": "of Egypt",
+      "text": "מִצְרָיִם.\nמִצְרָיִם.\nof Egypt.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/abac084b402722b6af5878e9.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:5:3",
+      "hebrew": "וַיִּבֶן",
+      "english": "and he built",
+      "text": "וַיִּבֶן.\nוַיִּבֶן.\nand he built.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/67f43b2706821f76f1280a7e.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:5:4",
+      "hebrew": "מִזְבֵּחַ",
+      "english": "an altar",
+      "text": "מִזְבֵּחַ.\nמִזְבֵּחַ.\nan altar.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/5953cfcaea2b348fe8d6ddd1.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:5:5",
+      "hebrew": "לְפָנָיו",
+      "english": "before front it",
+      "text": "לְפָנָיו.\nלְפָנָיו.\nbefore front it.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/027e3dafe388a1d237fa121b.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:5:6",
+      "hebrew": "וַיִּקְרָא",
+      "english": "and he called",
+      "text": "וַיִּקְרָא.\nוַיִּקְרָא.\nand he called.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d1a3ba22133b83ab94f698ef.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:5:8",
+      "hebrew": "וַיֹּאמַר",
+      "english": "and he said",
+      "text": "וַיֹּאמַר.\nוַיֹּאמַר.\nand he said.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/da78f8d46fc2726a7cb3aa53.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:5:9",
+      "hebrew": "חַג",
+      "english": "a festival",
+      "text": "חַג.\nחַג.\na festival.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/1219f9c89b4b4719e81430c1.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:5:10",
+      "hebrew": "לַיהוָה",
+      "english": "of Yahweh",
+      "text": "לַיהוָה.\nלַיהוָה.\nof Yahweh.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/aa5edecf3cdd3fe9f5327d70.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:5:11",
+      "hebrew": "מָחָר",
+      "english": "[will be] tomorrow",
+      "text": "מָחָר.\nמָחָר.\n[will be] tomorrow.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/0bac903f19b1724a2725d716.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:6:1",
+      "hebrew": "וַיַּשְׁכִּימוּ",
+      "english": "and they rose early",
+      "text": "וַיַּשְׁכִּימוּ.\nוַיַּשְׁכִּימוּ.\nand they rose early.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f2b66f3f55d16ad9ca0dd9cc.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:6:2",
+      "hebrew": "מִמָּחֳרָת",
+      "english": "from [the] next day",
+      "text": "מִמָּחֳרָת.\nמִמָּחֳרָת.\nfrom [the] next day.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e2dcb5157d9874a6c473cdd3.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:6:3",
+      "hebrew": "וַיַּעֲלוּ",
+      "english": "and they offered up",
+      "text": "וַיַּעֲלוּ.\nוַיַּעֲלוּ.\nand they offered up.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/011198a7c565b62cc7f7c7e9.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:6:4",
+      "hebrew": "עֹלֹת",
+      "english": "burnt offerings",
+      "text": "עֹלֹת.\nעֹלֹת.\nburnt offerings.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/2def42a6f100f51e029dad4d.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:6:5",
+      "hebrew": "וַיַּגִּשׁוּ",
+      "english": "and they brought near",
+      "text": "וַיַּגִּשׁוּ.\nוַיַּגִּשׁוּ.\nand they brought near.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/56cc8999737f39de265c2c21.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:6:6",
+      "hebrew": "שְׁלָמִים",
+      "english": "peace offerings",
+      "text": "שְׁלָמִים.\nשְׁלָמִים.\npeace offerings.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a82d0f20951348dc7dc61e94.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:6:7",
+      "hebrew": "וַיֵּשֶׁב",
+      "english": "and it sat down",
+      "text": "וַיֵּשֶׁב.\nוַיֵּשֶׁב.\nand it sat down.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/217297790ebdd8cc4601d065.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:6:9",
+      "hebrew": "לֶאֱכֹל",
+      "english": "to eat",
+      "text": "לֶאֱכֹל.\nלֶאֱכֹל.\nto eat.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c88a253bb99d449f407641a6.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:6:10",
+      "hebrew": "וְשָׁתוֹ",
+      "english": "and to drink",
+      "text": "וְשָׁתוֹ.\nוְשָׁתוֹ.\nand to drink.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/3f3d3acd3bf7f6caefa22325.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:6:11",
+      "hebrew": "וַיָּקֻמוּ",
+      "english": "and they arose",
+      "text": "וַיָּקֻמוּ.\nוַיָּקֻמוּ.\nand they arose.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a6cdb34e7669102bbd52517e.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:6:12",
+      "hebrew": "לְצַחֵק",
+      "english": "to play",
+      "text": "לְצַחֵק.\nלְצַחֵק.\nto play.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/6de64a58f71d6ad5c8b9a4f1.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:7:1",
+      "hebrew": "וַיְדַבֵּר",
+      "english": "and he spoke",
+      "text": "וַיְדַבֵּר.\nוַיְדַבֵּר.\nand he spoke.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/6a66cd9e888cca60f39179f4.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:7:2",
+      "hebrew": "יְהוָה",
+      "english": "Yahweh",
+      "text": "יְהוָה.\nיְהוָה.\nYahweh.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c3ac5919309fc828776047b2.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:7:5",
+      "hebrew": "לֶךְ",
+      "english": "go",
+      "text": "לֶךְ.\nלֶךְ.\ngo.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b9317a28481761cd16c0d9eb.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:7:6",
+      "hebrew": "רֵד",
+      "english": "go down",
+      "text": "רֵד.\nרֵד.\ngo down.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/cc1403f18d4e0d026bb640ab.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:7:8",
+      "hebrew": "שִׁחֵת",
+      "english": "it has behaved corruptly",
+      "text": "שִׁחֵת.\nשִׁחֵת.\nit has behaved corruptly.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/7fdca561b6c48df7af542dfd.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:7:9",
+      "hebrew": "עַמְּךָ",
+      "english": "people your",
+      "text": "עַמְּךָ.\nעַמְּךָ.\npeople your.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/9ce5a8621729fc0be236aad0.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:7:11",
+      "hebrew": "הֶעֱלֵיתָ",
+      "english": "you brought up",
+      "text": "הֶעֱלֵיתָ.\nהֶעֱלֵיתָ.\nyou brought up.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/83cf848e7b7446e8fcd09bb9.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:8:1",
+      "hebrew": "סָרוּ",
+      "english": "they have turned aside",
+      "text": "סָרוּ.\nסָרוּ.\nthey have turned aside.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/3fd210a1455cb389f5348dab.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:8:2",
+      "hebrew": "מַהֵר",
+      "english": "quickly",
+      "text": "מַהֵר.\nמַהֵר.\nquickly.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/75e60958be464755f0593fb3.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:8:4",
+      "hebrew": "הַדֶּרֶךְ",
+      "english": "the way",
+      "text": "הַדֶּרֶךְ.\nהַדֶּרֶךְ.\nthe way.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/7562f66a3f163e15cf8f88d4.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:8:6",
+      "hebrew": "צִוִּיתִם",
+      "english": "I commanded them",
+      "text": "צִוִּיתִם.\nצִוִּיתִם.\nI commanded them.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/aefdd4084d31cd1307abb4d2.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:8:7",
+      "hebrew": "עָשׂוּ",
+      "english": "they have made",
+      "text": "עָשׂוּ.\nעָשׂוּ.\nthey have made.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/7380dc0809e12fbec7fa31d1.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:8:11",
+      "hebrew": "וַיִּשְׁתַּחֲווּ",
+      "english": "and they have bowed down",
+      "text": "וַיִּשְׁתַּחֲווּ.\nוַיִּשְׁתַּחֲווּ.\nand they have bowed down.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/049ddb17cee2d049eb3ec254.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:8:13",
+      "hebrew": "וַיִּזְבְּחוּ",
+      "english": "and they have sacrificed",
+      "text": "וַיִּזְבְּחוּ.\nוַיִּזְבְּחוּ.\nand they have sacrificed.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/60dcbce6caa69ad577b53c9b.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:9:5",
+      "hebrew": "רָאִיתִי",
+      "english": "I have seen",
+      "text": "רָאִיתִי.\nרָאִיתִי.\nI have seen.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/1498ee94fe6a5e0929656c8a.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:9:10",
+      "hebrew": "עַם",
+      "english": "[is] a people",
+      "text": "עַם.\nעַם.\n[is] a people.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c228c401ae5fdba01cfaead3.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:9:12",
+      "hebrew": "עֹרֶף",
+      "english": "of neck",
+      "text": "עֹרֶף.\nעֹרֶף.\nof neck.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/3279ce118f2316a737c2b201.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:10:2",
+      "hebrew": "הַנִּיחָה",
+      "english": "leave alone",
+      "text": "הַנִּיחָה.\nהַנִּיחָה.\nleave alone.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/8aeaf986756f70cc32a7e9e3.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:10:4",
+      "hebrew": "וְיִחַר",
+      "english": "so that it may burn",
+      "text": "וְיִחַר.\nוְיִחַר.\nso that it may burn.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c082769babd60189fa606158.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:10:5",
+      "hebrew": "אַפִּי",
+      "english": "anger my",
+      "text": "אַפִּי.\nאַפִּי.\nanger my.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ab084f746a686b31b0d18671.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:10:7",
+      "hebrew": "וַאֲכַלֵּם",
+      "english": "and so that I may make an end of them",
+      "text": "וַאֲכַלֵּם.\nוַאֲכַלֵּם.\nand so that I may make an end of them.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/08f1d669689a7d207582ff2e.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:10:8",
+      "hebrew": "וְאֶעֱשֶׂה",
+      "english": "and I will make",
+      "text": "וְאֶעֱשֶׂה.\nוְאֶעֱשֶׂה.\nand I will make.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/5b8136c8d983f02c2fa9cdc4.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:10:10",
+      "hebrew": "לְגוֹי",
+      "english": "into a nation",
+      "text": "לְגוֹי.\nלְגוֹי.\ninto a nation.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d9e86e512125c57aab325dcb.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:11:1",
+      "hebrew": "וַיְחַל",
+      "english": "and he entreated",
+      "text": "וַיְחַל.\nוַיְחַל.\nand he entreated.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/fc3c4e0a87a6e827bad9b716.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:11:4",
+      "hebrew": "פְּנֵי",
+      "english": "the face",
+      "text": "פְּנֵי.\nפְּנֵי.\nthe face.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/81ff87604eee5eb0227ae6b7.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:11:6",
+      "hebrew": "אֱלֹהָיו",
+      "english": "God his",
+      "text": "אֱלֹהָיו.\nאֱלֹהָיו.\nGod his.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/10ecebf127c09c78a6e358f0.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:11:10",
+      "hebrew": "יֶחֱרֶה",
+      "english": "does it burn",
+      "text": "יֶחֱרֶה.\nיֶחֱרֶה.\ndoes it burn.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/586e22577e1872fbf868854f.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:11:11",
+      "hebrew": "אַפְּךָ",
+      "english": "anger your",
+      "text": "אַפְּךָ.\nאַפְּךָ.\nanger your.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/50cdfce2530c02dc3e37057f.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:11:12",
+      "hebrew": "בְּעַמֶּךָ",
+      "english": "on people your",
+      "text": "בְּעַמֶּךָ.\nבְּעַמֶּךָ.\non people your.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f40676365696a3b7751029a3.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:11:14",
+      "hebrew": "הוֹצֵאתָ",
+      "english": "you brought out",
+      "text": "הוֹצֵאתָ.\nהוֹצֵאתָ.\nyou brought out.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/7c599b9c4261222bc4b06b6c.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:11:17",
+      "hebrew": "בְּכֹחַ",
+      "english": "with power",
+      "text": "בְּכֹחַ.\nבְּכֹחַ.\nwith power.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/cdabe5c1418b82a17b3b5349.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:11:19",
+      "hebrew": "וּבְיָד",
+      "english": "and by a hand",
+      "text": "וּבְיָד.\nוּבְיָד.\nand by a hand.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/7f5df6530f853f783d8a1276.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:12:2",
+      "hebrew": "יֹאמְרוּ",
+      "english": "will they say",
+      "text": "יֹאמְרוּ.\nיֹאמְרוּ.\nwill they say.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f66f45a39f19f97aa76cd51d.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:12:4",
+      "hebrew": "לֵאמֹר",
+      "english": "(cmp) saying",
+      "text": "לֵאמֹר.\nלֵאמֹר.\n(cmp) saying.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/526f2bdbb6aaab3c61168adb.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:12:5",
+      "hebrew": "בְּרָעָה",
+      "english": "with evil",
+      "text": "בְּרָעָה.\nבְּרָעָה.\nwith evil.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/7e133fe7f37862e7ab7cf568.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:12:6",
+      "hebrew": "הוֹצִיאָם",
+      "english": "he brought them out",
+      "text": "הוֹצִיאָם.\nהוֹצִיאָם.\nhe brought them out.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/6a2ed25419e25899a96f8cfe.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:12:7",
+      "hebrew": "לַהֲרֹג",
+      "english": "to kill",
+      "text": "לַהֲרֹג.\nלַהֲרֹג.\nto kill.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/82d05e6c27ca16322293b18b.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:12:10",
+      "hebrew": "וּלְכַלֹּתָם",
+      "english": "and to make an end of them",
+      "text": "וּלְכַלֹּתָם.\nוּלְכַלֹּתָם.\nand to make an end of them.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/212b1c3fd270b64c1e4c6735.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:12:13",
+      "hebrew": "הָאֲדָמָה",
+      "english": "of the ground",
+      "text": "הָאֲדָמָה.\nהָאֲדָמָה.\nof the ground.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/225a91bc4d98248830be8e1e.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:12:14",
+      "hebrew": "שׁוּב",
+      "english": "turn",
+      "text": "שׁוּב.\nשׁוּב.\nturn.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/0f947753337dc6dde5ffdf9a.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:12:15",
+      "hebrew": "מֵחֲרוֹן",
+      "english": "from the burning",
+      "text": "מֵחֲרוֹן.\nמֵחֲרוֹן.\nfrom the burning.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/655e1b9e8dc9d2213afdc3a9.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:12:16",
+      "hebrew": "אַפֶּךָ",
+      "english": "your anger your",
+      "text": "אַפֶּךָ.\nאַפֶּךָ.\nyour anger your.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/92505a92db1c2732044a5eac.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:12:17",
+      "hebrew": "וְהִנָּחֵם",
+      "english": "and relent",
+      "text": "וְהִנָּחֵם.\nוְהִנָּחֵם.\nand relent.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/1f01aebd39c118cc7d844c79.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:12:19",
+      "hebrew": "הָרָעָה",
+      "english": "the harm",
+      "text": "הָרָעָה.\nהָרָעָה.\nthe harm.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/214141461bf90754f4ad992c.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:12:20",
+      "hebrew": "לְעַמֶּךָ",
+      "english": "to people your",
+      "text": "לְעַמֶּךָ.\nלְעַמֶּךָ.\nto people your.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/1966f2e738122ecd7dd9f5b8.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:13:1",
+      "hebrew": "זְכֹר",
+      "english": "remember",
+      "text": "זְכֹר.\nזְכֹר.\nremember.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/dc6a96485cd64e5636a1d851.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:13:2",
+      "hebrew": "לְאַבְרָהָם",
+      "english": "(to) Abraham",
+      "text": "לְאַבְרָהָם.\nלְאַבְרָהָם.\n(to) Abraham.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/8fee1a61f657182d3258d6ac.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:13:3",
+      "hebrew": "לְיִצְחָק",
+      "english": "(to) Isaac",
+      "text": "לְיִצְחָק.\nלְיִצְחָק.\n(to) Isaac.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/255ca56e881cdb2833b359b4.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:13:4",
+      "hebrew": "וּלְיִשְׂרָאֵל",
+      "english": "and (to) Israel",
+      "text": "וּלְיִשְׂרָאֵל.\nוּלְיִשְׂרָאֵל.\nand (to) Israel.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f065d47d444e0e4b07253ccd.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:13:5",
+      "hebrew": "עֲבָדֶיךָ",
+      "english": "servants your",
+      "text": "עֲבָדֶיךָ.\nעֲבָדֶיךָ.\nservants your.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ea97abb77747dc1595929877.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:13:7",
+      "hebrew": "נִשְׁבַּעְתָּ",
+      "english": "you swore",
+      "text": "נִשְׁבַּעְתָּ.\nנִשְׁבַּעְתָּ.\nyou swore.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b759d3a8d720a3a3835b28d7.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:13:10",
+      "hebrew": "וַתְּדַבֵּר",
+      "english": "and you said",
+      "text": "וַתְּדַבֵּר.\nוַתְּדַבֵּר.\nand you said.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c6b51b3eb4dcbebb3064c4be.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:13:12",
+      "hebrew": "אַרְבֶּה",
+      "english": "I will increase",
+      "text": "אַרְבֶּה.\nאַרְבֶּה.\nI will increase.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/16f8e78a6493669cc193c320.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:13:14",
+      "hebrew": "זַרְעֲכֶם",
+      "english": "offspring your",
+      "text": "זַרְעֲכֶם.\nזַרְעֲכֶם.\noffspring your.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/dcf1aaf9ac023052a639dec4.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:13:15",
+      "hebrew": "כְּכוֹכְבֵי",
+      "english": "like the stars",
+      "text": "כְּכוֹכְבֵי.\nכְּכוֹכְבֵי.\nlike the stars.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f03d2305724e442a57e9b72f.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:13:16",
+      "hebrew": "הַשָּׁמָיִם",
+      "english": "of the heavens",
+      "text": "הַשָּׁמָיִם.\nהַשָּׁמָיִם.\nof the heavens.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b1c1e1c5489262b91c465fee.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:13:17",
+      "hebrew": "וְכָל",
+      "english": "and all",
+      "text": "וְכָל.\nוְכָל.\nand all.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/495d07f3fbe9ed19ab14e1d2.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:13:18",
+      "hebrew": "הָאָרֶץ",
+      "english": "the land",
+      "text": "הָאָרֶץ.\nהָאָרֶץ.\nthe land.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/79ad5e78d9dba4172a0a83ca.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:13:21",
+      "hebrew": "אָמַרְתִּי",
+      "english": "I have promised",
+      "text": "אָמַרְתִּי.\nאָמַרְתִּי.\nI have promised.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a244f691fe3f8308736b260e.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:13:22",
+      "hebrew": "אֶתֵּן",
+      "english": "I will give",
+      "text": "אֶתֵּן.\nאֶתֵּן.\nI will give.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/71914e2ea1c5e9beb02e7925.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:13:23",
+      "hebrew": "לְזַרְעֲכֶם",
+      "english": "to offspring your",
+      "text": "לְזַרְעֲכֶם.\nלְזַרְעֲכֶם.\nto offspring your.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/7dd6da215d8973c4c0a9a715.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:13:24",
+      "hebrew": "וְנָחֲלוּ",
+      "english": "and they will possess [it]",
+      "text": "וְנָחֲלוּ.\nוְנָחֲלוּ.\nand they will possess [it].",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/3e686d2245a366238cc8b6e0.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:13:25",
+      "hebrew": "לְעֹלָם",
+      "english": "forever of perpetuity",
+      "text": "לְעֹלָם.\nלְעֹלָם.\nforever of perpetuity.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/83e23f35a351583f645e015c.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:14:1",
+      "hebrew": "וַיִּנָּחֶם",
+      "english": "and he relented",
+      "text": "וַיִּנָּחֶם.\nוַיִּנָּחֶם.\nand he relented.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e1c4ebd1e47d47bbe8f69e7a.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:14:6",
+      "hebrew": "דִּבֶּר",
+      "english": "he had spoken",
+      "text": "דִּבֶּר.\nדִּבֶּר.\nhe had spoken.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/638e7ea246da9d741693156b.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:14:7",
+      "hebrew": "לַעֲשׂוֹת",
+      "english": "to do",
+      "text": "לַעֲשׂוֹת.\nלַעֲשׂוֹת.\nto do.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b98a3f9ebb871dda83c151ca.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:14:8",
+      "hebrew": "לְעַמּוֹ",
+      "english": "to people his",
+      "text": "לְעַמּוֹ.\nלְעַמּוֹ.\nto people his.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/636ba32e32a18596b01dcfa1.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:15:1",
+      "hebrew": "וַיִּפֶן",
+      "english": "and he turned",
+      "text": "וַיִּפֶן.\nוַיִּפֶן.\nand he turned.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/083b30be818e59192a042e2c.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:15:2",
+      "hebrew": "וַיֵּרֶד",
+      "english": "and he went down",
+      "text": "וַיֵּרֶד.\nוַיֵּרֶד.\nand he went down.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e16f24721bf0ca340a22080c.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:15:7",
+      "hebrew": "לֻחֹת",
+      "english": "the tablets",
+      "text": "לֻחֹת.\nלֻחֹת.\nthe tablets.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/72d86fc96a9c90530d48f544.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:15:8",
+      "hebrew": "הָעֵדֻת",
+      "english": "of the testimony",
+      "text": "הָעֵדֻת.\nהָעֵדֻת.\nof the testimony.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/80511b46cba980da30eae922.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:15:9",
+      "hebrew": "בְּיָדוֹ",
+      "english": "[were] in hand his",
+      "text": "בְּיָדוֹ.\nבְּיָדוֹ.\n[were] in hand his.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/473a079c729d69b0e3fe6f2b.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:15:11",
+      "hebrew": "כְּתֻבִים",
+      "english": "written",
+      "text": "כְּתֻבִים.\nכְּתֻבִים.\nwritten.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/27d9cc2fb8ea748e9ee793ea.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:15:13",
+      "hebrew": "עֶבְרֵיהֶם",
+      "english": "sides their",
+      "text": "עֶבְרֵיהֶם.\nעֶבְרֵיהֶם.\nsides their.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/81aa87ac23a61a74219598c4.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:16:1",
+      "hebrew": "וְהַלֻּחֹת",
+      "english": "and the tablets",
+      "text": "וְהַלֻּחֹת.\nוְהַלֻּחֹת.\nand the tablets.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b27ea34bb732946031f4a9a7.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:16:2",
+      "hebrew": "מַעֲשֵׂה",
+      "english": "[were] the work",
+      "text": "מַעֲשֵׂה.\nמַעֲשֵׂה.\n[were] the work.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/15ac6c9f3b045a3f8c9360b8.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:16:5",
+      "hebrew": "וְהַמִּכְתָּב",
+      "english": "and the writing",
+      "text": "וְהַמִּכְתָּב.\nוְהַמִּכְתָּב.\nand the writing.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/4de15b1b5d61965b50d40aa5.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:16:6",
+      "hebrew": "מִכְתַּב",
+      "english": "[was] the writing",
+      "text": "מִכְתַּב.\nמִכְתַּב.\n[was] the writing.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/97d640ca06d35dd340b0061b.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:16:9",
+      "hebrew": "חָרוּת",
+      "english": "engraved",
+      "text": "חָרוּת.\nחָרוּת.\nengraved.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/729b8cabc0ac2625925ff8b4.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:16:11",
+      "hebrew": "הַלֻּחֹת",
+      "english": "the tablets",
+      "text": "הַלֻּחֹת.\nהַלֻּחֹת.\nthe tablets.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/0c8b4342aa943c9ac5ab2480.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:17:1",
+      "hebrew": "וַיִּשְׁמַע",
+      "english": "and he heard",
+      "text": "וַיִּשְׁמַע.\nוַיִּשְׁמַע.\nand he heard.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a0d2b1f9e7d0d4a0cefb8ec2.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:17:2",
+      "hebrew": "יְהוֹשֻׁעַ",
+      "english": "Joshua",
+      "text": "יְהוֹשֻׁעַ.\nיְהוֹשֻׁעַ.\nJoshua.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/fe7ba05ef7d7f899d43cc787.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:17:4",
+      "hebrew": "קוֹל",
+      "english": "the sound",
+      "text": "קוֹל.\nקוֹל.\nthe sound.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a4bdf62ef5fa2157cb6e63bd.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:17:6",
+      "hebrew": "בְּרֵעֹה",
+      "english": "in shouting its",
+      "text": "בְּרֵעֹה.\nבְּרֵעֹה.\nin shouting its.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/0e47c1593f9691d47dd8d597.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:17:11",
+      "hebrew": "מִלְחָמָה",
+      "english": "of battle",
+      "text": "מִלְחָמָה.\nמִלְחָמָה.\nof battle.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/cfc89503e1cf50394c6943c1.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:18:4",
+      "hebrew": "עֲנוֹת",
+      "english": "of singing",
+      "text": "עֲנוֹת.\nעֲנוֹת.\nof singing.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c0aad7c2619a8c8bf5714e4b.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:18:5",
+      "hebrew": "גְּבוּרָה",
+      "english": "of strength",
+      "text": "גְּבוּרָה.\nגְּבוּרָה.\nof strength.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/7978a159033a0db20964cbfe.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:18:9",
+      "hebrew": "חֲלוּשָׁה",
+      "english": "of weakness",
+      "text": "חֲלוּשָׁה.\nחֲלוּשָׁה.\nof weakness.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b0dd3e950409bb7c401a41ff.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:18:11",
+      "hebrew": "עַנּוֹת",
+      "english": "of singing",
+      "text": "עַנּוֹת.\nעַנּוֹת.\nof singing.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/591d11ef6c60eab19860e5f1.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:18:13",
+      "hebrew": "שֹׁמֵעַ",
+      "english": "[am] hearing",
+      "text": "שֹׁמֵעַ.\nשֹׁמֵעַ.\n[am] hearing.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/27a9a51867eb845392b10957.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:19:1",
+      "hebrew": "וַיְהִי",
+      "english": "and it was",
+      "text": "וַיְהִי.\nוַיְהִי.\nand it was.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/35b964a317976eff8ee5dec4.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:19:3",
+      "hebrew": "קָרַב",
+      "english": "he drew near",
+      "text": "קָרַב.\nקָרַב.\nhe drew near.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/60e08b5a218af37cdfbef2e2.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:19:5",
+      "hebrew": "הַמַּחֲנֶה",
+      "english": "the camp",
+      "text": "הַמַּחֲנֶה.\nהַמַּחֲנֶה.\nthe camp.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/fe3ab6f4d868b6bbc2b2a574.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:19:8",
+      "hebrew": "הָעֵגֶל",
+      "english": "the calf",
+      "text": "הָעֵגֶל.\nהָעֵגֶל.\nthe calf.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/15525740b329889275c99694.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:19:9",
+      "hebrew": "וּמְחֹלֹת",
+      "english": "and [the] dancing(s)",
+      "text": "וּמְחֹלֹת.\nוּמְחֹלֹת.\nand [the] dancing(s).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e50a6102f645a00e3985ec20.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:19:10",
+      "hebrew": "וַיִּחַר",
+      "english": "and it burned",
+      "text": "וַיִּחַר.\nוַיִּחַר.\nand it burned.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/bded73ca271cac821659364e.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:19:13",
+      "hebrew": "וַיַּשְׁלֵךְ",
+      "english": "and he threw",
+      "text": "וַיַּשְׁלֵךְ.\nוַיַּשְׁלֵךְ.\nand he threw.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a5f0f62a343a18c408aca4bb.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:19:15",
+      "hebrew": "מִיָּדָיו",
+      "english": "from hands his",
+      "text": "מִיָּדָיו.\nמִיָּדָיו.\nfrom hands his.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/cbc05c5fd6c8b3c5c637ad62.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:19:18",
+      "hebrew": "וַיְשַׁבֵּר",
+      "english": "and he broke",
+      "text": "וַיְשַׁבֵּר.\nוַיְשַׁבֵּר.\nand he broke.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/43534845d61a92e3c38f53b5.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:20:6",
+      "hebrew": "וַיִּשְׂרֹף",
+      "english": "and he burned [it]",
+      "text": "וַיִּשְׂרֹף.\nוַיִּשְׂרֹף.\nand he burned [it].",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a17d67913d3f616da44ec040.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:20:8",
+      "hebrew": "וַיִּטְחַן",
+      "english": "and he ground [it]",
+      "text": "וַיִּטְחַן.\nוַיִּטְחַן.\nand he ground [it].",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/105b7d4600e171658a90a267.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:20:11",
+      "hebrew": "דָּק",
+      "english": "it was fine",
+      "text": "דָּק.\nדָּק.\nit was fine.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f4db33509dcbd34c1f7b61ee.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:20:12",
+      "hebrew": "וַיִּזֶר",
+      "english": "and he scattered [it]",
+      "text": "וַיִּזֶר.\nוַיִּזֶר.\nand he scattered [it].",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f9be7d7da8189e82db6020d8.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:20:15",
+      "hebrew": "הַמַּיִם",
+      "english": "of the water",
+      "text": "הַמַּיִם.\nהַמַּיִם.\nof the water.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/141eb2acb904357a013bfc36.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:20:16",
+      "hebrew": "וַיַּשְׁקְ",
+      "english": "and he made drink [it]",
+      "text": "וַיַּשְׁקְ.\nוַיַּשְׁקְ.\nand he made drink [it].",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ce3f274639dccf1b674bd29d.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:20:18",
+      "hebrew": "בְּנֵי",
+      "english": "the people",
+      "text": "בְּנֵי.\nבְּנֵי.\nthe people.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/da4d317bccee0462530d3eeb.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:21:6",
+      "hebrew": "עָשָׂה",
+      "english": "did it do",
+      "text": "עָשָׂה.\nעָשָׂה.\ndid it do.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/278b97f81a007f7d2ef9afd6.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:21:11",
+      "hebrew": "הֵבֵאתָ",
+      "english": "you have brought",
+      "text": "הֵבֵאתָ.\nהֵבֵאתָ.\nyou have brought.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a2f3c32feb4fb50988c51579.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:21:13",
+      "hebrew": "חֲטָאָה",
+      "english": "a sin",
+      "text": "חֲטָאָה.\nחֲטָאָה.\na sin.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f5c87769a9fbde0d6a9ce45e.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:22:4",
+      "hebrew": "יִחַר",
+      "english": "let it burn",
+      "text": "יִחַר.\nיִחַר.\nlet it burn.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a6372fc7ab5947b199483cec.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:22:6",
+      "hebrew": "אֲדֹנִי",
+      "english": "my lord my",
+      "text": "אֲדֹנִי.\nאֲדֹנִי.\nmy lord my.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e996c8ad90ee5cc12ca330f3.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:22:8",
+      "hebrew": "יָדַעְתָּ",
+      "english": "you know",
+      "text": "יָדַעְתָּ.\nיָדַעְתָּ.\nyou know.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/76b15c0a2e356e386f226bc7.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:24:1",
+      "hebrew": "וָאֹמַר",
+      "english": "and I said",
+      "text": "וָאֹמַר.\nוָאֹמַר.\nand I said.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e91e056f0733e8684e3cfcf7.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:24:4",
+      "hebrew": "זָהָב",
+      "english": "gold",
+      "text": "זָהָב.\nזָהָב.\ngold.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/0da99166338b601b9ccbb93f.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:24:5",
+      "hebrew": "הִתְפָּרָקוּ",
+      "english": "tear [it] off from yourselves",
+      "text": "הִתְפָּרָקוּ.\nהִתְפָּרָקוּ.\ntear [it] off from yourselves.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/3ddf5b911b2b41ffcf49092f.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:24:6",
+      "hebrew": "וַיִּתְּנוּ",
+      "english": "and they gave [it]",
+      "text": "וַיִּתְּנוּ.\nוַיִּתְּנוּ.\nand they gave [it].",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/aaabff39ec355817b17c3b57.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:24:8",
+      "hebrew": "וָאַשְׁלִכֵהוּ",
+      "english": "and I threw it",
+      "text": "וָאַשְׁלִכֵהוּ.\nוָאַשְׁלִכֵהוּ.\nand I threw it.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/5c953b1a16a4d928243813ff.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:24:10",
+      "hebrew": "וַיֵּצֵא",
+      "english": "and it came out",
+      "text": "וַיֵּצֵא.\nוַיֵּצֵא.\nand it came out.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c18cb59370ab0eb589b8600c.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:25:6",
+      "hebrew": "פָרֻעַ",
+      "english": "[was] running wild",
+      "text": "פָרֻעַ.\nפָרֻעַ.\n[was] running wild.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/2d02d1a5debe0d14a8cefaea.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:25:9",
+      "hebrew": "פְרָעֹה",
+      "english": "he had let it run wild",
+      "text": "פְרָעֹה.\nפְרָעֹה.\nhe had let it run wild.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b4f3879a21aa1ddb76898bd0.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:25:11",
+      "hebrew": "לְשִׁמְצָה",
+      "english": "for derision",
+      "text": "לְשִׁמְצָה.\nלְשִׁמְצָה.\nfor derision.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c46d155890f2094027ccc627.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:25:12",
+      "hebrew": "בְּקָמֵיהֶם",
+      "english": "among [those who] rise against them",
+      "text": "בְּקָמֵיהֶם.\nבְּקָמֵיהֶם.\namong [those who] rise against them.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ac6c65d4c9b0a954d30fbfea.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:26:1",
+      "hebrew": "וַיַּעֲמֹד",
+      "english": "and he stood",
+      "text": "וַיַּעֲמֹד.\nוַיַּעֲמֹד.\nand he stood.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/53694201c1bb25a76c2cb180.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:26:3",
+      "hebrew": "בְּשַׁעַר",
+      "english": "at the gate",
+      "text": "בְּשַׁעַר.\nבְּשַׁעַר.\nat the gate.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/1c2c5bd2dbb5609fc57c6a82.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:26:9",
+      "hebrew": "וַיֵּאָסְפוּ",
+      "english": "and they gathered themselves",
+      "text": "וַיֵּאָסְפוּ.\nוַיֵּאָסְפוּ.\nand they gathered themselves.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ccf05f7b7d6bb1f86aed5088.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:26:13",
+      "hebrew": "לֵוִי",
+      "english": "of Levi",
+      "text": "לֵוִי.\nלֵוִי.\nof Levi.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ed4d195c605eb16a7cfd3653.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:27:4",
+      "hebrew": "אָמַר",
+      "english": "he says",
+      "text": "אָמַר.\nאָמַר.\nhe says.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/9a5f268e6601861f9db9087e.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:27:6",
+      "hebrew": "אֱלֹהֵי",
+      "english": "the God",
+      "text": "אֱלֹהֵי.\nאֱלֹהֵי.\nthe God.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e8e341687cf9bda5a562d60f.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:27:8",
+      "hebrew": "שִׂימוּ",
+      "english": "put",
+      "text": "שִׂימוּ.\nשִׂימוּ.\nput.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/30b9a49cab17895b3969b8dc.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:27:9",
+      "hebrew": "אִישׁ",
+      "english": "everyone",
+      "text": "אִישׁ.\nאִישׁ.\neveryone.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d60307fceef0fa2ea112720d.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:27:10",
+      "hebrew": "חַרְבּוֹ",
+      "english": "sword his",
+      "text": "חַרְבּוֹ.\nחַרְבּוֹ.\nsword his.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e05e501a7f74df9760b4e0e7.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:27:12",
+      "hebrew": "יְרֵכוֹ",
+      "english": "thigh his",
+      "text": "יְרֵכוֹ.\nיְרֵכוֹ.\nthigh his.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d5426a3297acc0c1a826775c.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:27:13",
+      "hebrew": "עִבְרוּ",
+      "english": "pass",
+      "text": "עִבְרוּ.\nעִבְרוּ.\npass.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ee632e87301b73189bbd120b.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:27:14",
+      "hebrew": "וָשׁוּבוּ",
+      "english": "and return",
+      "text": "וָשׁוּבוּ.\nוָשׁוּבוּ.\nand return.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d01b552b04bc003aa9fd6a45.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:27:15",
+      "hebrew": "מִשַּׁעַר",
+      "english": "from gate",
+      "text": "מִשַּׁעַר.\nמִשַּׁעַר.\nfrom gate.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d220b54c259155ed970b8d14.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:27:16",
+      "hebrew": "לָשַׁעַר",
+      "english": "to gate",
+      "text": "לָשַׁעַר.\nלָשַׁעַר.\nto gate.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/64a780c5dd63e4434b630be5.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:27:18",
+      "hebrew": "וְהִרְגוּ",
+      "english": "and kill",
+      "text": "וְהִרְגוּ.\nוְהִרְגוּ.\nand kill.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c83338e8125f8ff385c90858.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:27:21",
+      "hebrew": "אָחִיו",
+      "english": "brother his",
+      "text": "אָחִיו.\nאָחִיו.\nbrother his.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/633a307eab84ff2957eec53b.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:27:22",
+      "hebrew": "וְאִישׁ",
+      "english": "and everyone",
+      "text": "וְאִישׁ.\nוְאִישׁ.\nand everyone.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e24a2d7ed7ac49d55da42504.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:27:24",
+      "hebrew": "רֵעֵהוּ",
+      "english": "friend his",
+      "text": "רֵעֵהוּ.\nרֵעֵהוּ.\nfriend his.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/86d672d4b75c70235d6fcb5e.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:28:1",
+      "hebrew": "וַיַּעֲשׂוּ",
+      "english": "and they did",
+      "text": "וַיַּעֲשׂוּ.\nוַיַּעֲשׂוּ.\nand they did.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/141f6c267865b725e3382568.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:28:2",
+      "hebrew": "בְנֵי",
+      "english": "the descendants",
+      "text": "בְנֵי.\nבְנֵי.\nthe descendants.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/715272bc4cf9a20b0a0a80e2.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:28:4",
+      "hebrew": "כִּדְבַר",
+      "english": "according to the word",
+      "text": "כִּדְבַר.\nכִּדְבַר.\naccording to the word.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/fc984a3f2d9737554cf8109a.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:28:6",
+      "hebrew": "וַיִּפֹּל",
+      "english": "and he fell",
+      "text": "וַיִּפֹּל.\nוַיִּפֹּל.\nand he fell.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/6cf86e83e36c628eecad6fb9.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:29:3",
+      "hebrew": "מִלְאוּ",
+      "english": "fill",
+      "text": "מִלְאוּ.\nמִלְאוּ.\nfill.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/585eae0564d4c37f0a2900d7.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:29:4",
+      "hebrew": "יֶדְכֶם",
+      "english": "hand your",
+      "text": "יֶדְכֶם.\nיֶדְכֶם.\nhand your.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/38500dc8c51b6a96426773f4.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:29:5",
+      "hebrew": "הַיּוֹם",
+      "english": "this day",
+      "text": "הַיּוֹם.\nהַיּוֹם.\nthis day.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/7ba6f533b39746f58ab7ca1e.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:29:9",
+      "hebrew": "בִּבְנוֹ",
+      "english": "[was] on son his",
+      "text": "בִּבְנוֹ.\nבִּבְנוֹ.\n[was] on son his.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/66a7ac7805e6339a67ff3623.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:29:10",
+      "hebrew": "וּבְאָחִיו",
+      "english": "and on brother his",
+      "text": "וּבְאָחִיו.\nוּבְאָחִיו.\nand on brother his.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e4cf6f7fb9ed3e927779e931.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:29:11",
+      "hebrew": "וְלָתֵת",
+      "english": "and to put",
+      "text": "וְלָתֵת.\nוְלָתֵת.\nand to put.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/306fe72157eef9e6acedf5a4.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:29:14",
+      "hebrew": "בְּרָכָה",
+      "english": "a blessing",
+      "text": "בְּרָכָה.\nבְּרָכָה.\na blessing.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ce83d3ceb8988e205457642e.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:30:8",
+      "hebrew": "חֲטָאתֶם",
+      "english": "you have sinned",
+      "text": "חֲטָאתֶם.\nחֲטָאתֶם.\nyou have sinned.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c00cadd71319d860ce0b57b0.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:30:12",
+      "hebrew": "אֶעֱלֶה",
+      "english": "I will go up",
+      "text": "אֶעֱלֶה.\nאֶעֱלֶה.\nI will go up.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c4e373a5e4905606e8dbab6c.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:30:16",
+      "hebrew": "אֲכַפְּרָה",
+      "english": "I will atone",
+      "text": "אֲכַפְּרָה.\nאֲכַפְּרָה.\nI will atone.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e0466040744b1bf68ac6cb58.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:30:18",
+      "hebrew": "חַטַּאתְכֶם",
+      "english": "sin your",
+      "text": "חַטַּאתְכֶם.\nחַטַּאתְכֶם.\nsin your.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/4ec7c090f87e8ec836db988a.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:31:1",
+      "hebrew": "וַיָּשָׁב",
+      "english": "and he returned",
+      "text": "וַיָּשָׁב.\nוַיָּשָׁב.\nand he returned.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/78b6662c1ad6604aad1357fb.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:31:7",
+      "hebrew": "חָטָא",
+      "english": "it has sinned",
+      "text": "חָטָא.\nחָטָא.\nit has sinned.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/4a9f51ee74a7f202df4d7fa0.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:32:3",
+      "hebrew": "תִּשָּׂא",
+      "english": "you will forgive",
+      "text": "תִּשָּׂא.\nתִּשָּׂא.\nyou will forgive.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/33941e87701bc2abf2412c17.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:32:4",
+      "hebrew": "חַטָּאתָם",
+      "english": "sin their",
+      "text": "חַטָּאתָם.\nחַטָּאתָם.\nsin their.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/4ca057042a538836bc4420da.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:32:7",
+      "hebrew": "מְחֵנִי",
+      "english": "wipe me out",
+      "text": "מְחֵנִי.\nמְחֵנִי.\nwipe me out.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/7bd50bb1b9a5f1ffde24c381.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:32:9",
+      "hebrew": "מִסִּפְרְךָ",
+      "english": "from book your",
+      "text": "מִסִּפְרְךָ.\nמִסִּפְרְךָ.\nfrom book your.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b0b2e94b69627128c8426072.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:32:11",
+      "hebrew": "כָּתָבְתָּ",
+      "english": "you have written",
+      "text": "כָּתָבְתָּ.\nכָּתָבְתָּ.\nyou have written.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/dc519cdd384ae21744c548aa.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:33:9",
+      "hebrew": "אֶמְחֶנּוּ",
+      "english": "I will wipe him out",
+      "text": "אֶמְחֶנּוּ.\nאֶמְחֶנּוּ.\nI will wipe him out.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/5429569ab41de28b8574ef18.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:33:10",
+      "hebrew": "מִסִּפְרִי",
+      "english": "from book my",
+      "text": "מִסִּפְרִי.\nמִסִּפְרִי.\nfrom book my.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/5c5fd4928151cca45c53d2c3.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:34:2",
+      "hebrew": "לֵךְ",
+      "english": "go",
+      "text": "לֵךְ.\nלֵךְ.\ngo.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/cf2296bfe94a96b140adf7be.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:34:3",
+      "hebrew": "נְחֵה",
+      "english": "lead",
+      "text": "נְחֵה.\nנְחֵה.\nlead.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d2f87801c7f5504918d4173f.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:34:8",
+      "hebrew": "דִּבַּרְתִּי",
+      "english": "I have spoken",
+      "text": "דִּבַּרְתִּי.\nדִּבַּרְתִּי.\nI have spoken.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/16308835346bf62e0868adb5.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:34:11",
+      "hebrew": "מַלְאָכִי",
+      "english": "angel my",
+      "text": "מַלְאָכִי.\nמַלְאָכִי.\nangel my.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/dd676726c604f3ec0479d6f8.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:34:12",
+      "hebrew": "יֵלֵךְ",
+      "english": "he will go",
+      "text": "יֵלֵךְ.\nיֵלֵךְ.\nhe will go.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/062ad457248ee6cb19fbff1f.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:34:13",
+      "hebrew": "לְפָנֶיךָ",
+      "english": "before front you",
+      "text": "לְפָנֶיךָ.\nלְפָנֶיךָ.\nbefore front you.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b27854cae3cdcd9a9d71a350.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:34:14",
+      "hebrew": "וּבְיוֹם",
+      "english": "and on the day",
+      "text": "וּבְיוֹם.\nוּבְיוֹם.\nand on the day.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c6216817b5d6dbf0c3a3b768.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:34:15",
+      "hebrew": "פָּקְדִי",
+      "english": "visit I",
+      "text": "פָּקְדִי.\nפָּקְדִי.\nvisit I.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/0a213511cefbf92950a57172.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:34:16",
+      "hebrew": "וּפָקַדְתִּי",
+      "english": "and I will visit",
+      "text": "וּפָקַדְתִּי.\nוּפָקַדְתִּי.\nand I will visit.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/1a7ead9d242f74591252354e.mp3"
+      }
+    },
+    {
+      "ref": "EXO 32:35:1",
+      "hebrew": "וַיִּגֹּף",
+      "english": "and he struck",
+      "text": "וַיִּגֹּף.\nוַיִּגֹּף.\nand he struck.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/9d8e3ebd3ca033d8f58a20da.mp3"
+      }
+    }
+  ]
+}
