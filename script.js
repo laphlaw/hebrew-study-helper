@@ -23,12 +23,14 @@ let writingInput = [];
 let revealed = false;
 let deckFinished = false;
 let direction = "hebrew";
+let selectedLanguage = "hebrew";
 let currentMode = "study";
 let maculaIndex = null;
 let elevenLabsCatalog = null;
 let currentChapterRecords = [];
 let verbFormIndex = {};
 let verbMeaningIndex = {};
+let chapterLoadRequestId = 0;
 let autoAdvanceTimer = null;
 let elevenLabsManifest = null;
 let elevenLabsQueue = [];
@@ -50,6 +52,7 @@ let elevenLabsShuffleEnabled = loadElevenLabsPlaybackPreferences().shuffle;
 let elevenLabsShuffleOrder = [];
 
 const els = {
+  languageSelect: document.querySelector("#language-select"),
   bookSelect: document.querySelector("#book-select"),
   chapterSelect: document.querySelector("#chapter-select"),
   modeSelect: document.querySelector("#mode-select"),
@@ -105,6 +108,7 @@ const els = {
   nextWordButton: document.querySelector("#next-word-button"),
   hebrewWord: document.querySelector("#hebrew-word"),
   englishWord: document.querySelector("#english-word"),
+  wordBreakdown: document.querySelector("#word-breakdown"),
   rootWord: document.querySelector("#root-word"),
   cardCount: document.querySelector("#card-count"),
   masterWordButton: document.querySelector("#master-word-button"),
@@ -124,8 +128,96 @@ const els = {
   wordTable: document.querySelector("#word-table")
 };
 
-function wordFromParts(hebrew, english, pos, root, morph = "", refs = [], strong = "") {
-  return [hebrew, english, pos, root || hebrew, morph, refs, strong];
+const supportedLanguages = {
+  hebrew: {
+    label: "Hebrew",
+    readingLabel: "Hebrew Bible",
+    readingDir: "rtl"
+  },
+  korean: {
+    label: "Korean",
+    readingLabel: "Korean Living Bible (KLB)",
+    readingDir: "ltr"
+  }
+};
+
+const koreanBookNames = {
+  Gen: "창세기",
+  Exo: "출애굽기",
+  Lev: "레위기",
+  Num: "민수기",
+  Deu: "신명기",
+  Jos: "여호수아",
+  Jdg: "사사기",
+  Rut: "룻기",
+  "1Sa": "사무엘상",
+  "2Sa": "사무엘하",
+  "1Ki": "열왕기상",
+  "2Ki": "열왕기하",
+  "1Ch": "역대상",
+  "2Ch": "역대하",
+  Ezr: "에스라",
+  Neh: "느헤미야",
+  Est: "에스더",
+  Job: "욥기",
+  Psa: "시편",
+  Pro: "잠언",
+  Ecc: "전도서",
+  Sng: "아가",
+  Isa: "이사야",
+  Jer: "예레미야",
+  Lam: "예레미야애가",
+  Ezk: "에스겔",
+  Dan: "다니엘",
+  HOS: "호세아",
+  Jol: "요엘",
+  Amo: "아모스",
+  Oba: "오바댜",
+  Jon: "요나",
+  Mic: "미가",
+  Nam: "나훔",
+  Hab: "하박국",
+  Zep: "스바냐",
+  Hag: "학개",
+  Zec: "스가랴",
+  Mal: "말라기"
+};
+
+const bibleComBookCodes = {
+  HOS: "HOS",
+  Jol: "JOL",
+  Nam: "NAM"
+};
+
+function wordFromParts(hebrew, english, pos, root, morph = "", refs = [], strong = "", details = {}) {
+  return [hebrew, english, pos, root || hebrew, morph, refs, strong, details];
+}
+
+function wordFromKoreanStudyEntry(entry, book, chapter) {
+  if (Array.isArray(entry)) {
+    return wordFromParts(
+      entry[0] || "",
+      entry[1] || "",
+      normalizePartOfSpeech(entry[2] || "other"),
+      entry[3] || entry[0] || "",
+      "",
+      entry[4] || []
+    );
+  }
+
+  const korean = entry?.korean || entry?.word || "";
+  return wordFromParts(
+    korean,
+    entry?.english || entry?.gloss || "",
+    normalizePartOfSpeech(entry?.pos || "other"),
+      entry?.root || korean,
+      "",
+    entry?.refs || [`${book.code} ${chapter}`],
+    "",
+    {
+      breakdown: Array.isArray(entry?.breakdown) ? entry.breakdown : []
+    }
+  );
 }
 
 function parseWords(text) {
@@ -220,8 +312,11 @@ function getSavedPreferences() {
   try {
     const saved = JSON.parse(localStorage.getItem(preferencesStorageKey) || "{}");
     const legacyAuto = JSON.parse(localStorage.getItem(autoAdvanceStorageKey) || "{}");
+    const language = saved.language === "korean" ? "korean" : "hebrew";
+    const savedMode = ["reading", "audio", "writing", "verbs"].includes(saved.mode) ? saved.mode : "study";
     return {
-      mode: ["reading", "audio", "writing", "verbs"].includes(saved.mode) ? saved.mode : "study",
+      language,
+      mode: language === "korean" && !["study", "reading"].includes(savedMode) ? "reading" : savedMode,
       direction: saved.direction === "english" ? "english" : "hebrew",
       partOfSpeech: ["noun", "verb", "other"].includes(saved.partOfSpeech) ? saved.partOfSpeech : "all",
       showMastered: Boolean(saved.showMastered),
@@ -235,6 +330,7 @@ function getSavedPreferences() {
     };
   } catch {
     return {
+      language: "hebrew",
       direction: "hebrew",
       mode: "study",
       partOfSpeech: "all",
@@ -249,6 +345,7 @@ function getSavedPreferences() {
 
 function savePreferences() {
   localStorage.setItem(preferencesStorageKey, JSON.stringify({
+    language: selectedLanguage,
     mode: els.modeSelect.value,
     direction: els.directionSelect.value,
     partOfSpeech: els.posSelect.value,
@@ -265,8 +362,10 @@ function savePreferences() {
 
 function applySavedPreferences() {
   const preferences = getSavedPreferences();
+  selectedLanguage = preferences.language;
   currentMode = preferences.mode;
   direction = preferences.direction;
+  els.languageSelect.value = preferences.language;
   els.modeSelect.value = preferences.mode;
   els.directionSelect.value = preferences.direction;
   els.posSelect.value = preferences.partOfSpeech;
@@ -296,6 +395,56 @@ function applyTheme(theme) {
 function toggleTheme() {
   applyTheme(getCurrentTheme() === "dark" ? "light" : "dark");
   savePreferences();
+}
+
+function isKoreanSelected() {
+  return selectedLanguage === "korean";
+}
+
+function isHebrewSelected() {
+  return selectedLanguage === "hebrew";
+}
+
+function formatBookName(book) {
+  if (isKoreanSelected()) return koreanBookNames[book.code] || book.name;
+  return book.name;
+}
+
+function updateLanguageLabels() {
+  const sourceLabel = isKoreanSelected() ? "Korean" : "Hebrew";
+  els.directionSelect.options[0].textContent = `${sourceLabel} to English`;
+  els.directionSelect.options[1].textContent = `English to ${sourceLabel}`;
+  els.searchInput.placeholder = `Search ${sourceLabel}, root, or English`;
+}
+
+function syncLanguageModeAvailability() {
+  [...els.modeSelect.options].forEach((option) => {
+    const isHebrewOnlyMode = !["study", "reading"].includes(option.value);
+    option.disabled = isKoreanSelected() && isHebrewOnlyMode;
+    option.hidden = isKoreanSelected() && isHebrewOnlyMode;
+  });
+
+  if (isKoreanSelected() && !["study", "reading"].includes(currentMode)) {
+    currentMode = "reading";
+  }
+
+  els.modeSelect.value = currentMode;
+  document.documentElement.dataset.studyLanguage = selectedLanguage;
+  updateLanguageLabels();
+}
+
+function bibleGatewayKlbUrl(book, chapter) {
+  const passage = `${book.name} ${chapter}`;
+  return `https://www.biblegateway.com/passage/?search=${encodeURIComponent(passage)}&version=KLB`;
+}
+
+function bibleComKlbUrl(book, chapter) {
+  const code = bibleComBookCodes[book.code] || book.code.toUpperCase();
+  return `https://www.bible.com/bible/86/${code}.${chapter}.KLB`;
+}
+
+function selectedLanguageReadingLabel() {
+  return supportedLanguages[selectedLanguage]?.readingLabel || supportedLanguages.hebrew.readingLabel;
 }
 
 function saveAutoAdvanceSettings() {
@@ -976,11 +1125,85 @@ function formatAnswer(english) {
   return formMatch ? english.replace(formMatch[0], "") : english;
 }
 
+function formatBreakdown(parts = []) {
+  return parts
+    .map((part) => {
+      if (typeof part === "string") return part.trim();
+      const label = part?.part || "";
+      const meaning = part?.meaning || "";
+      return [label, meaning].filter(Boolean).join(" = ");
+    })
+    .filter(Boolean)
+    .join(" + ");
+}
+
+function fitTextToBox(element, minPixels = 14) {
+  if (!element || !element.textContent.trim()) return;
+
+  element.style.fontSize = "";
+  let size = Number.parseFloat(getComputedStyle(element).fontSize);
+  if (!size || !element.clientWidth || !element.clientHeight) return;
+  const maxWidth = Math.max(element.clientWidth - 4, minPixels);
+  const maxHeight = Math.max(element.clientHeight - 10, minPixels);
+
+  const clone = element.cloneNode(true);
+  const computed = getComputedStyle(element);
+  clone.classList.remove("hidden");
+  clone.removeAttribute("id");
+  Object.assign(clone.style, {
+    position: "fixed",
+    top: "0",
+    left: "-10000px",
+    display: "block",
+    visibility: "hidden",
+    width: `${maxWidth}px`,
+    height: "auto",
+    maxHeight: "none",
+    overflow: "visible",
+    padding: computed.padding,
+    transform: "none",
+    whiteSpace: "normal"
+  });
+  document.body.append(clone);
+
+  while (
+    (clone.scrollWidth > maxWidth || clone.scrollHeight > maxHeight) &&
+    size > minPixels
+  ) {
+    size = Math.max(size * 0.92, minPixels);
+    clone.style.fontSize = `${size}px`;
+  }
+
+  element.style.fontSize = `${size}px`;
+  clone.remove();
+
+  const widthRatio = element.scrollWidth > element.clientWidth + 1
+    ? (element.clientWidth - 4) / element.scrollWidth
+    : 1;
+  const heightRatio = element.scrollHeight > element.clientHeight + 1
+    ? (element.clientHeight - 6) / element.scrollHeight
+    : 1;
+  const finalRatio = Math.min(widthRatio, heightRatio);
+  if (finalRatio < 1) {
+    element.style.fontSize = `${Math.max(size * Math.max(finalRatio, 0.85), minPixels)}px`;
+  }
+}
+
+function fitFlashcardText() {
+  window.requestAnimationFrame(() => {
+    fitTextToBox(els.hebrewWord, isKoreanSelected() ? 28 : 34);
+    fitTextToBox(els.englishWord, 16);
+    fitTextToBox(els.wordBreakdown, 13);
+    fitTextToBox(els.rootWord, isKoreanSelected() ? 14 : 20);
+  });
+}
+
 function showCard(index = currentIndex) {
   if (!visibleWords.length) {
     deckFinished = false;
     els.hebrewWord.textContent = "אין מילים";
     els.englishWord.textContent = "No matching words";
+    els.wordBreakdown.textContent = "";
     els.rootWord.textContent = "";
     els.cardCount.textContent = "0 / 0";
     els.masterWordButton.disabled = true;
@@ -999,9 +1222,14 @@ function showCard(index = currentIndex) {
   currentIndex = (index + visibleWords.length) % visibleWords.length;
   revealed = false;
   const word = visibleWords[currentIndex];
-  const [hebrew, english, , root] = word;
+  const [hebrew, english, , root, , , , details = {}] = word;
+  els.hebrewWord.dir = isKoreanSelected() ? "ltr" : "rtl";
+  els.hebrewWord.classList.toggle("is-korean-word", isKoreanSelected());
+  els.rootWord.dir = isKoreanSelected() ? "ltr" : "rtl";
+  els.rootWord.classList.toggle("is-korean-word", isKoreanSelected());
   els.hebrewWord.textContent = hebrew;
   els.englishWord.textContent = formatAnswer(english);
+  els.wordBreakdown.textContent = formatBreakdown(details.breakdown);
   els.rootWord.textContent = root && root !== hebrew ? root : "";
   els.cardCount.textContent = `${currentIndex + 1} / ${visibleWords.length}`;
   els.masterWordButton.disabled = false;
@@ -1014,6 +1242,7 @@ function showFinishedCard() {
   revealed = true;
   els.hebrewWord.textContent = "Finished";
   els.englishWord.textContent = "Next starts over";
+  els.wordBreakdown.textContent = "";
   els.rootWord.textContent = "";
   els.cardCount.textContent = `${visibleWords.length} / ${visibleWords.length}`;
   els.masterWordButton.disabled = true;
@@ -1023,9 +1252,11 @@ function showFinishedCard() {
 
 function renderRevealState() {
   els.cardButton.classList.toggle("is-finished", deckFinished);
+  els.cardButton.classList.toggle("has-breakdown", Boolean(els.wordBreakdown.textContent));
   if (deckFinished) {
     els.hebrewWord.classList.remove("hidden");
     els.englishWord.classList.remove("hidden");
+    els.wordBreakdown.classList.add("hidden");
     els.rootWord.classList.add("hidden");
     els.cardButton.setAttribute("aria-label", "Finished. Start over");
     els.revealButton.disabled = true;
@@ -1034,14 +1265,17 @@ function renderRevealState() {
   }
 
   const showingHebrewFirst = direction === "hebrew";
+  els.cardButton.classList.toggle("is-source-english", !showingHebrewFirst);
   els.hebrewWord.classList.toggle("hidden", !showingHebrewFirst && !revealed);
   els.englishWord.classList.toggle("hidden", showingHebrewFirst && !revealed);
+  els.wordBreakdown.classList.toggle("hidden", !revealed || !els.wordBreakdown.textContent);
   els.rootWord.classList.toggle("hidden", !revealed || !els.rootWord.textContent);
   els.cardButton.setAttribute("aria-label", "Next word");
   els.revealButton.disabled = !visibleWords.length;
   els.previousWordButton.disabled = !visibleWords.length;
   els.nextWordButton.disabled = !visibleWords.length;
   els.revealButton.textContent = revealed ? "Next Word" : "Show Answer";
+  fitFlashcardText();
 }
 
 function revealAnswer() {
@@ -1103,6 +1337,7 @@ function handleAutoAdvanceChange() {
 }
 
 function renderMode() {
+  syncLanguageModeAvailability();
   const readingMode = currentMode === "reading";
   const audioMode = currentMode === "audio";
   const verbMode = currentMode === "verbs";
@@ -1472,7 +1707,8 @@ function renderList() {
     const hebrewButton = document.createElement("button");
     hebrewButton.type = "button";
     hebrewButton.className = "hebrew";
-    hebrewButton.dir = "rtl";
+    hebrewButton.classList.toggle("is-korean-word", isKoreanSelected());
+    hebrewButton.dir = isKoreanSelected() ? "ltr" : "rtl";
     hebrewButton.textContent = hebrew;
     hebrewButton.addEventListener("click", () => showCard(index));
 
@@ -1558,7 +1794,7 @@ function audioCatalogEntries() {
 }
 
 function audioCatalogModeActive() {
-  return currentMode === "audio";
+  return isHebrewSelected() && currentMode === "audio";
 }
 
 function getSelectableBooks() {
@@ -1587,7 +1823,7 @@ function renderBookOptions(preferredBook = els.bookSelect.value) {
   books.forEach((book) => {
     const option = document.createElement("option");
     option.value = book.code;
-    option.textContent = book.name;
+    option.textContent = formatBookName(book);
     els.bookSelect.append(option);
   });
 
@@ -1941,14 +2177,17 @@ function sefariaRef(book, chapter) {
   return `${book.name}.${chapter}`;
 }
 
-async function loadReadingChapter(book, chapter) {
+async function loadReadingChapter(book, chapter, requestId = chapterLoadRequestId) {
   els.readingStatus.textContent = "Loading...";
   els.readingText.innerHTML = "";
+  els.readingText.classList.remove("is-korean");
+  els.readingText.dir = supportedLanguages.hebrew.readingDir;
 
   const url = `https://www.sefaria.org/api/texts/${encodeURIComponent(sefariaRef(book, chapter))}?context=0&commentary=0`;
   const response = await fetch(url);
   if (!response.ok) throw new Error(`Could not load ${book.name} ${chapter} from Sefaria`);
   const data = await response.json();
+  if (requestId !== chapterLoadRequestId || !isHebrewSelected()) return;
   const verses = Array.isArray(data.he) ? data.he : [];
 
   els.readingStatus.textContent = data.heRef || `${book.name} ${chapter}`;
@@ -1972,6 +2211,126 @@ async function loadReadingChapter(book, chapter) {
 
   updateReadingNavButtons();
   els.readingText.append(els.readingNav);
+}
+
+function loadKoreanReadingChapter(book, chapter) {
+  const koreanName = koreanBookNames[book.code] || book.name;
+  const referenceLabel = `${koreanName} ${chapter}`;
+  const gatewayUrl = bibleGatewayKlbUrl(book, chapter);
+  const bibleComUrl = bibleComKlbUrl(book, chapter);
+
+  els.readingStatus.textContent = `${referenceLabel} - ${selectedLanguageReadingLabel()}`;
+  els.readingText.innerHTML = "";
+  els.readingText.classList.add("is-korean");
+  els.readingText.dir = supportedLanguages.korean.readingDir;
+
+  const panel = document.createElement("section");
+  panel.className = "korean-reader-panel";
+  panel.setAttribute("aria-label", "Korean Bible reader");
+
+  const heading = document.createElement("h2");
+  heading.textContent = referenceLabel;
+
+  const version = document.createElement("p");
+  version.className = "korean-reader-version";
+  version.textContent = "현대인의 성경 (KLB)";
+
+  const actions = document.createElement("div");
+  actions.className = "korean-reader-actions";
+
+  const gatewayLink = document.createElement("a");
+  gatewayLink.className = "reader-link-button primary";
+  gatewayLink.href = gatewayUrl;
+  gatewayLink.target = "_blank";
+  gatewayLink.rel = "noopener noreferrer";
+  gatewayLink.textContent = "Open in Bible Gateway";
+
+  const bibleComLink = document.createElement("a");
+  bibleComLink.className = "reader-link-button";
+  bibleComLink.href = bibleComUrl;
+  bibleComLink.target = "_blank";
+  bibleComLink.rel = "noopener noreferrer";
+  bibleComLink.textContent = "Open in Bible.com";
+
+  actions.append(gatewayLink, bibleComLink);
+
+  const notice = document.createElement("p");
+  notice.className = "korean-reader-notice";
+  notice.textContent = "KLB is an easy, contemporary Korean OT translation. The full text stays with licensed readers rather than being copied into this app.";
+
+  const copyright = document.createElement("p");
+  copyright.className = "korean-reader-copyright";
+  copyright.textContent = "Korean Living Bible (현대인의 성경) © 1985 Biblica, Inc. Used by permission. All rights reserved worldwide.";
+
+  panel.append(heading, version, actions, notice, copyright);
+  els.readingText.append(panel);
+
+  updateReadingNavButtons();
+  els.readingText.append(els.readingNav);
+}
+
+function renderKoreanChapter(book, chapter, data) {
+  const koreanName = koreanBookNames[book.code] || book.name;
+  const referenceLabel = `${koreanName} ${chapter}`;
+  const verses = Array.isArray(data?.verses) ? data.verses : [];
+  const translationName = data?.translationName || "현대인의 성경";
+  const translation = data?.translation || "KLB";
+
+  els.readingStatus.textContent = `${referenceLabel} - ${translationName} (${translation})`;
+  els.readingText.innerHTML = "";
+  els.readingText.classList.add("is-korean");
+  els.readingText.dir = supportedLanguages.korean.readingDir;
+
+  verses.forEach((verse) => {
+    const row = document.createElement("p");
+    row.className = "reading-verse";
+
+    const number = document.createElement("span");
+    number.className = "verse-number";
+    number.textContent = String(verse.verse || "");
+
+    const text = document.createElement("span");
+    text.className = "verse-text";
+    text.textContent = verse.text || "";
+
+    row.append(number, text);
+    els.readingText.append(row);
+  });
+
+  updateReadingNavButtons();
+  els.readingText.append(els.readingNav);
+}
+
+async function loadKoreanChapterData(book, chapter) {
+  const response = await fetch(`public/korean/${book.code}.${chapter}.json`, { cache: "no-store" });
+  if (!response.ok) return null;
+  return response.json();
+}
+
+async function loadLocalKoreanReadingChapter(book, chapter, requestId = chapterLoadRequestId) {
+  const data = await loadKoreanChapterData(book, chapter);
+  if (!data) return false;
+  if (requestId !== chapterLoadRequestId || !isKoreanSelected()) return true;
+  renderKoreanChapter(book, chapter, data);
+  return true;
+}
+
+async function loadKoreanStudyChapter(book, chapter, requestId = chapterLoadRequestId) {
+  const data = await loadKoreanChapterData(book, chapter);
+  if (requestId !== chapterLoadRequestId || !isKoreanSelected()) return;
+
+  const entries = Array.isArray(data?.studyWords) ? data.studyWords : [];
+  allWords = entries
+    .map((entry) => wordFromKoreanStudyEntry(entry, book, chapter))
+    .filter(([korean, english]) => korean && english);
+  currentChapterRecords = [];
+  currentIndex = 0;
+  currentVerbIndex = 0;
+  verbGroups = [];
+  renderVerbSelect();
+  els.searchInput.value = "";
+  saveSelectedChapter(book, chapter);
+  applyFilter();
 }
 
 async function loadSelectedChapter() {
@@ -1998,6 +2357,7 @@ async function loadSelectedChapter() {
 }
 
 async function loadCurrentChapter() {
+  const requestId = ++chapterLoadRequestId;
   const book = maculaIndex?.books.find((item) => item.code === els.bookSelect.value);
   const chapter = Number(els.chapterSelect.value);
   if (!book || !chapter) {
@@ -2012,14 +2372,43 @@ async function loadCurrentChapter() {
     return;
   }
 
+  if (isKoreanSelected()) {
+    syncLanguageModeAvailability();
+    saveSelectedChapter(book, chapter);
+    if (currentMode === "study") {
+      await loadKoreanStudyChapter(book, chapter, requestId);
+      return;
+    }
+
+    const renderedLocalChapter = await loadLocalKoreanReadingChapter(book, chapter, requestId);
+    if (requestId !== chapterLoadRequestId || !isKoreanSelected()) return;
+    if (!renderedLocalChapter) loadKoreanReadingChapter(book, chapter);
+    return;
+  }
+
   if (currentMode === "reading") {
     saveSelectedChapter(book, chapter);
-    await loadReadingChapter(book, chapter);
+    await loadReadingChapter(book, chapter, requestId);
     return;
   }
 
   await loadSelectedChapter();
 }
+
+els.languageSelect.addEventListener("change", () => {
+  const preferredBook = els.bookSelect.value;
+  const preferredChapter = Number(els.chapterSelect.value);
+  selectedLanguage = els.languageSelect.value === "korean" ? "korean" : "hebrew";
+  syncLanguageModeAvailability();
+  refreshChapterPicker(preferredBook, preferredChapter);
+  savePreferences();
+  renderMode();
+  loadCurrentChapter().catch((error) => {
+    console.error(error);
+    els.readingStatus.textContent = "Could not load reading text.";
+    els.readingText.append(els.readingNav);
+  });
+});
 
 els.bookSelect.addEventListener("change", () => {
   renderChapterOptions(1);
@@ -2171,6 +2560,7 @@ document.addEventListener("keydown", (event) => {
 });
 
 document.addEventListener("fullscreenchange", renderReadingFullscreenState);
+window.addEventListener("resize", fitFlashcardText);
 elevenLabsAudio.addEventListener("ended", () => {
   if (elevenLabsIsPlaying) nextElevenLabsAudio();
 });

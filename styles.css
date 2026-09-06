@@ -611,8 +611,11 @@ button {
 
 .card-button {
   position: relative;
-  display: block;
-  gap: 0;
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) minmax(52px, 0.26fr) minmax(42px, 0.18fr);
+  align-items: stretch;
+  justify-items: center;
+  gap: clamp(10px, 2vh, 18px);
   width: 100%;
   height: clamp(260px, 39vh, 390px);
   padding: clamp(20px, 5vw, 48px);
@@ -633,33 +636,87 @@ button {
 }
 
 .hebrew {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  grid-row: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
   direction: rtl;
   font-family: "SBL Hebrew", "SBL_Hbrw", "Ezra SIL", "Cardo", "SF Hebrew", "Times New Roman", serif;
-  max-width: 100%;
+  width: 100%;
+  min-width: 0;
+  max-width: 980px;
+  height: 100%;
+  overflow: hidden;
   font-size: clamp(3.1rem, 8vw, 6rem);
   line-height: 1.35;
   text-align: center;
   text-wrap: balance;
 }
 
+.hebrew.is-korean-word,
+.root-word.is-korean-word {
+  direction: ltr;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.hebrew.is-korean-word {
+  font-size: clamp(2.7rem, 7vw, 5.4rem);
+  line-height: 1.15;
+}
+
+.root-word.is-korean-word {
+  font-size: clamp(1.3rem, 2.4vw, 2rem);
+  font-weight: 800;
+  text-align: right;
+}
+
 .english {
-  position: absolute;
-  top: calc(50% + clamp(82px, 13vh, 120px));
-  left: 50%;
-  transform: translateX(-50%);
+  grid-row: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: min(920px, 100%);
-  max-width: 100%;
-  max-height: 7.4rem;
-  overflow: auto;
+  min-width: 0;
+  max-width: 920px;
+  height: 100%;
+  overflow: hidden;
   padding: 0 20px;
   font-size: clamp(1.05rem, 2.2vw, 1.65rem);
   font-weight: 700;
   line-height: 1.35;
   text-align: center;
+}
+
+.word-breakdown {
+  grid-row: 3;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: min(920px, 100%);
+  min-width: 0;
+  max-width: 920px;
+  height: 100%;
+  overflow: hidden;
+  padding: 0 20px;
+  color: var(--muted);
+  font-size: clamp(0.88rem, 1.7vw, 1.18rem);
+  font-weight: 800;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.card-button.is-source-english .english {
+  grid-row: 1;
+  align-items: flex-end;
+  font-size: clamp(2.1rem, 5vw, 4.2rem);
+  font-weight: 900;
+  line-height: 1.12;
+}
+
+.card-button.is-source-english .hebrew {
+  grid-row: 2;
+  align-items: center;
+  font-size: clamp(1.8rem, 4.2vw, 3.2rem);
 }
 
 .root-word {
@@ -679,8 +736,10 @@ button {
   display: none;
 }
 
-.card-button .english.hidden {
-  display: block;
+.card-button > .hebrew.hidden,
+.card-button > .english.hidden,
+.card-button > .word-breakdown.hidden {
+  display: flex;
   visibility: hidden;
 }
 
@@ -708,7 +767,6 @@ button {
   }
 
   .english {
-    top: calc(50% + clamp(125px, 22vh, 210px));
     font-size: clamp(1.35rem, 2.6vw, 2.1rem);
   }
 
@@ -963,6 +1021,11 @@ button {
   font-family: "SBL Hebrew", "SBL_Hbrw", "Ezra SIL", "Cardo", "SF Hebrew", "Times New Roman", serif;
 }
 
+.reading-text.is-korean {
+  direction: ltr;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
 .reading-section:fullscreen .reading-text,
 .reading-section.is-fullscreen .reading-text {
   width: 100%;
@@ -1008,6 +1071,79 @@ button {
   line-height: 1.55;
   overflow-wrap: anywhere;
   text-align: right;
+}
+
+.reading-text.is-korean .verse-text {
+  text-align: left;
+}
+
+.korean-reader-panel {
+  display: grid;
+  gap: 14px;
+  justify-items: start;
+  width: min(760px, 100%);
+  margin: clamp(20px, 6vh, 64px) auto;
+  padding: clamp(18px, 4vw, 32px);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface-muted);
+}
+
+.korean-reader-panel h2 {
+  color: var(--ink);
+  font-size: clamp(2rem, 8vw, 4.5rem);
+  font-weight: 900;
+  line-height: 1.05;
+}
+
+.korean-reader-version,
+.korean-reader-notice,
+.korean-reader-copyright {
+  margin: 0;
+  color: var(--muted);
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.korean-reader-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.reader-link-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 16px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--ink);
+  background: var(--surface);
+  font-size: 0.92rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.reader-link-button.primary {
+  border-color: var(--accent);
+  color: var(--button-ink);
+  background: var(--accent);
+}
+
+@media (hover: hover) {
+  .reader-link-button:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  .reader-link-button.primary:hover {
+    border-color: var(--accent-dark);
+    color: var(--button-ink);
+    background: var(--accent-dark);
+  }
 }
 
 .reading-nav {
@@ -1209,6 +1345,10 @@ button {
   min-width: 120px;
 }
 
+.chapter-picker #language-select {
+  min-width: 142px;
+}
+
 .chapter-picker #chapter-select {
   min-width: 78px;
 }
@@ -1374,7 +1514,7 @@ input[type="search"] {
 
   .card-button {
     display: grid;
-    grid-template-rows: 62% 38%;
+    grid-template-rows: 55% 25% 20%;
     align-items: center;
     justify-items: center;
     gap: 0;
@@ -1493,6 +1633,16 @@ input[type="search"] {
     font-size: clamp(1.25rem, 5.4vw, 1.8rem);
   }
 
+  .word-breakdown {
+    position: static;
+    align-self: start;
+    transform: none;
+    width: 100%;
+    max-height: 100%;
+    padding: 0 8px;
+    font-size: clamp(0.9rem, 3.6vw, 1.1rem);
+  }
+
   .root-word {
     position: absolute;
     right: 12px;
@@ -1531,6 +1681,16 @@ input[type="search"] {
   .reading-toolbar {
     align-items: stretch;
     flex-direction: column;
+  }
+
+  .korean-reader-panel {
+    margin: 8px auto 0;
+    padding: 16px;
+  }
+
+  .korean-reader-actions,
+  .reader-link-button {
+    width: 100%;
   }
 
   .elevenlabs-audio-player {

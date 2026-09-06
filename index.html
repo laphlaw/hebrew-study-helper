@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="color-scheme" content="light dark">
-    <title>Hebrew Word Study Helper</title>
+    <title>Hebrew & Korean Word Study Helper</title>
     <link rel="icon" href="data:,">
     <script>
       (() => {
@@ -24,6 +24,10 @@
             <h1 id="app-title">Word Helper</h1>
           </div>
           <div class="chapter-picker" aria-label="Chapter picker">
+            <select id="language-select" aria-label="Study language">
+              <option value="hebrew">Hebrew</option>
+              <option value="korean">Korean (KLB)</option>
+            </select>
             <select id="book-select" aria-label="Book"></select>
             <select id="chapter-select" aria-label="Chapter"></select>
             <select id="mode-select" aria-label="Mode">
@@ -43,6 +47,7 @@
           <button id="card-button" class="card-button" type="button" aria-label="Next word">
             <span id="hebrew-word" class="hebrew" dir="rtl">טוֹב</span>
             <span id="english-word" class="english hidden">good</span>
+            <span id="word-breakdown" class="word-breakdown hidden"></span>
             <span id="root-word" class="root-word hidden" dir="rtl"></span>
           </button>
           <div class="answer-controls" aria-label="Word navigation">
