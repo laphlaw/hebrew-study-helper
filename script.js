@@ -37,6 +37,7 @@ let elevenLabsManifest = null;
 let elevenLabsQueue = [];
 let elevenLabsQueueIndex = 0;
 let elevenLabsIsPlaying = false;
+const elevenLabsPlaybackSpeeds = [0.25, 0.5, 0.75, 0.85, 1];
 const elevenLabsAudio = new Audio();
 let fallbackReadingFullscreen = false;
 const chapterStorageKey = "hebrew-study-helper:last-chapter";
@@ -49,8 +50,10 @@ const elevenLabsSkippedWordsStorageKey = "hebrew-study-helper:elevenlabs-skipped
 const elevenLabsPlaybackStorageKey = "hebrew-study-helper:elevenlabs-playback";
 const koreanAudioCategoriesStorageKey = "hebrew-study-helper:korean-audio-categories";
 const masteredWords = loadMasteredWordKeys();
+const elevenLabsPlaybackPreferences = loadElevenLabsPlaybackPreferences();
 let elevenLabsSkippedWords = loadElevenLabsSkippedWords();
-let elevenLabsShuffleEnabled = loadElevenLabsPlaybackPreferences().shuffle;
+let elevenLabsShuffleEnabled = elevenLabsPlaybackPreferences.shuffle;
+let elevenLabsPlaybackSpeed = elevenLabsPlaybackPreferences.speed;
 let elevenLabsShuffleOrder = [];
 let selectedKoreanAudioCategories = loadKoreanAudioCategories();
 
@@ -66,6 +69,8 @@ const els = {
   elevenLabsPlayButton: document.querySelector("#elevenlabs-play-button"),
   elevenLabsStopButton: document.querySelector("#elevenlabs-stop-button"),
   elevenLabsNextButton: document.querySelector("#elevenlabs-next-button"),
+  elevenLabsSpeedSlider: document.querySelector("#elevenlabs-speed-slider"),
+  elevenLabsSpeedLabel: document.querySelector("#elevenlabs-speed-label"),
   elevenLabsCachePanel: document.querySelector("#elevenlabs-cache-panel"),
   elevenLabsCacheStatus: document.querySelector("#elevenlabs-cache-status"),
   elevenLabsCacheList: document.querySelector("#elevenlabs-cache-list"),
@@ -2330,18 +2335,42 @@ function saveElevenLabsSkippedWords() {
 function loadElevenLabsPlaybackPreferences() {
   try {
     const saved = JSON.parse(localStorage.getItem(elevenLabsPlaybackStorageKey) || "{}");
+    const savedSpeed = Number(saved.speed);
     return {
-      shuffle: saved.shuffle === true
+      shuffle: saved.shuffle === true,
+      speed: elevenLabsPlaybackSpeeds.includes(savedSpeed) ? savedSpeed : 0.85
     };
   } catch {
-    return { shuffle: false };
+    return { shuffle: false, speed: 0.85 };
   }
 }
 
 function saveElevenLabsPlaybackPreferences() {
   localStorage.setItem(elevenLabsPlaybackStorageKey, JSON.stringify({
-    shuffle: elevenLabsShuffleEnabled
+    shuffle: elevenLabsShuffleEnabled,
+    speed: elevenLabsPlaybackSpeed
   }));
+}
+
+function closestElevenLabsSpeedIndex(speed) {
+  const target = Number(speed);
+  return elevenLabsPlaybackSpeeds.reduce((closestIndex, option, index) => (
+    Math.abs(option - target) < Math.abs(elevenLabsPlaybackSpeeds[closestIndex] - target) ? index : closestIndex
+  ), 0);
+}
+
+function renderElevenLabsSpeedControl() {
+  const index = closestElevenLabsSpeedIndex(elevenLabsPlaybackSpeed);
+  els.elevenLabsSpeedSlider.value = String(index);
+  els.elevenLabsSpeedLabel.textContent = `${elevenLabsPlaybackSpeeds[index]}x`;
+  elevenLabsAudio.playbackRate = elevenLabsPlaybackSpeeds[index];
+}
+
+function setElevenLabsPlaybackSpeed(speed) {
+  const index = closestElevenLabsSpeedIndex(speed);
+  elevenLabsPlaybackSpeed = elevenLabsPlaybackSpeeds[index];
+  renderElevenLabsSpeedControl();
+  saveElevenLabsPlaybackPreferences();
 }
 
 function loadKoreanAudioCategories() {
@@ -2585,6 +2614,7 @@ function playCurrentElevenLabsItem() {
   }
 
   elevenLabsAudio.src = item.src;
+  elevenLabsAudio.playbackRate = elevenLabsPlaybackSpeed;
   elevenLabsAudio.play().catch(() => {
     updateElevenLabsStatus("Could not play generated audio.");
     stopElevenLabsAudio();
@@ -2989,6 +3019,10 @@ els.readingNextButton.addEventListener("click", () => {
 els.elevenLabsPlayButton.addEventListener("click", playElevenLabsAudio);
 els.elevenLabsStopButton.addEventListener("click", stopElevenLabsAudio);
 els.elevenLabsNextButton.addEventListener("click", nextElevenLabsAudio);
+els.elevenLabsSpeedSlider.addEventListener("input", () => {
+  const speed = elevenLabsPlaybackSpeeds[Number(els.elevenLabsSpeedSlider.value)] || 0.85;
+  setElevenLabsPlaybackSpeed(speed);
+});
 els.koreanAudioCategoryFilter.addEventListener("change", (event) => {
   const checkbox = event.target.closest("[data-korean-audio-category]");
   if (!checkbox) return;
@@ -3100,6 +3134,7 @@ elevenLabsAudio.addEventListener("error", () => {
 
 applyTheme(getCurrentTheme());
 els.elevenLabsShuffleToggle.checked = elevenLabsShuffleEnabled;
+renderElevenLabsSpeedControl();
 renderElevenLabsPlayerState();
 renderHebrewKeyboard();
 showCard(0);

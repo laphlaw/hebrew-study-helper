@@ -879,6 +879,55 @@ button {
   gap: 8px;
 }
 
+.elevenlabs-speed-control {
+  display: grid;
+  flex: 0 1 220px;
+  gap: 4px;
+  min-width: 170px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.elevenlabs-speed-control span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.elevenlabs-speed-control .elevenlabs-speed-marks {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0;
+  color: var(--muted);
+  font-size: 0.68rem;
+  line-height: 1;
+}
+
+.elevenlabs-speed-control .elevenlabs-speed-marks span {
+  display: block;
+  text-align: center;
+}
+
+.elevenlabs-speed-control .elevenlabs-speed-marks span:first-child {
+  text-align: left;
+}
+
+.elevenlabs-speed-control .elevenlabs-speed-marks span:last-child {
+  text-align: right;
+}
+
+.elevenlabs-speed-control strong {
+  color: var(--ink);
+  font-size: 0.86rem;
+}
+
+.elevenlabs-speed-control input {
+  width: 100%;
+  accent-color: var(--accent);
+}
+
 .korean-audio-category-filter {
   display: flex;
   flex-wrap: wrap;
@@ -1816,6 +1865,11 @@ input[type="search"] {
   .elevenlabs-audio-actions {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .elevenlabs-speed-control {
+    flex-basis: auto;
+    width: 100%;
   }
 
   .elevenlabs-cache-toolbar {

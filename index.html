@@ -105,6 +105,24 @@
           </div>
           <div class="elevenlabs-audio-player" aria-label="Generated audio player">
             <div id="elevenlabs-audio-status" class="elevenlabs-audio-status">No generated audio loaded.</div>
+            <label class="elevenlabs-speed-control" for="elevenlabs-speed-slider">
+              <span>Speed <strong id="elevenlabs-speed-label">0.85x</strong></span>
+              <input id="elevenlabs-speed-slider" type="range" min="0" max="4" step="1" value="3" list="elevenlabs-speed-presets">
+              <datalist id="elevenlabs-speed-presets">
+                <option value="0" label="0.25x"></option>
+                <option value="1" label="0.5x"></option>
+                <option value="2" label="0.75x"></option>
+                <option value="3" label="0.85x"></option>
+                <option value="4" label="1x"></option>
+              </datalist>
+              <span class="elevenlabs-speed-marks" aria-hidden="true">
+                <span>0.25</span>
+                <span>0.5</span>
+                <span>0.75</span>
+                <span>0.85</span>
+                <span>1</span>
+              </span>
+            </label>
             <div class="elevenlabs-audio-actions">
               <button id="elevenlabs-play-button" class="secondary-button" type="button">Play audio</button>
               <button id="elevenlabs-stop-button" class="secondary-button" type="button">Stop</button>
