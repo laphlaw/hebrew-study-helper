@@ -1369,8 +1369,12 @@ button {
   min-width: 78px;
 }
 
-:root[data-study-mode="alphabet"] #book-select,
-:root[data-study-mode="alphabet"] #chapter-select {
+:root[data-study-language="korean"][data-study-mode="alphabet"] #book-select,
+:root[data-study-language="korean"][data-study-mode="alphabet"] #chapter-select,
+:root[data-study-language="korean"][data-study-mode="phrases"] #book-select,
+:root[data-study-language="korean"][data-study-mode="phrases"] #chapter-select,
+:root[data-study-language="korean"][data-study-mode="verbs"] #book-select,
+:root[data-study-language="korean"][data-study-mode="verbs"] #chapter-select {
   display: none;
 }
 
@@ -1529,6 +1533,12 @@ input[type="search"] {
   color: var(--verb-ink);
   background: var(--verb-bg);
   border-color: var(--verb-line);
+}
+
+.pos-badge.phrase {
+  color: var(--noun-ink);
+  background: var(--noun-bg);
+  border-color: var(--noun-line);
 }
 
 @media (max-width: 640px) {

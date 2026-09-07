@@ -143,8 +143,10 @@ const supportedLanguages = {
 
 const languageModes = {
   hebrew: ["study", "reading", "audio", "writing", "verbs"],
-  korean: ["study", "reading", "alphabet"]
+  korean: ["study", "reading", "alphabet", "phrases", "verbs"]
 };
+
+const koreanStaticModes = new Set(["alphabet", "phrases", "verbs"]);
 
 const koreanConsonants = [
   { letter: "ㄱ", romanization: "g", group: "basic consonant" },
@@ -302,6 +304,73 @@ function buildKoreanAlphabetCards() {
   });
 
   return [...consonantCards, ...vowelCards];
+}
+
+const koreanPhraseCards = [
+  ["안녕하세요", "hello / annyeonghaseyo", "polite greeting"],
+  ["안녕히 가세요", "goodbye, when they leave / annyeonghi gaseyo", "polite farewell"],
+  ["안녕히 계세요", "goodbye, when you leave / annyeonghi gyeseyo", "polite farewell"],
+  ["감사합니다", "thank you / gamsahamnida", "polite"],
+  ["고마워요", "thanks / gomawoyo", "friendly polite"],
+  ["죄송합니다", "I am sorry / joesonghamnida", "polite apology"],
+  ["괜찮아요", "it is okay / gwaenchanayo", "reassurance"],
+  ["네", "yes / ne", "response"],
+  ["아니요", "no / aniyo", "response"],
+  ["잠깐만요", "just a moment / jamkkanmanyo", "useful phrase"],
+  ["실례합니다", "excuse me / sillyehamnida", "polite attention"],
+  ["주세요", "please give me / juseyo", "request"],
+  ["도와주세요", "please help me / dowajuseyo", "request"],
+  ["몰라요", "I do not know / mollayo", "everyday verb phrase"],
+  ["알겠어요", "I understand / algesseoyo", "response"],
+  ["한국어를 잘 못해요", "I do not speak Korean well / hangugeoreul jal motaeyo", "learner phrase"],
+  ["영어 할 수 있어요?", "can you speak English? / yeongeo hal su isseoyo?", "question"],
+  ["이거 얼마예요?", "how much is this? / igeo eolmayeyo?", "shopping"],
+  ["화장실 어디예요?", "where is the bathroom? / hwajangsil eodiyeyo?", "question"],
+  ["괜찮습니다", "that is all right / gwaenchanseumnida", "polite"],
+  ["좋아요", "good, I like it / joayo", "reaction"],
+  ["맛있어요", "it is delicious / masisseoyo", "food"],
+  ["물 주세요", "water, please / mul juseyo", "request"],
+  ["계산해 주세요", "check, please / gyesanhae juseyo", "restaurant"],
+  ["다시 말해 주세요", "please say it again / dasi malhae juseyo", "learner phrase"]
+];
+
+const koreanVerbCards = [
+  ["가다", "go", "가요", "갔어요", "갈 거예요", "gada", "gayo", "gasseoyo", "gal geoyeyo"],
+  ["오다", "come", "와요", "왔어요", "올 거예요", "oda", "wayo", "wasseoyo", "ol geoyeyo"],
+  ["하다", "do", "해요", "했어요", "할 거예요", "hada", "haeyo", "haesseoyo", "hal geoyeyo"],
+  ["먹다", "eat", "먹어요", "먹었어요", "먹을 거예요", "meokda", "meogeoyo", "meogeosseoyo", "meogeul geoyeyo"],
+  ["마시다", "drink", "마셔요", "마셨어요", "마실 거예요", "masida", "masyeoyo", "masyeosseoyo", "masil geoyeyo"],
+  ["보다", "see, watch", "봐요", "봤어요", "볼 거예요", "boda", "bwayo", "bwasseoyo", "bol geoyeyo"],
+  ["듣다", "listen", "들어요", "들었어요", "들을 거예요", "deutda", "deureoyo", "deureosseoyo", "deureul geoyeyo"],
+  ["말하다", "speak", "말해요", "말했어요", "말할 거예요", "malhada", "malhaeyo", "malhaesseoyo", "malhal geoyeyo"],
+  ["읽다", "read", "읽어요", "읽었어요", "읽을 거예요", "ikda", "ilgeoyo", "ilgeosseoyo", "ilgeul geoyeyo"],
+  ["쓰다", "write, use", "써요", "썼어요", "쓸 거예요", "sseuda", "sseoyo", "sseosseoyo", "sseul geoyeyo"],
+  ["사다", "buy", "사요", "샀어요", "살 거예요", "sada", "sayo", "sasseoyo", "sal geoyeyo"],
+  ["주다", "give", "줘요", "줬어요", "줄 거예요", "juda", "jwoyo", "jwosseoyo", "jul geoyeyo"],
+  ["받다", "receive", "받아요", "받았어요", "받을 거예요", "batda", "badayo", "badasseoyo", "badeul geoyeyo"],
+  ["만나다", "meet", "만나요", "만났어요", "만날 거예요", "mannada", "mannayo", "mannasseoyo", "mannal geoyeyo"],
+  ["배우다", "learn", "배워요", "배웠어요", "배울 거예요", "baeuda", "baewoyo", "baewosseoyo", "baeul geoyeyo"],
+  ["공부하다", "study", "공부해요", "공부했어요", "공부할 거예요", "gongbuhada", "gongbuhaeyo", "gongbuhaesseoyo", "gongbuhal geoyeyo"],
+  ["일하다", "work", "일해요", "일했어요", "일할 거예요", "ilhada", "ilhaeyo", "ilhaesseoyo", "ilhal geoyeyo"],
+  ["자다", "sleep", "자요", "잤어요", "잘 거예요", "jada", "jayo", "jasseoyo", "jal geoyeyo"],
+  ["일어나다", "wake up", "일어나요", "일어났어요", "일어날 거예요", "ireonada", "ireonayo", "ireonasseoyo", "ireonal geoyeyo"],
+  ["좋아하다", "like", "좋아해요", "좋아했어요", "좋아할 거예요", "joahada", "joahaeyo", "joahaesseoyo", "joahal geoyeyo"]
+];
+
+function koreanPhraseWord([phrase, answer, usage]) {
+  return wordFromParts(phrase, answer, "phrase", phrase, "", [], "", {
+    breakdown: [usage]
+  });
+}
+
+function koreanVerbWord([dictionaryForm, english, present, past, future, dictionaryRomanization, presentRomanization, pastRomanization, futureRomanization]) {
+  return wordFromParts(dictionaryForm, `${english} / ${dictionaryRomanization}`, "verb", dictionaryForm, "", [], "", {
+    breakdown: [
+      { part: `present ${present}`, meaning: presentRomanization },
+      { part: `past ${past}`, meaning: pastRomanization },
+      { part: `future ${future}`, meaning: futureRomanization }
+    ]
+  });
 }
 
 const koreanBookNames = {
@@ -476,7 +545,7 @@ function getSavedPreferences() {
     const saved = JSON.parse(localStorage.getItem(preferencesStorageKey) || "{}");
     const legacyAuto = JSON.parse(localStorage.getItem(autoAdvanceStorageKey) || "{}");
     const language = saved.language === "korean" ? "korean" : "hebrew";
-    const savedMode = ["reading", "alphabet", "audio", "writing", "verbs"].includes(saved.mode) ? saved.mode : "study";
+    const savedMode = ["reading", "alphabet", "phrases", "audio", "writing", "verbs"].includes(saved.mode) ? saved.mode : "study";
     const mode = languageModes[language]?.includes(savedMode) ? savedMode : "study";
     return {
       language,
@@ -569,6 +638,10 @@ function isHebrewSelected() {
   return selectedLanguage === "hebrew";
 }
 
+function isKoreanStaticMode() {
+  return isKoreanSelected() && koreanStaticModes.has(currentMode);
+}
+
 function formatBookName(book) {
   if (isKoreanSelected()) return koreanBookNames[book.code] || book.name;
   return book.name;
@@ -576,11 +649,19 @@ function formatBookName(book) {
 
 function updateLanguageLabels() {
   const sourceLabel = isKoreanSelected() ? "Korean" : "Hebrew";
+  const verbModeOption = els.modeSelect.querySelector("option[value='verbs']");
+  if (verbModeOption) verbModeOption.textContent = isKoreanSelected() ? "Verbs" : "Verb Practice";
   els.directionSelect.options[0].textContent = `${sourceLabel} to English`;
   els.directionSelect.options[1].textContent = `English to ${sourceLabel}`;
-  els.searchInput.placeholder = currentMode === "alphabet"
-    ? "Search Hangul, romanization, or group"
-    : `Search ${sourceLabel}, root, or English`;
+  if (currentMode === "alphabet") {
+    els.searchInput.placeholder = "Search Hangul, romanization, or group";
+  } else if (isKoreanSelected() && currentMode === "phrases") {
+    els.searchInput.placeholder = "Search Korean, English, romanization, or usage";
+  } else if (isKoreanSelected() && currentMode === "verbs") {
+    els.searchInput.placeholder = "Search Korean verbs, English, or tense forms";
+  } else {
+    els.searchInput.placeholder = `Search ${sourceLabel}, root, or English`;
+  }
 }
 
 function syncLanguageModeAvailability() {
@@ -1509,7 +1590,7 @@ function renderMode() {
   syncLanguageModeAvailability();
   const readingMode = currentMode === "reading";
   const audioMode = currentMode === "audio";
-  const verbMode = currentMode === "verbs";
+  const verbMode = currentMode === "verbs" && isHebrewSelected();
   const writingMode = currentMode === "writing";
   const alphabetMode = currentMode === "alphabet";
   els.flashcardSection.classList.toggle("hidden", readingMode || audioMode || verbMode || writingMode);
@@ -1763,7 +1844,7 @@ function applyFilter() {
       hebrew.includes(query) ||
       root.toLowerCase().includes(query) ||
       english.toLowerCase().includes(query);
-    const matchesPartOfSpeech = currentMode === "alphabet" || selectedPos === "all" || pos === selectedPos;
+    const matchesPartOfSpeech = isKoreanStaticMode() || selectedPos === "all" || pos === selectedPos;
     const matchesMastered = showMastered || !isWordMastered(word);
     return matchesText && matchesPartOfSpeech && matchesMastered;
   });
@@ -2504,7 +2585,19 @@ async function loadKoreanStudyChapter(book, chapter, requestId = chapterLoadRequ
 }
 
 function loadKoreanAlphabetPractice() {
-  allWords = buildKoreanAlphabetCards();
+  loadKoreanStaticPractice(buildKoreanAlphabetCards());
+}
+
+function loadKoreanPhrasePractice() {
+  loadKoreanStaticPractice(koreanPhraseCards.map(koreanPhraseWord));
+}
+
+function loadKoreanVerbPractice() {
+  loadKoreanStaticPractice(koreanVerbCards.map(koreanVerbWord));
+}
+
+function loadKoreanStaticPractice(words) {
+  allWords = words;
   currentChapterRecords = [];
   currentIndex = 0;
   currentVerbIndex = 0;
@@ -2561,6 +2654,16 @@ async function loadCurrentChapter() {
     saveSelectedChapter(book, chapter);
     if (currentMode === "alphabet") {
       loadKoreanAlphabetPractice();
+      return;
+    }
+
+    if (currentMode === "phrases") {
+      loadKoreanPhrasePractice();
+      return;
+    }
+
+    if (currentMode === "verbs") {
+      loadKoreanVerbPractice();
       return;
     }
 
@@ -2731,7 +2834,7 @@ document.addEventListener("keydown", (event) => {
     if (event.key === "ArrowLeft") moveWritingBy(-1);
     return;
   }
-  if (currentMode === "verbs") {
+  if (currentMode === "verbs" && isHebrewSelected()) {
     if (event.key === " " || event.key === "ArrowRight") {
       event.preventDefault();
       moveVerbBy(1);
