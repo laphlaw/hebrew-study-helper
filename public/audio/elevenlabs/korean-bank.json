@@ -1,0 +1,1890 @@
+{
+  "provider": "elevenlabs",
+  "generatedAt": "2026-09-07T06:06:41.868Z",
+  "language": "ko",
+  "title": "Korean word bank",
+  "modelId": "eleven_v3",
+  "outputFormat": "mp3_44100_128",
+  "cardSettings": {
+    "koreanRepeats": 2,
+    "englishRepeats": 1,
+    "separator": "."
+  },
+  "voices": {
+    "card": "bhH6z2isuapS6ely1oMG"
+  },
+  "cards": [
+    {
+      "key": "ko:phrase:안녕하세요",
+      "category": "phrase",
+      "language": "ko",
+      "hebrew": "안녕하세요",
+      "english": "hello",
+      "romanization": "an-nyeong-ha-se-yo",
+      "text": "안녕하세요.\n안녕하세요.\nhello.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b8aeef02e4b9a68b6ba83b5b.mp3"
+      }
+    },
+    {
+      "key": "ko:phrase:안녕히 가세요",
+      "category": "phrase",
+      "language": "ko",
+      "hebrew": "안녕히 가세요",
+      "english": "goodbye, when they leave",
+      "romanization": "an-nyeong-hi ga-se-yo",
+      "text": "안녕히 가세요.\n안녕히 가세요.\ngoodbye, when they leave.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/4bc1cfa03df852fb92bea80d.mp3"
+      }
+    },
+    {
+      "key": "ko:phrase:안녕히 계세요",
+      "category": "phrase",
+      "language": "ko",
+      "hebrew": "안녕히 계세요",
+      "english": "goodbye, when you leave",
+      "romanization": "an-nyeong-hi gye-se-yo",
+      "text": "안녕히 계세요.\n안녕히 계세요.\ngoodbye, when you leave.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/152f4830449e6bc5f796c5cd.mp3"
+      }
+    },
+    {
+      "key": "ko:phrase:감사합니다",
+      "category": "phrase",
+      "language": "ko",
+      "hebrew": "감사합니다",
+      "english": "thank you",
+      "romanization": "gam-sa-ham-ni-da",
+      "text": "감사합니다.\n감사합니다.\nthank you.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/0c42ee4a04ea125e937f11be.mp3"
+      }
+    },
+    {
+      "key": "ko:phrase:고마워요",
+      "category": "phrase",
+      "language": "ko",
+      "hebrew": "고마워요",
+      "english": "thanks",
+      "romanization": "go-ma-wo-yo",
+      "text": "고마워요.\n고마워요.\nthanks.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c123c8bffce50dd81baeaacc.mp3"
+      }
+    },
+    {
+      "key": "ko:phrase:죄송합니다",
+      "category": "phrase",
+      "language": "ko",
+      "hebrew": "죄송합니다",
+      "english": "I am sorry",
+      "romanization": "joe-song-ham-ni-da",
+      "text": "죄송합니다.\n죄송합니다.\nI am sorry.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/fbe6065b1913965944c0be71.mp3"
+      }
+    },
+    {
+      "key": "ko:phrase:괜찮아요",
+      "category": "phrase",
+      "language": "ko",
+      "hebrew": "괜찮아요",
+      "english": "it is okay",
+      "romanization": "gwaen-chan-a-yo",
+      "text": "괜찮아요.\n괜찮아요.\nit is okay.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d1d887d3edeb00e4faa88744.mp3"
+      }
+    },
+    {
+      "key": "ko:phrase:네",
+      "category": "phrase",
+      "language": "ko",
+      "hebrew": "네",
+      "english": "yes",
+      "romanization": "ne",
+      "text": "네.\n네.\nyes.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/53ee351b5ee7fbec074ef49a.mp3"
+      }
+    },
+    {
+      "key": "ko:phrase:아니요",
+      "category": "phrase",
+      "language": "ko",
+      "hebrew": "아니요",
+      "english": "no",
+      "romanization": "a-ni-yo",
+      "text": "아니요.\n아니요.\nno.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f0bde11d3ae634e25bc6acc9.mp3"
+      }
+    },
+    {
+      "key": "ko:phrase:잠깐만요",
+      "category": "phrase",
+      "language": "ko",
+      "hebrew": "잠깐만요",
+      "english": "just a moment",
+      "romanization": "jam-kkan-man-yo",
+      "text": "잠깐만요.\n잠깐만요.\njust a moment.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/19c63976470d660a4e6f9f4f.mp3"
+      }
+    },
+    {
+      "key": "ko:phrase:실례합니다",
+      "category": "phrase",
+      "language": "ko",
+      "hebrew": "실례합니다",
+      "english": "excuse me",
+      "romanization": "sil-lye-ham-ni-da",
+      "text": "실례합니다.\n실례합니다.\nexcuse me.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/9ac6fe2ed479d737c409837c.mp3"
+      }
+    },
+    {
+      "key": "ko:phrase:주세요",
+      "category": "phrase",
+      "language": "ko",
+      "hebrew": "주세요",
+      "english": "please give me",
+      "romanization": "ju-se-yo",
+      "text": "주세요.\n주세요.\nplease give me.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/51fff677a02138957475ccc9.mp3"
+      }
+    },
+    {
+      "key": "ko:phrase:도와주세요",
+      "category": "phrase",
+      "language": "ko",
+      "hebrew": "도와주세요",
+      "english": "please help me",
+      "romanization": "do-wa-ju-se-yo",
+      "text": "도와주세요.\n도와주세요.\nplease help me.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/2b2a88fbaf8d38e41eb13a90.mp3"
+      }
+    },
+    {
+      "key": "ko:phrase:몰라요",
+      "category": "phrase",
+      "language": "ko",
+      "hebrew": "몰라요",
+      "english": "I do not know",
+      "romanization": "mol-la-yo",
+      "text": "몰라요.\n몰라요.\nI do not know.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c1304293e3d0199691b1e92f.mp3"
+      }
+    },
+    {
+      "key": "ko:phrase:알겠어요",
+      "category": "phrase",
+      "language": "ko",
+      "hebrew": "알겠어요",
+      "english": "I understand",
+      "romanization": "al-ge-sseo-yo",
+      "text": "알겠어요.\n알겠어요.\nI understand.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/88394d7347c18864c868f074.mp3"
+      }
+    },
+    {
+      "key": "ko:phrase:한국어를 잘 못해요",
+      "category": "phrase",
+      "language": "ko",
+      "hebrew": "한국어를 잘 못해요",
+      "english": "I do not speak Korean well",
+      "romanization": "han-gu-geo-reul jal mot-hae-yo",
+      "text": "한국어를 잘 못해요.\n한국어를 잘 못해요.\nI do not speak Korean well.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/485d9a97e1ba698aad9042de.mp3"
+      }
+    },
+    {
+      "key": "ko:phrase:영어 할 수 있어요?",
+      "category": "phrase",
+      "language": "ko",
+      "hebrew": "영어 할 수 있어요?",
+      "english": "can you speak English?",
+      "romanization": "yeong-eo hal su i-sseo-yo?",
+      "text": "영어 할 수 있어요?\n영어 할 수 있어요?\ncan you speak English?",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/2885edb8e1ab262f79430c35.mp3"
+      }
+    },
+    {
+      "key": "ko:phrase:이거 얼마예요?",
+      "category": "phrase",
+      "language": "ko",
+      "hebrew": "이거 얼마예요?",
+      "english": "how much is this?",
+      "romanization": "i-geo eol-ma-ye-yo?",
+      "text": "이거 얼마예요?\n이거 얼마예요?\nhow much is this?",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/da17bbb2f2f771138909a1bb.mp3"
+      }
+    },
+    {
+      "key": "ko:phrase:화장실 어디예요?",
+      "category": "phrase",
+      "language": "ko",
+      "hebrew": "화장실 어디예요?",
+      "english": "where is the bathroom?",
+      "romanization": "hwa-jang-sil eo-di-ye-yo?",
+      "text": "화장실 어디예요?\n화장실 어디예요?\nwhere is the bathroom?",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/6510df853c93e177f98a1601.mp3"
+      }
+    },
+    {
+      "key": "ko:phrase:괜찮습니다",
+      "category": "phrase",
+      "language": "ko",
+      "hebrew": "괜찮습니다",
+      "english": "that is all right",
+      "romanization": "gwaen-chan-seum-ni-da",
+      "text": "괜찮습니다.\n괜찮습니다.\nthat is all right.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/6b2c75b3983708d55fff10ef.mp3"
+      }
+    },
+    {
+      "key": "ko:phrase:좋아요",
+      "category": "phrase",
+      "language": "ko",
+      "hebrew": "좋아요",
+      "english": "good, I like it",
+      "romanization": "jo-a-yo",
+      "text": "좋아요.\n좋아요.\ngood, I like it.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/33403278c7355fda9cb141f9.mp3"
+      }
+    },
+    {
+      "key": "ko:phrase:맛있어요",
+      "category": "phrase",
+      "language": "ko",
+      "hebrew": "맛있어요",
+      "english": "it is delicious",
+      "romanization": "ma-si-sseo-yo",
+      "text": "맛있어요.\n맛있어요.\nit is delicious.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/9d8d4d44d45a1a95e6dd321b.mp3"
+      }
+    },
+    {
+      "key": "ko:phrase:물 주세요",
+      "category": "phrase",
+      "language": "ko",
+      "hebrew": "물 주세요",
+      "english": "water, please",
+      "romanization": "mul ju-se-yo",
+      "text": "물 주세요.\n물 주세요.\nwater, please.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/75e618a2d4629a58319c0b85.mp3"
+      }
+    },
+    {
+      "key": "ko:phrase:계산해 주세요",
+      "category": "phrase",
+      "language": "ko",
+      "hebrew": "계산해 주세요",
+      "english": "check, please",
+      "romanization": "gye-san-hae ju-se-yo",
+      "text": "계산해 주세요.\n계산해 주세요.\ncheck, please.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/585860882814fc8e00890059.mp3"
+      }
+    },
+    {
+      "key": "ko:phrase:다시 말해 주세요",
+      "category": "phrase",
+      "language": "ko",
+      "hebrew": "다시 말해 주세요",
+      "english": "please say it again",
+      "romanization": "da-si mal-hae ju-se-yo",
+      "text": "다시 말해 주세요.\n다시 말해 주세요.\nplease say it again.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/798863fe11286db7e6317bfb.mp3"
+      }
+    },
+    {
+      "key": "ko:phrase:주말 어땠어요?",
+      "category": "phrase",
+      "language": "ko",
+      "hebrew": "주말 어땠어요?",
+      "english": "How was your weekend?",
+      "romanization": "ju-mal eo-ttae-sseo-yo?",
+      "text": "주말 어땠어요?\n주말 어땠어요?\nHow was your weekend?",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c2b9892b834e1ba780fcf3dd.mp3"
+      }
+    },
+    {
+      "key": "ko:phrase:저녁 뭐 먹었어요?",
+      "category": "phrase",
+      "language": "ko",
+      "hebrew": "저녁 뭐 먹었어요?",
+      "english": "What did you have for dinner?",
+      "romanization": "jeo-nyeok mwo meo-geo-sseo-yo?",
+      "text": "저녁 뭐 먹었어요?\n저녁 뭐 먹었어요?\nWhat did you have for dinner?",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f6a495774e4ffe4e645528ae.mp3"
+      }
+    },
+    {
+      "key": "ko:phrase:내일 출근하는 거 기대돼요?",
+      "category": "phrase",
+      "language": "ko",
+      "hebrew": "내일 출근하는 거 기대돼요?",
+      "english": "Are you excited for work tomorrow?",
+      "romanization": "nae-il chul-geun-ha-neun geo gi-dae-dwae-yo?",
+      "text": "내일 출근하는 거 기대돼요?\n내일 출근하는 거 기대돼요?\nAre you excited for work tomorrow?",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/bf4be12966e13dd2aba4e224.mp3"
+      }
+    },
+    {
+      "key": "ko:phrase:피곤해요",
+      "category": "phrase",
+      "language": "ko",
+      "hebrew": "피곤해요",
+      "english": "I'm tired.",
+      "romanization": "pi-gon-hae-yo",
+      "text": "피곤해요.\n피곤해요.\nI'm tired.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/485b47cc125f077f3428a1c4.mp3"
+      }
+    },
+    {
+      "key": "ko:phrase:교회 어땠어요?",
+      "category": "phrase",
+      "language": "ko",
+      "hebrew": "교회 어땠어요?",
+      "english": "How was church?",
+      "romanization": "gyo-hoe eo-ttae-sseo-yo?",
+      "text": "교회 어땠어요?\n교회 어땠어요?\nHow was church?",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/305ab3581d6e1a27d2e309b4.mp3"
+      }
+    },
+    {
+      "key": "ko:phrase:새 남자친구 만났어요?",
+      "category": "phrase",
+      "language": "ko",
+      "hebrew": "새 남자친구 만났어요?",
+      "english": "Did you meet your new boyfriend?",
+      "romanization": "sae nam-ja-chin-gu man-na-sseo-yo?",
+      "text": "새 남자친구 만났어요?\n새 남자친구 만났어요?\nDid you meet your new boyfriend?",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/195836915c3a2ac508686e85.mp3"
+      }
+    },
+    {
+      "key": "ko:phrase:배고파 죽겠어요",
+      "category": "phrase",
+      "language": "ko",
+      "hebrew": "배고파 죽겠어요",
+      "english": "I'm starving.",
+      "romanization": "bae-go-pa juk-ge-sseo-yo",
+      "text": "배고파 죽겠어요.\n배고파 죽겠어요.\nI'm starving.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/18ace02ace47b2e808203145.mp3"
+      }
+    },
+    {
+      "key": "ko:phrase:있잖아요!",
+      "category": "phrase",
+      "language": "ko",
+      "hebrew": "있잖아요!",
+      "english": "Guess what!",
+      "romanization": "it-jan-a-yo!",
+      "text": "있잖아요!\n있잖아요!\nGuess what!",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/cccf53a197ca14070378e44a.mp3"
+      }
+    },
+    {
+      "key": "ko:phrase:와, 진짜예요?",
+      "category": "phrase",
+      "language": "ko",
+      "hebrew": "와, 진짜예요?",
+      "english": "Wow, are you serious?",
+      "romanization": "wa, jin-jja-ye-yo?",
+      "text": "와, 진짜예요?\n와, 진짜예요?\nWow, are you serious?",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/09516caeddd506698c2dc850.mp3"
+      }
+    },
+    {
+      "key": "ko:phrase:이번 주말에 계획 있어요?",
+      "category": "phrase",
+      "language": "ko",
+      "hebrew": "이번 주말에 계획 있어요?",
+      "english": "Any plans this weekend?",
+      "romanization": "i-beon ju-ma-re gye-hoek i-sseo-yo?",
+      "text": "이번 주말에 계획 있어요?\n이번 주말에 계획 있어요?\nAny plans this weekend?",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/466a766df58c9cc3f47d25aa.mp3"
+      }
+    },
+    {
+      "key": "ko:phrase:가장 좋아하는 색깔이 뭐예요?",
+      "category": "phrase",
+      "language": "ko",
+      "hebrew": "가장 좋아하는 색깔이 뭐예요?",
+      "english": "What's your favorite color?",
+      "romanization": "ga-jang jo-a-ha-neun saek-kka-ri mwo-ye-yo?",
+      "text": "가장 좋아하는 색깔이 뭐예요?\n가장 좋아하는 색깔이 뭐예요?\nWhat's your favorite color?",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d2ff6f7a81778eb28a292aec.mp3"
+      }
+    },
+    {
+      "key": "ko:phrase:지금 성경 어디 공부하고 있어요?",
+      "category": "phrase",
+      "language": "ko",
+      "hebrew": "지금 성경 어디 공부하고 있어요?",
+      "english": "What part of the Bible are you studying right now?",
+      "romanization": "ji-geum seong-gyeong eo-di gong-bu-ha-go i-sseo-yo?",
+      "text": "지금 성경 어디 공부하고 있어요?\n지금 성경 어디 공부하고 있어요?\nWhat part of the Bible are you studying right now?",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/9aa2b63fbecab4d64cae2e3e.mp3"
+      }
+    },
+    {
+      "key": "ko:phrase:저 진짜 잘생겼어요",
+      "category": "phrase",
+      "language": "ko",
+      "hebrew": "저 진짜 잘생겼어요",
+      "english": "I am so handsome.",
+      "romanization": "jeo jin-jja jal-saeng-gyeo-sseo-yo",
+      "text": "저 진짜 잘생겼어요.\n저 진짜 잘생겼어요.\nI am so handsome.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/883eb3be2a38549ec0b81e8d.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:사람",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "사람",
+      "english": "person",
+      "romanization": "sa-ram",
+      "text": "사람.\n사람.\nperson.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a3ec60e0675e174a54641d9b.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:친구",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "친구",
+      "english": "friend",
+      "romanization": "chin-gu",
+      "text": "친구.\n친구.\nfriend.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/1010684a6a9418183b8efa55.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:가족",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "가족",
+      "english": "family",
+      "romanization": "ga-jok",
+      "text": "가족.\n가족.\nfamily.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d38590ac0c1fcf7617c5dced.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:엄마",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "엄마",
+      "english": "mom",
+      "romanization": "eom-ma",
+      "text": "엄마.\n엄마.\nmom.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/deb9806d9d48a9e5dac764a3.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:아빠",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "아빠",
+      "english": "dad",
+      "romanization": "a-ppa",
+      "text": "아빠.\n아빠.\ndad.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/baf0c6f91ba4a572268be28a.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:아이",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "아이",
+      "english": "child",
+      "romanization": "a-i",
+      "text": "아이.\n아이.\nchild.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/9f8cd57a73d1559b0a9f4bf6.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:이름",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "이름",
+      "english": "name",
+      "romanization": "i-reum",
+      "text": "이름.\n이름.\nname.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/37ba49695ec974ebe2cf3490.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:집",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "집",
+      "english": "house, home",
+      "romanization": "jip",
+      "text": "집.\n집.\nhouse, home.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/dc222f89e2d766faed6ee14a.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:방",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "방",
+      "english": "room",
+      "romanization": "bang",
+      "text": "방.\n방.\nroom.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f90b31a84b19d3108f51e4b5.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:문",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "문",
+      "english": "door",
+      "romanization": "mun",
+      "text": "문.\n문.\ndoor.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d99fe94516b8035b21dfe05e.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:창문",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "창문",
+      "english": "window",
+      "romanization": "chang-mun",
+      "text": "창문.\n창문.\nwindow.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/1ae77501fbc1ae947df6232a.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:학교",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "학교",
+      "english": "school",
+      "romanization": "hak-gyo",
+      "text": "학교.\n학교.\nschool.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a10098b3c3a0432cca2b3632.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:회사",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "회사",
+      "english": "company, workplace",
+      "romanization": "hoe-sa",
+      "text": "회사.\n회사.\ncompany, workplace.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ee5bf446247b853fab75fb4f.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:가게",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "가게",
+      "english": "store",
+      "romanization": "ga-ge",
+      "text": "가게.\n가게.\nstore.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/6a311f68fe639fd752855b2c.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:시장",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "시장",
+      "english": "market",
+      "romanization": "si-jang",
+      "text": "시장.\n시장.\nmarket.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/40ae36ae7fe59f14da23e033.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:식당",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "식당",
+      "english": "restaurant",
+      "romanization": "sik-dang",
+      "text": "식당.\n식당.\nrestaurant.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/1bac723906cab3a8467c9e08.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:화장실",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "화장실",
+      "english": "bathroom",
+      "romanization": "hwa-jang-sil",
+      "text": "화장실.\n화장실.\nbathroom.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f85fe028949eaf38bcb7ad5c.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:병원",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "병원",
+      "english": "hospital",
+      "romanization": "byeong-won",
+      "text": "병원.\n병원.\nhospital.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/7b3af507aad73eaf9eddfab0.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:역",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "역",
+      "english": "station",
+      "romanization": "yeok",
+      "text": "역.\n역.\nstation.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/af3c4b07d0b5f9bc5f9f7ae2.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:공항",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "공항",
+      "english": "airport",
+      "romanization": "gong-hang",
+      "text": "공항.\n공항.\nairport.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d1ce931e132e5308b7150c4e.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:버스",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "버스",
+      "english": "bus",
+      "romanization": "beo-seu",
+      "text": "버스.\n버스.\nbus.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/43dd1a87dc377d561fdb7d97.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:지하철",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "지하철",
+      "english": "subway",
+      "romanization": "ji-ha-cheol",
+      "text": "지하철.\n지하철.\nsubway.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/654924408fd8f42c851f092f.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:차",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "차",
+      "english": "car, tea",
+      "romanization": "cha",
+      "text": "차.\n차.\ncar, tea.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b269fb7717b1a1b38cb1c94d.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:길",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "길",
+      "english": "road, street",
+      "romanization": "gil",
+      "text": "길.\n길.\nroad, street.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/5a756149d6a063a02d4524d3.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:물",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "물",
+      "english": "water",
+      "romanization": "mul",
+      "text": "물.\n물.\nwater.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ad6f66208ccab933338ddb6a.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:밥",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "밥",
+      "english": "rice, meal",
+      "romanization": "bap",
+      "text": "밥.\n밥.\nrice, meal.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d47c46baea0bb7c95b1470be.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:음식",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "음식",
+      "english": "food",
+      "romanization": "eum-sik",
+      "text": "음식.\n음식.\nfood.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/666fa8eff22ebcbc23013f8f.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:커피",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "커피",
+      "english": "coffee",
+      "romanization": "keo-pi",
+      "text": "커피.\n커피.\ncoffee.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/800f861db1791e96a50fdbf7.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:우유",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "우유",
+      "english": "milk",
+      "romanization": "u-yu",
+      "text": "우유.\n우유.\nmilk.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a674e20e467ecd85a82f5b4c.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:고기",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "고기",
+      "english": "meat",
+      "romanization": "go-gi",
+      "text": "고기.\n고기.\nmeat.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/336986ddab52e4b617db6a0b.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:빵",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "빵",
+      "english": "bread",
+      "romanization": "ppang",
+      "text": "빵.\n빵.\nbread.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/29d3d0f06cf9be7e2323e716.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:돈",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "돈",
+      "english": "money",
+      "romanization": "don",
+      "text": "돈.\n돈.\nmoney.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e168d7fdbe2f09d80b630592.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:가격",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "가격",
+      "english": "price",
+      "romanization": "ga-gyeok",
+      "text": "가격.\n가격.\nprice.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/5ba6fd9deabff4a562a4b57d.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:전화",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "전화",
+      "english": "phone call, telephone",
+      "romanization": "jeon-hwa",
+      "text": "전화.\n전화.\nphone call, telephone.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e3aaa4fa444c408accb0c1bc.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:휴대폰",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "휴대폰",
+      "english": "cell phone",
+      "romanization": "hyu-dae-pon",
+      "text": "휴대폰.\n휴대폰.\ncell phone.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/9468be24afdf215ca27f4435.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:책",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "책",
+      "english": "book",
+      "romanization": "chaek",
+      "text": "책.\n책.\nbook.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/18aef03ff069e797a22a2d0b.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:가방",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "가방",
+      "english": "bag",
+      "romanization": "ga-bang",
+      "text": "가방.\n가방.\nbag.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/5bea6f1a9b5db39e4b5d4485.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:옷",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "옷",
+      "english": "clothes",
+      "romanization": "ot",
+      "text": "옷.\n옷.\nclothes.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/9d7adbf38eeeae601345b249.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:신발",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "신발",
+      "english": "shoes",
+      "romanization": "sin-bal",
+      "text": "신발.\n신발.\nshoes.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b24f11ff41a4dc42e8a232be.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:열쇠",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "열쇠",
+      "english": "key",
+      "romanization": "yeol-soe",
+      "text": "열쇠.\n열쇠.\nkey.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f6d9373ed5240385fb3449b8.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:시간",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "시간",
+      "english": "time",
+      "romanization": "si-gan",
+      "text": "시간.\n시간.\ntime.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/8eff5dbfb904ab418f030f26.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:오늘",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "오늘",
+      "english": "today",
+      "romanization": "o-neul",
+      "text": "오늘.\n오늘.\ntoday.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d257b7b0b418f219f685d02a.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:내일",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "내일",
+      "english": "tomorrow",
+      "romanization": "nae-il",
+      "text": "내일.\n내일.\ntomorrow.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/8218853393982094a007d54a.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:어제",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "어제",
+      "english": "yesterday",
+      "romanization": "eo-je",
+      "text": "어제.\n어제.\nyesterday.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/18767be3ac07b0588373fd03.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:아침",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "아침",
+      "english": "morning, breakfast",
+      "romanization": "a-chim",
+      "text": "아침.\n아침.\nmorning, breakfast.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e3559ae4dacc93d1aefe2b5f.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:점심",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "점심",
+      "english": "lunch, noon",
+      "romanization": "jeom-sim",
+      "text": "점심.\n점심.\nlunch, noon.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/8f7484fad780b99794405a86.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:저녁",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "저녁",
+      "english": "evening, dinner",
+      "romanization": "jeo-nyeok",
+      "text": "저녁.\n저녁.\nevening, dinner.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ce2ac0a75caad83757f1650a.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:날씨",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "날씨",
+      "english": "weather",
+      "romanization": "nal-ssi",
+      "text": "날씨.\n날씨.\nweather.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/80dcb60ad186aebea1341c73.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:비",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "비",
+      "english": "rain",
+      "romanization": "bi",
+      "text": "비.\n비.\nrain.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c86ba35682160b25915e1c46.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:눈",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "눈",
+      "english": "snow, eye",
+      "romanization": "nun",
+      "text": "눈.\n눈.\nsnow, eye.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a152124d43ac58ae11cbecfc.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:한국",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "한국",
+      "english": "Korea",
+      "romanization": "han-guk",
+      "text": "한국.\n한국.\nKorea.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/be916cb4076fb281aecd0641.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:한국어",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "한국어",
+      "english": "Korean language",
+      "romanization": "han-gu-geo",
+      "text": "한국어.\n한국어.\nKorean language.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a7715a60aefd7df6d8214565.mp3"
+      }
+    },
+    {
+      "key": "ko:noun:영어",
+      "category": "noun",
+      "language": "ko",
+      "hebrew": "영어",
+      "english": "English language",
+      "romanization": "yeong-eo",
+      "text": "영어.\n영어.\nEnglish language.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/60c0be4f651cc8b7106950a8.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:가다:past",
+      "category": "verb",
+      "language": "ko",
+      "tense": "past",
+      "hebrew": "갔어요",
+      "english": "go (past)",
+      "romanization": "ga-sseo-yo",
+      "text": "갔어요.\n갔어요.\ngo (past).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c915f4609d95c258241e828d.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:가다:present",
+      "category": "verb",
+      "language": "ko",
+      "tense": "present",
+      "hebrew": "가요",
+      "english": "go (present)",
+      "romanization": "ga-yo",
+      "text": "가요.\n가요.\ngo (present).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c73e98dc9c7abe6dd0572934.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:가다:future",
+      "category": "verb",
+      "language": "ko",
+      "tense": "future",
+      "hebrew": "갈 거예요",
+      "english": "go (future)",
+      "romanization": "gal geo-ye-yo",
+      "text": "갈 거예요.\n갈 거예요.\ngo (future).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/bf1187a92d8b320f85bc3e52.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:오다:past",
+      "category": "verb",
+      "language": "ko",
+      "tense": "past",
+      "hebrew": "왔어요",
+      "english": "come (past)",
+      "romanization": "wa-sseo-yo",
+      "text": "왔어요.\n왔어요.\ncome (past).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/212d9d8709f4312464d148e8.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:오다:present",
+      "category": "verb",
+      "language": "ko",
+      "tense": "present",
+      "hebrew": "와요",
+      "english": "come (present)",
+      "romanization": "wa-yo",
+      "text": "와요.\n와요.\ncome (present).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/3ae2eeefe1b9d5b04dd2b7ec.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:오다:future",
+      "category": "verb",
+      "language": "ko",
+      "tense": "future",
+      "hebrew": "올 거예요",
+      "english": "come (future)",
+      "romanization": "ol geo-ye-yo",
+      "text": "올 거예요.\n올 거예요.\ncome (future).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/0dbb3fc66c2be7c063dc7842.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:하다:past",
+      "category": "verb",
+      "language": "ko",
+      "tense": "past",
+      "hebrew": "했어요",
+      "english": "do (past)",
+      "romanization": "hae-sseo-yo",
+      "text": "했어요.\n했어요.\ndo (past).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/bee5fb604f08e61f6de03dd0.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:하다:present",
+      "category": "verb",
+      "language": "ko",
+      "tense": "present",
+      "hebrew": "해요",
+      "english": "do (present)",
+      "romanization": "hae-yo",
+      "text": "해요.\n해요.\ndo (present).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/57d0cb3638dd5870caff84cc.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:하다:future",
+      "category": "verb",
+      "language": "ko",
+      "tense": "future",
+      "hebrew": "할 거예요",
+      "english": "do (future)",
+      "romanization": "hal geo-ye-yo",
+      "text": "할 거예요.\n할 거예요.\ndo (future).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/4e4fcd95d2d108a6dd51bc35.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:먹다:past",
+      "category": "verb",
+      "language": "ko",
+      "tense": "past",
+      "hebrew": "먹었어요",
+      "english": "eat (past)",
+      "romanization": "meo-geo-sseo-yo",
+      "text": "먹었어요.\n먹었어요.\neat (past).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/8356c76489f0b8c2b9f238e2.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:먹다:present",
+      "category": "verb",
+      "language": "ko",
+      "tense": "present",
+      "hebrew": "먹어요",
+      "english": "eat (present)",
+      "romanization": "meo-geo-yo",
+      "text": "먹어요.\n먹어요.\neat (present).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/23072f3718bb53b2d55c27d6.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:먹다:future",
+      "category": "verb",
+      "language": "ko",
+      "tense": "future",
+      "hebrew": "먹을 거예요",
+      "english": "eat (future)",
+      "romanization": "meo-geul geo-ye-yo",
+      "text": "먹을 거예요.\n먹을 거예요.\neat (future).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b0e861703248bfc5e711c1f4.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:마시다:past",
+      "category": "verb",
+      "language": "ko",
+      "tense": "past",
+      "hebrew": "마셨어요",
+      "english": "drink (past)",
+      "romanization": "ma-syeo-sseo-yo",
+      "text": "마셨어요.\n마셨어요.\ndrink (past).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/6bd29300b9489860e34ea0a7.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:마시다:present",
+      "category": "verb",
+      "language": "ko",
+      "tense": "present",
+      "hebrew": "마셔요",
+      "english": "drink (present)",
+      "romanization": "ma-syeo-yo",
+      "text": "마셔요.\n마셔요.\ndrink (present).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/627f0587354ac9b5f83d9ad9.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:마시다:future",
+      "category": "verb",
+      "language": "ko",
+      "tense": "future",
+      "hebrew": "마실 거예요",
+      "english": "drink (future)",
+      "romanization": "ma-sil geo-ye-yo",
+      "text": "마실 거예요.\n마실 거예요.\ndrink (future).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/3f47f6c17268213b0efd77db.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:보다:past",
+      "category": "verb",
+      "language": "ko",
+      "tense": "past",
+      "hebrew": "봤어요",
+      "english": "see, watch (past)",
+      "romanization": "bwa-sseo-yo",
+      "text": "봤어요.\n봤어요.\nsee, watch (past).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/565e6c6dfce605c2be30dc2e.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:보다:present",
+      "category": "verb",
+      "language": "ko",
+      "tense": "present",
+      "hebrew": "봐요",
+      "english": "see, watch (present)",
+      "romanization": "bwa-yo",
+      "text": "봐요.\n봐요.\nsee, watch (present).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/3fa69b6c9a241dd4b624d689.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:보다:future",
+      "category": "verb",
+      "language": "ko",
+      "tense": "future",
+      "hebrew": "볼 거예요",
+      "english": "see, watch (future)",
+      "romanization": "bol geo-ye-yo",
+      "text": "볼 거예요.\n볼 거예요.\nsee, watch (future).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/abcf10031e65adf82f5082bb.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:듣다:past",
+      "category": "verb",
+      "language": "ko",
+      "tense": "past",
+      "hebrew": "들었어요",
+      "english": "listen (past)",
+      "romanization": "deu-reo-sseo-yo",
+      "text": "들었어요.\n들었어요.\nlisten (past).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d666a7c0b61fa6cd34f690a7.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:듣다:present",
+      "category": "verb",
+      "language": "ko",
+      "tense": "present",
+      "hebrew": "들어요",
+      "english": "listen (present)",
+      "romanization": "deu-reo-yo",
+      "text": "들어요.\n들어요.\nlisten (present).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f4b699bec10020f52aac74ad.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:듣다:future",
+      "category": "verb",
+      "language": "ko",
+      "tense": "future",
+      "hebrew": "들을 거예요",
+      "english": "listen (future)",
+      "romanization": "deu-reul geo-ye-yo",
+      "text": "들을 거예요.\n들을 거예요.\nlisten (future).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/77c3e664937a010e35758006.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:말하다:past",
+      "category": "verb",
+      "language": "ko",
+      "tense": "past",
+      "hebrew": "말했어요",
+      "english": "speak (past)",
+      "romanization": "mal-hae-sseo-yo",
+      "text": "말했어요.\n말했어요.\nspeak (past).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f44786d8224c8f4eed2c988e.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:말하다:present",
+      "category": "verb",
+      "language": "ko",
+      "tense": "present",
+      "hebrew": "말해요",
+      "english": "speak (present)",
+      "romanization": "mal-hae-yo",
+      "text": "말해요.\n말해요.\nspeak (present).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/9aed8cbfddd6f81b7e10767c.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:말하다:future",
+      "category": "verb",
+      "language": "ko",
+      "tense": "future",
+      "hebrew": "말할 거예요",
+      "english": "speak (future)",
+      "romanization": "mal-hal geo-ye-yo",
+      "text": "말할 거예요.\n말할 거예요.\nspeak (future).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/df3a8c7c69f4ed201cd0a946.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:읽다:past",
+      "category": "verb",
+      "language": "ko",
+      "tense": "past",
+      "hebrew": "읽었어요",
+      "english": "read (past)",
+      "romanization": "il-geo-sseo-yo",
+      "text": "읽었어요.\n읽었어요.\nread (past).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/10ab97532bc268c73a5731a6.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:읽다:present",
+      "category": "verb",
+      "language": "ko",
+      "tense": "present",
+      "hebrew": "읽어요",
+      "english": "read (present)",
+      "romanization": "il-geo-yo",
+      "text": "읽어요.\n읽어요.\nread (present).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/1ab8e5859bf86ed41b1df76e.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:읽다:future",
+      "category": "verb",
+      "language": "ko",
+      "tense": "future",
+      "hebrew": "읽을 거예요",
+      "english": "read (future)",
+      "romanization": "il-geul geo-ye-yo",
+      "text": "읽을 거예요.\n읽을 거예요.\nread (future).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ba946aae233d83e7dc658079.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:쓰다:past",
+      "category": "verb",
+      "language": "ko",
+      "tense": "past",
+      "hebrew": "썼어요",
+      "english": "write, use (past)",
+      "romanization": "sseo-sseo-yo",
+      "text": "썼어요.\n썼어요.\nwrite, use (past).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c909ec79427704a8f24397dd.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:쓰다:present",
+      "category": "verb",
+      "language": "ko",
+      "tense": "present",
+      "hebrew": "써요",
+      "english": "write, use (present)",
+      "romanization": "sseo-yo",
+      "text": "써요.\n써요.\nwrite, use (present).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f2a8810f60a4fa0fdc254a75.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:쓰다:future",
+      "category": "verb",
+      "language": "ko",
+      "tense": "future",
+      "hebrew": "쓸 거예요",
+      "english": "write, use (future)",
+      "romanization": "sseul geo-ye-yo",
+      "text": "쓸 거예요.\n쓸 거예요.\nwrite, use (future).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/46dfb119af13c91d52861fd1.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:사다:past",
+      "category": "verb",
+      "language": "ko",
+      "tense": "past",
+      "hebrew": "샀어요",
+      "english": "buy (past)",
+      "romanization": "sa-sseo-yo",
+      "text": "샀어요.\n샀어요.\nbuy (past).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/402df1df0a1bec37add4065d.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:사다:present",
+      "category": "verb",
+      "language": "ko",
+      "tense": "present",
+      "hebrew": "사요",
+      "english": "buy (present)",
+      "romanization": "sa-yo",
+      "text": "사요.\n사요.\nbuy (present).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d864b36a9d06bea783224e72.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:사다:future",
+      "category": "verb",
+      "language": "ko",
+      "tense": "future",
+      "hebrew": "살 거예요",
+      "english": "buy (future)",
+      "romanization": "sal geo-ye-yo",
+      "text": "살 거예요.\n살 거예요.\nbuy (future).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/9112bd97f0eb4e0b1ad21ddf.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:주다:past",
+      "category": "verb",
+      "language": "ko",
+      "tense": "past",
+      "hebrew": "줬어요",
+      "english": "give (past)",
+      "romanization": "jwo-sseo-yo",
+      "text": "줬어요.\n줬어요.\ngive (past).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/6c68df3ad618d598bf4136b9.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:주다:present",
+      "category": "verb",
+      "language": "ko",
+      "tense": "present",
+      "hebrew": "줘요",
+      "english": "give (present)",
+      "romanization": "jwo-yo",
+      "text": "줘요.\n줘요.\ngive (present).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/910cbca9c4ef2c4931c7e43d.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:주다:future",
+      "category": "verb",
+      "language": "ko",
+      "tense": "future",
+      "hebrew": "줄 거예요",
+      "english": "give (future)",
+      "romanization": "jul geo-ye-yo",
+      "text": "줄 거예요.\n줄 거예요.\ngive (future).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/1885b37f7fc9000f17d09d16.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:받다:past",
+      "category": "verb",
+      "language": "ko",
+      "tense": "past",
+      "hebrew": "받았어요",
+      "english": "receive (past)",
+      "romanization": "ba-da-sseo-yo",
+      "text": "받았어요.\n받았어요.\nreceive (past).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c3026ac40abcc3b58aff6bf5.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:받다:present",
+      "category": "verb",
+      "language": "ko",
+      "tense": "present",
+      "hebrew": "받아요",
+      "english": "receive (present)",
+      "romanization": "ba-da-yo",
+      "text": "받아요.\n받아요.\nreceive (present).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/7ff0962f2528e7871637990b.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:받다:future",
+      "category": "verb",
+      "language": "ko",
+      "tense": "future",
+      "hebrew": "받을 거예요",
+      "english": "receive (future)",
+      "romanization": "ba-deul geo-ye-yo",
+      "text": "받을 거예요.\n받을 거예요.\nreceive (future).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f31698198eec36abcbeffa67.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:만나다:past",
+      "category": "verb",
+      "language": "ko",
+      "tense": "past",
+      "hebrew": "만났어요",
+      "english": "meet (past)",
+      "romanization": "man-na-sseo-yo",
+      "text": "만났어요.\n만났어요.\nmeet (past).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/970c2ab22df0ed9c4904b6ef.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:만나다:present",
+      "category": "verb",
+      "language": "ko",
+      "tense": "present",
+      "hebrew": "만나요",
+      "english": "meet (present)",
+      "romanization": "man-na-yo",
+      "text": "만나요.\n만나요.\nmeet (present).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/8ce15c6e3f53c2645944feaf.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:만나다:future",
+      "category": "verb",
+      "language": "ko",
+      "tense": "future",
+      "hebrew": "만날 거예요",
+      "english": "meet (future)",
+      "romanization": "man-nal geo-ye-yo",
+      "text": "만날 거예요.\n만날 거예요.\nmeet (future).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/cfbacd41d5816bd158930356.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:배우다:past",
+      "category": "verb",
+      "language": "ko",
+      "tense": "past",
+      "hebrew": "배웠어요",
+      "english": "learn (past)",
+      "romanization": "bae-wo-sseo-yo",
+      "text": "배웠어요.\n배웠어요.\nlearn (past).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/6ef34dfc3b431d0228c09b17.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:배우다:present",
+      "category": "verb",
+      "language": "ko",
+      "tense": "present",
+      "hebrew": "배워요",
+      "english": "learn (present)",
+      "romanization": "bae-wo-yo",
+      "text": "배워요.\n배워요.\nlearn (present).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/72b295482e381faeb9276239.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:배우다:future",
+      "category": "verb",
+      "language": "ko",
+      "tense": "future",
+      "hebrew": "배울 거예요",
+      "english": "learn (future)",
+      "romanization": "bae-ul geo-ye-yo",
+      "text": "배울 거예요.\n배울 거예요.\nlearn (future).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/28d12ff4fe28c817c49b4b46.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:공부하다:past",
+      "category": "verb",
+      "language": "ko",
+      "tense": "past",
+      "hebrew": "공부했어요",
+      "english": "study (past)",
+      "romanization": "gong-bu-hae-sseo-yo",
+      "text": "공부했어요.\n공부했어요.\nstudy (past).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/9cfd0e72e4bb910fbdb9b1d9.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:공부하다:present",
+      "category": "verb",
+      "language": "ko",
+      "tense": "present",
+      "hebrew": "공부해요",
+      "english": "study (present)",
+      "romanization": "gong-bu-hae-yo",
+      "text": "공부해요.\n공부해요.\nstudy (present).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/0076acb20a9230394218b950.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:공부하다:future",
+      "category": "verb",
+      "language": "ko",
+      "tense": "future",
+      "hebrew": "공부할 거예요",
+      "english": "study (future)",
+      "romanization": "gong-bu-hal geo-ye-yo",
+      "text": "공부할 거예요.\n공부할 거예요.\nstudy (future).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/3c70c3006bedce3d44b46ae1.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:일하다:past",
+      "category": "verb",
+      "language": "ko",
+      "tense": "past",
+      "hebrew": "일했어요",
+      "english": "work (past)",
+      "romanization": "il-hae-sseo-yo",
+      "text": "일했어요.\n일했어요.\nwork (past).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/fc614eb2df3017ca7778a99b.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:일하다:present",
+      "category": "verb",
+      "language": "ko",
+      "tense": "present",
+      "hebrew": "일해요",
+      "english": "work (present)",
+      "romanization": "il-hae-yo",
+      "text": "일해요.\n일해요.\nwork (present).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c83371e698f30f743a1383de.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:일하다:future",
+      "category": "verb",
+      "language": "ko",
+      "tense": "future",
+      "hebrew": "일할 거예요",
+      "english": "work (future)",
+      "romanization": "il-hal geo-ye-yo",
+      "text": "일할 거예요.\n일할 거예요.\nwork (future).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/49f06007da212c64bd1177fc.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:자다:past",
+      "category": "verb",
+      "language": "ko",
+      "tense": "past",
+      "hebrew": "잤어요",
+      "english": "sleep (past)",
+      "romanization": "ja-sseo-yo",
+      "text": "잤어요.\n잤어요.\nsleep (past).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/dd1fd29e40745f47327bd98d.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:자다:present",
+      "category": "verb",
+      "language": "ko",
+      "tense": "present",
+      "hebrew": "자요",
+      "english": "sleep (present)",
+      "romanization": "ja-yo",
+      "text": "자요.\n자요.\nsleep (present).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a28e5a94af315d292371e25c.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:자다:future",
+      "category": "verb",
+      "language": "ko",
+      "tense": "future",
+      "hebrew": "잘 거예요",
+      "english": "sleep (future)",
+      "romanization": "jal geo-ye-yo",
+      "text": "잘 거예요.\n잘 거예요.\nsleep (future).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/4469803ff5cdf8a344dea365.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:일어나다:past",
+      "category": "verb",
+      "language": "ko",
+      "tense": "past",
+      "hebrew": "일어났어요",
+      "english": "wake up (past)",
+      "romanization": "i-reo-na-sseo-yo",
+      "text": "일어났어요.\n일어났어요.\nwake up (past).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/aa92d86088559ea9897dff82.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:일어나다:present",
+      "category": "verb",
+      "language": "ko",
+      "tense": "present",
+      "hebrew": "일어나요",
+      "english": "wake up (present)",
+      "romanization": "i-reo-na-yo",
+      "text": "일어나요.\n일어나요.\nwake up (present).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ca4c2bfb81cd8ba93ffe5bdb.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:일어나다:future",
+      "category": "verb",
+      "language": "ko",
+      "tense": "future",
+      "hebrew": "일어날 거예요",
+      "english": "wake up (future)",
+      "romanization": "i-reo-nal geo-ye-yo",
+      "text": "일어날 거예요.\n일어날 거예요.\nwake up (future).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/4c5a2b4fde1fe9755b45a821.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:좋아하다:past",
+      "category": "verb",
+      "language": "ko",
+      "tense": "past",
+      "hebrew": "좋아했어요",
+      "english": "like (past)",
+      "romanization": "jo-a-hae-sseo-yo",
+      "text": "좋아했어요.\n좋아했어요.\nlike (past).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ca6fd34c8ba901f0523536f5.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:좋아하다:present",
+      "category": "verb",
+      "language": "ko",
+      "tense": "present",
+      "hebrew": "좋아해요",
+      "english": "like (present)",
+      "romanization": "jo-a-hae-yo",
+      "text": "좋아해요.\n좋아해요.\nlike (present).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/1e9963a64f6048d62b38dedf.mp3"
+      }
+    },
+    {
+      "key": "ko:verb:좋아하다:future",
+      "category": "verb",
+      "language": "ko",
+      "tense": "future",
+      "hebrew": "좋아할 거예요",
+      "english": "like (future)",
+      "romanization": "jo-a-hal geo-ye-yo",
+      "text": "좋아할 거예요.\n좋아할 거예요.\nlike (future).",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ce2e7caf04205f2c61e0fdd1.mp3"
+      }
+    }
+  ]
+}

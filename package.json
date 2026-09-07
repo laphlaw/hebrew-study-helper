@@ -1,6 +1,7 @@
 {
   "scripts": {
     "build": "node tools/build-static.mjs",
-    "generate:audio": "node tools/generate-elevenlabs-audio.mjs"
+    "generate:audio": "node tools/generate-elevenlabs-audio.mjs",
+    "generate:korean-audio": "node tools/generate-korean-elevenlabs-audio.mjs"
   }
 }
