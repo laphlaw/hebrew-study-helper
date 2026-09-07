@@ -212,38 +212,6 @@ button {
   gap: 6px;
 }
 
-.korean-tense-toggle {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 6px;
-  min-height: 42px;
-}
-
-.korean-tense-button {
-  min-height: 40px;
-  padding: 0 16px;
-  border-color: var(--line);
-  color: var(--ink);
-  background: var(--surface);
-  font-size: 0.9rem;
-  font-weight: 900;
-}
-
-.korean-tense-button.is-selected {
-  color: var(--button-ink);
-  background: var(--accent);
-  border-color: var(--accent);
-}
-
-@media (hover: hover) {
-  .korean-tense-button:hover {
-    color: var(--button-ink);
-    background: var(--accent);
-    border-color: var(--accent);
-  }
-}
-
 .verb-practice {
   display: grid;
   gap: 10px;
@@ -928,13 +896,6 @@ button {
   accent-color: var(--accent);
 }
 
-.korean-audio-category-filter {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 8px;
-}
-
 .elevenlabs-cache-panel {
   display: grid;
   gap: 8px;
@@ -1202,73 +1163,33 @@ button {
   text-align: left;
 }
 
-.korean-reader-panel {
-  display: grid;
-  gap: 14px;
-  justify-items: start;
-  width: min(760px, 100%);
-  margin: clamp(20px, 6vh, 64px) auto;
-  padding: clamp(18px, 4vw, 32px);
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface-muted);
+.reading-text.is-korean-caption {
+  gap: 12px;
 }
 
-.korean-reader-panel h2 {
-  color: var(--ink);
-  font-size: clamp(2rem, 8vw, 4.5rem);
-  font-weight: 900;
-  line-height: 1.05;
-}
-
-.korean-reader-version,
-.korean-reader-notice,
-.korean-reader-copyright {
+.korean-caption-full {
   margin: 0;
-  color: var(--muted);
-  font-size: clamp(0.95rem, 2vw, 1.1rem);
-  font-weight: 800;
-  line-height: 1.45;
-}
-
-.korean-reader-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.reader-link-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 44px;
-  padding: 0 16px;
-  border: 1px solid var(--line);
-  border-radius: 6px;
   color: var(--ink);
-  background: var(--surface);
+  font-size: clamp(1.4rem, 3vw, 2.4rem);
+  font-weight: 800;
+  line-height: 1.75;
+  white-space: pre-line;
+}
+
+.korean-caption-line .verse-text {
+  font-size: clamp(1.3rem, 2.8vw, 2.4rem);
+  line-height: 1.55;
+}
+
+.korean-frequency-row {
+  grid-template-columns: minmax(130px, 1fr) 80px minmax(120px, 0.8fr);
+}
+
+.korean-frequency-count,
+.korean-frequency-first-seen {
+  color: var(--muted);
   font-size: 0.92rem;
   font-weight: 800;
-  text-decoration: none;
-}
-
-.reader-link-button.primary {
-  border-color: var(--accent);
-  color: var(--button-ink);
-  background: var(--accent);
-}
-
-@media (hover: hover) {
-  .reader-link-button:hover {
-    border-color: var(--accent);
-    color: var(--accent);
-  }
-
-  .reader-link-button.primary:hover {
-    border-color: var(--accent-dark);
-    color: var(--button-ink);
-    background: var(--accent-dark);
-  }
 }
 
 .reading-nav {
@@ -1478,16 +1399,11 @@ button {
   min-width: 78px;
 }
 
-:root[data-study-language="korean"][data-study-mode="alphabet"] #book-select,
-:root[data-study-language="korean"][data-study-mode="alphabet"] #chapter-select,
-:root[data-study-language="korean"][data-study-mode="audio"] #book-select,
-:root[data-study-language="korean"][data-study-mode="audio"] #chapter-select,
-:root[data-study-language="korean"][data-study-mode="nouns"] #book-select,
-:root[data-study-language="korean"][data-study-mode="nouns"] #chapter-select,
-:root[data-study-language="korean"][data-study-mode="phrases"] #book-select,
-:root[data-study-language="korean"][data-study-mode="phrases"] #chapter-select,
-:root[data-study-language="korean"][data-study-mode="verbs"] #book-select,
-:root[data-study-language="korean"][data-study-mode="verbs"] #chapter-select {
+:root[data-study-language="korean"] #book-select {
+  max-width: min(420px, 100%);
+}
+
+:root[data-study-language="korean"] #chapter-select {
   display: none;
 }
 
@@ -1851,16 +1767,6 @@ input[type="search"] {
   .reading-toolbar {
     align-items: stretch;
     flex-direction: column;
-  }
-
-  .korean-reader-panel {
-    margin: 8px auto 0;
-    padding: 16px;
-  }
-
-  .korean-reader-actions,
-  .reader-link-button {
-    width: 100%;
   }
 
   .elevenlabs-audio-player {

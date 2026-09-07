@@ -26,7 +26,7 @@
           <div class="chapter-picker" aria-label="Chapter picker">
             <select id="language-select" aria-label="Study language">
               <option value="hebrew">Hebrew</option>
-              <option value="korean">Korean (KLB)</option>
+              <option value="korean">Korean</option>
             </select>
             <select id="book-select" aria-label="Book"></select>
             <select id="chapter-select" aria-label="Chapter"></select>
@@ -47,11 +47,6 @@
         </div>
 
         <section id="flashcard-section" class="flashcard" aria-live="polite">
-          <div id="korean-tense-toggle" class="korean-tense-toggle hidden" role="group" aria-label="Korean verb tense">
-            <button class="korean-tense-button" type="button" data-korean-tense="past">Past</button>
-            <button class="korean-tense-button" type="button" data-korean-tense="present">Present</button>
-            <button class="korean-tense-button" type="button" data-korean-tense="future">Future</button>
-          </div>
           <button id="card-button" class="card-button" type="button" aria-label="Next word">
             <span id="hebrew-word" class="hebrew" dir="rtl">טוֹב</span>
             <span id="english-word" class="english hidden">good</span>
@@ -89,24 +84,6 @@
         </section>
 
         <section id="audio-flashcard-section" class="audio-flashcard-section hidden" aria-live="polite">
-          <div id="korean-audio-category-filter" class="korean-audio-category-filter hidden" aria-label="Korean audio categories">
-            <label class="elevenlabs-shuffle-toggle">
-              <input type="checkbox" data-korean-audio-category="phrase" checked>
-              <span>Phrases</span>
-            </label>
-            <label class="elevenlabs-shuffle-toggle">
-              <input type="checkbox" data-korean-audio-category="vlog-word" checked>
-              <span>Vlog Words</span>
-            </label>
-            <label class="elevenlabs-shuffle-toggle">
-              <input type="checkbox" data-korean-audio-category="noun" checked>
-              <span>Nouns</span>
-            </label>
-            <label class="elevenlabs-shuffle-toggle">
-              <input type="checkbox" data-korean-audio-category="verb" checked>
-              <span>Verbs</span>
-            </label>
-          </div>
           <div class="elevenlabs-audio-player" aria-label="Generated audio player">
             <div id="elevenlabs-audio-status" class="elevenlabs-audio-status">No generated audio loaded.</div>
             <label class="elevenlabs-speed-control" for="elevenlabs-speed-slider">
