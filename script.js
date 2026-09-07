@@ -49,6 +49,7 @@ const preferencesStorageKey = "hebrew-study-helper:preferences";
 const elevenLabsSkippedWordsStorageKey = "hebrew-study-helper:elevenlabs-skipped-words";
 const elevenLabsPlaybackStorageKey = "hebrew-study-helper:elevenlabs-playback";
 const koreanAudioCategoriesStorageKey = "hebrew-study-helper:korean-audio-categories";
+const koreanAudioCategories = ["phrase", "vlog-word", "noun", "verb"];
 const masteredWords = loadMasteredWordKeys();
 const elevenLabsPlaybackPreferences = loadElevenLabsPlaybackPreferences();
 let elevenLabsSkippedWords = loadElevenLabsSkippedWords();
@@ -2376,10 +2377,10 @@ function setElevenLabsPlaybackSpeed(speed) {
 function loadKoreanAudioCategories() {
   try {
     const saved = JSON.parse(localStorage.getItem(koreanAudioCategoriesStorageKey) || "[]");
-    const categories = Array.isArray(saved) ? saved.filter((category) => ["phrase", "noun", "verb"].includes(category)) : [];
-    return new Set(categories.length ? categories : ["phrase", "noun", "verb"]);
+    const categories = Array.isArray(saved) ? saved.filter((category) => koreanAudioCategories.includes(category)) : [];
+    return new Set(categories.length ? categories : koreanAudioCategories);
   } catch {
-    return new Set(["phrase", "noun", "verb"]);
+    return new Set(koreanAudioCategories);
   }
 }
 

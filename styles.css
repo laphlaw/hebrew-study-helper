@@ -1654,6 +1654,12 @@ input[type="search"] {
   border-color: var(--noun-line);
 }
 
+.elevenlabs-cache-category.vlog-word {
+  color: var(--verb-ink);
+  background: var(--verb-bg);
+  border-color: var(--verb-line);
+}
+
 @media (max-width: 640px) {
   .app-shell {
     width: min(100% - 12px, 1120px);

@@ -1,6 +1,6 @@
 {
   "provider": "elevenlabs",
-  "generatedAt": "2026-09-07T06:06:41.868Z",
+  "generatedAt": "2026-09-07T09:22:15.338Z",
   "language": "ko",
   "title": "Korean word bank",
   "modelId": "eleven_v3",
@@ -468,6 +468,6022 @@
       "text": "저 진짜 잘생겼어요.\n저 진짜 잘생겼어요.\nI am so handsome.",
       "audio": {
         "card": "public/audio/elevenlabs/cache/883eb3be2a38549ec0b81e8d.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:저는",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "저는",
+      "english": "I/me, topic-marked",
+      "romanization": "jeo-neun",
+      "frequency": 19,
+      "rank": 1,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "저는.\n저는.\nI/me, topic-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/dcf37b4472bb04433f26ed5b.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:너무",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "너무",
+      "english": "too; very",
+      "romanization": "neo-mu",
+      "frequency": 18,
+      "rank": 2,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "너무.\n너무.\ntoo; very.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/32a6761ff109a9c55c7c0c65.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:그리고",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "그리고",
+      "english": "and",
+      "romanization": "geu-ri-go",
+      "frequency": 15,
+      "rank": 3,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "그리고.\n그리고.\nand.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/3d3b63c702d9cc953de2a901.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:조금",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "조금",
+      "english": "a little",
+      "romanization": "jo-geum",
+      "frequency": 15,
+      "rank": 4,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "조금.\n조금.\na little.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/8c99f47e372741fecf8e4b9f.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:그래서",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "그래서",
+      "english": "so; therefore",
+      "romanization": "geu-rae-seo",
+      "frequency": 14,
+      "rank": 5,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "그래서.\n그래서.\nso; therefore.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/1e7ebdb2ecf2962ae0b24eeb.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:안",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "안",
+      "english": "not",
+      "romanization": "an",
+      "frequency": 10,
+      "rank": 6,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "안.\n안.\nnot.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/4f08da59ce7ca6af31846f6e.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:정말",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "정말",
+      "english": "really",
+      "romanization": "jeong-mal",
+      "frequency": 9,
+      "rank": 7,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "정말.\n정말.\nreally.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/906edcfffdadf67e623956aa.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:많이",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "많이",
+      "english": "a lot",
+      "romanization": "manh-i",
+      "frequency": 8,
+      "rank": 8,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "많이.\n많이.\na lot.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b8cc914564ed8a5ed9550e0e.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:거예요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "거예요",
+      "english": "will be; is going to be",
+      "romanization": "geo-ye-yo",
+      "frequency": 7,
+      "rank": 9,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "거예요.\n거예요.\nwill be; is going to be.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/fe880406639af04696c62634.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:기차를",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "기차를",
+      "english": "train, object-marked",
+      "romanization": "gi-cha-reul",
+      "frequency": 7,
+      "rank": 10,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "기차를.\n기차를.\ntrain, object-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/501a90e6660b04e01b6d5740.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:싶어요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "싶어요",
+      "english": "want to",
+      "romanization": "sip-eo-yo",
+      "frequency": 7,
+      "rank": 11,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "싶어요.\n싶어요.\nwant to.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e58c275add5478aa978b5350.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:있어요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "있어요",
+      "english": "is; exists; have",
+      "romanization": "it-eo-yo",
+      "frequency": 7,
+      "rank": 12,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "있어요.\n있어요.\nis; exists; have.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f3518dc2d5ffa76ca95e02a6.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:지금",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "지금",
+      "english": "now",
+      "romanization": "ji-geum",
+      "frequency": 7,
+      "rank": 13,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "지금.\n지금.\nnow.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/133195c508fd53be6f467617.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:파리에",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "파리에",
+      "english": "to/in Paris",
+      "romanization": "pa-ri-e",
+      "frequency": 7,
+      "rank": 14,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "파리에.\n파리에.\nto/in Paris.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/36e117ba90bd67696de4cfab.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:가서",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "가서",
+      "english": "go and; so went",
+      "romanization": "ga-seo",
+      "frequency": 6,
+      "rank": 15,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "가서.\n가서.\ngo and; so went.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/3c42a41fd30c0250d407d819.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:같아요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "같아요",
+      "english": "seems; I think",
+      "romanization": "gat-a-yo",
+      "frequency": 6,
+      "rank": 16,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "같아요.\n같아요.\nseems; I think.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f23c7022ea842021f392b009.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:것",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "것",
+      "english": "thing; fact; nominalizer",
+      "romanization": "geot",
+      "frequency": 6,
+      "rank": 17,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "것.\n것.\nthing; fact; nominalizer.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a55155a5734bf05566d50385.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:오늘",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "오늘",
+      "english": "today",
+      "romanization": "o-neul",
+      "frequency": 6,
+      "rank": 18,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "오늘.\n오늘.\ntoday.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d257b7b0b418f219f685d02a.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:오늘은",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "오늘은",
+      "english": "today, topic-marked",
+      "romanization": "o-neul-eun",
+      "frequency": 6,
+      "rank": 19,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "오늘은.\n오늘은.\ntoday, topic-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c36a948edb65e41c2fc6446d.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:카페에서",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "카페에서",
+      "english": "at/from the cafe",
+      "romanization": "ka-pe-e-seo",
+      "frequency": 6,
+      "rank": 20,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "카페에서.\n카페에서.\nat/from the cafe.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c56daf5ad257410b37c65b69.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:이",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "이",
+      "english": "this",
+      "romanization": "i",
+      "frequency": 5,
+      "rank": 21,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "이.\n이.\nthis.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/544f1096e66d3e746898bb01.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:나왔어요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "나왔어요",
+      "english": "came out",
+      "romanization": "na-wat-eo-yo",
+      "frequency": 4,
+      "rank": 22,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "나왔어요.\n나왔어요.\ncame out.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/3fe868d9021cc96b96f7ecc4.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:늦게",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "늦게",
+      "english": "late",
+      "romanization": "neut-ge",
+      "frequency": 4,
+      "rank": 23,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "늦게.\n늦게.\nlate.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/0a9e6fdf61034fccf0dbadb9.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:먹고",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "먹고",
+      "english": "eat and",
+      "romanization": "meok-go",
+      "frequency": 4,
+      "rank": 24,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "먹고.\n먹고.\neat and.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f83d9a9123779405e425fada.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:숙소에",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "숙소에",
+      "english": "to/at the lodging",
+      "romanization": "suk-so-e",
+      "frequency": 4,
+      "rank": 25,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "숙소에.\n숙소에.\nto/at the lodging.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/da73fe5b39414694916294fe.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:원래",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "원래",
+      "english": "originally; usually",
+      "romanization": "won-rae",
+      "frequency": 4,
+      "rank": 26,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "원래.\n원래.\noriginally; usually.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b2829ddf1f28350e850e0cfa.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:제가",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "제가",
+      "english": "I/me, subject-marked",
+      "romanization": "je-ga",
+      "frequency": 4,
+      "rank": 27,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "제가.\n제가.\nI/me, subject-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/9fb93de887fbd6770854fce1.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:하지만",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "하지만",
+      "english": "but; however",
+      "romanization": "ha-ji-man",
+      "frequency": 4,
+      "rank": 28,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "하지만.\n하지만.\nbut; however.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/fa8b6a197e50f7e5e89ffc65.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:가고",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "가고",
+      "english": "go and",
+      "romanization": "ga-go",
+      "frequency": 3,
+      "rank": 29,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "가고.\n가고.\ngo and.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a35a57ba7c0e1c199502cfdc.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:걸",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "걸",
+      "english": "thing, object-marked; going to",
+      "romanization": "geol",
+      "frequency": 3,
+      "rank": 30,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "걸.\n걸.\nthing, object-marked; going to.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/571b6b0b34131dd9d83ae543.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:근데",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "근데",
+      "english": "but; by the way",
+      "romanization": "geun-de",
+      "frequency": 3,
+      "rank": 31,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "근데.\n근데.\nbut; by the way.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e6e52b0eb15448d484dca7b7.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:기차",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "기차",
+      "english": "train",
+      "romanization": "gi-cha",
+      "frequency": 3,
+      "rank": 32,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "기차.\n기차.\ntrain.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/2610e419ad17931e8e76a4eb.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:날씨가",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "날씨가",
+      "english": "weather, subject-marked",
+      "romanization": "nal-ssi-ga",
+      "frequency": 3,
+      "rank": 33,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "날씨가.\n날씨가.\nweather, subject-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c477827bb52e611187bf1fb8.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:다시",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "다시",
+      "english": "again",
+      "romanization": "da-si",
+      "frequency": 3,
+      "rank": 34,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "다시.\n다시.\nagain.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/828a521be75e9ac78132605b.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:다음에",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "다음에",
+      "english": "next time; later",
+      "romanization": "da-eum-e",
+      "frequency": 3,
+      "rank": 35,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "다음에.\n다음에.\nnext time; later.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/aeb77f0743924340e0e106f1.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:도시가",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "도시가",
+      "english": "city, subject-marked",
+      "romanization": "do-si-ga",
+      "frequency": 3,
+      "rank": 36,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "도시가.\n도시가.\ncity, subject-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/33b9a5fc28f7c8e910a1b983.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:또",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "또",
+      "english": "again; also",
+      "romanization": "tto",
+      "frequency": 3,
+      "rank": 37,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "또.\n또.\nagain; also.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/6ace403db1fcbedadb821711.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:먹었어요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "먹었어요",
+      "english": "ate",
+      "romanization": "meok-eot-eo-yo",
+      "frequency": 3,
+      "rank": 38,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "먹었어요.\n먹었어요.\nate.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/8d3c02d64c56168ef13aa318.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:별로",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "별로",
+      "english": "not particularly",
+      "romanization": "byeol-ro",
+      "frequency": 3,
+      "rank": 39,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "별로.\n별로.\nnot particularly.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/fbfea017431ad550ba0431a2.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:산책하고",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "산책하고",
+      "english": "walk and",
+      "romanization": "san-chaek-ha-go",
+      "frequency": 3,
+      "rank": 40,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "산책하고.\n산책하고.\nwalk and.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/9619469dce3dc3dee7fd2cb7.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:스페인어도",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "스페인어도",
+      "english": "Spanish too",
+      "romanization": "seu-pe-in-eo-do",
+      "frequency": 3,
+      "rank": 41,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "스페인어도.\n스페인어도.\nSpanish too.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/2f01f7a602cf2dc3805ce75a.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:엽서를",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "엽서를",
+      "english": "postcard, object-marked",
+      "romanization": "yeop-seo-reul",
+      "frequency": 3,
+      "rank": 42,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "엽서를.\n엽서를.\npostcard, object-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/74b5648a580fa4fadb63aa6e.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:일어나서",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "일어나서",
+      "english": "woke up and; because I woke up",
+      "romanization": "il-eo-na-seo",
+      "frequency": 3,
+      "rank": 43,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "일어나서.\n일어나서.\nwoke up and; because I woke up.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c9502a810c4d924bdb3dcdfd.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:조식을",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "조식을",
+      "english": "breakfast, object-marked",
+      "romanization": "jo-sik-eul",
+      "frequency": 3,
+      "rank": 44,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "조식을.\n조식을.\nbreakfast, object-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/22fd21e3dfb967fa77626cfb.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:카페에",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "카페에",
+      "english": "to/at the cafe",
+      "romanization": "ka-pe-e",
+      "frequency": 3,
+      "rank": 45,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "카페에.\n카페에.\nto/at the cafe.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a08051a9746dbd1395807309.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:커피를",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "커피를",
+      "english": "coffee, object-marked",
+      "romanization": "keo-pi-reul",
+      "frequency": 3,
+      "rank": 46,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "커피를.\n커피를.\ncoffee, object-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ccf14437e3f49a0313e58433.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:하고",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "하고",
+      "english": "and; with; do and",
+      "romanization": "ha-go",
+      "frequency": 3,
+      "rank": 47,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "하고.\n하고.\nand; with; do and.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f39bba2c34c1c4de8ec1ea71.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:한",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "한",
+      "english": "one; about",
+      "romanization": "han",
+      "frequency": 3,
+      "rank": 48,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "한.\n한.\none; about.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/54df289b516344dd9cc954a7.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:햇빛이",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "햇빛이",
+      "english": "sunlight, subject-marked",
+      "romanization": "haet-bit-i",
+      "frequency": 3,
+      "rank": 49,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "햇빛이.\n햇빛이.\nsunlight, subject-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/bbbebf6352153473086cb5bc.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:했는데",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "했는데",
+      "english": "did, but",
+      "romanization": "haet-neun-de",
+      "frequency": 3,
+      "rank": 50,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "했는데.\n했는데.\ndid, but.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/698b5eaa603a3d26e923af99.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:후에",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "후에",
+      "english": "after",
+      "romanization": "hu-e",
+      "frequency": 3,
+      "rank": 51,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "후에.\n후에.\nafter.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/9029a1cdec857e1ef65ea747.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:가는",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "가는",
+      "english": "going; that goes",
+      "romanization": "ga-neun",
+      "frequency": 2,
+      "rank": 52,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "가는.\n가는.\ngoing; that goes.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d85918ddb3a6dff6538cb899.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:게",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "게",
+      "english": "thing, subject-marked",
+      "romanization": "ge",
+      "frequency": 2,
+      "rank": 53,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "게.\n게.\nthing, subject-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a078366838f12746c4543f80.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:계속",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "계속",
+      "english": "continuously",
+      "romanization": "gye-sok",
+      "frequency": 2,
+      "rank": 54,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "계속.\n계속.\ncontinuously.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/49937575517033f8dd8af2bf.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:구경하고",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "구경하고",
+      "english": "look around and",
+      "romanization": "gu-gyeong-ha-go",
+      "frequency": 2,
+      "rank": 55,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "구경하고.\n구경하고.\nlook around and.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/0c006e268ddd6a0f10e45885.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:그냥",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "그냥",
+      "english": "just; simply",
+      "romanization": "geu-nyang",
+      "frequency": 2,
+      "rank": 56,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "그냥.\n그냥.\njust; simply.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/77f691bc12a78698a5f218d5.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:꼭",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "꼭",
+      "english": "definitely",
+      "romanization": "kkok",
+      "frequency": 2,
+      "rank": 57,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "꼭.\n꼭.\ndefinitely.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/60758679241ee40abfba11fc.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:내일",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "내일",
+      "english": "tomorrow",
+      "romanization": "nae-il",
+      "frequency": 2,
+      "rank": 58,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "내일.\n내일.\ntomorrow.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/8218853393982094a007d54a.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:넘쳐요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "넘쳐요",
+      "english": "is full of; overflows",
+      "romanization": "neom-chyeo-yo",
+      "frequency": 2,
+      "rank": 59,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "넘쳐요.\n넘쳐요.\nis full of; overflows.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/57131811f65bec733fcf4cb3.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:노트북으로",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "노트북으로",
+      "english": "with/on a laptop",
+      "romanization": "no-teu-buk-eu-ro",
+      "frequency": 2,
+      "rank": 60,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "노트북으로.\n노트북으로.\nwith/on a laptop.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/1fde9936575217f25def0eeb.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:다",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "다",
+      "english": "all; both",
+      "romanization": "da",
+      "frequency": 2,
+      "rank": 61,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "다.\n다.\nall; both.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/5fd25a5078085717e75fba78.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:다르고",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "다르고",
+      "english": "is different and",
+      "romanization": "da-reu-go",
+      "frequency": 2,
+      "rank": 62,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "다르고.\n다르고.\nis different and.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/7e41f78a4cb013d0d76dd366.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:달라요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "달라요",
+      "english": "is different",
+      "romanization": "dal-ra-yo",
+      "frequency": 2,
+      "rank": 63,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "달라요.\n달라요.\nis different.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/cdaf65dcf906ef0eaf724823.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:더워서",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "더워서",
+      "english": "because it is hot",
+      "romanization": "deo-wo-seo",
+      "frequency": 2,
+      "rank": 64,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "더워서.\n더워서.\nbecause it is hot.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d29a03b5bf9bef9bb96f2a7a.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:더워요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "더워요",
+      "english": "is hot",
+      "romanization": "deo-wo-yo",
+      "frequency": 2,
+      "rank": 65,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "더워요.\n더워요.\nis hot.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/7acf5b01875839ba8c468710.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:도착했어요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "도착했어요",
+      "english": "arrived",
+      "romanization": "do-chak-haet-eo-yo",
+      "frequency": 2,
+      "rank": 66,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "도착했어요.\n도착했어요.\narrived.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/17756bb2681d9b31b87db660.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:돌아가서",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "돌아가서",
+      "english": "return and",
+      "romanization": "dol-a-ga-seo",
+      "frequency": 2,
+      "rank": 67,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "돌아가서.\n돌아가서.\nreturn and.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/84f59f73d0276cfbd53bea5e.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:돼요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "돼요",
+      "english": "becomes; have to",
+      "romanization": "dwae-yo",
+      "frequency": 2,
+      "rank": 68,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "돼요.\n돼요.\nbecomes; have to.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/3a5e2bcd51deca8c3c8f6b0a.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:마음에",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "마음에",
+      "english": "in the heart; to my liking",
+      "romanization": "ma-eum-e",
+      "frequency": 2,
+      "rank": 69,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "마음에.\n마음에.\nin the heart; to my liking.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ca7b739e93e56cede3d558fa.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:못",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "못",
+      "english": "cannot",
+      "romanization": "mot",
+      "frequency": 2,
+      "rank": 70,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "못.\n못.\ncannot.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b524ed724360e356171be938.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:벌써",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "벌써",
+      "english": "already",
+      "romanization": "beol-sseo",
+      "frequency": 2,
+      "rank": 71,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "벌써.\n벌써.\nalready.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/3470ca0ee310289fd23c7eb2.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:브런치를",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "브런치를",
+      "english": "brunch, object-marked",
+      "romanization": "beu-reon-chi-reul",
+      "frequency": 2,
+      "rank": 72,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "브런치를.\n브런치를.\nbrunch, object-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/70bc209a69fd4bf812d2e83d.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:빨래를",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "빨래를",
+      "english": "laundry, object-marked",
+      "romanization": "ppal-rae-reul",
+      "frequency": 2,
+      "rank": 73,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "빨래를.\n빨래를.\nlaundry, object-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/724f2813d754f21cfed46ade.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:사람들이",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "사람들이",
+      "english": "people, subject-marked",
+      "romanization": "sa-ram-deul-i",
+      "frequency": 2,
+      "rank": 74,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "사람들이.\n사람들이.\npeople, subject-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/745cc59b2fea38acbe2d60c5.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:사실",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "사실",
+      "english": "actually",
+      "romanization": "sa-sil",
+      "frequency": 2,
+      "rank": 75,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "사실.\n사실.\nactually.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/4bb4b565275ae2063012ae4f.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:생각했어요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "생각했어요",
+      "english": "thought",
+      "romanization": "saeng-gak-haet-eo-yo",
+      "frequency": 2,
+      "rank": 76,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "생각했어요.\n생각했어요.\nthought.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/46d00623dcda6939da295332.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:서점에",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "서점에",
+      "english": "to/at the bookstore",
+      "romanization": "seo-jeom-e",
+      "frequency": 2,
+      "rank": 77,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "서점에.\n서점에.\nto/at the bookstore.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e8117dbca0c1c1966e5b91e8.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:숙소로",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "숙소로",
+      "english": "to the lodging",
+      "romanization": "suk-so-ro",
+      "frequency": 2,
+      "rank": 78,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "숙소로.\n숙소로.\nto the lodging.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/bcaf478d7562dfc4219ef5f3.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:숙소에서",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "숙소에서",
+      "english": "at/from the lodging",
+      "romanization": "suk-so-e-seo",
+      "frequency": 2,
+      "rank": 79,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "숙소에서.\n숙소에서.\nat/from the lodging.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c16bfd24fca3ea28310b118c.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:쉬고",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "쉬고",
+      "english": "rest and",
+      "romanization": "swi-go",
+      "frequency": 2,
+      "rank": 80,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "쉬고.\n쉬고.\nrest and.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b892b64f88f4e7bab5c8c2f8.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:시간이",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "시간이",
+      "english": "time, subject-marked",
+      "romanization": "si-gan-i",
+      "frequency": 2,
+      "rank": 81,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "시간이.\n시간이.\ntime, subject-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/290bff17220d2ab9ee6b968e.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:싸고",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "싸고",
+      "english": "pack and",
+      "romanization": "ssa-go",
+      "frequency": 2,
+      "rank": 82,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "싸고.\n싸고.\npack and.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/0ee61ada3ee91162c7adbb39.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:아",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "아",
+      "english": "ah",
+      "romanization": "a",
+      "frequency": 2,
+      "rank": 83,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "아.\n아.\nah.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/fe1c62f14bcfd172f4faea0a.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:아메리카노를",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "아메리카노를",
+      "english": "Americano, object-marked",
+      "romanization": "a-me-ri-ka-no-reul",
+      "frequency": 2,
+      "rank": 84,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "아메리카노를.\n아메리카노를.\nAmericano, object-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/78103499446001fe46e389da.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:아무것도",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "아무것도",
+      "english": "nothing",
+      "romanization": "a-mu-geot-do",
+      "frequency": 2,
+      "rank": 85,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "아무것도.\n아무것도.\nnothing.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c2ee46e7e1417e347d27e767.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:아이스",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "아이스",
+      "english": "iced",
+      "romanization": "a-i-seu",
+      "frequency": 2,
+      "rank": 86,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "아이스.\n아이스.\niced.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b471f0541a95cfd39c063ddd.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:아침에",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "아침에",
+      "english": "in the morning",
+      "romanization": "a-chim-e",
+      "frequency": 2,
+      "rank": 87,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "아침에.\n아침에.\nin the morning.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/eb1045e44445bd8cbe28e81f.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:아침을",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "아침을",
+      "english": "breakfast, object-marked",
+      "romanization": "a-chim-eul",
+      "frequency": 2,
+      "rank": 88,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "아침을.\n아침을.\nbreakfast, object-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f6504e12be327fe64a5be428.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:안에서",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "안에서",
+      "english": "inside",
+      "romanization": "an-e-seo",
+      "frequency": 2,
+      "rank": 89,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "안에서.\n안에서.\ninside.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/2f0b56fbca34e05d0ba0d9a7.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:어",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "어",
+      "english": "uh",
+      "romanization": "eo",
+      "frequency": 2,
+      "rank": 90,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "어.\n어.\nuh.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/4878bf1afab713841176c366.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:없을",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "없을",
+      "english": "will not have; will not exist",
+      "romanization": "eops-eul",
+      "frequency": 2,
+      "rank": 91,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "없을.\n없을.\nwill not have; will not exist.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f386be73a0dfc2a4a6243bd2.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:에너지가",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "에너지가",
+      "english": "energy, subject-marked",
+      "romanization": "e-neo-ji-ga",
+      "frequency": 2,
+      "rank": 92,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "에너지가.\n에너지가.\nenergy, subject-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/69ded877523b3cce57fae4cb.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:여기는",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "여기는",
+      "english": "here, topic-marked",
+      "romanization": "yeo-gi-neun",
+      "frequency": 2,
+      "rank": 93,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "여기는.\n여기는.\nhere, topic-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/18aa61b1d27c167bbc419028.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:여행지에서",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "여행지에서",
+      "english": "at a travel destination",
+      "romanization": "yeo-haeng-ji-e-seo",
+      "frequency": 2,
+      "rank": 94,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "여행지에서.\n여행지에서.\nat a travel destination.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ab23d4664c1d90f7dd31e83d.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:왔어요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "왔어요",
+      "english": "came",
+      "romanization": "wat-eo-yo",
+      "frequency": 2,
+      "rank": 95,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "왔어요.\n왔어요.\ncame.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/150fc87ad18401de3f7cc819.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:왜냐하면",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "왜냐하면",
+      "english": "because",
+      "romanization": "wae-nya-ha-myeon",
+      "frequency": 2,
+      "rank": 96,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "왜냐하면.\n왜냐하면.\nbecause.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/9b11a23da9cdf335be8675cc.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:이렇게",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "이렇게",
+      "english": "like this",
+      "romanization": "i-reoh-ge",
+      "frequency": 2,
+      "rank": 97,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "이렇게.\n이렇게.\nlike this.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/052e4843a16ca9bcb4ac322f.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:이제",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "이제",
+      "english": "now",
+      "romanization": "i-je",
+      "frequency": 2,
+      "rank": 98,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "이제.\n이제.\nnow.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ae897c9027855c3fe3df6268.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:일을",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "일을",
+      "english": "work, object-marked",
+      "romanization": "il-eul",
+      "frequency": 2,
+      "rank": 99,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "일을.\n일을.\nwork, object-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a228735d6cd08add02eae724.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:일하는",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "일하는",
+      "english": "working",
+      "romanization": "il-ha-neun",
+      "frequency": 2,
+      "rank": 100,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "일하는.\n일하는.\nworking.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f5c7f58bfacc5fe65ec50881.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:있는",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "있는",
+      "english": "existing; located; having",
+      "romanization": "it-neun",
+      "frequency": 2,
+      "rank": 101,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "있는.\n있는.\nexisting; located; having.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/629217516dd399e041881301.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:있었어요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "있었어요",
+      "english": "there was; had",
+      "romanization": "it-eot-eo-yo",
+      "frequency": 2,
+      "rank": 102,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "있었어요.\n있었어요.\nthere was; had.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/81aa445145fe16b1ff2a40e3.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:잘",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "잘",
+      "english": "well",
+      "romanization": "jal",
+      "frequency": 2,
+      "rank": 103,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "잘.\n잘.\nwell.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/2c6f47b5cf241269c1e56e9b.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:좋아요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "좋아요",
+      "english": "is good; I like it",
+      "romanization": "joh-a-yo",
+      "frequency": 2,
+      "rank": 104,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "좋아요.\n좋아요.\nis good; I like it.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e9b65aec7b4fc108466f6e94.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:지금은",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "지금은",
+      "english": "now, topic-marked",
+      "romanization": "ji-geum-eun",
+      "frequency": 2,
+      "rank": 105,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "지금은.\n지금은.\nnow, topic-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/99e93e5ce4a6de2bc224717d.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:짐을",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "짐을",
+      "english": "luggage, object-marked",
+      "romanization": "jim-eul",
+      "frequency": 2,
+      "rank": 106,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "짐을.\n짐을.\nluggage, object-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/8eee5a8c2a09795db057238e.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:책도",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "책도",
+      "english": "book too",
+      "romanization": "chaek-do",
+      "frequency": 2,
+      "rank": 107,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "책도.\n책도.\nbook too.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/5d55a83b03503cfec4cf35d6.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:천천히",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "천천히",
+      "english": "slowly",
+      "romanization": "cheon-cheon-hi",
+      "frequency": 2,
+      "rank": 108,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "천천히.\n천천히.\nslowly.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ba6053a796350618d22fd40a.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:추워요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "추워요",
+      "english": "is cold",
+      "romanization": "chu-wo-yo",
+      "frequency": 2,
+      "rank": 109,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "추워요.\n추워요.\nis cold.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/6c418a8c4bf2c8f7e3edd9e5.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:친구들도",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "친구들도",
+      "english": "friends too",
+      "romanization": "chin-gu-deul-do",
+      "frequency": 2,
+      "rank": 110,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "친구들도.\n친구들도.\nfriends too.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/2797520afae92f5890697b87.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:타고",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "타고",
+      "english": "ride/take and",
+      "romanization": "ta-go",
+      "frequency": 2,
+      "rank": 111,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "타고.\n타고.\nride/take and.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/71b927e4c5e970938afcdabb.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:프랑스어를",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "프랑스어를",
+      "english": "French, object-marked",
+      "romanization": "peu-rang-seu-eo-reul",
+      "frequency": 2,
+      "rank": 112,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "프랑스어를.\n프랑스어를.\nFrench, object-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/3672b2392911aea647fc7992.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:했어요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "했어요",
+      "english": "did",
+      "romanization": "haet-eo-yo",
+      "frequency": 2,
+      "rank": 113,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "했어요.\n했어요.\ndid.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/bca0cfda02e29592434c4f07.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:10분",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "10분",
+      "english": "10 minutes",
+      "romanization": "10bun",
+      "frequency": 1,
+      "rank": 114,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "10분.\n10분.\n10 minutes.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/9b776fdd5f4df2d2f97ba6e5.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:17분",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "17분",
+      "english": "17 minutes",
+      "romanization": "17bun",
+      "frequency": 1,
+      "rank": 115,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "17분.\n17분.\n17 minutes.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/988c6507b0d25b2ea6165865.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:1월에",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "1월에",
+      "english": "in January",
+      "romanization": "1wol-e",
+      "frequency": 1,
+      "rank": 116,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "1월에.\n1월에.\nin January.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/2b27278e704624ebd8552210.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:2시간",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "2시간",
+      "english": "2 hours",
+      "romanization": "2si-gan",
+      "frequency": 1,
+      "rank": 117,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "2시간.\n2시간.\n2 hours.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/07a27cee70cca5ff04cb62fa.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:3시",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "3시",
+      "english": "3 o’clock",
+      "romanization": "3si",
+      "frequency": 1,
+      "rank": 118,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "3시.\n3시.\n3 o’clock.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/be030caff3a1c843454d2a11.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:3시에",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "3시에",
+      "english": "at 3 o’clock",
+      "romanization": "3si-e",
+      "frequency": 1,
+      "rank": 119,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "3시에.\n3시에.\nat 3 o’clock.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/eeafef5c4acce3b2a296401b.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:47분",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "47분",
+      "english": "47 minutes",
+      "romanization": "47bun",
+      "frequency": 1,
+      "rank": 120,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "47분.\n47분.\n47 minutes.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/3ced2f5459b29fa89e233e56.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:6시간",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "6시간",
+      "english": "6 hours",
+      "romanization": "6si-gan",
+      "frequency": 1,
+      "rank": 121,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "6시간.\n6시간.\n6 hours.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/1e338ed9301978e378409fc2.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:가는데",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "가는데",
+      "english": "go, but; going, but",
+      "romanization": "ga-neun-de",
+      "frequency": 1,
+      "rank": 122,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "가는데.\n가는데.\ngo, but; going, but.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/03b1599cb6a0891f5be8cbdf.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:가던",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "가던",
+      "english": "used to go; had been going",
+      "romanization": "ga-deon",
+      "frequency": 1,
+      "rank": 123,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "가던.\n가던.\nused to go; had been going.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/71d2fab3b77f5bc52f665f1c.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:가려고",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "가려고",
+      "english": "in order to go",
+      "romanization": "ga-ryeo-go",
+      "frequency": 1,
+      "rank": 124,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "가려고.\n가려고.\nin order to go.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/464c77883b372cce87fd3d71.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:가요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "가요",
+      "english": "go; goes",
+      "romanization": "ga-yo",
+      "frequency": 1,
+      "rank": 125,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "가요.\n가요.\ngo; goes.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/2e318df76a265f9c3af15f8d.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:간단한",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "간단한",
+      "english": "simple",
+      "romanization": "gan-dan-han",
+      "frequency": 1,
+      "rank": 126,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "간단한.\n간단한.\nsimple.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/eae27c3d0b705a9c6a5401a1.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:간단히",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "간단히",
+      "english": "simply; briefly",
+      "romanization": "gan-dan-hi",
+      "frequency": 1,
+      "rank": 127,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "간단히.\n간단히.\nsimply; briefly.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b4c5a7a3a973bdd78f4e53b8.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:갈",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "갈",
+      "english": "will go; going to go",
+      "romanization": "gal",
+      "frequency": 1,
+      "rank": 128,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "갈.\n갈.\nwill go; going to go.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/138bde31b35817a03713fdf1.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:갑자기",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "갑자기",
+      "english": "suddenly",
+      "romanization": "gap-ja-gi",
+      "frequency": 1,
+      "rank": 129,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "갑자기.\n갑자기.\nsuddenly.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/fcde1b326785188b23bfc9d7.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:강하고",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "강하고",
+      "english": "strong and",
+      "romanization": "gang-ha-go",
+      "frequency": 1,
+      "rank": 130,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "강하고.\n강하고.\nstrong and.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/24387c3642f074e1eab2b3bc.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:강해서",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "강해서",
+      "english": "because it is strong",
+      "romanization": "gang-hae-seo",
+      "frequency": 1,
+      "rank": 131,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "강해서.\n강해서.\nbecause it is strong.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/80ed9cc61a4968fc366fdf78.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:거기에",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "거기에",
+      "english": "to/at there",
+      "romanization": "geo-gi-e",
+      "frequency": 1,
+      "rank": 132,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "거기에.\n거기에.\nto/at there.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/4145ea20237a2920c0f24166.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:거라고",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "거라고",
+      "english": "that it would be; quoted thought form",
+      "romanization": "geo-ra-go",
+      "frequency": 1,
+      "rank": 133,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "거라고.\n거라고.\nthat it would be; quoted thought form.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/5ed5d5a36bf85e86aac92026.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:거에요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "거에요",
+      "english": "will be; is going to be",
+      "romanization": "geo-e-yo",
+      "frequency": 1,
+      "rank": 134,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "거에요.\n거에요.\nwill be; is going to be.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/2b1c5f360c2f1d86f69329f6.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:건",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "건",
+      "english": "thing; it; nominalizer",
+      "romanization": "geon",
+      "frequency": 1,
+      "rank": 135,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "건.\n건.\nthing; it; nominalizer.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d48885372ba8e2ea1bce7727.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:건조기가",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "건조기가",
+      "english": "dryer, subject-marked",
+      "romanization": "geon-jo-gi-ga",
+      "frequency": 1,
+      "rank": 136,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "건조기가.\n건조기가.\ndryer, subject-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c6b8aa172b86611abdd9f359.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:걷고",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "걷고",
+      "english": "walk and",
+      "romanization": "geot-go",
+      "frequency": 1,
+      "rank": 137,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "걷고.\n걷고.\nwalk and.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/027586e76f533fe732d2d5b3.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:걷다가",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "걷다가",
+      "english": "while walking; after walking",
+      "romanization": "geot-da-ga",
+      "frequency": 1,
+      "rank": 138,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "걷다가.\n걷다가.\nwhile walking; after walking.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ba81e1d27fa0201b795098f3.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:걸릴",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "걸릴",
+      "english": "will take time",
+      "romanization": "geol-ril",
+      "frequency": 1,
+      "rank": 139,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "걸릴.\n걸릴.\nwill take time.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/4bd5ea096c7e80d9d4a75bfc.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:걸어요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "걸어요",
+      "english": "walk; can walk",
+      "romanization": "geol-eo-yo",
+      "frequency": 1,
+      "rank": 140,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "걸어요.\n걸어요.\nwalk; can walk.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f653e3c6e8d5bbfc822dce17.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:것도",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "것도",
+      "english": "thing; it; nominalizer, also; too",
+      "romanization": "geot-do",
+      "frequency": 1,
+      "rank": 141,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "것도.\n것도.\nthing; it; nominalizer, also; too.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f723566cb016965a3edd94fa.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:계란",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "계란",
+      "english": "egg",
+      "romanization": "gye-ran",
+      "frequency": 1,
+      "rank": 142,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "계란.\n계란.\negg.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/93ae3c3d6de487d3c82fcbb7.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:계획을",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "계획을",
+      "english": "plan, object-marked",
+      "romanization": "gye-hoek-eul",
+      "frequency": 1,
+      "rank": 143,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "계획을.\n계획을.\nplan, object-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/745ac7073d034d23a8ed8197.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:관광은",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "관광은",
+      "english": "sightseeing, topic-marked",
+      "romanization": "gwan-gwang-eun",
+      "frequency": 1,
+      "rank": 144,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "관광은.\n관광은.\nsightseeing, topic-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/8c961d768e41765ab25f7425.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:관광지가",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "관광지가",
+      "english": "tourist attraction, subject-marked",
+      "romanization": "gwan-gwang-ji-ga",
+      "frequency": 1,
+      "rank": 145,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "관광지가.\n관광지가.\ntourist attraction, subject-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a3aaffc7f21b7e4331320ba1.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:관광지에",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "관광지에",
+      "english": "to/at a tourist attraction",
+      "romanization": "gwan-gwang-ji-e",
+      "frequency": 1,
+      "rank": 146,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "관광지에.\n관광지에.\nto/at a tourist attraction.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/2569224fb2b2cc03c3c9e1ef.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:구경할",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "구경할",
+      "english": "will look around; will sightsee",
+      "romanization": "gu-gyeong-hal",
+      "frequency": 1,
+      "rank": 147,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "구경할.\n구경할.\nwill look around; will sightsee.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/7d99ea08771d16a0453a6665.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:구경했는데",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "구경했는데",
+      "english": "looked around, but",
+      "romanization": "gu-gyeong-haet-neun-de",
+      "frequency": 1,
+      "rank": 148,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "구경했는데.\n구경했는데.\nlooked around, but.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/926c039e97aab6970ce4e12a.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:그",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "그",
+      "english": "that",
+      "romanization": "geu",
+      "frequency": 1,
+      "rank": 149,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "그.\n그.\nthat.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/1d87dde02dc688ed8ccb536e.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:그러면",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "그러면",
+      "english": "then; in that case",
+      "romanization": "geu-reo-myeon",
+      "frequency": 1,
+      "rank": 150,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "그러면.\n그러면.\nthen; in that case.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/cda637a420f114381e7c5cc5.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:그리웠어요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "그리웠어요",
+      "english": "missed; longed for",
+      "romanization": "geu-ri-wot-eo-yo",
+      "frequency": 1,
+      "rank": 151,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "그리웠어요.\n그리웠어요.\nmissed; longed for.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ac1e2ee6e9b9dca398ef3804.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:그저께",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "그저께",
+      "english": "the day before yesterday",
+      "romanization": "geu-jeo-kke",
+      "frequency": 1,
+      "rank": 152,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "그저께.\n그저께.\nthe day before yesterday.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/639858bb8ccfdb1ebc67f8e0.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:근처",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "근처",
+      "english": "nearby",
+      "romanization": "geun-cheo",
+      "frequency": 1,
+      "rank": 153,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "근처.\n근처.\nnearby.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/bed048ff6374b4441c10e569.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:기다리고",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "기다리고",
+      "english": "waiting; wait and",
+      "romanization": "gi-da-ri-go",
+      "frequency": 1,
+      "rank": 154,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "기다리고.\n기다리고.\nwaiting; wait and.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/674c5dbadff8cf3c45dfbcbf.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:기대돼요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "기대돼요",
+      "english": "look forward to it",
+      "romanization": "gi-dae-dwae-yo",
+      "frequency": 1,
+      "rank": 155,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "기대돼요.\n기대돼요.\nlook forward to it.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/59a9cb7a58fe2e10bc21039e.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:기분이",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "기분이",
+      "english": "feeling/mood, subject-marked",
+      "romanization": "gi-bun-i",
+      "frequency": 1,
+      "rank": 156,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "기분이.\n기분이.\nfeeling/mood, subject-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/079d23e9c923466dfd8a4b45.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:기차가",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "기차가",
+      "english": "train, subject-marked",
+      "romanization": "gi-cha-ga",
+      "frequency": 1,
+      "rank": 157,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "기차가.\n기차가.\ntrain, subject-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c1cf8b3fc6222c12c59854fa.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:기차역에서",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "기차역에서",
+      "english": "at/from the train station",
+      "romanization": "gi-cha-yeok-e-seo",
+      "frequency": 1,
+      "rank": 158,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "기차역에서.\n기차역에서.\nat/from the train station.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/761eb7a5651e787fd61fb1de.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:기차역으로",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "기차역으로",
+      "english": "to the train station",
+      "romanization": "gi-cha-yeok-eu-ro",
+      "frequency": 1,
+      "rank": 159,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "기차역으로.\n기차역으로.\nto the train station.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c4038e2f657649a7b59907ea.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:길어요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "길어요",
+      "english": "is long",
+      "romanization": "gil-eo-yo",
+      "frequency": 1,
+      "rank": 160,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "길어요.\n길어요.\nis long.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/4897d160cff4d6ec26b64698.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:나와서",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "나와서",
+      "english": "came out and; because I came out",
+      "romanization": "na-wa-seo",
+      "frequency": 1,
+      "rank": 161,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "나와서.\n나와서.\ncame out and; because I came out.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b10d14af5e787fbdf192875a.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:나중에",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "나중에",
+      "english": "later",
+      "romanization": "na-jung-e",
+      "frequency": 1,
+      "rank": 162,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "나중에.\n나중에.\nlater.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/86ced93554e8f63d525a9368.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:다른",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "다른",
+      "english": "different; another",
+      "romanization": "da-reun",
+      "frequency": 1,
+      "rank": 163,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "다른.\n다른.\ndifferent; another.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/649253a487be0c824ca97382.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:닦았어요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "닦았어요",
+      "english": "brushed; wiped",
+      "romanization": "dak-at-eo-yo",
+      "frequency": 1,
+      "rank": 164,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "닦았어요.\n닦았어요.\nbrushed; wiped.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/afb7f18b9c5b5782c309fe67.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:당분간은",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "당분간은",
+      "english": "for the time being, topic-marked",
+      "romanization": "dang-bun-gan-eun",
+      "frequency": 1,
+      "rank": 165,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "당분간은.\n당분간은.\nfor the time being, topic-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d2a799bc11e11d0c4f877940.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:더",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "더",
+      "english": "more",
+      "romanization": "deo",
+      "frequency": 1,
+      "rank": 166,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "더.\n더.\nmore.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/1a0d29c66cdc29c00ddad62a.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:더우니까",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "더우니까",
+      "english": "because it is hot",
+      "romanization": "deo-u-ni-kka",
+      "frequency": 1,
+      "rank": 167,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "더우니까.\n더우니까.\nbecause it is hot.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b1d4b0fa851104e3200c42da.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:덜",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "덜",
+      "english": "less",
+      "romanization": "deol",
+      "frequency": 1,
+      "rank": 168,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "덜.\n덜.\nless.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/53232b418d569781df989150.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:도시는",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "도시는",
+      "english": "city, topic-marked",
+      "romanization": "do-si-neun",
+      "frequency": 1,
+      "rank": 169,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "도시는.\n도시는.\ncity, topic-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/0a42fa03a7128daf35f17ca1.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:돌아갈",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "돌아갈",
+      "english": "will return; going to return",
+      "romanization": "dol-a-gal",
+      "frequency": 1,
+      "rank": 170,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "돌아갈.\n돌아갈.\nwill return; going to return.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/9a5acaba6c821a37f86b4bee.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:동안",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "동안",
+      "english": "during; for",
+      "romanization": "dong-an",
+      "frequency": 1,
+      "rank": 171,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "동안.\n동안.\nduring; for.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/4ce8bec2d5505b250000bd51.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:될",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "될",
+      "english": "will become; will be; must become",
+      "romanization": "doel",
+      "frequency": 1,
+      "rank": 172,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "될.\n될.\nwill become; will be; must become.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c5eb9e66330208cc823f67a7.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:둘",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "둘",
+      "english": "two; both",
+      "romanization": "dul",
+      "frequency": 1,
+      "rank": 173,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "둘.\n둘.\ntwo; both.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f50c58cc3ff634930c73062e.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:들러서",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "들러서",
+      "english": "stopped by and",
+      "romanization": "deul-reo-seo",
+      "frequency": 1,
+      "rank": 174,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "들러서.\n들러서.\nstopped by and.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/dc254a5fb7a9f2f32b3160f7.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:들어가서",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "들어가서",
+      "english": "went in and",
+      "romanization": "deul-eo-ga-seo",
+      "frequency": 1,
+      "rank": 175,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "들어가서.\n들어가서.\nwent in and.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/82f33e2cbb66c806a28f540f.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:들어요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "들어요",
+      "english": "enters; feels pleasing; I like it",
+      "romanization": "deul-eo-yo",
+      "frequency": 1,
+      "rank": 176,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "들어요.\n들어요.\nenters; feels pleasing; I like it.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/93d8b396d243fc5fcecacad0.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:들었는데",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "들었는데",
+      "english": "felt pleasing; liked it, but",
+      "romanization": "deul-eot-neun-de",
+      "frequency": 1,
+      "rank": 177,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "들었는데.\n들었는데.\nfelt pleasing; liked it, but.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/0f15dd0b8299d52d9725ee51.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:들으면",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "들으면",
+      "english": "if/when hearing",
+      "romanization": "deul-eu-myeon",
+      "frequency": 1,
+      "rank": 178,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "들으면.\n들으면.\nif/when hearing.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/2fc70981f234e0bbc3afd4ab.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:때",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "때",
+      "english": "time; when",
+      "romanization": "ttae",
+      "frequency": 1,
+      "rank": 179,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "때.\n때.\ntime; when.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/37edc2c34c0cb1b66292a313.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:떠나는",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "떠나는",
+      "english": "leaving",
+      "romanization": "tteo-na-neun",
+      "frequency": 1,
+      "rank": 180,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "떠나는.\n떠나는.\nleaving.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/9fe83b126e31201144bab923.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:떠나요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "떠나요",
+      "english": "leave; leaves",
+      "romanization": "tteo-na-yo",
+      "frequency": 1,
+      "rank": 181,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "떠나요.\n떠나요.\nleave; leaves.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/7dbc078e20f94284247a31ed.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:떠난",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "떠난",
+      "english": "left; after leaving",
+      "romanization": "tteo-nan",
+      "frequency": 1,
+      "rank": 182,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "떠난.\n떠난.\nleft; after leaving.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c685a7d8466e83fe6403c9c3.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:라떼를",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "라떼를",
+      "english": "latte, object-marked",
+      "romanization": "ra-tte-reul",
+      "frequency": 1,
+      "rank": 183,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "라떼를.\n라떼를.\nlatte, object-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e283b6eb0209c3fce59b5f3a.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:마셔요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "마셔요",
+      "english": "drink",
+      "romanization": "ma-syeo-yo",
+      "frequency": 1,
+      "rank": 184,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "마셔요.\n마셔요.\ndrink.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b68f3e1cd8c0fca71cdd5356.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:마셨어요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "마셨어요",
+      "english": "drank",
+      "romanization": "ma-syeot-eo-yo",
+      "frequency": 1,
+      "rank": 185,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "마셨어요.\n마셨어요.\ndrank.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/63b311bf3d9638514ff5f129.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:마시고",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "마시고",
+      "english": "drink and",
+      "romanization": "ma-si-go",
+      "frequency": 1,
+      "rank": 186,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "마시고.\n마시고.\ndrink and.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b5ad0a0538c7e5899e57896d.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:마시면서",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "마시면서",
+      "english": "while drinking",
+      "romanization": "ma-si-myeon-seo",
+      "frequency": 1,
+      "rank": 187,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "마시면서.\n마시면서.\nwhile drinking.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b7eb0d7c306cb7ea79cacffb.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:마신",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "마신",
+      "english": "after drinking; drank",
+      "romanization": "ma-sin",
+      "frequency": 1,
+      "rank": 188,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "마신.\n마신.\nafter drinking; drank.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/0af8bf6d8d431fc051691905.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:만나고",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "만나고",
+      "english": "meet and",
+      "romanization": "man-na-go",
+      "frequency": 1,
+      "rank": 189,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "만나고.\n만나고.\nmeet and.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/adc092c6b53fcad30b74fa97.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:만나요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "만나요",
+      "english": "meet",
+      "romanization": "man-na-yo",
+      "frequency": 1,
+      "rank": 190,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "만나요.\n만나요.\nmeet.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/2c1089ed8a68eb3badcf593b.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:만날",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "만날",
+      "english": "will meet",
+      "romanization": "man-nal",
+      "frequency": 1,
+      "rank": 191,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "만날.\n만날.\nwill meet.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/808bffd9fa0535df821f9565.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:많아요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "많아요",
+      "english": "there are many; is a lot",
+      "romanization": "manh-a-yo",
+      "frequency": 1,
+      "rank": 192,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "많아요.\n많아요.\nthere are many; is a lot.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/89fb0572b56501bb41be9110.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:많았어요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "많았어요",
+      "english": "there were many",
+      "romanization": "manh-at-eo-yo",
+      "frequency": 1,
+      "rank": 193,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "많았어요.\n많았어요.\nthere were many.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/98d1e0025671a0af17615ad2.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:말라요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "말라요",
+      "english": "is dry; am thirsty",
+      "romanization": "mal-ra-yo",
+      "frequency": 1,
+      "rank": 194,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "말라요.\n말라요.\nis dry; am thirsty.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/4b3611c578732a07ed43d07e.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:말하는",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "말하는",
+      "english": "speaking",
+      "romanization": "mal-ha-neun",
+      "frequency": 1,
+      "rank": 195,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "말하는.\n말하는.\nspeaking.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/4fc14187dab4fe1185bff696.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:맛있는",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "맛있는",
+      "english": "delicious",
+      "romanization": "mat-it-neun",
+      "frequency": 1,
+      "rank": 196,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "맛있는.\n맛있는.\ndelicious.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/bcb52e3fdb0975502916780a.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:맛있었어요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "맛있었어요",
+      "english": "was delicious",
+      "romanization": "mat-it-eot-eo-yo",
+      "frequency": 1,
+      "rank": 197,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "맛있었어요.\n맛있었어요.\nwas delicious.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ed6cbee32ef9c4df1209effe.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:맞는다고",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "맞는다고",
+      "english": "fits; is right",
+      "romanization": "mat-neun-da-go",
+      "frequency": 1,
+      "rank": 198,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "맞는다고.\n맞는다고.\nfits; is right.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ed96ec1764d5a7a72949a22b.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:매력이",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "매력이",
+      "english": "charm, subject-marked",
+      "romanization": "mae-ryeok-i",
+      "frequency": 1,
+      "rank": 199,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "매력이.\n매력이.\ncharm, subject-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/24da36797567aa0069459b10.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:매일",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "매일",
+      "english": "every day",
+      "romanization": "mae-il",
+      "frequency": 1,
+      "rank": 200,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "매일.\n매일.\nevery day.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e87b471cd4e010410ace54cb.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:먹었는데",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "먹었는데",
+      "english": "ate, but",
+      "romanization": "meok-eot-neun-de",
+      "frequency": 1,
+      "rank": 201,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "먹었는데.\n먹었는데.\nate, but.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/8dc72604045b8c193542e267.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:먹으려고",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "먹으려고",
+      "english": "in order to eat",
+      "romanization": "meok-eu-ryeo-go",
+      "frequency": 1,
+      "rank": 202,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "먹으려고.\n먹으려고.\nin order to eat.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/99c26d82a7ddd51c0859a515.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:먹을",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "먹을",
+      "english": "will eat; going to eat",
+      "romanization": "meok-eul",
+      "frequency": 1,
+      "rank": 203,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "먹을.\n먹을.\nwill eat; going to eat.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c4ef8c7cd77381ff7a36934b.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:멋있어요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "멋있어요",
+      "english": "is cool; is stylish",
+      "romanization": "meot-it-eo-yo",
+      "frequency": 1,
+      "rank": 204,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "멋있어요.\n멋있어요.\nis cool; is stylish.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f6a874b8f941bee9843ee57a.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:목이",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "목이",
+      "english": "throat, subject-marked",
+      "romanization": "mok-i",
+      "frequency": 1,
+      "rank": 205,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "목이.\n목이.\nthroat, subject-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/bfbca10b0250a8296e27492e.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:못하지만",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "못하지만",
+      "english": "cannot do; be bad at, but/although",
+      "romanization": "mot-ha-ji-man",
+      "frequency": 1,
+      "rank": 206,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "못하지만.\n못하지만.\ncannot do; be bad at, but/although.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/00263d54c52a16bd46c87331.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:못했어요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "못했어요",
+      "english": "could not do; did not manage to do",
+      "romanization": "mot-haet-eo-yo",
+      "frequency": 1,
+      "rank": 207,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "못했어요.\n못했어요.\ncould not do; did not manage to do.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/8a4c0fd41514011c0cf957f2.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:물이",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "물이",
+      "english": "water, subject-marked",
+      "romanization": "mul-i",
+      "frequency": 1,
+      "rank": 208,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "물이.\n물이.\nwater, subject-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b1bad989087fa273b806925c.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:뭐",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "뭐",
+      "english": "what",
+      "romanization": "mwo",
+      "frequency": 1,
+      "rank": 209,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "뭐.\n뭐.\nwhat.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/31b3fc99f06cca0a0b6b2e72.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:바꿨어요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "바꿨어요",
+      "english": "changed",
+      "romanization": "ba-kkwot-eo-yo",
+      "frequency": 1,
+      "rank": 210,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "바꿨어요.\n바꿨어요.\nchanged.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/3faa94df9814ff7211f3c870.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:바르셀로나가",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "바르셀로나가",
+      "english": "Barcelona, subject-marked",
+      "romanization": "ba-reu-sel-ro-na-ga",
+      "frequency": 1,
+      "rank": 211,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "바르셀로나가.\n바르셀로나가.\nBarcelona, subject-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/463a1c2fe5e292a1557d130b.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:바르셀로나를",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "바르셀로나를",
+      "english": "Barcelona, object-marked",
+      "romanization": "ba-reu-sel-ro-na-reul",
+      "frequency": 1,
+      "rank": 212,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "바르셀로나를.\n바르셀로나를.\nBarcelona, object-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/8697aac4bed6766da2e36b38.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:바르셀로나에는",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "바르셀로나에는",
+      "english": "in Barcelona, topic-marked",
+      "romanization": "ba-reu-sel-ro-na-e-neun",
+      "frequency": 1,
+      "rank": 213,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "바르셀로나에는.\n바르셀로나에는.\nin Barcelona, topic-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/fe95e505e89fc9aa2e6533ab.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:밖에",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "밖에",
+      "english": "outside; only, depending context",
+      "romanization": "bak-e",
+      "frequency": 1,
+      "rank": 214,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "밖에.\n밖에.\noutside; only, depending context.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/3fa646041f8b7e8e6a847be4.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:방금",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "방금",
+      "english": "just now",
+      "romanization": "bang-geum",
+      "frequency": 1,
+      "rank": 215,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "방금.\n방금.\njust now.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/6bb9381ddd85380b2a7410f5.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:배우고",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "배우고",
+      "english": "learn and",
+      "romanization": "bae-u-go",
+      "frequency": 1,
+      "rank": 216,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "배우고.\n배우고.\nlearn and.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/21c77af689ee4fa2c947b96a.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:배우는",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "배우는",
+      "english": "learning",
+      "romanization": "bae-u-neun",
+      "frequency": 1,
+      "rank": 217,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "배우는.\n배우는.\nlearning.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/99a9361e1f0f92d92a341eac.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:배운",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "배운",
+      "english": "learned; after learning",
+      "romanization": "bae-un",
+      "frequency": 1,
+      "rank": 218,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "배운.\n배운.\nlearned; after learning.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d5f0f58f15c3c84be43dc19e.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:배울",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "배울",
+      "english": "will learn",
+      "romanization": "bae-ul",
+      "frequency": 1,
+      "rank": 219,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "배울.\n배울.\nwill learn.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d4b7c352a51512b94d2ede93.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:번",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "번",
+      "english": "time; occasion",
+      "romanization": "beon",
+      "frequency": 1,
+      "rank": 220,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "번.\n번.\ntime; occasion.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/2a251e1b09f83fe7bee07907.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:보고",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "보고",
+      "english": "see and; look at and",
+      "romanization": "bo-go",
+      "frequency": 1,
+      "rank": 221,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "보고.\n보고.\nsee and; look at and.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e8c3b3cade1abbc657bb651c.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:보내고",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "보내고",
+      "english": "spend time and",
+      "romanization": "bo-nae-go",
+      "frequency": 1,
+      "rank": 222,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "보내고.\n보내고.\nspend time and.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/204c28694db808dfd497dfd6.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:보면",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "보면",
+      "english": "if/when seeing",
+      "romanization": "bo-myeon",
+      "frequency": 1,
+      "rank": 223,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "보면.\n보면.\nif/when seeing.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e4a36dae938d7329c85cc3cd.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:분위기도",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "분위기도",
+      "english": "atmosphere, also; too",
+      "romanization": "bun-wi-gi-do",
+      "frequency": 1,
+      "rank": 224,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "분위기도.\n분위기도.\natmosphere, also; too.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/23de6e59f7e050ad9913f314.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:브런치도",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "브런치도",
+      "english": "brunch, also; too",
+      "romanization": "beu-reon-chi-do",
+      "frequency": 1,
+      "rank": 225,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "브런치도.\n브런치도.\nbrunch, also; too.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ebba5ca00cf5b9bd1424dce2.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:비슷할",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "비슷할",
+      "english": "will be similar",
+      "romanization": "bi-seut-hal",
+      "frequency": 1,
+      "rank": 226,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "비슷할.\n비슷할.\nwill be similar.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/01bd1a9b5940915c516b485c.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:빵",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "빵",
+      "english": "bread",
+      "romanization": "ppang",
+      "frequency": 1,
+      "rank": 227,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "빵.\n빵.\nbread.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/29d3d0f06cf9be7e2323e716.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:빵도",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "빵도",
+      "english": "bread too",
+      "romanization": "ppang-do",
+      "frequency": 1,
+      "rank": 228,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "빵도.\n빵도.\nbread too.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/4b7c641b3a9fe031a45a2937.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:빵집에서",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "빵집에서",
+      "english": "at/from the bakery",
+      "romanization": "ppang-jip-e-seo",
+      "frequency": 1,
+      "rank": 229,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "빵집에서.\n빵집에서.\nat/from the bakery.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/76fa080378412df7b7ae7657.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:사고",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "사고",
+      "english": "buy and",
+      "romanization": "sa-go",
+      "frequency": 1,
+      "rank": 230,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "사고.\n사고.\nbuy and.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/49892c2f8c8cc52738bafdb8.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:사람들도",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "사람들도",
+      "english": "person; people, also; too",
+      "romanization": "sa-ram-deul-do",
+      "frequency": 1,
+      "rank": 231,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "사람들도.\n사람들도.\nperson; people, also; too.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/4f06031bc3a6f41616fca4ab.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:사람에게",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "사람에게",
+      "english": "to a person",
+      "romanization": "sa-ram-e-ge",
+      "frequency": 1,
+      "rank": 232,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "사람에게.\n사람에게.\nto a person.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/5e1d8f4fc725169b40af0131.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:사람이",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "사람이",
+      "english": "person, subject-marked",
+      "romanization": "sa-ram-i",
+      "frequency": 1,
+      "rank": 233,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "사람이.\n사람이.\nperson, subject-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/4816db80187e74217948e27a.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:사랑하는",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "사랑하는",
+      "english": "loving; beloved",
+      "romanization": "sa-rang-ha-neun",
+      "frequency": 1,
+      "rank": 234,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "사랑하는.\n사랑하는.\nloving; beloved.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/05b07e3ac5accaf17b821f56.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:사먹고",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "사먹고",
+      "english": "buy and eat",
+      "romanization": "sa-meok-go",
+      "frequency": 1,
+      "rank": 235,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "사먹고.\n사먹고.\nbuy and eat.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/affb3ef270a7536599d2d373.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:산책도",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "산책도",
+      "english": "walk too; stroll too",
+      "romanization": "san-chaek-do",
+      "frequency": 1,
+      "rank": 236,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "산책도.\n산책도.\nwalk too; stroll too.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/06e8d88a740dbafc047fc761.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:산책을",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "산책을",
+      "english": "walk, object-marked",
+      "romanization": "san-chaek-eul",
+      "frequency": 1,
+      "rank": 237,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "산책을.\n산책을.\nwalk, object-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a54b19c6e8d2acde348810e6.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:산책하려고",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "산책하려고",
+      "english": "in order to take a walk",
+      "romanization": "san-chaek-ha-ryeo-go",
+      "frequency": 1,
+      "rank": 238,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "산책하려고.\n산책하려고.\nin order to take a walk.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/684a3f86a2065941d2a410d8.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:샀어요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "샀어요",
+      "english": "bought",
+      "romanization": "sat-eo-yo",
+      "frequency": 1,
+      "rank": 239,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "샀어요.\n샀어요.\nbought.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/9eb9f2713c945621c4eb5474.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:생수로",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "생수로",
+      "english": "with bottled water",
+      "romanization": "saeng-su-ro",
+      "frequency": 1,
+      "rank": 240,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "생수로.\n생수로.\nwith bottled water.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/382464d6c48f9bf60c28acd8.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:샤워를",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "샤워를",
+      "english": "shower, object-marked",
+      "romanization": "sya-wo-reul",
+      "frequency": 1,
+      "rank": 241,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "샤워를.\n샤워를.\nshower, object-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/888198c0491e1ad28801d55e.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:서점에서",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "서점에서",
+      "english": "at/from the bookstore",
+      "romanization": "seo-jeom-e-seo",
+      "frequency": 1,
+      "rank": 242,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "서점에서.\n서점에서.\nat/from the bookstore.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d96e9700dbf3547b21c921a1.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:서점은",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "서점은",
+      "english": "bookstore, topic-marked",
+      "romanization": "seo-jeom-eun",
+      "frequency": 1,
+      "rank": 243,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "서점은.\n서점은.\nbookstore, topic-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/302479b0d17d64480f71f6c8.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:서점이에요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "서점이에요",
+      "english": "is a bookstore",
+      "romanization": "seo-jeom-i-e-yo",
+      "frequency": 1,
+      "rank": 244,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "서점이에요.\n서점이에요.\nis a bookstore.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/45a65b1183295e7d7b2a24b4.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:세게",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "세게",
+      "english": "strongly",
+      "romanization": "se-ge",
+      "frequency": 1,
+      "rank": 245,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "세게.\n세게.\nstrongly.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/7b1c680c00f089931fb214f5.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:세지",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "세지",
+      "english": "is strong, in a negative phrase",
+      "romanization": "se-ji",
+      "frequency": 1,
+      "rank": 246,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "세지.\n세지.\nis strong, in a negative phrase.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a253a641c8fcb5657136851a.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:세탁기하고",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "세탁기하고",
+      "english": "washing machine and",
+      "romanization": "se-tak-gi-ha-go",
+      "frequency": 1,
+      "rank": 247,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "세탁기하고.\n세탁기하고.\nwashing machine and.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c5bd067cea4b413a2ce3554d.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:손을",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "손을",
+      "english": "hand, object-marked",
+      "romanization": "son-eul",
+      "frequency": 1,
+      "rank": 248,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "손을.\n손을.\nhand, object-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/13bf4fb9df8739753129f4d5.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:수",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "수",
+      "english": "way; ability",
+      "romanization": "su",
+      "frequency": 1,
+      "rank": 249,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "수.\n수.\nway; ability.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f992f8717a988492bbc8a09b.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:쉬다가",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "쉬다가",
+      "english": "while resting; after resting",
+      "romanization": "swi-da-ga",
+      "frequency": 1,
+      "rank": 250,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "쉬다가.\n쉬다가.\nwhile resting; after resting.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c5782d4c831c1eb54418dee9.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:쉬어야",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "쉬어야",
+      "english": "must rest",
+      "romanization": "swi-eo-ya",
+      "frequency": 1,
+      "rank": 251,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "쉬어야.\n쉬어야.\nmust rest.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ecb96004d46014e3a9f57ccf.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:쉴",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "쉴",
+      "english": "will rest; going to rest",
+      "romanization": "swil",
+      "frequency": 1,
+      "rank": 252,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "쉴.\n쉴.\nwill rest; going to rest.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/8c6f854c852370e8f77de250.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:스타일이에요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "스타일이에요",
+      "english": "is my style",
+      "romanization": "seu-ta-il-i-e-yo",
+      "frequency": 1,
+      "rank": 253,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "스타일이에요.\n스타일이에요.\nis my style.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d734297b4c240c3e580e630c.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:스페인만",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "스페인만",
+      "english": "Spain only",
+      "romanization": "seu-pe-in-man",
+      "frequency": 1,
+      "rank": 254,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "스페인만.\n스페인만.\nSpain only.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/7ffca7534077f030b53b2411.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:스페인어로",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "스페인어로",
+      "english": "in Spanish",
+      "romanization": "seu-pe-in-eo-ro",
+      "frequency": 1,
+      "rank": 255,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "스페인어로.\n스페인어로.\nin Spanish.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/1399f2e8f68693e2625d08cc.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:스페인어를",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "스페인어를",
+      "english": "Spanish, object-marked",
+      "romanization": "seu-pe-in-eo-reul",
+      "frequency": 1,
+      "rank": 256,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "스페인어를.\n스페인어를.\nSpanish, object-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/11ef7e01b9b8dcc6f3cc9eb7.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:스페인에서",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "스페인에서",
+      "english": "from/in Spain",
+      "romanization": "seu-pe-in-e-seo",
+      "frequency": 1,
+      "rank": 257,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "스페인에서.\n스페인에서.\nfrom/in Spain.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/1269dcc8b3c9bf823882a466.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:스페인을",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "스페인을",
+      "english": "Spain, object-marked",
+      "romanization": "seu-pe-in-eul",
+      "frequency": 1,
+      "rank": 258,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "스페인을.\n스페인을.\nSpain, object-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/dbdeafc0a709cac45bd4bb7b.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:슬프지만",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "슬프지만",
+      "english": "sad, but",
+      "romanization": "seul-peu-ji-man",
+      "frequency": 1,
+      "rank": 259,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "슬프지만.\n슬프지만.\nsad, but.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f15d6b6ed4d26d75c5e84c82.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:시간이에요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "시간이에요",
+      "english": "is time",
+      "romanization": "si-gan-i-e-yo",
+      "frequency": 1,
+      "rank": 260,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "시간이에요.\n시간이에요.\nis time.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c6d747287c1333cc747f5112.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:식당에",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "식당에",
+      "english": "to/at a restaurant",
+      "romanization": "sik-dang-e",
+      "frequency": 1,
+      "rank": 261,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "식당에.\n식당에.\nto/at a restaurant.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/94b20288cef53416a57061eb.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:실내가",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "실내가",
+      "english": "indoors, subject-marked",
+      "romanization": "sil-nae-ga",
+      "frequency": 1,
+      "rank": 262,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "실내가.\n실내가.\nindoors, subject-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/6c5a61923c5d8ccb99b33983.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:실내에서도",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "실내에서도",
+      "english": "even indoors",
+      "romanization": "sil-nae-e-seo-do",
+      "frequency": 1,
+      "rank": 263,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "실내에서도.\n실내에서도.\neven indoors.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e9031a262b39eae9ddf05480.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:싶어서",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "싶어서",
+      "english": "because I want to",
+      "romanization": "sip-eo-seo",
+      "frequency": 1,
+      "rank": 264,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "싶어서.\n싶어서.\nbecause I want to.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e2ced323d479ce2a911c389a.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:싶었어요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "싶었어요",
+      "english": "wanted to",
+      "romanization": "sip-eot-eo-yo",
+      "frequency": 1,
+      "rank": 265,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "싶었어요.\n싶었어요.\nwanted to.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/aaf01b60c3b750c1155f2714.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:싶은",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "싶은",
+      "english": "wanted; wanting",
+      "romanization": "sip-eun",
+      "frequency": 1,
+      "rank": 266,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "싶은.\n싶은.\nwanted; wanting.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/0c117084b452b3845fda055e.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:썼어요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "썼어요",
+      "english": "wrote",
+      "romanization": "sseot-eo-yo",
+      "frequency": 1,
+      "rank": 267,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "썼어요.\n썼어요.\nwrote.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/7c24500796ab0f8ee67e861a.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:쓰는",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "쓰는",
+      "english": "writing; using",
+      "romanization": "sseu-neun",
+      "frequency": 1,
+      "rank": 268,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "쓰는.\n쓰는.\nwriting; using.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/cbe393454f70b27024ec7ce4.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:씻고",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "씻고",
+      "english": "wash and",
+      "romanization": "ssit-go",
+      "frequency": 1,
+      "rank": 269,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "씻고.\n씻고.\nwash and.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c489cacd0e5bf548bb6587bc.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:아름다워요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "아름다워요",
+      "english": "is beautiful",
+      "romanization": "a-reum-da-wo-yo",
+      "frequency": 1,
+      "rank": 270,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "아름다워요.\n아름다워요.\nis beautiful.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/3f926c5dee71a1b9cdc179be.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:아마",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "아마",
+      "english": "probably",
+      "romanization": "a-ma",
+      "frequency": 1,
+      "rank": 271,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "아마.\n아마.\nprobably.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/62541dffe8927daaa5921b63.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:아침은",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "아침은",
+      "english": "morning; breakfast, topic-marked",
+      "romanization": "a-chim-eun",
+      "frequency": 1,
+      "rank": 272,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "아침은.\n아침은.\nmorning; breakfast, topic-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/3a9a810213f8722bfe61b983.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:앉아",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "앉아",
+      "english": "sitting",
+      "romanization": "anj-a",
+      "frequency": 1,
+      "rank": 273,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "앉아.\n앉아.\nsitting.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c19bea0a9f94a6f85378e941.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:앉아서",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "앉아서",
+      "english": "sit and; while sitting",
+      "romanization": "anj-a-seo",
+      "frequency": 1,
+      "rank": 274,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "앉아서.\n앉아서.\nsit and; while sitting.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b6683da1eea00622e122bc64.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:않아서",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "않아서",
+      "english": "because it is not; because it does not",
+      "romanization": "anh-a-seo",
+      "frequency": 1,
+      "rank": 275,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "않아서.\n않아서.\nbecause it is not; because it does not.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/7f601d2dff7a0791235679e4.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:어땠어요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "어땠어요",
+      "english": "how was it?",
+      "romanization": "eo-ttaet-eo-yo",
+      "frequency": 1,
+      "rank": 276,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "어땠어요.\n어땠어요.\nhow was it?",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/cd6dfb8fb2e023e2d2530063.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:어제는",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "어제는",
+      "english": "yesterday, topic-marked",
+      "romanization": "eo-je-neun",
+      "frequency": 1,
+      "rank": 277,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "어제는.\n어제는.\nyesterday, topic-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/406b373e1af236db21cf5425.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:에어컨을",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "에어컨을",
+      "english": "air conditioner, object-marked",
+      "romanization": "e-eo-keon-eul",
+      "frequency": 1,
+      "rank": 278,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "에어컨을.\n에어컨을.\nair conditioner, object-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/6f3af06302e06be13eef0c7a.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:에어컨이",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "에어컨이",
+      "english": "air conditioner, subject-marked",
+      "romanization": "e-eo-keon-i",
+      "frequency": 1,
+      "rank": 279,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "에어컨이.\n에어컨이.\nair conditioner, subject-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/91260140734b9a6c7af301c3.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:여기가",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "여기가",
+      "english": "here, subject-marked",
+      "romanization": "yeo-gi-ga",
+      "frequency": 1,
+      "rank": 280,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "여기가.\n여기가.\nhere, subject-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/168096952c63cf2f31369309.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:여기서",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "여기서",
+      "english": "here; from here",
+      "romanization": "yeo-gi-seo",
+      "frequency": 1,
+      "rank": 281,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "여기서.\n여기서.\nhere; from here.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/1d94f8cbbe6344a00a48896c.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:여기에서",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "여기에서",
+      "english": "here; from here",
+      "romanization": "yeo-gi-e-seo",
+      "frequency": 1,
+      "rank": 282,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "여기에서.\n여기에서.\nhere; from here.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a6f0b0239592cc9bfac7fadd.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:여기에서는",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "여기에서는",
+      "english": "here, topic-marked",
+      "romanization": "yeo-gi-e-seo-neun",
+      "frequency": 1,
+      "rank": 283,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "여기에서는.\n여기에서는.\nhere, topic-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/2111a06234b0d6575cb478fc.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:여기저기",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "여기저기",
+      "english": "here and there",
+      "romanization": "yeo-gi-jeo-gi",
+      "frequency": 1,
+      "rank": 284,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "여기저기.\n여기저기.\nhere and there.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/54d235afaf6898ae4952d764.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:여러분",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "여러분",
+      "english": "everyone",
+      "romanization": "yeo-reo-bun",
+      "frequency": 1,
+      "rank": 285,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "여러분.\n여러분.\neveryone.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/aa89b21d39c3e54ab9a7a3f1.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:여러분도",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "여러분도",
+      "english": "everyone too",
+      "romanization": "yeo-reo-bun-do",
+      "frequency": 1,
+      "rank": 286,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "여러분도.\n여러분도.\neveryone too.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ba18fc44f478c6807c8b1b00.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:여름에",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "여름에",
+      "english": "in summer",
+      "romanization": "yeo-reum-e",
+      "frequency": 1,
+      "rank": 287,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "여름에.\n여름에.\nin summer.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/70ad73c766e69704bdeb3248.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:여유로운",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "여유로운",
+      "english": "relaxed; leisurely",
+      "romanization": "yeo-yu-ro-un",
+      "frequency": 1,
+      "rank": 288,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "여유로운.\n여유로운.\nrelaxed; leisurely.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/19bb80d3c5ddb4cecbc041de.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:여행에서",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "여행에서",
+      "english": "on the trip; during travel",
+      "romanization": "yeo-haeng-e-seo",
+      "frequency": 1,
+      "rank": 289,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "여행에서.\n여행에서.\non the trip; during travel.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a6c46362859e7dc40861181b.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:여행을",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "여행을",
+      "english": "travel/trip, object-marked",
+      "romanization": "yeo-haeng-eul",
+      "frequency": 1,
+      "rank": 290,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "여행을.\n여행을.\ntravel/trip, object-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/cb3c8f42c235678f79b1a884.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:여행이",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "여행이",
+      "english": "travel, subject-marked",
+      "romanization": "yeo-haeng-i",
+      "frequency": 1,
+      "rank": 291,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "여행이.\n여행이.\ntravel, subject-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/548fe43d607a47e62c2a6d91.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:연습하고",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "연습하고",
+      "english": "practice and",
+      "romanization": "yeon-seup-ha-go",
+      "frequency": 1,
+      "rank": 292,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "연습하고.\n연습하고.\npractice and.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/6329f0217ffc2d5b7b30397c.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:엽서가",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "엽서가",
+      "english": "postcard, subject-marked",
+      "romanization": "yeop-seo-ga",
+      "frequency": 1,
+      "rank": 293,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "엽서가.\n엽서가.\npostcard, subject-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/aa40a7b5083302f4502c371a.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:영어",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "영어",
+      "english": "English",
+      "romanization": "yeong-eo",
+      "frequency": 1,
+      "rank": 294,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "영어.\n영어.\nEnglish.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/84802ccdf9f2d7e344b1136c.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:예쁜",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "예쁜",
+      "english": "pretty",
+      "romanization": "ye-ppeun",
+      "frequency": 1,
+      "rank": 295,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "예쁜.\n예쁜.\npretty.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f7bed81e4ad4167633b56d2d.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:예전에",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "예전에",
+      "english": "before; in the past",
+      "romanization": "ye-jeon-e",
+      "frequency": 1,
+      "rank": 296,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "예전에.\n예전에.\nbefore; in the past.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/4f7e5a26f9da5e15063b4e56.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:오고",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "오고",
+      "english": "come and",
+      "romanization": "o-go",
+      "frequency": 1,
+      "rank": 297,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "오고.\n오고.\ncome and.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/fc40386548e530b692aaa51c.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:오래",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "오래",
+      "english": "a long time",
+      "romanization": "o-rae",
+      "frequency": 1,
+      "rank": 298,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "오래.\n오래.\na long time.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/0e81152fa775ddb50a0db54b.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:오후에",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "오후에",
+      "english": "in the afternoon",
+      "romanization": "o-hu-e",
+      "frequency": 1,
+      "rank": 299,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "오후에.\n오후에.\nin the afternoon.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ddf68cbfeb38547a4bb42c6f.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:완전",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "완전",
+      "english": "completely",
+      "romanization": "wan-jeon",
+      "frequency": 1,
+      "rank": 300,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "완전.\n완전.\ncompletely.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/80a842509372505d25cdd855.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:요거트도",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "요거트도",
+      "english": "yogurt too",
+      "romanization": "yo-geo-teu-do",
+      "frequency": 1,
+      "rank": 301,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "요거트도.\n요거트도.\nyogurt too.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/acbdf211399fc10014c6479e.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:우리는",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "우리는",
+      "english": "we/us, topic-marked",
+      "romanization": "u-ri-neun",
+      "frequency": 1,
+      "rank": 302,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "우리는.\n우리는.\nwe/us, topic-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/fd6fa6d9789cd3d9d96b40c6.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:음",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "음",
+      "english": "um",
+      "romanization": "eum",
+      "frequency": 1,
+      "rank": 303,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "음.\n음.\num.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/60462288c13533ec794f1c9c.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:이런",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "이런",
+      "english": "this kind of",
+      "romanization": "i-reon",
+      "frequency": 1,
+      "rank": 304,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "이런.\n이런.\nthis kind of.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/49468e72ef1aa7f8d92ebe75.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:이를",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "이를",
+      "english": "teeth, object-marked",
+      "romanization": "i-reul",
+      "frequency": 1,
+      "rank": 305,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "이를.\n이를.\nteeth, object-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ba3f9507634964214cce72d3.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:이번",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "이번",
+      "english": "this time",
+      "romanization": "i-beon",
+      "frequency": 1,
+      "rank": 306,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "이번.\n이번.\nthis time.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/5d68ab316ac18089e6d84af7.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:이상",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "이상",
+      "english": "more than",
+      "romanization": "i-sang",
+      "frequency": 1,
+      "rank": 307,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "이상.\n이상.\nmore than.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b0f5a4fc38ec2f8c98c20638.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:일상을",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "일상을",
+      "english": "daily life, object-marked",
+      "romanization": "il-sang-eul",
+      "frequency": 1,
+      "rank": 308,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "일상을.\n일상을.\ndaily life, object-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/aae31f2d0a6ed88a63c2f92a.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:일어났어요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "일어났어요",
+      "english": "woke up",
+      "romanization": "il-eo-nat-eo-yo",
+      "frequency": 1,
+      "rank": 309,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "일어났어요.\n일어났어요.\nwoke up.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c23a925f57bc16dfac0904f6.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:일찍",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "일찍",
+      "english": "early",
+      "romanization": "il-jjik",
+      "frequency": 1,
+      "rank": 310,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "일찍.\n일찍.\nearly.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/7aac9123ba1fd9cc887735f5.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:읽고",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "읽고",
+      "english": "read and",
+      "romanization": "ilk-go",
+      "frequency": 1,
+      "rank": 311,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "읽고.\n읽고.\nread and.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/df1399a912f919eca1c5d294.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:읽었어요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "읽었어요",
+      "english": "read, past tense",
+      "romanization": "ilk-eot-eo-yo",
+      "frequency": 1,
+      "rank": 312,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "읽었어요.\n읽었어요.\nread, past tense.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/771dceb744a6dcc799744392.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:있어서",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "있어서",
+      "english": "because there is; because I have",
+      "romanization": "it-eo-seo",
+      "frequency": 1,
+      "rank": 313,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "있어서.\n있어서.\nbecause there is; because I have.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/3ca88bc5a2dff72ce2f2ca63.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:있었으면",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "있었으면",
+      "english": "if there were; hope there can be",
+      "romanization": "it-eot-eu-myeon",
+      "frequency": 1,
+      "rank": 314,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "있었으면.\n있었으면.\nif there were; hope there can be.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/280a841a02d48765c8be6144.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:자주",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "자주",
+      "english": "often",
+      "romanization": "ja-ju",
+      "frequency": 1,
+      "rank": 315,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "자주.\n자주.\noften.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/fb3149fc01f42408bfec07ad.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:잔",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "잔",
+      "english": "cup; glass",
+      "romanization": "jan",
+      "frequency": 1,
+      "rank": 316,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "잔.\n잔.\ncup; glass.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/95dd73cff09171f11070a243.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:잠깐",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "잠깐",
+      "english": "for a moment",
+      "romanization": "jam-kkan",
+      "frequency": 1,
+      "rank": 317,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "잠깐.\n잠깐.\nfor a moment.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/9030ade7a9296cb67a2c8366.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:재미있는",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "재미있는",
+      "english": "interesting",
+      "romanization": "jae-mi-it-neun",
+      "frequency": 1,
+      "rank": 318,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "재미있는.\n재미있는.\ninteresting.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/7a553702b59e88713ce12292.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:저녁",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "저녁",
+      "english": "evening; dinner",
+      "romanization": "jeo-nyeok",
+      "frequency": 1,
+      "rank": 319,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "저녁.\n저녁.\nevening; dinner.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b2cb9307e33676a3efe7718c.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:저녁을",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "저녁을",
+      "english": "dinner, object-marked",
+      "romanization": "jeo-nyeok-eul",
+      "frequency": 1,
+      "rank": 320,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "저녁을.\n저녁을.\ndinner, object-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/2ac74d35446c457e8cb457cb.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:저처럼",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "저처럼",
+      "english": "like me",
+      "romanization": "jeo-cheo-reom",
+      "frequency": 1,
+      "rank": 321,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "저처럼.\n저처럼.\nlike me.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f1366d0161d05fa1962dc286.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:저한테",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "저한테",
+      "english": "to me",
+      "romanization": "jeo-han-te",
+      "frequency": 1,
+      "rank": 322,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "저한테.\n저한테.\nto me.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a559ed1dbe77c0bcc29f049c.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:정도",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "정도",
+      "english": "about; degree",
+      "romanization": "jeong-do",
+      "frequency": 1,
+      "rank": 323,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "정도.\n정도.\nabout; degree.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/2d013aecc3b28ad25eb0d521.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:제",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "제",
+      "english": "my",
+      "romanization": "je",
+      "frequency": 1,
+      "rank": 324,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "제.\n제.\nmy.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a50171a467cc9fe857dd2824.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:제일",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "제일",
+      "english": "most",
+      "romanization": "je-il",
+      "frequency": 1,
+      "rank": 325,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "제일.\n제일.\nmost.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/42f6a87918947a83fd9bea56.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:져서",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "져서",
+      "english": "went down, so",
+      "romanization": "jyeo-seo",
+      "frequency": 1,
+      "rank": 326,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "져서.\n져서.\nwent down, so.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/19a860a0319053b37ea02610.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:조식은",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "조식은",
+      "english": "breakfast, topic-marked",
+      "romanization": "jo-sik-eun",
+      "frequency": 1,
+      "rank": 327,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "조식은.\n조식은.\nbreakfast, topic-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f7cd43181d66f5220afc31f1.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:조용히",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "조용히",
+      "english": "quietly",
+      "romanization": "jo-yong-hi",
+      "frequency": 1,
+      "rank": 328,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "조용히.\n조용히.\nquietly.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/7547daf9546fa906a3623504.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:좀",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "좀",
+      "english": "a little",
+      "romanization": "jom",
+      "frequency": 1,
+      "rank": 329,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "좀.\n좀.\na little.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/26402634f59015cb25cd30f2.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:좋겠어요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "좋겠어요",
+      "english": "would be good; hope so",
+      "romanization": "joh-get-eo-yo",
+      "frequency": 1,
+      "rank": 330,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "좋겠어요.\n좋겠어요.\nwould be good; hope so.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/8db4738091296a9205a0e601.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:좋아하고",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "좋아하고",
+      "english": "like and",
+      "romanization": "joh-a-ha-go",
+      "frequency": 1,
+      "rank": 331,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "좋아하고.\n좋아하고.\nlike and.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/bc7c3906f697565b9b187c79.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:좋아하는데",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "좋아하는데",
+      "english": "like, but",
+      "romanization": "joh-a-ha-neun-de",
+      "frequency": 1,
+      "rank": 332,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "좋아하는데.\n좋아하는데.\nlike, but.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/8200607642531ea3ab8cbf54.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:좋아해서",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "좋아해서",
+      "english": "because I like",
+      "romanization": "joh-a-hae-seo",
+      "frequency": 1,
+      "rank": 333,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "좋아해서.\n좋아해서.\nbecause I like.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/565f1778b5b54314ad78bbee.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:좋아해요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "좋아해요",
+      "english": "like",
+      "romanization": "joh-a-hae-yo",
+      "frequency": 1,
+      "rank": 334,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "좋아해요.\n좋아해요.\nlike.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/783a5f28e2257983640e2919.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:주문하지만",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "주문하지만",
+      "english": "order, but",
+      "romanization": "ju-mun-ha-ji-man",
+      "frequency": 1,
+      "rank": 335,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "주문하지만.\n주문하지만.\norder, but.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/16eda8559944f37e8dadfaf7.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:줄이",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "줄이",
+      "english": "line/queue, subject-marked",
+      "romanization": "jul-i",
+      "frequency": 1,
+      "rank": 336,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "줄이.\n줄이.\nline/queue, subject-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e3062944e7bb359d8defe1dc.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:즉흥적으로",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "즉흥적으로",
+      "english": "spontaneously",
+      "romanization": "jeuk-heung-jeok-eu-ro",
+      "frequency": 1,
+      "rank": 337,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "즉흥적으로.\n즉흥적으로.\nspontaneously.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/9d1528ae2df380b36a19a750.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:즐기고",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "즐기고",
+      "english": "enjoy and",
+      "romanization": "jeul-gi-go",
+      "frequency": 1,
+      "rank": 338,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "즐기고.\n즐기고.\nenjoy and.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/980fe266fc71e243adac7903.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:지연돼서",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "지연돼서",
+      "english": "because it was delayed",
+      "romanization": "ji-yeon-dwae-seo",
+      "frequency": 1,
+      "rank": 339,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "지연돼서.\n지연돼서.\nbecause it was delayed.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e330959a9dcf692bb83a90a9.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:진짜",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "진짜",
+      "english": "really",
+      "romanization": "jin-jja",
+      "frequency": 1,
+      "rank": 340,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "진짜.\n진짜.\nreally.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f47bb4a331f7d6a6751d3d8a.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:책을",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "책을",
+      "english": "book, object-marked",
+      "romanization": "chaek-eul",
+      "frequency": 1,
+      "rank": 341,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "책을.\n책을.\nbook, object-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e6f11b0be0018571465331df.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:추운데",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "추운데",
+      "english": "is cold, but",
+      "romanization": "chu-un-de",
+      "frequency": 1,
+      "rank": 342,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "추운데.\n추운데.\nis cold, but.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b3074ab99c9002865b936739.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:출발할",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "출발할",
+      "english": "will depart",
+      "romanization": "chul-bal-hal",
+      "frequency": 1,
+      "rank": 343,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "출발할.\n출발할.\nwill depart.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/db92b408196a604189fb9f2a.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:치즈",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "치즈",
+      "english": "cheese",
+      "romanization": "chi-jeu",
+      "frequency": 1,
+      "rank": 344,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "치즈.\n치즈.\ncheese.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/bd61ae0d9a8c57a2d0a9099b.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:카페를",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "카페를",
+      "english": "cafe, object-marked",
+      "romanization": "ka-pe-reul",
+      "frequency": 1,
+      "rank": 345,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "카페를.\n카페를.\ncafe, object-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/7181b8e5eb7078dd7a970086.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:카페에도",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "카페에도",
+      "english": "cafe, also at/to",
+      "romanization": "ka-pe-e-do",
+      "frequency": 1,
+      "rank": 346,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "카페에도.\n카페에도.\ncafe, also at/to.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d6d1a33e808614a49da543ea.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:커피도",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "커피도",
+      "english": "coffee, also; too",
+      "romanization": "keo-pi-do",
+      "frequency": 1,
+      "rank": 347,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "커피도.\n커피도.\ncoffee, also; too.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/540c146147ebb85a814e5318.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:타러",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "타러",
+      "english": "in order to ride/take",
+      "romanization": "ta-reo",
+      "frequency": 1,
+      "rank": 348,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "타러.\n타러.\nin order to ride/take.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/33ea02be71090c2e93d3021c.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:타야",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "타야",
+      "english": "must ride/take",
+      "romanization": "ta-ya",
+      "frequency": 1,
+      "rank": 349,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "타야.\n타야.\nmust ride/take.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/4d0bc64078beda21acb78669.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:타요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "타요",
+      "english": "ride; take transport",
+      "romanization": "ta-yo",
+      "frequency": 1,
+      "rank": 350,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "타요.\n타요.\nride; take transport.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/3f7f4227a5ebbc61b5620fb5.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:탈",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "탈",
+      "english": "will ride; will take transport",
+      "romanization": "tal",
+      "frequency": 1,
+      "rank": 351,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "탈.\n탈.\nwill ride; will take transport.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/02437a11add41f604e2fcd13.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:특히",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "특히",
+      "english": "especially",
+      "romanization": "teuk-hi",
+      "frequency": 1,
+      "rank": 352,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "특히.\n특히.\nespecially.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/2daca01dae0b0ea898ed9c18.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:틀어요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "틀어요",
+      "english": "turn on",
+      "romanization": "teul-eo-yo",
+      "frequency": 1,
+      "rank": 353,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "틀어요.\n틀어요.\nturn on.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c904bc1888697427653c562a.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:파는",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "파는",
+      "english": "selling",
+      "romanization": "pa-neun",
+      "frequency": 1,
+      "rank": 354,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "파는.\n파는.\nselling.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/88bc23bb8b51c7fca38c738b.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:파리가",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "파리가",
+      "english": "Paris, subject-marked",
+      "romanization": "pa-ri-ga",
+      "frequency": 1,
+      "rank": 355,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "파리가.\n파리가.\nParis, subject-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a80f81794e23bf7669c693a2.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:파리를",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "파리를",
+      "english": "Paris, object-marked",
+      "romanization": "pa-ri-reul",
+      "frequency": 1,
+      "rank": 356,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "파리를.\n파리를.\nParis, object-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/baf139baf41d3ef65a6be8fe.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:파리에서도",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "파리에서도",
+      "english": "in Paris too",
+      "romanization": "pa-ri-e-seo-do",
+      "frequency": 1,
+      "rank": 357,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "파리에서도.\n파리에서도.\nin Paris too.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/849526eecea1d1f09771bd43.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:파리하고",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "파리하고",
+      "english": "with Paris",
+      "romanization": "pa-ri-ha-go",
+      "frequency": 1,
+      "rank": 358,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "파리하고.\n파리하고.\nwith Paris.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/69de88d6656a7027dcdda216.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:편했어요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "편했어요",
+      "english": "was comfortable",
+      "romanization": "pyeon-haet-eo-yo",
+      "frequency": 1,
+      "rank": 359,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "편했어요.\n편했어요.\nwas comfortable.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/4693f9b2a88218d1732be513.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:프랑스어도",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "프랑스어도",
+      "english": "French too",
+      "romanization": "peu-rang-seu-eo-do",
+      "frequency": 1,
+      "rank": 360,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "프랑스어도.\n프랑스어도.\nFrench too.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/dcb4ee4555432f1928c56c1d.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:피곤했어요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "피곤했어요",
+      "english": "was tired",
+      "romanization": "pi-gon-haet-eo-yo",
+      "frequency": 1,
+      "rank": 361,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "피곤했어요.\n피곤했어요.\nwas tired.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/660d6dd54a3ac8d85eac51c0.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:하나",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "하나",
+      "english": "one",
+      "romanization": "ha-na",
+      "frequency": 1,
+      "rank": 362,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "하나.\n하나.\none.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a36e8e1814ac81cd64d31d56.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:하다가",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "하다가",
+      "english": "while doing; after doing",
+      "romanization": "ha-da-ga",
+      "frequency": 1,
+      "rank": 363,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "하다가.\n하다가.\nwhile doing; after doing.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/055415ed93d3da62b06f9e4f.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:하루를",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "하루를",
+      "english": "day, object-marked",
+      "romanization": "ha-ru-reul",
+      "frequency": 1,
+      "rank": 364,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "하루를.\n하루를.\nday, object-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/34869ed00194bf1bea496dd3.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:하면서",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "하면서",
+      "english": "while doing",
+      "romanization": "ha-myeon-seo",
+      "frequency": 1,
+      "rank": 365,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "하면서.\n하면서.\nwhile doing.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/dc71fdc572f85ec41d3acc7e.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:한국에서는",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "한국에서는",
+      "english": "in Korea, topic-marked",
+      "romanization": "han-guk-e-seo-neun",
+      "frequency": 1,
+      "rank": 366,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "한국에서는.\n한국에서는.\nin Korea, topic-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d03de005f79690b395d87735.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:할",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "할",
+      "english": "will do; going to do",
+      "romanization": "hal",
+      "frequency": 1,
+      "rank": 367,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "할.\n할.\nwill do; going to do.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/949718e9a4a7e4a18bc4cbfc.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:항상",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "항상",
+      "english": "always",
+      "romanization": "hang-sang",
+      "frequency": 1,
+      "rank": 368,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "항상.\n항상.\nalways.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/3cb7513e2518c20ef78e98bc.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:해가",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "해가",
+      "english": "sun, subject-marked",
+      "romanization": "hae-ga",
+      "frequency": 1,
+      "rank": 369,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "해가.\n해가.\nsun, subject-marked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/4df6b99eee95dc66eda36591.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:해봤어요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "해봤어요",
+      "english": "have tried; have done before",
+      "romanization": "hae-bwat-eo-yo",
+      "frequency": 1,
+      "rank": 370,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "해봤어요.\n해봤어요.\nhave tried; have done before.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/6cbfb87626bd2ad108bcdf4f.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:해야",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "해야",
+      "english": "must do",
+      "romanization": "hae-ya",
+      "frequency": 1,
+      "rank": 371,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "해야.\n해야.\nmust do.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f3182f4f2d461b8f4a9a86d6.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:햄",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "햄",
+      "english": "ham",
+      "romanization": "haem",
+      "frequency": 1,
+      "rank": 372,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "햄.\n햄.\nham.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/3b1905b94aca7dd7efdb2fec.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:했지",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "했지",
+      "english": "did, right?; what did I do?",
+      "romanization": "haet-ji",
+      "frequency": 1,
+      "rank": 373,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "했지.\n했지.\ndid, right?; what did I do?",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/5abacc8cb85ec2290aaf471f.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:행복해요",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "행복해요",
+      "english": "am happy; is happy",
+      "romanization": "haeng-bok-hae-yo",
+      "frequency": 1,
+      "rank": 374,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "행복해요.\n행복해요.\nam happy; is happy.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/16777a64f07a4a881974d4de.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:훨씬",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "훨씬",
+      "english": "much more",
+      "romanization": "hwol-ssin",
+      "frequency": 1,
+      "rank": 375,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "훨씬.\n훨씬.\nmuch more.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/537c495676ab225a9b14bc29.mp3"
+      }
+    },
+    {
+      "key": "ko:vlog-word:힘들었지만",
+      "category": "vlog-word",
+      "language": "ko",
+      "hebrew": "힘들었지만",
+      "english": "was hard/tiring, but",
+      "romanization": "him-deul-eot-ji-man",
+      "frequency": 1,
+      "rank": 376,
+      "source": "Learn Korean with a Real-Life Vlog",
+      "videoId": "Hv06xQmsM-s",
+      "text": "힘들었지만.\n힘들었지만.\nwas hard/tiring, but.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/023102402efe52597c5c77f1.mp3"
       }
     },
     {

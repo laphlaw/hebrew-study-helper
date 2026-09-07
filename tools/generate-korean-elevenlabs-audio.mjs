@@ -8,6 +8,7 @@ const scriptPath = path.join(root, "script.js");
 const audioDir = path.join(root, "public", "audio", "elevenlabs");
 const cacheDir = path.join(audioDir, "cache");
 const manifestPath = path.join(audioDir, "korean-bank.json");
+const vlogWordsSourcePath = path.join(audioDir, "korean-vlog-words-source.json");
 
 function loadDotEnvLocal() {
   const envPath = path.join(root, ".env.local");
@@ -140,8 +141,15 @@ function loadKoreanBank() {
   return {
     phrases: vm.runInNewContext(extractArraySource(source, "koreanPhraseCards")),
     nouns: vm.runInNewContext(extractArraySource(source, "koreanNounCards")),
-    verbs: vm.runInNewContext(extractArraySource(source, "koreanVerbCards"))
+    verbs: vm.runInNewContext(extractArraySource(source, "koreanVerbCards")),
+    vlogWords: loadKoreanVlogWords()
   };
+}
+
+function loadKoreanVlogWords() {
+  if (!fs.existsSync(vlogWordsSourcePath)) return [];
+  const source = JSON.parse(fs.readFileSync(vlogWordsSourcePath, "utf8"));
+  return Array.isArray(source.cards) ? source.cards : [];
 }
 
 function hashAudioRequest({ voiceId, modelId, outputFormat, text }) {
@@ -204,6 +212,19 @@ function koreanCardsFromBank(bank) {
     romanization
   }));
 
+  const vlogWordCards = bank.vlogWords.map((card) => ({
+    key: `ko:vlog-word:${card.hebrew}`,
+    category: "vlog-word",
+    language: "ko",
+    hebrew: card.hebrew,
+    english: card.english,
+    romanization: card.romanization,
+    frequency: card.frequency,
+    rank: card.rank,
+    source: card.source,
+    videoId: card.videoId
+  }));
+
   const verbCards = bank.verbs.flatMap((card) => (
     Object.entries(koreanVerbTenses).map(([tense, config]) => ({
       key: `ko:verb:${card[0]}:${tense}`,
@@ -216,7 +237,14 @@ function koreanCardsFromBank(bank) {
     }))
   ));
 
-  return [...phraseCards, ...nounCards, ...verbCards];
+  return [...phraseCards, ...vlogWordCards, ...nounCards, ...verbCards];
+}
+
+function formatCategoryCounts(counts) {
+  return Object.entries(counts)
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(([category, count]) => `${count} ${category}`)
+    .join(", ");
 }
 
 async function generateAudio(request, apiKey) {
@@ -302,7 +330,7 @@ async function main() {
 
   console.log("Korean word bank");
   console.log(`Voice: ${args.voiceId}`);
-  console.log(`${cards.length} cards (${counts.phrase || 0} phrases, ${counts.noun || 0} nouns, ${counts.verb || 0} verb tense forms)`);
+  console.log(`${cards.length} cards (${formatCategoryCounts(counts)})`);
   console.log(`${requests.length} unique audio files (${cached} cached, ${missing.length} to generate)`);
   console.log(`${newCredits} new credits needed (${totalCredits} total cached deck credits)`);
 
