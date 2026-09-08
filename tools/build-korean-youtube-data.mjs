@@ -44,6 +44,81 @@ function koreanTokens(value = "") {
   return value.match(/[가-힣]+/g) || [];
 }
 
+const hangulStart = 0xac00;
+const hangulEnd = 0xd7a3;
+const initialRomanizations = [
+  "g", "kk", "n", "d", "tt", "r", "m", "b", "pp", "s",
+  "ss", "", "j", "jj", "ch", "k", "t", "p", "h"
+];
+const medialRomanizations = [
+  "a", "ae", "ya", "yae", "eo", "e", "yeo", "ye", "o", "wa",
+  "wae", "oe", "yo", "u", "wo", "we", "wi", "yu", "eu", "ui", "i"
+];
+const finalRomanizations = [
+  "", "k", "k", "ks", "n", "nj", "nh", "t", "l", "lk",
+  "lm", "lb", "ls", "lt", "lp", "lh", "m", "p", "ps", "t",
+  "t", "ng", "t", "t", "k", "t", "p", "h"
+];
+
+function romanizeHangul(value = "") {
+  return [...value]
+    .map((character) => {
+      const codePoint = character.codePointAt(0);
+      if (codePoint < hangulStart || codePoint > hangulEnd) return character;
+
+      const syllableIndex = codePoint - hangulStart;
+      const initialIndex = Math.floor(syllableIndex / 588);
+      const medialIndex = Math.floor((syllableIndex % 588) / 28);
+      const finalIndex = syllableIndex % 28;
+      return `${initialRomanizations[initialIndex]}${medialRomanizations[medialIndex]}${finalRomanizations[finalIndex]}`;
+    })
+    .join("")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+// Classify each complete spoken form, including any attached particles.
+// Descriptive predicates are grouped with verbs for the app's three-part filter.
+const koreanVlogNouns = new Set(`
+  기차를 파리에 오늘 오늘은 것 카페에서 숙소에 날씨가 햇빛이 분 카페에 조식을
+  커피를 엽서를 걸 도시가 스페인어도 기차 책도 아침에 브런치를 숙소에서 내일
+  여행지에서 시간이 시간 서점에 마음에 사실 빨래를 아침을 게 숙소로 짐을
+  노트북으로 일을 아메리카노를 아이스 친구들도 사람들이 에너지가 프랑스어를
+  안에서 브런치도 이상 해가 실내에서도 에어컨이 에어컨을 여름에 한국에서는
+  실내가 저녁 근처 식당에 관광지에 관광지가 사람에게 정도 바르셀로나가 파리하고
+  분위기도 사람들도 매력이 서점에서 서점은 영어 책을 엽서가 저녁을 세탁기하고
+  건조기가 하루를 기분이 여행이 아침은 계란 빵 조식은 치즈 햄 어제는 오후에
+  산책을 때 잔 커피도 시에 바르셀로나를 샤워를 기차역으로 목이 라떼를 매일
+  요거트도 바르셀로나에는 사람이 카페를 건 스페인을 월에 파리를 파리가 빵도
+  빵집에서 카페에도 산책도 관광은 파리에서도 일상을 도시는 번 스페인어로
+  스페인어를 수 것도 기차역에서 줄이 시 동안 그저께 스페인에서 기차가 물이
+  생수로 손을 이를 여행을 여행에서 이번 스페인만 계획을 프랑스어도
+`.trim().split(/\s+/));
+
+const koreanVlogVerbs = new Set(`
+  싶어요 있어요 거예요 같아요 가서 먹고 나왔어요 산책하고 했는데 일어나서 먹었어요
+  가고 더워요 쉬고 더워서 추워요 있었어요 구경하고 했어요 가는 생각했어요 달라요
+  다르고 있는 돼요 좋아요 없을 타고 돌아가서 싸고 일하는 넘쳐요 왔어요 도착했어요
+  일어났어요 피곤했어요 읽고 싶었어요 산책하려고 강하고 걸어요 들어가서 될 쉬어야
+  져서 세지 않아서 틀어요 추운데 시간이에요 먹으려고 먹었는데 맛있었어요 가는데
+  보고 싶은 했지 마시면서 썼어요 사랑하는 쓰는 행복해요 읽었어요 쉬다가 좋아해요
+  들러서 돌아갈 들어요 거라고 비슷할 다른 서점이에요 파는 구경했는데 많았어요
+  재미있는 보면 사고 샀어요 구경할 거에요 먹을 해야 있어서 쉴 보내고 여유로운
+  스타일이에요 간단한 강해서 못했어요 싶어서 걷고 걷다가 마시고 타야 떠나요 가요
+  마신 갈 앉아 하면서 마셔요 좋아하는데 더우니까 말라요 주문하지만 마셨어요 타러
+  하다가 출발할 많아요 맞는다고 좋아하고 앉아서 좋아해서 편했어요 떠나는 슬프지만
+  기대돼요 떠난 그리웠어요 맛있는 사먹고 가던 만날 할 즐기고 들었는데 멋있어요
+  오고 예쁜 들으면 말하는 못하지만 아름다워요 배운 배울 있었으면 좋겠어요 걸릴
+  배우는 배우고 기다리고 길어요 타요 탈 지연돼서 힘들었지만 나와서 닦았어요 씻고
+  해봤어요 어땠어요 가려고 바꿨어요 만나고 연습하고 만나요
+`.trim().split(/\s+/));
+
+function koreanVlogPartOfSpeech(word) {
+  if (koreanVlogNouns.has(word)) return "noun";
+  if (koreanVlogVerbs.has(word)) return "verb";
+  return "other";
+}
+
 function readCaptions(sourcePath) {
   const source = JSON.parse(fs.readFileSync(sourcePath, "utf8"));
   return (source.events || [])
@@ -92,7 +167,9 @@ const words = [...counts.entries()]
   .map(([word, count]) => ({
     word,
     count,
+    pos: koreanVlogPartOfSpeech(word),
     english: glosses[word] || "",
+    romanization: romanizeHangul(word),
     contextEnglish: captions[firstCaptionIndexes.get(word)]?.englishText || "",
     firstCaptionIndex: firstCaptionIndexes.get(word) || 0,
     firstTokenIndex: firstTokenIndexes.get(word) || 0
@@ -106,6 +183,16 @@ const words = [...counts.entries()]
 const missingGlosses = words.filter((entry) => !entry.english).map((entry) => entry.word);
 if (missingGlosses.length) {
   throw new Error(`Missing Korean glosses: ${missingGlosses.join(", ")}`);
+}
+
+const sourceWords = new Set(words.map((entry) => entry.word));
+const unknownTaggedWords = [...koreanVlogNouns, ...koreanVlogVerbs].filter((word) => !sourceWords.has(word));
+const overlappingTaggedWords = [...koreanVlogNouns].filter((word) => koreanVlogVerbs.has(word));
+if (unknownTaggedWords.length || overlappingTaggedWords.length) {
+  throw new Error([
+    unknownTaggedWords.length && `Unknown POS words: ${unknownTaggedWords.join(", ")}`,
+    overlappingTaggedWords.length && `Overlapping POS words: ${overlappingTaggedWords.join(", ")}`
+  ].filter(Boolean).join("\n"));
 }
 
 const data = {

@@ -13,6 +13,7 @@ const sampleWords = [
 
 let allWords = [...sampleWords];
 let studyWords = [...allWords];
+let listedWords = [...studyWords];
 let visibleWords = [...studyWords];
 let verbGroups = [];
 let currentVerbIndex = 0;
@@ -48,9 +49,12 @@ const autoAdvanceStorageKey = "hebrew-study-helper:auto-advance";
 const orderStorageKey = "hebrew-study-helper:word-order";
 const preferencesStorageKey = "hebrew-study-helper:preferences";
 const koreanVideoStorageKey = "hebrew-study-helper:korean-video";
+const koreanAlphabetPracticeSets = ["all", "consonants", "vowels"];
+const flashcardSkippedWordsStorageKey = "hebrew-study-helper:flashcard-skipped-words";
 const elevenLabsSkippedWordsStorageKey = "hebrew-study-helper:elevenlabs-skipped-words";
 const elevenLabsPlaybackStorageKey = "hebrew-study-helper:elevenlabs-playback";
 const masteredWords = loadMasteredWordKeys();
+let flashcardSkippedWords = loadFlashcardSkippedWords();
 const elevenLabsPlaybackPreferences = loadElevenLabsPlaybackPreferences();
 let elevenLabsSkippedWords = loadElevenLabsSkippedWords();
 let elevenLabsShuffleEnabled = elevenLabsPlaybackPreferences.shuffle;
@@ -110,6 +114,9 @@ const els = {
   settingsDialog: document.querySelector("#settings-dialog"),
   settingsSection: document.querySelector("#settings-section"),
   wordListSection: document.querySelector("#word-list-section"),
+  wordListStatus: document.querySelector("#word-list-status"),
+  wordListAllButton: document.querySelector("#word-list-all-button"),
+  wordListNoneButton: document.querySelector("#word-list-none-button"),
   cardButton: document.querySelector("#card-button"),
   revealButton: document.querySelector("#reveal-button"),
   previousWordButton: document.querySelector("#previous-word-button"),
@@ -125,6 +132,10 @@ const els = {
   searchInput: document.querySelector("#search-input"),
   showMasteredToggle: document.querySelector("#show-mastered-toggle"),
   orderSelect: document.querySelector("#order-select"),
+  wordListPosFilter: document.querySelector("#word-list-pos-filter"),
+  frequencyOrderOption: document.querySelector("#frequency-order-option"),
+  koreanAlphabetFilterLabel: document.querySelector("#korean-alphabet-filter-label"),
+  koreanAlphabetFilterSelect: document.querySelector("#korean-alphabet-filter-select"),
   autoAdvanceToggle: document.querySelector("#auto-advance-toggle"),
   autoAdvanceSpeed: document.querySelector("#auto-advance-speed"),
   autoAdvanceLabel: document.querySelector("#auto-advance-label"),
@@ -152,11 +163,177 @@ const supportedLanguages = {
 
 const languageModes = {
   hebrew: ["study", "reading", "audio", "writing", "verbs"],
-  korean: ["study", "reading"]
+  korean: ["study", "reading", "alphabet"]
+};
+
+const koreanConsonants = [
+  { letter: "ㄱ", romanization: "g", group: "basic consonant" },
+  { letter: "ㄴ", romanization: "n", group: "basic consonant" },
+  { letter: "ㄷ", romanization: "d", group: "basic consonant" },
+  { letter: "ㄹ", romanization: "r", group: "basic consonant" },
+  { letter: "ㅁ", romanization: "m", group: "basic consonant" },
+  { letter: "ㅂ", romanization: "b", group: "basic consonant" },
+  { letter: "ㅅ", romanization: "s", group: "basic consonant" },
+  { letter: "ㅇ", romanization: "", group: "basic consonant" },
+  { letter: "ㅈ", romanization: "j", group: "basic consonant" },
+  { letter: "ㅊ", romanization: "ch", group: "basic consonant" },
+  { letter: "ㅋ", romanization: "k", group: "basic consonant" },
+  { letter: "ㅌ", romanization: "t", group: "basic consonant" },
+  { letter: "ㅍ", romanization: "p", group: "basic consonant" },
+  { letter: "ㅎ", romanization: "h", group: "basic consonant" },
+  { letter: "ㄲ", romanization: "kk", group: "double consonant" },
+  { letter: "ㄸ", romanization: "tt", group: "double consonant" },
+  { letter: "ㅃ", romanization: "pp", group: "double consonant" },
+  { letter: "ㅆ", romanization: "ss", group: "double consonant" },
+  { letter: "ㅉ", romanization: "jj", group: "double consonant" }
+];
+
+const koreanVowels = [
+  { letter: "ㅏ", romanization: "a", group: "basic vowel" },
+  { letter: "ㅑ", romanization: "ya", group: "basic vowel" },
+  { letter: "ㅓ", romanization: "eo", group: "basic vowel" },
+  { letter: "ㅕ", romanization: "yeo", group: "basic vowel" },
+  { letter: "ㅗ", romanization: "o", group: "basic vowel" },
+  { letter: "ㅛ", romanization: "yo", group: "basic vowel" },
+  { letter: "ㅜ", romanization: "u", group: "basic vowel" },
+  { letter: "ㅠ", romanization: "yu", group: "basic vowel" },
+  { letter: "ㅡ", romanization: "eu", group: "basic vowel" },
+  { letter: "ㅣ", romanization: "i", group: "basic vowel" },
+  { letter: "ㅐ", romanization: "ae", group: "compound vowel" },
+  { letter: "ㅒ", romanization: "yae", group: "compound vowel" },
+  { letter: "ㅔ", romanization: "e", group: "compound vowel" },
+  { letter: "ㅖ", romanization: "ye", group: "compound vowel" },
+  { letter: "ㅘ", romanization: "wa", group: "compound vowel" },
+  { letter: "ㅙ", romanization: "wae", group: "compound vowel" },
+  { letter: "ㅚ", romanization: "oe", group: "compound vowel" },
+  { letter: "ㅝ", romanization: "wo", group: "compound vowel" },
+  { letter: "ㅞ", romanization: "we", group: "compound vowel" },
+  { letter: "ㅟ", romanization: "wi", group: "compound vowel" },
+  { letter: "ㅢ", romanization: "ui", group: "compound vowel" }
+];
+
+const koreanInitialIndexes = {
+  "ㄱ": 0,
+  "ㄲ": 1,
+  "ㄴ": 2,
+  "ㄷ": 3,
+  "ㄸ": 4,
+  "ㄹ": 5,
+  "ㅁ": 6,
+  "ㅂ": 7,
+  "ㅃ": 8,
+  "ㅅ": 9,
+  "ㅆ": 10,
+  "ㅇ": 11,
+  "ㅈ": 12,
+  "ㅉ": 13,
+  "ㅊ": 14,
+  "ㅋ": 15,
+  "ㅌ": 16,
+  "ㅍ": 17,
+  "ㅎ": 18
+};
+
+const koreanVowelIndexes = {
+  "ㅏ": 0,
+  "ㅐ": 1,
+  "ㅑ": 2,
+  "ㅒ": 3,
+  "ㅓ": 4,
+  "ㅔ": 5,
+  "ㅕ": 6,
+  "ㅖ": 7,
+  "ㅗ": 8,
+  "ㅘ": 9,
+  "ㅙ": 10,
+  "ㅚ": 11,
+  "ㅛ": 12,
+  "ㅜ": 13,
+  "ㅝ": 14,
+  "ㅞ": 15,
+  "ㅟ": 16,
+  "ㅠ": 17,
+  "ㅡ": 18,
+  "ㅢ": 19,
+  "ㅣ": 20
+};
+
+const koreanFinalIndexes = {
+  "ㅇ": 21
 };
 
 function wordFromParts(hebrew, english, pos, root, morph = "", refs = [], strong = "", details = {}) {
   return [hebrew, english, pos, root || hebrew, morph, refs, strong, details];
+}
+
+function randomItem(items) {
+  return items[Math.floor(Math.random() * items.length)];
+}
+
+function composeKoreanSyllable(consonant, vowel, finalConsonant = "") {
+  const initialIndex = koreanInitialIndexes[consonant.letter];
+  const vowelIndex = koreanVowelIndexes[vowel.letter];
+  const finalIndex = finalConsonant ? koreanFinalIndexes[finalConsonant] : 0;
+  if (initialIndex === undefined || vowelIndex === undefined) return `${consonant.letter}${vowel.letter}`;
+  return String.fromCodePoint(0xAC00 + ((initialIndex * 21) + vowelIndex) * 28 + finalIndex);
+}
+
+function koreanPronunciationRomanization(consonant, vowel) {
+  if (consonant.letter === "ㅅ" && vowel.letter === "ㅣ") return "shi";
+  if (consonant.letter === "ㅆ" && vowel.letter === "ㅣ") return "sshi";
+  return `${consonant.romanization}${vowel.romanization}`;
+}
+
+function koreanAlphabetWordFromParts(syllable, romanization, pos, root, group, components) {
+  return wordFromParts(syllable, romanization, pos, root, "", [], "", {
+    breakdown: [
+      {
+        part: components,
+        meaning: group
+      }
+    ]
+  });
+}
+
+function selectedKoreanAlphabetPracticeSet() {
+  return koreanAlphabetPracticeSets.includes(els.koreanAlphabetFilterSelect.value)
+    ? els.koreanAlphabetFilterSelect.value
+    : "all";
+}
+
+function buildKoreanAlphabetCards(practiceSet = selectedKoreanAlphabetPracticeSet()) {
+  const basicVowels = koreanVowels.filter((vowel) => vowel.group === "basic vowel");
+  const consonantCards = koreanConsonants.map((consonant) => {
+    const vowel = randomItem(basicVowels);
+    const isIeung = consonant.letter === "ㅇ";
+    const syllable = composeKoreanSyllable(consonant, vowel, isIeung ? "ㅇ" : "");
+    const romanization = isIeung ? `${vowel.romanization}ng` : koreanPronunciationRomanization(consonant, vowel);
+    return koreanAlphabetWordFromParts(
+      syllable,
+      romanization,
+      "consonant",
+      consonant.letter,
+      `${consonant.group} + ${vowel.group}`,
+      isIeung ? `ㅇ + ${vowel.letter} + ㅇ` : `${consonant.letter} + ${vowel.letter}`
+    );
+  });
+
+  const vowelCards = koreanVowels.map((vowel) => {
+    const silentCarrier = { letter: "ㅇ", romanization: "", group: "silent carrier" };
+    const syllable = composeKoreanSyllable(silentCarrier, vowel);
+    return koreanAlphabetWordFromParts(
+      syllable,
+      vowel.romanization,
+      "vowel",
+      vowel.letter,
+      vowel.group,
+      `ㅇ + ${vowel.letter}`
+    );
+  });
+
+  if (practiceSet === "consonants") return consonantCards;
+  if (practiceSet === "vowels") return vowelCards;
+  return [...consonantCards, ...vowelCards];
 }
 
 
@@ -219,6 +396,27 @@ function getWordKey([hebrew, , pos, root]) {
   return `${pos}|${normalizeMasteredKeyPart(root || hebrew)}`;
 }
 
+function getFlashcardWordKey([word, , pos, root]) {
+  return `${selectedLanguage}|${normalizeMasteredKeyPart(word)}|${pos}|${normalizeMasteredKeyPart(root || word)}`;
+}
+
+function loadFlashcardSkippedWords() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(flashcardSkippedWordsStorageKey) || "[]");
+    return new Set(Array.isArray(saved) ? saved.filter(Boolean) : []);
+  } catch {
+    return new Set();
+  }
+}
+
+function saveFlashcardSkippedWords() {
+  localStorage.setItem(flashcardSkippedWordsStorageKey, JSON.stringify([...flashcardSkippedWords]));
+}
+
+function isFlashcardWordEnabled(word) {
+  return !flashcardSkippedWords.has(getFlashcardWordKey(word));
+}
+
 function isWordMastered(word) {
   return masteredWords.has(getWordKey(word));
 }
@@ -261,7 +459,12 @@ function getSavedPreferences() {
       direction: saved.direction === "english" ? "english" : "hebrew",
       partOfSpeech: ["noun", "verb", "other"].includes(saved.partOfSpeech) ? saved.partOfSpeech : "all",
       showMastered: Boolean(saved.showMastered),
-      order: saved.order === "ordered" || localStorage.getItem(orderStorageKey) === "ordered" ? "ordered" : "random",
+      order: ["ordered", "frequency", "random"].includes(saved.order)
+        ? saved.order
+        : localStorage.getItem(orderStorageKey) === "ordered" ? "ordered" : "random",
+      koreanAlphabetPracticeSet: koreanAlphabetPracticeSets.includes(saved.koreanAlphabetPracticeSet)
+        ? saved.koreanAlphabetPracticeSet
+        : "all",
       theme: saved.theme === "dark" ? "dark" : "light",
       readingFontSize: clampReadingFontSize(saved.readingFontSize),
       autoAdvance: {
@@ -277,6 +480,7 @@ function getSavedPreferences() {
       partOfSpeech: "all",
       showMastered: false,
       order: "random",
+      koreanAlphabetPracticeSet: "all",
       theme: "light",
       readingFontSize: 3.2,
       autoAdvance: { enabled: false, seconds: 3 }
@@ -292,6 +496,7 @@ function savePreferences() {
     partOfSpeech: els.posSelect.value,
     showMastered: els.showMasteredToggle.checked,
     order: els.orderSelect.value,
+    koreanAlphabetPracticeSet: els.koreanAlphabetFilterSelect.value,
     theme: getCurrentTheme(),
     readingFontSize: getReadingFontSize(),
     autoAdvance: {
@@ -312,6 +517,7 @@ function applySavedPreferences() {
   els.posSelect.value = preferences.partOfSpeech;
   els.showMasteredToggle.checked = preferences.showMastered;
   els.orderSelect.value = preferences.order;
+  els.koreanAlphabetFilterSelect.value = preferences.koreanAlphabetPracticeSet;
   els.readingFontSize.value = String(preferences.readingFontSize);
   els.autoAdvanceToggle.checked = preferences.autoAdvance.enabled;
   els.autoAdvanceSpeed.value = String(preferences.autoAdvance.seconds);
@@ -356,12 +562,15 @@ function updateLanguageLabels() {
   if (verbModeOption) verbModeOption.textContent = "Verb Practice";
   els.directionSelect.options[0].textContent = `${sourceLabel} to English`;
   els.directionSelect.options[1].textContent = `English to ${sourceLabel}`;
-  if (isKoreanSelected()) {
+  if (isKoreanSelected() && currentMode === "alphabet") {
+    els.searchInput.placeholder = "Search Hangul, romanization, or group";
+  } else if (isKoreanSelected()) {
     els.searchInput.placeholder = "Search Korean caption words";
   } else {
     els.searchInput.placeholder = `Search ${sourceLabel}, root, or English`;
   }
-  els.listTitle.textContent = isKoreanSelected() ? "Words by Frequency" : "Words";
+  els.listTitle.textContent = isKoreanSelected() && currentMode === "study" ? "Words by Frequency" : "Words";
+  els.koreanAlphabetFilterLabel.classList.toggle("hidden", !(isKoreanSelected() && currentMode === "alphabet"));
 }
 
 
@@ -1293,7 +1502,7 @@ function renderMode() {
   els.audioFlashcardSection.classList.toggle("hidden", !audioMode);
   els.verbPracticeSection.classList.toggle("hidden", !verbMode);
   els.writingSection.classList.toggle("hidden", !writingMode);
-  els.settingsButton.classList.toggle("hidden", readingMode || audioMode || verbMode || alphabetMode);
+  els.settingsButton.classList.toggle("hidden", readingMode || audioMode || verbMode);
   els.wordListSection.classList.toggle("hidden", (currentMode === "reading") || audioMode || verbMode || writingMode);
   if (isKoreanSelected() && currentMode === "study") {
     els.wordListSection.open = false;
@@ -1356,7 +1565,30 @@ function shuffledWords(words) {
 }
 
 function orderWords(words) {
-  return els.orderSelect.value === "random" ? shuffledWords(words) : [...words];
+  if (els.orderSelect.value === "random") return shuffledWords(words);
+  if (els.orderSelect.value === "frequency" && isKoreanSelected() && currentMode === "study") {
+    return [...words].sort((a, b) => {
+      const aDetails = a[7] || {};
+      const bDetails = b[7] || {};
+      return (
+        (bDetails.frequency || 0) - (aDetails.frequency || 0) ||
+        (aDetails.firstTokenIndex || 0) - (bDetails.firstTokenIndex || 0) ||
+        a[0].localeCompare(b[0], "ko")
+      );
+    });
+  }
+  if (isKoreanSelected() && currentMode === "study") {
+    return [...words].sort((a, b) => {
+      const aDetails = a[7] || {};
+      const bDetails = b[7] || {};
+      return (
+        (aDetails.firstTokenIndex || 0) - (bDetails.firstTokenIndex || 0) ||
+        (aDetails.firstCaptionIndex || 0) - (bDetails.firstCaptionIndex || 0) ||
+        a[0].localeCompare(b[0], "ko")
+      );
+    });
+  }
+  return [...words];
 }
 
 const hebrewKeyboardRows = [
@@ -1537,25 +1769,20 @@ function applyFilter() {
   const selectedPos = els.posSelect.value;
   const showMastered = els.showMasteredToggle.checked;
   studyWords = getStudyWords();
-  if (isKoreanSelected()) {
-    visibleWords = studyWords
+  if (isKoreanSelected() && currentMode === "study") {
+    listedWords = orderWords(studyWords
       .filter((word) => {
-        const [korean, english, , root] = word;
-        return (
+        const [korean, english, pos, root, , , , details = {}] = word;
+        const matchesText = (
           korean.includes(query) ||
           root.toLowerCase().includes(query) ||
-          english.toLowerCase().includes(query)
+          english.toLowerCase().includes(query) ||
+          String(details.romanization || "").toLowerCase().includes(query)
         );
-      })
-      .sort((a, b) => {
-        const aDetails = a[7] || {};
-        const bDetails = b[7] || {};
-        return (
-          (aDetails.firstTokenIndex || 0) - (bDetails.firstTokenIndex || 0) ||
-          (aDetails.firstCaptionIndex || 0) - (bDetails.firstCaptionIndex || 0) ||
-          a[0].localeCompare(b[0], "ko")
-        );
-      });
+        const matchesPartOfSpeech = selectedPos === "all" || pos === selectedPos;
+        return matchesText && matchesPartOfSpeech;
+      }));
+    visibleWords = listedWords.filter(isFlashcardWordEnabled);
     showCard(0);
     renderList();
     return;
@@ -1568,11 +1795,15 @@ function applyFilter() {
       root.toLowerCase().includes(query) ||
       english.toLowerCase().includes(query) ||
       formatBreakdown(details.breakdown).toLowerCase().includes(query);
-    const matchesPartOfSpeech = selectedPos === "all" || pos === selectedPos;
+    const matchesPartOfSpeech =
+      (isKoreanSelected() && currentMode === "alphabet") ||
+      selectedPos === "all" ||
+      pos === selectedPos;
     const matchesMastered = showMastered || !isWordMastered(word);
     return matchesText && matchesPartOfSpeech && matchesMastered;
   });
-  visibleWords = orderWords(filteredWords);
+  listedWords = orderWords(filteredWords);
+  visibleWords = listedWords.filter(isFlashcardWordEnabled);
   showCard(0);
   if (currentMode === "writing") {
     showWritingCard(0);
@@ -1592,9 +1823,7 @@ function toggleMasteredWord(word) {
   saveMasteredWordKeys();
   renderMasteredModal();
   if (willMaster && !els.showMasteredToggle.checked) {
-    visibleWords = visibleWords.filter((visibleWord) => getWordKey(visibleWord) !== key);
-    showCard(Math.min(currentIndex, visibleWords.length - 1));
-    renderList();
+    applyFilter();
     return;
   }
 
@@ -1669,59 +1898,33 @@ function toggleCurrentMasteredWord() {
   toggleMasteredWord(visibleWords[currentIndex]);
 }
 
-function renderKoreanFrequencyList() {
-  els.wordTable.innerHTML = "";
-
-  const frequencyWords = [...visibleWords].sort((a, b) => {
-    const aDetails = a[7] || {};
-    const bDetails = b[7] || {};
-    return (
-      (bDetails.frequency || 0) - (aDetails.frequency || 0) ||
-      (aDetails.firstTokenIndex || 0) - (bDetails.firstTokenIndex || 0) ||
-      a[0].localeCompare(b[0], "ko")
-    );
-  });
-
-  frequencyWords.forEach((word) => {
-    const [korean, english, , , , , , details = {}] = word;
-    const row = document.createElement("div");
-    row.className = "word-row korean-frequency-row";
-
-    const koreanText = document.createElement("span");
-    koreanText.className = "hebrew is-korean-word";
-    koreanText.dir = "ltr";
-    koreanText.textContent = korean;
-
-    const count = document.createElement("span");
-    count.className = "korean-frequency-count";
-    count.textContent = `${details.frequency || 0}x`;
-
-    const firstSeen = document.createElement("span");
-    firstSeen.className = "korean-frequency-first-seen";
-    const caption = currentKoreanVideo?.captions?.[details.firstCaptionIndex];
-    firstSeen.textContent = caption
-      ? `First: ${formatCaptionTime(caption.startMs)} - ${english}`
-      : english;
-
-    row.append(koreanText, count, firstSeen);
-    els.wordTable.append(row);
-  });
-}
-
 function renderList() {
-  if (isKoreanSelected()) {
-    renderKoreanFrequencyList();
-    return;
-  }
-
   els.wordTable.innerHTML = "";
+  const supportsFrequency = isKoreanSelected() && currentMode === "study";
+  els.wordListPosFilter.classList.toggle("hidden", currentMode !== "study");
+  els.frequencyOrderOption.hidden = !supportsFrequency;
+  if (!supportsFrequency && els.orderSelect.value === "frequency") {
+    els.orderSelect.value = "ordered";
+  }
+  els.listTitle.textContent = "Words";
+  els.wordListStatus.textContent = `${visibleWords.length} / ${listedWords.length} selected`;
+  els.wordListAllButton.disabled = listedWords.length === 0 || visibleWords.length === listedWords.length;
+  els.wordListNoneButton.disabled = listedWords.length === 0 || visibleWords.length === 0;
 
-  visibleWords.forEach((word, index) => {
-    const [hebrew, english, pos, root] = word;
+  listedWords.forEach((word) => {
+    const [hebrew, english, pos, root, , , , details = {}] = word;
     const mastered = isWordMastered(word);
     const row = document.createElement("div");
     row.className = "word-row";
     row.classList.toggle("is-mastered-word", mastered);
+    row.classList.toggle("is-disabled-word", !isFlashcardWordEnabled(word));
+
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.className = "word-list-checkbox";
+    checkbox.checked = isFlashcardWordEnabled(word);
+    checkbox.dataset.flashcardKey = getFlashcardWordKey(word);
+    checkbox.setAttribute("aria-label", `Include ${hebrew} in flashcards`);
 
     const hebrewButton = document.createElement("button");
     hebrewButton.type = "button";
@@ -1729,12 +1932,28 @@ function renderList() {
     hebrewButton.classList.toggle("is-korean-word", isKoreanSelected());
     hebrewButton.dir = isKoreanSelected() ? "ltr" : "rtl";
     hebrewButton.textContent = hebrew;
-    hebrewButton.addEventListener("click", () => showCard(index));
+    hebrewButton.disabled = !isFlashcardWordEnabled(word);
+    hebrewButton.addEventListener("click", () => showCard(visibleWords.indexOf(word)));
 
     const englishButton = document.createElement("button");
     englishButton.type = "button";
     englishButton.textContent = root && root !== hebrew ? `${english} | ${root}` : english;
-    englishButton.addEventListener("click", () => showCard(index));
+    englishButton.disabled = !isFlashcardWordEnabled(word);
+    englishButton.addEventListener("click", () => showCard(visibleWords.indexOf(word)));
+
+    if (supportsFrequency) {
+      const count = document.createElement("span");
+      count.className = "korean-frequency-count";
+      count.textContent = `${details.frequency || 0}x`;
+
+      const posBadge = document.createElement("span");
+      posBadge.className = `pos-badge ${pos}`;
+      posBadge.textContent = pos;
+      row.classList.add("korean-frequency-row");
+      row.append(checkbox, hebrewButton, englishButton, posBadge, count);
+      els.wordTable.append(row);
+      return;
+    }
 
     const posBadge = document.createElement("span");
     posBadge.className = `pos-badge ${pos}`;
@@ -1746,9 +1965,28 @@ function renderList() {
     masterButton.textContent = mastered ? "Unmaster" : "Master";
     masterButton.addEventListener("click", () => toggleMasteredWord(word));
 
-    row.append(hebrewButton, englishButton, posBadge, masterButton);
+    row.append(checkbox, hebrewButton, englishButton, posBadge, masterButton);
     els.wordTable.append(row);
   });
+}
+
+function refreshFlashcardsFromWordSelection(preferredKey = "") {
+  visibleWords = listedWords.filter(isFlashcardWordEnabled);
+  const preferredIndex = preferredKey
+    ? visibleWords.findIndex((word) => getFlashcardWordKey(word) === preferredKey)
+    : -1;
+  showCard(preferredIndex >= 0 ? preferredIndex : Math.min(currentIndex, Math.max(visibleWords.length - 1, 0)));
+  renderList();
+}
+
+function setListedWordsEnabled(enabled) {
+  listedWords.forEach((word) => {
+    const key = getFlashcardWordKey(word);
+    if (enabled) flashcardSkippedWords.delete(key);
+    else flashcardSkippedWords.add(key);
+  });
+  saveFlashcardSkippedWords();
+  refreshFlashcardsFromWordSelection();
 }
 
 async function initMaculaPicker() {
@@ -2346,14 +2584,12 @@ function wordFromKoreanCaptionEntry(entry, video) {
   const word = entry?.word || "";
   const count = Number(entry?.count) || 0;
   const english = entry?.english || "Needs gloss";
-  return wordFromParts(word, english, "other", word, "", [video.title], "", {
-    breakdown: [
-      {
-        part: "Frequency",
-        meaning: `${count}x in this video`
-      }
-    ],
+  const romanization = entry?.romanization || "";
+  const pos = ["noun", "verb", "other"].includes(entry?.pos) ? entry.pos : "other";
+  return wordFromParts(word, english, pos, word, "", [video.title], "", {
+    breakdown: romanization ? [romanization] : [],
     frequency: count,
+    romanization,
     contextEnglish: entry?.contextEnglish || "",
     firstCaptionIndex: Number(entry?.firstCaptionIndex) || 0,
     firstTokenIndex: Number(entry?.firstTokenIndex) || 0
@@ -2420,6 +2656,21 @@ async function loadKoreanVideo(videoId, requestId = chapterLoadRequestId) {
     renderKoreanCaptionText(video);
   }
 }
+
+function loadKoreanAlphabetPractice() {
+  allWords = buildKoreanAlphabetCards();
+  currentChapterRecords = [];
+  currentIndex = 0;
+  currentVerbIndex = 0;
+  verbGroups = [];
+  direction = "hebrew";
+  els.directionSelect.value = "hebrew";
+  els.posSelect.value = "all";
+  els.searchInput.value = "";
+  renderVerbSelect();
+  applyFilter();
+}
+
 async function loadSelectedChapter() {
   const book = maculaIndex?.books.find((item) => item.code === els.bookSelect.value);
   const chapter = Number(els.chapterSelect.value);
@@ -2448,6 +2699,11 @@ async function loadCurrentChapter() {
 
   if (isKoreanSelected()) {
     syncLanguageModeAvailability();
+    if (currentMode === "alphabet") {
+      loadKoreanAlphabetPractice();
+      return;
+    }
+
     if (!koreanVideoIndex) await loadKoreanVideoIndex();
     if (!els.bookSelect.value) renderBookOptions(getSavedKoreanVideoId());
     await loadKoreanVideo(els.bookSelect.value, requestId);
@@ -2542,6 +2798,24 @@ els.showMasteredToggle.addEventListener("change", () => {
 els.orderSelect.addEventListener("change", () => {
   savePreferences();
   applyFilter();
+});
+els.wordTable.addEventListener("change", (event) => {
+  const checkbox = event.target.closest("input[type='checkbox'][data-flashcard-key]");
+  if (!checkbox) return;
+  const currentWord = visibleWords[currentIndex];
+  const currentKey = currentWord ? getFlashcardWordKey(currentWord) : "";
+  if (checkbox.checked) flashcardSkippedWords.delete(checkbox.dataset.flashcardKey);
+  else flashcardSkippedWords.add(checkbox.dataset.flashcardKey);
+  saveFlashcardSkippedWords();
+  refreshFlashcardsFromWordSelection(currentKey);
+});
+els.wordListAllButton.addEventListener("click", () => setListedWordsEnabled(true));
+els.wordListNoneButton.addEventListener("click", () => setListedWordsEnabled(false));
+els.koreanAlphabetFilterSelect.addEventListener("change", () => {
+  savePreferences();
+  if (isKoreanSelected() && currentMode === "alphabet") {
+    loadKoreanAlphabetPractice();
+  }
 });
 els.autoAdvanceToggle.addEventListener("change", handleAutoAdvanceChange);
 els.autoAdvanceSpeed.addEventListener("change", handleAutoAdvanceChange);

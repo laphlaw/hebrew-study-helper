@@ -14,7 +14,7 @@
         } catch {}
       })();
     </script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=20260908-1">
   </head>
   <body>
     <main class="app-shell">
@@ -162,6 +162,30 @@
           <summary class="list-heading">
             <h2 id="list-title">Words</h2>
           </summary>
+          <div class="word-list-toolbar">
+            <div id="word-list-status" class="word-list-status">0 / 0 selected</div>
+            <div class="word-list-actions">
+              <label id="word-list-pos-filter" class="word-list-filter">
+                <span class="sr-only">Part of speech</span>
+                <select id="pos-select" aria-label="Filter by part of speech">
+                  <option value="all">All words</option>
+                  <option value="noun">Nouns</option>
+                  <option value="verb">Verbs</option>
+                  <option value="other">Other</option>
+                </select>
+              </label>
+              <label class="word-list-sort">
+                <span class="sr-only">Sort words</span>
+                <select id="order-select" aria-label="Sort words">
+                  <option value="ordered">Order</option>
+                  <option id="frequency-order-option" value="frequency">Frequency</option>
+                  <option value="random">Random</option>
+                </select>
+              </label>
+              <button id="word-list-all-button" class="secondary-button" type="button">All</button>
+              <button id="word-list-none-button" class="secondary-button" type="button">None</button>
+            </div>
+          </div>
           <div id="word-table" class="word-table"></div>
         </details>
       </section>
@@ -182,15 +206,6 @@
               </select>
             </label>
             <label>
-              <span class="sr-only">Part of speech</span>
-              <select id="pos-select">
-                <option value="all">All words</option>
-                <option value="noun">Nouns</option>
-                <option value="verb">Verbs</option>
-                <option value="other">Other</option>
-              </select>
-            </label>
-            <label>
               <span class="sr-only">Filter</span>
               <input id="search-input" type="search" placeholder="Search Hebrew, root, or English">
             </label>
@@ -198,11 +213,12 @@
               <input id="show-mastered-toggle" type="checkbox">
               <span>Show mastered</span>
             </label>
-            <label>
-              <span class="sr-only">Order</span>
-              <select id="order-select">
-                <option value="random">Random</option>
-                <option value="ordered">In order</option>
+            <label id="korean-alphabet-filter-label" class="hidden">
+              <span class="sr-only">Alphabet practice set</span>
+              <select id="korean-alphabet-filter-select">
+                <option value="all">All alphabet</option>
+                <option value="consonants">Consonants only</option>
+                <option value="vowels">Vowels only</option>
               </select>
             </label>
             <label class="auto-advance-control">

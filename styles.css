@@ -656,11 +656,13 @@ button {
 .hebrew.is-korean-word,
 .root-word.is-korean-word {
   direction: ltr;
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", Inter, ui-sans-serif, system-ui, sans-serif;
+  font-synthesis-weight: none;
 }
 
 .hebrew.is-korean-word {
   font-size: clamp(2.7rem, 7vw, 5.4rem);
+  font-weight: 400;
   line-height: 1.15;
 }
 
@@ -671,18 +673,19 @@ button {
 .hebrew.is-korean-letter {
   align-items: center;
   font-size: clamp(7rem, 21vw, 15rem);
-  font-weight: 900;
+  font-weight: 200;
   line-height: 1;
+  -webkit-font-smoothing: antialiased;
 }
 
 .card-button.is-alphabet-card .english {
   font-size: clamp(1.8rem, 4.4vw, 3.2rem);
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .root-word.is-korean-word {
   font-size: clamp(1.3rem, 2.4vw, 2rem);
-  font-weight: 800;
+  font-weight: 600;
   text-align: right;
 }
 
@@ -1182,7 +1185,7 @@ button {
 }
 
 .korean-frequency-row {
-  grid-template-columns: minmax(130px, 1fr) 80px minmax(120px, 0.8fr);
+  grid-template-columns: 28px minmax(130px, 0.8fr) minmax(160px, 1fr) minmax(64px, auto) 64px;
 }
 
 .korean-frequency-count,
@@ -1480,13 +1483,47 @@ input[type="search"] {
   background: var(--surface);
 }
 
+.word-list-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.word-list-status {
+  color: var(--muted);
+  font-size: 0.84rem;
+  font-weight: 800;
+}
+
+.word-list-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.word-list-sort select,
+.word-list-filter select {
+  min-width: 112px;
+}
+
 .word-row {
   display: grid;
-  grid-template-columns: minmax(120px, 0.75fr) minmax(140px, 1fr) minmax(64px, auto) minmax(58px, auto);
+  grid-template-columns: 28px minmax(120px, 0.75fr) minmax(140px, 1fr) minmax(64px, auto) minmax(58px, auto);
   gap: 14px;
   align-items: center;
   padding: 10px 14px;
   border-bottom: 1px solid var(--row-border);
+}
+
+.word-row.is-disabled-word > :not(.word-list-checkbox) {
+  opacity: 0.48;
+}
+
+.word-list-checkbox {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent);
 }
 
 .word-row.is-mastered-word {
@@ -1507,6 +1544,10 @@ input[type="search"] {
   text-align: left;
 }
 
+.word-row button:disabled {
+  cursor: default;
+}
+
 @media (hover: hover) {
   .word-row button:hover {
     background: transparent;
@@ -1515,6 +1556,8 @@ input[type="search"] {
 }
 
 .word-row .hebrew {
+  grid-row: auto;
+  height: auto;
   font-size: 2rem;
   text-align: right;
 }
@@ -1812,12 +1855,57 @@ input[type="search"] {
   }
 
   .word-row {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 28px minmax(0, 1fr) auto;
     gap: 4px;
+  }
+
+  .word-list-toolbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .word-list-actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) auto auto;
+  }
+
+  .word-list-sort select,
+  .word-list-filter select {
+    min-width: 0;
   }
 
   .word-row button:last-of-type {
     grid-column: 1 / -1;
+  }
+
+  .korean-frequency-row {
+    grid-template-columns: 28px minmax(0, 1fr) 64px;
+  }
+
+  .korean-frequency-row .word-list-checkbox {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .korean-frequency-row .hebrew {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .korean-frequency-row .pos-badge {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .korean-frequency-row button:not(.hebrew) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .korean-frequency-row .korean-frequency-count {
+    grid-column: 3;
+    grid-row: 2;
+    justify-self: end;
   }
 
   .mastered-modal,

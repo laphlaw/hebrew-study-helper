@@ -1034,7 +1034,9 @@
         {
           "word": "저는",
           "count": 19,
+          "pos": "other",
           "english": "I / me (topic marker)",
+          "romanization": "jeoneun",
           "contextEnglish": "I just came out of the café",
           "firstCaptionIndex": 12,
           "firstTokenIndex": 44
@@ -1042,7 +1044,9 @@
         {
           "word": "너무",
           "count": 18,
+          "pos": "other",
           "english": "very / too",
+          "romanization": "neomu",
           "contextEnglish": "Everyone, it’s so hot today",
           "firstCaptionIndex": 0,
           "firstTokenIndex": 2
@@ -1050,7 +1054,9 @@
         {
           "word": "그리고",
           "count": 15,
+          "pos": "other",
           "english": "and",
+          "romanization": "geurigo",
           "contextEnglish": "And I was a little tired",
           "firstCaptionIndex": 2,
           "firstTokenIndex": 8
@@ -1058,7 +1064,9 @@
         {
           "word": "조금",
           "count": 15,
+          "pos": "other",
           "english": "a little",
+          "romanization": "jogeum",
           "contextEnglish": "And I was a little tired",
           "firstCaptionIndex": 2,
           "firstTokenIndex": 9
@@ -1066,7 +1074,9 @@
         {
           "word": "그래서",
           "count": 14,
+          "pos": "other",
           "english": "so / therefore",
+          "romanization": "geuraeseo",
           "contextEnglish": "So I was going to go for a walk now,",
           "firstCaptionIndex": 7,
           "firstTokenIndex": 23
@@ -1074,7 +1084,9 @@
         {
           "word": "안",
           "count": 10,
+          "pos": "other",
           "english": "not",
+          "romanization": "an",
           "contextEnglish": "so it’s not cold",
           "firstCaptionIndex": 17,
           "firstTokenIndex": 61
@@ -1082,7 +1094,9 @@
         {
           "word": "정말",
           "count": 9,
+          "pos": "other",
           "english": "really",
+          "romanization": "jeongmal",
           "contextEnglish": "In Korea, they turn the AC up really high in the summer",
           "firstCaptionIndex": 18,
           "firstTokenIndex": 66
@@ -1090,7 +1104,9 @@
         {
           "word": "많이",
           "count": 8,
+          "pos": "other",
           "english": "a lot / much",
+          "romanization": "manhi",
           "contextEnglish": "the atmosphere is very different,",
           "firstCaptionIndex": 58,
           "firstTokenIndex": 210
@@ -1098,7 +1114,9 @@
         {
           "word": "지금",
           "count": 7,
+          "pos": "other",
           "english": "now",
+          "romanization": "jigeum",
           "contextEnglish": "So I was going to go for a walk now,",
           "firstCaptionIndex": 7,
           "firstTokenIndex": 24
@@ -1106,7 +1124,9 @@
         {
           "word": "싶어요",
           "count": 7,
+          "pos": "verb",
           "english": "want to",
+          "romanization": "sipeoyo",
           "contextEnglish": "So I want to go again tomorrow",
           "firstCaptionIndex": 31,
           "firstTokenIndex": 114
@@ -1114,7 +1134,9 @@
         {
           "word": "있어요",
           "count": 7,
+          "pos": "verb",
           "english": "there is / have",
+          "romanization": "iteoyo",
           "contextEnglish": "and now I’m heading back to my accommodation",
           "firstCaptionIndex": 47,
           "firstTokenIndex": 173
@@ -1122,7 +1144,9 @@
         {
           "word": "거예요",
           "count": 7,
+          "pos": "verb",
           "english": "will / is going to",
+          "romanization": "geoyeyo",
           "contextEnglish": "and then go back to my accommodation",
           "firstCaptionIndex": 52,
           "firstTokenIndex": 188
@@ -1130,7 +1154,9 @@
         {
           "word": "기차를",
           "count": 7,
+          "pos": "noun",
           "english": "train (object marker)",
+          "romanization": "gichareul",
           "contextEnglish": "And today, I have to catch the train at 3 o'clock",
           "firstCaptionIndex": 95,
           "firstTokenIndex": 355
@@ -1138,7 +1164,9 @@
         {
           "word": "파리에",
           "count": 7,
+          "pos": "noun",
           "english": "to / in Paris",
+          "romanization": "parie",
           "contextEnglish": "I’m going to Paris by train today",
           "firstCaptionIndex": 97,
           "firstTokenIndex": 367
@@ -1146,7 +1174,9 @@
         {
           "word": "오늘",
           "count": 6,
+          "pos": "noun",
           "english": "today",
+          "romanization": "oneul",
           "contextEnglish": "I woke up a bit late today",
           "firstCaptionIndex": 1,
           "firstTokenIndex": 4
@@ -1154,7 +1184,9 @@
         {
           "word": "오늘은",
           "count": 6,
+          "pos": "noun",
           "english": "today (topic marker)",
+          "romanization": "oneuleun",
           "contextEnglish": "Today, I just wanted to take a little walk here and there",
           "firstCaptionIndex": 3,
           "firstTokenIndex": 11
@@ -1162,7 +1194,9 @@
         {
           "word": "같아요",
           "count": 6,
+          "pos": "verb",
           "english": "seems like / I think",
+          "romanization": "gatayo",
           "contextEnglish": "and take a short break",
           "firstCaptionIndex": 11,
           "firstTokenIndex": 43
@@ -1170,7 +1204,9 @@
         {
           "word": "것",
           "count": 6,
+          "pos": "noun",
           "english": "thing / fact",
+          "romanization": "geot",
           "contextEnglish": "and take a short break",
           "firstCaptionIndex": 11,
           "firstTokenIndex": 42
@@ -1178,7 +1214,9 @@
         {
           "word": "카페에서",
           "count": 6,
+          "pos": "noun",
           "english": "at / from the cafe",
+          "romanization": "kapeeseo",
           "contextEnglish": "I just came out of the café",
           "firstCaptionIndex": 12,
           "firstTokenIndex": 46
@@ -1186,7 +1224,9 @@
         {
           "word": "가서",
           "count": 6,
+          "pos": "verb",
           "english": "go and / went and",
+          "romanization": "gaseo",
           "contextEnglish": "So I went to a nearby restaurant",
           "firstCaptionIndex": 28,
           "firstTokenIndex": 104
@@ -1194,7 +1234,9 @@
         {
           "word": "이",
           "count": 5,
+          "pos": "other",
           "english": "this / subject marker",
+          "romanization": "i",
           "contextEnglish": "I truly love this",
           "firstCaptionIndex": 53,
           "firstTokenIndex": 191
@@ -1202,7 +1244,9 @@
         {
           "word": "늦게",
           "count": 4,
+          "pos": "other",
           "english": "late",
+          "romanization": "neutge",
           "contextEnglish": "I woke up a bit late today",
           "firstCaptionIndex": 1,
           "firstTokenIndex": 6
@@ -1210,7 +1254,9 @@
         {
           "word": "먹고",
           "count": 4,
+          "pos": "verb",
           "english": "eat and",
+          "romanization": "meokgo",
           "contextEnglish": "have brunch,",
           "firstCaptionIndex": 4,
           "firstTokenIndex": 17
@@ -1218,7 +1264,9 @@
         {
           "word": "나왔어요",
           "count": 4,
+          "pos": "verb",
           "english": "came out",
+          "romanization": "nawateoyo",
           "contextEnglish": "I just came out of the café",
           "firstCaptionIndex": 12,
           "firstTokenIndex": 47
@@ -1226,7 +1274,9 @@
         {
           "word": "원래",
           "count": 4,
+          "pos": "other",
           "english": "originally / normally",
+          "romanization": "wonrae",
           "contextEnglish": "I planned to have breakfast at my accommodation,",
           "firstCaptionIndex": 26,
           "firstTokenIndex": 91
@@ -1234,7 +1284,9 @@
         {
           "word": "제가",
           "count": 4,
+          "pos": "other",
           "english": "I / me (subject marker)",
+          "romanization": "jega",
           "contextEnglish": "I don’t usually go to tourist spots,",
           "firstCaptionIndex": 33,
           "firstTokenIndex": 119
@@ -1242,7 +1294,9 @@
         {
           "word": "숙소에",
           "count": 4,
+          "pos": "noun",
           "english": "to / at the lodging",
+          "romanization": "suksoe",
           "contextEnglish": "and now I’m heading back to my accommodation",
           "firstCaptionIndex": 47,
           "firstTokenIndex": 171
@@ -1250,7 +1304,9 @@
         {
           "word": "하지만",
           "count": 4,
+          "pos": "other",
           "english": "but / however",
+          "romanization": "hajiman",
           "contextEnglish": "But I didn’t buy any",
           "firstCaptionIndex": 68,
           "firstTokenIndex": 246
@@ -1258,7 +1314,9 @@
         {
           "word": "날씨가",
           "count": 3,
+          "pos": "noun",
           "english": "weather (subject marker)",
+          "romanization": "nalssiga",
           "contextEnglish": "Everyone, it’s so hot today",
           "firstCaptionIndex": 0,
           "firstTokenIndex": 1
@@ -1266,7 +1324,9 @@
         {
           "word": "산책하고",
           "count": 3,
+          "pos": "verb",
           "english": "walk / stroll and",
+          "romanization": "sanchaekhago",
           "contextEnglish": "Today, I just wanted to take a little walk here and there",
           "firstCaptionIndex": 3,
           "firstTokenIndex": 15
@@ -1274,7 +1334,9 @@
         {
           "word": "했는데",
           "count": 3,
+          "pos": "verb",
           "english": "did, but / did and",
+          "romanization": "haetneunde",
           "contextEnglish": "So I was going to go for a walk now,",
           "firstCaptionIndex": 7,
           "firstTokenIndex": 26
@@ -1282,7 +1344,9 @@
         {
           "word": "햇빛이",
           "count": 3,
+          "pos": "noun",
           "english": "sunlight (subject marker)",
+          "romanization": "haetbiti",
           "contextEnglish": "but the sunlight is too strong",
           "firstCaptionIndex": 8,
           "firstTokenIndex": 27
@@ -1290,7 +1354,9 @@
         {
           "word": "분",
           "count": 3,
+          "pos": "noun",
           "english": "person / minute",
+          "romanization": "bun",
           "contextEnglish": "and it's too hot, so I can't walk for more than 10 minutes",
           "firstCaptionIndex": 9,
           "firstTokenIndex": 32
@@ -1298,7 +1364,9 @@
         {
           "word": "카페에",
           "count": 3,
+          "pos": "noun",
           "english": "to / at the cafe",
+          "romanization": "kapee",
           "contextEnglish": "So I think I should go into a café",
           "firstCaptionIndex": 10,
           "firstTokenIndex": 37
@@ -1306,7 +1374,9 @@
         {
           "word": "근데",
           "count": 3,
+          "pos": "other",
           "english": "but / by the way",
+          "romanization": "geunde",
           "contextEnglish": "But here, even indoors,",
           "firstCaptionIndex": 15,
           "firstTokenIndex": 55
@@ -1314,7 +1384,9 @@
         {
           "word": "일어나서",
           "count": 3,
+          "pos": "verb",
           "english": "wake up and",
+          "romanization": "ileonaseo",
           "contextEnglish": "And today I slept in so late",
           "firstCaptionIndex": 21,
           "firstTokenIndex": 79
@@ -1322,7 +1394,9 @@
         {
           "word": "먹었어요",
           "count": 3,
+          "pos": "verb",
           "english": "ate",
+          "romanization": "meokeoteoyo",
           "contextEnglish": "and had brunch",
           "firstCaptionIndex": 25,
           "firstTokenIndex": 90
@@ -1330,7 +1404,9 @@
         {
           "word": "조식을",
           "count": 3,
+          "pos": "noun",
           "english": "breakfast (object marker)",
+          "romanization": "josikeul",
           "contextEnglish": "I planned to have breakfast at my accommodation,",
           "firstCaptionIndex": 26,
           "firstTokenIndex": 93
@@ -1338,7 +1414,9 @@
         {
           "word": "가고",
           "count": 3,
+          "pos": "verb",
           "english": "go and",
+          "romanization": "gago",
           "contextEnglish": "So I want to go again tomorrow",
           "firstCaptionIndex": 31,
           "firstTokenIndex": 113
@@ -1346,7 +1424,9 @@
         {
           "word": "또",
           "count": 3,
+          "pos": "other",
           "english": "again / also",
+          "romanization": "tto",
           "contextEnglish": "So I want to go again tomorrow",
           "firstCaptionIndex": 31,
           "firstTokenIndex": 112
@@ -1354,7 +1434,9 @@
         {
           "word": "별로",
           "count": 3,
+          "pos": "other",
           "english": "not very / particularly",
+          "romanization": "byeolro",
           "contextEnglish": "I don’t usually go to tourist spots,",
           "firstCaptionIndex": 33,
           "firstTokenIndex": 122
@@ -1362,7 +1444,9 @@
         {
           "word": "커피를",
           "count": 3,
+          "pos": "noun",
           "english": "coffee (object marker)",
+          "romanization": "keopireul",
           "contextEnglish": "Oh, I went to a café and had coffee,",
           "firstCaptionIndex": 39,
           "firstTokenIndex": 146
@@ -1370,7 +1454,9 @@
         {
           "word": "엽서를",
           "count": 3,
+          "pos": "noun",
           "english": "postcard (object marker)",
+          "romanization": "yeopseoreul",
           "contextEnglish": "and I wrote a postcard",
           "firstCaptionIndex": 40,
           "firstTokenIndex": 148
@@ -1378,7 +1464,9 @@
         {
           "word": "한",
           "count": 3,
+          "pos": "other",
           "english": "one / did",
+          "romanization": "han",
           "contextEnglish": "I’m rested a café for about two hours,",
           "firstCaptionIndex": 46,
           "firstTokenIndex": 165
@@ -1386,7 +1474,9 @@
         {
           "word": "다시",
           "count": 3,
+          "pos": "other",
           "english": "again",
+          "romanization": "dasi",
           "contextEnglish": "and now I’m heading back to my accommodation",
           "firstCaptionIndex": 47,
           "firstTokenIndex": 170
@@ -1394,7 +1484,9 @@
         {
           "word": "걸",
           "count": 3,
+          "pos": "noun",
           "english": "thing (object, contracted)",
+          "romanization": "geol",
           "contextEnglish": "I really love going to bookstores",
           "firstCaptionIndex": 48,
           "firstTokenIndex": 178
@@ -1402,7 +1494,9 @@
         {
           "word": "도시가",
           "count": 3,
+          "pos": "noun",
           "english": "city (subject marker)",
+          "romanization": "dosiga",
           "contextEnglish": "I truly love this",
           "firstCaptionIndex": 53,
           "firstTokenIndex": 192
@@ -1410,7 +1504,9 @@
         {
           "word": "하고",
           "count": 3,
+          "pos": "other",
           "english": "and / do and",
+          "romanization": "hago",
           "contextEnglish": "and a dryer so I’ll do the laundry",
           "firstCaptionIndex": 74,
           "firstTokenIndex": 274
@@ -1418,7 +1514,9 @@
         {
           "word": "후에",
           "count": 3,
+          "pos": "other",
           "english": "after",
+          "romanization": "hue",
           "contextEnglish": "So after drinking coffee,",
           "firstCaptionIndex": 98,
           "firstTokenIndex": 372
@@ -1426,7 +1524,9 @@
         {
           "word": "다음에",
           "count": 3,
+          "pos": "other",
           "english": "next time / later",
+          "romanization": "daeume",
           "contextEnglish": "I really want to come again one more time",
           "firstCaptionIndex": 139,
           "firstTokenIndex": 540
@@ -1434,7 +1534,9 @@
         {
           "word": "스페인어도",
           "count": 3,
+          "pos": "noun",
           "english": "Spanish too",
+          "romanization": "seupeineodo",
           "contextEnglish": "And I think Spanish is also really, really beautiful",
           "firstCaptionIndex": 140,
           "firstTokenIndex": 548
@@ -1442,7 +1544,9 @@
         {
           "word": "기차",
           "count": 3,
+          "pos": "noun",
           "english": "train",
+          "romanization": "gicha",
           "contextEnglish": "It was a bit tough on the train,",
           "firstCaptionIndex": 157,
           "firstTokenIndex": 625
@@ -1450,7 +1554,9 @@
         {
           "word": "더워요",
           "count": 2,
+          "pos": "verb",
           "english": "it is hot",
+          "romanization": "deowoyo",
           "contextEnglish": "Everyone, it’s so hot today",
           "firstCaptionIndex": 0,
           "firstTokenIndex": 3
@@ -1458,7 +1564,9 @@
         {
           "word": "그냥",
           "count": 2,
+          "pos": "other",
           "english": "just",
+          "romanization": "geunyang",
           "contextEnglish": "Today, I just wanted to take a little walk here and there",
           "firstCaptionIndex": 3,
           "firstTokenIndex": 12
@@ -1466,7 +1574,9 @@
         {
           "word": "책도",
           "count": 2,
+          "pos": "noun",
           "english": "book too",
+          "romanization": "chaekdo",
           "contextEnglish": "read a book,",
           "firstCaptionIndex": 5,
           "firstTokenIndex": 18
@@ -1474,7 +1584,9 @@
         {
           "word": "쉬고",
           "count": 2,
+          "pos": "verb",
           "english": "rest and",
+          "romanization": "swigo",
           "contextEnglish": "and get some rest",
           "firstCaptionIndex": 6,
           "firstTokenIndex": 21
@@ -1482,7 +1594,9 @@
         {
           "word": "더워서",
           "count": 2,
+          "pos": "verb",
           "english": "because it is hot",
+          "romanization": "deowoseo",
           "contextEnglish": "and it's too hot, so I can't walk for more than 10 minutes",
           "firstCaptionIndex": 9,
           "firstTokenIndex": 31
@@ -1490,7 +1604,9 @@
         {
           "word": "못",
           "count": 2,
+          "pos": "other",
           "english": "cannot",
+          "romanization": "mot",
           "contextEnglish": "and it's too hot, so I can't walk for more than 10 minutes",
           "firstCaptionIndex": 9,
           "firstTokenIndex": 34
@@ -1498,7 +1614,9 @@
         {
           "word": "이제",
           "count": 2,
+          "pos": "other",
           "english": "now",
+          "romanization": "ije",
           "contextEnglish": "The sun has gone down now,",
           "firstCaptionIndex": 13,
           "firstTokenIndex": 48
@@ -1506,7 +1624,9 @@
         {
           "word": "여기는",
           "count": 2,
+          "pos": "other",
           "english": "here (topic marker)",
+          "romanization": "yeogineun",
           "contextEnglish": "But here, even indoors,",
           "firstCaptionIndex": 15,
           "firstTokenIndex": 56
@@ -1514,7 +1634,9 @@
         {
           "word": "추워요",
           "count": 2,
+          "pos": "verb",
           "english": "it is cold",
+          "romanization": "chuwoyo",
           "contextEnglish": "so it’s not cold",
           "firstCaptionIndex": 17,
           "firstTokenIndex": 62
@@ -1522,7 +1644,9 @@
         {
           "word": "아무것도",
           "count": 2,
+          "pos": "other",
           "english": "anything / nothing",
+          "romanization": "amugeotdo",
           "contextEnglish": "that I didn’t do anything,",
           "firstCaptionIndex": 22,
           "firstTokenIndex": 80
@@ -1530,7 +1654,9 @@
         {
           "word": "벌써",
           "count": 2,
+          "pos": "other",
           "english": "already",
+          "romanization": "beolsseo",
           "contextEnglish": "but it’s already dinner time",
           "firstCaptionIndex": 23,
           "firstTokenIndex": 83
@@ -1538,7 +1664,9 @@
         {
           "word": "아침에",
           "count": 2,
+          "pos": "noun",
           "english": "in the morning",
+          "romanization": "achime",
           "contextEnglish": "Today I woke up in the morning",
           "firstCaptionIndex": 24,
           "firstTokenIndex": 87
@@ -1546,7 +1674,9 @@
         {
           "word": "브런치를",
           "count": 2,
+          "pos": "noun",
           "english": "brunch (object marker)",
+          "romanization": "beureonchireul",
           "contextEnglish": "and had brunch",
           "firstCaptionIndex": 25,
           "firstTokenIndex": 89
@@ -1554,7 +1684,9 @@
         {
           "word": "숙소에서",
           "count": 2,
+          "pos": "noun",
           "english": "at / from the lodging",
+          "romanization": "suksoeseo",
           "contextEnglish": "I planned to have breakfast at my accommodation,",
           "firstCaptionIndex": 26,
           "firstTokenIndex": 92
@@ -1562,7 +1694,9 @@
         {
           "word": "내일",
           "count": 2,
+          "pos": "noun",
           "english": "tomorrow",
+          "romanization": "naeil",
           "contextEnglish": "So I want to go again tomorrow",
           "firstCaptionIndex": 31,
           "firstTokenIndex": 111
@@ -1570,7 +1704,9 @@
         {
           "word": "꼭",
           "count": 2,
+          "pos": "other",
           "english": "definitely / surely",
+          "romanization": "kkok",
           "contextEnglish": "but there was one tourist attraction I really wanted to see",
           "firstCaptionIndex": 34,
           "firstTokenIndex": 125
@@ -1578,7 +1714,9 @@
         {
           "word": "있었어요",
           "count": 2,
+          "pos": "verb",
           "english": "there was / had",
+          "romanization": "iteoteoyo",
           "contextEnglish": "but there was one tourist attraction I really wanted to see",
           "firstCaptionIndex": 34,
           "firstTokenIndex": 130
@@ -1586,7 +1724,9 @@
         {
           "word": "구경하고",
           "count": 2,
+          "pos": "verb",
           "english": "look around and",
+          "romanization": "gugyeonghago",
           "contextEnglish": "So I went there and looked around",
           "firstCaptionIndex": 35,
           "firstTokenIndex": 134
@@ -1594,7 +1734,9 @@
         {
           "word": "어",
           "count": 2,
+          "pos": "other",
           "english": "uh / oh",
+          "romanization": "eo",
           "contextEnglish": "Uh... I didn’t do",
           "firstCaptionIndex": 37,
           "firstTokenIndex": 140
@@ -1602,7 +1744,9 @@
         {
           "word": "했어요",
           "count": 2,
+          "pos": "verb",
           "english": "did",
+          "romanization": "haeteoyo",
           "contextEnglish": "anything",
           "firstCaptionIndex": 38,
           "firstTokenIndex": 143
@@ -1610,7 +1754,9 @@
         {
           "word": "아",
           "count": 2,
+          "pos": "other",
           "english": "ah / oh",
+          "romanization": "a",
           "contextEnglish": "Oh, I went to a café and had coffee,",
           "firstCaptionIndex": 39,
           "firstTokenIndex": 144
@@ -1618,7 +1764,9 @@
         {
           "word": "여행지에서",
           "count": 2,
+          "pos": "noun",
           "english": "at the travel destination",
+          "romanization": "yeohaengjieseo",
           "contextEnglish": "when I write a postcard",
           "firstCaptionIndex": 41,
           "firstTokenIndex": 151
@@ -1626,7 +1774,9 @@
         {
           "word": "시간이",
           "count": 2,
+          "pos": "noun",
           "english": "time (subject marker)",
+          "romanization": "sigani",
           "contextEnglish": "while I’m at my travel destination",
           "firstCaptionIndex": 43,
           "firstTokenIndex": 157
@@ -1634,7 +1784,9 @@
         {
           "word": "시간",
           "count": 2,
+          "pos": "noun",
           "english": "time / hour",
+          "romanization": "sigan",
           "contextEnglish": "I’m rested a café for about two hours,",
           "firstCaptionIndex": 46,
           "firstTokenIndex": 166
@@ -1642,7 +1794,9 @@
         {
           "word": "지금은",
           "count": 2,
+          "pos": "other",
           "english": "now (topic marker)",
+          "romanization": "jigeumeun",
           "contextEnglish": "and now I’m heading back to my accommodation",
           "firstCaptionIndex": 47,
           "firstTokenIndex": 169
@@ -1650,7 +1804,9 @@
         {
           "word": "가는",
           "count": 2,
+          "pos": "verb",
           "english": "going / that goes",
+          "romanization": "ganeun",
           "contextEnglish": "I really love going to bookstores",
           "firstCaptionIndex": 48,
           "firstTokenIndex": 177
@@ -1658,7 +1814,9 @@
         {
           "word": "서점에",
           "count": 2,
+          "pos": "noun",
           "english": "to / at the bookstore",
+          "romanization": "seojeome",
           "contextEnglish": "I really love going to bookstores",
           "firstCaptionIndex": 48,
           "firstTokenIndex": 176
@@ -1666,7 +1824,9 @@
         {
           "word": "마음에",
           "count": 2,
+          "pos": "noun",
           "english": "in one's heart / liking",
+          "romanization": "maeume",
           "contextEnglish": "city so, so much",
           "firstCaptionIndex": 54,
           "firstTokenIndex": 195
@@ -1674,7 +1834,9 @@
         {
           "word": "사실",
           "count": 2,
+          "pos": "noun",
           "english": "actually / truth",
+          "romanization": "sasil",
           "contextEnglish": "Actually, I thought Barcelona might be",
           "firstCaptionIndex": 55,
           "firstTokenIndex": 197
@@ -1682,7 +1844,9 @@
         {
           "word": "생각했어요",
           "count": 2,
+          "pos": "verb",
           "english": "thought",
+          "romanization": "saenggakhaeteoyo",
           "contextEnglish": "a little similar to Paris",
           "firstCaptionIndex": 56,
           "firstTokenIndex": 204
@@ -1690,7 +1854,9 @@
         {
           "word": "달라요",
           "count": 2,
+          "pos": "verb",
           "english": "is different",
+          "romanization": "dalrayo",
           "contextEnglish": "But it’s totally, totally different",
           "firstCaptionIndex": 57,
           "firstTokenIndex": 208
@@ -1698,7 +1864,9 @@
         {
           "word": "다르고",
           "count": 2,
+          "pos": "verb",
           "english": "different and",
+          "romanization": "dareugo",
           "contextEnglish": "the atmosphere is very different,",
           "firstCaptionIndex": 58,
           "firstTokenIndex": 211
@@ -1706,7 +1874,9 @@
         {
           "word": "다",
           "count": 2,
+          "pos": "other",
           "english": "all / everything",
+          "romanization": "da",
           "contextEnglish": "I think they both have their own unique charm",
           "firstCaptionIndex": 61,
           "firstTokenIndex": 218
@@ -1714,7 +1884,9 @@
         {
           "word": "있는",
           "count": 2,
+          "pos": "verb",
           "english": "existing / having",
+          "romanization": "itneun",
           "contextEnglish": "I think they both have their own unique charm",
           "firstCaptionIndex": 61,
           "firstTokenIndex": 221
@@ -1722,7 +1894,9 @@
         {
           "word": "돼요",
           "count": 2,
+          "pos": "verb",
           "english": "becomes / is okay",
+          "romanization": "dwaeyo",
           "contextEnglish": "And I need to do the laundry",
           "firstCaptionIndex": 72,
           "firstTokenIndex": 268
@@ -1730,7 +1904,9 @@
         {
           "word": "빨래를",
           "count": 2,
+          "pos": "noun",
           "english": "laundry (object marker)",
+          "romanization": "ppalraereul",
           "contextEnglish": "And I need to do the laundry",
           "firstCaptionIndex": 72,
           "firstTokenIndex": 266
@@ -1738,7 +1914,9 @@
         {
           "word": "천천히",
           "count": 2,
+          "pos": "other",
           "english": "slowly",
+          "romanization": "cheoncheonhi",
           "contextEnglish": "Today, I’m really spending the day slowly",
           "firstCaptionIndex": 76,
           "firstTokenIndex": 280
@@ -1746,7 +1924,9 @@
         {
           "word": "좋아요",
           "count": 2,
+          "pos": "verb",
           "english": "good / I like it",
+          "romanization": "johayo",
           "contextEnglish": "I'm feeling so good",
           "firstCaptionIndex": 78,
           "firstTokenIndex": 288
@@ -1754,7 +1934,9 @@
         {
           "word": "이렇게",
           "count": 2,
+          "pos": "other",
           "english": "like this",
+          "romanization": "ireohge",
           "contextEnglish": "This kind of relaxed trip",
           "firstCaptionIndex": 79,
           "firstTokenIndex": 290
@@ -1762,7 +1944,9 @@
         {
           "word": "아침을",
           "count": 2,
+          "pos": "noun",
           "english": "breakfast / morning (object marker)",
+          "romanization": "achimeul",
           "contextEnglish": "I’m having breakfast right now",
           "firstCaptionIndex": 81,
           "firstTokenIndex": 297
@@ -1770,7 +1954,9 @@
         {
           "word": "게",
           "count": 2,
+          "pos": "noun",
           "english": "thing / so that",
+          "romanization": "ge",
           "contextEnglish": "eggs, bread, ham, and cheese",
           "firstCaptionIndex": 85,
           "firstTokenIndex": 313
@@ -1778,7 +1964,9 @@
         {
           "word": "왜냐하면",
           "count": 2,
+          "pos": "other",
           "english": "because",
+          "romanization": "waenyahamyeon",
           "contextEnglish": "Because yesterday the sunlight was so strong in the afternoon",
           "firstCaptionIndex": 87,
           "firstTokenIndex": 319
@@ -1786,7 +1974,9 @@
         {
           "word": "없을",
           "count": 2,
+          "pos": "verb",
           "english": "not have / will not be",
+          "romanization": "eopseul",
           "contextEnglish": "So this morning, when there was no sunlight,",
           "firstCaptionIndex": 89,
           "firstTokenIndex": 332
@@ -1794,7 +1984,9 @@
         {
           "word": "타고",
           "count": 2,
+          "pos": "verb",
           "english": "ride / take and",
+          "romanization": "tago",
           "contextEnglish": "I’m going to Paris by train today",
           "firstCaptionIndex": 97,
           "firstTokenIndex": 366
@@ -1802,7 +1994,9 @@
         {
           "word": "돌아가서",
           "count": 2,
+          "pos": "verb",
           "english": "return and",
+          "romanization": "dolagaseo",
           "contextEnglish": "I’ll go back to my accommodation, pack my bags,",
           "firstCaptionIndex": 99,
           "firstTokenIndex": 374
@@ -1810,7 +2004,9 @@
         {
           "word": "숙소로",
           "count": 2,
+          "pos": "noun",
           "english": "to the lodging",
+          "romanization": "suksoro",
           "contextEnglish": "I’ll go back to my accommodation, pack my bags,",
           "firstCaptionIndex": 99,
           "firstTokenIndex": 373
@@ -1818,7 +2014,9 @@
         {
           "word": "싸고",
           "count": 2,
+          "pos": "verb",
           "english": "cheap and",
+          "romanization": "ssago",
           "contextEnglish": "I’ll go back to my accommodation, pack my bags,",
           "firstCaptionIndex": 99,
           "firstTokenIndex": 376
@@ -1826,7 +2024,9 @@
         {
           "word": "짐을",
           "count": 2,
+          "pos": "noun",
           "english": "luggage (object marker)",
+          "romanization": "jimeul",
           "contextEnglish": "I’ll go back to my accommodation, pack my bags,",
           "firstCaptionIndex": 99,
           "firstTokenIndex": 375
@@ -1834,7 +2034,9 @@
         {
           "word": "노트북으로",
           "count": 2,
+          "pos": "noun",
           "english": "with / on a laptop",
+          "romanization": "noteubukeuro",
           "contextEnglish": "At the café, I'm working a bit on my laptop",
           "firstCaptionIndex": 103,
           "firstTokenIndex": 389
@@ -1842,7 +2044,9 @@
         {
           "word": "일을",
           "count": 2,
+          "pos": "noun",
           "english": "work (object marker)",
+          "romanization": "ileul",
           "contextEnglish": "At the café, I'm working a bit on my laptop",
           "firstCaptionIndex": 103,
           "firstTokenIndex": 390
@@ -1850,7 +2054,9 @@
         {
           "word": "아메리카노를",
           "count": 2,
+          "pos": "noun",
           "english": "Americano (object marker)",
+          "romanization": "amerikanoreul",
           "contextEnglish": "I usually don’t like iced Americano that much,",
           "firstCaptionIndex": 105,
           "firstTokenIndex": 398
@@ -1858,7 +2064,9 @@
         {
           "word": "아이스",
           "count": 2,
+          "pos": "noun",
           "english": "iced",
+          "romanization": "aiseu",
           "contextEnglish": "I usually don’t like iced Americano that much,",
           "firstCaptionIndex": 105,
           "firstTokenIndex": 397
@@ -1866,7 +2074,9 @@
         {
           "word": "계속",
           "count": 2,
+          "pos": "other",
           "english": "continuously / keep",
+          "romanization": "gyesok",
           "contextEnglish": "I keep getting thirsty",
           "firstCaptionIndex": 107,
           "firstTokenIndex": 404
@@ -1874,7 +2084,9 @@
         {
           "word": "일하는",
           "count": 2,
+          "pos": "verb",
           "english": "working",
+          "romanization": "ilhaneun",
           "contextEnglish": "who work in cafés with a laptop like this",
           "firstCaptionIndex": 118,
           "firstTokenIndex": 448
@@ -1882,7 +2094,9 @@
         {
           "word": "잘",
           "count": 2,
+          "pos": "other",
           "english": "well",
+          "romanization": "jal",
           "contextEnglish": "That’s why I thought this city suits me well",
           "firstCaptionIndex": 119,
           "firstTokenIndex": 456
@@ -1890,7 +2104,9 @@
         {
           "word": "친구들도",
           "count": 2,
+          "pos": "noun",
           "english": "friends too",
+          "romanization": "chingudeuldo",
           "contextEnglish": "and meet my friends who live in Paris",
           "firstCaptionIndex": 132,
           "firstTokenIndex": 506
@@ -1898,7 +2114,9 @@
         {
           "word": "사람들이",
           "count": 2,
+          "pos": "noun",
           "english": "people (subject marker)",
+          "romanization": "saramdeuli",
           "contextEnglish": "especially the people are so cool",
           "firstCaptionIndex": 136,
           "firstTokenIndex": 530
@@ -1906,7 +2124,9 @@
         {
           "word": "넘쳐요",
           "count": 2,
+          "pos": "verb",
           "english": "overflow / be full of",
+          "romanization": "neomchyeoyo",
           "contextEnglish": "And there’s so much energy",
           "firstCaptionIndex": 137,
           "firstTokenIndex": 535
@@ -1914,7 +2134,9 @@
         {
           "word": "에너지가",
           "count": 2,
+          "pos": "noun",
           "english": "energy (subject marker)",
+          "romanization": "eneojiga",
           "contextEnglish": "And there’s so much energy",
           "firstCaptionIndex": 137,
           "firstTokenIndex": 534
@@ -1922,7 +2144,9 @@
         {
           "word": "프랑스어를",
           "count": 2,
+          "pos": "noun",
           "english": "French (object marker)",
+          "romanization": "peurangseueoreul",
           "contextEnglish": "I hope that after I learn French later,",
           "firstCaptionIndex": 144,
           "firstTokenIndex": 565
@@ -1930,7 +2154,9 @@
         {
           "word": "왔어요",
           "count": 2,
+          "pos": "verb",
           "english": "came",
+          "romanization": "wateoyo",
           "contextEnglish": "by train from Spain",
           "firstCaptionIndex": 154,
           "firstTokenIndex": 617
@@ -1938,7 +2164,9 @@
         {
           "word": "도착했어요",
           "count": 2,
+          "pos": "verb",
           "english": "arrived",
+          "romanization": "dochakhaeteoyo",
           "contextEnglish": "so I arrived a little late",
           "firstCaptionIndex": 156,
           "firstTokenIndex": 624
@@ -1946,7 +2174,9 @@
         {
           "word": "안에서",
           "count": 2,
+          "pos": "noun",
           "english": "inside",
+          "romanization": "aneseo",
           "contextEnglish": "It was a bit tough on the train,",
           "firstCaptionIndex": 157,
           "firstTokenIndex": 626
@@ -1954,7 +2184,9 @@
         {
           "word": "여러분",
           "count": 1,
+          "pos": "other",
           "english": "everyone",
+          "romanization": "yeoreobun",
           "contextEnglish": "Everyone, it’s so hot today",
           "firstCaptionIndex": 0,
           "firstTokenIndex": 0
@@ -1962,7 +2194,9 @@
         {
           "word": "일어났어요",
           "count": 1,
+          "pos": "verb",
           "english": "woke up",
+          "romanization": "ileonateoyo",
           "contextEnglish": "I woke up a bit late today",
           "firstCaptionIndex": 1,
           "firstTokenIndex": 7
@@ -1970,7 +2204,9 @@
         {
           "word": "좀",
           "count": 1,
+          "pos": "other",
           "english": "a bit / please",
+          "romanization": "jom",
           "contextEnglish": "I woke up a bit late today",
           "firstCaptionIndex": 1,
           "firstTokenIndex": 5
@@ -1978,7 +2214,9 @@
         {
           "word": "피곤했어요",
           "count": 1,
+          "pos": "verb",
           "english": "was tired",
+          "romanization": "pigonhaeteoyo",
           "contextEnglish": "And I was a little tired",
           "firstCaptionIndex": 2,
           "firstTokenIndex": 10
@@ -1986,7 +2224,9 @@
         {
           "word": "여기저기",
           "count": 1,
+          "pos": "other",
           "english": "here and there",
+          "romanization": "yeogijeogi",
           "contextEnglish": "Today, I just wanted to take a little walk here and there",
           "firstCaptionIndex": 3,
           "firstTokenIndex": 13
@@ -1994,7 +2234,9 @@
         {
           "word": "브런치도",
           "count": 1,
+          "pos": "noun",
           "english": "brunch too",
+          "romanization": "beureonchido",
           "contextEnglish": "have brunch,",
           "firstCaptionIndex": 4,
           "firstTokenIndex": 16
@@ -2002,7 +2244,9 @@
         {
           "word": "읽고",
           "count": 1,
+          "pos": "verb",
           "english": "read and",
+          "romanization": "ilkgo",
           "contextEnglish": "read a book,",
           "firstCaptionIndex": 5,
           "firstTokenIndex": 19
@@ -2010,7 +2254,9 @@
         {
           "word": "싶었어요",
           "count": 1,
+          "pos": "verb",
           "english": "wanted to",
+          "romanization": "sipeoteoyo",
           "contextEnglish": "and get some rest",
           "firstCaptionIndex": 6,
           "firstTokenIndex": 22
@@ -2018,7 +2264,9 @@
         {
           "word": "산책하려고",
           "count": 1,
+          "pos": "verb",
           "english": "in order to walk",
+          "romanization": "sanchaekharyeogo",
           "contextEnglish": "So I was going to go for a walk now,",
           "firstCaptionIndex": 7,
           "firstTokenIndex": 25
@@ -2026,7 +2274,9 @@
         {
           "word": "강하고",
           "count": 1,
+          "pos": "verb",
           "english": "strong and",
+          "romanization": "ganghago",
           "contextEnglish": "but the sunlight is too strong",
           "firstCaptionIndex": 8,
           "firstTokenIndex": 29
@@ -2034,7 +2284,9 @@
         {
           "word": "걸어요",
           "count": 1,
+          "pos": "verb",
           "english": "walk",
+          "romanization": "geoleoyo",
           "contextEnglish": "and it's too hot, so I can't walk for more than 10 minutes",
           "firstCaptionIndex": 9,
           "firstTokenIndex": 35
@@ -2042,7 +2294,9 @@
         {
           "word": "이상",
           "count": 1,
+          "pos": "noun",
           "english": "more than / strange",
+          "romanization": "isang",
           "contextEnglish": "and it's too hot, so I can't walk for more than 10 minutes",
           "firstCaptionIndex": 9,
           "firstTokenIndex": 33
@@ -2050,7 +2304,9 @@
         {
           "word": "들어가서",
           "count": 1,
+          "pos": "verb",
           "english": "go in and",
+          "romanization": "deuleogaseo",
           "contextEnglish": "So I think I should go into a café",
           "firstCaptionIndex": 10,
           "firstTokenIndex": 38
@@ -2058,7 +2314,9 @@
         {
           "word": "될",
           "count": 1,
+          "pos": "verb",
           "english": "will become / can be",
+          "romanization": "doel",
           "contextEnglish": "and take a short break",
           "firstCaptionIndex": 11,
           "firstTokenIndex": 41
@@ -2066,7 +2324,9 @@
         {
           "word": "쉬어야",
           "count": 1,
+          "pos": "verb",
           "english": "must rest",
+          "romanization": "swieoya",
           "contextEnglish": "and take a short break",
           "firstCaptionIndex": 11,
           "firstTokenIndex": 40
@@ -2074,7 +2334,9 @@
         {
           "word": "잠깐",
           "count": 1,
+          "pos": "other",
           "english": "for a moment",
+          "romanization": "jamkkan",
           "contextEnglish": "and take a short break",
           "firstCaptionIndex": 11,
           "firstTokenIndex": 39
@@ -2082,7 +2344,9 @@
         {
           "word": "져서",
           "count": 1,
+          "pos": "verb",
           "english": "because it becomes",
+          "romanization": "jyeoseo",
           "contextEnglish": "The sun has gone down now,",
           "firstCaptionIndex": 13,
           "firstTokenIndex": 50
@@ -2090,7 +2354,9 @@
         {
           "word": "해가",
           "count": 1,
+          "pos": "noun",
           "english": "sun (subject marker)",
+          "romanization": "haega",
           "contextEnglish": "The sun has gone down now,",
           "firstCaptionIndex": 13,
           "firstTokenIndex": 49
@@ -2098,7 +2364,9 @@
         {
           "word": "덜",
           "count": 1,
+          "pos": "other",
           "english": "less",
+          "romanization": "deol",
           "contextEnglish": "the weather is much less hot",
           "firstCaptionIndex": 14,
           "firstTokenIndex": 53
@@ -2106,7 +2374,9 @@
         {
           "word": "훨씬",
           "count": 1,
+          "pos": "other",
           "english": "much more / far",
+          "romanization": "hwolssin",
           "contextEnglish": "the weather is much less hot",
           "firstCaptionIndex": 14,
           "firstTokenIndex": 51
@@ -2114,7 +2384,9 @@
         {
           "word": "실내에서도",
           "count": 1,
+          "pos": "noun",
           "english": "indoors too",
+          "romanization": "silnaeeseodo",
           "contextEnglish": "But here, even indoors,",
           "firstCaptionIndex": 15,
           "firstTokenIndex": 57
@@ -2122,7 +2394,9 @@
         {
           "word": "세지",
           "count": 1,
+          "pos": "verb",
           "english": "strong (with not)",
+          "romanization": "seji",
           "contextEnglish": "the AC isn't very strong,",
           "firstCaptionIndex": 16,
           "firstTokenIndex": 59
@@ -2130,7 +2404,9 @@
         {
           "word": "않아서",
           "count": 1,
+          "pos": "verb",
           "english": "because it is not",
+          "romanization": "anhaseo",
           "contextEnglish": "the AC isn't very strong,",
           "firstCaptionIndex": 16,
           "firstTokenIndex": 60
@@ -2138,7 +2414,9 @@
         {
           "word": "에어컨이",
           "count": 1,
+          "pos": "noun",
           "english": "air conditioner (subject marker)",
+          "romanization": "eeokeoni",
           "contextEnglish": "the AC isn't very strong,",
           "firstCaptionIndex": 16,
           "firstTokenIndex": 58
@@ -2146,7 +2424,9 @@
         {
           "word": "세게",
           "count": 1,
+          "pos": "other",
           "english": "strongly",
+          "romanization": "sege",
           "contextEnglish": "In Korea, they turn the AC up really high in the summer",
           "firstCaptionIndex": 18,
           "firstTokenIndex": 67
@@ -2154,7 +2434,9 @@
         {
           "word": "에어컨을",
           "count": 1,
+          "pos": "noun",
           "english": "air conditioner (object marker)",
+          "romanization": "eeokeoneul",
           "contextEnglish": "In Korea, they turn the AC up really high in the summer",
           "firstCaptionIndex": 18,
           "firstTokenIndex": 65
@@ -2162,7 +2444,9 @@
         {
           "word": "여름에",
           "count": 1,
+          "pos": "noun",
           "english": "in summer",
+          "romanization": "yeoreume",
           "contextEnglish": "In Korea, they turn the AC up really high in the summer",
           "firstCaptionIndex": 18,
           "firstTokenIndex": 64
@@ -2170,7 +2454,9 @@
         {
           "word": "틀어요",
           "count": 1,
+          "pos": "verb",
           "english": "turn on",
+          "romanization": "teuleoyo",
           "contextEnglish": "In Korea, they turn the AC up really high in the summer",
           "firstCaptionIndex": 18,
           "firstTokenIndex": 68
@@ -2178,7 +2464,9 @@
         {
           "word": "한국에서는",
           "count": 1,
+          "pos": "noun",
           "english": "in Korea (topic marker)",
+          "romanization": "hangukeseoneun",
           "contextEnglish": "In Korea, they turn the AC up really high in the summer",
           "firstCaptionIndex": 18,
           "firstTokenIndex": 63
@@ -2186,7 +2474,9 @@
         {
           "word": "실내가",
           "count": 1,
+          "pos": "noun",
           "english": "indoors (subject marker)",
+          "romanization": "silnaega",
           "contextEnglish": "So it’s cold indoors there,",
           "firstCaptionIndex": 19,
           "firstTokenIndex": 70
@@ -2194,7 +2484,9 @@
         {
           "word": "추운데",
           "count": 1,
+          "pos": "verb",
           "english": "cold, but",
+          "romanization": "chuunde",
           "contextEnglish": "So it’s cold indoors there,",
           "firstCaptionIndex": 19,
           "firstTokenIndex": 71
@@ -2202,7 +2494,9 @@
         {
           "word": "시간이에요",
           "count": 1,
+          "pos": "verb",
           "english": "is time",
+          "romanization": "siganieyo",
           "contextEnglish": "but it’s already dinner time",
           "firstCaptionIndex": 23,
           "firstTokenIndex": 85
@@ -2210,7 +2504,9 @@
         {
           "word": "저녁",
           "count": 1,
+          "pos": "noun",
           "english": "dinner / evening",
+          "romanization": "jeonyeok",
           "contextEnglish": "but it’s already dinner time",
           "firstCaptionIndex": 23,
           "firstTokenIndex": 84
@@ -2218,7 +2514,9 @@
         {
           "word": "먹으려고",
           "count": 1,
+          "pos": "verb",
           "english": "in order to eat",
+          "romanization": "meokeuryeogo",
           "contextEnglish": "I planned to have breakfast at my accommodation,",
           "firstCaptionIndex": 26,
           "firstTokenIndex": 94
@@ -2226,7 +2524,9 @@
         {
           "word": "근처",
           "count": 1,
+          "pos": "noun",
           "english": "nearby",
+          "romanization": "geuncheo",
           "contextEnglish": "So I went to a nearby restaurant",
           "firstCaptionIndex": 28,
           "firstTokenIndex": 102
@@ -2234,7 +2534,9 @@
         {
           "word": "식당에",
           "count": 1,
+          "pos": "noun",
           "english": "to / at a restaurant",
+          "romanization": "sikdange",
           "contextEnglish": "So I went to a nearby restaurant",
           "firstCaptionIndex": 28,
           "firstTokenIndex": 103
@@ -2242,7 +2544,9 @@
         {
           "word": "먹었는데",
           "count": 1,
+          "pos": "verb",
           "english": "ate, but",
+          "romanization": "meokeotneunde",
           "contextEnglish": "and had brunch,",
           "firstCaptionIndex": 29,
           "firstTokenIndex": 106
@@ -2250,7 +2554,9 @@
         {
           "word": "맛있었어요",
           "count": 1,
+          "pos": "verb",
           "english": "was delicious",
+          "romanization": "matiteoteoyo",
           "contextEnglish": "and it was absolutely delicious",
           "firstCaptionIndex": 30,
           "firstTokenIndex": 109
@@ -2258,7 +2564,9 @@
         {
           "word": "가는데",
           "count": 1,
+          "pos": "verb",
           "english": "go, but / while going",
+          "romanization": "ganeunde",
           "contextEnglish": "I don’t usually go to tourist spots,",
           "firstCaptionIndex": 33,
           "firstTokenIndex": 124
@@ -2266,7 +2574,9 @@
         {
           "word": "관광지에",
           "count": 1,
+          "pos": "noun",
           "english": "to / at a tourist spot",
+          "romanization": "gwangwangjie",
           "contextEnglish": "I don’t usually go to tourist spots,",
           "firstCaptionIndex": 33,
           "firstTokenIndex": 121
@@ -2274,7 +2584,9 @@
         {
           "word": "관광지가",
           "count": 1,
+          "pos": "noun",
           "english": "tourist spot (subject marker)",
+          "romanization": "gwangwangjiga",
           "contextEnglish": "but there was one tourist attraction I really wanted to see",
           "firstCaptionIndex": 34,
           "firstTokenIndex": 128
@@ -2282,7 +2594,9 @@
         {
           "word": "보고",
           "count": 1,
+          "pos": "verb",
           "english": "see and",
+          "romanization": "bogo",
           "contextEnglish": "but there was one tourist attraction I really wanted to see",
           "firstCaptionIndex": 34,
           "firstTokenIndex": 126
@@ -2290,7 +2604,9 @@
         {
           "word": "싶은",
           "count": 1,
+          "pos": "verb",
           "english": "wanting / wanted",
+          "romanization": "sipeun",
           "contextEnglish": "but there was one tourist attraction I really wanted to see",
           "firstCaptionIndex": 34,
           "firstTokenIndex": 127
@@ -2298,7 +2614,9 @@
         {
           "word": "하나",
           "count": 1,
+          "pos": "other",
           "english": "one",
+          "romanization": "hana",
           "contextEnglish": "but there was one tourist attraction I really wanted to see",
           "firstCaptionIndex": 34,
           "firstTokenIndex": 129
@@ -2306,7 +2624,9 @@
         {
           "word": "거기에",
           "count": 1,
+          "pos": "other",
           "english": "there / to that place",
+          "romanization": "geogie",
           "contextEnglish": "So I went there and looked around",
           "firstCaptionIndex": 35,
           "firstTokenIndex": 132
@@ -2314,7 +2634,9 @@
         {
           "word": "뭐",
           "count": 1,
+          "pos": "other",
           "english": "what / well",
+          "romanization": "mwo",
           "contextEnglish": "um... and what else did I do?",
           "firstCaptionIndex": 36,
           "firstTokenIndex": 138
@@ -2322,7 +2644,9 @@
         {
           "word": "음",
           "count": 1,
+          "pos": "other",
           "english": "um",
+          "romanization": "eum",
           "contextEnglish": "um... and what else did I do?",
           "firstCaptionIndex": 36,
           "firstTokenIndex": 135
@@ -2330,7 +2654,9 @@
         {
           "word": "했지",
           "count": 1,
+          "pos": "verb",
           "english": "did, right / did",
+          "romanization": "haetji",
           "contextEnglish": "um... and what else did I do?",
           "firstCaptionIndex": 36,
           "firstTokenIndex": 139
@@ -2338,7 +2664,9 @@
         {
           "word": "마시면서",
           "count": 1,
+          "pos": "verb",
           "english": "while drinking",
+          "romanization": "masimyeonseo",
           "contextEnglish": "Oh, I went to a café and had coffee,",
           "firstCaptionIndex": 39,
           "firstTokenIndex": 147
@@ -2346,7 +2674,9 @@
         {
           "word": "썼어요",
           "count": 1,
+          "pos": "verb",
           "english": "wrote",
+          "romanization": "sseoteoyo",
           "contextEnglish": "and I wrote a postcard",
           "firstCaptionIndex": 40,
           "firstTokenIndex": 149
@@ -2354,7 +2684,9 @@
         {
           "word": "사람에게",
           "count": 1,
+          "pos": "noun",
           "english": "to a person",
+          "romanization": "saramege",
           "contextEnglish": "to the person I love",
           "firstCaptionIndex": 42,
           "firstTokenIndex": 154
@@ -2362,7 +2694,9 @@
         {
           "word": "사랑하는",
           "count": 1,
+          "pos": "verb",
           "english": "loving / dear",
+          "romanization": "saranghaneun",
           "contextEnglish": "to the person I love",
           "firstCaptionIndex": 42,
           "firstTokenIndex": 153
@@ -2370,7 +2704,9 @@
         {
           "word": "쓰는",
           "count": 1,
+          "pos": "verb",
           "english": "writing / using",
+          "romanization": "sseuneun",
           "contextEnglish": "while I’m at my travel destination",
           "firstCaptionIndex": 43,
           "firstTokenIndex": 156
@@ -2378,7 +2714,9 @@
         {
           "word": "제일",
           "count": 1,
+          "pos": "other",
           "english": "the most",
+          "romanization": "jeil",
           "contextEnglish": "I’m the happiest",
           "firstCaptionIndex": 44,
           "firstTokenIndex": 158
@@ -2386,7 +2724,9 @@
         {
           "word": "행복해요",
           "count": 1,
+          "pos": "verb",
           "english": "am happy",
+          "romanization": "haengbokhaeyo",
           "contextEnglish": "I’m the happiest",
           "firstCaptionIndex": 44,
           "firstTokenIndex": 159
@@ -2394,7 +2734,9 @@
         {
           "word": "읽었어요",
           "count": 1,
+          "pos": "verb",
           "english": "read",
+          "romanization": "ilkeoteoyo",
           "contextEnglish": "And I also read a little bit of a book",
           "firstCaptionIndex": 45,
           "firstTokenIndex": 163
@@ -2402,7 +2744,9 @@
         {
           "word": "쉬다가",
           "count": 1,
+          "pos": "verb",
           "english": "while resting / after resting",
+          "romanization": "swidaga",
           "contextEnglish": "I’m rested a café for about two hours,",
           "firstCaptionIndex": 46,
           "firstTokenIndex": 168
@@ -2410,7 +2754,9 @@
         {
           "word": "정도",
           "count": 1,
+          "pos": "noun",
           "english": "about / degree",
+          "romanization": "jeongdo",
           "contextEnglish": "I’m rested a café for about two hours,",
           "firstCaptionIndex": 46,
           "firstTokenIndex": 167
@@ -2418,7 +2764,9 @@
         {
           "word": "좋아해요",
           "count": 1,
+          "pos": "verb",
           "english": "like",
+          "romanization": "johahaeyo",
           "contextEnglish": "when I’m traveling",
           "firstCaptionIndex": 49,
           "firstTokenIndex": 180
@@ -2426,7 +2774,9 @@
         {
           "word": "진짜",
           "count": 1,
+          "pos": "other",
           "english": "really / real",
+          "romanization": "jinjja",
           "contextEnglish": "when I’m traveling",
           "firstCaptionIndex": 49,
           "firstTokenIndex": 179
@@ -2434,7 +2784,9 @@
         {
           "word": "들러서",
           "count": 1,
+          "pos": "verb",
           "english": "stop by and",
+          "romanization": "deulreoseo",
           "contextEnglish": "So I’ll stop by the bookstore,",
           "firstCaptionIndex": 50,
           "firstTokenIndex": 183
@@ -2442,7 +2794,9 @@
         {
           "word": "돌아갈",
           "count": 1,
+          "pos": "verb",
           "english": "will return / to return",
+          "romanization": "dolagal",
           "contextEnglish": "and then go back to my accommodation",
           "firstCaptionIndex": 52,
           "firstTokenIndex": 187
@@ -2450,7 +2804,9 @@
         {
           "word": "들어요",
           "count": 1,
+          "pos": "verb",
           "english": "feel / hear / enter",
+          "romanization": "deuleoyo",
           "contextEnglish": "city so, so much",
           "firstCaptionIndex": 54,
           "firstTokenIndex": 196
@@ -2458,7 +2814,9 @@
         {
           "word": "바르셀로나가",
           "count": 1,
+          "pos": "noun",
           "english": "Barcelona (subject marker)",
+          "romanization": "bareuselronaga",
           "contextEnglish": "Actually, I thought Barcelona might be",
           "firstCaptionIndex": 55,
           "firstTokenIndex": 199
@@ -2466,7 +2824,9 @@
         {
           "word": "파리하고",
           "count": 1,
+          "pos": "noun",
           "english": "with / and Paris",
+          "romanization": "parihago",
           "contextEnglish": "Actually, I thought Barcelona might be",
           "firstCaptionIndex": 55,
           "firstTokenIndex": 200
@@ -2474,7 +2834,9 @@
         {
           "word": "거라고",
           "count": 1,
+          "pos": "verb",
           "english": "that it is / will be",
+          "romanization": "georago",
           "contextEnglish": "a little similar to Paris",
           "firstCaptionIndex": 56,
           "firstTokenIndex": 203
@@ -2482,7 +2844,9 @@
         {
           "word": "비슷할",
           "count": 1,
+          "pos": "verb",
           "english": "will be similar",
+          "romanization": "biseuthal",
           "contextEnglish": "a little similar to Paris",
           "firstCaptionIndex": 56,
           "firstTokenIndex": 202
@@ -2490,7 +2854,9 @@
         {
           "word": "분위기도",
           "count": 1,
+          "pos": "noun",
           "english": "atmosphere too",
+          "romanization": "bunwigido",
           "contextEnglish": "the atmosphere is very different,",
           "firstCaptionIndex": 58,
           "firstTokenIndex": 209
@@ -2498,7 +2864,9 @@
         {
           "word": "사람들도",
           "count": 1,
+          "pos": "noun",
           "english": "people too",
+          "romanization": "saramdeuldo",
           "contextEnglish": "the people are very different,",
           "firstCaptionIndex": 59,
           "firstTokenIndex": 212
@@ -2506,7 +2874,9 @@
         {
           "word": "완전",
           "count": 1,
+          "pos": "other",
           "english": "completely",
+          "romanization": "wanjeon",
           "contextEnglish": "everything is completely different",
           "firstCaptionIndex": 60,
           "firstTokenIndex": 215
@@ -2514,7 +2884,9 @@
         {
           "word": "다른",
           "count": 1,
+          "pos": "verb",
           "english": "different / another",
+          "romanization": "dareun",
           "contextEnglish": "I think they both have their own unique charm",
           "firstCaptionIndex": 61,
           "firstTokenIndex": 219
@@ -2522,7 +2894,9 @@
         {
           "word": "둘",
           "count": 1,
+          "pos": "other",
           "english": "two / both",
+          "romanization": "dul",
           "contextEnglish": "I think they both have their own unique charm",
           "firstCaptionIndex": 61,
           "firstTokenIndex": 217
@@ -2530,7 +2904,9 @@
         {
           "word": "매력이",
           "count": 1,
+          "pos": "noun",
           "english": "charm (subject marker)",
+          "romanization": "maeryeoki",
           "contextEnglish": "I think they both have their own unique charm",
           "firstCaptionIndex": 61,
           "firstTokenIndex": 220
@@ -2538,7 +2914,9 @@
         {
           "word": "방금",
           "count": 1,
+          "pos": "other",
           "english": "just now",
+          "romanization": "banggeum",
           "contextEnglish": "I just came out of the bookstore",
           "firstCaptionIndex": 62,
           "firstTokenIndex": 224
@@ -2546,7 +2924,9 @@
         {
           "word": "서점에서",
           "count": 1,
+          "pos": "noun",
           "english": "at / from the bookstore",
+          "romanization": "seojeomeseo",
           "contextEnglish": "I just came out of the bookstore",
           "firstCaptionIndex": 62,
           "firstTokenIndex": 225
@@ -2554,7 +2934,9 @@
         {
           "word": "서점은",
           "count": 1,
+          "pos": "noun",
           "english": "bookstore (topic marker)",
+          "romanization": "seojeomeun",
           "contextEnglish": "This bookstore sells English books",
           "firstCaptionIndex": 63,
           "firstTokenIndex": 228
@@ -2562,7 +2944,9 @@
         {
           "word": "서점이에요",
           "count": 1,
+          "pos": "verb",
           "english": "is a bookstore",
+          "romanization": "seojeomieyo",
           "contextEnglish": "This bookstore sells English books",
           "firstCaptionIndex": 63,
           "firstTokenIndex": 232
@@ -2570,7 +2954,9 @@
         {
           "word": "영어",
           "count": 1,
+          "pos": "noun",
           "english": "English",
+          "romanization": "yeongeo",
           "contextEnglish": "This bookstore sells English books",
           "firstCaptionIndex": 63,
           "firstTokenIndex": 229
@@ -2578,7 +2964,9 @@
         {
           "word": "책을",
           "count": 1,
+          "pos": "noun",
           "english": "book (object marker)",
+          "romanization": "chaekeul",
           "contextEnglish": "This bookstore sells English books",
           "firstCaptionIndex": 63,
           "firstTokenIndex": 230
@@ -2586,7 +2974,9 @@
         {
           "word": "파는",
           "count": 1,
+          "pos": "verb",
           "english": "selling",
+          "romanization": "paneun",
           "contextEnglish": "This bookstore sells English books",
           "firstCaptionIndex": 63,
           "firstTokenIndex": 231
@@ -2594,7 +2984,9 @@
         {
           "word": "구경했는데",
           "count": 1,
+          "pos": "verb",
           "english": "looked around, but",
+          "romanization": "gugyeonghaetneunde",
           "contextEnglish": "So I took a look around,",
           "firstCaptionIndex": 64,
           "firstTokenIndex": 235
@@ -2602,7 +2994,9 @@
         {
           "word": "많았어요",
           "count": 1,
+          "pos": "verb",
           "english": "there were many",
+          "romanization": "manhateoyo",
           "contextEnglish": "but there were so many really interesting postcards",
           "firstCaptionIndex": 65,
           "firstTokenIndex": 239
@@ -2610,7 +3004,9 @@
         {
           "word": "엽서가",
           "count": 1,
+          "pos": "noun",
           "english": "postcard (subject marker)",
+          "romanization": "yeopseoga",
           "contextEnglish": "but there were so many really interesting postcards",
           "firstCaptionIndex": 65,
           "firstTokenIndex": 238
@@ -2618,7 +3014,9 @@
         {
           "word": "재미있는",
           "count": 1,
+          "pos": "verb",
           "english": "interesting / fun",
+          "romanization": "jaemiitneun",
           "contextEnglish": "but there were so many really interesting postcards",
           "firstCaptionIndex": 65,
           "firstTokenIndex": 237
@@ -2626,7 +3024,9 @@
         {
           "word": "보면",
           "count": 1,
+          "pos": "verb",
           "english": "if you look / when seeing",
+          "romanization": "bomyeon",
           "contextEnglish": "When I see postcards,",
           "firstCaptionIndex": 66,
           "firstTokenIndex": 242
@@ -2634,7 +3034,9 @@
         {
           "word": "사고",
           "count": 1,
+          "pos": "verb",
           "english": "buy and",
+          "romanization": "sago",
           "contextEnglish": "I want to buy them all",
           "firstCaptionIndex": 67,
           "firstTokenIndex": 244
@@ -2642,7 +3044,9 @@
         {
           "word": "샀어요",
           "count": 1,
+          "pos": "verb",
           "english": "bought",
+          "romanization": "sateoyo",
           "contextEnglish": "But I didn’t buy any",
           "firstCaptionIndex": 68,
           "firstTokenIndex": 248
@@ -2650,7 +3054,9 @@
         {
           "word": "구경할",
           "count": 1,
+          "pos": "verb",
           "english": "will look around / to look around",
+          "romanization": "gugyeonghal",
           "contextEnglish": "I think I’ll go back tomorrow and browse again",
           "firstCaptionIndex": 69,
           "firstTokenIndex": 253
@@ -2658,7 +3064,9 @@
         {
           "word": "아마",
           "count": 1,
+          "pos": "other",
           "english": "probably",
+          "romanization": "ama",
           "contextEnglish": "I think I’ll go back tomorrow and browse again",
           "firstCaptionIndex": 69,
           "firstTokenIndex": 249
@@ -2666,7 +3074,9 @@
         {
           "word": "간단히",
           "count": 1,
+          "pos": "other",
           "english": "simply / briefly",
+          "romanization": "gandanhi",
           "contextEnglish": "to have a simple dinner",
           "firstCaptionIndex": 71,
           "firstTokenIndex": 261
@@ -2674,7 +3084,9 @@
         {
           "word": "거에요",
           "count": 1,
+          "pos": "verb",
           "english": "will / is going to",
+          "romanization": "geoeyo",
           "contextEnglish": "to have a simple dinner",
           "firstCaptionIndex": 71,
           "firstTokenIndex": 264
@@ -2682,7 +3094,9 @@
         {
           "word": "먹을",
           "count": 1,
+          "pos": "verb",
           "english": "will eat / to eat",
+          "romanization": "meokeul",
           "contextEnglish": "to have a simple dinner",
           "firstCaptionIndex": 71,
           "firstTokenIndex": 263
@@ -2690,7 +3104,9 @@
         {
           "word": "저녁을",
           "count": 1,
+          "pos": "noun",
           "english": "dinner (object marker)",
+          "romanization": "jeonyeokeul",
           "contextEnglish": "to have a simple dinner",
           "firstCaptionIndex": 71,
           "firstTokenIndex": 262
@@ -2698,7 +3114,9 @@
         {
           "word": "해야",
           "count": 1,
+          "pos": "verb",
           "english": "must do",
+          "romanization": "haeya",
           "contextEnglish": "And I need to do the laundry",
           "firstCaptionIndex": 72,
           "firstTokenIndex": 267
@@ -2706,7 +3124,9 @@
         {
           "word": "세탁기하고",
           "count": 1,
+          "pos": "noun",
           "english": "washing machine and",
+          "romanization": "setakgihago",
           "contextEnglish": "The accommodation has a washing machine",
           "firstCaptionIndex": 73,
           "firstTokenIndex": 270
@@ -2714,7 +3134,9 @@
         {
           "word": "건조기가",
           "count": 1,
+          "pos": "noun",
           "english": "dryer (subject marker)",
+          "romanization": "geonjogiga",
           "contextEnglish": "and a dryer so I’ll do the laundry",
           "firstCaptionIndex": 74,
           "firstTokenIndex": 271
@@ -2722,7 +3144,9 @@
         {
           "word": "있어서",
           "count": 1,
+          "pos": "verb",
           "english": "because there is / has",
+          "romanization": "iteoseo",
           "contextEnglish": "and a dryer so I’ll do the laundry",
           "firstCaptionIndex": 74,
           "firstTokenIndex": 272
@@ -2730,7 +3154,9 @@
         {
           "word": "쉴",
           "count": 1,
+          "pos": "verb",
           "english": "will rest / to rest",
+          "romanization": "swil",
           "contextEnglish": "and then rest a bit",
           "firstCaptionIndex": 75,
           "firstTokenIndex": 276
@@ -2738,7 +3164,9 @@
         {
           "word": "보내고",
           "count": 1,
+          "pos": "verb",
           "english": "spend / send and",
+          "romanization": "bonaego",
           "contextEnglish": "and quietly",
           "firstCaptionIndex": 77,
           "firstTokenIndex": 284
@@ -2746,7 +3174,9 @@
         {
           "word": "조용히",
           "count": 1,
+          "pos": "other",
           "english": "quietly",
+          "romanization": "joyonghi",
           "contextEnglish": "and quietly",
           "firstCaptionIndex": 77,
           "firstTokenIndex": 282
@@ -2754,7 +3184,9 @@
         {
           "word": "하루를",
           "count": 1,
+          "pos": "noun",
           "english": "day (object marker)",
+          "romanization": "harureul",
           "contextEnglish": "and quietly",
           "firstCaptionIndex": 77,
           "firstTokenIndex": 283
@@ -2762,7 +3194,9 @@
         {
           "word": "기분이",
           "count": 1,
+          "pos": "noun",
           "english": "feeling / mood (subject marker)",
+          "romanization": "gibuni",
           "contextEnglish": "I'm feeling so good",
           "firstCaptionIndex": 78,
           "firstTokenIndex": 287
@@ -2770,7 +3204,9 @@
         {
           "word": "여유로운",
           "count": 1,
+          "pos": "verb",
           "english": "relaxed / leisurely",
+          "romanization": "yeoyuroun",
           "contextEnglish": "This kind of relaxed trip",
           "firstCaptionIndex": 79,
           "firstTokenIndex": 291
@@ -2778,7 +3214,9 @@
         {
           "word": "여행이",
           "count": 1,
+          "pos": "noun",
           "english": "trip (subject marker)",
+          "romanization": "yeohaengi",
           "contextEnglish": "This kind of relaxed trip",
           "firstCaptionIndex": 79,
           "firstTokenIndex": 292
@@ -2786,7 +3224,9 @@
         {
           "word": "스타일이에요",
           "count": 1,
+          "pos": "verb",
           "english": "is a style",
+          "romanization": "seutailieyo",
           "contextEnglish": "is my style",
           "firstCaptionIndex": 80,
           "firstTokenIndex": 294
@@ -2794,7 +3234,9 @@
         {
           "word": "제",
           "count": 1,
+          "pos": "other",
           "english": "my",
+          "romanization": "je",
           "contextEnglish": "is my style",
           "firstCaptionIndex": 80,
           "firstTokenIndex": 293
@@ -2802,7 +3244,9 @@
         {
           "word": "밖에",
           "count": 1,
+          "pos": "other",
           "english": "outside / except",
+          "romanization": "bake",
           "contextEnglish": "and I went out",
           "firstCaptionIndex": 82,
           "firstTokenIndex": 299
@@ -2810,7 +3254,9 @@
         {
           "word": "아침은",
           "count": 1,
+          "pos": "noun",
           "english": "breakfast / morning (topic marker)",
+          "romanization": "achimeun",
           "contextEnglish": "This morning, I had breakfast at the accommodation",
           "firstCaptionIndex": 83,
           "firstTokenIndex": 302
@@ -2818,7 +3264,9 @@
         {
           "word": "계란",
           "count": 1,
+          "pos": "noun",
           "english": "egg",
+          "romanization": "gyeran",
           "contextEnglish": "For breakfast, there were simple items like",
           "firstCaptionIndex": 84,
           "firstTokenIndex": 307
@@ -2826,7 +3274,9 @@
         {
           "word": "빵",
           "count": 1,
+          "pos": "noun",
           "english": "bread",
+          "romanization": "ppang",
           "contextEnglish": "For breakfast, there were simple items like",
           "firstCaptionIndex": 84,
           "firstTokenIndex": 308
@@ -2834,7 +3284,9 @@
         {
           "word": "조식은",
           "count": 1,
+          "pos": "noun",
           "english": "breakfast (topic marker)",
+          "romanization": "josikeun",
           "contextEnglish": "For breakfast, there were simple items like",
           "firstCaptionIndex": 84,
           "firstTokenIndex": 306
@@ -2842,7 +3294,9 @@
         {
           "word": "치즈",
           "count": 1,
+          "pos": "noun",
           "english": "cheese",
+          "romanization": "chijeu",
           "contextEnglish": "For breakfast, there were simple items like",
           "firstCaptionIndex": 84,
           "firstTokenIndex": 310
@@ -2850,7 +3304,9 @@
         {
           "word": "햄",
           "count": 1,
+          "pos": "noun",
           "english": "ham",
+          "romanization": "haem",
           "contextEnglish": "For breakfast, there were simple items like",
           "firstCaptionIndex": 84,
           "firstTokenIndex": 309
@@ -2858,7 +3314,9 @@
         {
           "word": "간단한",
           "count": 1,
+          "pos": "verb",
           "english": "simple",
+          "romanization": "gandanhan",
           "contextEnglish": "eggs, bread, ham, and cheese",
           "firstCaptionIndex": 85,
           "firstTokenIndex": 312
@@ -2866,7 +3324,9 @@
         {
           "word": "이런",
           "count": 1,
+          "pos": "other",
           "english": "this kind of",
+          "romanization": "ireon",
           "contextEnglish": "eggs, bread, ham, and cheese",
           "firstCaptionIndex": 85,
           "firstTokenIndex": 311
@@ -2874,7 +3334,9 @@
         {
           "word": "일찍",
           "count": 1,
+          "pos": "other",
           "english": "early",
+          "romanization": "iljjik",
           "contextEnglish": "After eating breakfast, I went out early",
           "firstCaptionIndex": 86,
           "firstTokenIndex": 317
@@ -2882,7 +3344,9 @@
         {
           "word": "강해서",
           "count": 1,
+          "pos": "verb",
           "english": "because it is strong",
+          "romanization": "ganghaeseo",
           "contextEnglish": "Because yesterday the sunlight was so strong in the afternoon",
           "firstCaptionIndex": 87,
           "firstTokenIndex": 324
@@ -2890,7 +3354,9 @@
         {
           "word": "어제는",
           "count": 1,
+          "pos": "noun",
           "english": "yesterday (topic marker)",
+          "romanization": "eojeneun",
           "contextEnglish": "Because yesterday the sunlight was so strong in the afternoon",
           "firstCaptionIndex": 87,
           "firstTokenIndex": 320
@@ -2898,7 +3364,9 @@
         {
           "word": "오후에",
           "count": 1,
+          "pos": "noun",
           "english": "in the afternoon",
+          "romanization": "ohue",
           "contextEnglish": "Because yesterday the sunlight was so strong in the afternoon",
           "firstCaptionIndex": 87,
           "firstTokenIndex": 321
@@ -2906,7 +3374,9 @@
         {
           "word": "못했어요",
           "count": 1,
+          "pos": "verb",
           "english": "could not do",
+          "romanization": "mothaeteoyo",
           "contextEnglish": "that I couldn’t really go for a walk",
           "firstCaptionIndex": 88,
           "firstTokenIndex": 327
@@ -2914,7 +3384,9 @@
         {
           "word": "산책을",
           "count": 1,
+          "pos": "noun",
           "english": "walk / stroll (object marker)",
+          "romanization": "sanchaekeul",
           "contextEnglish": "that I couldn’t really go for a walk",
           "firstCaptionIndex": 88,
           "firstTokenIndex": 325
@@ -2922,7 +3394,9 @@
         {
           "word": "때",
           "count": 1,
+          "pos": "noun",
           "english": "when / time",
+          "romanization": "ttae",
           "contextEnglish": "So this morning, when there was no sunlight,",
           "firstCaptionIndex": 89,
           "firstTokenIndex": 333
@@ -2930,7 +3404,9 @@
         {
           "word": "싶어서",
           "count": 1,
+          "pos": "verb",
           "english": "because I wanted to",
+          "romanization": "sipeoseo",
           "contextEnglish": "I wanted to go for a walk,",
           "firstCaptionIndex": 90,
           "firstTokenIndex": 335
@@ -2938,7 +3414,9 @@
         {
           "word": "걷고",
           "count": 1,
+          "pos": "verb",
           "english": "walk and",
+          "romanization": "geotgo",
           "contextEnglish": "and I’m walking right now",
           "firstCaptionIndex": 91,
           "firstTokenIndex": 337
@@ -2946,7 +3424,9 @@
         {
           "word": "걷다가",
           "count": 1,
+          "pos": "verb",
           "english": "while walking / after walking",
+          "romanization": "geotdaga",
           "contextEnglish": "I want to walk a little",
           "firstCaptionIndex": 93,
           "firstTokenIndex": 345
@@ -2954,7 +3434,9 @@
         {
           "word": "마시고",
           "count": 1,
+          "pos": "verb",
           "english": "drink and",
+          "romanization": "masigo",
           "contextEnglish": "and then have a cup of coffee at a café",
           "firstCaptionIndex": 94,
           "firstTokenIndex": 350
@@ -2962,7 +3444,9 @@
         {
           "word": "잔",
           "count": 1,
+          "pos": "noun",
           "english": "cup / glass",
+          "romanization": "jan",
           "contextEnglish": "and then have a cup of coffee at a café",
           "firstCaptionIndex": 94,
           "firstTokenIndex": 349
@@ -2970,7 +3454,9 @@
         {
           "word": "커피도",
           "count": 1,
+          "pos": "noun",
           "english": "coffee too",
+          "romanization": "keopido",
           "contextEnglish": "and then have a cup of coffee at a café",
           "firstCaptionIndex": 94,
           "firstTokenIndex": 347
@@ -2978,7 +3464,9 @@
         {
           "word": "시에",
           "count": 1,
+          "pos": "noun",
           "english": "at o'clock",
+          "romanization": "sie",
           "contextEnglish": "And today, I have to catch the train at 3 o'clock",
           "firstCaptionIndex": 95,
           "firstTokenIndex": 354
@@ -2986,7 +3474,9 @@
         {
           "word": "타야",
           "count": 1,
+          "pos": "verb",
           "english": "must ride / take",
+          "romanization": "taya",
           "contextEnglish": "And today, I have to catch the train at 3 o'clock",
           "firstCaptionIndex": 95,
           "firstTokenIndex": 356
@@ -2994,7 +3484,9 @@
         {
           "word": "떠나요",
           "count": 1,
+          "pos": "verb",
           "english": "leave",
+          "romanization": "tteonayo",
           "contextEnglish": "Because today I'm already leaving Barcelona",
           "firstCaptionIndex": 96,
           "firstTokenIndex": 362
@@ -3002,7 +3494,9 @@
         {
           "word": "바르셀로나를",
           "count": 1,
+          "pos": "noun",
           "english": "Barcelona (object marker)",
+          "romanization": "bareuselronareul",
           "contextEnglish": "Because today I'm already leaving Barcelona",
           "firstCaptionIndex": 96,
           "firstTokenIndex": 361
@@ -3010,7 +3504,9 @@
         {
           "word": "가요",
           "count": 1,
+          "pos": "verb",
           "english": "go",
+          "romanization": "gayo",
           "contextEnglish": "I’m going to Paris by train today",
           "firstCaptionIndex": 97,
           "firstTokenIndex": 368
@@ -3018,7 +3514,9 @@
         {
           "word": "마신",
           "count": 1,
+          "pos": "verb",
           "english": "drank",
+          "romanization": "masin",
           "contextEnglish": "So after drinking coffee,",
           "firstCaptionIndex": 98,
           "firstTokenIndex": 371
@@ -3026,7 +3524,9 @@
         {
           "word": "샤워를",
           "count": 1,
+          "pos": "noun",
           "english": "shower (object marker)",
+          "romanization": "syaworeul",
           "contextEnglish": "take a shower,",
           "firstCaptionIndex": 100,
           "firstTokenIndex": 377
@@ -3034,7 +3534,9 @@
         {
           "word": "갈",
           "count": 1,
+          "pos": "verb",
           "english": "will go / to go",
+          "romanization": "gal",
           "contextEnglish": "and then head to the train station",
           "firstCaptionIndex": 101,
           "firstTokenIndex": 381
@@ -3042,7 +3544,9 @@
         {
           "word": "기차역으로",
           "count": 1,
+          "pos": "noun",
           "english": "to the train station",
+          "romanization": "gichayeokeuro",
           "contextEnglish": "and then head to the train station",
           "firstCaptionIndex": 101,
           "firstTokenIndex": 380
@@ -3050,7 +3554,9 @@
         {
           "word": "앉아",
           "count": 1,
+          "pos": "verb",
           "english": "sit",
+          "romanization": "anja",
           "contextEnglish": "I’m sitting in the café right now",
           "firstCaptionIndex": 102,
           "firstTokenIndex": 386
@@ -3058,7 +3564,9 @@
         {
           "word": "하면서",
           "count": 1,
+          "pos": "verb",
           "english": "while doing",
+          "romanization": "hamyeonseo",
           "contextEnglish": "At the café, I'm working a bit on my laptop",
           "firstCaptionIndex": 103,
           "firstTokenIndex": 392
@@ -3066,7 +3574,9 @@
         {
           "word": "마셔요",
           "count": 1,
+          "pos": "verb",
           "english": "drink",
+          "romanization": "masyeoyo",
           "contextEnglish": "while drinking coffee",
           "firstCaptionIndex": 104,
           "firstTokenIndex": 394
@@ -3074,7 +3584,9 @@
         {
           "word": "좋아하는데",
           "count": 1,
+          "pos": "verb",
           "english": "like, but",
+          "romanization": "johahaneunde",
           "contextEnglish": "I usually don’t like iced Americano that much,",
           "firstCaptionIndex": 105,
           "firstTokenIndex": 401
@@ -3082,7 +3594,9 @@
         {
           "word": "더우니까",
           "count": 1,
+          "pos": "verb",
           "english": "because it is hot",
+          "romanization": "deounikka",
           "contextEnglish": "but since the weather is hot,",
           "firstCaptionIndex": 106,
           "firstTokenIndex": 403
@@ -3090,7 +3604,9 @@
         {
           "word": "말라요",
           "count": 1,
+          "pos": "verb",
           "english": "gets dry",
+          "romanization": "malrayo",
           "contextEnglish": "I keep getting thirsty",
           "firstCaptionIndex": 107,
           "firstTokenIndex": 406
@@ -3098,7 +3614,9 @@
         {
           "word": "목이",
           "count": 1,
+          "pos": "noun",
           "english": "throat (subject marker)",
+          "romanization": "moki",
           "contextEnglish": "I keep getting thirsty",
           "firstCaptionIndex": 107,
           "firstTokenIndex": 405
@@ -3106,7 +3624,9 @@
         {
           "word": "라떼를",
           "count": 1,
+          "pos": "noun",
           "english": "latte (object marker)",
+          "romanization": "rattereul",
           "contextEnglish": "So I usually order a latte all the time,",
           "firstCaptionIndex": 108,
           "firstTokenIndex": 411
@@ -3114,7 +3634,9 @@
         {
           "word": "주문하지만",
           "count": 1,
+          "pos": "verb",
           "english": "order, but",
+          "romanization": "jumunhajiman",
           "contextEnglish": "So I usually order a latte all the time,",
           "firstCaptionIndex": 108,
           "firstTokenIndex": 412
@@ -3122,7 +3644,9 @@
         {
           "word": "항상",
           "count": 1,
+          "pos": "other",
           "english": "always",
+          "romanization": "hangsang",
           "contextEnglish": "So I usually order a latte all the time,",
           "firstCaptionIndex": 108,
           "firstTokenIndex": 410
@@ -3130,7 +3654,9 @@
         {
           "word": "마셨어요",
           "count": 1,
+          "pos": "verb",
           "english": "drank",
+          "romanization": "masyeoteoyo",
           "contextEnglish": "but here I’ve been drinking iced Americano every day",
           "firstCaptionIndex": 109,
           "firstTokenIndex": 417
@@ -3138,7 +3664,9 @@
         {
           "word": "매일",
           "count": 1,
+          "pos": "noun",
           "english": "every day",
+          "romanization": "maeil",
           "contextEnglish": "but here I’ve been drinking iced Americano every day",
           "firstCaptionIndex": 109,
           "firstTokenIndex": 414
@@ -3146,7 +3674,9 @@
         {
           "word": "여기에서는",
           "count": 1,
+          "pos": "other",
           "english": "here / in this place (topic marker)",
+          "romanization": "yeogieseoneun",
           "contextEnglish": "but here I’ve been drinking iced Americano every day",
           "firstCaptionIndex": 109,
           "firstTokenIndex": 413
@@ -3154,7 +3684,9 @@
         {
           "word": "타러",
           "count": 1,
+          "pos": "verb",
           "english": "to ride / take",
+          "romanization": "tareo",
           "contextEnglish": "And I think I won’t have time today",
           "firstCaptionIndex": 110,
           "firstTokenIndex": 422
@@ -3162,7 +3694,9 @@
         {
           "word": "요거트도",
           "count": 1,
+          "pos": "noun",
           "english": "yogurt too",
+          "romanization": "yogeoteudo",
           "contextEnglish": "So I’m eating yogurt too",
           "firstCaptionIndex": 112,
           "firstTokenIndex": 429
@@ -3170,7 +3704,9 @@
         {
           "word": "여기서",
           "count": 1,
+          "pos": "other",
           "english": "here",
+          "romanization": "yeogiseo",
           "contextEnglish": "I’ll work a little here,",
           "firstCaptionIndex": 113,
           "firstTokenIndex": 432
@@ -3178,7 +3714,9 @@
         {
           "word": "하다가",
           "count": 1,
+          "pos": "verb",
           "english": "while doing / after doing",
+          "romanization": "hadaga",
           "contextEnglish": "I’ll work a little here,",
           "firstCaptionIndex": 113,
           "firstTokenIndex": 435
@@ -3186,7 +3724,9 @@
         {
           "word": "출발할",
           "count": 1,
+          "pos": "verb",
           "english": "will depart / to depart",
+          "romanization": "chulbalhal",
           "contextEnglish": "to pack my things and leave",
           "firstCaptionIndex": 115,
           "firstTokenIndex": 440
@@ -3194,7 +3734,9 @@
         {
           "word": "바르셀로나에는",
           "count": 1,
+          "pos": "noun",
           "english": "in / to Barcelona (topic marker)",
+          "romanization": "bareuselronaeneun",
           "contextEnglish": "But in Barcelona, there are really",
           "firstCaptionIndex": 116,
           "firstTokenIndex": 443
@@ -3202,7 +3744,9 @@
         {
           "word": "저처럼",
           "count": 1,
+          "pos": "other",
           "english": "like me",
+          "romanization": "jeocheoreom",
           "contextEnglish": "a lot of people like me",
           "firstCaptionIndex": 117,
           "firstTokenIndex": 444
@@ -3210,7 +3754,9 @@
         {
           "word": "많아요",
           "count": 1,
+          "pos": "verb",
           "english": "there are many / a lot",
+          "romanization": "manhayo",
           "contextEnglish": "who work in cafés with a laptop like this",
           "firstCaptionIndex": 118,
           "firstTokenIndex": 451
@@ -3218,7 +3764,9 @@
         {
           "word": "사람이",
           "count": 1,
+          "pos": "noun",
           "english": "person / people (subject marker)",
+          "romanization": "sarami",
           "contextEnglish": "who work in cafés with a laptop like this",
           "firstCaptionIndex": 118,
           "firstTokenIndex": 449
@@ -3226,7 +3774,9 @@
         {
           "word": "맞는다고",
           "count": 1,
+          "pos": "verb",
           "english": "that it fits / is right",
+          "romanization": "matneundago",
           "contextEnglish": "That’s why I thought this city suits me well",
           "firstCaptionIndex": 119,
           "firstTokenIndex": 457
@@ -3234,7 +3784,9 @@
         {
           "word": "저한테",
           "count": 1,
+          "pos": "other",
           "english": "to me / for me",
+          "romanization": "jeohante",
           "contextEnglish": "That’s why I thought this city suits me well",
           "firstCaptionIndex": 119,
           "firstTokenIndex": 455
@@ -3242,7 +3794,9 @@
         {
           "word": "좋아하고",
           "count": 1,
+          "pos": "verb",
           "english": "like and",
+          "romanization": "johahago",
           "contextEnglish": "I really love cafés,",
           "firstCaptionIndex": 120,
           "firstTokenIndex": 462
@@ -3250,7 +3804,9 @@
         {
           "word": "카페를",
           "count": 1,
+          "pos": "noun",
           "english": "cafe (object marker)",
+          "romanization": "kapereul",
           "contextEnglish": "I really love cafés,",
           "firstCaptionIndex": 120,
           "firstTokenIndex": 460
@@ -3258,7 +3814,9 @@
         {
           "word": "앉아서",
           "count": 1,
+          "pos": "verb",
           "english": "sit and",
+          "romanization": "anjaseo",
           "contextEnglish": "and I enjoy sitting in one and working,",
           "firstCaptionIndex": 121,
           "firstTokenIndex": 464
@@ -3266,7 +3824,9 @@
         {
           "word": "좋아해서",
           "count": 1,
+          "pos": "verb",
           "english": "because I like",
+          "romanization": "johahaeseo",
           "contextEnglish": "and I enjoy sitting in one and working,",
           "firstCaptionIndex": 121,
           "firstTokenIndex": 467
@@ -3274,7 +3834,9 @@
         {
           "word": "여기가",
           "count": 1,
+          "pos": "other",
           "english": "here (subject marker)",
+          "romanization": "yeogiga",
           "contextEnglish": "so this place felt really comfortable for me",
           "firstCaptionIndex": 122,
           "firstTokenIndex": 468
@@ -3282,7 +3844,9 @@
         {
           "word": "편했어요",
           "count": 1,
+          "pos": "verb",
           "english": "was comfortable",
+          "romanization": "pyeonhaeteoyo",
           "contextEnglish": "so this place felt really comfortable for me",
           "firstCaptionIndex": 122,
           "firstTokenIndex": 470
@@ -3290,7 +3854,9 @@
         {
           "word": "건",
           "count": 1,
+          "pos": "noun",
           "english": "thing (topic, contracted)",
+          "romanization": "geon",
           "contextEnglish": "Leaving Spain makes me",
           "firstCaptionIndex": 123,
           "firstTokenIndex": 473
@@ -3298,7 +3864,9 @@
         {
           "word": "떠나는",
           "count": 1,
+          "pos": "verb",
           "english": "leaving",
+          "romanization": "tteonaneun",
           "contextEnglish": "Leaving Spain makes me",
           "firstCaptionIndex": 123,
           "firstTokenIndex": 472
@@ -3306,7 +3874,9 @@
         {
           "word": "스페인을",
           "count": 1,
+          "pos": "noun",
           "english": "Spain (object marker)",
+          "romanization": "seupeineul",
           "contextEnglish": "Leaving Spain makes me",
           "firstCaptionIndex": 123,
           "firstTokenIndex": 471
@@ -3314,7 +3884,9 @@
         {
           "word": "슬프지만",
           "count": 1,
+          "pos": "verb",
           "english": "sad, but",
+          "romanization": "seulpeujiman",
           "contextEnglish": "a little sad,",
           "firstCaptionIndex": 124,
           "firstTokenIndex": 475
@@ -3322,7 +3894,9 @@
         {
           "word": "기대돼요",
           "count": 1,
+          "pos": "verb",
           "english": "look forward to",
+          "romanization": "gidaedwaeyo",
           "contextEnglish": "but I'm so excited to go to Paris",
           "firstCaptionIndex": 125,
           "firstTokenIndex": 480
@@ -3330,7 +3904,9 @@
         {
           "word": "떠난",
           "count": 1,
+          "pos": "verb",
           "english": "left / departed",
+          "romanization": "tteonan",
           "contextEnglish": "After I left for Paris in January,",
           "firstCaptionIndex": 126,
           "firstTokenIndex": 483
@@ -3338,7 +3914,9 @@
         {
           "word": "월에",
           "count": 1,
+          "pos": "noun",
           "english": "in month",
+          "romanization": "wole",
           "contextEnglish": "After I left for Paris in January,",
           "firstCaptionIndex": 126,
           "firstTokenIndex": 481
@@ -3346,7 +3924,9 @@
         {
           "word": "파리를",
           "count": 1,
+          "pos": "noun",
           "english": "Paris (object marker)",
+          "romanization": "parireul",
           "contextEnglish": "After I left for Paris in January,",
           "firstCaptionIndex": 126,
           "firstTokenIndex": 482
@@ -3354,7 +3934,9 @@
         {
           "word": "그리웠어요",
           "count": 1,
+          "pos": "verb",
           "english": "missed / longed for",
+          "romanization": "geuriwoteoyo",
           "contextEnglish": "I kept missing Paris",
           "firstCaptionIndex": 127,
           "firstTokenIndex": 487
@@ -3362,7 +3944,9 @@
         {
           "word": "파리가",
           "count": 1,
+          "pos": "noun",
           "english": "Paris (subject marker)",
+          "romanization": "pariga",
           "contextEnglish": "I kept missing Paris",
           "firstCaptionIndex": 127,
           "firstTokenIndex": 485
@@ -3370,7 +3954,9 @@
         {
           "word": "맛있는",
           "count": 1,
+          "pos": "verb",
           "english": "delicious",
+          "romanization": "matitneun",
           "contextEnglish": "and bought lots of delicious breads from a bakery",
           "firstCaptionIndex": 129,
           "firstTokenIndex": 491
@@ -3378,7 +3964,9 @@
         {
           "word": "빵도",
           "count": 1,
+          "pos": "noun",
           "english": "bread too",
+          "romanization": "ppangdo",
           "contextEnglish": "and bought lots of delicious breads from a bakery",
           "firstCaptionIndex": 129,
           "firstTokenIndex": 492
@@ -3386,7 +3974,9 @@
         {
           "word": "빵집에서",
           "count": 1,
+          "pos": "noun",
           "english": "at / from a bakery",
+          "romanization": "ppangjipeseo",
           "contextEnglish": "and bought lots of delicious breads from a bakery",
           "firstCaptionIndex": 129,
           "firstTokenIndex": 490
@@ -3394,7 +3984,9 @@
         {
           "word": "사먹고",
           "count": 1,
+          "pos": "verb",
           "english": "buy and eat",
+          "romanization": "sameokgo",
           "contextEnglish": "and bought lots of delicious breads from a bakery",
           "firstCaptionIndex": 129,
           "firstTokenIndex": 494
@@ -3402,7 +3994,9 @@
         {
           "word": "가던",
           "count": 1,
+          "pos": "verb",
           "english": "used to go",
+          "romanization": "gadeon",
           "contextEnglish": "I’ll also go to the café I used to go a lot,",
           "firstCaptionIndex": 130,
           "firstTokenIndex": 498
@@ -3410,7 +4004,9 @@
         {
           "word": "예전에",
           "count": 1,
+          "pos": "other",
           "english": "before / in the past",
+          "romanization": "yejeone",
           "contextEnglish": "I’ll also go to the café I used to go a lot,",
           "firstCaptionIndex": 130,
           "firstTokenIndex": 496
@@ -3418,7 +4014,9 @@
         {
           "word": "자주",
           "count": 1,
+          "pos": "other",
           "english": "often",
+          "romanization": "jaju",
           "contextEnglish": "I’ll also go to the café I used to go a lot,",
           "firstCaptionIndex": 130,
           "firstTokenIndex": 497
@@ -3426,7 +4024,9 @@
         {
           "word": "카페에도",
           "count": 1,
+          "pos": "noun",
           "english": "to / at cafes too",
+          "romanization": "kapeedo",
           "contextEnglish": "I’ll also go to the café I used to go a lot,",
           "firstCaptionIndex": 130,
           "firstTokenIndex": 499
@@ -3434,7 +4034,9 @@
         {
           "word": "산책도",
           "count": 1,
+          "pos": "noun",
           "english": "walks too",
+          "romanization": "sanchaekdo",
           "contextEnglish": "take plenty of walks,",
           "firstCaptionIndex": 131,
           "firstTokenIndex": 501
@@ -3442,7 +4044,9 @@
         {
           "word": "만날",
           "count": 1,
+          "pos": "verb",
           "english": "will meet / to meet",
+          "romanization": "mannal",
           "contextEnglish": "and meet my friends who live in Paris",
           "firstCaptionIndex": 132,
           "firstTokenIndex": 507
@@ -3450,7 +4054,9 @@
         {
           "word": "관광은",
           "count": 1,
+          "pos": "noun",
           "english": "sightseeing (topic marker)",
+          "romanization": "gwangwangeun",
           "contextEnglish": "I don’t think I’ll do much sightseeing even in Paris",
           "firstCaptionIndex": 133,
           "firstTokenIndex": 510
@@ -3458,7 +4064,9 @@
         {
           "word": "파리에서도",
           "count": 1,
+          "pos": "noun",
           "english": "in Paris too",
+          "romanization": "parieseodo",
           "contextEnglish": "I don’t think I’ll do much sightseeing even in Paris",
           "firstCaptionIndex": 133,
           "firstTokenIndex": 509
@@ -3466,7 +4074,9 @@
         {
           "word": "할",
           "count": 1,
+          "pos": "verb",
           "english": "will do / to do",
+          "romanization": "hal",
           "contextEnglish": "I don’t think I’ll do much sightseeing even in Paris",
           "firstCaptionIndex": 133,
           "firstTokenIndex": 513
@@ -3474,7 +4084,9 @@
         {
           "word": "일상을",
           "count": 1,
+          "pos": "noun",
           "english": "daily life (object marker)",
+          "romanization": "ilsangeul",
           "contextEnglish": "I just want to enjoy my everyday life slowly",
           "firstCaptionIndex": 134,
           "firstTokenIndex": 518
@@ -3482,7 +4094,9 @@
         {
           "word": "즐기고",
           "count": 1,
+          "pos": "verb",
           "english": "enjoy and",
+          "romanization": "jeulgigo",
           "contextEnglish": "I just want to enjoy my everyday life slowly",
           "firstCaptionIndex": 134,
           "firstTokenIndex": 519
@@ -3490,7 +4104,9 @@
         {
           "word": "들었는데",
           "count": 1,
+          "pos": "verb",
           "english": "heard / felt, but",
+          "romanization": "deuleotneunde",
           "contextEnglish": "Oh, and I really liked this city",
           "firstCaptionIndex": 135,
           "firstTokenIndex": 528
@@ -3498,7 +4114,9 @@
         {
           "word": "멋있어요",
           "count": 1,
+          "pos": "verb",
           "english": "is cool / wonderful",
+          "romanization": "meotiteoyo",
           "contextEnglish": "especially the people are so cool",
           "firstCaptionIndex": 136,
           "firstTokenIndex": 532
@@ -3506,7 +4124,9 @@
         {
           "word": "특히",
           "count": 1,
+          "pos": "other",
           "english": "especially",
+          "romanization": "teukhi",
           "contextEnglish": "especially the people are so cool",
           "firstCaptionIndex": 136,
           "firstTokenIndex": 529
@@ -3514,7 +4134,9 @@
         {
           "word": "도시는",
           "count": 1,
+          "pos": "noun",
           "english": "city (topic marker)",
+          "romanization": "dosineun",
           "contextEnglish": "This city is full of energy",
           "firstCaptionIndex": 138,
           "firstTokenIndex": 537
@@ -3522,7 +4144,9 @@
         {
           "word": "더",
           "count": 1,
+          "pos": "other",
           "english": "more",
+          "romanization": "deo",
           "contextEnglish": "I really want to come again one more time",
           "firstCaptionIndex": 139,
           "firstTokenIndex": 544
@@ -3530,7 +4154,9 @@
         {
           "word": "번",
           "count": 1,
+          "pos": "noun",
           "english": "time / occurrence",
+          "romanization": "beon",
           "contextEnglish": "I really want to come again one more time",
           "firstCaptionIndex": 139,
           "firstTokenIndex": 543
@@ -3538,7 +4164,9 @@
         {
           "word": "오고",
           "count": 1,
+          "pos": "verb",
           "english": "come and",
+          "romanization": "ogo",
           "contextEnglish": "I really want to come again one more time",
           "firstCaptionIndex": 139,
           "firstTokenIndex": 545
@@ -3546,7 +4174,9 @@
         {
           "word": "예쁜",
           "count": 1,
+          "pos": "verb",
           "english": "pretty",
+          "romanization": "yeppeun",
           "contextEnglish": "And I think Spanish is also really, really beautiful",
           "firstCaptionIndex": 140,
           "firstTokenIndex": 551
@@ -3554,7 +4184,9 @@
         {
           "word": "들으면",
           "count": 1,
+          "pos": "verb",
           "english": "if you hear",
+          "romanization": "deuleumyeon",
           "contextEnglish": "When I hear people speaking Spanish,",
           "firstCaptionIndex": 141,
           "firstTokenIndex": 558
@@ -3562,7 +4194,9 @@
         {
           "word": "말하는",
           "count": 1,
+          "pos": "verb",
           "english": "speaking",
+          "romanization": "malhaneun",
           "contextEnglish": "When I hear people speaking Spanish,",
           "firstCaptionIndex": 141,
           "firstTokenIndex": 556
@@ -3570,7 +4204,9 @@
         {
           "word": "스페인어로",
           "count": 1,
+          "pos": "noun",
           "english": "in Spanish",
+          "romanization": "seupeineoro",
           "contextEnglish": "When I hear people speaking Spanish,",
           "firstCaptionIndex": 141,
           "firstTokenIndex": 555
@@ -3578,7 +4214,9 @@
         {
           "word": "못하지만",
           "count": 1,
+          "pos": "verb",
           "english": "cannot, but",
+          "romanization": "mothajiman",
           "contextEnglish": "I can’t speak Spanish,",
           "firstCaptionIndex": 142,
           "firstTokenIndex": 561
@@ -3586,7 +4224,9 @@
         {
           "word": "스페인어를",
           "count": 1,
+          "pos": "noun",
           "english": "Spanish (object marker)",
+          "romanization": "seupeineoreul",
           "contextEnglish": "I can’t speak Spanish,",
           "firstCaptionIndex": 142,
           "firstTokenIndex": 560
@@ -3594,7 +4234,9 @@
         {
           "word": "아름다워요",
           "count": 1,
+          "pos": "verb",
           "english": "is beautiful",
+          "romanization": "areumdawoyo",
           "contextEnglish": "but it’s so beautiful",
           "firstCaptionIndex": 143,
           "firstTokenIndex": 563
@@ -3602,7 +4244,9 @@
         {
           "word": "나중에",
           "count": 1,
+          "pos": "other",
           "english": "later",
+          "romanization": "najunge",
           "contextEnglish": "I hope that after I learn French later,",
           "firstCaptionIndex": 144,
           "firstTokenIndex": 564
@@ -3610,7 +4254,9 @@
         {
           "word": "배운",
           "count": 1,
+          "pos": "verb",
           "english": "learned",
+          "romanization": "baeun",
           "contextEnglish": "I hope that after I learn French later,",
           "firstCaptionIndex": 144,
           "firstTokenIndex": 566
@@ -3618,7 +4264,9 @@
         {
           "word": "배울",
           "count": 1,
+          "pos": "verb",
           "english": "will learn / to learn",
+          "romanization": "baeul",
           "contextEnglish": "I’ll also be able to learn Spanish",
           "firstCaptionIndex": 145,
           "firstTokenIndex": 569
@@ -3626,7 +4274,9 @@
         {
           "word": "수",
           "count": 1,
+          "pos": "noun",
           "english": "way / ability",
+          "romanization": "su",
           "contextEnglish": "I’ll also be able to learn Spanish",
           "firstCaptionIndex": 145,
           "firstTokenIndex": 570
@@ -3634,7 +4284,9 @@
         {
           "word": "있었으면",
           "count": 1,
+          "pos": "verb",
           "english": "if there were / if I could",
+          "romanization": "iteoteumyeon",
           "contextEnglish": "I’ll also be able to learn Spanish",
           "firstCaptionIndex": 145,
           "firstTokenIndex": 571
@@ -3642,7 +4294,9 @@
         {
           "word": "좋겠어요",
           "count": 1,
+          "pos": "verb",
           "english": "would be good / hope",
+          "romanization": "johgeteoyo",
           "contextEnglish": "I’ll also be able to learn Spanish",
           "firstCaptionIndex": 145,
           "firstTokenIndex": 572
@@ -3650,7 +4304,9 @@
         {
           "word": "걸릴",
           "count": 1,
+          "pos": "verb",
           "english": "will take (time)",
+          "romanization": "geolril",
           "contextEnglish": "Learning French will take a long time too",
           "firstCaptionIndex": 146,
           "firstTokenIndex": 577
@@ -3658,7 +4314,9 @@
         {
           "word": "것도",
           "count": 1,
+          "pos": "noun",
           "english": "thing too",
+          "romanization": "geotdo",
           "contextEnglish": "Learning French will take a long time too",
           "firstCaptionIndex": 146,
           "firstTokenIndex": 575
@@ -3666,7 +4324,9 @@
         {
           "word": "배우는",
           "count": 1,
+          "pos": "verb",
           "english": "learning",
+          "romanization": "baeuneun",
           "contextEnglish": "Learning French will take a long time too",
           "firstCaptionIndex": 146,
           "firstTokenIndex": 574
@@ -3674,7 +4334,9 @@
         {
           "word": "오래",
           "count": 1,
+          "pos": "other",
           "english": "for a long time",
+          "romanization": "orae",
           "contextEnglish": "Learning French will take a long time too",
           "firstCaptionIndex": 146,
           "firstTokenIndex": 576
@@ -3682,7 +4344,9 @@
         {
           "word": "그",
           "count": 1,
+          "pos": "other",
           "english": "that",
+          "romanization": "geu",
           "contextEnglish": "But after that, I really want to learn Spanish too",
           "firstCaptionIndex": 147,
           "firstTokenIndex": 580
@@ -3690,7 +4354,9 @@
         {
           "word": "배우고",
           "count": 1,
+          "pos": "verb",
           "english": "learn and",
+          "romanization": "baeugo",
           "contextEnglish": "But after that, I really want to learn Spanish too",
           "firstCaptionIndex": 147,
           "firstTokenIndex": 584
@@ -3698,7 +4364,9 @@
         {
           "word": "기다리고",
           "count": 1,
+          "pos": "verb",
           "english": "wait and",
+          "romanization": "gidarigo",
           "contextEnglish": "I’m waiting for the train at the train station right now",
           "firstCaptionIndex": 148,
           "firstTokenIndex": 590
@@ -3706,7 +4374,9 @@
         {
           "word": "기차역에서",
           "count": 1,
+          "pos": "noun",
           "english": "at / from the train station",
+          "romanization": "gichayeokeseo",
           "contextEnglish": "I’m waiting for the train at the train station right now",
           "firstCaptionIndex": 148,
           "firstTokenIndex": 588
@@ -3714,7 +4384,9 @@
         {
           "word": "길어요",
           "count": 1,
+          "pos": "verb",
           "english": "is long",
+          "romanization": "gileoyo",
           "contextEnglish": "The line is so, so long",
           "firstCaptionIndex": 149,
           "firstTokenIndex": 595
@@ -3722,7 +4394,9 @@
         {
           "word": "줄이",
           "count": 1,
+          "pos": "noun",
           "english": "line / queue (subject marker)",
+          "romanization": "juli",
           "contextEnglish": "The line is so, so long",
           "firstCaptionIndex": 149,
           "firstTokenIndex": 592
@@ -3730,7 +4404,9 @@
         {
           "word": "시",
           "count": 1,
+          "pos": "noun",
           "english": "o'clock / hour",
+          "romanization": "si",
           "contextEnglish": "I take the 3:17 train,",
           "firstCaptionIndex": 150,
           "firstTokenIndex": 597
@@ -3738,7 +4414,9 @@
         {
           "word": "타요",
           "count": 1,
+          "pos": "verb",
           "english": "ride / take",
+          "romanization": "tayo",
           "contextEnglish": "I take the 3:17 train,",
           "firstCaptionIndex": 150,
           "firstTokenIndex": 600
@@ -3746,7 +4424,9 @@
         {
           "word": "동안",
           "count": 1,
+          "pos": "noun",
           "english": "during / for",
+          "romanization": "dongan",
           "contextEnglish": "and I’ll be on the train for 6 hours and 47 minutes",
           "firstCaptionIndex": 151,
           "firstTokenIndex": 604
@@ -3754,7 +4434,9 @@
         {
           "word": "탈",
           "count": 1,
+          "pos": "verb",
           "english": "will ride / to take",
+          "romanization": "tal",
           "contextEnglish": "and I’ll be on the train for 6 hours and 47 minutes",
           "firstCaptionIndex": 151,
           "firstTokenIndex": 606
@@ -3762,7 +4444,9 @@
         {
           "word": "그저께",
           "count": 1,
+          "pos": "noun",
           "english": "the day before yesterday",
+          "romanization": "geujeokke",
           "contextEnglish": "the day before yesterday I came to Paris",
           "firstCaptionIndex": 153,
           "firstTokenIndex": 612
@@ -3770,7 +4454,9 @@
         {
           "word": "스페인에서",
           "count": 1,
+          "pos": "noun",
           "english": "in / from Spain",
+          "romanization": "seupeineseo",
           "contextEnglish": "the day before yesterday I came to Paris",
           "firstCaptionIndex": 153,
           "firstTokenIndex": 613
@@ -3778,7 +4464,9 @@
         {
           "word": "기차가",
           "count": 1,
+          "pos": "noun",
           "english": "train (subject marker)",
+          "romanization": "gichaga",
           "contextEnglish": "But the train was delayed a lot,",
           "firstCaptionIndex": 155,
           "firstTokenIndex": 619
@@ -3786,7 +4474,9 @@
         {
           "word": "지연돼서",
           "count": 1,
+          "pos": "verb",
           "english": "because it was delayed",
+          "romanization": "jiyeondwaeseo",
           "contextEnglish": "But the train was delayed a lot,",
           "firstCaptionIndex": 155,
           "firstTokenIndex": 621
@@ -3794,7 +4484,9 @@
         {
           "word": "힘들었지만",
           "count": 1,
+          "pos": "verb",
           "english": "was hard, but",
+          "romanization": "himdeuleotjiman",
           "contextEnglish": "It was a bit tough on the train,",
           "firstCaptionIndex": 157,
           "firstTokenIndex": 628
@@ -3802,7 +4494,9 @@
         {
           "word": "나와서",
           "count": 1,
+          "pos": "verb",
           "english": "come out and",
+          "romanization": "nawaseo",
           "contextEnglish": "The water wasn't working on the train",
           "firstCaptionIndex": 159,
           "firstTokenIndex": 635
@@ -3810,7 +4504,9 @@
         {
           "word": "물이",
           "count": 1,
+          "pos": "noun",
           "english": "water (subject marker)",
+          "romanization": "muli",
           "contextEnglish": "The water wasn't working on the train",
           "firstCaptionIndex": 159,
           "firstTokenIndex": 633
@@ -3818,7 +4514,9 @@
         {
           "word": "닦았어요",
           "count": 1,
+          "pos": "verb",
           "english": "wiped",
+          "romanization": "dakateoyo",
           "contextEnglish": "so I washed my hands and brushed my teeth with bottled water",
           "firstCaptionIndex": 160,
           "firstTokenIndex": 640
@@ -3826,7 +4524,9 @@
         {
           "word": "생수로",
           "count": 1,
+          "pos": "noun",
           "english": "with bottled water",
+          "romanization": "saengsuro",
           "contextEnglish": "so I washed my hands and brushed my teeth with bottled water",
           "firstCaptionIndex": 160,
           "firstTokenIndex": 636
@@ -3834,7 +4534,9 @@
         {
           "word": "손을",
           "count": 1,
+          "pos": "noun",
           "english": "hands (object marker)",
+          "romanization": "soneul",
           "contextEnglish": "so I washed my hands and brushed my teeth with bottled water",
           "firstCaptionIndex": 160,
           "firstTokenIndex": 637
@@ -3842,7 +4544,9 @@
         {
           "word": "씻고",
           "count": 1,
+          "pos": "verb",
           "english": "wash and",
+          "romanization": "ssitgo",
           "contextEnglish": "so I washed my hands and brushed my teeth with bottled water",
           "firstCaptionIndex": 160,
           "firstTokenIndex": 638
@@ -3850,7 +4554,9 @@
         {
           "word": "이를",
           "count": 1,
+          "pos": "noun",
           "english": "teeth (object marker)",
+          "romanization": "ireul",
           "contextEnglish": "so I washed my hands and brushed my teeth with bottled water",
           "firstCaptionIndex": 160,
           "firstTokenIndex": 639
@@ -3858,7 +4564,9 @@
         {
           "word": "여러분도",
           "count": 1,
+          "pos": "other",
           "english": "everyone too / you all too",
+          "romanization": "yeoreobundo",
           "contextEnglish": "Have you all ever taken a train trip?",
           "firstCaptionIndex": 161,
           "firstTokenIndex": 641
@@ -3866,7 +4574,9 @@
         {
           "word": "여행을",
           "count": 1,
+          "pos": "noun",
           "english": "travel / trip (object marker)",
+          "romanization": "yeohaengeul",
           "contextEnglish": "Have you all ever taken a train trip?",
           "firstCaptionIndex": 161,
           "firstTokenIndex": 643
@@ -3874,7 +4584,9 @@
         {
           "word": "해봤어요",
           "count": 1,
+          "pos": "verb",
           "english": "tried doing / have done",
+          "romanization": "haebwateoyo",
           "contextEnglish": "Have you all ever taken a train trip?",
           "firstCaptionIndex": 161,
           "firstTokenIndex": 644
@@ -3882,7 +4594,9 @@
         {
           "word": "어땠어요",
           "count": 1,
+          "pos": "verb",
           "english": "how was it?",
+          "romanization": "eottaeteoyo",
           "contextEnglish": "How was it?",
           "firstCaptionIndex": 162,
           "firstTokenIndex": 645
@@ -3890,7 +4604,9 @@
         {
           "word": "여행에서",
           "count": 1,
+          "pos": "noun",
           "english": "on / during a trip",
+          "romanization": "yeohaengeseo",
           "contextEnglish": "Actually, I planned to go to",
           "firstCaptionIndex": 163,
           "firstTokenIndex": 649
@@ -3898,7 +4614,9 @@
         {
           "word": "이번",
           "count": 1,
+          "pos": "noun",
           "english": "this time",
+          "romanization": "ibeon",
           "contextEnglish": "Actually, I planned to go to",
           "firstCaptionIndex": 163,
           "firstTokenIndex": 648
@@ -3906,7 +4624,9 @@
         {
           "word": "가려고",
           "count": 1,
+          "pos": "verb",
           "english": "in order to go",
+          "romanization": "garyeogo",
           "contextEnglish": "Spain only on this trip",
           "firstCaptionIndex": 164,
           "firstTokenIndex": 651
@@ -3914,7 +4634,9 @@
         {
           "word": "스페인만",
           "count": 1,
+          "pos": "noun",
           "english": "only Spain",
+          "romanization": "seupeinman",
           "contextEnglish": "Spain only on this trip",
           "firstCaptionIndex": 164,
           "firstTokenIndex": 650
@@ -3922,7 +4644,9 @@
         {
           "word": "갑자기",
           "count": 1,
+          "pos": "other",
           "english": "suddenly",
+          "romanization": "gapjagi",
           "contextEnglish": "But I suddenly changed my plans",
           "firstCaptionIndex": 165,
           "firstTokenIndex": 654
@@ -3930,7 +4654,9 @@
         {
           "word": "계획을",
           "count": 1,
+          "pos": "noun",
           "english": "plan (object marker)",
+          "romanization": "gyehoekeul",
           "contextEnglish": "But I suddenly changed my plans",
           "firstCaptionIndex": 165,
           "firstTokenIndex": 655
@@ -3938,7 +4664,9 @@
         {
           "word": "바꿨어요",
           "count": 1,
+          "pos": "verb",
           "english": "changed",
+          "romanization": "bakkwoteoyo",
           "contextEnglish": "But I suddenly changed my plans",
           "firstCaptionIndex": 165,
           "firstTokenIndex": 656
@@ -3946,7 +4674,9 @@
         {
           "word": "즉흥적으로",
           "count": 1,
+          "pos": "other",
           "english": "spontaneously",
+          "romanization": "jeukheungjeokeuro",
           "contextEnglish": "So I came to Paris spontaneously",
           "firstCaptionIndex": 166,
           "firstTokenIndex": 658
@@ -3954,7 +4684,9 @@
         {
           "word": "당분간은",
           "count": 1,
+          "pos": "other",
           "english": "for the time being (topic marker)",
+          "romanization": "dangbunganeun",
           "contextEnglish": "For now, I want to meet friends here,",
           "firstCaptionIndex": 167,
           "firstTokenIndex": 661
@@ -3962,7 +4694,9 @@
         {
           "word": "만나고",
           "count": 1,
+          "pos": "verb",
           "english": "meet and",
+          "romanization": "mannago",
           "contextEnglish": "For now, I want to meet friends here,",
           "firstCaptionIndex": 167,
           "firstTokenIndex": 664
@@ -3970,7 +4704,9 @@
         {
           "word": "여기에서",
           "count": 1,
+          "pos": "other",
           "english": "here / in this place",
+          "romanization": "yeogieseo",
           "contextEnglish": "For now, I want to meet friends here,",
           "firstCaptionIndex": 167,
           "firstTokenIndex": 662
@@ -3978,7 +4714,9 @@
         {
           "word": "연습하고",
           "count": 1,
+          "pos": "verb",
           "english": "practice and",
+          "romanization": "yeonseuphago",
           "contextEnglish": "practice French, and rest a lot",
           "firstCaptionIndex": 168,
           "firstTokenIndex": 666
@@ -3986,7 +4724,9 @@
         {
           "word": "프랑스어도",
           "count": 1,
+          "pos": "noun",
           "english": "French too",
+          "romanization": "peurangseueodo",
           "contextEnglish": "practice French, and rest a lot",
           "firstCaptionIndex": 168,
           "firstTokenIndex": 665
@@ -3994,7 +4734,9 @@
         {
           "word": "그러면",
           "count": 1,
+          "pos": "other",
           "english": "then / in that case",
+          "romanization": "geureomyeon",
           "contextEnglish": "Then we’ll see each other again next time",
           "firstCaptionIndex": 169,
           "firstTokenIndex": 670
@@ -4002,7 +4744,9 @@
         {
           "word": "만나요",
           "count": 1,
+          "pos": "verb",
           "english": "meet / see you",
+          "romanization": "mannayo",
           "contextEnglish": "Then we’ll see each other again next time",
           "firstCaptionIndex": 169,
           "firstTokenIndex": 674
@@ -4010,7 +4754,9 @@
         {
           "word": "우리는",
           "count": 1,
+          "pos": "other",
           "english": "we (topic marker)",
+          "romanization": "urineun",
           "contextEnglish": "Then we’ll see each other again next time",
           "firstCaptionIndex": 169,
           "firstTokenIndex": 671
