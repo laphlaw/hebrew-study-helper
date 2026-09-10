@@ -1347,7 +1347,7 @@ function fitFlashcardText() {
     fitTextToBox(els.hebrewWord, currentMode === "alphabet" ? 46 : isKoreanSelected() ? 28 : 34);
     fitTextToBox(els.englishWord, 16);
     fitTextToBox(els.wordBreakdown, 13);
-    fitTextToBox(els.rootWord, isKoreanSelected() ? 14 : 20);
+    fitTextToBox(els.rootWord, isKoreanSelected() ? 32 : 20);
   });
 }
 
