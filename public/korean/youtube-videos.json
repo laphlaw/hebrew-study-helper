@@ -1106,7 +1106,7 @@
           "count": 8,
           "pos": "other",
           "english": "a lot / much",
-          "romanization": "manhi",
+          "romanization": "mani",
           "contextEnglish": "the atmosphere is very different,",
           "firstCaptionIndex": 58,
           "firstTokenIndex": 210
@@ -1136,7 +1136,7 @@
           "count": 7,
           "pos": "verb",
           "english": "there is / have",
-          "romanization": "iteoyo",
+          "romanization": "isseoyo",
           "contextEnglish": "and now I’m heading back to my accommodation",
           "firstCaptionIndex": 47,
           "firstTokenIndex": 173
@@ -1186,7 +1186,7 @@
           "count": 6,
           "pos": "noun",
           "english": "today (topic marker)",
-          "romanization": "oneuleun",
+          "romanization": "oneureun",
           "contextEnglish": "Today, I just wanted to take a little walk here and there",
           "firstCaptionIndex": 3,
           "firstTokenIndex": 11
@@ -1266,7 +1266,7 @@
           "count": 4,
           "pos": "verb",
           "english": "came out",
-          "romanization": "nawateoyo",
+          "romanization": "nawasseoyo",
           "contextEnglish": "I just came out of the café",
           "firstCaptionIndex": 12,
           "firstTokenIndex": 47
@@ -1346,7 +1346,7 @@
           "count": 3,
           "pos": "noun",
           "english": "sunlight (subject marker)",
-          "romanization": "haetbiti",
+          "romanization": "haetbichi",
           "contextEnglish": "but the sunlight is too strong",
           "firstCaptionIndex": 8,
           "firstTokenIndex": 27
@@ -1386,7 +1386,7 @@
           "count": 3,
           "pos": "verb",
           "english": "wake up and",
-          "romanization": "ileonaseo",
+          "romanization": "ireonaseo",
           "contextEnglish": "And today I slept in so late",
           "firstCaptionIndex": 21,
           "firstTokenIndex": 79
@@ -1396,7 +1396,7 @@
           "count": 3,
           "pos": "verb",
           "english": "ate",
-          "romanization": "meokeoteoyo",
+          "romanization": "meogeosseoyo",
           "contextEnglish": "and had brunch",
           "firstCaptionIndex": 25,
           "firstTokenIndex": 90
@@ -1406,7 +1406,7 @@
           "count": 3,
           "pos": "noun",
           "english": "breakfast (object marker)",
-          "romanization": "josikeul",
+          "romanization": "josigeul",
           "contextEnglish": "I planned to have breakfast at my accommodation,",
           "firstCaptionIndex": 26,
           "firstTokenIndex": 93
@@ -1716,7 +1716,7 @@
           "count": 2,
           "pos": "verb",
           "english": "there was / had",
-          "romanization": "iteoteoyo",
+          "romanization": "isseosseoyo",
           "contextEnglish": "but there was one tourist attraction I really wanted to see",
           "firstCaptionIndex": 34,
           "firstTokenIndex": 130
@@ -1746,7 +1746,7 @@
           "count": 2,
           "pos": "verb",
           "english": "did",
-          "romanization": "haeteoyo",
+          "romanization": "haesseoyo",
           "contextEnglish": "anything",
           "firstCaptionIndex": 38,
           "firstTokenIndex": 143
@@ -1846,7 +1846,7 @@
           "count": 2,
           "pos": "verb",
           "english": "thought",
-          "romanization": "saenggakhaeteoyo",
+          "romanization": "saenggakhaesseoyo",
           "contextEnglish": "a little similar to Paris",
           "firstCaptionIndex": 56,
           "firstTokenIndex": 204
@@ -1926,7 +1926,7 @@
           "count": 2,
           "pos": "verb",
           "english": "good / I like it",
-          "romanization": "johayo",
+          "romanization": "joayo",
           "contextEnglish": "I'm feeling so good",
           "firstCaptionIndex": 78,
           "firstTokenIndex": 288
@@ -1996,7 +1996,7 @@
           "count": 2,
           "pos": "verb",
           "english": "return and",
-          "romanization": "dolagaseo",
+          "romanization": "doragaseo",
           "contextEnglish": "I’ll go back to my accommodation, pack my bags,",
           "firstCaptionIndex": 99,
           "firstTokenIndex": 374
@@ -2036,7 +2036,7 @@
           "count": 2,
           "pos": "noun",
           "english": "with / on a laptop",
-          "romanization": "noteubukeuro",
+          "romanization": "noteubugeuro",
           "contextEnglish": "At the café, I'm working a bit on my laptop",
           "firstCaptionIndex": 103,
           "firstTokenIndex": 389
@@ -2046,7 +2046,7 @@
           "count": 2,
           "pos": "noun",
           "english": "work (object marker)",
-          "romanization": "ileul",
+          "romanization": "ireul",
           "contextEnglish": "At the café, I'm working a bit on my laptop",
           "firstCaptionIndex": 103,
           "firstTokenIndex": 390
@@ -2116,7 +2116,7 @@
           "count": 2,
           "pos": "noun",
           "english": "people (subject marker)",
-          "romanization": "saramdeuli",
+          "romanization": "saramdeuri",
           "contextEnglish": "especially the people are so cool",
           "firstCaptionIndex": 136,
           "firstTokenIndex": 530
@@ -2156,7 +2156,7 @@
           "count": 2,
           "pos": "verb",
           "english": "came",
-          "romanization": "wateoyo",
+          "romanization": "wasseoyo",
           "contextEnglish": "by train from Spain",
           "firstCaptionIndex": 154,
           "firstTokenIndex": 617
@@ -2166,7 +2166,7 @@
           "count": 2,
           "pos": "verb",
           "english": "arrived",
-          "romanization": "dochakhaeteoyo",
+          "romanization": "dochakhaesseoyo",
           "contextEnglish": "so I arrived a little late",
           "firstCaptionIndex": 156,
           "firstTokenIndex": 624
@@ -2196,7 +2196,7 @@
           "count": 1,
           "pos": "verb",
           "english": "woke up",
-          "romanization": "ileonateoyo",
+          "romanization": "ireonasseoyo",
           "contextEnglish": "I woke up a bit late today",
           "firstCaptionIndex": 1,
           "firstTokenIndex": 7
@@ -2216,7 +2216,7 @@
           "count": 1,
           "pos": "verb",
           "english": "was tired",
-          "romanization": "pigonhaeteoyo",
+          "romanization": "pigonhaesseoyo",
           "contextEnglish": "And I was a little tired",
           "firstCaptionIndex": 2,
           "firstTokenIndex": 10
@@ -2256,7 +2256,7 @@
           "count": 1,
           "pos": "verb",
           "english": "wanted to",
-          "romanization": "sipeoteoyo",
+          "romanization": "sipeosseoyo",
           "contextEnglish": "and get some rest",
           "firstCaptionIndex": 6,
           "firstTokenIndex": 22
@@ -2286,7 +2286,7 @@
           "count": 1,
           "pos": "verb",
           "english": "walk",
-          "romanization": "geoleoyo",
+          "romanization": "georeoyo",
           "contextEnglish": "and it's too hot, so I can't walk for more than 10 minutes",
           "firstCaptionIndex": 9,
           "firstTokenIndex": 35
@@ -2306,7 +2306,7 @@
           "count": 1,
           "pos": "verb",
           "english": "go in and",
-          "romanization": "deuleogaseo",
+          "romanization": "deureogaseo",
           "contextEnglish": "So I think I should go into a café",
           "firstCaptionIndex": 10,
           "firstTokenIndex": 38
@@ -2406,7 +2406,7 @@
           "count": 1,
           "pos": "verb",
           "english": "because it is not",
-          "romanization": "anhaseo",
+          "romanization": "anaseo",
           "contextEnglish": "the AC isn't very strong,",
           "firstCaptionIndex": 16,
           "firstTokenIndex": 60
@@ -2456,7 +2456,7 @@
           "count": 1,
           "pos": "verb",
           "english": "turn on",
-          "romanization": "teuleoyo",
+          "romanization": "teureoyo",
           "contextEnglish": "In Korea, they turn the AC up really high in the summer",
           "firstCaptionIndex": 18,
           "firstTokenIndex": 68
@@ -2466,7 +2466,7 @@
           "count": 1,
           "pos": "noun",
           "english": "in Korea (topic marker)",
-          "romanization": "hangukeseoneun",
+          "romanization": "hangugeseoneun",
           "contextEnglish": "In Korea, they turn the AC up really high in the summer",
           "firstCaptionIndex": 18,
           "firstTokenIndex": 63
@@ -2516,7 +2516,7 @@
           "count": 1,
           "pos": "verb",
           "english": "in order to eat",
-          "romanization": "meokeuryeogo",
+          "romanization": "meogeuryeogo",
           "contextEnglish": "I planned to have breakfast at my accommodation,",
           "firstCaptionIndex": 26,
           "firstTokenIndex": 94
@@ -2546,7 +2546,7 @@
           "count": 1,
           "pos": "verb",
           "english": "ate, but",
-          "romanization": "meokeotneunde",
+          "romanization": "meogeotneunde",
           "contextEnglish": "and had brunch,",
           "firstCaptionIndex": 29,
           "firstTokenIndex": 106
@@ -2556,7 +2556,7 @@
           "count": 1,
           "pos": "verb",
           "english": "was delicious",
-          "romanization": "matiteoteoyo",
+          "romanization": "masisseosseoyo",
           "contextEnglish": "and it was absolutely delicious",
           "firstCaptionIndex": 30,
           "firstTokenIndex": 109
@@ -2676,7 +2676,7 @@
           "count": 1,
           "pos": "verb",
           "english": "wrote",
-          "romanization": "sseoteoyo",
+          "romanization": "sseosseoyo",
           "contextEnglish": "and I wrote a postcard",
           "firstCaptionIndex": 40,
           "firstTokenIndex": 149
@@ -2736,7 +2736,7 @@
           "count": 1,
           "pos": "verb",
           "english": "read",
-          "romanization": "ilkeoteoyo",
+          "romanization": "ilgeosseoyo",
           "contextEnglish": "And I also read a little bit of a book",
           "firstCaptionIndex": 45,
           "firstTokenIndex": 163
@@ -2766,7 +2766,7 @@
           "count": 1,
           "pos": "verb",
           "english": "like",
-          "romanization": "johahaeyo",
+          "romanization": "joahaeyo",
           "contextEnglish": "when I’m traveling",
           "firstCaptionIndex": 49,
           "firstTokenIndex": 180
@@ -2796,7 +2796,7 @@
           "count": 1,
           "pos": "verb",
           "english": "will return / to return",
-          "romanization": "dolagal",
+          "romanization": "doragal",
           "contextEnglish": "and then go back to my accommodation",
           "firstCaptionIndex": 52,
           "firstTokenIndex": 187
@@ -2806,7 +2806,7 @@
           "count": 1,
           "pos": "verb",
           "english": "feel / hear / enter",
-          "romanization": "deuleoyo",
+          "romanization": "deureoyo",
           "contextEnglish": "city so, so much",
           "firstCaptionIndex": 54,
           "firstTokenIndex": 196
@@ -2906,7 +2906,7 @@
           "count": 1,
           "pos": "noun",
           "english": "charm (subject marker)",
-          "romanization": "maeryeoki",
+          "romanization": "maeryeogi",
           "contextEnglish": "I think they both have their own unique charm",
           "firstCaptionIndex": 61,
           "firstTokenIndex": 220
@@ -2966,7 +2966,7 @@
           "count": 1,
           "pos": "noun",
           "english": "book (object marker)",
-          "romanization": "chaekeul",
+          "romanization": "chaegeul",
           "contextEnglish": "This bookstore sells English books",
           "firstCaptionIndex": 63,
           "firstTokenIndex": 230
@@ -2996,7 +2996,7 @@
           "count": 1,
           "pos": "verb",
           "english": "there were many",
-          "romanization": "manhateoyo",
+          "romanization": "manasseoyo",
           "contextEnglish": "but there were so many really interesting postcards",
           "firstCaptionIndex": 65,
           "firstTokenIndex": 239
@@ -3046,7 +3046,7 @@
           "count": 1,
           "pos": "verb",
           "english": "bought",
-          "romanization": "sateoyo",
+          "romanization": "sasseoyo",
           "contextEnglish": "But I didn’t buy any",
           "firstCaptionIndex": 68,
           "firstTokenIndex": 248
@@ -3096,7 +3096,7 @@
           "count": 1,
           "pos": "verb",
           "english": "will eat / to eat",
-          "romanization": "meokeul",
+          "romanization": "meogeul",
           "contextEnglish": "to have a simple dinner",
           "firstCaptionIndex": 71,
           "firstTokenIndex": 263
@@ -3106,7 +3106,7 @@
           "count": 1,
           "pos": "noun",
           "english": "dinner (object marker)",
-          "romanization": "jeonyeokeul",
+          "romanization": "jeonyeogeul",
           "contextEnglish": "to have a simple dinner",
           "firstCaptionIndex": 71,
           "firstTokenIndex": 262
@@ -3146,7 +3146,7 @@
           "count": 1,
           "pos": "verb",
           "english": "because there is / has",
-          "romanization": "iteoseo",
+          "romanization": "isseoseo",
           "contextEnglish": "and a dryer so I’ll do the laundry",
           "firstCaptionIndex": 74,
           "firstTokenIndex": 272
@@ -3226,7 +3226,7 @@
           "count": 1,
           "pos": "verb",
           "english": "is a style",
-          "romanization": "seutailieyo",
+          "romanization": "seutairieyo",
           "contextEnglish": "is my style",
           "firstCaptionIndex": 80,
           "firstTokenIndex": 294
@@ -3246,7 +3246,7 @@
           "count": 1,
           "pos": "other",
           "english": "outside / except",
-          "romanization": "bake",
+          "romanization": "bakke",
           "contextEnglish": "and I went out",
           "firstCaptionIndex": 82,
           "firstTokenIndex": 299
@@ -3286,7 +3286,7 @@
           "count": 1,
           "pos": "noun",
           "english": "breakfast (topic marker)",
-          "romanization": "josikeun",
+          "romanization": "josigeun",
           "contextEnglish": "For breakfast, there were simple items like",
           "firstCaptionIndex": 84,
           "firstTokenIndex": 306
@@ -3376,7 +3376,7 @@
           "count": 1,
           "pos": "verb",
           "english": "could not do",
-          "romanization": "mothaeteoyo",
+          "romanization": "mothaesseoyo",
           "contextEnglish": "that I couldn’t really go for a walk",
           "firstCaptionIndex": 88,
           "firstTokenIndex": 327
@@ -3386,7 +3386,7 @@
           "count": 1,
           "pos": "noun",
           "english": "walk / stroll (object marker)",
-          "romanization": "sanchaekeul",
+          "romanization": "sanchaegeul",
           "contextEnglish": "that I couldn’t really go for a walk",
           "firstCaptionIndex": 88,
           "firstTokenIndex": 325
@@ -3546,7 +3546,7 @@
           "count": 1,
           "pos": "noun",
           "english": "to the train station",
-          "romanization": "gichayeokeuro",
+          "romanization": "gichayeogeuro",
           "contextEnglish": "and then head to the train station",
           "firstCaptionIndex": 101,
           "firstTokenIndex": 380
@@ -3586,7 +3586,7 @@
           "count": 1,
           "pos": "verb",
           "english": "like, but",
-          "romanization": "johahaneunde",
+          "romanization": "joahaneunde",
           "contextEnglish": "I usually don’t like iced Americano that much,",
           "firstCaptionIndex": 105,
           "firstTokenIndex": 401
@@ -3616,7 +3616,7 @@
           "count": 1,
           "pos": "noun",
           "english": "throat (subject marker)",
-          "romanization": "moki",
+          "romanization": "mogi",
           "contextEnglish": "I keep getting thirsty",
           "firstCaptionIndex": 107,
           "firstTokenIndex": 405
@@ -3656,7 +3656,7 @@
           "count": 1,
           "pos": "verb",
           "english": "drank",
-          "romanization": "masyeoteoyo",
+          "romanization": "masyeosseoyo",
           "contextEnglish": "but here I’ve been drinking iced Americano every day",
           "firstCaptionIndex": 109,
           "firstTokenIndex": 417
@@ -3756,7 +3756,7 @@
           "count": 1,
           "pos": "verb",
           "english": "there are many / a lot",
-          "romanization": "manhayo",
+          "romanization": "manayo",
           "contextEnglish": "who work in cafés with a laptop like this",
           "firstCaptionIndex": 118,
           "firstTokenIndex": 451
@@ -3796,7 +3796,7 @@
           "count": 1,
           "pos": "verb",
           "english": "like and",
-          "romanization": "johahago",
+          "romanization": "joahago",
           "contextEnglish": "I really love cafés,",
           "firstCaptionIndex": 120,
           "firstTokenIndex": 462
@@ -3826,7 +3826,7 @@
           "count": 1,
           "pos": "verb",
           "english": "because I like",
-          "romanization": "johahaeseo",
+          "romanization": "joahaeseo",
           "contextEnglish": "and I enjoy sitting in one and working,",
           "firstCaptionIndex": 121,
           "firstTokenIndex": 467
@@ -3846,7 +3846,7 @@
           "count": 1,
           "pos": "verb",
           "english": "was comfortable",
-          "romanization": "pyeonhaeteoyo",
+          "romanization": "pyeonhaesseoyo",
           "contextEnglish": "so this place felt really comfortable for me",
           "firstCaptionIndex": 122,
           "firstTokenIndex": 470
@@ -3916,7 +3916,7 @@
           "count": 1,
           "pos": "noun",
           "english": "in month",
-          "romanization": "wole",
+          "romanization": "wore",
           "contextEnglish": "After I left for Paris in January,",
           "firstCaptionIndex": 126,
           "firstTokenIndex": 481
@@ -3936,7 +3936,7 @@
           "count": 1,
           "pos": "verb",
           "english": "missed / longed for",
-          "romanization": "geuriwoteoyo",
+          "romanization": "geuriwosseoyo",
           "contextEnglish": "I kept missing Paris",
           "firstCaptionIndex": 127,
           "firstTokenIndex": 487
@@ -3956,7 +3956,7 @@
           "count": 1,
           "pos": "verb",
           "english": "delicious",
-          "romanization": "matitneun",
+          "romanization": "masitneun",
           "contextEnglish": "and bought lots of delicious breads from a bakery",
           "firstCaptionIndex": 129,
           "firstTokenIndex": 491
@@ -3976,7 +3976,7 @@
           "count": 1,
           "pos": "noun",
           "english": "at / from a bakery",
-          "romanization": "ppangjipeseo",
+          "romanization": "ppangjibeseo",
           "contextEnglish": "and bought lots of delicious breads from a bakery",
           "firstCaptionIndex": 129,
           "firstTokenIndex": 490
@@ -4106,7 +4106,7 @@
           "count": 1,
           "pos": "verb",
           "english": "heard / felt, but",
-          "romanization": "deuleotneunde",
+          "romanization": "deureotneunde",
           "contextEnglish": "Oh, and I really liked this city",
           "firstCaptionIndex": 135,
           "firstTokenIndex": 528
@@ -4116,7 +4116,7 @@
           "count": 1,
           "pos": "verb",
           "english": "is cool / wonderful",
-          "romanization": "meotiteoyo",
+          "romanization": "meosisseoyo",
           "contextEnglish": "especially the people are so cool",
           "firstCaptionIndex": 136,
           "firstTokenIndex": 532
@@ -4186,7 +4186,7 @@
           "count": 1,
           "pos": "verb",
           "english": "if you hear",
-          "romanization": "deuleumyeon",
+          "romanization": "deureumyeon",
           "contextEnglish": "When I hear people speaking Spanish,",
           "firstCaptionIndex": 141,
           "firstTokenIndex": 558
@@ -4286,7 +4286,7 @@
           "count": 1,
           "pos": "verb",
           "english": "if there were / if I could",
-          "romanization": "iteoteumyeon",
+          "romanization": "isseosseumyeon",
           "contextEnglish": "I’ll also be able to learn Spanish",
           "firstCaptionIndex": 145,
           "firstTokenIndex": 571
@@ -4296,7 +4296,7 @@
           "count": 1,
           "pos": "verb",
           "english": "would be good / hope",
-          "romanization": "johgeteoyo",
+          "romanization": "johgesseoyo",
           "contextEnglish": "I’ll also be able to learn Spanish",
           "firstCaptionIndex": 145,
           "firstTokenIndex": 572
@@ -4376,7 +4376,7 @@
           "count": 1,
           "pos": "noun",
           "english": "at / from the train station",
-          "romanization": "gichayeokeseo",
+          "romanization": "gichayeogeseo",
           "contextEnglish": "I’m waiting for the train at the train station right now",
           "firstCaptionIndex": 148,
           "firstTokenIndex": 588
@@ -4386,7 +4386,7 @@
           "count": 1,
           "pos": "verb",
           "english": "is long",
-          "romanization": "gileoyo",
+          "romanization": "gireoyo",
           "contextEnglish": "The line is so, so long",
           "firstCaptionIndex": 149,
           "firstTokenIndex": 595
@@ -4396,7 +4396,7 @@
           "count": 1,
           "pos": "noun",
           "english": "line / queue (subject marker)",
-          "romanization": "juli",
+          "romanization": "juri",
           "contextEnglish": "The line is so, so long",
           "firstCaptionIndex": 149,
           "firstTokenIndex": 592
@@ -4486,7 +4486,7 @@
           "count": 1,
           "pos": "verb",
           "english": "was hard, but",
-          "romanization": "himdeuleotjiman",
+          "romanization": "himdeureotjiman",
           "contextEnglish": "It was a bit tough on the train,",
           "firstCaptionIndex": 157,
           "firstTokenIndex": 628
@@ -4506,7 +4506,7 @@
           "count": 1,
           "pos": "noun",
           "english": "water (subject marker)",
-          "romanization": "muli",
+          "romanization": "muri",
           "contextEnglish": "The water wasn't working on the train",
           "firstCaptionIndex": 159,
           "firstTokenIndex": 633
@@ -4516,7 +4516,7 @@
           "count": 1,
           "pos": "verb",
           "english": "wiped",
-          "romanization": "dakateoyo",
+          "romanization": "dakkasseoyo",
           "contextEnglish": "so I washed my hands and brushed my teeth with bottled water",
           "firstCaptionIndex": 160,
           "firstTokenIndex": 640
@@ -4586,7 +4586,7 @@
           "count": 1,
           "pos": "verb",
           "english": "tried doing / have done",
-          "romanization": "haebwateoyo",
+          "romanization": "haebwasseoyo",
           "contextEnglish": "Have you all ever taken a train trip?",
           "firstCaptionIndex": 161,
           "firstTokenIndex": 644
@@ -4596,7 +4596,7 @@
           "count": 1,
           "pos": "verb",
           "english": "how was it?",
-          "romanization": "eottaeteoyo",
+          "romanization": "eottaesseoyo",
           "contextEnglish": "How was it?",
           "firstCaptionIndex": 162,
           "firstTokenIndex": 645
@@ -4656,7 +4656,7 @@
           "count": 1,
           "pos": "noun",
           "english": "plan (object marker)",
-          "romanization": "gyehoekeul",
+          "romanization": "gyehoegeul",
           "contextEnglish": "But I suddenly changed my plans",
           "firstCaptionIndex": 165,
           "firstTokenIndex": 655
@@ -4666,7 +4666,7 @@
           "count": 1,
           "pos": "verb",
           "english": "changed",
-          "romanization": "bakkwoteoyo",
+          "romanization": "bakkwosseoyo",
           "contextEnglish": "But I suddenly changed my plans",
           "firstCaptionIndex": 165,
           "firstTokenIndex": 656
@@ -4676,7 +4676,7 @@
           "count": 1,
           "pos": "other",
           "english": "spontaneously",
-          "romanization": "jeukheungjeokeuro",
+          "romanization": "jeukheungjeogeuro",
           "contextEnglish": "So I came to Paris spontaneously",
           "firstCaptionIndex": 166,
           "firstTokenIndex": 658

@@ -50,6 +50,10 @@ const initialRomanizations = [
   "g", "kk", "n", "d", "tt", "r", "m", "b", "pp", "s",
   "ss", "", "j", "jj", "ch", "k", "t", "p", "h"
 ];
+const initialJamo = [
+  "ㄱ", "ㄲ", "ㄴ", "ㄷ", "ㄸ", "ㄹ", "ㅁ", "ㅂ", "ㅃ", "ㅅ",
+  "ㅆ", "ㅇ", "ㅈ", "ㅉ", "ㅊ", "ㅋ", "ㅌ", "ㅍ", "ㅎ"
+];
 const medialRomanizations = [
   "a", "ae", "ya", "yae", "eo", "e", "yeo", "ye", "o", "wa",
   "wae", "oe", "yo", "u", "wo", "we", "wi", "yu", "eu", "ui", "i"
@@ -59,19 +63,83 @@ const finalRomanizations = [
   "lm", "lb", "ls", "lt", "lp", "lh", "m", "p", "ps", "t",
   "t", "ng", "t", "t", "k", "t", "p", "h"
 ];
+const finalJamo = [
+  "", "ㄱ", "ㄲ", "ㄳ", "ㄴ", "ㄵ", "ㄶ", "ㄷ", "ㄹ", "ㄺ",
+  "ㄻ", "ㄼ", "ㄽ", "ㄾ", "ㄿ", "ㅀ", "ㅁ", "ㅂ", "ㅄ", "ㅅ",
+  "ㅆ", "ㅇ", "ㅈ", "ㅊ", "ㅋ", "ㅌ", "ㅍ", "ㅎ"
+];
+const finalIndexByJamo = new Map(finalJamo.map((jamo, index) => [jamo, index]));
+const initialIndexByJamo = new Map(initialJamo.map((jamo, index) => [jamo, index]));
+const carriedFinalsBeforeIeung = new Map([
+  ["ㄱ", ["", "ㄱ"]],
+  ["ㄲ", ["", "ㄲ"]],
+  ["ㄳ", ["ㄱ", "ㅅ"]],
+  ["ㄴ", ["", "ㄴ"]],
+  ["ㄵ", ["ㄴ", "ㅈ"]],
+  ["ㄶ", ["", "ㄴ"]],
+  ["ㄷ", ["", "ㄷ"]],
+  ["ㄹ", ["", "ㄹ"]],
+  ["ㄺ", ["ㄹ", "ㄱ"]],
+  ["ㄻ", ["ㄹ", "ㅁ"]],
+  ["ㄼ", ["ㄹ", "ㅂ"]],
+  ["ㄽ", ["ㄹ", "ㅅ"]],
+  ["ㄾ", ["ㄹ", "ㅌ"]],
+  ["ㄿ", ["ㄹ", "ㅍ"]],
+  ["ㅀ", ["", "ㄹ"]],
+  ["ㅁ", ["", "ㅁ"]],
+  ["ㅂ", ["", "ㅂ"]],
+  ["ㅄ", ["ㅂ", "ㅅ"]],
+  ["ㅅ", ["", "ㅅ"]],
+  ["ㅆ", ["", "ㅆ"]],
+  ["ㅈ", ["", "ㅈ"]],
+  ["ㅊ", ["", "ㅊ"]],
+  ["ㅋ", ["", "ㅋ"]],
+  ["ㅌ", ["", "ㅌ"]],
+  ["ㅍ", ["", "ㅍ"]],
+  ["ㅎ", ["", "ㅇ"]]
+]);
+
+function decomposeHangul(character) {
+  const codePoint = character.codePointAt(0);
+  if (codePoint < hangulStart || codePoint > hangulEnd) return null;
+
+  const syllableIndex = codePoint - hangulStart;
+  return {
+    initialIndex: Math.floor(syllableIndex / 588),
+    medialIndex: Math.floor((syllableIndex % 588) / 28),
+    finalIndex: syllableIndex % 28
+  };
+}
+
+function romanizeSyllable(parts) {
+  return [
+    initialRomanizations[parts.initialIndex],
+    medialRomanizations[parts.medialIndex],
+    finalRomanizations[parts.finalIndex]
+  ].join("");
+}
 
 function romanizeHangul(value = "") {
-  return [...value]
-    .map((character) => {
-      const codePoint = character.codePointAt(0);
-      if (codePoint < hangulStart || codePoint > hangulEnd) return character;
+  const syllables = [...value].map((character) => ({
+    character,
+    parts: decomposeHangul(character)
+  }));
 
-      const syllableIndex = codePoint - hangulStart;
-      const initialIndex = Math.floor(syllableIndex / 588);
-      const medialIndex = Math.floor((syllableIndex % 588) / 28);
-      const finalIndex = syllableIndex % 28;
-      return `${initialRomanizations[initialIndex]}${medialRomanizations[medialIndex]}${finalRomanizations[finalIndex]}`;
-    })
+  syllables.forEach((syllable, index) => {
+    const nextSyllable = syllables[index + 1];
+    if (!syllable.parts || !nextSyllable?.parts || !syllable.parts.finalIndex) return;
+    if (nextSyllable.parts.initialIndex !== initialIndexByJamo.get("ㅇ")) return;
+
+    const carried = carriedFinalsBeforeIeung.get(finalJamo[syllable.parts.finalIndex]);
+    if (!carried) return;
+
+    const [remainingFinal, nextInitial] = carried;
+    syllable.parts.finalIndex = finalIndexByJamo.get(remainingFinal);
+    nextSyllable.parts.initialIndex = initialIndexByJamo.get(nextInitial);
+  });
+
+  return syllables
+    .map(({ character, parts }) => parts ? romanizeSyllable(parts) : character)
     .join("")
     .replace(/\s+/g, " ")
     .trim();
