@@ -2585,8 +2585,9 @@ function wordFromKoreanCaptionEntry(entry, video) {
   const count = Number(entry?.count) || 0;
   const english = entry?.english || "Needs gloss";
   const romanization = entry?.romanization || "";
+  const root = entry?.root || word;
   const pos = ["noun", "verb", "other"].includes(entry?.pos) ? entry.pos : "other";
-  return wordFromParts(word, english, pos, word, "", [video.title], "", {
+  return wordFromParts(word, english, pos, root, "", [video.title], "", {
     breakdown: romanization ? [romanization] : [],
     frequency: count,
     romanization,

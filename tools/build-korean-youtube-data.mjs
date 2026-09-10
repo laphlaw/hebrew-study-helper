@@ -181,6 +181,99 @@ const koreanVlogVerbs = new Set(`
   해봤어요 어땠어요 가려고 바꿨어요 만나고 연습하고 만나요
 `.trim().split(/\s+/));
 
+const koreanVlogVerbRootGroups = {
+  "가다": "가서 가고 가는 가는데 가요 갈 가려고 가던",
+  "같다": "같아요",
+  "걷다": "걸어요 걷고 걷다가",
+  "걸리다": "걸릴",
+  "구경하다": "구경하고 구경했는데 구경할",
+  "그립다": "그리웠어요",
+  "기다리다": "기다리고",
+  "기대되다": "기대돼요",
+  "길다": "길어요",
+  "나오다": "나왔어요 나와서",
+  "넘치다": "넘쳐요",
+  "다르다": "달라요 다르고 다른",
+  "닦다": "닦았어요",
+  "덥다": "더워요 더워서 더우니까",
+  "되다": "돼요 될",
+  "도착하다": "도착했어요",
+  "돌아가다": "돌아가서 돌아갈",
+  "들다": "들어요 들었는데 들으면",
+  "들르다": "들러서",
+  "들어가다": "들어가서",
+  "마르다": "말라요",
+  "마시다": "마시면서 마시고 마신 마셔요 마셨어요",
+  "맞다": "맞는다고",
+  "많다": "많았어요 많아요",
+  "말하다": "말하는",
+  "맛있다": "맛있었어요 맛있는",
+  "먹다": "먹고 먹었어요 먹으려고 먹었는데 먹을",
+  "멋있다": "멋있어요",
+  "못하다": "못했어요 못하지만",
+  "바꾸다": "바꿨어요",
+  "배우다": "배운 배울 배우는 배우고",
+  "보다": "보고 보면",
+  "보내다": "보내고",
+  "비슷하다": "비슷할",
+  "사다": "사고 샀어요",
+  "사랑하다": "사랑하는",
+  "사먹다": "사먹고",
+  "산책하다": "산책하고 산책하려고",
+  "생각하다": "생각했어요",
+  "세다": "세지",
+  "쉬다": "쉬고 쉬어야 쉬다가 쉴",
+  "슬프다": "슬프지만",
+  "싶다": "싶어요 싶었어요 싶은 싶어서",
+  "싸다": "싸고",
+  "씻다": "씻고",
+  "아름답다": "아름다워요",
+  "않다": "않아서",
+  "앉다": "앉아 앉아서",
+  "어떻다": "어땠어요",
+  "여유롭다": "여유로운",
+  "예쁘다": "예쁜",
+  "오다": "왔어요 오고",
+  "이다": "거예요 시간이에요 거라고 서점이에요 거에요 스타일이에요",
+  "일어나다": "일어나서 일어났어요",
+  "일하다": "일하는",
+  "있다": "있어요 있었어요 있는 있어서 있었으면",
+  "재미있다": "재미있는",
+  "좋다": "좋아요 좋겠어요",
+  "좋아하다": "좋아해요 좋아하는데 좋아하고 좋아해서",
+  "주문하다": "주문하지만",
+  "즐기다": "즐기고",
+  "지다": "져서",
+  "지연되다": "지연돼서",
+  "출발하다": "출발할",
+  "춥다": "추워요 추운데",
+  "타다": "타고 타야 타러 타요 탈",
+  "틀다": "틀어요",
+  "팔다": "파는",
+  "편하다": "편했어요",
+  "피곤하다": "피곤했어요",
+  "하다": "했는데 했어요 했지 해야 하면서 하다가 할 해봤어요",
+  "행복하다": "행복해요",
+  "힘들다": "힘들었지만",
+  "읽다": "읽고 읽었어요",
+  "쓰다": "썼어요 쓰는",
+  "연습하다": "연습하고",
+  "만나다": "만날 만나고 만나요",
+  "간단하다": "간단한",
+  "강하다": "강하고 강해서",
+  "없다": "없을",
+  "떠나다": "떠나요 떠나는 떠난"
+};
+
+const duplicateKoreanVlogVerbRootWords = [];
+const koreanVlogVerbRoots = new Map();
+Object.entries(koreanVlogVerbRootGroups).forEach(([root, words]) => {
+  words.trim().split(/\s+/).forEach((word) => {
+    if (koreanVlogVerbRoots.has(word)) duplicateKoreanVlogVerbRootWords.push(word);
+    koreanVlogVerbRoots.set(word, root);
+  });
+});
+
 function koreanVlogPartOfSpeech(word) {
   if (koreanVlogNouns.has(word)) return "noun";
   if (koreanVlogVerbs.has(word)) return "verb";
@@ -232,16 +325,20 @@ captions.forEach((caption, captionIndex) => {
 });
 
 const words = [...counts.entries()]
-  .map(([word, count]) => ({
-    word,
-    count,
-    pos: koreanVlogPartOfSpeech(word),
-    english: glosses[word] || "",
-    romanization: romanizeHangul(word),
-    contextEnglish: captions[firstCaptionIndexes.get(word)]?.englishText || "",
-    firstCaptionIndex: firstCaptionIndexes.get(word) || 0,
-    firstTokenIndex: firstTokenIndexes.get(word) || 0
-  }))
+  .map(([word, count]) => {
+    const pos = koreanVlogPartOfSpeech(word);
+    return {
+      word,
+      count,
+      pos,
+      english: glosses[word] || "",
+      root: pos === "verb" ? koreanVlogVerbRoots.get(word) : undefined,
+      romanization: romanizeHangul(word),
+      contextEnglish: captions[firstCaptionIndexes.get(word)]?.englishText || "",
+      firstCaptionIndex: firstCaptionIndexes.get(word) || 0,
+      firstTokenIndex: firstTokenIndexes.get(word) || 0
+    };
+  })
   .sort((a, b) => (
     b.count - a.count ||
     a.firstCaptionIndex - b.firstCaptionIndex ||
@@ -256,10 +353,21 @@ if (missingGlosses.length) {
 const sourceWords = new Set(words.map((entry) => entry.word));
 const unknownTaggedWords = [...koreanVlogNouns, ...koreanVlogVerbs].filter((word) => !sourceWords.has(word));
 const overlappingTaggedWords = [...koreanVlogNouns].filter((word) => koreanVlogVerbs.has(word));
-if (unknownTaggedWords.length || overlappingTaggedWords.length) {
+const unknownRootWords = [...koreanVlogVerbRoots.keys()].filter((word) => !koreanVlogVerbs.has(word));
+const missingVerbRoots = [...koreanVlogVerbs].filter((word) => sourceWords.has(word) && !koreanVlogVerbRoots.has(word));
+if (
+  unknownTaggedWords.length ||
+  overlappingTaggedWords.length ||
+  unknownRootWords.length ||
+  missingVerbRoots.length ||
+  duplicateKoreanVlogVerbRootWords.length
+) {
   throw new Error([
     unknownTaggedWords.length && `Unknown POS words: ${unknownTaggedWords.join(", ")}`,
-    overlappingTaggedWords.length && `Overlapping POS words: ${overlappingTaggedWords.join(", ")}`
+    overlappingTaggedWords.length && `Overlapping POS words: ${overlappingTaggedWords.join(", ")}`,
+    unknownRootWords.length && `Unknown verb root words: ${unknownRootWords.join(", ")}`,
+    missingVerbRoots.length && `Missing verb roots: ${missingVerbRoots.join(", ")}`,
+    duplicateKoreanVlogVerbRootWords.length && `Duplicate verb root words: ${duplicateKoreanVlogVerbRootWords.join(", ")}`
   ].filter(Boolean).join("\n"));
 }
 
