@@ -684,7 +684,7 @@ button {
 }
 
 .root-word.is-korean-word {
-  font-size: clamp(1.3rem, 2.4vw, 2rem);
+  font-size: clamp(2.6rem, 4.8vw, 4rem);
   font-weight: 600;
   text-align: right;
 }
