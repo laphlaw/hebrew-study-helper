@@ -1,10 +1,12 @@
 {
   "provider": "elevenlabs",
-  "generatedAt": "2026-09-06T09:39:46.036Z",
+  "generatedAt": "2026-09-11T04:15:32.152Z",
   "chapters": [
     {
       "book": "Exo",
       "chapter": 22,
+      "title": "",
+      "language": "",
       "manifest": "public/audio/elevenlabs/manifests/Exo.22.json",
       "cards": 181,
       "modelId": "eleven_v3",
@@ -14,11 +16,24 @@
     {
       "book": "Exo",
       "chapter": 32,
+      "title": "",
+      "language": "",
       "manifest": "public/audio/elevenlabs/manifests/Exo.32.json",
       "cards": 236,
       "modelId": "eleven_v3",
       "outputFormat": "mp3_44100_128",
       "generatedAt": "2026-09-06T09:37:40.517Z"
+    },
+    {
+      "book": "KoreanPhrases",
+      "chapter": 1,
+      "title": "Korean Everyday Phrases",
+      "language": "ko",
+      "manifest": "public/audio/elevenlabs/manifests/KoreanPhrases.1.json",
+      "cards": 10,
+      "modelId": "eleven_v3",
+      "outputFormat": "mp3_44100_128",
+      "generatedAt": "2026-09-11T04:13:58.010Z"
     }
   ]
 }

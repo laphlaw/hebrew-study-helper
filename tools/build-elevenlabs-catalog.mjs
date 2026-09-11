@@ -26,6 +26,8 @@ export function buildElevenLabsCatalog() {
         chapters.push({
           book: manifest.book || match[1],
           chapter: Number(manifest.chapter || match[2]),
+          title: manifest.title || "",
+          language: manifest.language || "",
           manifest: `public/audio/elevenlabs/manifests/${fileName}`,
           cards: Array.isArray(manifest.cards) ? manifest.cards.length : 0,
           modelId: manifest.modelId || "",

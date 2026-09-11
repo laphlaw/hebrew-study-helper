@@ -1,0 +1,478 @@
+{
+  "phrases": [
+    {
+      "korean": "안녕하세요",
+      "english": "Hello",
+      "romanization": "annyeonghaseyo",
+      "category": "greetings"
+    },
+    {
+      "korean": "만나서 반가워요",
+      "english": "Nice to meet you",
+      "romanization": "mannaseo bangawoyo",
+      "category": "greetings"
+    },
+    {
+      "korean": "잘 지내요?",
+      "english": "How are you?",
+      "romanization": "jal jinaeyo?",
+      "category": "greetings"
+    },
+    {
+      "korean": "잘 지내요",
+      "english": "I'm doing well",
+      "romanization": "jal jinaeyo",
+      "category": "greetings"
+    },
+    {
+      "korean": "오랜만이에요",
+      "english": "Long time no see",
+      "romanization": "oraenmanieyo",
+      "category": "greetings"
+    },
+    {
+      "korean": "나중에 봐요",
+      "english": "See you later",
+      "romanization": "najunge bwayo",
+      "category": "greetings"
+    },
+    {
+      "korean": "내일 봐요",
+      "english": "See you tomorrow",
+      "romanization": "naeil bwayo",
+      "category": "greetings"
+    },
+    {
+      "korean": "안녕히 계세요",
+      "english": "Goodbye, when you are leaving",
+      "romanization": "annyeonghi gyeseyo",
+      "category": "greetings"
+    },
+    {
+      "korean": "안녕히 가세요",
+      "english": "Goodbye, when they are leaving",
+      "romanization": "annyeonghi gaseyo",
+      "category": "greetings"
+    },
+    {
+      "korean": "감사합니다",
+      "english": "Thank you",
+      "romanization": "gamsahamnida",
+      "category": "politeness"
+    },
+    {
+      "korean": "고마워요",
+      "english": "Thanks",
+      "romanization": "gomawoyo",
+      "category": "politeness"
+    },
+    {
+      "korean": "죄송합니다",
+      "english": "I'm sorry",
+      "romanization": "joesonghamnida",
+      "category": "politeness"
+    },
+    {
+      "korean": "괜찮아요",
+      "english": "It's okay",
+      "romanization": "gwaenchanayo",
+      "category": "politeness"
+    },
+    {
+      "korean": "실례합니다",
+      "english": "Excuse me",
+      "romanization": "sillyehamnida",
+      "category": "politeness"
+    },
+    {
+      "korean": "잠시만요",
+      "english": "One moment, please",
+      "romanization": "jamsimanyo",
+      "category": "politeness"
+    },
+    {
+      "korean": "도와주세요",
+      "english": "Please help me",
+      "romanization": "dowajuseyo",
+      "category": "politeness"
+    },
+    {
+      "korean": "네",
+      "english": "Yes",
+      "romanization": "ne",
+      "category": "basics"
+    },
+    {
+      "korean": "아니요",
+      "english": "No",
+      "romanization": "aniyo",
+      "category": "basics"
+    },
+    {
+      "korean": "좋아요",
+      "english": "Good; I like it",
+      "romanization": "joayo",
+      "category": "basics"
+    },
+    {
+      "korean": "싫어요",
+      "english": "I don't like it",
+      "romanization": "sireoyo",
+      "category": "basics"
+    },
+    {
+      "korean": "알겠어요",
+      "english": "I understand; okay",
+      "romanization": "algesseoyo",
+      "category": "basics"
+    },
+    {
+      "korean": "그런 것 같아요",
+      "english": "I think so",
+      "romanization": "geureon geot gatayo",
+      "category": "basics"
+    },
+    {
+      "korean": "진짜요?",
+      "english": "Really??",
+      "romanization": "jinjjayo?",
+      "category": "basics"
+    },
+    {
+      "korean": "잘 모르겠어요",
+      "english": "I don't know",
+      "romanization": "jal moreugesseoyo",
+      "category": "basics"
+    },
+    {
+      "korean": "모르겠어요",
+      "english": "I don't know",
+      "romanization": "moreugesseoyo",
+      "category": "basics"
+    },
+    {
+      "korean": "이해했어요",
+      "english": "I understood",
+      "romanization": "ihaehaesseoyo",
+      "category": "basics"
+    },
+    {
+      "korean": "이해가 안 돼요",
+      "english": "I don't understand",
+      "romanization": "ihaega an dwaeyo",
+      "category": "basics"
+    },
+    {
+      "korean": "이해 못 했어요",
+      "english": "I didn't understand",
+      "romanization": "ihae mot haesseoyo",
+      "category": "basics"
+    },
+    {
+      "korean": "제 이름은 ...이에요",
+      "english": "My name is ...",
+      "romanization": "je ireumeun ...ieyo",
+      "category": "introductions"
+    },
+    {
+      "korean": "이름이 뭐예요?",
+      "english": "What is your name?",
+      "romanization": "ireumi mwoyeyo?",
+      "category": "introductions"
+    },
+    {
+      "korean": "저는 미국 사람이에요",
+      "english": "I'm American",
+      "romanization": "jeoneun miguk saramieyo",
+      "category": "introductions"
+    },
+    {
+      "korean": "한국어를 조금 해요",
+      "english": "I speak a little Korean",
+      "romanization": "hangugeoreul jogeum haeyo",
+      "category": "language"
+    },
+    {
+      "korean": "영어 할 수 있어요?",
+      "english": "Can you speak English?",
+      "romanization": "yeongeo hal su isseoyo?",
+      "category": "language"
+    },
+    {
+      "korean": "천천히 말해 주세요",
+      "english": "Please speak slowly",
+      "romanization": "cheoncheonhi malhae juseyo",
+      "category": "language"
+    },
+    {
+      "korean": "다시 말해 주세요",
+      "english": "Please say it again",
+      "romanization": "dasi malhae juseyo",
+      "category": "language"
+    },
+    {
+      "korean": "이거 한국어로 뭐예요?",
+      "english": "What is this in Korean?",
+      "romanization": "igeo hangugeoro mwoyeyo?",
+      "category": "language"
+    },
+    {
+      "korean": "...은/는 한국어로 어떻게 말해요?",
+      "english": "How do you say ... in Korean?",
+      "romanization": "...eun/neun hangugeoro eotteoke malhaeyo?",
+      "category": "language"
+    },
+    {
+      "korean": "화장실이 어디예요?",
+      "english": "Where is the bathroom?",
+      "romanization": "hwajangsiri eodiyeyo?",
+      "category": "travel"
+    },
+    {
+      "korean": "지하철역이 어디예요?",
+      "english": "Where is the subway station?",
+      "romanization": "jihacheolyeogi eodiyeyo?",
+      "category": "travel"
+    },
+    {
+      "korean": "여기서 가까워요?",
+      "english": "Is it close from here?",
+      "romanization": "yeogiseo gakkawoyo?",
+      "category": "travel"
+    },
+    {
+      "korean": "얼마나 걸려요?",
+      "english": "How long does it take?",
+      "romanization": "eolmana geollyeoyo?",
+      "category": "travel"
+    },
+    {
+      "korean": "길을 잃었어요",
+      "english": "I'm lost",
+      "romanization": "gireul ireosseoyo",
+      "category": "travel"
+    },
+    {
+      "korean": "어디에 있어요?",
+      "english": "Where is it?",
+      "romanization": "eodie isseoyo?",
+      "category": "travel"
+    },
+    {
+      "korean": "여기 앉아도 돼요?",
+      "english": "May I sit here?",
+      "romanization": "yeogi anjado dwaeyo?",
+      "category": "travel"
+    },
+    {
+      "korean": "사진 찍어도 돼요?",
+      "english": "May I take a photo?",
+      "romanization": "sajin jjigeodo dwaeyo?",
+      "category": "travel"
+    },
+    {
+      "korean": "저 늦을 것 같아요",
+      "english": "I'm running late",
+      "romanization": "jeo neujeul geot gatayo",
+      "category": "daily life"
+    },
+    {
+      "korean": "이거 얼마예요?",
+      "english": "How much is this?",
+      "romanization": "igeo eolmayeyo?",
+      "category": "shopping"
+    },
+    {
+      "korean": "너무 비싸요",
+      "english": "It's too expensive",
+      "romanization": "neomu bissayo",
+      "category": "shopping"
+    },
+    {
+      "korean": "깎아 주세요",
+      "english": "Please give me a discount",
+      "romanization": "kkakka juseyo",
+      "category": "shopping"
+    },
+    {
+      "korean": "카드 돼요?",
+      "english": "Do you take cards?",
+      "romanization": "kadeu dwaeyo?",
+      "category": "shopping"
+    },
+    {
+      "korean": "현금만 돼요?",
+      "english": "Cash only?",
+      "romanization": "hyeongeumman dwaeyo?",
+      "category": "shopping"
+    },
+    {
+      "korean": "영수증 주세요",
+      "english": "Receipt, please",
+      "romanization": "yeongsujeung juseyo",
+      "category": "shopping"
+    },
+    {
+      "korean": "그냥 볼게요",
+      "english": "I'm just looking",
+      "romanization": "geunyang bolgeyo",
+      "category": "shopping"
+    },
+    {
+      "korean": "물 주세요",
+      "english": "Water, please",
+      "romanization": "mul juseyo",
+      "category": "food"
+    },
+    {
+      "korean": "커피 한 잔 주세요",
+      "english": "One coffee, please",
+      "romanization": "keopi han jan juseyo",
+      "category": "food"
+    },
+    {
+      "korean": "메뉴 주세요",
+      "english": "Menu, please",
+      "romanization": "menyu juseyo",
+      "category": "food"
+    },
+    {
+      "korean": "추천해 주세요",
+      "english": "Please recommend something",
+      "romanization": "chucheonhae juseyo",
+      "category": "food"
+    },
+    {
+      "korean": "계산해 주세요",
+      "english": "Check, please",
+      "romanization": "gyesanhae juseyo",
+      "category": "food"
+    },
+    {
+      "korean": "포장해 주세요",
+      "english": "To go, please",
+      "romanization": "pojanghae juseyo",
+      "category": "food"
+    },
+    {
+      "korean": "맛있어요",
+      "english": "It's delicious",
+      "romanization": "masisseoyo",
+      "category": "food"
+    },
+    {
+      "korean": "매워요",
+      "english": "It's spicy",
+      "romanization": "maewoyo",
+      "category": "food"
+    },
+    {
+      "korean": "잘 먹겠습니다",
+      "english": "I'll enjoy this meal",
+      "romanization": "jal meokgesseumnida",
+      "category": "food"
+    },
+    {
+      "korean": "잘 먹었습니다",
+      "english": "Thank you for the meal",
+      "romanization": "jal meogeosseumnida",
+      "category": "food"
+    },
+    {
+      "korean": "저녁 먹었어요?",
+      "english": "Did you have dinner yet?",
+      "romanization": "jeonyeok meogeosseoyo?",
+      "category": "food"
+    },
+    {
+      "korean": "저녁 먹으러 갈래요?",
+      "english": "Do you want to get dinner?",
+      "romanization": "jeonyeok meogeureo gallaeyo?",
+      "category": "food"
+    },
+    {
+      "korean": "점심 뭐 먹었어요?",
+      "english": "What did you have for lunch?",
+      "romanization": "jeomsim mwo meogeosseoyo?",
+      "category": "food"
+    },
+    {
+      "korean": "배고파요",
+      "english": "I'm hungry",
+      "romanization": "baegopayo",
+      "category": "feelings"
+    },
+    {
+      "korean": "목말라요",
+      "english": "I'm thirsty",
+      "romanization": "mongmallayo",
+      "category": "feelings"
+    },
+    {
+      "korean": "피곤해요",
+      "english": "I'm tired",
+      "romanization": "pigonhaeyo",
+      "category": "feelings"
+    },
+    {
+      "korean": "괜찮으세요?",
+      "english": "Are you okay?",
+      "romanization": "gwaenchaneuseyo?",
+      "category": "feelings"
+    },
+    {
+      "korean": "오늘 날씨가 좋아요",
+      "english": "The weather is nice today",
+      "romanization": "oneul nalssiga joayo",
+      "category": "small talk"
+    },
+    {
+      "korean": "지금 몇 시예요?",
+      "english": "What time is it now?",
+      "romanization": "jigeum myeot siyeyo?",
+      "category": "small talk"
+    },
+    {
+      "korean": "주말 어땠어요?",
+      "english": "How was your weekend?",
+      "romanization": "jumal eottaesseoyo?",
+      "category": "small talk"
+    },
+    {
+      "korean": "이번 주말에 계획 있어요?",
+      "english": "Any plans this weekend?",
+      "romanization": "ibeon jumare gyehoek isseoyo?",
+      "category": "small talk"
+    },
+    {
+      "korean": "몇 시에 일어났어요?",
+      "english": "What time did you wake up?",
+      "romanization": "myeot sie ireonasseoyo?",
+      "category": "small talk"
+    },
+    {
+      "korean": "몇 시에 퇴근해요?",
+      "english": "What time are you off work?",
+      "romanization": "myeot sie toegeunhaeyo?",
+      "category": "small talk"
+    },
+    {
+      "korean": "교회 어땠어요?",
+      "english": "How was church?",
+      "romanization": "gyohoe eottaesseoyo?",
+      "category": "small talk"
+    },
+    {
+      "korean": "예약했어요",
+      "english": "I have a reservation",
+      "romanization": "yeyakhaesseoyo",
+      "category": "daily life"
+    },
+    {
+      "korean": "천천히 해도 돼요",
+      "english": "It's okay to take your time",
+      "romanization": "cheoncheonhi haedo dwaeyo",
+      "category": "daily life"
+    }
+  ]
+}

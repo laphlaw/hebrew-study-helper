@@ -2,6 +2,7 @@
   "scripts": {
     "build": "node tools/build-static.mjs",
     "generate:audio": "node tools/generate-elevenlabs-audio.mjs",
+    "generate:korean-phrase-audio": "node tools/generate-korean-phrase-audio.mjs",
     "build:korean-youtube": "node tools/build-korean-youtube-data.mjs"
   }
 }

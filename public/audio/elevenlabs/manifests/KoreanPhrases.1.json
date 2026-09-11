@@ -1,0 +1,150 @@
+{
+  "provider": "elevenlabs",
+  "generatedAt": "2026-09-11T04:13:58.010Z",
+  "language": "ko",
+  "title": "Korean Everyday Phrases",
+  "book": "KoreanPhrases",
+  "chapter": 1,
+  "modelId": "eleven_v3",
+  "outputFormat": "mp3_44100_128",
+  "cardSettings": {
+    "koreanRepeats": 2,
+    "englishRepeats": 1,
+    "separator": "."
+  },
+  "voices": {
+    "card": "EkK5I93UQWFDigLMpZcX"
+  },
+  "cards": [
+    {
+      "key": "ko-phrase-1",
+      "ref": "basics",
+      "language": "ko",
+      "category": "basics",
+      "hebrew": "진짜요?",
+      "english": "Really??",
+      "romanization": "jinjjayo?",
+      "text": "진짜요?.\n진짜요?.\nReally??.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/23f8dec9e390552f24e1e147.mp3"
+      }
+    },
+    {
+      "key": "ko-phrase-2",
+      "ref": "daily life",
+      "language": "ko",
+      "category": "daily life",
+      "hebrew": "저 늦을 것 같아요",
+      "english": "I'm running late",
+      "romanization": "jeo neujeul geot gatayo",
+      "text": "저 늦을 것 같아요.\n저 늦을 것 같아요.\nI'm running late.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/07e7705523438dc706809d9a.mp3"
+      }
+    },
+    {
+      "key": "ko-phrase-3",
+      "ref": "small talk",
+      "language": "ko",
+      "category": "small talk",
+      "hebrew": "주말 어땠어요?",
+      "english": "How was your weekend?",
+      "romanization": "jumal eottaesseoyo?",
+      "text": "주말 어땠어요?.\n주말 어땠어요?.\nHow was your weekend?.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/04a0062031c35bc01edf392a.mp3"
+      }
+    },
+    {
+      "key": "ko-phrase-4",
+      "ref": "small talk",
+      "language": "ko",
+      "category": "small talk",
+      "hebrew": "이번 주말에 계획 있어요?",
+      "english": "Any plans this weekend?",
+      "romanization": "ibeon jumare gyehoek isseoyo?",
+      "text": "이번 주말에 계획 있어요?.\n이번 주말에 계획 있어요?.\nAny plans this weekend?.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e7bd51076fac73d3d613fb6c.mp3"
+      }
+    },
+    {
+      "key": "ko-phrase-5",
+      "ref": "small talk",
+      "language": "ko",
+      "category": "small talk",
+      "hebrew": "몇 시에 일어났어요?",
+      "english": "What time did you wake up?",
+      "romanization": "myeot sie ireonasseoyo?",
+      "text": "몇 시에 일어났어요?.\n몇 시에 일어났어요?.\nWhat time did you wake up?.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/8cb1a000ec2b4f4e4b8d1461.mp3"
+      }
+    },
+    {
+      "key": "ko-phrase-6",
+      "ref": "food",
+      "language": "ko",
+      "category": "food",
+      "hebrew": "저녁 먹었어요?",
+      "english": "Did you have dinner yet?",
+      "romanization": "jeonyeok meogeosseoyo?",
+      "text": "저녁 먹었어요?.\n저녁 먹었어요?.\nDid you have dinner yet?.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/57f51f4cc1124ee1c287fc3f.mp3"
+      }
+    },
+    {
+      "key": "ko-phrase-7",
+      "ref": "food",
+      "language": "ko",
+      "category": "food",
+      "hebrew": "저녁 먹으러 갈래요?",
+      "english": "Do you want to get dinner?",
+      "romanization": "jeonyeok meogeureo gallaeyo?",
+      "text": "저녁 먹으러 갈래요?.\n저녁 먹으러 갈래요?.\nDo you want to get dinner?.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f8dd055f6d8fb485e3752d29.mp3"
+      }
+    },
+    {
+      "key": "ko-phrase-8",
+      "ref": "food",
+      "language": "ko",
+      "category": "food",
+      "hebrew": "점심 뭐 먹었어요?",
+      "english": "What did you have for lunch?",
+      "romanization": "jeomsim mwo meogeosseoyo?",
+      "text": "점심 뭐 먹었어요?.\n점심 뭐 먹었어요?.\nWhat did you have for lunch?.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/79fa9823af04d3fdc18f1bcf.mp3"
+      }
+    },
+    {
+      "key": "ko-phrase-9",
+      "ref": "small talk",
+      "language": "ko",
+      "category": "small talk",
+      "hebrew": "몇 시에 퇴근해요?",
+      "english": "What time are you off work?",
+      "romanization": "myeot sie toegeunhaeyo?",
+      "text": "몇 시에 퇴근해요?.\n몇 시에 퇴근해요?.\nWhat time are you off work?.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/0a197c63ae5be40ea87635fd.mp3"
+      }
+    },
+    {
+      "key": "ko-phrase-10",
+      "ref": "small talk",
+      "language": "ko",
+      "category": "small talk",
+      "hebrew": "교회 어땠어요?",
+      "english": "How was church?",
+      "romanization": "gyohoe eottaesseoyo?",
+      "text": "교회 어땠어요?.\n교회 어땠어요?.\nHow was church?.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/8bd3685c2c4c9cc1bf42b02f.mp3"
+      }
+    }
+  ]
+}

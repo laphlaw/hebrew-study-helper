@@ -666,8 +666,18 @@ button {
   line-height: 1.15;
 }
 
+.hebrew.is-korean-phrase {
+  align-items: center;
+  font-size: clamp(2.2rem, 5.6vw, 4.8rem);
+  line-height: 1.22;
+}
+
 .card-button.is-alphabet-card {
   grid-template-rows: minmax(0, 1fr) minmax(58px, 0.22fr) minmax(38px, 0.14fr);
+}
+
+.card-button.is-phrase-card {
+  grid-template-rows: minmax(0, 1fr) minmax(58px, 0.25fr) minmax(42px, 0.18fr);
 }
 
 .hebrew.is-korean-letter {
@@ -1408,6 +1418,10 @@ button {
 }
 
 :root[data-study-language="korean"] #chapter-select {
+  display: none;
+}
+
+:root[data-study-language="korean"][data-study-mode="phrases"] #book-select {
   display: none;
 }
 
