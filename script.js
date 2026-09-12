@@ -2333,10 +2333,16 @@ function setReadingWordTranslated(word, translated) {
   if (!word?.dataset?.english || word.classList.contains("is-swapping")) return;
 
   clearReadingWordTimer(word);
+  if (translated) {
+    const originalWidth = word.getBoundingClientRect().width;
+    if (originalWidth > 0) word.style.width = `${originalWidth}px`;
+  }
+
   const text = translated ? word.dataset.english : word.dataset.original;
   const dir = translated ? "ltr" : word.dataset.originalDir || "auto";
 
   word.classList.remove("is-revealing");
+  word.style.removeProperty("--reading-word-fit-size");
   word.classList.add("is-swapping");
   window.setTimeout(() => {
     if (!word.isConnected) return;
@@ -2352,9 +2358,12 @@ function setReadingWordTranslated(word, translated) {
         ? `Show original for ${word.dataset.english}`
         : `Show English for ${stripNiqqud(word.dataset.original || "")}`
     );
+
+    if (translated) fitReadingWordTranslation(word);
     word.classList.add("is-revealing");
     word.addEventListener("animationend", () => {
       word.classList.remove("is-revealing");
+      if (!translated) word.style.removeProperty("width");
     }, { once: true });
     window.requestAnimationFrame(() => word.classList.remove("is-swapping"));
 
@@ -2365,6 +2374,15 @@ function setReadingWordTranslated(word, translated) {
       readingWordTimers.set(word, timer);
     }
   }, readingWordFadeDuration);
+}
+
+function fitReadingWordTranslation(word) {
+  const availableWidth = word.clientWidth;
+  const naturalWidth = word.scrollWidth;
+  if (!availableWidth || !naturalWidth || naturalWidth <= availableWidth) return;
+
+  const fitScale = Math.max(0.1, (availableWidth - 2) / naturalWidth);
+  word.style.setProperty("--reading-word-fit-size", `${0.8 * fitScale}em`);
 }
 
 function toggleReadingWord(word) {
