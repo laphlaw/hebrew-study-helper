@@ -1,0 +1,26 @@
+{
+  "name": "Hebrew & Korean Word Study Helper",
+  "short_name": "Word Helper",
+  "description": "A focused Hebrew and Korean reading and vocabulary study helper.",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "fullscreen",
+  "display_override": ["fullscreen", "standalone"],
+  "orientation": "any",
+  "background_color": "#fbf7ef",
+  "theme_color": "#175c64",
+  "icons": [
+    {
+      "src": "/public/icons/app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/public/icons/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Word Helper</title>
+  <desc id="desc">A teal app icon with Hebrew and Korean study marks.</desc>
+  <rect width="512" height="512" rx="108" fill="#fbf7ef"/>
+  <path d="M94 118h324a54 54 0 0 1 54 54v168a54 54 0 0 1-54 54H94a54 54 0 0 1-54-54V172a54 54 0 0 1 54-54Z" fill="#175c64"/>
+  <path d="M132 334c27-37 49-77 67-120 6-14 11-30 15-47h49c-5 24-13 47-24 69-13 28-30 56-50 84h86v42H132v-28Z" fill="#fbf7ef"/>
+  <path d="M322 178h40v51l45-51h51l-56 61 60 83h-51l-36-53-13 14v39h-40V178Z" fill="#fbf7ef"/>
+  <circle cx="208" cy="394" r="16" fill="#e7a85a"/>
+  <circle cx="256" cy="394" r="16" fill="#e7a85a"/>
+  <circle cx="304" cy="394" r="16" fill="#e7a85a"/>
+</svg>

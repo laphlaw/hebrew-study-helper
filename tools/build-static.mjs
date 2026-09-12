@@ -10,7 +10,7 @@ const dist = path.join(root, "dist");
 fs.rmSync(dist, { recursive: true, force: true });
 fs.mkdirSync(dist, { recursive: true });
 
-for (const file of ["index.html", "styles.css", "script.js"]) {
+for (const file of ["index.html", "styles.css", "script.js", "manifest.webmanifest"]) {
   fs.copyFileSync(path.join(root, file), path.join(dist, file));
 }
 

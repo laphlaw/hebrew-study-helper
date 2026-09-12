@@ -43,6 +43,7 @@ let elevenLabsIsPlaying = false;
 const elevenLabsPlaybackSpeeds = [0.25, 0.5, 0.75, 0.85, 1];
 const elevenLabsAudio = new Audio();
 let fallbackReadingFullscreen = false;
+let readingTouchStartY = 0;
 const readingWordFadeDuration = 120;
 const readingWordAutoRevertDuration = 5000;
 const readingWordTimers = new WeakMap();
@@ -543,6 +544,10 @@ function applyTheme(theme) {
   els.themeToggleButton.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
 }
 
+function applyDeviceHints() {
+  document.documentElement.classList.toggle("is-apple-touch-device", isAppleTouchDevice());
+}
+
 function toggleTheme() {
   applyTheme(getCurrentTheme() === "dark" ? "light" : "dark");
   savePreferences();
@@ -649,14 +654,20 @@ function isReadingFullscreen() {
 
 function renderReadingFullscreenState() {
   els.readingSection.classList.toggle("is-fullscreen", fallbackReadingFullscreen);
+  document.documentElement.classList.toggle("reading-fullscreen-active", isReadingFullscreen());
   els.readingFullscreenButton.textContent = isReadingFullscreen() ? "Exit fullscreen" : "Fullscreen";
+}
+
+function isAppleTouchDevice() {
+  return /iPad|iPhone|iPod/.test(navigator.userAgent)
+    || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
 }
 
 async function enterReadingFullscreen() {
   if (document.fullscreenElement === els.readingSection) return;
 
   try {
-    if (els.readingSection.requestFullscreen) {
+    if (els.readingSection.requestFullscreen && !isAppleTouchDevice()) {
       await els.readingSection.requestFullscreen();
     } else {
       fallbackReadingFullscreen = true;
@@ -675,6 +686,34 @@ async function exitReadingFullscreen() {
 
   fallbackReadingFullscreen = false;
   renderReadingFullscreenState();
+}
+
+function handleReadingFullscreenTouchStart(event) {
+  if (!isReadingFullscreen()) return;
+  readingTouchStartY = event.touches?.[0]?.clientY || 0;
+}
+
+function handleReadingFullscreenTouchMove(event) {
+  if (!isReadingFullscreen()) return;
+
+  const touch = event.touches?.[0];
+  if (!touch) return;
+
+  const target = event.target.nodeType === Node.ELEMENT_NODE ? event.target : event.target.parentElement;
+  const scroller = target?.closest?.("#reading-text");
+  if (!scroller) {
+    event.preventDefault();
+    return;
+  }
+
+  const deltaY = touch.clientY - readingTouchStartY;
+  const canScroll = scroller.scrollHeight > scroller.clientHeight;
+  const atTop = scroller.scrollTop <= 0;
+  const atBottom = Math.ceil(scroller.scrollTop + scroller.clientHeight) >= scroller.scrollHeight;
+
+  if (!canScroll || (deltaY > 0 && atTop) || (deltaY < 0 && atBottom)) {
+    event.preventDefault();
+  }
 }
 
 function toggleReadingFullscreen() {
@@ -2309,19 +2348,30 @@ function createReadingTextWord(original = "", english = "", originalDir = "auto"
   const gloss = readingWordEnglish(english);
   const word = document.createElement("span");
   word.className = "reading-word";
-  word.textContent = original;
 
   if (!original || !gloss || gloss.toLowerCase() === "needs gloss") {
+    word.textContent = original;
     word.classList.add("is-static");
     word.dir = originalDir;
     return word;
   }
+
+  const originalLabel = document.createElement("span");
+  originalLabel.className = "reading-word-label is-original";
+  originalLabel.textContent = original;
+  originalLabel.dir = originalDir;
+
+  const englishLabel = document.createElement("span");
+  englishLabel.className = "reading-word-label is-english";
+  englishLabel.textContent = gloss;
+  englishLabel.dir = "ltr";
 
   word.dataset.original = original;
   word.dataset.english = gloss;
   word.dataset.originalDir = originalDir;
   word.dataset.showingEnglish = "false";
   word.dir = originalDir;
+  word.append(originalLabel, englishLabel);
   word.tabIndex = 0;
   word.setAttribute("role", "button");
   word.setAttribute("aria-pressed", "false");
@@ -2330,25 +2380,15 @@ function createReadingTextWord(original = "", english = "", originalDir = "auto"
 }
 
 function setReadingWordTranslated(word, translated) {
-  if (!word?.dataset?.english || word.classList.contains("is-swapping")) return;
+  if (!word?.dataset?.english) return;
 
   clearReadingWordTimer(word);
-  if (translated) {
-    const originalWidth = word.getBoundingClientRect().width;
-    if (originalWidth > 0) word.style.width = `${originalWidth}px`;
-  }
-
-  const text = translated ? word.dataset.english : word.dataset.original;
-  const dir = translated ? "ltr" : word.dataset.originalDir || "auto";
 
   word.classList.remove("is-revealing");
   word.style.removeProperty("--reading-word-fit-size");
-  word.classList.add("is-swapping");
-  window.setTimeout(() => {
+  window.requestAnimationFrame(() => {
     if (!word.isConnected) return;
 
-    word.textContent = text;
-    word.dir = dir;
     word.dataset.showingEnglish = translated ? "true" : "false";
     word.classList.toggle("is-translated", translated);
     word.setAttribute("aria-pressed", translated ? "true" : "false");
@@ -2359,13 +2399,15 @@ function setReadingWordTranslated(word, translated) {
         : `Show English for ${stripNiqqud(word.dataset.original || "")}`
     );
 
-    if (translated) fitReadingWordTranslation(word);
+    if (translated) {
+      fitReadingWordTranslation(word);
+    }
+
     word.classList.add("is-revealing");
     word.addEventListener("animationend", () => {
       word.classList.remove("is-revealing");
-      if (!translated) word.style.removeProperty("width");
     }, { once: true });
-    window.requestAnimationFrame(() => word.classList.remove("is-swapping"));
+    window.setTimeout(() => word.classList.remove("is-revealing"), readingWordFadeDuration + 450);
 
     if (translated) {
       const timer = window.setTimeout(() => {
@@ -2377,12 +2419,19 @@ function setReadingWordTranslated(word, translated) {
 }
 
 function fitReadingWordTranslation(word) {
-  const availableWidth = word.clientWidth;
-  const naturalWidth = word.scrollWidth;
+  const originalLabel = word.querySelector(".reading-word-label.is-original");
+  const englishLabel = word.querySelector(".reading-word-label.is-english");
+  if (!originalLabel || !englishLabel) return;
+
+  const availableWidth = originalLabel.getBoundingClientRect().width - 2;
+  const naturalWidth = englishLabel.scrollWidth;
   if (!availableWidth || !naturalWidth || naturalWidth <= availableWidth) return;
 
-  const fitScale = Math.max(0.1, (availableWidth - 2) / naturalWidth);
-  word.style.setProperty("--reading-word-fit-size", `${0.8 * fitScale}em`);
+  const currentFontSize = Number.parseFloat(window.getComputedStyle(englishLabel).fontSize);
+  if (!currentFontSize) return;
+
+  const fitSize = Math.max(5, Math.floor(currentFontSize * (availableWidth / naturalWidth)));
+  word.style.setProperty("--reading-word-fit-size", `${fitSize}px`);
 }
 
 function toggleReadingWord(word) {
@@ -3183,6 +3232,8 @@ els.readingNextButton.addEventListener("click", () => {
 });
 els.readingText.addEventListener("click", handleReadingWordClick);
 els.readingText.addEventListener("keydown", handleReadingWordKeydown);
+els.readingSection.addEventListener("touchstart", handleReadingFullscreenTouchStart, { passive: true });
+els.readingSection.addEventListener("touchmove", handleReadingFullscreenTouchMove, { passive: false });
 els.elevenLabsPlayButton.addEventListener("click", playElevenLabsAudio);
 els.elevenLabsStopButton.addEventListener("click", stopElevenLabsAudio);
 els.elevenLabsNextButton.addEventListener("click", nextElevenLabsAudio);
@@ -3275,6 +3326,7 @@ elevenLabsAudio.addEventListener("error", () => {
 });
 
 applyTheme(getCurrentTheme());
+applyDeviceHints();
 els.elevenLabsShuffleToggle.checked = elevenLabsShuffleEnabled;
 renderElevenLabsSpeedControl();
 renderElevenLabsPlayerState();
