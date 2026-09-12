@@ -653,7 +653,7 @@ button {
   min-width: 0;
   max-width: 980px;
   height: 100%;
-  overflow: hidden;
+  overflow: visible;
   font-size: clamp(3.1rem, 8vw, 6rem);
   line-height: 1.35;
   text-align: center;
@@ -800,7 +800,8 @@ button {
 
   .hebrew {
     font-size: clamp(8rem, 18vw, 15rem);
-    line-height: 1.05;
+    padding-block-end: 0.08em;
+    line-height: 1.12;
   }
 
   .english {
