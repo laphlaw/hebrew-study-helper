@@ -43,6 +43,9 @@ let elevenLabsIsPlaying = false;
 const elevenLabsPlaybackSpeeds = [0.25, 0.5, 0.75, 0.85, 1];
 const elevenLabsAudio = new Audio();
 let fallbackReadingFullscreen = false;
+const readingWordFadeDuration = 120;
+const readingWordAutoRevertDuration = 5000;
+const readingWordTimers = new WeakMap();
 const chapterStorageKey = "hebrew-study-helper:last-chapter";
 const masteredWordsStorageKey = "hebrew-study-helper:mastered-words";
 const legacyHiddenWordsStorageKey = "hebrew-study-helper:hidden-words";
@@ -2292,6 +2295,198 @@ function stripCantillation(value = "") {
   return value.replace(/[\u0591-\u05AF\u05BD]/g, "");
 }
 
+function readingWordEnglish(value = "") {
+  return cleanGloss(formatAnswer(value));
+}
+
+function clearReadingWordTimer(word) {
+  const timer = readingWordTimers.get(word);
+  if (timer) window.clearTimeout(timer);
+  readingWordTimers.delete(word);
+}
+
+function createReadingTextWord(original = "", english = "", originalDir = "auto") {
+  const gloss = readingWordEnglish(english);
+  const word = document.createElement("span");
+  word.className = "reading-word";
+  word.textContent = original;
+
+  if (!original || !gloss || gloss.toLowerCase() === "needs gloss") {
+    word.classList.add("is-static");
+    word.dir = originalDir;
+    return word;
+  }
+
+  word.dataset.original = original;
+  word.dataset.english = gloss;
+  word.dataset.originalDir = originalDir;
+  word.dataset.showingEnglish = "false";
+  word.dir = originalDir;
+  word.tabIndex = 0;
+  word.setAttribute("role", "button");
+  word.setAttribute("aria-pressed", "false");
+  word.setAttribute("aria-label", `Show English for ${stripNiqqud(original)}`);
+  return word;
+}
+
+function setReadingWordTranslated(word, translated) {
+  if (!word?.dataset?.english || word.classList.contains("is-swapping")) return;
+
+  clearReadingWordTimer(word);
+  const text = translated ? word.dataset.english : word.dataset.original;
+  const dir = translated ? "ltr" : word.dataset.originalDir || "auto";
+
+  word.classList.remove("is-revealing");
+  word.classList.add("is-swapping");
+  window.setTimeout(() => {
+    if (!word.isConnected) return;
+
+    word.textContent = text;
+    word.dir = dir;
+    word.dataset.showingEnglish = translated ? "true" : "false";
+    word.classList.toggle("is-translated", translated);
+    word.setAttribute("aria-pressed", translated ? "true" : "false");
+    word.setAttribute(
+      "aria-label",
+      translated
+        ? `Show original for ${word.dataset.english}`
+        : `Show English for ${stripNiqqud(word.dataset.original || "")}`
+    );
+    word.classList.add("is-revealing");
+    word.addEventListener("animationend", () => {
+      word.classList.remove("is-revealing");
+    }, { once: true });
+    window.requestAnimationFrame(() => word.classList.remove("is-swapping"));
+
+    if (translated) {
+      const timer = window.setTimeout(() => {
+        setReadingWordTranslated(word, false);
+      }, readingWordAutoRevertDuration);
+      readingWordTimers.set(word, timer);
+    }
+  }, readingWordFadeDuration);
+}
+
+function toggleReadingWord(word) {
+  setReadingWordTranslated(word, word.dataset.showingEnglish !== "true");
+}
+
+function handleReadingWordClick(event) {
+  const word = event.target.closest(".reading-word:not(.is-static)");
+  if (!word || !els.readingText.contains(word)) return;
+  event.preventDefault();
+  toggleReadingWord(word);
+}
+
+function handleReadingWordKeydown(event) {
+  if (event.key !== "Enter" && event.key !== " ") return;
+  const word = event.target.closest(".reading-word:not(.is-static)");
+  if (!word || !els.readingText.contains(word)) return;
+  event.preventDefault();
+  toggleReadingWord(word);
+}
+
+function maculaVerseNumber(ref = "") {
+  const match = ref.match(/^\S+\s+\d+:(\d+):\d+$/);
+  return match ? Number(match[1]) : null;
+}
+
+function hebrewReadingVerses(records = []) {
+  const verses = [];
+  let currentVerse = null;
+
+  coalesceMaculaRecords(records).forEach((record) => {
+    const verseNumber = maculaVerseNumber(record.r);
+    if (!verseNumber) return;
+
+    if (!currentVerse || currentVerse.number !== verseNumber) {
+      currentVerse = { number: verseNumber, records: [] };
+      verses.push(currentVerse);
+    }
+
+    currentVerse.records.push(record);
+  });
+
+  return verses;
+}
+
+function renderPlainReadingVerses(verses = []) {
+  verses.forEach((verse, index) => {
+    const row = document.createElement("p");
+    row.className = "reading-verse";
+
+    const number = document.createElement("span");
+    number.className = "verse-number";
+    number.textContent = String(index + 1);
+
+    const text = document.createElement("span");
+    text.className = "verse-text";
+    text.textContent = stripCantillation(stripMarkup(verse));
+
+    row.append(number, text);
+    els.readingText.append(row);
+  });
+}
+
+function renderHebrewReadingVerses(records = []) {
+  hebrewReadingVerses(records).forEach((verse) => {
+    const row = document.createElement("p");
+    row.className = "reading-verse";
+
+    const number = document.createElement("span");
+    number.className = "verse-number";
+    number.textContent = String(verse.number);
+
+    const text = document.createElement("span");
+    text.className = "verse-text";
+
+    verse.records.forEach((record, index) => {
+      if (index > 0) text.append(document.createTextNode(" "));
+      text.append(createReadingTextWord(stripCantillation(record.h), record.g, "rtl"));
+    });
+
+    row.append(number, text);
+    els.readingText.append(row);
+  });
+}
+
+function normalizeKoreanReadingToken(value = "") {
+  return value.replace(/^[^\uAC00-\uD7AFA-Za-z0-9]+|[^\uAC00-\uD7AFA-Za-z0-9]+$/g, "");
+}
+
+function koreanReadingGlossMap(video) {
+  const glosses = new Map();
+
+  (video?.words || []).forEach((entry) => {
+    const key = normalizeKoreanReadingToken(entry?.word || "");
+    const english = readingWordEnglish(entry?.english || "");
+    if (!key || !english || english.toLowerCase() === "needs gloss") return;
+    if (!glosses.has(key)) glosses.set(key, english);
+  });
+
+  return glosses;
+}
+
+function appendKoreanReadingText(container, value = "", glosses = new Map()) {
+  const parts = value.match(/\s+|[^\s]+/g) || [];
+
+  parts.forEach((part) => {
+    if (/^\s+$/.test(part)) {
+      container.append(document.createTextNode(part));
+      return;
+    }
+
+    const leading = part.match(/^[^\uAC00-\uD7AFA-Za-z0-9]+/)?.[0] || "";
+    const trailing = part.match(/[^\uAC00-\uD7AFA-Za-z0-9]+$/)?.[0] || "";
+    const original = part.slice(leading.length, part.length - trailing.length);
+    const key = normalizeKoreanReadingToken(original);
+
+    if (leading) container.append(document.createTextNode(leading));
+    container.append(createReadingTextWord(original || part, glosses.get(key) || "", "ltr"));
+    if (trailing && original) container.append(document.createTextNode(trailing));
+  });
+}
+
 function elevenLabsManifestUrl() {
   if (audioCatalogModeActive()) {
     const entry = selectedAudioCatalogEntry();
@@ -2618,30 +2813,36 @@ async function loadReadingChapter(book, chapter, requestId = chapterLoadRequestI
   els.readingText.dir = supportedLanguages.hebrew.readingDir;
 
   const url = `https://www.sefaria.org/api/texts/${encodeURIComponent(sefariaRef(book, chapter))}?context=0&commentary=0`;
-  const response = await fetch(url);
-  if (!response.ok) throw new Error(`Could not load ${book.name} ${chapter} from Sefaria`);
-  const data = await response.json();
-  if (requestId !== chapterLoadRequestId || !isHebrewSelected()) return;
-  const verses = Array.isArray(data.he) ? data.he : [];
+  const localUrl = `public/macula/${book.code}.${chapter}.json`;
+  const [sefariaResult, localResult] = await Promise.allSettled([
+    fetch(url).then((response) => {
+      if (!response.ok) throw new Error(`Could not load ${book.name} ${chapter} from Sefaria`);
+      return response.json();
+    }),
+    fetch(localUrl, { cache: "no-store" }).then((response) => {
+      if (!response.ok) throw new Error(`Could not load ${book.name} ${chapter} local words`);
+      return response.json();
+    })
+  ]);
 
-  els.readingStatus.textContent = data.heRef || `${book.name} ${chapter}`;
+  if (requestId !== chapterLoadRequestId || !isHebrewSelected()) return;
+  if (sefariaResult.status === "rejected" && localResult.status === "rejected") {
+    throw sefariaResult.reason || localResult.reason;
+  }
+
+  const data = sefariaResult.status === "fulfilled" ? sefariaResult.value : null;
+  const records = localResult.status === "fulfilled" && Array.isArray(localResult.value) ? localResult.value : [];
+  const verses = Array.isArray(data?.he) ? data.he : [];
+  currentChapterRecords = records;
+
+  els.readingStatus.textContent = data?.heRef || `${book.name} ${chapter}`;
   els.readingText.innerHTML = "";
 
-  verses.forEach((verse, index) => {
-    const row = document.createElement("p");
-    row.className = "reading-verse";
-
-    const number = document.createElement("span");
-    number.className = "verse-number";
-    number.textContent = String(index + 1);
-
-    const text = document.createElement("span");
-    text.className = "verse-text";
-    text.textContent = stripCantillation(stripMarkup(verse));
-
-    row.append(number, text);
-    els.readingText.append(row);
-  });
+  if (records.length) {
+    renderHebrewReadingVerses(records);
+  } else {
+    renderPlainReadingVerses(verses);
+  }
 
   updateReadingNavButtons();
   els.readingText.append(els.readingNav);
@@ -2699,6 +2900,7 @@ function renderKoreanCaptionText(video = currentKoreanVideo) {
   els.readingText.innerHTML = "";
   els.readingText.classList.add("is-korean", "is-korean-caption");
   els.readingText.dir = supportedLanguages.korean.readingDir;
+  const glosses = koreanReadingGlossMap(video);
 
   if (!video) {
     els.readingText.append(els.readingNav);
@@ -2715,7 +2917,7 @@ function renderKoreanCaptionText(video = currentKoreanVideo) {
 
     const text = document.createElement("span");
     text.className = "verse-text";
-    text.textContent = caption.text || "";
+    appendKoreanReadingText(text, caption.text || "", glosses);
 
     row.append(number, text);
     els.readingText.append(row);
@@ -2961,6 +3163,8 @@ els.readingPrevButton.addEventListener("click", () => {
 els.readingNextButton.addEventListener("click", () => {
   moveReadingChapter(1).catch(console.error);
 });
+els.readingText.addEventListener("click", handleReadingWordClick);
+els.readingText.addEventListener("keydown", handleReadingWordKeydown);
 els.elevenLabsPlayButton.addEventListener("click", playElevenLabsAudio);
 els.elevenLabsStopButton.addEventListener("click", stopElevenLabsAudio);
 els.elevenLabsNextButton.addEventListener("click", nextElevenLabsAudio);
