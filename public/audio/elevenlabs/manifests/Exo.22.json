@@ -19,6 +19,7 @@
   "cards": [
     {
       "ref": "EXO 22:1:3",
+      "pos": "verb",
       "hebrew": "יִמָּצֵא",
       "english": "he will be found",
       "text": "יִמָּצֵא.\nיִמָּצֵא.\nhe will be found.",
@@ -28,6 +29,7 @@
     },
     {
       "ref": "EXO 22:1:4",
+      "pos": "noun",
       "hebrew": "הַגַּנָּב",
       "english": "the thief",
       "text": "הַגַּנָּב.\nהַגַּנָּב.\nthe thief.",
@@ -37,6 +39,7 @@
     },
     {
       "ref": "EXO 22:1:5",
+      "pos": "verb",
       "hebrew": "וְהֻכָּה",
       "english": "and he will be struck",
       "text": "וְהֻכָּה.\nוְהֻכָּה.\nand he will be struck.",
@@ -46,6 +49,7 @@
     },
     {
       "ref": "EXO 22:1:6",
+      "pos": "verb",
       "hebrew": "וָמֵת",
       "english": "and he will die",
       "text": "וָמֵת.\nוָמֵת.\nand he will die.",
@@ -55,6 +59,7 @@
     },
     {
       "ref": "EXO 22:1:9",
+      "pos": "noun",
       "hebrew": "דָּמִים",
       "english": "blood(s)",
       "text": "דָּמִים.\nדָּמִים.\nblood(s).",
@@ -64,6 +69,7 @@
     },
     {
       "ref": "EXO 22:2:2",
+      "pos": "verb",
       "hebrew": "זָרְחָה",
       "english": "it has risen",
       "text": "זָרְחָה.\nזָרְחָה.\nit has risen.",
@@ -73,6 +79,7 @@
     },
     {
       "ref": "EXO 22:2:3",
+      "pos": "noun",
       "hebrew": "הַשֶּׁמֶשׁ",
       "english": "the sun",
       "text": "הַשֶּׁמֶשׁ.\nהַשֶּׁמֶשׁ.\nthe sun.",
@@ -82,6 +89,7 @@
     },
     {
       "ref": "EXO 22:2:7",
+      "pos": "verb",
       "hebrew": "שַׁלֵּם",
       "english": "certainly (make restitution)",
       "text": "שַׁלֵּם.\nשַׁלֵּם.\ncertainly (make restitution).",
@@ -91,6 +99,7 @@
     },
     {
       "ref": "EXO 22:2:8",
+      "pos": "verb",
       "hebrew": "יְשַׁלֵּם",
       "english": "he will make restitution",
       "text": "יְשַׁלֵּם.\nיְשַׁלֵּם.\nhe will make restitution.",
@@ -100,6 +109,7 @@
     },
     {
       "ref": "EXO 22:2:12",
+      "pos": "verb",
       "hebrew": "וְנִמְכַּר",
       "english": "and he will be sold",
       "text": "וְנִמְכַּר.\nוְנִמְכַּר.\nand he will be sold.",
@@ -109,6 +119,7 @@
     },
     {
       "ref": "EXO 22:2:13",
+      "pos": "noun",
       "hebrew": "בִּגְנֵבָתוֹ",
       "english": "for his thing stolen",
       "text": "בִּגְנֵבָתוֹ.\nבִּגְנֵבָתוֹ.\nfor his thing stolen.",
@@ -118,6 +129,7 @@
     },
     {
       "ref": "EXO 22:3:2",
+      "pos": "verb",
       "hebrew": "הִמָּצֵא",
       "english": "actually (be found)",
       "text": "הִמָּצֵא.\nהִמָּצֵא.\nactually (be found).",
@@ -127,6 +139,7 @@
     },
     {
       "ref": "EXO 22:3:3",
+      "pos": "verb",
       "hebrew": "תִמָּצֵא",
       "english": "it will be found",
       "text": "תִמָּצֵא.\nתִמָּצֵא.\nit will be found.",
@@ -136,6 +149,7 @@
     },
     {
       "ref": "EXO 22:3:4",
+      "pos": "noun",
       "hebrew": "בְיָדוֹ",
       "english": "in hand his",
       "text": "בְיָדוֹ.\nבְיָדוֹ.\nin hand his.",
@@ -145,6 +159,7 @@
     },
     {
       "ref": "EXO 22:3:5",
+      "pos": "noun",
       "hebrew": "הַגְּנֵבָה",
       "english": "the thing stolen",
       "text": "הַגְּנֵבָה.\nהַגְּנֵבָה.\nthe thing stolen.",
@@ -154,6 +169,7 @@
     },
     {
       "ref": "EXO 22:3:6",
+      "pos": "noun",
       "hebrew": "מִשּׁוֹר",
       "english": "from an ox",
       "text": "מִשּׁוֹר.\nמִשּׁוֹר.\nfrom an ox.",
@@ -163,6 +179,7 @@
     },
     {
       "ref": "EXO 22:3:8",
+      "pos": "noun",
       "hebrew": "חֲמוֹר",
       "english": "a donkey",
       "text": "חֲמוֹר.\nחֲמוֹר.\na donkey.",
@@ -172,6 +189,7 @@
     },
     {
       "ref": "EXO 22:3:10",
+      "pos": "noun",
       "hebrew": "שֶׂה",
       "english": "a sheep",
       "text": "שֶׂה.\nשֶׂה.\na sheep.",
@@ -181,6 +199,7 @@
     },
     {
       "ref": "EXO 22:4:2",
+      "pos": "verb",
       "hebrew": "יַבְעֶר",
       "english": "he will cause to be grazed over",
       "text": "יַבְעֶר.\nיַבְעֶר.\nhe will cause to be grazed over.",
@@ -190,6 +209,7 @@
     },
     {
       "ref": "EXO 22:4:3",
+      "pos": "noun",
       "hebrew": "אִישׁ",
       "english": "anyone",
       "text": "אִישׁ.\nאִישׁ.\nanyone.",
@@ -199,6 +219,7 @@
     },
     {
       "ref": "EXO 22:4:4",
+      "pos": "noun",
       "hebrew": "שָׂדֶה",
       "english": "a field",
       "text": "שָׂדֶה.\nשָׂדֶה.\na field.",
@@ -208,6 +229,7 @@
     },
     {
       "ref": "EXO 22:4:6",
+      "pos": "noun",
       "hebrew": "כֶרֶם",
       "english": "a vineyard",
       "text": "כֶרֶם.\nכֶרֶם.\na vineyard.",
@@ -217,6 +239,7 @@
     },
     {
       "ref": "EXO 22:4:7",
+      "pos": "verb",
       "hebrew": "וְשִׁלַּח",
       "english": "and he will let go",
       "text": "וְשִׁלַּח.\nוְשִׁלַּח.\nand he will let go.",
@@ -226,6 +249,7 @@
     },
     {
       "ref": "EXO 22:4:10",
+      "pos": "noun",
       "hebrew": "בְּעִירוֹ",
       "english": "cattle his",
       "text": "בְּעִירוֹ.\nבְּעִירוֹ.\ncattle his.",
@@ -235,6 +259,7 @@
     },
     {
       "ref": "EXO 22:4:11",
+      "pos": "verb",
       "hebrew": "וּבִעֵר",
       "english": "and it will graze",
       "text": "וּבִעֵר.\nוּבִעֵר.\nand it will graze.",
@@ -244,6 +269,7 @@
     },
     {
       "ref": "EXO 22:4:12",
+      "pos": "noun",
       "hebrew": "בִּשְׂדֵה",
       "english": "in [the] field",
       "text": "בִּשְׂדֵה.\nבִּשְׂדֵה.\nin [the] field.",
@@ -253,6 +279,7 @@
     },
     {
       "ref": "EXO 22:4:14",
+      "pos": "noun",
       "hebrew": "מֵיטַב",
       "english": "the best",
       "text": "מֵיטַב.\nמֵיטַב.\nthe best.",
@@ -262,6 +289,7 @@
     },
     {
       "ref": "EXO 22:4:15",
+      "pos": "noun",
       "hebrew": "שָׂדֵהוּ",
       "english": "his field his",
       "text": "שָׂדֵהוּ.\nשָׂדֵהוּ.\nhis field his.",
@@ -271,6 +299,7 @@
     },
     {
       "ref": "EXO 22:4:16",
+      "pos": "noun",
       "hebrew": "וּמֵיטַב",
       "english": "and the best",
       "text": "וּמֵיטַב.\nוּמֵיטַב.\nand the best.",
@@ -280,6 +309,7 @@
     },
     {
       "ref": "EXO 22:4:17",
+      "pos": "noun",
       "hebrew": "כַּרְמוֹ",
       "english": "his vineyard his",
       "text": "כַּרְמוֹ.\nכַּרְמוֹ.\nhis vineyard his.",
@@ -289,6 +319,7 @@
     },
     {
       "ref": "EXO 22:5:2",
+      "pos": "verb",
       "hebrew": "תֵצֵא",
       "english": "it will go forth",
       "text": "תֵצֵא.\nתֵצֵא.\nit will go forth.",
@@ -298,6 +329,7 @@
     },
     {
       "ref": "EXO 22:5:3",
+      "pos": "noun",
       "hebrew": "אֵשׁ",
       "english": "a fire",
       "text": "אֵשׁ.\nאֵשׁ.\na fire.",
@@ -307,6 +339,7 @@
     },
     {
       "ref": "EXO 22:5:4",
+      "pos": "verb",
       "hebrew": "וּמָצְאָה",
       "english": "and it will find",
       "text": "וּמָצְאָה.\nוּמָצְאָה.\nand it will find.",
@@ -316,6 +349,7 @@
     },
     {
       "ref": "EXO 22:5:5",
+      "pos": "noun",
       "hebrew": "קֹצִים",
       "english": "thorns",
       "text": "קֹצִים.\nקֹצִים.\nthorns.",
@@ -325,6 +359,7 @@
     },
     {
       "ref": "EXO 22:5:6",
+      "pos": "verb",
       "hebrew": "וְנֶאֱכַל",
       "english": "and it will be consumed",
       "text": "וְנֶאֱכַל.\nוְנֶאֱכַל.\nand it will be consumed.",
@@ -334,6 +369,7 @@
     },
     {
       "ref": "EXO 22:5:7",
+      "pos": "noun",
       "hebrew": "גָּדִישׁ",
       "english": "a stack of sheaves",
       "text": "גָּדִישׁ.\nגָּדִישׁ.\na stack of sheaves.",
@@ -343,6 +379,7 @@
     },
     {
       "ref": "EXO 22:5:9",
+      "pos": "noun",
       "hebrew": "הַקָּמָה",
       "english": "the standing grain",
       "text": "הַקָּמָה.\nהַקָּמָה.\nthe standing grain.",
@@ -352,6 +389,7 @@
     },
     {
       "ref": "EXO 22:5:11",
+      "pos": "noun",
       "hebrew": "הַשָּׂדֶה",
       "english": "the field",
       "text": "הַשָּׂדֶה.\nהַשָּׂדֶה.\nthe field.",
@@ -361,6 +399,7 @@
     },
     {
       "ref": "EXO 22:5:14",
+      "pos": "verb",
       "hebrew": "הַמַּבְעִר",
       "english": "the [one who] kindled",
       "text": "הַמַּבְעִר.\nהַמַּבְעִר.\nthe [one who] kindled.",
@@ -370,6 +409,7 @@
     },
     {
       "ref": "EXO 22:5:16",
+      "pos": "noun",
       "hebrew": "הַבְּעֵרָה",
       "english": "the fire",
       "text": "הַבְּעֵרָה.\nהַבְּעֵרָה.\nthe fire.",
@@ -379,6 +419,7 @@
     },
     {
       "ref": "EXO 22:6:2",
+      "pos": "verb",
       "hebrew": "יִתֵּן",
       "english": "he will give",
       "text": "יִתֵּן.\nיִתֵּן.\nhe will give.",
@@ -388,6 +429,7 @@
     },
     {
       "ref": "EXO 22:6:5",
+      "pos": "noun",
       "hebrew": "רֵעֵהוּ",
       "english": "neighbor his",
       "text": "רֵעֵהוּ.\nרֵעֵהוּ.\nneighbor his.",
@@ -397,6 +439,7 @@
     },
     {
       "ref": "EXO 22:6:6",
+      "pos": "noun",
       "hebrew": "כֶּסֶף",
       "english": "money",
       "text": "כֶּסֶף.\nכֶּסֶף.\nmoney.",
@@ -406,6 +449,7 @@
     },
     {
       "ref": "EXO 22:6:8",
+      "pos": "noun",
       "hebrew": "כֵלִים",
       "english": "articles",
       "text": "כֵלִים.\nכֵלִים.\narticles.",
@@ -415,6 +459,7 @@
     },
     {
       "ref": "EXO 22:6:9",
+      "pos": "verb",
       "hebrew": "לִשְׁמֹר",
       "english": "to keep [them]",
       "text": "לִשְׁמֹר.\nלִשְׁמֹר.\nto keep [them].",
@@ -424,6 +469,7 @@
     },
     {
       "ref": "EXO 22:6:10",
+      "pos": "verb",
       "hebrew": "וְגֻנַּב",
       "english": "and it will be stolen",
       "text": "וְגֻנַּב.\nוְגֻנַּב.\nand it will be stolen.",
@@ -433,6 +479,7 @@
     },
     {
       "ref": "EXO 22:6:11",
+      "pos": "noun",
       "hebrew": "מִבֵּית",
       "english": "from the house",
       "text": "מִבֵּית.\nמִבֵּית.\nfrom the house.",
@@ -442,6 +489,7 @@
     },
     {
       "ref": "EXO 22:6:12",
+      "pos": "noun",
       "hebrew": "הָאִישׁ",
       "english": "of the person",
       "text": "הָאִישׁ.\nהָאִישׁ.\nof the person.",
@@ -451,6 +499,7 @@
     },
     {
       "ref": "EXO 22:7:5",
+      "pos": "verb",
       "hebrew": "וְנִקְרַב",
       "english": "and he will be brought near",
       "text": "וְנִקְרַב.\nוְנִקְרַב.\nand he will be brought near.",
@@ -460,6 +509,7 @@
     },
     {
       "ref": "EXO 22:7:6",
+      "pos": "noun",
       "hebrew": "בַּעַל",
       "english": "the master",
       "text": "בַּעַל.\nבַּעַל.\nthe master.",
@@ -469,6 +519,7 @@
     },
     {
       "ref": "EXO 22:7:7",
+      "pos": "noun",
       "hebrew": "הַבַּיִת",
       "english": "of the house",
       "text": "הַבַּיִת.\nהַבַּיִת.\nof the house.",
@@ -478,6 +529,7 @@
     },
     {
       "ref": "EXO 22:7:9",
+      "pos": "noun",
       "hebrew": "הָאֱלֹהִים",
       "english": "the judges",
       "text": "הָאֱלֹהִים.\nהָאֱלֹהִים.\nthe judges.",
@@ -487,6 +539,7 @@
     },
     {
       "ref": "EXO 22:7:12",
+      "pos": "verb",
       "hebrew": "שָׁלַח",
       "english": "he had stretched out",
       "text": "שָׁלַח.\nשָׁלַח.\nhe had stretched out.",
@@ -496,6 +549,7 @@
     },
     {
       "ref": "EXO 22:7:13",
+      "pos": "noun",
       "hebrew": "יָדוֹ",
       "english": "hand his",
       "text": "יָדוֹ.\nיָדוֹ.\nhand his.",
@@ -505,6 +559,7 @@
     },
     {
       "ref": "EXO 22:7:14",
+      "pos": "noun",
       "hebrew": "בִּמְלֶאכֶת",
       "english": "on the property",
       "text": "בִּמְלֶאכֶת.\nבִּמְלֶאכֶת.\non the property.",
@@ -514,6 +569,7 @@
     },
     {
       "ref": "EXO 22:8:2",
+      "pos": "noun",
       "hebrew": "כָּל",
       "english": "every",
       "text": "כָּל.\nכָּל.\nevery.",
@@ -523,6 +579,7 @@
     },
     {
       "ref": "EXO 22:8:3",
+      "pos": "noun",
       "hebrew": "דְּבַר",
       "english": "matter",
       "text": "דְּבַר.\nדְּבַר.\nmatter.",
@@ -532,6 +589,7 @@
     },
     {
       "ref": "EXO 22:8:4",
+      "pos": "noun",
       "hebrew": "פֶּשַׁע",
       "english": "of transgression",
       "text": "פֶּשַׁע.\nפֶּשַׁע.\nof transgression.",
@@ -541,6 +599,7 @@
     },
     {
       "ref": "EXO 22:8:6",
+      "pos": "noun",
       "hebrew": "שׁוֹר",
       "english": "an ox",
       "text": "שׁוֹר.\nשׁוֹר.\nan ox.",
@@ -550,6 +609,7 @@
     },
     {
       "ref": "EXO 22:8:12",
+      "pos": "noun",
       "hebrew": "שַׂלְמָה",
       "english": "a garment",
       "text": "שַׂלְמָה.\nשַׂלְמָה.\na garment.",
@@ -559,6 +619,7 @@
     },
     {
       "ref": "EXO 22:8:15",
+      "pos": "noun",
       "hebrew": "אֲבֵדָה",
       "english": "thing lost",
       "text": "אֲבֵדָה.\nאֲבֵדָה.\nthing lost.",
@@ -568,6 +629,7 @@
     },
     {
       "ref": "EXO 22:8:17",
+      "pos": "verb",
       "hebrew": "יֹאמַר",
       "english": "anyone will say",
       "text": "יֹאמַר.\nיֹאמַר.\nanyone will say.",
@@ -577,6 +639,7 @@
     },
     {
       "ref": "EXO 22:8:23",
+      "pos": "verb",
       "hebrew": "יָבֹא",
       "english": "it will come",
       "text": "יָבֹא.\nיָבֹא.\nit will come.",
@@ -586,6 +649,7 @@
     },
     {
       "ref": "EXO 22:8:27",
+      "pos": "verb",
       "hebrew": "יַרְשִׁיעֻן",
       "english": "they will condemn as guilty",
       "text": "יַרְשִׁיעֻן.\nיַרְשִׁיעֻן.\nthey will condemn as guilty.",
@@ -595,6 +659,7 @@
     },
     {
       "ref": "EXO 22:8:28",
+      "pos": "noun",
       "hebrew": "אֱלֹהִים",
       "english": "[the] judges",
       "text": "אֱלֹהִים.\nאֱלֹהִים.\n[the] judges.",
@@ -604,6 +669,7 @@
     },
     {
       "ref": "EXO 22:8:31",
+      "pos": "noun",
       "hebrew": "לְרֵעֵהוּ",
       "english": "to neighbor his",
       "text": "לְרֵעֵהוּ.\nלְרֵעֵהוּ.\nto neighbor his.",
@@ -613,6 +679,7 @@
     },
     {
       "ref": "EXO 22:9:11",
+      "pos": "noun",
       "hebrew": "וְכָל",
       "english": "and every",
       "text": "וְכָל.\nוְכָל.\nand every.",
@@ -622,6 +689,7 @@
     },
     {
       "ref": "EXO 22:9:12",
+      "pos": "noun",
       "hebrew": "בְּהֵמָה",
       "english": "animal",
       "text": "בְּהֵמָה.\nבְּהֵמָה.\nanimal.",
@@ -631,6 +699,7 @@
     },
     {
       "ref": "EXO 22:9:14",
+      "pos": "verb",
       "hebrew": "וּמֵת",
       "english": "and it will die",
       "text": "וּמֵת.\nוּמֵת.\nand it will die.",
@@ -640,6 +709,7 @@
     },
     {
       "ref": "EXO 22:9:16",
+      "pos": "verb",
       "hebrew": "נִשְׁבַּר",
       "english": "it was maimed",
       "text": "נִשְׁבַּר.\nנִשְׁבַּר.\nit was maimed.",
@@ -649,6 +719,7 @@
     },
     {
       "ref": "EXO 22:9:18",
+      "pos": "verb",
       "hebrew": "נִשְׁבָּה",
       "english": "it was captured",
       "text": "נִשְׁבָּה.\nנִשְׁבָּה.\nit was captured.",
@@ -658,6 +729,7 @@
     },
     {
       "ref": "EXO 22:9:20",
+      "pos": "verb",
       "hebrew": "רֹאֶה",
       "english": "[one who] saw",
       "text": "רֹאֶה.\nרֹאֶה.\n[one who] saw.",
@@ -667,6 +739,7 @@
     },
     {
       "ref": "EXO 22:10:1",
+      "pos": "noun",
       "hebrew": "שְׁבֻעַת",
       "english": "the oath",
       "text": "שְׁבֻעַת.\nשְׁבֻעַת.\nthe oath.",
@@ -676,6 +749,7 @@
     },
     {
       "ref": "EXO 22:10:2",
+      "pos": "noun",
       "hebrew": "יְהוָה",
       "english": "of Yahweh",
       "text": "יְהוָה.\nיְהוָה.\nof Yahweh.",
@@ -685,6 +759,7 @@
     },
     {
       "ref": "EXO 22:10:3",
+      "pos": "verb",
       "hebrew": "תִּהְיֶה",
       "english": "it will be",
       "text": "תִּהְיֶה.\nתִּהְיֶה.\nit will be.",
@@ -694,6 +769,7 @@
     },
     {
       "ref": "EXO 22:10:12",
+      "pos": "verb",
       "hebrew": "וְלָקַח",
       "english": "and he will accept [it]",
       "text": "וְלָקַח.\nוְלָקַח.\nand he will accept [it].",
@@ -703,6 +779,7 @@
     },
     {
       "ref": "EXO 22:10:13",
+      "pos": "noun",
       "hebrew": "בְּעָלָיו",
       "english": "owner(s) its",
       "text": "בְּעָלָיו.\nבְּעָלָיו.\nowner(s) its.",
@@ -712,6 +789,7 @@
     },
     {
       "ref": "EXO 22:11:2",
+      "pos": "verb",
       "hebrew": "גָּנֹב",
       "english": "actually (steal)",
       "text": "גָּנֹב.\nגָּנֹב.\nactually (steal).",
@@ -721,6 +799,7 @@
     },
     {
       "ref": "EXO 22:11:3",
+      "pos": "verb",
       "hebrew": "יִגָּנֵב",
       "english": "it will be stolen",
       "text": "יִגָּנֵב.\nיִגָּנֵב.\nit will be stolen.",
@@ -730,6 +809,7 @@
     },
     {
       "ref": "EXO 22:11:6",
+      "pos": "noun",
       "hebrew": "לִבְעָלָיו",
       "english": "to owner(s) its",
       "text": "לִבְעָלָיו.\nלִבְעָלָיו.\nto owner(s) its.",
@@ -739,6 +819,7 @@
     },
     {
       "ref": "EXO 22:12:2",
+      "pos": "verb",
       "hebrew": "טָרֹף",
       "english": "actually (tear)",
       "text": "טָרֹף.\nטָרֹף.\nactually (tear).",
@@ -748,6 +829,7 @@
     },
     {
       "ref": "EXO 22:12:3",
+      "pos": "verb",
       "hebrew": "יִטָּרֵף",
       "english": "it will be torn in pieces",
       "text": "יִטָּרֵף.\nיִטָּרֵף.\nit will be torn in pieces.",
@@ -757,6 +839,7 @@
     },
     {
       "ref": "EXO 22:12:4",
+      "pos": "verb",
       "hebrew": "יְבִאֵהוּ",
       "english": "he will bring it",
       "text": "יְבִאֵהוּ.\nיְבִאֵהוּ.\nhe will bring it.",
@@ -766,6 +849,7 @@
     },
     {
       "ref": "EXO 22:12:5",
+      "pos": "noun",
       "hebrew": "עֵד",
       "english": "evidence",
       "text": "עֵד.\nעֵד.\nevidence.",
@@ -775,6 +859,7 @@
     },
     {
       "ref": "EXO 22:12:6",
+      "pos": "noun",
       "hebrew": "הַטְּרֵפָה",
       "english": "the torn animal",
       "text": "הַטְּרֵפָה.\nהַטְּרֵפָה.\nthe torn animal.",
@@ -784,6 +869,7 @@
     },
     {
       "ref": "EXO 22:13:2",
+      "pos": "verb",
       "hebrew": "יִשְׁאַל",
       "english": "he will ask",
       "text": "יִשְׁאַל.\nיִשְׁאַל.\nhe will ask.",
@@ -793,6 +879,7 @@
     },
     {
       "ref": "EXO 22:13:6",
+      "pos": "verb",
       "hebrew": "וְנִשְׁבַּר",
       "english": "and it will be maimed",
       "text": "וְנִשְׁבַּר.\nוְנִשְׁבַּר.\nand it will be maimed.",
@@ -802,6 +889,7 @@
     },
     {
       "ref": "EXO 22:13:8",
+      "pos": "verb",
       "hebrew": "מֵת",
       "english": "it died",
       "text": "מֵת.\nמֵת.\nit died.",
@@ -811,6 +899,7 @@
     },
     {
       "ref": "EXO 22:14:9",
+      "pos": "verb",
       "hebrew": "בָּא",
       "english": "it came",
       "text": "בָּא.\nבָּא.\nit came.",
@@ -820,6 +909,7 @@
     },
     {
       "ref": "EXO 22:14:10",
+      "pos": "noun",
       "hebrew": "בִּשְׂכָרוֹ",
       "english": "for hire its",
       "text": "בִּשְׂכָרוֹ.\nבִּשְׂכָרוֹ.\nfor hire its.",
@@ -829,6 +919,7 @@
     },
     {
       "ref": "EXO 22:15:2",
+      "pos": "verb",
       "hebrew": "יְפַתֶּה",
       "english": "he will seduce",
       "text": "יְפַתֶּה.\nיְפַתֶּה.\nhe will seduce.",
@@ -838,6 +929,7 @@
     },
     {
       "ref": "EXO 22:15:4",
+      "pos": "noun",
       "hebrew": "בְּתוּלָה",
       "english": "a virgin",
       "text": "בְּתוּלָה.\nבְּתוּלָה.\na virgin.",
@@ -847,6 +939,7 @@
     },
     {
       "ref": "EXO 22:15:7",
+      "pos": "verb",
       "hebrew": "אֹרָשָׂה",
       "english": "she was betrothed",
       "text": "אֹרָשָׂה.\nאֹרָשָׂה.\nshe was betrothed.",
@@ -856,6 +949,7 @@
     },
     {
       "ref": "EXO 22:15:8",
+      "pos": "verb",
       "hebrew": "וְשָׁכַב",
       "english": "and he will lie",
       "text": "וְשָׁכַב.\nוְשָׁכַב.\nand he will lie.",
@@ -865,6 +959,7 @@
     },
     {
       "ref": "EXO 22:15:10",
+      "pos": "verb",
       "hebrew": "מָהֹר",
       "english": "certainly (pay the bride-price)",
       "text": "מָהֹר.\nמָהֹר.\ncertainly (pay the bride-price).",
@@ -874,6 +969,7 @@
     },
     {
       "ref": "EXO 22:15:11",
+      "pos": "verb",
       "hebrew": "יִמְהָרֶנָּה",
       "english": "he will pay the bride-price for her",
       "text": "יִמְהָרֶנָּה.\nיִמְהָרֶנָּה.\nhe will pay the bride-price for her.",
@@ -883,6 +979,7 @@
     },
     {
       "ref": "EXO 22:15:13",
+      "pos": "noun",
       "hebrew": "לְאִשָּׁה",
       "english": "to a wife",
       "text": "לְאִשָּׁה.\nלְאִשָּׁה.\nto a wife.",
@@ -892,6 +989,7 @@
     },
     {
       "ref": "EXO 22:16:2",
+      "pos": "verb",
       "hebrew": "מָאֵן",
       "english": "absolutely (refuse)",
       "text": "מָאֵן.\nמָאֵן.\nabsolutely (refuse).",
@@ -901,6 +999,7 @@
     },
     {
       "ref": "EXO 22:16:3",
+      "pos": "verb",
       "hebrew": "יְמָאֵן",
       "english": "he will refuse",
       "text": "יְמָאֵן.\nיְמָאֵן.\nhe will refuse.",
@@ -910,6 +1009,7 @@
     },
     {
       "ref": "EXO 22:16:4",
+      "pos": "noun",
       "hebrew": "אָבִיהָ",
       "english": "father her",
       "text": "אָבִיהָ.\nאָבִיהָ.\nfather her.",
@@ -919,6 +1019,7 @@
     },
     {
       "ref": "EXO 22:16:5",
+      "pos": "verb",
       "hebrew": "לְתִתָּהּ",
       "english": "to give her",
       "text": "לְתִתָּהּ.\nלְתִתָּהּ.\nto give her.",
@@ -928,6 +1029,7 @@
     },
     {
       "ref": "EXO 22:16:8",
+      "pos": "verb",
       "hebrew": "יִשְׁקֹל",
       "english": "he will weigh out",
       "text": "יִשְׁקֹל.\nיִשְׁקֹל.\nhe will weigh out.",
@@ -937,6 +1039,7 @@
     },
     {
       "ref": "EXO 22:16:9",
+      "pos": "noun",
       "hebrew": "כְּמֹהַר",
       "english": "according to the bride-price",
       "text": "כְּמֹהַר.\nכְּמֹהַר.\naccording to the bride-price.",
@@ -946,6 +1049,7 @@
     },
     {
       "ref": "EXO 22:16:10",
+      "pos": "noun",
       "hebrew": "הַבְּתוּלֹת",
       "english": "of (the) virgins",
       "text": "הַבְּתוּלֹת.\nהַבְּתוּלֹת.\nof (the) virgins.",
@@ -955,6 +1059,7 @@
     },
     {
       "ref": "EXO 22:17:1",
+      "pos": "verb",
       "hebrew": "מְכַשֵּׁפָה",
       "english": "a sorceress",
       "text": "מְכַשֵּׁפָה.\nמְכַשֵּׁפָה.\na sorceress.",
@@ -964,6 +1069,7 @@
     },
     {
       "ref": "EXO 22:17:3",
+      "pos": "verb",
       "hebrew": "תְחַיֶּה",
       "english": "you will let live",
       "text": "תְחַיֶּה.\nתְחַיֶּה.\nyou will let live.",
@@ -973,6 +1079,7 @@
     },
     {
       "ref": "EXO 22:18:2",
+      "pos": "verb",
       "hebrew": "שֹׁכֵב",
       "english": "[one who] lies",
       "text": "שֹׁכֵב.\nשֹׁכֵב.\n[one who] lies.",
@@ -982,6 +1089,7 @@
     },
     {
       "ref": "EXO 22:18:5",
+      "pos": "verb",
       "hebrew": "מוֹת",
       "english": "surely (die)",
       "text": "מוֹת.\nמוֹת.\nsurely (die).",
@@ -991,6 +1099,7 @@
     },
     {
       "ref": "EXO 22:18:6",
+      "pos": "verb",
       "hebrew": "יוּמָת",
       "english": "he will be put to death",
       "text": "יוּמָת.\nיוּמָת.\nhe will be put to death.",
@@ -1000,6 +1109,7 @@
     },
     {
       "ref": "EXO 22:19:1",
+      "pos": "verb",
       "hebrew": "זֹבֵחַ",
       "english": "[one who] sacrifices",
       "text": "זֹבֵחַ.\nזֹבֵחַ.\n[one who] sacrifices.",
@@ -1009,6 +1119,7 @@
     },
     {
       "ref": "EXO 22:19:3",
+      "pos": "verb",
       "hebrew": "יָחֳרָם",
       "english": "he will be dedicated to destruction",
       "text": "יָחֳרָם.\nיָחֳרָם.\nhe will be dedicated to destruction.",
@@ -1018,6 +1129,7 @@
     },
     {
       "ref": "EXO 22:19:5",
+      "pos": "noun",
       "hebrew": "לַיהוָה",
       "english": "to Yahweh",
       "text": "לַיהוָה.\nלַיהוָה.\nto Yahweh.",
@@ -1027,6 +1139,7 @@
     },
     {
       "ref": "EXO 22:19:6",
+      "pos": "noun",
       "hebrew": "לְבַדּוֹ",
       "english": "him himself alone",
       "text": "לְבַדּוֹ.\nלְבַדּוֹ.\nhim himself alone.",
@@ -1036,6 +1149,7 @@
     },
     {
       "ref": "EXO 22:20:1",
+      "pos": "noun",
       "hebrew": "וְגֵר",
       "english": "and a sojourner",
       "text": "וְגֵר.\nוְגֵר.\nand a sojourner.",
@@ -1045,6 +1159,7 @@
     },
     {
       "ref": "EXO 22:20:3",
+      "pos": "verb",
       "hebrew": "תוֹנֶה",
       "english": "you must maltreat",
       "text": "תוֹנֶה.\nתוֹנֶה.\nyou must maltreat.",
@@ -1054,6 +1169,7 @@
     },
     {
       "ref": "EXO 22:20:5",
+      "pos": "verb",
       "hebrew": "תִלְחָצֶנּוּ",
       "english": "you must oppress him",
       "text": "תִלְחָצֶנּוּ.\nתִלְחָצֶנּוּ.\nyou must oppress him.",
@@ -1063,6 +1179,7 @@
     },
     {
       "ref": "EXO 22:20:7",
+      "pos": "noun",
       "hebrew": "גֵרִים",
       "english": "sojourners",
       "text": "גֵרִים.\nגֵרִים.\nsojourners.",
@@ -1072,6 +1189,7 @@
     },
     {
       "ref": "EXO 22:20:8",
+      "pos": "verb",
       "hebrew": "הֱיִיתֶם",
       "english": "you were",
       "text": "הֱיִיתֶם.\nהֱיִיתֶם.\nyou were.",
@@ -1081,6 +1199,7 @@
     },
     {
       "ref": "EXO 22:20:9",
+      "pos": "noun",
       "hebrew": "בְּאֶרֶץ",
       "english": "in the land",
       "text": "בְּאֶרֶץ.\nבְּאֶרֶץ.\nin the land.",
@@ -1090,6 +1209,7 @@
     },
     {
       "ref": "EXO 22:20:10",
+      "pos": "noun",
       "hebrew": "מִצְרָיִם",
       "english": "of Egypt",
       "text": "מִצְרָיִם.\nמִצְרָיִם.\nof Egypt.",
@@ -1099,6 +1219,7 @@
     },
     {
       "ref": "EXO 22:21:2",
+      "pos": "noun",
       "hebrew": "אַלְמָנָה",
       "english": "widow",
       "text": "אַלְמָנָה.\nאַלְמָנָה.\nwidow.",
@@ -1108,6 +1229,7 @@
     },
     {
       "ref": "EXO 22:21:3",
+      "pos": "noun",
       "hebrew": "וְיָתוֹם",
       "english": "and a fatherless one",
       "text": "וְיָתוֹם.\nוְיָתוֹם.\nand a fatherless one.",
@@ -1117,6 +1239,7 @@
     },
     {
       "ref": "EXO 22:21:5",
+      "pos": "verb",
       "hebrew": "תְעַנּוּן",
       "english": "you must afflict",
       "text": "תְעַנּוּן.\nתְעַנּוּן.\nyou must afflict.",
@@ -1126,6 +1249,7 @@
     },
     {
       "ref": "EXO 22:22:2",
+      "pos": "verb",
       "hebrew": "עַנֵּה",
       "english": "indeed (afflict)",
       "text": "עַנֵּה.\nעַנֵּה.\nindeed (afflict).",
@@ -1135,6 +1259,7 @@
     },
     {
       "ref": "EXO 22:22:3",
+      "pos": "verb",
       "hebrew": "תְעַנֶּה",
       "english": "you will afflict",
       "text": "תְעַנֶּה.\nתְעַנֶּה.\nyou will afflict.",
@@ -1144,6 +1269,7 @@
     },
     {
       "ref": "EXO 22:22:7",
+      "pos": "verb",
       "hebrew": "צָעֹק",
       "english": "indeed (cry out)",
       "text": "צָעֹק.\nצָעֹק.\nindeed (cry out).",
@@ -1153,6 +1279,7 @@
     },
     {
       "ref": "EXO 22:22:8",
+      "pos": "verb",
       "hebrew": "יִצְעַק",
       "english": "he will cry out",
       "text": "יִצְעַק.\nיִצְעַק.\nhe will cry out.",
@@ -1162,6 +1289,7 @@
     },
     {
       "ref": "EXO 22:22:10",
+      "pos": "verb",
       "hebrew": "שָׁמֹעַ",
       "english": "certainly (hear)",
       "text": "שָׁמֹעַ.\nשָׁמֹעַ.\ncertainly (hear).",
@@ -1171,6 +1299,7 @@
     },
     {
       "ref": "EXO 22:22:11",
+      "pos": "verb",
       "hebrew": "אֶשְׁמַע",
       "english": "I will hear",
       "text": "אֶשְׁמַע.\nאֶשְׁמַע.\nI will hear.",
@@ -1180,6 +1309,7 @@
     },
     {
       "ref": "EXO 22:22:12",
+      "pos": "noun",
       "hebrew": "צַעֲקָתוֹ",
       "english": "of distress his cry",
       "text": "צַעֲקָתוֹ.\nצַעֲקָתוֹ.\nof distress his cry.",
@@ -1189,6 +1319,7 @@
     },
     {
       "ref": "EXO 22:23:1",
+      "pos": "verb",
       "hebrew": "וְחָרָה",
       "english": "and it will burn",
       "text": "וְחָרָה.\nוְחָרָה.\nand it will burn.",
@@ -1198,6 +1329,7 @@
     },
     {
       "ref": "EXO 22:23:2",
+      "pos": "noun",
       "hebrew": "אַפִּי",
       "english": "anger my",
       "text": "אַפִּי.\nאַפִּי.\nanger my.",
@@ -1207,6 +1339,7 @@
     },
     {
       "ref": "EXO 22:23:3",
+      "pos": "verb",
       "hebrew": "וְהָרַגְתִּי",
       "english": "and I will kill",
       "text": "וְהָרַגְתִּי.\nוְהָרַגְתִּי.\nand I will kill.",
@@ -1216,6 +1349,7 @@
     },
     {
       "ref": "EXO 22:23:6",
+      "pos": "verb",
       "hebrew": "וְהָיוּ",
       "english": "and they will be",
       "text": "וְהָיוּ.\nוְהָיוּ.\nand they will be.",
@@ -1225,6 +1359,7 @@
     },
     {
       "ref": "EXO 22:23:7",
+      "pos": "noun",
       "hebrew": "נְשֵׁיכֶם",
       "english": "wives your",
       "text": "נְשֵׁיכֶם.\nנְשֵׁיכֶם.\nwives your.",
@@ -1234,6 +1369,7 @@
     },
     {
       "ref": "EXO 22:23:8",
+      "pos": "noun",
       "hebrew": "אַלְמָנוֹת",
       "english": "widows",
       "text": "אַלְמָנוֹת.\nאַלְמָנוֹת.\nwidows.",
@@ -1243,6 +1379,7 @@
     },
     {
       "ref": "EXO 22:23:9",
+      "pos": "noun",
       "hebrew": "וּבְנֵיכֶם",
       "english": "and children your",
       "text": "וּבְנֵיכֶם.\nוּבְנֵיכֶם.\nand children your.",
@@ -1252,6 +1389,7 @@
     },
     {
       "ref": "EXO 22:23:10",
+      "pos": "noun",
       "hebrew": "יְתֹמִים",
       "english": "fatherless ones",
       "text": "יְתֹמִים.\nיְתֹמִים.\nfatherless ones.",
@@ -1261,6 +1399,7 @@
     },
     {
       "ref": "EXO 22:24:3",
+      "pos": "verb",
       "hebrew": "תַּלְוֶה",
       "english": "you will lend to",
       "text": "תַּלְוֶה.\nתַּלְוֶה.\nyou will lend to.",
@@ -1270,6 +1409,7 @@
     },
     {
       "ref": "EXO 22:24:5",
+      "pos": "noun",
       "hebrew": "עַמִּי",
       "english": "people my",
       "text": "עַמִּי.\nעַמִּי.\npeople my.",
@@ -1279,6 +1419,7 @@
     },
     {
       "ref": "EXO 22:24:10",
+      "pos": "verb",
       "hebrew": "תִהְיֶה",
       "english": "you must be",
       "text": "תִהְיֶה.\nתִהְיֶה.\nyou must be.",
@@ -1288,6 +1429,7 @@
     },
     {
       "ref": "EXO 22:24:12",
+      "pos": "verb",
       "hebrew": "כְּנֹשֶׁה",
       "english": "like a creditor",
       "text": "כְּנֹשֶׁה.\nכְּנֹשֶׁה.\nlike a creditor.",
@@ -1297,6 +1439,7 @@
     },
     {
       "ref": "EXO 22:24:14",
+      "pos": "verb",
       "hebrew": "תְשִׂימוּן",
       "english": "you must put",
       "text": "תְשִׂימוּן.\nתְשִׂימוּן.\nyou must put.",
@@ -1306,6 +1449,7 @@
     },
     {
       "ref": "EXO 22:24:16",
+      "pos": "noun",
       "hebrew": "נֶשֶׁךְ",
       "english": "interest",
       "text": "נֶשֶׁךְ.\nנֶשֶׁךְ.\ninterest.",
@@ -1315,6 +1459,7 @@
     },
     {
       "ref": "EXO 22:25:2",
+      "pos": "verb",
       "hebrew": "חָבֹל",
       "english": "actually (take as pledge)",
       "text": "חָבֹל.\nחָבֹל.\nactually (take as pledge).",
@@ -1324,6 +1469,7 @@
     },
     {
       "ref": "EXO 22:25:3",
+      "pos": "verb",
       "hebrew": "תַּחְבֹּל",
       "english": "you will take as pledge",
       "text": "תַּחְבֹּל.\nתַּחְבֹּל.\nyou will take as pledge.",
@@ -1333,6 +1479,7 @@
     },
     {
       "ref": "EXO 22:25:4",
+      "pos": "noun",
       "hebrew": "שַׂלְמַת",
       "english": "the cloak",
       "text": "שַׂלְמַת.\nשַׂלְמַת.\nthe cloak.",
@@ -1342,6 +1489,7 @@
     },
     {
       "ref": "EXO 22:25:5",
+      "pos": "noun",
       "hebrew": "רֵעֶךָ",
       "english": "your neighbor your",
       "text": "רֵעֶךָ.\nרֵעֶךָ.\nyour neighbor your.",
@@ -1351,6 +1499,7 @@
     },
     {
       "ref": "EXO 22:25:7",
+      "pos": "verb",
       "hebrew": "בֹּא",
       "english": "goes",
       "text": "בֹּא.\nבֹּא.\ngoes.",
@@ -1360,6 +1509,7 @@
     },
     {
       "ref": "EXO 22:25:9",
+      "pos": "verb",
       "hebrew": "תְּשִׁיבֶנּוּ",
       "english": "you will return it",
       "text": "תְּשִׁיבֶנּוּ.\nתְּשִׁיבֶנּוּ.\nyou will return it.",
@@ -1369,6 +1519,7 @@
     },
     {
       "ref": "EXO 22:26:4",
+      "pos": "noun",
       "hebrew": "כְסוּתוֹ",
       "english": "covering [is] his",
       "text": "כְסוּתוֹ.\nכְסוּתוֹ.\ncovering [is] his.",
@@ -1378,6 +1529,7 @@
     },
     {
       "ref": "EXO 22:26:5",
+      "pos": "noun",
       "hebrew": "לְבַדָּהּ",
       "english": "it only alone",
       "text": "לְבַדָּהּ.\nלְבַדָּהּ.\nit only alone.",
@@ -1387,6 +1539,7 @@
     },
     {
       "ref": "EXO 22:26:7",
+      "pos": "noun",
       "hebrew": "שִׂמְלָתוֹ",
       "english": "cloak [is] his",
       "text": "שִׂמְלָתוֹ.\nשִׂמְלָתוֹ.\ncloak [is] his.",
@@ -1396,6 +1549,7 @@
     },
     {
       "ref": "EXO 22:26:8",
+      "pos": "noun",
       "hebrew": "לְעֹרוֹ",
       "english": "for skin his",
       "text": "לְעֹרוֹ.\nלְעֹרוֹ.\nfor skin his.",
@@ -1405,6 +1559,7 @@
     },
     {
       "ref": "EXO 22:26:10",
+      "pos": "verb",
       "hebrew": "יִשְׁכָּב",
       "english": "will he lie down",
       "text": "יִשְׁכָּב.\nיִשְׁכָּב.\nwill he lie down.",
@@ -1414,6 +1569,7 @@
     },
     {
       "ref": "EXO 22:26:11",
+      "pos": "verb",
       "hebrew": "וְהָיָה",
       "english": "and it will be",
       "text": "וְהָיָה.\nוְהָיָה.\nand it will be.",
@@ -1423,6 +1579,7 @@
     },
     {
       "ref": "EXO 22:26:15",
+      "pos": "verb",
       "hebrew": "וְשָׁמַעְתִּי",
       "english": "and I will hear",
       "text": "וְשָׁמַעְתִּי.\nוְשָׁמַעְתִּי.\nand I will hear.",
@@ -1432,6 +1589,7 @@
     },
     {
       "ref": "EXO 22:27:3",
+      "pos": "verb",
       "hebrew": "תְקַלֵּל",
       "english": "you must curse",
       "text": "תְקַלֵּל.\nתְקַלֵּל.\nyou must curse.",
@@ -1441,6 +1599,7 @@
     },
     {
       "ref": "EXO 22:27:4",
+      "pos": "noun",
       "hebrew": "וְנָשִׂיא",
       "english": "and a leader",
       "text": "וְנָשִׂיא.\nוְנָשִׂיא.\nand a leader.",
@@ -1450,6 +1609,7 @@
     },
     {
       "ref": "EXO 22:27:5",
+      "pos": "noun",
       "hebrew": "בְעַמְּךָ",
       "english": "among people your",
       "text": "בְעַמְּךָ.\nבְעַמְּךָ.\namong people your.",
@@ -1459,6 +1619,7 @@
     },
     {
       "ref": "EXO 22:27:7",
+      "pos": "verb",
       "hebrew": "תָאֹר",
       "english": "you must curse",
       "text": "תָאֹר.\nתָאֹר.\nyou must curse.",
@@ -1468,6 +1629,7 @@
     },
     {
       "ref": "EXO 22:28:1",
+      "pos": "noun",
       "hebrew": "מְלֵאָתְךָ",
       "english": "produce your full",
       "text": "מְלֵאָתְךָ.\nמְלֵאָתְךָ.\nproduce your full.",
@@ -1477,6 +1639,7 @@
     },
     {
       "ref": "EXO 22:28:2",
+      "pos": "noun",
       "hebrew": "וְדִמְעֲךָ",
       "english": "and juice your",
       "text": "וְדִמְעֲךָ.\nוְדִמְעֲךָ.\nand juice your.",
@@ -1486,6 +1649,7 @@
     },
     {
       "ref": "EXO 22:28:4",
+      "pos": "verb",
       "hebrew": "תְאַחֵר",
       "english": "you must delay",
       "text": "תְאַחֵר.\nתְאַחֵר.\nyou must delay.",
@@ -1495,6 +1659,7 @@
     },
     {
       "ref": "EXO 22:28:5",
+      "pos": "noun",
       "hebrew": "בְּכוֹר",
       "english": "the firstborn",
       "text": "בְּכוֹר.\nבְּכוֹר.\nthe firstborn.",
@@ -1504,6 +1669,7 @@
     },
     {
       "ref": "EXO 22:28:6",
+      "pos": "noun",
       "hebrew": "בָּנֶיךָ",
       "english": "your sons your",
       "text": "בָּנֶיךָ.\nבָּנֶיךָ.\nyour sons your.",
@@ -1513,6 +1679,7 @@
     },
     {
       "ref": "EXO 22:28:7",
+      "pos": "verb",
       "hebrew": "תִּתֶּן",
       "english": "you will give",
       "text": "תִּתֶּן.\nתִּתֶּן.\nyou will give.",
@@ -1522,6 +1689,7 @@
     },
     {
       "ref": "EXO 22:29:2",
+      "pos": "verb",
       "hebrew": "תַּעֲשֶׂה",
       "english": "you will do",
       "text": "תַּעֲשֶׂה.\nתַּעֲשֶׂה.\nyou will do.",
@@ -1531,6 +1699,7 @@
     },
     {
       "ref": "EXO 22:29:3",
+      "pos": "noun",
       "hebrew": "לְשֹׁרְךָ",
       "english": "to ox your",
       "text": "לְשֹׁרְךָ.\nלְשֹׁרְךָ.\nto ox your.",
@@ -1540,6 +1709,7 @@
     },
     {
       "ref": "EXO 22:29:4",
+      "pos": "noun",
       "hebrew": "לְצֹאנֶךָ",
       "english": "to sheep your",
       "text": "לְצֹאנֶךָ.\nלְצֹאנֶךָ.\nto sheep your.",
@@ -1549,6 +1719,7 @@
     },
     {
       "ref": "EXO 22:29:6",
+      "pos": "noun",
       "hebrew": "יָמִים",
       "english": "days",
       "text": "יָמִים.\nיָמִים.\ndays.",
@@ -1558,6 +1729,7 @@
     },
     {
       "ref": "EXO 22:29:7",
+      "pos": "verb",
       "hebrew": "יִהְיֶה",
       "english": "it will be",
       "text": "יִהְיֶה.\nיִהְיֶה.\nit will be.",
@@ -1567,6 +1739,7 @@
     },
     {
       "ref": "EXO 22:29:9",
+      "pos": "noun",
       "hebrew": "אִמּוֹ",
       "english": "mother its",
       "text": "אִמּוֹ.\nאִמּוֹ.\nmother its.",
@@ -1576,6 +1749,7 @@
     },
     {
       "ref": "EXO 22:29:12",
+      "pos": "verb",
       "hebrew": "תִּתְּנוֹ",
       "english": "you will give it",
       "text": "תִּתְּנוֹ.\nתִּתְּנוֹ.\nyou will give it.",
@@ -1585,6 +1759,7 @@
     },
     {
       "ref": "EXO 22:30:1",
+      "pos": "noun",
       "hebrew": "וְאַנְשֵׁי",
       "english": "and people",
       "text": "וְאַנְשֵׁי.\nוְאַנְשֵׁי.\nand people.",
@@ -1594,6 +1769,7 @@
     },
     {
       "ref": "EXO 22:30:2",
+      "pos": "noun",
       "hebrew": "קֹדֶשׁ",
       "english": "of holiness",
       "text": "קֹדֶשׁ.\nקֹדֶשׁ.\nof holiness.",
@@ -1603,6 +1779,7 @@
     },
     {
       "ref": "EXO 22:30:3",
+      "pos": "verb",
       "hebrew": "תִּהְיוּן",
       "english": "you will be",
       "text": "תִּהְיוּן.\nתִּהְיוּן.\nyou will be.",
@@ -1612,6 +1789,7 @@
     },
     {
       "ref": "EXO 22:30:5",
+      "pos": "noun",
       "hebrew": "וּבָשָׂר",
       "english": "and flesh",
       "text": "וּבָשָׂר.\nוּבָשָׂר.\nand flesh.",
@@ -1621,6 +1799,7 @@
     },
     {
       "ref": "EXO 22:30:7",
+      "pos": "noun",
       "hebrew": "טְרֵפָה",
       "english": "a torn animal",
       "text": "טְרֵפָה.\nטְרֵפָה.\na torn animal.",
@@ -1630,6 +1809,7 @@
     },
     {
       "ref": "EXO 22:30:9",
+      "pos": "verb",
       "hebrew": "תֹאכֵלוּ",
       "english": "you must eat",
       "text": "תֹאכֵלוּ.\nתֹאכֵלוּ.\nyou must eat.",
@@ -1639,6 +1819,7 @@
     },
     {
       "ref": "EXO 22:30:11",
+      "pos": "verb",
       "hebrew": "תַּשְׁלִכוּן",
       "english": "you will throw",
       "text": "תַּשְׁלִכוּן.\nתַּשְׁלִכוּן.\nyou will throw.",

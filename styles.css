@@ -946,6 +946,17 @@ button {
   gap: 8px;
 }
 
+.elevenlabs-pos-filter select {
+  min-height: 38px;
+  max-width: 9.5rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--panel);
+  color: var(--ink);
+  font-size: 0.84rem;
+  font-weight: 800;
+}
+
 .elevenlabs-shuffle-toggle {
   display: inline-flex;
   align-items: center;
@@ -1793,6 +1804,18 @@ input[type="search"] {
 }
 
 .elevenlabs-cache-category.vlog-word {
+  color: var(--verb-ink);
+  background: var(--verb-bg);
+  border-color: var(--verb-line);
+}
+
+.elevenlabs-cache-category.noun {
+  color: var(--noun-ink);
+  background: var(--noun-bg);
+  border-color: var(--noun-line);
+}
+
+.elevenlabs-cache-category.verb {
   color: var(--verb-ink);
   background: var(--verb-bg);
   border-color: var(--verb-line);

@@ -19,6 +19,7 @@
   "cards": [
     {
       "ref": "ISA 2:1:1",
+      "pos": "noun",
       "hebrew": "הַדָּבָר",
       "english": "the word",
       "text": "הַדָּבָר.\nהַדָּבָר.\nthe word.",
@@ -28,6 +29,7 @@
     },
     {
       "ref": "ISA 2:1:3",
+      "pos": "verb",
       "hebrew": "חָזָה",
       "english": "he saw",
       "text": "חָזָה.\nחָזָה.\nhe saw.",
@@ -37,6 +39,7 @@
     },
     {
       "ref": "ISA 2:1:4",
+      "pos": "noun",
       "hebrew": "יְשַׁעְיָהוּ",
       "english": "Isaiah",
       "text": "יְשַׁעְיָהוּ.\nיְשַׁעְיָהוּ.\nIsaiah.",
@@ -46,6 +49,7 @@
     },
     {
       "ref": "ISA 2:1:5",
+      "pos": "noun",
       "hebrew": "בֶּן",
       "english": "the son",
       "text": "בֶּן.\nבֶּן.\nthe son.",
@@ -55,6 +59,7 @@
     },
     {
       "ref": "ISA 2:1:6",
+      "pos": "noun",
       "hebrew": "אָמוֹץ",
       "english": "of Amoz",
       "text": "אָמוֹץ.\nאָמוֹץ.\nof Amoz.",
@@ -64,6 +69,7 @@
     },
     {
       "ref": "ISA 2:1:8",
+      "pos": "noun",
       "hebrew": "יְהוּדָה",
       "english": "Judah",
       "text": "יְהוּדָה.\nיְהוּדָה.\nJudah.",
@@ -73,6 +79,7 @@
     },
     {
       "ref": "ISA 2:1:9",
+      "pos": "noun",
       "hebrew": "וִירוּשָׁלִָם",
       "english": "and Jerusalem",
       "text": "וִירוּשָׁלִָם.\nוִירוּשָׁלִָם.\nand Jerusalem.",
@@ -82,6 +89,7 @@
     },
     {
       "ref": "ISA 2:2:1",
+      "pos": "verb",
       "hebrew": "וְהָיָה",
       "english": "and it will be",
       "text": "וְהָיָה.\nוְהָיָה.\nand it will be.",
@@ -91,6 +99,7 @@
     },
     {
       "ref": "ISA 2:2:2",
+      "pos": "noun",
       "hebrew": "בְּאַחֲרִית",
       "english": "at the end",
       "text": "בְּאַחֲרִית.\nבְּאַחֲרִית.\nat the end.",
@@ -100,6 +109,7 @@
     },
     {
       "ref": "ISA 2:2:3",
+      "pos": "noun",
       "hebrew": "הַיָּמִים",
       "english": "of the days",
       "text": "הַיָּמִים.\nהַיָּמִים.\nof the days.",
@@ -109,6 +119,7 @@
     },
     {
       "ref": "ISA 2:2:4",
+      "pos": "verb",
       "hebrew": "נָכוֹן",
       "english": "established",
       "text": "נָכוֹן.\nנָכוֹן.\nestablished.",
@@ -118,6 +129,7 @@
     },
     {
       "ref": "ISA 2:2:5",
+      "pos": "verb",
       "hebrew": "יִהְיֶה",
       "english": "it will be",
       "text": "יִהְיֶה.\nיִהְיֶה.\nit will be.",
@@ -127,6 +139,7 @@
     },
     {
       "ref": "ISA 2:2:6",
+      "pos": "noun",
       "hebrew": "הַר",
       "english": "the mountain",
       "text": "הַר.\nהַר.\nthe mountain.",
@@ -136,6 +149,7 @@
     },
     {
       "ref": "ISA 2:2:7",
+      "pos": "noun",
       "hebrew": "בֵּית",
       "english": "of the house",
       "text": "בֵּית.\nבֵּית.\nof the house.",
@@ -145,6 +159,7 @@
     },
     {
       "ref": "ISA 2:2:8",
+      "pos": "noun",
       "hebrew": "יְהוָה",
       "english": "of Yahweh",
       "text": "יְהוָה.\nיְהוָה.\nof Yahweh.",
@@ -154,6 +169,7 @@
     },
     {
       "ref": "ISA 2:2:9",
+      "pos": "noun",
       "hebrew": "בְּרֹאשׁ",
       "english": "(in) the chief",
       "text": "בְּרֹאשׁ.\nבְּרֹאשׁ.\n(in) the chief.",
@@ -163,6 +179,7 @@
     },
     {
       "ref": "ISA 2:2:10",
+      "pos": "noun",
       "hebrew": "הֶהָרִים",
       "english": "of the mountains",
       "text": "הֶהָרִים.\nהֶהָרִים.\nof the mountains.",
@@ -172,6 +189,7 @@
     },
     {
       "ref": "ISA 2:2:11",
+      "pos": "verb",
       "hebrew": "וְנִשָּׂא",
       "english": "and lifted up",
       "text": "וְנִשָּׂא.\nוְנִשָּׂא.\nand lifted up.",
@@ -181,6 +199,7 @@
     },
     {
       "ref": "ISA 2:2:12",
+      "pos": "noun",
       "hebrew": "מִגְּבָעוֹת",
       "english": "more than [the] hills",
       "text": "מִגְּבָעוֹת.\nמִגְּבָעוֹת.\nmore than [the] hills.",
@@ -190,6 +209,7 @@
     },
     {
       "ref": "ISA 2:2:13",
+      "pos": "verb",
       "hebrew": "וְנָהֲרוּ",
       "english": "and they will stream",
       "text": "וְנָהֲרוּ.\nוְנָהֲרוּ.\nand they will stream.",
@@ -199,6 +219,7 @@
     },
     {
       "ref": "ISA 2:2:15",
+      "pos": "noun",
       "hebrew": "כָּל",
       "english": "all",
       "text": "כָּל.\nכָּל.\nall.",
@@ -208,6 +229,7 @@
     },
     {
       "ref": "ISA 2:2:16",
+      "pos": "noun",
       "hebrew": "הַגּוֹיִם",
       "english": "the nations",
       "text": "הַגּוֹיִם.\nהַגּוֹיִם.\nthe nations.",
@@ -217,6 +239,7 @@
     },
     {
       "ref": "ISA 2:3:1",
+      "pos": "verb",
       "hebrew": "וְהָלְכוּ",
       "english": "and they will come",
       "text": "וְהָלְכוּ.\nוְהָלְכוּ.\nand they will come.",
@@ -226,6 +249,7 @@
     },
     {
       "ref": "ISA 2:3:2",
+      "pos": "noun",
       "hebrew": "עַמִּים",
       "english": "peoples",
       "text": "עַמִּים.\nעַמִּים.\npeoples.",
@@ -235,6 +259,7 @@
     },
     {
       "ref": "ISA 2:3:4",
+      "pos": "verb",
       "hebrew": "וְאָמְרוּ",
       "english": "and they will say",
       "text": "וְאָמְרוּ.\nוְאָמְרוּ.\nand they will say.",
@@ -244,6 +269,7 @@
     },
     {
       "ref": "ISA 2:3:5",
+      "pos": "verb",
       "hebrew": "לְכוּ",
       "english": "come",
       "text": "לְכוּ.\nלְכוּ.\ncome.",
@@ -253,6 +279,7 @@
     },
     {
       "ref": "ISA 2:3:6",
+      "pos": "verb",
       "hebrew": "וְנַעֲלֶה",
       "english": "and let us go up",
       "text": "וְנַעֲלֶה.\nוְנַעֲלֶה.\nand let us go up.",
@@ -262,6 +289,7 @@
     },
     {
       "ref": "ISA 2:3:12",
+      "pos": "noun",
       "hebrew": "אֱלֹהֵי",
       "english": "of the God",
       "text": "אֱלֹהֵי.\nאֱלֹהֵי.\nof the God.",
@@ -271,6 +299,7 @@
     },
     {
       "ref": "ISA 2:3:13",
+      "pos": "noun",
       "hebrew": "יַעֲקֹב",
       "english": "of Jacob",
       "text": "יַעֲקֹב.\nיַעֲקֹב.\nof Jacob.",
@@ -280,6 +309,7 @@
     },
     {
       "ref": "ISA 2:3:14",
+      "pos": "verb",
       "hebrew": "וְיֹרֵנוּ",
       "english": "so that he may teach us",
       "text": "וְיֹרֵנוּ.\nוְיֹרֵנוּ.\nso that he may teach us.",
@@ -289,6 +319,7 @@
     },
     {
       "ref": "ISA 2:3:15",
+      "pos": "noun",
       "hebrew": "מִדְּרָכָיו",
       "english": "from ways his",
       "text": "מִדְּרָכָיו.\nמִדְּרָכָיו.\nfrom ways his.",
@@ -298,6 +329,7 @@
     },
     {
       "ref": "ISA 2:3:16",
+      "pos": "verb",
       "hebrew": "וְנֵלְכָה",
       "english": "and so that we may walk",
       "text": "וְנֵלְכָה.\nוְנֵלְכָה.\nand so that we may walk.",
@@ -307,6 +339,7 @@
     },
     {
       "ref": "ISA 2:3:17",
+      "pos": "noun",
       "hebrew": "בְּאֹרְחֹתָיו",
       "english": "in paths his",
       "text": "בְּאֹרְחֹתָיו.\nבְּאֹרְחֹתָיו.\nin paths his.",
@@ -316,6 +349,7 @@
     },
     {
       "ref": "ISA 2:3:19",
+      "pos": "noun",
       "hebrew": "מִצִּיּוֹן",
       "english": "from Zion",
       "text": "מִצִּיּוֹן.\nמִצִּיּוֹן.\nfrom Zion.",
@@ -325,6 +359,7 @@
     },
     {
       "ref": "ISA 2:3:20",
+      "pos": "verb",
       "hebrew": "תֵּצֵא",
       "english": "it will go forth",
       "text": "תֵּצֵא.\nתֵּצֵא.\nit will go forth.",
@@ -334,6 +369,7 @@
     },
     {
       "ref": "ISA 2:3:21",
+      "pos": "noun",
       "hebrew": "תוֹרָה",
       "english": "instruction",
       "text": "תוֹרָה.\nתוֹרָה.\ninstruction.",
@@ -343,6 +379,7 @@
     },
     {
       "ref": "ISA 2:3:22",
+      "pos": "noun",
       "hebrew": "וּדְבַר",
       "english": "and the word",
       "text": "וּדְבַר.\nוּדְבַר.\nand the word.",
@@ -352,6 +389,7 @@
     },
     {
       "ref": "ISA 2:3:24",
+      "pos": "noun",
       "hebrew": "מִירוּשָׁלִָם",
       "english": "from Jerusalem",
       "text": "מִירוּשָׁלִָם.\nמִירוּשָׁלִָם.\nfrom Jerusalem.",
@@ -361,6 +399,7 @@
     },
     {
       "ref": "ISA 2:4:1",
+      "pos": "verb",
       "hebrew": "וְשָׁפַט",
       "english": "and he will judge",
       "text": "וְשָׁפַט.\nוְשָׁפַט.\nand he will judge.",
@@ -370,6 +409,7 @@
     },
     {
       "ref": "ISA 2:4:4",
+      "pos": "verb",
       "hebrew": "וְהוֹכִיחַ",
       "english": "and he will decide",
       "text": "וְהוֹכִיחַ.\nוְהוֹכִיחַ.\nand he will decide.",
@@ -379,6 +419,7 @@
     },
     {
       "ref": "ISA 2:4:5",
+      "pos": "noun",
       "hebrew": "לְעַמִּים",
       "english": "for peoples",
       "text": "לְעַמִּים.\nלְעַמִּים.\nfor peoples.",
@@ -388,6 +429,7 @@
     },
     {
       "ref": "ISA 2:4:7",
+      "pos": "verb",
       "hebrew": "וְכִתְּתוּ",
       "english": "and they will beat",
       "text": "וְכִתְּתוּ.\nוְכִתְּתוּ.\nand they will beat.",
@@ -397,6 +439,7 @@
     },
     {
       "ref": "ISA 2:4:8",
+      "pos": "noun",
       "hebrew": "חַרְבוֹתָם",
       "english": "swords their",
       "text": "חַרְבוֹתָם.\nחַרְבוֹתָם.\nswords their.",
@@ -406,6 +449,7 @@
     },
     {
       "ref": "ISA 2:4:9",
+      "pos": "noun",
       "hebrew": "לְאִתִּים",
       "english": "into plowshares",
       "text": "לְאִתִּים.\nלְאִתִּים.\ninto plowshares.",
@@ -415,6 +459,7 @@
     },
     {
       "ref": "ISA 2:4:10",
+      "pos": "noun",
       "hebrew": "וַחֲנִיתוֹתֵיהֶם",
       "english": "and spears their",
       "text": "וַחֲנִיתוֹתֵיהֶם.\nוַחֲנִיתוֹתֵיהֶם.\nand spears their.",
@@ -424,6 +469,7 @@
     },
     {
       "ref": "ISA 2:4:11",
+      "pos": "noun",
       "hebrew": "לְמַזְמֵרוֹת",
       "english": "into pruning knives",
       "text": "לְמַזְמֵרוֹת.\nלְמַזְמֵרוֹת.\ninto pruning knives.",
@@ -433,6 +479,7 @@
     },
     {
       "ref": "ISA 2:4:13",
+      "pos": "verb",
       "hebrew": "יִשָּׂא",
       "english": "it will lift up",
       "text": "יִשָּׂא.\nיִשָּׂא.\nit will lift up.",
@@ -442,6 +489,7 @@
     },
     {
       "ref": "ISA 2:4:14",
+      "pos": "noun",
       "hebrew": "גוֹי",
       "english": "nation",
       "text": "גוֹי.\nגוֹי.\nnation.",
@@ -451,6 +499,7 @@
     },
     {
       "ref": "ISA 2:4:16",
+      "pos": "noun",
       "hebrew": "גּוֹי",
       "english": "nation",
       "text": "גּוֹי.\nגּוֹי.\nnation.",
@@ -460,6 +509,7 @@
     },
     {
       "ref": "ISA 2:4:17",
+      "pos": "noun",
       "hebrew": "חֶרֶב",
       "english": "a sword",
       "text": "חֶרֶב.\nחֶרֶב.\na sword.",
@@ -469,6 +519,7 @@
     },
     {
       "ref": "ISA 2:4:19",
+      "pos": "verb",
       "hebrew": "יִלְמְדוּ",
       "english": "they will learn",
       "text": "יִלְמְדוּ.\nיִלְמְדוּ.\nthey will learn.",
@@ -478,6 +529,7 @@
     },
     {
       "ref": "ISA 2:4:21",
+      "pos": "noun",
       "hebrew": "מִלְחָמָה",
       "english": "warfare",
       "text": "מִלְחָמָה.\nמִלְחָמָה.\nwarfare.",
@@ -487,6 +539,7 @@
     },
     {
       "ref": "ISA 2:5:5",
+      "pos": "noun",
       "hebrew": "בְּאוֹר",
       "english": "in the light",
       "text": "בְּאוֹר.\nבְּאוֹר.\nin the light.",
@@ -496,6 +549,7 @@
     },
     {
       "ref": "ISA 2:6:2",
+      "pos": "verb",
       "hebrew": "נָטַשְׁתָּה",
       "english": "you have abandoned",
       "text": "נָטַשְׁתָּה.\nנָטַשְׁתָּה.\nyou have abandoned.",
@@ -505,6 +559,7 @@
     },
     {
       "ref": "ISA 2:6:3",
+      "pos": "noun",
       "hebrew": "עַמְּךָ",
       "english": "people your",
       "text": "עַמְּךָ.\nעַמְּךָ.\npeople your.",
@@ -514,6 +569,7 @@
     },
     {
       "ref": "ISA 2:6:7",
+      "pos": "verb",
       "hebrew": "מָלְאוּ",
       "english": "they are full",
       "text": "מָלְאוּ.\nמָלְאוּ.\nthey are full.",
@@ -523,6 +579,7 @@
     },
     {
       "ref": "ISA 2:6:8",
+      "pos": "noun",
       "hebrew": "מִקֶּדֶם",
       "english": "from [the] east",
       "text": "מִקֶּדֶם.\nמִקֶּדֶם.\nfrom [the] east.",
@@ -532,6 +589,7 @@
     },
     {
       "ref": "ISA 2:6:9",
+      "pos": "verb",
       "hebrew": "וְעֹנְנִים",
       "english": "and soothsayers",
       "text": "וְעֹנְנִים.\nוְעֹנְנִים.\nand soothsayers.",
@@ -541,6 +599,7 @@
     },
     {
       "ref": "ISA 2:6:11",
+      "pos": "noun",
       "hebrew": "וּבְיַלְדֵי",
       "english": "and with [the] children",
       "text": "וּבְיַלְדֵי.\nוּבְיַלְדֵי.\nand with [the] children.",
@@ -550,6 +609,7 @@
     },
     {
       "ref": "ISA 2:6:13",
+      "pos": "verb",
       "hebrew": "יַשְׂפִּיקוּ",
       "english": "they clap hands",
       "text": "יַשְׂפִּיקוּ.\nיַשְׂפִּיקוּ.\nthey clap hands.",
@@ -559,6 +619,7 @@
     },
     {
       "ref": "ISA 2:7:1",
+      "pos": "verb",
       "hebrew": "וַתִּמָּלֵא",
       "english": "and it has been filled",
       "text": "וַתִּמָּלֵא.\nוַתִּמָּלֵא.\nand it has been filled.",
@@ -568,6 +629,7 @@
     },
     {
       "ref": "ISA 2:7:2",
+      "pos": "noun",
       "hebrew": "אַרְצוֹ",
       "english": "land its",
       "text": "אַרְצוֹ.\nאַרְצוֹ.\nland its.",
@@ -577,6 +639,7 @@
     },
     {
       "ref": "ISA 2:7:3",
+      "pos": "noun",
       "hebrew": "כֶּסֶף",
       "english": "silver",
       "text": "כֶּסֶף.\nכֶּסֶף.\nsilver.",
@@ -586,6 +649,7 @@
     },
     {
       "ref": "ISA 2:7:4",
+      "pos": "noun",
       "hebrew": "וְזָהָב",
       "english": "and gold",
       "text": "וְזָהָב.\nוְזָהָב.\nand gold.",
@@ -595,6 +659,7 @@
     },
     {
       "ref": "ISA 2:7:6",
+      "pos": "noun",
       "hebrew": "קֵצֶה",
       "english": "an end",
       "text": "קֵצֶה.\nקֵצֶה.\nan end.",
@@ -604,6 +669,7 @@
     },
     {
       "ref": "ISA 2:7:7",
+      "pos": "noun",
       "hebrew": "לְאֹצְרֹתָיו",
       "english": "to treasures its",
       "text": "לְאֹצְרֹתָיו.\nלְאֹצְרֹתָיו.\nto treasures its.",
@@ -613,6 +679,7 @@
     },
     {
       "ref": "ISA 2:7:10",
+      "pos": "noun",
       "hebrew": "סוּסִים",
       "english": "horses",
       "text": "סוּסִים.\nסוּסִים.\nhorses.",
@@ -622,6 +689,7 @@
     },
     {
       "ref": "ISA 2:7:13",
+      "pos": "noun",
       "hebrew": "לְמַרְכְּבֹתָיו",
       "english": "to chariots its",
       "text": "לְמַרְכְּבֹתָיו.\nלְמַרְכְּבֹתָיו.\nto chariots its.",
@@ -631,6 +699,7 @@
     },
     {
       "ref": "ISA 2:8:3",
+      "pos": "noun",
       "hebrew": "אֱלִילִים",
       "english": "idols",
       "text": "אֱלִילִים.\nאֱלִילִים.\nidols.",
@@ -640,6 +709,7 @@
     },
     {
       "ref": "ISA 2:8:4",
+      "pos": "noun",
       "hebrew": "לְמַעֲשֵׂה",
       "english": "to the work",
       "text": "לְמַעֲשֵׂה.\nלְמַעֲשֵׂה.\nto the work.",
@@ -649,6 +719,7 @@
     },
     {
       "ref": "ISA 2:8:5",
+      "pos": "noun",
       "hebrew": "יָדָיו",
       "english": "his hands his",
       "text": "יָדָיו.\nיָדָיו.\nhis hands his.",
@@ -658,6 +729,7 @@
     },
     {
       "ref": "ISA 2:8:6",
+      "pos": "verb",
       "hebrew": "יִשְׁתַּחֲווּ",
       "english": "they bow down",
       "text": "יִשְׁתַּחֲווּ.\nיִשְׁתַּחֲווּ.\nthey bow down.",
@@ -667,6 +739,7 @@
     },
     {
       "ref": "ISA 2:8:8",
+      "pos": "verb",
       "hebrew": "עָשׂוּ",
       "english": "they have made",
       "text": "עָשׂוּ.\nעָשׂוּ.\nthey have made.",
@@ -676,6 +749,7 @@
     },
     {
       "ref": "ISA 2:8:9",
+      "pos": "noun",
       "hebrew": "אֶצְבְּעֹתָיו",
       "english": "fingers his",
       "text": "אֶצְבְּעֹתָיו.\nאֶצְבְּעֹתָיו.\nfingers his.",
@@ -685,6 +759,7 @@
     },
     {
       "ref": "ISA 2:9:1",
+      "pos": "verb",
       "hebrew": "וַיִּשַּׁח",
       "english": "and he has been humbled",
       "text": "וַיִּשַּׁח.\nוַיִּשַּׁח.\nand he has been humbled.",
@@ -694,6 +769,7 @@
     },
     {
       "ref": "ISA 2:9:2",
+      "pos": "noun",
       "hebrew": "אָדָם",
       "english": "everyone",
       "text": "אָדָם.\nאָדָם.\neveryone.",
@@ -703,6 +779,7 @@
     },
     {
       "ref": "ISA 2:9:3",
+      "pos": "verb",
       "hebrew": "וַיִּשְׁפַּל",
       "english": "and he has become low",
       "text": "וַיִּשְׁפַּל.\nוַיִּשְׁפַּל.\nand he has become low.",
@@ -712,6 +789,7 @@
     },
     {
       "ref": "ISA 2:9:4",
+      "pos": "noun",
       "hebrew": "אִישׁ",
       "english": "everyone",
       "text": "אִישׁ.\nאִישׁ.\neveryone.",
@@ -721,6 +799,7 @@
     },
     {
       "ref": "ISA 2:9:6",
+      "pos": "verb",
       "hebrew": "תִּשָּׂא",
       "english": "forgive",
       "text": "תִּשָּׂא.\nתִּשָּׂא.\nforgive.",
@@ -730,6 +809,7 @@
     },
     {
       "ref": "ISA 2:10:1",
+      "pos": "verb",
       "hebrew": "בּוֹא",
       "english": "go",
       "text": "בּוֹא.\nבּוֹא.\ngo.",
@@ -739,6 +819,7 @@
     },
     {
       "ref": "ISA 2:10:3",
+      "pos": "verb",
       "hebrew": "וְהִטָּמֵן",
       "english": "and hide yourself",
       "text": "וְהִטָּמֵן.\nוְהִטָּמֵן.\nand hide yourself.",
@@ -748,6 +829,7 @@
     },
     {
       "ref": "ISA 2:10:5",
+      "pos": "noun",
       "hebrew": "מִפְּנֵי",
       "english": "from before",
       "text": "מִפְּנֵי.\nמִפְּנֵי.\nfrom before.",
@@ -757,6 +839,7 @@
     },
     {
       "ref": "ISA 2:10:6",
+      "pos": "noun",
       "hebrew": "פַּחַד",
       "english": "the dread",
       "text": "פַּחַד.\nפַּחַד.\nthe dread.",
@@ -766,6 +849,7 @@
     },
     {
       "ref": "ISA 2:10:8",
+      "pos": "noun",
       "hebrew": "וּמֵהֲדַר",
       "english": "and from the splendor",
       "text": "וּמֵהֲדַר.\nוּמֵהֲדַר.\nand from the splendor.",
@@ -775,6 +859,7 @@
     },
     {
       "ref": "ISA 2:10:9",
+      "pos": "noun",
       "hebrew": "גְּאֹנוֹ",
       "english": "his majesty his",
       "text": "גְּאֹנוֹ.\nגְּאֹנוֹ.\nhis majesty his.",
@@ -784,6 +869,7 @@
     },
     {
       "ref": "ISA 2:11:1",
+      "pos": "noun",
       "hebrew": "עֵינֵי",
       "english": "eyes",
       "text": "עֵינֵי.\nעֵינֵי.\neyes.",
@@ -793,6 +879,7 @@
     },
     {
       "ref": "ISA 2:11:2",
+      "pos": "noun",
       "hebrew": "גַּבְהוּת",
       "english": "of pride",
       "text": "גַּבְהוּת.\nגַּבְהוּת.\nof pride.",
@@ -802,6 +889,7 @@
     },
     {
       "ref": "ISA 2:11:4",
+      "pos": "verb",
       "hebrew": "שָׁפֵל",
       "english": "it will become low",
       "text": "שָׁפֵל.\nשָׁפֵל.\nit will become low.",
@@ -811,6 +899,7 @@
     },
     {
       "ref": "ISA 2:11:5",
+      "pos": "verb",
       "hebrew": "וְשַׁח",
       "english": "and it will be humbled",
       "text": "וְשַׁח.\nוְשַׁח.\nand it will be humbled.",
@@ -820,6 +909,7 @@
     },
     {
       "ref": "ISA 2:11:6",
+      "pos": "noun",
       "hebrew": "רוּם",
       "english": "[the] haughtiness",
       "text": "רוּם.\nרוּם.\n[the] haughtiness.",
@@ -829,6 +919,7 @@
     },
     {
       "ref": "ISA 2:11:7",
+      "pos": "noun",
       "hebrew": "אֲנָשִׁים",
       "english": "of people",
       "text": "אֲנָשִׁים.\nאֲנָשִׁים.\nof people.",
@@ -838,6 +929,7 @@
     },
     {
       "ref": "ISA 2:11:8",
+      "pos": "verb",
       "hebrew": "וְנִשְׂגַּב",
       "english": "and he will be exalted",
       "text": "וְנִשְׂגַּב.\nוְנִשְׂגַּב.\nand he will be exalted.",
@@ -847,6 +939,7 @@
     },
     {
       "ref": "ISA 2:11:10",
+      "pos": "noun",
       "hebrew": "לְבַדּוֹ",
       "english": "he himself alone",
       "text": "לְבַדּוֹ.\nלְבַדּוֹ.\nhe himself alone.",
@@ -856,6 +949,7 @@
     },
     {
       "ref": "ISA 2:12:2",
+      "pos": "noun",
       "hebrew": "יוֹם",
       "english": "a day",
       "text": "יוֹם.\nיוֹם.\na day.",
@@ -865,6 +959,7 @@
     },
     {
       "ref": "ISA 2:12:3",
+      "pos": "noun",
       "hebrew": "לַיהוָה",
       "english": "[belongs] to Yahweh",
       "text": "לַיהוָה.\nלַיהוָה.\n[belongs] to Yahweh.",
@@ -874,6 +969,7 @@
     },
     {
       "ref": "ISA 2:12:4",
+      "pos": "noun",
       "hebrew": "צְבָאוֹת",
       "english": "of hosts",
       "text": "צְבָאוֹת.\nצְבָאוֹת.\nof hosts.",
@@ -883,6 +979,7 @@
     },
     {
       "ref": "ISA 2:12:8",
+      "pos": "verb",
       "hebrew": "וָרָם",
       "english": "and lofty [thing]",
       "text": "וָרָם.\nוָרָם.\nand lofty [thing].",
@@ -892,6 +989,7 @@
     },
     {
       "ref": "ISA 2:12:11",
+      "pos": "verb",
       "hebrew": "נִשָּׂא",
       "english": "[thing] lifted up",
       "text": "נִשָּׂא.\nנִשָּׂא.\n[thing] lifted up.",
@@ -901,6 +999,7 @@
     },
     {
       "ref": "ISA 2:12:12",
+      "pos": "verb",
       "hebrew": "וְשָׁפֵל",
       "english": "and [it will be] low",
       "text": "וְשָׁפֵל.\nוְשָׁפֵל.\nand [it will be] low.",
@@ -910,6 +1009,7 @@
     },
     {
       "ref": "ISA 2:13:3",
+      "pos": "noun",
       "hebrew": "אַרְזֵי",
       "english": "the cedars",
       "text": "אַרְזֵי.\nאַרְזֵי.\nthe cedars.",
@@ -919,6 +1019,7 @@
     },
     {
       "ref": "ISA 2:13:4",
+      "pos": "noun",
       "hebrew": "הַלְּבָנוֹן",
       "english": "of (the) Lebanon",
       "text": "הַלְּבָנוֹן.\nהַלְּבָנוֹן.\nof (the) Lebanon.",
@@ -928,6 +1029,7 @@
     },
     {
       "ref": "ISA 2:13:5",
+      "pos": "verb",
       "hebrew": "הָרָמִים",
       "english": "[which are] lofty",
       "text": "הָרָמִים.\nהָרָמִים.\n[which are] lofty.",
@@ -937,6 +1039,7 @@
     },
     {
       "ref": "ISA 2:13:6",
+      "pos": "verb",
       "hebrew": "וְהַנִּשָּׂאִים",
       "english": "and [which are] lifted up",
       "text": "וְהַנִּשָּׂאִים.\nוְהַנִּשָּׂאִים.\nand [which are] lifted up.",
@@ -946,6 +1049,7 @@
     },
     {
       "ref": "ISA 2:13:9",
+      "pos": "noun",
       "hebrew": "אַלּוֹנֵי",
       "english": "the oaks",
       "text": "אַלּוֹנֵי.\nאַלּוֹנֵי.\nthe oaks.",
@@ -955,6 +1059,7 @@
     },
     {
       "ref": "ISA 2:13:10",
+      "pos": "noun",
       "hebrew": "הַבָּשָׁן",
       "english": "of (the) Bashan",
       "text": "הַבָּשָׁן.\nהַבָּשָׁן.\nof (the) Bashan.",
@@ -964,6 +1069,7 @@
     },
     {
       "ref": "ISA 2:14:7",
+      "pos": "noun",
       "hebrew": "הַגְּבָעוֹת",
       "english": "the hills",
       "text": "הַגְּבָעוֹת.\nהַגְּבָעוֹת.\nthe hills.",
@@ -973,6 +1079,7 @@
     },
     {
       "ref": "ISA 2:14:8",
+      "pos": "verb",
       "hebrew": "הַנִּשָּׂאוֹת",
       "english": "[which are] lifted up",
       "text": "הַנִּשָּׂאוֹת.\nהַנִּשָּׂאוֹת.\n[which are] lifted up.",
@@ -982,6 +1089,7 @@
     },
     {
       "ref": "ISA 2:15:3",
+      "pos": "noun",
       "hebrew": "מִגְדָּל",
       "english": "tower",
       "text": "מִגְדָּל.\nמִגְדָּל.\ntower.",
@@ -991,6 +1099,7 @@
     },
     {
       "ref": "ISA 2:15:7",
+      "pos": "noun",
       "hebrew": "חוֹמָה",
       "english": "wall",
       "text": "חוֹמָה.\nחוֹמָה.\nwall.",
@@ -1000,6 +1109,7 @@
     },
     {
       "ref": "ISA 2:16:3",
+      "pos": "noun",
       "hebrew": "אֳנִיּוֹת",
       "english": "the ships",
       "text": "אֳנִיּוֹת.\nאֳנִיּוֹת.\nthe ships.",
@@ -1009,6 +1119,7 @@
     },
     {
       "ref": "ISA 2:16:4",
+      "pos": "noun",
       "hebrew": "תַּרְשִׁישׁ",
       "english": "of Tarshish",
       "text": "תַּרְשִׁישׁ.\nתַּרְשִׁישׁ.\nof Tarshish.",
@@ -1018,6 +1129,7 @@
     },
     {
       "ref": "ISA 2:16:7",
+      "pos": "noun",
       "hebrew": "שְׂכִיּוֹת",
       "english": "the ships",
       "text": "שְׂכִיּוֹת.\nשְׂכִיּוֹת.\nthe ships.",
@@ -1027,6 +1139,7 @@
     },
     {
       "ref": "ISA 2:16:8",
+      "pos": "noun",
       "hebrew": "הַחֶמְדָּה",
       "english": "of (the) desire",
       "text": "הַחֶמְדָּה.\nהַחֶמְדָּה.\nof (the) desire.",
@@ -1036,6 +1149,7 @@
     },
     {
       "ref": "ISA 2:17:3",
+      "pos": "noun",
       "hebrew": "הָאָדָם",
       "english": "of (the) humankind",
       "text": "הָאָדָם.\nהָאָדָם.\nof (the) humankind.",
@@ -1045,6 +1159,7 @@
     },
     {
       "ref": "ISA 2:18:1",
+      "pos": "noun",
       "hebrew": "וְהָאֱלִילִים",
       "english": "and the idols",
       "text": "וְהָאֱלִילִים.\nוְהָאֱלִילִים.\nand the idols.",
@@ -1054,6 +1169,7 @@
     },
     {
       "ref": "ISA 2:18:3",
+      "pos": "verb",
       "hebrew": "יַחֲלֹף",
       "english": "it will pass away",
       "text": "יַחֲלֹף.\nיַחֲלֹף.\nit will pass away.",
@@ -1063,6 +1179,7 @@
     },
     {
       "ref": "ISA 2:19:1",
+      "pos": "verb",
       "hebrew": "וּבָאוּ",
       "english": "and people will go",
       "text": "וּבָאוּ.\nוּבָאוּ.\nand people will go.",
@@ -1072,6 +1189,7 @@
     },
     {
       "ref": "ISA 2:19:2",
+      "pos": "noun",
       "hebrew": "בִּמְעָרוֹת",
       "english": "in caves",
       "text": "בִּמְעָרוֹת.\nבִּמְעָרוֹת.\nin caves.",
@@ -1081,6 +1199,7 @@
     },
     {
       "ref": "ISA 2:19:3",
+      "pos": "noun",
       "hebrew": "צֻרִים",
       "english": "of [the] rocks",
       "text": "צֻרִים.\nצֻרִים.\nof [the] rocks.",
@@ -1090,6 +1209,7 @@
     },
     {
       "ref": "ISA 2:19:4",
+      "pos": "noun",
       "hebrew": "וּבִמְחִלּוֹת",
       "english": "and in holes",
       "text": "וּבִמְחִלּוֹת.\nוּבִמְחִלּוֹת.\nand in holes.",
@@ -1099,6 +1219,7 @@
     },
     {
       "ref": "ISA 2:19:5",
+      "pos": "noun",
       "hebrew": "עָפָר",
       "english": "of [the] ground",
       "text": "עָפָר.\nעָפָר.\nof [the] ground.",
@@ -1108,6 +1229,7 @@
     },
     {
       "ref": "ISA 2:19:10",
+      "pos": "noun",
       "hebrew": "גְּאוֹנוֹ",
       "english": "his majesty his",
       "text": "גְּאוֹנוֹ.\nגְּאוֹנוֹ.\nhis majesty his.",
@@ -1117,6 +1239,7 @@
     },
     {
       "ref": "ISA 2:19:11",
+      "pos": "verb",
       "hebrew": "בְּקוּמוֹ",
       "english": "when arises he",
       "text": "בְּקוּמוֹ.\nבְּקוּמוֹ.\nwhen arises he.",
@@ -1126,6 +1249,7 @@
     },
     {
       "ref": "ISA 2:19:12",
+      "pos": "verb",
       "hebrew": "לַעֲרֹץ",
       "english": "to terrify",
       "text": "לַעֲרֹץ.\nלַעֲרֹץ.\nto terrify.",
@@ -1135,6 +1259,7 @@
     },
     {
       "ref": "ISA 2:19:13",
+      "pos": "noun",
       "hebrew": "הָאָרֶץ",
       "english": "the earth",
       "text": "הָאָרֶץ.\nהָאָרֶץ.\nthe earth.",
@@ -1144,6 +1269,7 @@
     },
     {
       "ref": "ISA 2:20:3",
+      "pos": "verb",
       "hebrew": "יַשְׁלִיךְ",
       "english": "it will throw away",
       "text": "יַשְׁלִיךְ.\nיַשְׁלִיךְ.\nit will throw away.",
@@ -1153,6 +1279,7 @@
     },
     {
       "ref": "ISA 2:20:6",
+      "pos": "noun",
       "hebrew": "אֱלִילֵי",
       "english": "the idols",
       "text": "אֱלִילֵי.\nאֱלִילֵי.\nthe idols.",
@@ -1162,6 +1289,7 @@
     },
     {
       "ref": "ISA 2:20:7",
+      "pos": "noun",
       "hebrew": "כַסְפּוֹ",
       "english": "its silver his",
       "text": "כַסְפּוֹ.\nכַסְפּוֹ.\nits silver his.",
@@ -1171,6 +1299,7 @@
     },
     {
       "ref": "ISA 2:20:10",
+      "pos": "noun",
       "hebrew": "זְהָבוֹ",
       "english": "its gold his",
       "text": "זְהָבוֹ.\nזְהָבוֹ.\nits gold his.",
@@ -1180,6 +1309,7 @@
     },
     {
       "ref": "ISA 2:20:14",
+      "pos": "verb",
       "hebrew": "לְהִשְׁתַּחֲוֺת",
       "english": "to bow down",
       "text": "לְהִשְׁתַּחֲוֺת.\nלְהִשְׁתַּחֲוֺת.\nto bow down.",
@@ -1189,6 +1319,7 @@
     },
     {
       "ref": "ISA 2:20:15",
+      "pos": "verb",
       "hebrew": "לַחְפֹּר פֵּרוֹת",
       "english": "to [the] digging",
       "text": "לַחְפֹּר פֵּרוֹת.\nלַחְפֹּר פֵּרוֹת.\nto [the] digging.",
@@ -1198,6 +1329,7 @@
     },
     {
       "ref": "ISA 2:20:16",
+      "pos": "noun",
       "hebrew": "חְפֹּר פֵּרוֹת",
       "english": "of moles",
       "text": "חְפֹּר פֵּרוֹת.\nחְפֹּר פֵּרוֹת.\nof moles.",
@@ -1207,6 +1339,7 @@
     },
     {
       "ref": "ISA 2:21:1",
+      "pos": "verb",
       "hebrew": "לָבוֹא",
       "english": "to go",
       "text": "לָבוֹא.\nלָבוֹא.\nto go.",
@@ -1216,6 +1349,7 @@
     },
     {
       "ref": "ISA 2:21:2",
+      "pos": "noun",
       "hebrew": "בְּנִקְרוֹת",
       "english": "in the clefts",
       "text": "בְּנִקְרוֹת.\nבְּנִקְרוֹת.\nin the clefts.",
@@ -1225,6 +1359,7 @@
     },
     {
       "ref": "ISA 2:21:3",
+      "pos": "noun",
       "hebrew": "הַצֻּרִים",
       "english": "of the rocks",
       "text": "הַצֻּרִים.\nהַצֻּרִים.\nof the rocks.",
@@ -1234,6 +1369,7 @@
     },
     {
       "ref": "ISA 2:21:4",
+      "pos": "noun",
       "hebrew": "וּבִסְעִפֵי",
       "english": "and in the clefts",
       "text": "וּבִסְעִפֵי.\nוּבִסְעִפֵי.\nand in the clefts.",
@@ -1243,6 +1379,7 @@
     },
     {
       "ref": "ISA 2:21:5",
+      "pos": "noun",
       "hebrew": "הַסְּלָעִים",
       "english": "of the cliffs",
       "text": "הַסְּלָעִים.\nהַסְּלָעִים.\nof the cliffs.",
@@ -1252,6 +1389,7 @@
     },
     {
       "ref": "ISA 2:22:1",
+      "pos": "verb",
       "hebrew": "חִדְלוּ",
       "english": "cease",
       "text": "חִדְלוּ.\nחִדְלוּ.\ncease.",
@@ -1261,6 +1399,7 @@
     },
     {
       "ref": "ISA 2:22:6",
+      "pos": "noun",
       "hebrew": "נְשָׁמָה",
       "english": "breath",
       "text": "נְשָׁמָה.\nנְשָׁמָה.\nbreath.",
@@ -1270,6 +1409,7 @@
     },
     {
       "ref": "ISA 2:22:7",
+      "pos": "noun",
       "hebrew": "בְּאַפּוֹ",
       "english": "[is] in nose his",
       "text": "בְּאַפּוֹ.\nבְּאַפּוֹ.\n[is] in nose his.",
@@ -1279,6 +1419,7 @@
     },
     {
       "ref": "ISA 2:22:10",
+      "pos": "verb",
       "hebrew": "נֶחְשָׁב",
       "english": "accounted",
       "text": "נֶחְשָׁב.\nנֶחְשָׁב.\naccounted.",

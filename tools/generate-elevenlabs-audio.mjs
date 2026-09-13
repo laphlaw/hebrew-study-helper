@@ -149,6 +149,18 @@ function hasNounOrVerb(records = []) {
   return records.some((record) => record.p === "noun" || record.p === "verb");
 }
 
+function isLexicalRecord(record) {
+  return record?.p === "noun" || record?.p === "verb";
+}
+
+function primaryMaculaRecord(records = []) {
+  return records.find(isLexicalRecord) || records.find((record) => record.p !== "other") || records[0] || {};
+}
+
+function normalizePartOfSpeech(value = "") {
+  return ["noun", "verb", "other"].includes(value) ? value : "other";
+}
+
 function getChapterPairs(records, { plainHebrew }) {
   const grouped = new Map();
 
@@ -176,10 +188,12 @@ function getChapterPairs(records, { plainHebrew }) {
     .filter((group) => !hasObjectMarker(group.records))
     .sort((a, b) => compareRefs(a.ref, b.ref))
     .map((group) => {
+      const primary = primaryMaculaRecord(group.records);
       const pointedHebrew = group.hebrewParts.join("");
       const hebrew = plainHebrew ? stripNiqqud(pointedHebrew) : pointedHebrew;
       return {
         ref: group.ref,
+        pos: normalizePartOfSpeech(primary.p),
         hebrew,
         english: cleanGloss(group.glossParts.join(" "))
       };
@@ -307,6 +321,7 @@ function writeManifest({ args, pairs, requestsByHash }) {
 
       return {
         ref: pair.ref,
+        pos: pair.pos,
         hebrew: pair.hebrew,
         english: pair.english,
         text: card.text,

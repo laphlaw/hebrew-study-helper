@@ -64,6 +64,7 @@ const elevenLabsPlaybackPreferences = loadElevenLabsPlaybackPreferences();
 let elevenLabsSkippedWords = loadElevenLabsSkippedWords();
 let elevenLabsShuffleEnabled = elevenLabsPlaybackPreferences.shuffle;
 let elevenLabsPlaybackSpeed = elevenLabsPlaybackPreferences.speed;
+let elevenLabsPosFilter = elevenLabsPlaybackPreferences.posFilter;
 let elevenLabsShuffleOrder = [];
 
 const els = {
@@ -83,6 +84,8 @@ const els = {
   elevenLabsCachePanel: document.querySelector("#elevenlabs-cache-panel"),
   elevenLabsCacheStatus: document.querySelector("#elevenlabs-cache-status"),
   elevenLabsCacheList: document.querySelector("#elevenlabs-cache-list"),
+  elevenLabsPosFilterLabel: document.querySelector("#elevenlabs-pos-filter-label"),
+  elevenLabsPosFilter: document.querySelector("#elevenlabs-pos-filter"),
   elevenLabsShuffleToggle: document.querySelector("#elevenlabs-shuffle-toggle"),
   elevenLabsCacheAllButton: document.querySelector("#elevenlabs-cache-all-button"),
   elevenLabsCacheNoneButton: document.querySelector("#elevenlabs-cache-none-button"),
@@ -2655,19 +2658,22 @@ function loadElevenLabsPlaybackPreferences() {
   try {
     const saved = JSON.parse(localStorage.getItem(elevenLabsPlaybackStorageKey) || "{}");
     const savedSpeed = Number(saved.speed);
+    const posFilter = ["all", "noun", "verb", "other"].includes(saved.posFilter) ? saved.posFilter : "all";
     return {
       shuffle: saved.shuffle === true,
-      speed: elevenLabsPlaybackSpeeds.includes(savedSpeed) ? savedSpeed : 0.85
+      speed: elevenLabsPlaybackSpeeds.includes(savedSpeed) ? savedSpeed : 0.85,
+      posFilter
     };
   } catch {
-    return { shuffle: false, speed: 0.85 };
+    return { shuffle: false, speed: 0.85, posFilter: "all" };
   }
 }
 
 function saveElevenLabsPlaybackPreferences() {
   localStorage.setItem(elevenLabsPlaybackStorageKey, JSON.stringify({
     shuffle: elevenLabsShuffleEnabled,
-    speed: elevenLabsPlaybackSpeed
+    speed: elevenLabsPlaybackSpeed,
+    posFilter: elevenLabsPosFilter
   }));
 }
 
@@ -2696,8 +2702,23 @@ function elevenLabsCardKey(card) {
   return card?.key || stripNiqqud(card?.hebrew || "").trim();
 }
 
+function elevenLabsCardPos(card) {
+  return ["noun", "verb", "other"].includes(card?.pos) ? card.pos : "";
+}
+
+function shouldShowElevenLabsPosFilter() {
+  return !isKoreanSelected() && (elevenLabsManifest?.cards || []).some((card) => elevenLabsCardPos(card));
+}
+
+function renderElevenLabsPosFilter() {
+  els.elevenLabsPosFilter.value = elevenLabsPosFilter;
+  els.elevenLabsPosFilterLabel.classList.toggle("hidden", !shouldShowElevenLabsPosFilter());
+}
+
 function isElevenLabsCardCategoryEnabled(card) {
-  return Boolean(card);
+  if (!card) return false;
+  if (isKoreanSelected() || elevenLabsPosFilter === "all") return true;
+  return elevenLabsCardPos(card) === elevenLabsPosFilter;
 }
 
 function isElevenLabsCardEnabled(card) {
@@ -2773,6 +2794,7 @@ function buildElevenLabsQueue() {
 function renderElevenLabsCacheList() {
   const cards = filteredElevenLabsCards();
   els.elevenLabsCacheList.textContent = "";
+  renderElevenLabsPosFilter();
   els.elevenLabsCachePanel.classList.toggle("hidden", !cards.length);
 
   if (!cards.length) {
@@ -2805,11 +2827,12 @@ function renderElevenLabsCacheList() {
     english.className = "elevenlabs-cache-english";
     english.textContent = card.english;
 
-    row.classList.toggle("has-category", Boolean(card.category));
-    if (card.category) {
+    const categoryLabel = elevenLabsCardPos(card) || card.category || "";
+    row.classList.toggle("has-category", Boolean(categoryLabel));
+    if (categoryLabel) {
       const category = document.createElement("span");
-      category.className = `elevenlabs-cache-category ${card.category}`;
-      category.textContent = card.category;
+      category.className = `elevenlabs-cache-category ${categoryLabel}`;
+      category.textContent = categoryLabel;
       row.append(checkbox, category, hebrew, english);
     } else {
       row.append(checkbox, hebrew, english);
@@ -3311,6 +3334,12 @@ els.elevenLabsNextButton.addEventListener("click", nextElevenLabsAudio);
 els.elevenLabsSpeedSlider.addEventListener("input", () => {
   const speed = elevenLabsPlaybackSpeeds[Number(els.elevenLabsSpeedSlider.value)] || 0.85;
   setElevenLabsPlaybackSpeed(speed);
+});
+els.elevenLabsPosFilter.addEventListener("change", () => {
+  elevenLabsPosFilter = els.elevenLabsPosFilter.value;
+  elevenLabsQueueIndex = 0;
+  saveElevenLabsPlaybackPreferences();
+  refreshElevenLabsPlaybackFromSelection();
 });
 els.elevenLabsCacheList.addEventListener("change", (event) => {
   const checkbox = event.target.closest("input[type='checkbox'][data-cache-key]");

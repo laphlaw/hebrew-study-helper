@@ -22,7 +22,7 @@
         } catch {}
       })();
     </script>
-    <link rel="stylesheet" href="styles.css?v=20260912-4">
+    <link rel="stylesheet" href="styles.css?v=20260913-1">
   </head>
   <body>
     <main class="app-shell">
@@ -122,6 +122,15 @@
             <div class="elevenlabs-cache-toolbar">
               <div id="elevenlabs-cache-status" class="elevenlabs-cache-status">0 selected</div>
               <div class="elevenlabs-cache-actions">
+                <label id="elevenlabs-pos-filter-label" class="elevenlabs-pos-filter">
+                  <span class="sr-only">Audio part of speech</span>
+                  <select id="elevenlabs-pos-filter" aria-label="Filter audio by part of speech">
+                    <option value="all">All words</option>
+                    <option value="noun">Nouns</option>
+                    <option value="verb">Verbs</option>
+                    <option value="other">Other</option>
+                  </select>
+                </label>
                 <label class="elevenlabs-shuffle-toggle">
                   <input id="elevenlabs-shuffle-toggle" type="checkbox">
                   <span>Shuffle</span>
@@ -256,6 +265,6 @@
       </form>
     </dialog>
 
-    <script src="script.js?v=20260912-2"></script>
+    <script src="script.js?v=20260913-1"></script>
   </body>
 </html>
