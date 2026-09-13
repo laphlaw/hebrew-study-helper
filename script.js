@@ -1398,7 +1398,7 @@ function fitFlashcardText() {
     fitTextToBox(els.hebrewWord, currentMode === "alphabet" ? 46 : isKoreanPhraseMode() ? 24 : isKoreanSelected() ? 28 : 34);
     fitTextToBox(els.englishWord, 16);
     fitTextToBox(els.wordBreakdown, 13);
-    fitTextToBox(els.rootWord, isKoreanSelected() ? 32 : 20);
+    fitTextToBox(els.rootWord, isKoreanSelected() ? 48 : 40);
   });
 }
 
@@ -1506,18 +1506,89 @@ function moveBy(delta) {
   showCard(currentIndex + delta);
 }
 
+function visibleFlashcardWordElement() {
+  if (deckFinished) return els.hebrewWord;
+  return direction === "hebrew" ? els.hebrewWord : els.englishWord;
+}
+
+function elementTextRects(element) {
+  if (!element || element.classList.contains("hidden")) return [];
+
+  const range = document.createRange();
+  range.selectNodeContents(element);
+  const rects = [...range.getClientRects()].filter((rect) => rect.width && rect.height);
+  range.detach();
+  return rects.length ? rects : [element.getBoundingClientRect()];
+}
+
+function flashcardWordTextRects() {
+  return elementTextRects(visibleFlashcardWordElement());
+}
+
+function flashcardTapTargetTextRects() {
+  const elements = revealed ? [els.hebrewWord, els.englishWord] : [visibleFlashcardWordElement()];
+  return elements.flatMap(elementTextRects);
+}
+
+function pointInRect(x, y, rect, padding = 0) {
+  return (
+    x >= rect.left - padding &&
+    x <= rect.right + padding &&
+    y >= rect.top - padding &&
+    y <= rect.bottom + padding
+  );
+}
+
+function rectUnion(rects) {
+  return rects.reduce((union, rect) => ({
+    left: Math.min(union.left, rect.left),
+    right: Math.max(union.right, rect.right),
+    top: Math.min(union.top, rect.top),
+    bottom: Math.max(union.bottom, rect.bottom)
+  }), {
+    left: rects[0].left,
+    right: rects[0].right,
+    top: rects[0].top,
+    bottom: rects[0].bottom
+  });
+}
+
 function autoAdvanceStep() {
   if (!visibleWords.length) return;
   moveBy(1);
 }
 
-function cardTapAction() {
+function cardTapAction(event) {
+  if (!event || event.detail === 0) {
+    spaceAction();
+    return;
+  }
+
   if (deckFinished) {
     showCard(0);
     return;
   }
 
-  moveBy(1);
+  const tapTargetRects = flashcardTapTargetTextRects();
+  if (tapTargetRects.some((rect) => pointInRect(event.clientX, event.clientY, rect, 8))) {
+    revealAnswer();
+    return;
+  }
+
+  const wordRects = flashcardWordTextRects();
+  const wordBounds = wordRects.length ? rectUnion(wordRects) : els.cardButton.getBoundingClientRect();
+  if (event.clientX > wordBounds.right) {
+    moveBy(1);
+    return;
+  }
+
+  if (event.clientX < wordBounds.left) {
+    moveBy(-1);
+    return;
+  }
+
+  const cardBounds = els.cardButton.getBoundingClientRect();
+  moveBy(event.clientX >= cardBounds.left + cardBounds.width / 2 ? 1 : -1);
 }
 
 function stopAutoAdvance() {
