@@ -1,6 +1,6 @@
 {
   "provider": "elevenlabs",
-  "generatedAt": "2026-09-13T05:02:08.324Z",
+  "generatedAt": "2026-10-17T06:46:33.688Z",
   "chapters": [
     {
       "book": "Exo",
@@ -34,6 +34,17 @@
       "modelId": "eleven_v3",
       "outputFormat": "mp3_44100_128",
       "generatedAt": "2026-09-13T04:48:27.577Z"
+    },
+    {
+      "book": "Isa",
+      "chapter": 5,
+      "title": "",
+      "language": "",
+      "manifest": "public/audio/elevenlabs/manifests/Isa.5.json",
+      "cards": 240,
+      "modelId": "eleven_v3",
+      "outputFormat": "mp3_44100_128",
+      "generatedAt": "2026-10-17T06:46:26.638Z"
     },
     {
       "book": "KoreanPhrases",

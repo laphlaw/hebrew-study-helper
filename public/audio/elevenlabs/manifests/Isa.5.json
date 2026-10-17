@@ -1,0 +1,2421 @@
+{
+  "provider": "elevenlabs",
+  "generatedAt": "2026-10-17T06:46:26.638Z",
+  "book": "Isa",
+  "chapter": 5,
+  "modelId": "eleven_v3",
+  "outputFormat": "mp3_44100_128",
+  "plainHebrew": false,
+  "cardSettings": {
+    "hebrewRepeats": 2,
+    "englishRepeats": 1,
+    "separator": "."
+  },
+  "voices": {
+    "card": "EkK5I93UQWFDigLMpZcX",
+    "hebrew": "EkK5I93UQWFDigLMpZcX",
+    "english": "EkK5I93UQWFDigLMpZcX"
+  },
+  "cards": [
+    {
+      "ref": "ISA 5:1:1",
+      "pos": "verb",
+      "hebrew": "אָשִׁירָה",
+      "english": "let me sing",
+      "text": "אָשִׁירָה.\nאָשִׁירָה.\nlet me sing.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/eef8b24b744d9390eec2d9c5.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:1:4",
+      "pos": "noun",
+      "hebrew": "שִׁירַת",
+      "english": "a song",
+      "text": "שִׁירַת.\nשִׁירַת.\na song.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/4fc3ca1888a99e081ede3a04.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:1:5",
+      "pos": "noun",
+      "hebrew": "דּוֹדִי",
+      "english": "my beloved my",
+      "text": "דּוֹדִי.\nדּוֹדִי.\nmy beloved my.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/49c83e4ebd4afa28aed9f5cc.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:1:6",
+      "pos": "noun",
+      "hebrew": "לְכַרְמוֹ",
+      "english": "of vineyard his",
+      "text": "לְכַרְמוֹ.\nלְכַרְמוֹ.\nof vineyard his.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/5b95db90649cd273781b6e53.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:1:7",
+      "pos": "noun",
+      "hebrew": "כֶּרֶם",
+      "english": "a vineyard",
+      "text": "כֶּרֶם.\nכֶּרֶם.\na vineyard.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/1969320273754279f6cb42d1.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:1:8",
+      "pos": "verb",
+      "hebrew": "הָיָה",
+      "english": "it belonged",
+      "text": "הָיָה.\nהָיָה.\nit belonged.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/fb91f0e9190e3289ce35d191.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:1:10",
+      "pos": "noun",
+      "hebrew": "בְּקֶרֶן",
+      "english": "on a horn",
+      "text": "בְּקֶרֶן.\nבְּקֶרֶן.\non a horn.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/44f8f993be7480eeb5e72aa9.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:1:11",
+      "pos": "noun",
+      "hebrew": "בֶּן",
+      "english": "of a son",
+      "text": "בֶּן.\nבֶּן.\nof a son.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/93736eb67d247368973e66b8.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:1:12",
+      "pos": "noun",
+      "hebrew": "שָׁמֶן",
+      "english": "of oil",
+      "text": "שָׁמֶן.\nשָׁמֶן.\nof oil.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/afd00136f3564a9afccafc44.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:2:1",
+      "pos": "verb",
+      "hebrew": "וַיְעַזְּקֵהוּ",
+      "english": "and he dug it",
+      "text": "וַיְעַזְּקֵהוּ.\nוַיְעַזְּקֵהוּ.\nand he dug it.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/41419cc926ef60f87b3ab2d0.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:2:2",
+      "pos": "verb",
+      "hebrew": "וַיְסַקְּלֵהוּ",
+      "english": "and he cleared it of stones",
+      "text": "וַיְסַקְּלֵהוּ.\nוַיְסַקְּלֵהוּ.\nand he cleared it of stones.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c9f61c49fda69302b790eaca.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:2:3",
+      "pos": "verb",
+      "hebrew": "וַיִּטָּעֵהוּ",
+      "english": "and he planted it",
+      "text": "וַיִּטָּעֵהוּ.\nוַיִּטָּעֵהוּ.\nand he planted it.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/34b12d257a6734cb826f330b.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:2:4",
+      "pos": "noun",
+      "hebrew": "שֹׂרֵק",
+      "english": "a choice vine",
+      "text": "שֹׂרֵק.\nשֹׂרֵק.\na choice vine.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d410d9aed693a75c148c3efc.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:2:5",
+      "pos": "verb",
+      "hebrew": "וַיִּבֶן",
+      "english": "and he built",
+      "text": "וַיִּבֶן.\nוַיִּבֶן.\nand he built.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/85bea9df1aee9aed44d22e79.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:2:6",
+      "pos": "noun",
+      "hebrew": "מִגְדָּל",
+      "english": "a tower",
+      "text": "מִגְדָּל.\nמִגְדָּל.\na tower.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/30d9d003cd85a1470c80748f.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:2:7",
+      "pos": "noun",
+      "hebrew": "בְּתוֹכוֹ",
+      "english": "in the middle of it",
+      "text": "בְּתוֹכוֹ.\nבְּתוֹכוֹ.\nin the middle of it.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/fe5c53a27a2542dfff9e9769.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:2:9",
+      "pos": "noun",
+      "hebrew": "יֶקֶב",
+      "english": "a wine-vat",
+      "text": "יֶקֶב.\nיֶקֶב.\na wine-vat.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e8ade50e855253076062013d.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:2:10",
+      "pos": "verb",
+      "hebrew": "חָצֵב",
+      "english": "he dug out",
+      "text": "חָצֵב.\nחָצֵב.\nhe dug out.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/69d4678ec3b199af943e99da.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:2:12",
+      "pos": "verb",
+      "hebrew": "וַיְקַו",
+      "english": "and he waited",
+      "text": "וַיְקַו.\nוַיְקַו.\nand he waited.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/90b46b6010463e51752b5dd1.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:2:13",
+      "pos": "verb",
+      "hebrew": "לַעֲשׂוֹת",
+      "english": "to produce",
+      "text": "לַעֲשׂוֹת.\nלַעֲשׂוֹת.\nto produce.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/53a1a485a52d06083181e406.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:2:14",
+      "pos": "noun",
+      "hebrew": "עֲנָבִים",
+      "english": "grapes",
+      "text": "עֲנָבִים.\nעֲנָבִים.\ngrapes.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/edb8aaef4cca178d0d4e08bf.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:2:15",
+      "pos": "verb",
+      "hebrew": "וַיַּעַשׂ",
+      "english": "and it produced",
+      "text": "וַיַּעַשׂ.\nוַיַּעַשׂ.\nand it produced.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e1854fe9eaef16c46018d9a0.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:2:16",
+      "pos": "noun",
+      "hebrew": "בְּאֻשִׁים",
+      "english": "wild grapes",
+      "text": "בְּאֻשִׁים.\nבְּאֻשִׁים.\nwild grapes.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/cc018a72713d36f92c52db19.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:3:2",
+      "pos": "verb",
+      "hebrew": "יוֹשֵׁב",
+      "english": "O inhabitant[s]",
+      "text": "יוֹשֵׁב.\nיוֹשֵׁב.\nO inhabitant[s].",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ea9426e1d980c079a9a9adfe.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:3:3",
+      "pos": "noun",
+      "hebrew": "יְרוּשָׁלִַם",
+      "english": "of Jerusalem",
+      "text": "יְרוּשָׁלִַם.\nיְרוּשָׁלִַם.\nof Jerusalem.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b29b4d8024aad11f3c601e4c.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:3:4",
+      "pos": "noun",
+      "hebrew": "וְאִישׁ",
+      "english": "and everyone",
+      "text": "וְאִישׁ.\nוְאִישׁ.\nand everyone.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b90e74e3236c32178ad0c315.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:3:5",
+      "pos": "noun",
+      "hebrew": "יְהוּדָה",
+      "english": "of Judah",
+      "text": "יְהוּדָה.\nיְהוּדָה.\nof Judah.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/73173bb1247f00e911bd3366.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:3:6",
+      "pos": "verb",
+      "hebrew": "שִׁפְטוּ",
+      "english": "judge",
+      "text": "שִׁפְטוּ.\nשִׁפְטוּ.\njudge.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/bc0aacc9d6cc6f442f4688c8.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:3:10",
+      "pos": "noun",
+      "hebrew": "כַּרְמִי",
+      "english": "vineyard my",
+      "text": "כַּרְמִי.\nכַּרְמִי.\nvineyard my.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ca8c4108aa5763878657bdac.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:4:2",
+      "pos": "verb",
+      "hebrew": "לַּעֲשׂוֹת",
+      "english": "[is] to do",
+      "text": "לַּעֲשׂוֹת.\nלַּעֲשׂוֹת.\n[is] to do.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/209e4becd4dfa24d9e0e37ae.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:4:4",
+      "pos": "noun",
+      "hebrew": "לְכַרְמִי",
+      "english": "for vineyard my",
+      "text": "לְכַרְמִי.\nלְכַרְמִי.\nfor vineyard my.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/fabea80101fc915ee8b043ee.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:4:6",
+      "pos": "verb",
+      "hebrew": "עָשִׂיתִי",
+      "english": "I have done",
+      "text": "עָשִׂיתִי.\nעָשִׂיתִי.\nI have done.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/504ddf78686b1efce5bcb347.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:4:9",
+      "pos": "verb",
+      "hebrew": "קִוֵּיתִי",
+      "english": "did I wait",
+      "text": "קִוֵּיתִי.\nקִוֵּיתִי.\ndid I wait.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/8c88c3e3445496a5309b1659.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:5:2",
+      "pos": "verb",
+      "hebrew": "אוֹדִיעָה",
+      "english": "let me make know",
+      "text": "אוֹדִיעָה.\nאוֹדִיעָה.\nlet me make know.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d080f2cfa0743d42eed8db60.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:5:8",
+      "pos": "verb",
+      "hebrew": "עֹשֶׂה",
+      "english": "[am] about to do",
+      "text": "עֹשֶׂה.\nעֹשֶׂה.\n[am] about to do.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/1996139ba954413d89388fc7.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:5:10",
+      "pos": "verb",
+      "hebrew": "הָסֵר",
+      "english": "I will remove",
+      "text": "הָסֵר.\nהָסֵר.\nI will remove.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/79ccd37c0622b18402788157.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:5:11",
+      "pos": "noun",
+      "hebrew": "מְשׂוּכָּתוֹ",
+      "english": "hedge its",
+      "text": "מְשׂוּכָּתוֹ.\nמְשׂוּכָּתוֹ.\nhedge its.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e83449124eb9eca4e09a9483.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:5:12",
+      "pos": "verb",
+      "hebrew": "וְהָיָה",
+      "english": "and it will become",
+      "text": "וְהָיָה.\nוְהָיָה.\nand it will become.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/368a9d922fff803660fa48b0.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:5:13",
+      "pos": "verb",
+      "hebrew": "לְבָעֵר",
+      "english": "(into) grazing",
+      "text": "לְבָעֵר.\nלְבָעֵר.\n(into) grazing.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/bcf69e62e2dd2c101b942fbe.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:5:14",
+      "pos": "verb",
+      "hebrew": "פָּרֹץ",
+      "english": "I will break down",
+      "text": "פָּרֹץ.\nפָּרֹץ.\nI will break down.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/46a0bd73549444c7a0d7f886.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:5:15",
+      "pos": "noun",
+      "hebrew": "גְּדֵרוֹ",
+      "english": "wall its",
+      "text": "גְּדֵרוֹ.\nגְּדֵרוֹ.\nwall its.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/0a8c5439a3bdc69095fcf3ff.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:5:17",
+      "pos": "noun",
+      "hebrew": "לְמִרְמָס",
+      "english": "(into) a trampling place",
+      "text": "לְמִרְמָס.\nלְמִרְמָס.\n(into) a trampling place.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ae3662632314738a43c6da2e.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:6:1",
+      "pos": "verb",
+      "hebrew": "וַאֲשִׁיתֵהוּ",
+      "english": "and I will make it",
+      "text": "וַאֲשִׁיתֵהוּ.\nוַאֲשִׁיתֵהוּ.\nand I will make it.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/8d86231deced587238c59f9b.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:6:2",
+      "pos": "noun",
+      "hebrew": "בָתָה",
+      "english": "a desolation",
+      "text": "בָתָה.\nבָתָה.\na desolation.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/8a1e29c3af3b483c1f45fd9b.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:6:4",
+      "pos": "verb",
+      "hebrew": "יִזָּמֵר",
+      "english": "it will be pruned",
+      "text": "יִזָּמֵר.\nיִזָּמֵר.\nit will be pruned.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c449e1649db98523a246dc5c.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:6:6",
+      "pos": "verb",
+      "hebrew": "יֵעָדֵר",
+      "english": "it will be hoed",
+      "text": "יֵעָדֵר.\nיֵעָדֵר.\nit will be hoed.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/05617d82d7892f13dd0702a7.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:6:7",
+      "pos": "verb",
+      "hebrew": "וְעָלָה",
+      "english": "and it will grow up",
+      "text": "וְעָלָה.\nוְעָלָה.\nand it will grow up.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/5433c65687801ac17e9b3b50.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:6:8",
+      "pos": "noun",
+      "hebrew": "שָׁמִיר",
+      "english": "thorn[s]",
+      "text": "שָׁמִיר.\nשָׁמִיר.\nthorn[s].",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c26ed50dafb7e9ddb55761c7.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:6:9",
+      "pos": "noun",
+      "hebrew": "וָשָׁיִת",
+      "english": "and bush[es]",
+      "text": "וָשָׁיִת.\nוָשָׁיִת.\nand bush[es].",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/1c826e80fee6307560253ee0.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:6:11",
+      "pos": "noun",
+      "hebrew": "הֶעָבִים",
+      "english": "the clouds",
+      "text": "הֶעָבִים.\nהֶעָבִים.\nthe clouds.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/3f96bc936c0a1f8f571f292f.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:6:12",
+      "pos": "verb",
+      "hebrew": "אֲצַוֶּה",
+      "english": "I will command",
+      "text": "אֲצַוֶּה.\nאֲצַוֶּה.\nI will command.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/63352daa6c9662bc459e87a4.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:6:13",
+      "pos": "verb",
+      "hebrew": "מֵהַמְטִיר",
+      "english": "from raining",
+      "text": "מֵהַמְטִיר.\nמֵהַמְטִיר.\nfrom raining.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/1ee22926f5c7b2a610ab9d48.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:6:15",
+      "pos": "noun",
+      "hebrew": "מָטָר",
+      "english": "rain",
+      "text": "מָטָר.\nמָטָר.\nrain.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d3c0d1ff9be5fc839f309157.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:7:2",
+      "pos": "noun",
+      "hebrew": "כֶרֶם",
+      "english": "the vineyard",
+      "text": "כֶרֶם.\nכֶרֶם.\nthe vineyard.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b8d910d073e147fad7caa68f.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:7:3",
+      "pos": "noun",
+      "hebrew": "יְהוָה",
+      "english": "of Yahweh",
+      "text": "יְהוָה.\nיְהוָה.\nof Yahweh.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/5dd259ae485781c6203be20b.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:7:4",
+      "pos": "noun",
+      "hebrew": "צְבָאוֹת",
+      "english": "of hosts",
+      "text": "צְבָאוֹת.\nצְבָאוֹת.\nof hosts.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/6337de2a0d6dc6391b73782f.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:7:5",
+      "pos": "noun",
+      "hebrew": "בֵּית",
+      "english": "[is] the house",
+      "text": "בֵּית.\nבֵּית.\n[is] the house.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d2e77a7161a6fc3cca497eb5.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:7:6",
+      "pos": "noun",
+      "hebrew": "יִשְׂרָאֵל",
+      "english": "of Israel",
+      "text": "יִשְׂרָאֵל.\nיִשְׂרָאֵל.\nof Israel.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d9f4492fa631822260eac6ca.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:7:9",
+      "pos": "noun",
+      "hebrew": "נְטַע",
+      "english": "[is] the plantation",
+      "text": "נְטַע.\nנְטַע.\n[is] the plantation.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/4b89babc2dc36abe16b21413.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:7:10",
+      "pos": "noun",
+      "hebrew": "שַׁעֲשׁוּעָיו",
+      "english": "his delight(s) his",
+      "text": "שַׁעֲשׁוּעָיו.\nשַׁעֲשׁוּעָיו.\nhis delight(s) his.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e8398ba311e8bd9873f5a4f6.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:7:12",
+      "pos": "noun",
+      "hebrew": "לְמִשְׁפָּט",
+      "english": "for justice",
+      "text": "לְמִשְׁפָּט.\nלְמִשְׁפָּט.\nfor justice.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/dad1e3d7d7f4003e9b12b0f9.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:7:14",
+      "pos": "noun",
+      "hebrew": "מִשְׂפָּח",
+      "english": "bloodshed",
+      "text": "מִשְׂפָּח.\nמִשְׂפָּח.\nbloodshed.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/2656c8b6f442d7fbb8e73686.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:7:15",
+      "pos": "noun",
+      "hebrew": "לִצְדָקָה",
+      "english": "for righteousness",
+      "text": "לִצְדָקָה.\nלִצְדָקָה.\nfor righteousness.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/3a26d5555bd61bd5aac0f2f5.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:7:17",
+      "pos": "noun",
+      "hebrew": "צְעָקָה",
+      "english": "an outcry",
+      "text": "צְעָקָה.\nצְעָקָה.\nan outcry.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a1ff5a6c112e789d08a31aec.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:8:2",
+      "pos": "verb",
+      "hebrew": "מַגִּיעֵי",
+      "english": "[those who] make touch",
+      "text": "מַגִּיעֵי.\nמַגִּיעֵי.\n[those who] make touch.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/0317df9c5a4832a978946468.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:8:3",
+      "pos": "noun",
+      "hebrew": "בַיִת",
+      "english": "(of) a house",
+      "text": "בַיִת.\nבַיִת.\n(of) a house.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b7b876eb2e04f7a644835fa2.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:8:4",
+      "pos": "noun",
+      "hebrew": "בְּבַיִת",
+      "english": "(in) a house",
+      "text": "בְּבַיִת.\nבְּבַיִת.\n(in) a house.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d56edb486ca6e6e600fb6efe.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:8:5",
+      "pos": "noun",
+      "hebrew": "שָׂדֶה",
+      "english": "a field",
+      "text": "שָׂדֶה.\nשָׂדֶה.\na field.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/5d7bfcdcc52f30e35677b249.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:8:6",
+      "pos": "noun",
+      "hebrew": "בְשָׂדֶה",
+      "english": "on a field",
+      "text": "בְשָׂדֶה.\nבְשָׂדֶה.\non a field.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/903f91432d84321215171448.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:8:7",
+      "pos": "verb",
+      "hebrew": "יַקְרִיבוּ",
+      "english": "they bring near",
+      "text": "יַקְרִיבוּ.\nיַקְרִיבוּ.\nthey bring near.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a70e7d33ea5901b22a088bb6.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:8:9",
+      "pos": "noun",
+      "hebrew": "אֶפֶס",
+      "english": "there not",
+      "text": "אֶפֶס.\nאֶפֶס.\nthere not.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ca7bc5055ffb7286f6ccd959.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:8:10",
+      "pos": "noun",
+      "hebrew": "מָקוֹם",
+      "english": "[is] room",
+      "text": "מָקוֹם.\nמָקוֹם.\n[is] room.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d3aeb25d38fdf770583bb8ca.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:8:11",
+      "pos": "verb",
+      "hebrew": "וְהוּשַׁבְתֶּם",
+      "english": "and you are made to dwell",
+      "text": "וְהוּשַׁבְתֶּם.\nוְהוּשַׁבְתֶּם.\nand you are made to dwell.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a96804eb7fb1482c68394106.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:8:12",
+      "pos": "noun",
+      "hebrew": "לְבַדְּכֶם",
+      "english": "you yourselves alone",
+      "text": "לְבַדְּכֶם.\nלְבַדְּכֶם.\nyou yourselves alone.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c4797e6ce3cb288419c131a1.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:8:13",
+      "pos": "noun",
+      "hebrew": "בְּקֶרֶב",
+      "english": "in the midst",
+      "text": "בְּקֶרֶב.\nבְּקֶרֶב.\nin the midst.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/42d72378b420f6f7f79b2a9b.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:8:14",
+      "pos": "noun",
+      "hebrew": "הָאָרֶץ",
+      "english": "of the land",
+      "text": "הָאָרֶץ.\nהָאָרֶץ.\nof the land.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f21e76d539f453cd3721301b.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:9:1",
+      "pos": "noun",
+      "hebrew": "בְּאָזְנָי",
+      "english": "in ears my",
+      "text": "בְּאָזְנָי.\nבְּאָזְנָי.\nin ears my.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/166bbea07ca7dd1de9a55dc8.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:9:6",
+      "pos": "noun",
+      "hebrew": "בָּתִּים",
+      "english": "houses",
+      "text": "בָּתִּים.\nבָּתִּים.\nhouses.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/de5d94b949a493b8723aa4f9.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:9:8",
+      "pos": "noun",
+      "hebrew": "לְשַׁמָּה",
+      "english": "(into) a waste",
+      "text": "לְשַׁמָּה.\nלְשַׁמָּה.\n(into) a waste.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/abfb2bd9b59ada04aa874565.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:9:9",
+      "pos": "verb",
+      "hebrew": "יִהְיוּ",
+      "english": "they will become",
+      "text": "יִהְיוּ.\nיִהְיוּ.\nthey will become.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c4e572e899330356681f21e2.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:10:3",
+      "pos": "noun",
+      "hebrew": "צִמְדֵּי",
+      "english": "acres",
+      "text": "צִמְדֵּי.\nצִמְדֵּי.\nacres.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/688d19d0a39c5f3f364b456b.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:10:5",
+      "pos": "verb",
+      "hebrew": "יַעֲשׂוּ",
+      "english": "they will produce",
+      "text": "יַעֲשׂוּ.\nיַעֲשׂוּ.\nthey will produce.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/93a846be8dd5a19aafc67145.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:10:6",
+      "pos": "noun",
+      "hebrew": "בַּת",
+      "english": "a bath",
+      "text": "בַּת.\nבַּת.\na bath.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/52c82d9b6876010dfe531e60.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:10:8",
+      "pos": "noun",
+      "hebrew": "וְזֶרַע",
+      "english": "and seed",
+      "text": "וְזֶרַע.\nוְזֶרַע.\nand seed.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/69e4596e30e194ed00019cad.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:10:9",
+      "pos": "noun",
+      "hebrew": "חֹמֶר",
+      "english": "of a homer",
+      "text": "חֹמֶר.\nחֹמֶר.\nof a homer.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d55f1f9c7fa160926686116e.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:10:10",
+      "pos": "verb",
+      "hebrew": "יַעֲשֶׂה",
+      "english": "it will produce",
+      "text": "יַעֲשֶׂה.\nיַעֲשֶׂה.\nit will produce.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/bda485aea4df08290294c439.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:10:11",
+      "pos": "noun",
+      "hebrew": "אֵיפָה",
+      "english": "an ephah",
+      "text": "אֵיפָה.\nאֵיפָה.\nan ephah.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ad54fafcec77aa9553e5657a.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:11:2",
+      "pos": "verb",
+      "hebrew": "מַשְׁכִּימֵי",
+      "english": "[those who] rise early",
+      "text": "מַשְׁכִּימֵי.\nמַשְׁכִּימֵי.\n[those who] rise early.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f55ebc25dff3d44231354bf6.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:11:4",
+      "pos": "noun",
+      "hebrew": "שֵׁכָר",
+      "english": "strong drink",
+      "text": "שֵׁכָר.\nשֵׁכָר.\nstrong drink.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/1fc4e85be17a0cd44dfa951a.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:11:5",
+      "pos": "verb",
+      "hebrew": "יִרְדֹּפוּ",
+      "english": "they pursue",
+      "text": "יִרְדֹּפוּ.\nיִרְדֹּפוּ.\nthey pursue.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/579b4c551e518a5262aa490c.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:11:6",
+      "pos": "verb",
+      "hebrew": "מְאַחֲרֵי",
+      "english": "[those who] delay",
+      "text": "מְאַחֲרֵי.\nמְאַחֲרֵי.\n[those who] delay.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/676458873500a4b9e34176d7.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:11:8",
+      "pos": "noun",
+      "hebrew": "יַיִן",
+      "english": "wine",
+      "text": "יַיִן.\nיַיִן.\nwine.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/58295afa6c5d7a12a0901f9a.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:11:9",
+      "pos": "verb",
+      "hebrew": "יַדְלִיקֵם",
+      "english": "it inflames them",
+      "text": "יַדְלִיקֵם.\nיַדְלִיקֵם.\nit inflames them.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/26833fc5f0027eaef3b5e999.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:12:2",
+      "pos": "noun",
+      "hebrew": "כִנּוֹר",
+      "english": "harp",
+      "text": "כִנּוֹר.\nכִנּוֹר.\nharp.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/7377a911ad65905665e844f2.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:12:3",
+      "pos": "noun",
+      "hebrew": "וָנֶבֶל",
+      "english": "and lyre",
+      "text": "וָנֶבֶל.\nוָנֶבֶל.\nand lyre.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a261a8db619c3b98cb04264d.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:12:4",
+      "pos": "noun",
+      "hebrew": "תֹּף",
+      "english": "tambourine",
+      "text": "תֹּף.\nתֹּף.\ntambourine.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f9435863337588a38e02a382.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:12:5",
+      "pos": "noun",
+      "hebrew": "וְחָלִיל",
+      "english": "and flute",
+      "text": "וְחָלִיל.\nוְחָלִיל.\nand flute.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/7b08079907aa768e77d8a1cf.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:12:6",
+      "pos": "noun",
+      "hebrew": "וָיַיִן",
+      "english": "and wine",
+      "text": "וָיַיִן.\nוָיַיִן.\nand wine.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/93968e1dffd8cc6150bbdbd7.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:12:7",
+      "pos": "noun",
+      "hebrew": "מִשְׁתֵּיהֶם",
+      "english": "feast their",
+      "text": "מִשְׁתֵּיהֶם.\nמִשְׁתֵּיהֶם.\nfeast their.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/88fb312ed5e768571f50f522.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:12:9",
+      "pos": "noun",
+      "hebrew": "פֹּעַל",
+      "english": "the deed[s]",
+      "text": "פֹּעַל.\nפֹּעַל.\nthe deed[s].",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/3b5668e2021f96d1302c7567.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:12:12",
+      "pos": "verb",
+      "hebrew": "יַבִּיטוּ",
+      "english": "they pay attention to",
+      "text": "יַבִּיטוּ.\nיַבִּיטוּ.\nthey pay attention to.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/59db0469fa937fb37d73f83f.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:12:13",
+      "pos": "noun",
+      "hebrew": "וּמַעֲשֵׂה",
+      "english": "and the work",
+      "text": "וּמַעֲשֵׂה.\nוּמַעֲשֵׂה.\nand the work.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/5ad1db52509144f8aa85a398.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:12:14",
+      "pos": "noun",
+      "hebrew": "יָדָיו",
+      "english": "his hands his",
+      "text": "יָדָיו.\nיָדָיו.\nhis hands his.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ccf386e8e19d58282c5530dd.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:12:16",
+      "pos": "verb",
+      "hebrew": "רָאוּ",
+      "english": "they see",
+      "text": "רָאוּ.\nרָאוּ.\nthey see.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/83300464e6e29e095edb126a.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:13:2",
+      "pos": "verb",
+      "hebrew": "גָּלָה",
+      "english": "it will go into exile",
+      "text": "גָּלָה.\nגָּלָה.\nit will go into exile.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/583af3a5f447fec68d445015.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:13:3",
+      "pos": "noun",
+      "hebrew": "עַמִּי",
+      "english": "people my",
+      "text": "עַמִּי.\nעַמִּי.\npeople my.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/077aea8186d747ec7cd227d1.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:13:4",
+      "pos": "noun",
+      "hebrew": "מִבְּלִי",
+      "english": "from not",
+      "text": "מִבְּלִי.\nמִבְּלִי.\nfrom not.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c78c1203d2e4bfac4656848e.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:13:5",
+      "pos": "noun",
+      "hebrew": "דָעַת",
+      "english": "knowledge",
+      "text": "דָעַת.\nדָעַת.\nknowledge.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/65bd11098c7837c91bb75290.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:13:6",
+      "pos": "noun",
+      "hebrew": "וּכְבוֹדוֹ",
+      "english": "and honor its",
+      "text": "וּכְבוֹדוֹ.\nוּכְבוֹדוֹ.\nand honor its.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c0cf192db36c8dfdc92d8e95.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:13:7",
+      "pos": "noun",
+      "hebrew": "מְתֵי",
+      "english": "[will be] men",
+      "text": "מְתֵי.\nמְתֵי.\n[will be] men.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/1bbead3de0b2423f5837fc4b.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:13:8",
+      "pos": "noun",
+      "hebrew": "רָעָב",
+      "english": "of hunger",
+      "text": "רָעָב.\nרָעָב.\nof hunger.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/82329561a8f9d2b51b430c90.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:13:9",
+      "pos": "noun",
+      "hebrew": "וַהֲמוֹנוֹ",
+      "english": "and multitude its",
+      "text": "וַהֲמוֹנוֹ.\nוַהֲמוֹנוֹ.\nand multitude its.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/2bdf72919dfcec6376bb6195.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:13:11",
+      "pos": "noun",
+      "hebrew": "צָמָא",
+      "english": "of thirst",
+      "text": "צָמָא.\nצָמָא.\nof thirst.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/000642ee99b4e60d64e3af56.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:14:2",
+      "pos": "verb",
+      "hebrew": "הִרְחִיבָה",
+      "english": "it will enlarge",
+      "text": "הִרְחִיבָה.\nהִרְחִיבָה.\nit will enlarge.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/4395451478513dff0035dbe4.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:14:3",
+      "pos": "noun",
+      "hebrew": "שְּׁאוֹל",
+      "english": "Sheol",
+      "text": "שְּׁאוֹל.\nשְּׁאוֹל.\nSheol.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/97ff605ecb27cee5fd8cdcee.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:14:4",
+      "pos": "noun",
+      "hebrew": "נַפְשָׁהּ",
+      "english": "throat its",
+      "text": "נַפְשָׁהּ.\nנַפְשָׁהּ.\nthroat its.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/6427d36a492ce15d8017e2c9.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:14:5",
+      "pos": "verb",
+      "hebrew": "וּפָעֲרָה",
+      "english": "and it will open wide",
+      "text": "וּפָעֲרָה.\nוּפָעֲרָה.\nand it will open wide.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/22738c0ae8bb0578ddea7dd2.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:14:6",
+      "pos": "noun",
+      "hebrew": "פִיהָ",
+      "english": "mouth its",
+      "text": "פִיהָ.\nפִיהָ.\nmouth its.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/dd6a8b8ba6378b1e496bf66c.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:14:8",
+      "pos": "noun",
+      "hebrew": "חֹק",
+      "english": "limit",
+      "text": "חֹק.\nחֹק.\nlimit.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/6f79af239e91dc5a7b4099ee.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:14:9",
+      "pos": "verb",
+      "hebrew": "וְיָרַד",
+      "english": "and it will go down",
+      "text": "וְיָרַד.\nוְיָרַד.\nand it will go down.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/fb1df72c572d428bc35ecfab.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:14:10",
+      "pos": "noun",
+      "hebrew": "הֲדָרָהּ",
+      "english": "splendor its",
+      "text": "הֲדָרָהּ.\nהֲדָרָהּ.\nsplendor its.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/cc4dbddfa24c629c5659d926.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:14:11",
+      "pos": "noun",
+      "hebrew": "וַהֲמוֹנָהּ",
+      "english": "and multitude its",
+      "text": "וַהֲמוֹנָהּ.\nוַהֲמוֹנָהּ.\nand multitude its.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f969296253558b5d7a51cd08.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:14:12",
+      "pos": "noun",
+      "hebrew": "וּשְׁאוֹנָהּ",
+      "english": "and uproar its",
+      "text": "וּשְׁאוֹנָהּ.\nוּשְׁאוֹנָהּ.\nand uproar its.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b2856f7c38321afeacc0444e.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:15:1",
+      "pos": "verb",
+      "hebrew": "וַיִּשַּׁח",
+      "english": "and he has been humbled",
+      "text": "וַיִּשַּׁח.\nוַיִּשַּׁח.\nand he has been humbled.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/42722cca4ba4fdb9dbd96b4f.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:15:2",
+      "pos": "noun",
+      "hebrew": "אָדָם",
+      "english": "everyone",
+      "text": "אָדָם.\nאָדָם.\neveryone.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/6d83c57774749044105730d9.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:15:3",
+      "pos": "verb",
+      "hebrew": "וַיִּשְׁפַּל",
+      "english": "and he has become low",
+      "text": "וַיִּשְׁפַּל.\nוַיִּשְׁפַּל.\nand he has become low.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/85474fc9c9633c34af96f040.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:15:4",
+      "pos": "noun",
+      "hebrew": "אִישׁ",
+      "english": "everyone",
+      "text": "אִישׁ.\nאִישׁ.\neveryone.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/121dabf0bd7e1c763f896bba.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:15:5",
+      "pos": "noun",
+      "hebrew": "וְעֵינֵי",
+      "english": "and [the] eyes",
+      "text": "וְעֵינֵי.\nוְעֵינֵי.\nand [the] eyes.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/3ae752639e91d06bfbeeb338.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:15:7",
+      "pos": "verb",
+      "hebrew": "תִּשְׁפַּלְנָה",
+      "english": "they will become low",
+      "text": "תִּשְׁפַּלְנָה.\nתִּשְׁפַּלְנָה.\nthey will become low.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/4560281b96e8b4493cc50034.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:16:1",
+      "pos": "verb",
+      "hebrew": "וַיִּגְבַּה",
+      "english": "and he was exalted",
+      "text": "וַיִּגְבַּה.\nוַיִּגְבַּה.\nand he was exalted.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/32586c72fab2bfe8e081bac9.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:16:5",
+      "pos": "noun",
+      "hebrew": "וְהָאֵל",
+      "english": "and (the) God",
+      "text": "וְהָאֵל.\nוְהָאֵל.\nand (the) God.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/086a72ebcb9377de70ac35af.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:16:7",
+      "pos": "verb",
+      "hebrew": "נִקְדָּשׁ",
+      "english": "[will] show himself holy",
+      "text": "נִקְדָּשׁ.\nנִקְדָּשׁ.\n[will] show himself holy.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/3409ac1d66e286296f6b7e9a.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:16:8",
+      "pos": "noun",
+      "hebrew": "בִּצְדָקָה",
+      "english": "by righteousness",
+      "text": "בִּצְדָקָה.\nבִּצְדָקָה.\nby righteousness.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/39b21d61b13d580889e0c892.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:17:1",
+      "pos": "verb",
+      "hebrew": "וְרָעוּ",
+      "english": "and they will graze",
+      "text": "וְרָעוּ.\nוְרָעוּ.\nand they will graze.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/8db9a2f6d760791eacc32ba2.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:17:2",
+      "pos": "noun",
+      "hebrew": "כְבָשִׂים",
+      "english": "lambs",
+      "text": "כְבָשִׂים.\nכְבָשִׂים.\nlambs.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/15f2d922a5ae4a6aff75f5ae.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:17:3",
+      "pos": "noun",
+      "hebrew": "כְּדָבְרָם",
+      "english": "like their own pasture",
+      "text": "כְּדָבְרָם.\nכְּדָבְרָם.\nlike their own pasture.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/7594411fa491a10d4b2a276f.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:17:4",
+      "pos": "noun",
+      "hebrew": "וְחָרְבוֹת",
+      "english": "and [the] ruins",
+      "text": "וְחָרְבוֹת.\nוְחָרְבוֹת.\nand [the] ruins.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/2538c3843bc79f22d53721d3.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:17:5",
+      "pos": "noun",
+      "hebrew": "מֵחִים",
+      "english": "of fatlings",
+      "text": "מֵחִים.\nמֵחִים.\nof fatlings.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/efac42f915e4241346fd4159.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:17:6",
+      "pos": "verb",
+      "hebrew": "גָּרִים",
+      "english": "[those who] sojourn",
+      "text": "גָּרִים.\nגָּרִים.\n[those who] sojourn.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/0a33a3926d73bf99d932e4e3.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:17:7",
+      "pos": "verb",
+      "hebrew": "יֹאכֵלוּ",
+      "english": "they will eat",
+      "text": "יֹאכֵלוּ.\nיֹאכֵלוּ.\nthey will eat.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/6709f825834f3d1fbad08e78.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:18:2",
+      "pos": "verb",
+      "hebrew": "מֹשְׁכֵי",
+      "english": "[those who] draw along",
+      "text": "מֹשְׁכֵי.\nמֹשְׁכֵי.\n[those who] draw along.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/12e7013ac5f13a02dce7dc0f.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:18:3",
+      "pos": "noun",
+      "hebrew": "הֶעָוֺן",
+      "english": "(of [the] iniquity",
+      "text": "הֶעָוֺן.\nהֶעָוֺן.\n(of [the] iniquity.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/8fde8ea348ff1add10f240f3.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:18:4",
+      "pos": "noun",
+      "hebrew": "בְּחַבְלֵי",
+      "english": "with (the) cords",
+      "text": "בְּחַבְלֵי.\nבְּחַבְלֵי.\nwith (the) cords.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/1bf60aab39c66d7502c736bf.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:18:5",
+      "pos": "noun",
+      "hebrew": "הַשָּׁוְא",
+      "english": "of (the) emptiness",
+      "text": "הַשָּׁוְא.\nהַשָּׁוְא.\nof (the) emptiness.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/82236e26d62f4746337bd37f.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:18:6",
+      "pos": "noun",
+      "hebrew": "וְכַעֲבוֹת",
+      "english": "and like the rope",
+      "text": "וְכַעֲבוֹת.\nוְכַעֲבוֹת.\nand like the rope.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/1d525d5cf6702a5b825fb8c8.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:18:7",
+      "pos": "noun",
+      "hebrew": "הָעֲגָלָה",
+      "english": "of (the) cart",
+      "text": "הָעֲגָלָה.\nהָעֲגָלָה.\nof (the) cart.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ede640d63a54cfa65cd0c98f.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:18:8",
+      "pos": "noun",
+      "hebrew": "חַטָּאָה",
+      "english": "sin",
+      "text": "חַטָּאָה.\nחַטָּאָה.\nsin.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/14046a932011defc3b6e4bd7.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:19:1",
+      "pos": "verb",
+      "hebrew": "הָאֹמְרִים",
+      "english": "[those who] say",
+      "text": "הָאֹמְרִים.\nהָאֹמְרִים.\n[those who] say.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f3216ddaed946db79dd735d0.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:19:2",
+      "pos": "verb",
+      "hebrew": "יְמַהֵר",
+      "english": "let it hurry",
+      "text": "יְמַהֵר.\nיְמַהֵר.\nlet it hurry.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/589bec9389b261f27e5a314a.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:19:3",
+      "pos": "verb",
+      "hebrew": "יָחִישָׁה",
+      "english": "let it make haste",
+      "text": "יָחִישָׁה.\nיָחִישָׁה.\nlet it make haste.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f23c0305dc4b8c9c5b1e2a4c.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:19:4",
+      "pos": "noun",
+      "hebrew": "מַעֲשֵׂהוּ",
+      "english": "work his",
+      "text": "מַעֲשֵׂהוּ.\nמַעֲשֵׂהוּ.\nwork his.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/513967a3877df7a3a47e0cd9.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:19:6",
+      "pos": "verb",
+      "hebrew": "נִרְאֶה",
+      "english": "we may see",
+      "text": "נִרְאֶה.\nנִרְאֶה.\nwe may see.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/782559c376fe5e34ecb43753.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:19:7",
+      "pos": "verb",
+      "hebrew": "וְתִקְרַב",
+      "english": "and let it draw near",
+      "text": "וְתִקְרַב.\nוְתִקְרַב.\nand let it draw near.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b16264b00b68a3c2e1c81b08.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:19:8",
+      "pos": "verb",
+      "hebrew": "וְתָבוֹאָה",
+      "english": "and let it come",
+      "text": "וְתָבוֹאָה.\nוְתָבוֹאָה.\nand let it come.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/21de70261474f03537c755fd.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:19:9",
+      "pos": "noun",
+      "hebrew": "עֲצַת",
+      "english": "the plan",
+      "text": "עֲצַת.\nעֲצַת.\nthe plan.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/1adb01caecf5ff327e85e332.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:19:12",
+      "pos": "verb",
+      "hebrew": "וְנֵדָעָה",
+      "english": "so that we may know",
+      "text": "וְנֵדָעָה.\nוְנֵדָעָה.\nso that we may know.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/3ade7cde1909f49f1cc2f0d8.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:20:7",
+      "pos": "verb",
+      "hebrew": "שָׂמִים",
+      "english": "[those who] make",
+      "text": "שָׂמִים.\nשָׂמִים.\n[those who] make.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/aeb21cc904606c28970d17d7.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:20:8",
+      "pos": "noun",
+      "hebrew": "חֹשֶׁךְ",
+      "english": "darkness",
+      "text": "חֹשֶׁךְ.\nחֹשֶׁךְ.\ndarkness.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/41df75417c89d53b73017d02.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:20:9",
+      "pos": "noun",
+      "hebrew": "לְאוֹר",
+      "english": "into light",
+      "text": "לְאוֹר.\nלְאוֹר.\ninto light.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c37d80745245d14202207516.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:20:10",
+      "pos": "noun",
+      "hebrew": "וְאוֹר",
+      "english": "and light",
+      "text": "וְאוֹר.\nוְאוֹר.\nand light.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/80bad5b62e0f22bc1459ffb1.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:20:11",
+      "pos": "noun",
+      "hebrew": "לְחֹשֶׁךְ",
+      "english": "into darkness",
+      "text": "לְחֹשֶׁךְ.\nלְחֹשֶׁךְ.\ninto darkness.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/341f752a087d85811846a352.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:21:3",
+      "pos": "noun",
+      "hebrew": "בְּעֵינֵיהֶם",
+      "english": "in their own eyes",
+      "text": "בְּעֵינֵיהֶם.\nבְּעֵינֵיהֶם.\nin their own eyes.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e3a3df8c1b80cdaac0f3d42e.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:21:5",
+      "pos": "noun",
+      "hebrew": "פְּנֵיהֶם",
+      "english": "faces their own",
+      "text": "פְּנֵיהֶם.\nפְּנֵיהֶם.\nfaces their own.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/7821ae1750d0c1073194ab39.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:21:6",
+      "pos": "verb",
+      "hebrew": "נְבֹנִים",
+      "english": "[people] discerning",
+      "text": "נְבֹנִים.\nנְבֹנִים.\n[people] discerning.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d22eefae23cd163bd8f05c63.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:22:3",
+      "pos": "verb",
+      "hebrew": "לִשְׁתּוֹת",
+      "english": "for drinking",
+      "text": "לִשְׁתּוֹת.\nלִשְׁתּוֹת.\nfor drinking.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/97e16b0f23aa9f097d9831c3.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:22:4",
+      "pos": "noun",
+      "hebrew": "יָיִן",
+      "english": "wine",
+      "text": "יָיִן.\nיָיִן.\nwine.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/14d9916dd3771e1506e5ccf9.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:22:5",
+      "pos": "noun",
+      "hebrew": "וְאַנְשֵׁי",
+      "english": "and people",
+      "text": "וְאַנְשֵׁי.\nוְאַנְשֵׁי.\nand people.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/da4f4dcc8493856f5da27c03.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:22:6",
+      "pos": "noun",
+      "hebrew": "חַיִל",
+      "english": "of ability",
+      "text": "חַיִל.\nחַיִל.\nof ability.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/3e103a79814c57057753a3ed.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:22:7",
+      "pos": "verb",
+      "hebrew": "לִמְסֹךְ",
+      "english": "for mixing",
+      "text": "לִמְסֹךְ.\nלִמְסֹךְ.\nfor mixing.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a5d81433675c9bae80c15c2e.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:23:1",
+      "pos": "verb",
+      "hebrew": "מַצְדִּיקֵי",
+      "english": "[those who] justify",
+      "text": "מַצְדִּיקֵי.\nמַצְדִּיקֵי.\n[those who] justify.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/3e0df9f443f570800c90b380.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:23:3",
+      "pos": "noun",
+      "hebrew": "עֵקֶב",
+      "english": "[the] consequence",
+      "text": "עֵקֶב.\nעֵקֶב.\n[the] consequence.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/9022ebfd667cdc95aaf976c9.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:23:4",
+      "pos": "noun",
+      "hebrew": "שֹׁחַד",
+      "english": "of a bribe",
+      "text": "שֹׁחַד.\nשֹׁחַד.\nof a bribe.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/6afda4b3aa4184bc58f8429e.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:23:5",
+      "pos": "noun",
+      "hebrew": "וְצִדְקַת",
+      "english": "and [the] righteousness",
+      "text": "וְצִדְקַת.\nוְצִדְקַת.\nand [the] righteousness.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/52e58978c8832a78bd8bcaf6.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:23:7",
+      "pos": "verb",
+      "hebrew": "יָסִירוּ",
+      "english": "they take away",
+      "text": "יָסִירוּ.\nיָסִירוּ.\nthey take away.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/592a3fae62f2205a206d414c.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:24:2",
+      "pos": "verb",
+      "hebrew": "כֶּאֱכֹל",
+      "english": "as consumes",
+      "text": "כֶּאֱכֹל.\nכֶּאֱכֹל.\nas consumes.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/560d6f2e3bc911de762ce2f7.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:24:3",
+      "pos": "noun",
+      "hebrew": "קַשׁ",
+      "english": "stubble",
+      "text": "קַשׁ.\nקַשׁ.\nstubble.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a732b778fb08ae535fd2401e.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:24:4",
+      "pos": "noun",
+      "hebrew": "לְשׁוֹן",
+      "english": "a tongue",
+      "text": "לְשׁוֹן.\nלְשׁוֹן.\na tongue.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a442cbd4ebe1c10727d75a57.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:24:5",
+      "pos": "noun",
+      "hebrew": "אֵשׁ",
+      "english": "of fire",
+      "text": "אֵשׁ.\nאֵשׁ.\nof fire.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/36a6ee135f6d7fa0e8de946d.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:24:6",
+      "pos": "noun",
+      "hebrew": "וַחֲשַׁשׁ",
+      "english": "and dry grass",
+      "text": "וַחֲשַׁשׁ.\nוַחֲשַׁשׁ.\nand dry grass.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/6d59c67b10be8c2fb636dcc0.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:24:7",
+      "pos": "noun",
+      "hebrew": "לֶהָבָה",
+      "english": "a flame",
+      "text": "לֶהָבָה.\nלֶהָבָה.\na flame.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/9ac76607b97afc1b017be6c7.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:24:8",
+      "pos": "verb",
+      "hebrew": "יִרְפֶּה",
+      "english": "it sinks down",
+      "text": "יִרְפֶּה.\nיִרְפֶּה.\nit sinks down.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ff397912fda73355502c7cd7.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:24:9",
+      "pos": "noun",
+      "hebrew": "שָׁרְשָׁם",
+      "english": "root their",
+      "text": "שָׁרְשָׁם.\nשָׁרְשָׁם.\nroot their.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/02e43df19034bc49b838b48b.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:24:11",
+      "pos": "verb",
+      "hebrew": "יִהְיֶה",
+      "english": "it will be",
+      "text": "יִהְיֶה.\nיִהְיֶה.\nit will be.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/4cf9630abceb4db093268435.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:24:12",
+      "pos": "noun",
+      "hebrew": "וּפִרְחָם",
+      "english": "and blossom their",
+      "text": "וּפִרְחָם.\nוּפִרְחָם.\nand blossom their.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/cd3d18267972b31a24d770e2.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:24:14",
+      "pos": "verb",
+      "hebrew": "יַעֲלֶה",
+      "english": "it will go up",
+      "text": "יַעֲלֶה.\nיַעֲלֶה.\nit will go up.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/9c7bcbe4584c85e78ada18c2.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:24:16",
+      "pos": "verb",
+      "hebrew": "מָאֲסוּ",
+      "english": "they have rejected",
+      "text": "מָאֲסוּ.\nמָאֲסוּ.\nthey have rejected.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/3649dd1052187e1e1d970170.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:24:18",
+      "pos": "noun",
+      "hebrew": "תּוֹרַת",
+      "english": "the law",
+      "text": "תּוֹרַת.\nתּוֹרַת.\nthe law.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e110c87f70ade5ea6c2b0b9c.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:24:22",
+      "pos": "noun",
+      "hebrew": "אִמְרַת",
+      "english": "the word",
+      "text": "אִמְרַת.\nאִמְרַת.\nthe word.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/8fbcd113587af00d5b45ee65.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:24:25",
+      "pos": "verb",
+      "hebrew": "נִאֵצוּ",
+      "english": "they have spurned",
+      "text": "נִאֵצוּ.\nנִאֵצוּ.\nthey have spurned.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d007d7327ec591067c794d90.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:25:3",
+      "pos": "verb",
+      "hebrew": "חָרָה",
+      "english": "it has burned",
+      "text": "חָרָה.\nחָרָה.\nit has burned.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/b54db4257085ea8651b3de23.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:25:6",
+      "pos": "noun",
+      "hebrew": "בְּעַמּוֹ",
+      "english": "on people his",
+      "text": "בְּעַמּוֹ.\nבְּעַמּוֹ.\non people his.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a7dfc48cf5a96d48a131ccb4.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:25:7",
+      "pos": "verb",
+      "hebrew": "וַיֵּט",
+      "english": "and he has stretched out",
+      "text": "וַיֵּט.\nוַיֵּט.\nand he has stretched out.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/999ce0f2ea56330de96039c3.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:25:8",
+      "pos": "noun",
+      "hebrew": "יָדוֹ",
+      "english": "hand his",
+      "text": "יָדוֹ.\nיָדוֹ.\nhand his.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f543e63e5fad87c708e800bd.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:25:10",
+      "pos": "verb",
+      "hebrew": "וַיַּכֵּהוּ",
+      "english": "and he has struck it",
+      "text": "וַיַּכֵּהוּ.\nוַיַּכֵּהוּ.\nand he has struck it.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/847496f9c578682066bee485.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:25:11",
+      "pos": "verb",
+      "hebrew": "וַיִּרְגְּזוּ",
+      "english": "and they have quaked",
+      "text": "וַיִּרְגְּזוּ.\nוַיִּרְגְּזוּ.\nand they have quaked.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/1733b496119ee98108a9badb.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:25:12",
+      "pos": "noun",
+      "hebrew": "הֶהָרִים",
+      "english": "the mountains",
+      "text": "הֶהָרִים.\nהֶהָרִים.\nthe mountains.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ccbeaa9d4dcb0567d5093ed1.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:25:13",
+      "pos": "verb",
+      "hebrew": "וַתְּהִי",
+      "english": "and it was",
+      "text": "וַתְּהִי.\nוַתְּהִי.\nand it was.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/cd4053c4c680de47abc9db80.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:25:14",
+      "pos": "noun",
+      "hebrew": "נִבְלָתָם",
+      "english": "corpse their",
+      "text": "נִבְלָתָם.\nנִבְלָתָם.\ncorpse their.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/346c0b7c5dffb1cebb51f40c.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:25:17",
+      "pos": "noun",
+      "hebrew": "חוּצוֹת",
+      "english": "of [the] streets",
+      "text": "חוּצוֹת.\nחוּצוֹת.\nof [the] streets.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/62f1522f8b052c50362f1659.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:25:18",
+      "pos": "noun",
+      "hebrew": "בְּכָל",
+      "english": "for all",
+      "text": "בְּכָל.\nבְּכָל.\nfor all.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/586c0b2236edd3944c7dff16.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:25:21",
+      "pos": "verb",
+      "hebrew": "שָׁב",
+      "english": "it has turned back",
+      "text": "שָׁב.\nשָׁב.\nit has turned back.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/116909102e439ef7e7e4bf13.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:25:22",
+      "pos": "noun",
+      "hebrew": "אַפּוֹ",
+      "english": "anger his",
+      "text": "אַפּוֹ.\nאַפּוֹ.\nanger his.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/03638f66148e0f1363a226e4.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:25:25",
+      "pos": "verb",
+      "hebrew": "נְטוּיָה",
+      "english": "[is] stretched out",
+      "text": "נְטוּיָה.\nנְטוּיָה.\n[is] stretched out.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d1bd8d52a38327429191a1c2.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:26:1",
+      "pos": "verb",
+      "hebrew": "וְנָשָׂא",
+      "english": "and he will lift up",
+      "text": "וְנָשָׂא.\nוְנָשָׂא.\nand he will lift up.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/9e4f4f16d609b572831aee19.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:26:2",
+      "pos": "noun",
+      "hebrew": "נֵס",
+      "english": "a standard",
+      "text": "נֵס.\nנֵס.\na standard.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/877b2d93fcba82d9e1ae5cb4.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:26:5",
+      "pos": "verb",
+      "hebrew": "וְשָׁרַק",
+      "english": "and he will whistle",
+      "text": "וְשָׁרַק.\nוְשָׁרַק.\nand he will whistle.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/a44144471a3951812a62fb69.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:26:7",
+      "pos": "noun",
+      "hebrew": "מִקְצֵה",
+      "english": "from the end",
+      "text": "מִקְצֵה.\nמִקְצֵה.\nfrom the end.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/dbaded57d5f894064c4a2968.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:26:10",
+      "pos": "noun",
+      "hebrew": "מְהֵרָה",
+      "english": "quickly",
+      "text": "מְהֵרָה.\nמְהֵרָה.\nquickly.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/e50448c50b58ee0e2989065a.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:26:12",
+      "pos": "verb",
+      "hebrew": "יָבוֹא",
+      "english": "it will come",
+      "text": "יָבוֹא.\nיָבוֹא.\nit will come.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/cd902708f17ab048a0496459.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:27:4",
+      "pos": "verb",
+      "hebrew": "כּוֹשֵׁל",
+      "english": "[one who] stumbles",
+      "text": "כּוֹשֵׁל.\nכּוֹשֵׁל.\n[one who] stumbles.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/1c734bde2b885e3b52a81e8f.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:27:7",
+      "pos": "verb",
+      "hebrew": "יָנוּם",
+      "english": "anyone will slumber",
+      "text": "יָנוּם.\nיָנוּם.\nanyone will slumber.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/0dc22a9da612e85c52a8202f.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:27:9",
+      "pos": "verb",
+      "hebrew": "יִישָׁן",
+      "english": "anyone will sleep",
+      "text": "יִישָׁן.\nיִישָׁן.\nanyone will sleep.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/77584e21380a137e92994bd3.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:27:11",
+      "pos": "verb",
+      "hebrew": "נִפְתַּח",
+      "english": "it has been opened",
+      "text": "נִפְתַּח.\nנִפְתַּח.\nit has been opened.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f4aa65c2b7df73e055c62e25.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:27:12",
+      "pos": "noun",
+      "hebrew": "אֵזוֹר",
+      "english": "the loincloth",
+      "text": "אֵזוֹר.\nאֵזוֹר.\nthe loincloth.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/8fedacc9a1574441722b19c2.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:27:13",
+      "pos": "noun",
+      "hebrew": "חֲלָצָיו",
+      "english": "its loins his",
+      "text": "חֲלָצָיו.\nחֲלָצָיו.\nits loins his.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/0b82b4e78196d039365f1bf0.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:27:15",
+      "pos": "verb",
+      "hebrew": "נִתַּק",
+      "english": "it has been torn apart",
+      "text": "נִתַּק.\nנִתַּק.\nit has been torn apart.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/89659af24e9ace6cc4388eba.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:27:16",
+      "pos": "noun",
+      "hebrew": "שְׂרוֹךְ",
+      "english": "a thong",
+      "text": "שְׂרוֹךְ.\nשְׂרוֹךְ.\na thong.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/d65958d05aa142301965d1b3.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:27:17",
+      "pos": "noun",
+      "hebrew": "נְעָלָיו",
+      "english": "its sandals his",
+      "text": "נְעָלָיו.\nנְעָלָיו.\nits sandals his.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/58632ef6571f136181ef367b.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:28:2",
+      "pos": "noun",
+      "hebrew": "חִצָּיו",
+      "english": "arrows its",
+      "text": "חִצָּיו.\nחִצָּיו.\narrows its.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c5a24f1f46379883782bea53.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:28:3",
+      "pos": "verb",
+      "hebrew": "שְׁנוּנִים",
+      "english": "[are] sharpened",
+      "text": "שְׁנוּנִים.\nשְׁנוּנִים.\n[are] sharpened.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/aed3872a52eaf05f674c5077.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:28:4",
+      "pos": "noun",
+      "hebrew": "וְכָל",
+      "english": "and all",
+      "text": "וְכָל.\nוְכָל.\nand all.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/0c543d05a94d8bb947499181.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:28:5",
+      "pos": "noun",
+      "hebrew": "קַשְּׁתֹתָיו",
+      "english": "bows its",
+      "text": "קַשְּׁתֹתָיו.\nקַשְּׁתֹתָיו.\nbows its.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/1f6a3c93491e86c04010d89a.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:28:6",
+      "pos": "verb",
+      "hebrew": "דְּרֻכוֹת",
+      "english": "[are] bent",
+      "text": "דְּרֻכוֹת.\nדְּרֻכוֹת.\n[are] bent.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/0fefba4128b76f343b92ab04.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:28:7",
+      "pos": "noun",
+      "hebrew": "פַּרְסוֹת",
+      "english": "the hooves",
+      "text": "פַּרְסוֹת.\nפַּרְסוֹת.\nthe hooves.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/18b645cf9df7c85f1ba3e46e.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:28:8",
+      "pos": "noun",
+      "hebrew": "סוּסָיו",
+      "english": "its horses his",
+      "text": "סוּסָיו.\nסוּסָיו.\nits horses his.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/07699d173735d2753549c6ab.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:28:10",
+      "pos": "verb",
+      "hebrew": "נֶחְשָׁבוּ",
+      "english": "they are regarded",
+      "text": "נֶחְשָׁבוּ.\nנֶחְשָׁבוּ.\nthey are regarded.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/6565da39cb888dda7b9f7118.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:28:11",
+      "pos": "noun",
+      "hebrew": "וְגַלְגִּלָּיו",
+      "english": "and wheels its",
+      "text": "וְגַלְגִּלָּיו.\nוְגַלְגִּלָּיו.\nand wheels its.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/7689786a06095701be4ec399.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:29:1",
+      "pos": "noun",
+      "hebrew": "שְׁאָגָה",
+      "english": "roaring",
+      "text": "שְׁאָגָה.\nשְׁאָגָה.\nroaring.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c1a0aec64bcfc8e7dc3b7f98.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:29:5",
+      "pos": "verb",
+      "hebrew": "יִשְׁאַג",
+      "english": "it will roar",
+      "text": "יִשְׁאַג.\nיִשְׁאַג.\nit will roar.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/5f59a652b4e571e0d474f960.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:29:7",
+      "pos": "verb",
+      "hebrew": "וְיִנְהֹם",
+      "english": "and it will growl",
+      "text": "וְיִנְהֹם.\nוְיִנְהֹם.\nand it will growl.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/c55fdaf328cc2e0a7f6230e1.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:29:8",
+      "pos": "verb",
+      "hebrew": "וְיֹאחֵז",
+      "english": "and it will seize",
+      "text": "וְיֹאחֵז.\nוְיֹאחֵז.\nand it will seize.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/4a1e7ef4140ecde1b5121d21.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:29:9",
+      "pos": "noun",
+      "hebrew": "טֶרֶף",
+      "english": "prey",
+      "text": "טֶרֶף.\nטֶרֶף.\nprey.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/6b08311794ec0c37d2895f2d.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:29:10",
+      "pos": "verb",
+      "hebrew": "וְיַפְלִיט",
+      "english": "and it will carry [it] off",
+      "text": "וְיַפְלִיט.\nוְיַפְלִיט.\nand it will carry [it] off.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/710cda99db343ff083e3f227.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:29:12",
+      "pos": "verb",
+      "hebrew": "מַצִּיל",
+      "english": "a deliverer",
+      "text": "מַצִּיל.\nמַצִּיל.\na deliverer.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/408956e53dbc4cd86957575c.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:30:5",
+      "pos": "noun",
+      "hebrew": "כְּנַהֲמַת",
+      "english": "like [the] growling",
+      "text": "כְּנַהֲמַת.\nכְּנַהֲמַת.\nlike [the] growling.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/ba6de716b32b94f22e4b653d.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:30:6",
+      "pos": "noun",
+      "hebrew": "יָם",
+      "english": "of [the] sea",
+      "text": "יָם.\nיָם.\nof [the] sea.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/55bd0716f32bf52de1a610a0.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:30:7",
+      "pos": "verb",
+      "hebrew": "וְנִבַּט",
+      "english": "and someone will look",
+      "text": "וְנִבַּט.\nוְנִבַּט.\nand someone will look.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/eabce7e6f948ff0074b0ac11.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:30:12",
+      "pos": "noun",
+      "hebrew": "וָאוֹר",
+      "english": "and light",
+      "text": "וָאוֹר.\nוָאוֹר.\nand light.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/f270b01c50fcf0effa967845.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:30:13",
+      "pos": "verb",
+      "hebrew": "חָשַׁךְ",
+      "english": "it has become dark",
+      "text": "חָשַׁךְ.\nחָשַׁךְ.\nit has become dark.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/bccb4c657ea01191fc207e05.mp3"
+      }
+    },
+    {
+      "ref": "ISA 5:30:14",
+      "pos": "noun",
+      "hebrew": "בַּעֲרִיפֶיהָ",
+      "english": "by clouds its",
+      "text": "בַּעֲרִיפֶיהָ.\nבַּעֲרִיפֶיהָ.\nby clouds its.",
+      "audio": {
+        "card": "public/audio/elevenlabs/cache/3125e010f66790357c8caf0b.mp3"
+      }
+    }
+  ]
+}
